@@ -1,0 +1,1047 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/rstudio.spec'], chrootPath='/var/lib/mock/mageia-cauldron-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fd3428917f0>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c19ccb79a3fb46389727524063159a02', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/rstudio.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/10lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+warning: Macro expanded in comment on line 17: %{version}/%{name}-%{version}.tar.gz
+warning: Macro expanded in comment on line 25: %{_gwtver}.zip
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/rstudio-1.1.413-0.a4dfee5.1.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/rstudio.spec'], chrootPath='/var/lib/mock/mageia-cauldron-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fd3428917f0>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0cf917b40f5d4ba9aed8f030f1bd40a7', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/rstudio.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+warning: Macro expanded in comment on line 17: %{version}/%{name}-%{version}.tar.gz
+warning: Macro expanded in comment on line 25: %{_gwtver}.zip
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Gb45nj
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf rstudio-master
++ /usr/bin/gzip -dc /builddir/build/SOURCES/rstudio-1.1.413-a4dfee5.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd rstudio-master
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /builddir/build/SOURCES/rstudio-1.1.412-cmakelists-remove-pandoc.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /builddir/build/SOURCES/rstudio-1.1.412-cmakelists-qt593-and-directory.patch
++ /usr/bin/cat /builddir/build/SOURCES/rstudio-1.1.412-set-cmake-policy-cmp0043.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /builddir/build/SOURCES/rstudio-1.1.412-unique_ptr.patch
++ ln -sfT /usr/share/hunspell dependencies/common/dictionaries
++ ln -sfT /usr/share/javascript/mathjax dependencies/common/mathjax-26
++ /usr/bin/mkdir -p src/gwt/lib/gwt
++ /usr/bin/unzip -qd src/gwt/lib/gwt /builddir/build/SOURCES/gwt-2.8.1-deps.zip
++ /usr/bin/mv src/gwt/lib/gwt/gwt-2.8.1 src/gwt/lib/gwt/2.8.1
++ /usr/bin/mkdir -p src/gwt/lib/gin/2.1.2
++ /usr/bin/unzip -qd src/gwt/lib/gin/2.1.2 /builddir/build/SOURCES/gin-2.1.2.zip
++ pushd dependencies/common
+~/build/BUILD/rstudio-master/dependencies/common ~/build/BUILD/rstudio-master
++ /usr/bin/mkdir rmarkdown
++ /usr/bin/tar xzf /builddir/build/SOURCES/rmarkdown-1.8.tar.gz --strip-components=1 -C rmarkdown
++ /usr/bin/mkdir packrat
++ /usr/bin/tar xzf /builddir/build/SOURCES/packrat-0.4.2.tar.gz --strip-components=1 -C packrat
++ /usr/bin/mkdir -p libclang/3.5
++ ln -sfT /usr/lib64/libclang.so libclang/3.5/libclang.so
++ /usr/bin/mkdir -p libclang/builtin-headers
++ ln -sfT /usr/lib64/clang/5.0.1/include libclang/builtin-headers/3.5
++ popd
+~/build/BUILD/rstudio-master
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.hWEgiX
++ umask 022
++ cd /builddir/build/BUILD
++ cd rstudio-master
+~/build/BUILD/rstudio-master ~/build/BUILD/rstudio-master
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ pushd .
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ mkdir -p build
++ cd build
++ /usr/bin/cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_SKIP_RPATH:BOOL=ON -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -DRSTUDIO_TARGET=Desktop -DCMAKE_INSTALL_PREFIX=/usr/lib64/rstudio -DCMAKE_BUILD_TYPE=Release -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake-qt5
+-- The C compiler identification is GNU 7.2.2
+-- The CXX compiler identification is GNU 7.2.2
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- LSB release: mageia
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+CMake Warning at /usr/share/cmake/Modules/FindBoost.cmake:801 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/FindBoost.cmake:907 (_Boost_COMPONENT_DEPENDENCIES)
+  /usr/share/cmake/Modules/FindBoost.cmake:1542 (_Boost_MISSING_DEPENDENCIES)
+  src/cpp/CMakeLists.txt:176 (find_package)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.66.0
+-- Found the following Boost libraries:
+--   date_time
+--   filesystem
+--   iostreams
+--   program_options
+--   regex
+--   signals
+--   system
+--   thread
+--   chrono
+--   random
+--   atomic
+-- Using system Boost 1.63.0
+-- Performing Test HAVE_SCANDIR_POSIX
+-- Performing Test HAVE_SCANDIR_POSIX - Success
+-- Looking for SA_NOCLDWAIT
+-- Looking for SA_NOCLDWAIT - found
+-- Looking for SO_PEERCRED
+-- Looking for SO_PEERCRED - found
+-- Looking for inotify_init1
+-- Looking for inotify_init1 - found
+-- Looking for getpeereid
+-- Looking for getpeereid - not found
+-- Looking for setresuid
+-- Looking for setresuid - found
+-- Found LibR: /usr/lib64/R  
+-- Found R: /usr/lib64/R
+-- Performing Test LIBR_MINIMUM_VERSION
+-- Performing Test LIBR_MINIMUM_VERSION - Success
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+    BUILD_STATIC_LIBS
+    CMAKE_CXX_FLAGS_RELWITHDEBINFO
+    CMAKE_C_FLAGS_RELWITHDEBINFO
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+-- Build files have been written to: /builddir/build/BUILD/rstudio-master/build
++ make -j8
+/usr/bin/cmake -H/builddir/build/BUILD/rstudio-master -B/builddir/build/BUILD/rstudio-master/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /builddir/build/BUILD/rstudio-master/build/CMakeFiles /builddir/build/BUILD/rstudio-master/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+make -f src/gwt/CMakeFiles/gwt_build.dir/build.make src/gwt/CMakeFiles/gwt_build.dir/depend
+make -f src/cpp/core/CMakeFiles/rstudio-core.dir/build.make src/cpp/core/CMakeFiles/rstudio-core.dir/depend
+make -f src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/build.make src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/depend
+make -f src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/build.make src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/depend
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /builddir/build/BUILD/rstudio-master /builddir/build/BUILD/rstudio-master/src/gwt /builddir/build/BUILD/rstudio-master/build /builddir/build/BUILD/rstudio-master/build/src/gwt /builddir/build/BUILD/rstudio-master/build/src/gwt/CMakeFiles/gwt_build.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /builddir/build/BUILD/rstudio-master /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/synctex /builddir/build/BUILD/rstudio-master/build /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /builddir/build/BUILD/rstudio-master /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell /builddir/build/BUILD/rstudio-master/build /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/DependInfo.cmake --color=
+Scanning dependencies of target gwt_build
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make -f src/gwt/CMakeFiles/gwt_build.dir/build.make src/gwt/CMakeFiles/gwt_build.dir/build
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /builddir/build/BUILD/rstudio-master /builddir/build/BUILD/rstudio-master/src/cpp/core /builddir/build/BUILD/rstudio-master/build /builddir/build/BUILD/rstudio-master/build/src/cpp/core /builddir/build/BUILD/rstudio-master/build/src/cpp/core/CMakeFiles/rstudio-core.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/src/gwt && ant -Dbuild.dir=/builddir/build/BUILD/rstudio-master/build/src/gwt/bin -Dwww.dir=/builddir/build/BUILD/rstudio-master/build/src/gwt/www -Dextras.dir=/builddir/build/BUILD/rstudio-master/build/src/gwt/extras -Dlib.dir=/builddir/build/BUILD/rstudio-master/src/gwt/lib
+Scanning dependencies of target rstudio-core-synctex
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make -f src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/build.make src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/build
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+Scanning dependencies of target rstudio-core-hunspell
+[  0%] Building C object src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/synctex_parser_utils.c.o
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make -f src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/build.make src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/build
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/tex/synctex  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core-synctex.dir/synctex_parser_utils.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/synctex/synctex_parser_utils.c
+[  0%] Building C object src/cpp/core/tex/synctex/CMakeFiles/rstudio-core-synctex.dir/synctex_parser.c.o
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/tex/synctex  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core-synctex.dir/synctex_parser.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/synctex/synctex_parser.c
+[  1%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/affentry.cxx.o
+[  1%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/csutil.cxx.o
+[  1%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/affixmgr.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/affentry.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/affentry.cxx
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/affixmgr.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/affixmgr.cxx
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/csutil.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/csutil.cxx
+[  1%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/dictmgr.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/dictmgr.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/dictmgr.cxx
+Scanning dependencies of target rstudio-core
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make -f src/cpp/core/CMakeFiles/rstudio-core.dir/build.make src/cpp/core/CMakeFiles/rstudio-core.dir/build
+make[2]: Entering directory '/builddir/build/BUILD/rstudio-master/build'
+[  1%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Assert.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Assert.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Assert.cpp
+[  1%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/hashmgr.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/hashmgr.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/hashmgr.cxx
+Buildfile: /builddir/build/BUILD/rstudio-master/src/gwt/build.xml
+[  1%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Backtrace.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Backtrace.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Backtrace.cpp
+ext:
+[  2%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/suggestmgr.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/suggestmgr.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/suggestmgr.cxx
+[  2%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/phonet.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/phonet.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/phonet.cxx
+   [jscomp] Compiling 58 file(s) with 41 extern(s)
+[  2%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/filemgr.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/filemgr.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/filemgr.cxx
+[  2%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/hunzip.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/hunzip.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/hunzip.cxx
+[  2%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/hunspell.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/hunspell.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/hunspell.cxx
+[  2%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Base64.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Base64.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Base64.cpp
+[  3%] Building CXX object src/cpp/core/spelling/hunspell/CMakeFiles/rstudio-core-hunspell.dir/replist.cxx.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -w -o CMakeFiles/rstudio-core-hunspell.dir/replist.cxx.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/hunspell/replist.cxx
+[  3%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/BoostErrors.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/BoostErrors.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/BoostErrors.cpp
+[  3%] Linking C static library librstudio-core-synctex.a
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex && /usr/bin/cmake -P CMakeFiles/rstudio-core-synctex.dir/cmake_clean_target.cmake
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/tex/synctex && /usr/bin/cmake -E cmake_link_script CMakeFiles/rstudio-core-synctex.dir/link.txt --verbose=1
+/usr/bin/ar qc librstudio-core-synctex.a  CMakeFiles/rstudio-core-synctex.dir/synctex_parser.c.o CMakeFiles/rstudio-core-synctex.dir/synctex_parser_utils.c.o
+/usr/bin/ranlib librstudio-core-synctex.a
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+[  3%] Built target rstudio-core-synctex
+[  4%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/BrowserUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/BrowserUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/BrowserUtils.cpp
+[  4%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/ConfigUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/ConfigUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/ConfigUtils.cpp
+[  4%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/DateTime.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/DateTime.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/DateTime.cpp
+[  4%] Linking CXX static library librstudio-core-hunspell.a
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/cmake -P CMakeFiles/rstudio-core-hunspell.dir/cmake_clean_target.cmake
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core/spelling/hunspell && /usr/bin/cmake -E cmake_link_script CMakeFiles/rstudio-core-hunspell.dir/link.txt --verbose=1
+/usr/bin/ar qc librstudio-core-hunspell.a  CMakeFiles/rstudio-core-hunspell.dir/affentry.cxx.o CMakeFiles/rstudio-core-hunspell.dir/affixmgr.cxx.o CMakeFiles/rstudio-core-hunspell.dir/csutil.cxx.o CMakeFiles/rstudio-core-hunspell.dir/dictmgr.cxx.o CMakeFiles/rstudio-core-hunspell.dir/hashmgr.cxx.o CMakeFiles/rstudio-core-hunspell.dir/suggestmgr.cxx.o CMakeFiles/rstudio-core-hunspell.dir/phonet.cxx.o CMakeFiles/rstudio-core-hunspell.dir/filemgr.cxx.o CMakeFiles/rstudio-core-hunspell.dir/hunzip.cxx.o CMakeFiles/rstudio-core-hunspell.dir/hunspell.cxx.o CMakeFiles/rstudio-core-hunspell.dir/replist.cxx.o
+/usr/bin/ranlib librstudio-core-hunspell.a
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+[  4%] Built target rstudio-core-hunspell
+[  4%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Error.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Error.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Error.cpp
+[  4%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Exec.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Exec.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Exec.cpp
+   [jscomp] 0 error(s), 0 warning(s)
+javac:
+    [mkdir] Created dir: /builddir/build/BUILD/rstudio-master/build/src/gwt/bin
+    [javac] Compiling 10 source files to /builddir/build/BUILD/rstudio-master/build/src/gwt/bin
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:20: error: package com.google.gwt.dom.client does not exist
+    [javac] import com.google.gwt.dom.client.EventTarget;
+    [javac]                                 ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:21: error: package com.google.gwt.event.dom.client does not exist
+    [javac] import com.google.gwt.event.dom.client.BlurEvent;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:22: error: package com.google.gwt.event.dom.client does not exist
+    [javac] import com.google.gwt.event.dom.client.BlurHandler;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:23: error: package com.google.gwt.event.dom.client does not exist
+    [javac] import com.google.gwt.event.dom.client.KeyCodes;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:24: error: package com.google.gwt.event.logical.shared does not exist
+    [javac] import com.google.gwt.event.logical.shared.CloseEvent;
+    [javac]                                           ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:25: error: package com.google.gwt.event.logical.shared does not exist
+    [javac] import com.google.gwt.event.logical.shared.CloseHandler;
+    [javac]                                           ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:26: error: package com.google.gwt.event.logical.shared does not exist
+    [javac] import com.google.gwt.event.logical.shared.HasCloseHandlers;
+    [javac]                                           ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:27: error: package com.google.gwt.event.shared does not exist
+    [javac] import com.google.gwt.event.shared.HandlerRegistration;
+    [javac]                                   ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:28: error: package com.google.gwt.i18n.client does not exist
+    [javac] import com.google.gwt.i18n.client.LocaleInfo;
+    [javac]                                  ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:29: error: package com.google.gwt.resources.client does not exist
+    [javac] import com.google.gwt.resources.client.ClientBundle;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:30: error: package com.google.gwt.resources.client does not exist
+    [javac] import com.google.gwt.resources.client.ImageResource;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:31: error: package com.google.gwt.resources.client.ImageResource does not exist
+    [javac] import com.google.gwt.resources.client.ImageResource.ImageOptions;
+    [javac]                                                     ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:32: error: package com.google.gwt.safehtml.shared does not exist
+    [javac] import com.google.gwt.safehtml.shared.SafeHtml;
+    [javac]                                      ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:33: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Command;
+    [javac]                                  ^
+    [javac]   symbol:   class Command
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:34: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.DOM;
+    [javac]                                  ^
+    [javac]   symbol:   class DOM
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:35: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Element;
+    [javac]                                  ^
+    [javac]   symbol:   class Element
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:36: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Event;
+    [javac]                                  ^
+    [javac]   symbol:   class Event
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:37: error: package com.google.gwt.user.client.Event does not exist
+    [javac] import com.google.gwt.user.client.Event.NativePreviewEvent;
+    [javac]                                        ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:38: error: package com.google.gwt.user.client.ui.PopupPanel does not exist
+    [javac] import com.google.gwt.user.client.ui.PopupPanel.AnimationType;
+    [javac]                                                ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:148: error: cannot find symbol
+    [javac] public class MenuBar extends Widget implements PopupListener, HasAnimation,
+    [javac]                              ^
+    [javac]   symbol: class Widget
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:148: error: cannot find symbol
+    [javac] public class MenuBar extends Widget implements PopupListener, HasAnimation,
+    [javac]                                                ^
+    [javac]   symbol: class PopupListener
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:148: error: cannot find symbol
+    [javac] public class MenuBar extends Widget implements PopupListener, HasAnimation,
+    [javac]                                                               ^
+    [javac]   symbol: class HasAnimation
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:149: error: cannot find symbol
+    [javac]     HasCloseHandlers<PopupPanel> {
+    [javac]     ^
+    [javac]   symbol: class HasCloseHandlers
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:149: error: cannot find symbol
+    [javac]     HasCloseHandlers<PopupPanel> {
+    [javac]                      ^
+    [javac]   symbol: class PopupPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:182: error: cannot find symbol
+    [javac]   private ArrayList<UIObject> allItems = new ArrayList<UIObject>();
+    [javac]                     ^
+    [javac]   symbol:   class UIObject
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:187: error: cannot find symbol
+    [javac]   private ArrayList<MenuItem> items = new ArrayList<MenuItem>();
+    [javac]                     ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:189: error: cannot find symbol
+    [javac]   private Element body;
+    [javac]           ^
+    [javac]   symbol:   class Element
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:191: error: cannot find symbol
+    [javac]   private AbstractImagePrototype subMenuIcon = null;
+    [javac]           ^
+    [javac]   symbol:   class AbstractImagePrototype
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:194: error: cannot find symbol
+    [javac]   private PopupPanel popup;
+    [javac]           ^
+    [javac]   symbol:   class PopupPanel
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:195: error: cannot find symbol
+    [javac]   private MenuItem selectedItem;
+    [javac]           ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:157: error: cannot find symbol
+    [javac]   public interface MenuBarImages extends ImageBundle {
+    [javac]                                          ^
+    [javac]   symbol:   class ImageBundle
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:169: error: cannot find symbol
+    [javac]   public interface Resources extends ClientBundle {
+    [javac]                                      ^
+    [javac]   symbol:   class ClientBundle
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:263: error: cannot find symbol
+    [javac]   public HandlerRegistration addCloseHandler(CloseHandler<PopupPanel> handler) {
+    [javac]                                              ^
+    [javac]   symbol:   class CloseHandler
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:263: error: cannot find symbol
+    [javac]   public HandlerRegistration addCloseHandler(CloseHandler<PopupPanel> handler) {
+    [javac]                                                           ^
+    [javac]   symbol:   class PopupPanel
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:263: error: cannot find symbol
+    [javac]   public HandlerRegistration addCloseHandler(CloseHandler<PopupPanel> handler) {
+    [javac]          ^
+    [javac]   symbol:   class HandlerRegistration
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:273: error: cannot find symbol
+    [javac]   public MenuItem addItem(MenuItem item) {
+    [javac]                           ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:273: error: cannot find symbol
+    [javac]   public MenuItem addItem(MenuItem item) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:285: error: cannot find symbol
+    [javac]   public MenuItem addItem(SafeHtml html, Command cmd) {
+    [javac]                           ^
+    [javac]   symbol:   class SafeHtml
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:285: error: cannot find symbol
+    [javac]   public MenuItem addItem(SafeHtml html, Command cmd) {
+    [javac]                                          ^
+    [javac]   symbol:   class Command
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:285: error: cannot find symbol
+    [javac]   public MenuItem addItem(SafeHtml html, Command cmd) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:298: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, boolean asHTML, Command cmd) {
+    [javac]                                                        ^
+    [javac]   symbol:   class Command
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:298: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, boolean asHTML, Command cmd) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:310: error: cannot find symbol
+    [javac]   public MenuItem addItem(SafeHtml html, MenuBar popup) {
+    [javac]                           ^
+    [javac]   symbol:   class SafeHtml
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:310: error: cannot find symbol
+    [javac]   public MenuItem addItem(SafeHtml html, MenuBar popup) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:323: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, boolean asHTML, MenuBar popup) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:335: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, Command cmd) {
+    [javac]                                        ^
+    [javac]   symbol:   class Command
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:335: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, Command cmd) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:347: error: cannot find symbol
+    [javac]   public MenuItem addItem(String text, MenuBar popup) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:357: error: cannot find symbol
+    [javac]   public MenuItemSeparator addSeparator() {
+    [javac]          ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:368: error: cannot find symbol
+    [javac]   public MenuItemSeparator addSeparator(MenuItemSeparator separator) {
+    [javac]                                         ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:368: error: cannot find symbol
+    [javac]   public MenuItemSeparator addSeparator(MenuItemSeparator separator) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:443: error: cannot find symbol
+    [javac]   public int getItemIndex(MenuItem item) {
+    [javac]                           ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:453: error: cannot find symbol
+    [javac]   public int getSeparatorIndex(MenuItemSeparator item) {
+    [javac]                                ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:466: error: cannot find symbol
+    [javac]   public MenuItem insertItem(MenuItem item, int beforeIndex)
+    [javac]                              ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:466: error: cannot find symbol
+    [javac]   public MenuItem insertItem(MenuItem item, int beforeIndex)
+    [javac]          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:500: error: cannot find symbol
+    [javac]   public MenuItemSeparator insertSeparator(int beforeIndex) {
+    [javac]          ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:514: error: cannot find symbol
+    [javac]   public MenuItemSeparator insertSeparator(MenuItemSeparator separator,
+    [javac]                                            ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:514: error: cannot find symbol
+    [javac]   public MenuItemSeparator insertSeparator(MenuItemSeparator separator,
+    [javac]          ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:592: error: cannot find symbol
+    [javac]   public void onBrowserEvent(Event event) {
+    [javac]                              ^
+    [javac]   symbol:   class Event
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:677: error: cannot find symbol
+    [javac]   public void onPopupClosed(PopupPanel sender, boolean autoClosed) {
+    [javac]                             ^
+    [javac]   symbol:   class PopupPanel
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:699: error: cannot find symbol
+    [javac]   public void removeItem(MenuItem item) {
+    [javac]                          ^
+    [javac]   symbol:   class MenuItem
+[  5%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/FileInfo.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/FileInfo.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/FileInfo.cpp
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:717: error: cannot find symbol
+    [javac]   public void removeSeparator(MenuItemSeparator separator) {
+    [javac]                               ^
+    [javac]   symbol:   class MenuItemSeparator
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:728: error: cannot find symbol
+    [javac]   public void selectItem(MenuItem item) {
+    [javac]                          ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:809: error: cannot find symbol
+    [javac]   protected List<MenuItem> getItems() {
+    [javac]                  ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:821: error: cannot find symbol
+    [javac]   protected MenuItem getSelectedItem() {
+    [javac]             ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:884: error: cannot find symbol
+    [javac]   void doItemAction(final MenuItem item, boolean fireCommand, boolean focus) {
+    [javac]                           ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:943: error: cannot find symbol
+    [javac]   PopupPanel getPopup() {
+    [javac]   ^
+    [javac]   symbol:   class PopupPanel
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:947: error: cannot find symbol
+    [javac]   void itemOver(MenuItem item, boolean focus) {
+    [javac]                 ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:994: error: cannot find symbol
+    [javac]   protected void updateSubmenuIcon(MenuItem item) {
+    [javac]                                    ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1034: error: cannot find symbol
+    [javac]   private void addItemElement(int beforeIndex, Element tdElem) {
+    [javac]                                                ^
+    [javac]   symbol:   class Element
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1059: error: cannot find symbol
+    [javac]   private void eatEvent(Event event) {
+    [javac]                         ^
+    [javac]   symbol:   class Event
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1064: error: cannot find symbol
+    [javac]   private MenuItem findItem(Element hItem) {
+    [javac]                             ^
+    [javac]   symbol:   class Element
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1064: error: cannot find symbol
+    [javac]   private MenuItem findItem(Element hItem) {
+    [javac]           ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1073: error: cannot find symbol
+    [javac]   private Element getItemContainerElement() {
+    [javac]           ^
+    [javac]   symbol:   class Element
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1081: error: cannot find symbol
+    [javac]   private void init(boolean vertical, AbstractImagePrototype subMenuIcon) {
+    [javac]                                       ^
+    [javac]   symbol:   class AbstractImagePrototype
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1190: error: cannot find symbol
+    [javac]   private void openPopup(final MenuItem item) {
+    [javac]                                ^
+    [javac]   symbol:   class MenuItem
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1283: error: cannot find symbol
+    [javac]   private boolean removeItemElement(UIObject item) {
+    [javac]                                     ^
+    [javac]   symbol:   class UIObject
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:1394: error: cannot find symbol
+    [javac]   private void setItemColSpan(UIObject item, int colspan) {
+    [javac]                               ^
+    [javac]   symbol:   class UIObject
+    [javac]   location: class MenuBar
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:163: error: cannot find symbol
+    [javac]     AbstractImagePrototype menuBarSubMenuIcon();
+    [javac]     ^
+    [javac]   symbol:   class AbstractImagePrototype
+    [javac]   location: interface MenuBarImages
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/MenuBar.java:174: error: cannot find symbol
+    [javac]     ImageResource menuBarSubMenuIcon();
+    [javac]     ^
+    [javac]   symbol:   class ImageResource
+    [javac]   location: interface Resources
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:20: error: package com.google.gwt.dom.client does not exist
+    [javac] import com.google.gwt.dom.client.Document;
+    [javac]                                 ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:21: error: package com.google.gwt.dom.client does not exist
+    [javac] import com.google.gwt.dom.client.Element;
+    [javac]                                 ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:22: error: package com.google.gwt.dom.client.Style does not exist
+    [javac] import com.google.gwt.dom.client.Style.Position;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:23: error: package com.google.gwt.dom.client.Style does not exist
+    [javac] import com.google.gwt.dom.client.Style.Unit;
+    [javac]                                       ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:24: error: package com.google.gwt.event.shared does not exist
+    [javac] import com.google.gwt.event.shared.HandlerRegistration;
+    [javac]                                   ^
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:25: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Command;
+    [javac]                                  ^
+    [javac]   symbol:   class Command
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:26: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Event;
+    [javac]                                  ^
+    [javac]   symbol:   class Event
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:27: error: cannot find symbol
+    [javac] import com.google.gwt.user.client.Window;
+    [javac]                                  ^
+    [javac]   symbol:   class Window
+    [javac]   location: package com.google.gwt.user.client
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:59: error: cannot find symbol
+    [javac] public class SplitLayoutPanel extends DockLayoutPanel {
+    [javac]                                       ^
+    [javac]   symbol: class DockLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:274: error: cannot find symbol
+    [javac]   private static Element glassElem = null;
+    [javac]                  ^
+    [javac]   symbol:   class Element
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:324: error: cannot find symbol
+    [javac]   public void insert(Widget child, Direction direction, double size, Widget before) {
+    [javac]                      ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:324: error: cannot find symbol
+    [javac]   public void insert(Widget child, Direction direction, double size, Widget before) {
+    [javac]                                    ^
+    [javac]   symbol:   class Direction
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:324: error: cannot find symbol
+    [javac]   public void insert(Widget child, Direction direction, double size, Widget before) {
+    [javac]                                                                      ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:332: error: cannot find symbol
+    [javac]   public boolean remove(Widget child) {
+    [javac]                         ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:360: error: cannot find symbol
+    [javac]   public void setWidgetMinSize(Widget child, int minSize) {
+    [javac]                                ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:369: error: cannot find symbol
+    [javac]   private Splitter getAssociatedSplitter(Widget child) {
+    [javac]                                          ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:94: error: cannot find symbol
+    [javac]   abstract class Splitter extends Widget {
+    [javac]                                   ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:382: error: cannot find symbol
+    [javac]   private void insertSplitter(Widget widget, Widget before) {
+    [javac]                               ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitLayoutPanel.java:382: error: cannot find symbol
+    [javac]   private void insertSplitter(Widget widget, Widget before) {
+    [javac]                                              ^
+    [javac]   symbol:   class Widget
+    [javac]   location: class SplitLayoutPanel
+    [javac] /builddir/build/BUILD/rstudio-master/src/gwt/src/com/google/gwt/user/client/ui/SplitterBeforeResizeHandler.java:3: error: package com.google.gwt.event.shared does not exist
+    [javac] import com.google.gwt.event.shared.EventHandler;
+    [javac]                                   ^
+    [javac] 100 errors
+[  5%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/FileLogWriter.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/FileLogWriter.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/FileLogWriter.cpp
+BUILD FAILED
+/builddir/build/BUILD/rstudio-master/src/gwt/build.xml:91: Compile failed; see the compiler error output for details.
+Total time: 19 seconds
+make[2]: *** [src/gwt/CMakeFiles/gwt_build.dir/build.make:60: gwt_build] Error 1
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make[1]: *** [CMakeFiles/Makefile2:110: src/gwt/CMakeFiles/gwt_build.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  5%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/FilePath.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/FilePath.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/FilePath.cpp
+[  5%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/FileSerializer.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/FileSerializer.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/FileSerializer.cpp
+[  5%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/FileUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/FileUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/FileUtils.cpp
+[  6%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/GitGraph.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/GitGraph.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/GitGraph.cpp
+[  6%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Hash.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Hash.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Hash.cpp
+[  6%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/HtmlUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/HtmlUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/HtmlUtils.cpp
+[  6%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Log.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Log.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Log.cpp
+[  7%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/LogWriter.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/LogWriter.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/LogWriter.cpp
+[  7%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/PerformanceTimer.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/PerformanceTimer.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/PerformanceTimer.cpp
+[  7%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/ProgramOptions.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/ProgramOptions.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/ProgramOptions.cpp
+[  7%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/RegexUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/RegexUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/RegexUtils.cpp
+[  7%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/RecursionGuard.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/RecursionGuard.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/RecursionGuard.cpp
+[  8%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/SafeConvert.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/SafeConvert.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/SafeConvert.cpp
+[  8%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Settings.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Settings.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Settings.cpp
+[  8%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/StderrLogWriter.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/StderrLogWriter.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/StderrLogWriter.cpp
+[  8%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/StringUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/StringUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/StringUtils.cpp
+[  8%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/ColorUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/ColorUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/ColorUtils.cpp
+[  9%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Thread.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Thread.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Thread.cpp
+[  9%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/Trace.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/Trace.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/Trace.cpp
+[  9%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/YamlUtil.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/YamlUtil.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/YamlUtil.cpp
+[  9%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/WaitUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/WaitUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/WaitUtils.cpp
+[  9%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/file_lock/FileLock.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/file_lock/FileLock.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/file_lock/FileLock.cpp
+[ 10%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/file_lock/AdvisoryFileLock.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/file_lock/AdvisoryFileLock.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/file_lock/AdvisoryFileLock.cpp
+[ 10%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/file_lock/LinkBasedFileLock.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/file_lock/LinkBasedFileLock.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/file_lock/LinkBasedFileLock.cpp
+[ 10%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/gwt/GwtFileHandler.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/gwt/GwtFileHandler.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/gwt/GwtFileHandler.cpp
+[ 10%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/gwt/GwtLogHandler.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/gwt/GwtLogHandler.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/gwt/GwtLogHandler.cpp
+[ 10%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/gwt/GwtSymbolMaps.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/gwt/GwtSymbolMaps.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/gwt/GwtSymbolMaps.cpp
+[ 11%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/CodeCompleteResults.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/CodeCompleteResults.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/CodeCompleteResults.cpp
+[ 11%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/Cursor.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/Cursor.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/Cursor.cpp
+[ 11%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/Diagnostic.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/Diagnostic.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/Diagnostic.cpp
+[ 11%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/LibClang.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/LibClang.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/LibClang.cpp
+[ 12%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/SourceIndex.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/SourceIndex.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/SourceIndex.cpp
+[ 12%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/SourceLocation.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/SourceLocation.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/SourceLocation.cpp
+[ 12%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/SourceRange.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/SourceRange.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/SourceRange.cpp
+[ 12%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/Token.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/Token.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/Token.cpp
+[ 12%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/TranslationUnit.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/TranslationUnit.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/TranslationUnit.cpp
+[ 13%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/UnsavedFiles.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/UnsavedFiles.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/UnsavedFiles.cpp
+[ 13%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/libclang/Utils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/libclang/Utils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/libclang/Utils.cpp
+[ 13%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/json/Json.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/json/Json.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/json/Json.cpp
+[ 13%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/json/JsonRpc.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/json/JsonRpc.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/json/JsonRpc.cpp
+[ 13%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_reader.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_reader.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/json/spirit/json_spirit_reader.cpp
+[ 14%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_value.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_value.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/json/spirit/json_spirit_value.cpp
+[ 14%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_writer.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_writer.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/json/spirit/json_spirit_writer.cpp
+[ 14%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Cookie.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Cookie.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Cookie.cpp
+[ 14%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Header.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Header.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Header.cpp
+[ 14%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Message.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Message.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Message.cpp
+[ 15%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/MultipartRelated.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/MultipartRelated.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/MultipartRelated.cpp
+[ 15%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/ChunkParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/ChunkParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/ChunkParser.cpp
+[ 15%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Request.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Request.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Request.cpp
+[ 15%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/RequestParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/RequestParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/RequestParser.cpp
+[ 15%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Response.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Response.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Response.cpp
+[ 16%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/SocketProxy.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/SocketProxy.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/SocketProxy.cpp
+[ 16%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/URL.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/URL.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/URL.cpp
+[ 16%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/UriHandler.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/UriHandler.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/UriHandler.cpp
+[ 16%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/http/Util.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/http/Util.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/http/Util.cpp
+[ 16%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/Markdown.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/Markdown.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/Markdown.cpp
+[ 17%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/MathJax.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/MathJax.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/MathJax.cpp
+[ 17%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/autolink.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/autolink.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/autolink.c
+[ 17%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/buffer.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/buffer.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/buffer.c
+[ 17%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_href_e.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_href_e.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/houdini_href_e.c
+[ 18%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_html_e.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_html_e.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/houdini_html_e.c
+[ 18%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/html.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/html.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/html.c
+[ 18%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/html_smartypants.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/html_smartypants.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/html_smartypants.c
+[ 18%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/markdown.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/markdown.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/markdown.c
+[ 18%] Building C object src/cpp/core/CMakeFiles/rstudio-core.dir/markdown/sundown/stack.c.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cc -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/markdown/sundown/stack.c.o   -c /builddir/build/BUILD/rstudio-master/src/cpp/core/markdown/sundown/stack.c
+[ 19%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RActiveSessions.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RActiveSessions.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RActiveSessions.cpp
+[ 19%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RPackageInfo.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RPackageInfo.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RPackageInfo.cpp
+[ 19%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RProjectFile.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RProjectFile.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RProjectFile.cpp
+[ 19%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RSessionContext.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RSessionContext.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RSessionContext.cpp
+[ 19%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RTokenizer.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RTokenizer.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RTokenizer.cpp
+[ 20%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RSourceIndex.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RSourceIndex.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RSourceIndex.cpp
+[ 20%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RTokenizerTests.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RTokenizerTests.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RTokenizerTests.cpp
+[ 20%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RUserData.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RUserData.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RUserData.cpp
+[ 20%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/spelling/HunspellCustomDictionaries.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/spelling/HunspellCustomDictionaries.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/HunspellCustomDictionaries.cpp
+[ 20%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/spelling/HunspellDictionaryManager.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/spelling/HunspellDictionaryManager.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/HunspellDictionaryManager.cpp
+[ 21%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/spelling/HunspellSpellingEngine.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/spelling/HunspellSpellingEngine.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/spelling/HunspellSpellingEngine.cpp
+[ 21%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/ChildProcessSubprocPoll.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/ChildProcessSubprocPoll.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/ChildProcessSubprocPoll.cpp
+[ 21%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/Crypto.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/Crypto.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/Crypto.cpp
+[ 21%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/Environment.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/Environment.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/Environment.cpp
+[ 21%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/Process.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/Process.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/Process.cpp
+[ 22%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/ShellUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/ShellUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/ShellUtils.cpp
+[ 22%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/System.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/System.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/System.cpp
+[ 22%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/file_monitor/FileMonitor.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/file_monitor/FileMonitor.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/file_monitor/FileMonitor.cpp
+[ 22%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/terminal/PrivateCommand.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/terminal/PrivateCommand.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/terminal/PrivateCommand.cpp
+[ 23%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/tex/TexLogParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/tex/TexLogParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/TexLogParser.cpp
+[ 23%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/tex/TexMagicComment.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/tex/TexMagicComment.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/TexMagicComment.cpp
+[ 23%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/tex/TexSynctex.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/tex/TexSynctex.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/tex/TexSynctex.cpp
+[ 23%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/text/AnsiCodeParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/text/AnsiCodeParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/text/AnsiCodeParser.cpp
+[ 23%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/text/DcfParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/text/DcfParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/text/DcfParser.cpp
+[ 24%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/text/TemplateFilter.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/text/TemplateFilter.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/text/TemplateFilter.cpp
+[ 24%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/text/TermBufferParser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/text/TermBufferParser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/text/TermBufferParser.cpp
+[ 24%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/PosixStringUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/PosixStringUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/PosixStringUtils.cpp
+[ 24%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/REnvironmentPosix.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/REnvironmentPosix.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/REnvironmentPosix.cpp
+[ 24%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RSessionLaunchProfile.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RSessionLaunchProfile.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RSessionLaunchProfile.cpp
+[ 25%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/r_util/RVersionsPosix.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/r_util/RVersionsPosix.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/r_util/RVersionsPosix.cpp
+[ 25%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/SyslogLogWriter.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/SyslogLogWriter.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/SyslogLogWriter.cpp
+[ 25%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixChildProcessTracker.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixChildProcessTracker.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixChildProcessTracker.cpp
+[ 25%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixEnvironment.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixEnvironment.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixEnvironment.cpp
+[ 25%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixFileScanner.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixFileScanner.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixFileScanner.cpp
+[ 26%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixLibraryLoader.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixLibraryLoader.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixLibraryLoader.cpp
+[ 26%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixNfs.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixNfs.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixNfs.cpp
+[ 26%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixParentProcessMonitor.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixParentProcessMonitor.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixParentProcessMonitor.cpp
+[ 26%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixOutputCapture.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixOutputCapture.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixOutputCapture.cpp
+[ 26%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixSched.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixSched.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixSched.cpp
+[ 27%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixShellUtils.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixShellUtils.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixShellUtils.cpp
+/builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixParentProcessMonitor.cpp: In function 'void rstudio::core::parent_process_monitor::{anonymous}::exitHandler()':
+/builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixParentProcessMonitor.cpp:56:7: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+       (void)::write(s_writeOnExit.at(i), "done", 4);
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 27%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixSystem.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixSystem.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixSystem.cpp
+[ 27%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixUser.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixUser.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixUser.cpp
+[ 27%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixGroup.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixGroup.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixGroup.cpp
+[ 27%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixChildProcess.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixChildProcess.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixChildProcess.cpp
+[ 28%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/PosixProcess.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/PosixProcess.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/PosixProcess.cpp
+[ 28%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/file_monitor/LinuxFileMonitor.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/file_monitor/LinuxFileMonitor.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/file_monitor/LinuxFileMonitor.cpp
+[ 28%] Building CXX object src/cpp/core/CMakeFiles/rstudio-core.dir/system/recycle_bin/LinuxRecycleBin.cpp.o
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/c++  -DBOOST_ASIO_DISABLE_KQUEUE -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -DRSTUDIO_BOOST_NAMESPACE=boost -DRSTUDIO_UNIT_TESTS_ENABLED -DWEBSOCKETPP_STRICT_MASKING -D_FORTIFY_SOURCE=2 -D_WEBSOCKETPP_NO_CPP11_MEMORY_=1 -I/builddir/build/BUILD/rstudio-master/src/cpp/core/include -I/builddir/build/BUILD/rstudio-master/build/src/cpp/core -I/builddir/build/BUILD/rstudio-master/src/cpp/tests/cpp  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -std=c++11 -O3 -DNDEBUG   -Wall -pthread -Wformat -Wformat-security -fstack-protector --param ssp-buffer-size=4 -pie -fPIE -o CMakeFiles/rstudio-core.dir/system/recycle_bin/LinuxRecycleBin.cpp.o -c /builddir/build/BUILD/rstudio-master/src/cpp/core/system/recycle_bin/LinuxRecycleBin.cpp
+[ 28%] Linking CXX static library librstudio-core.a
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cmake -P CMakeFiles/rstudio-core.dir/cmake_clean_target.cmake
+cd /builddir/build/BUILD/rstudio-master/build/src/cpp/core && /usr/bin/cmake -E cmake_link_script CMakeFiles/rstudio-core.dir/link.txt --verbose=1
+/usr/bin/ar qc librstudio-core.a  CMakeFiles/rstudio-core.dir/Assert.cpp.o CMakeFiles/rstudio-core.dir/Backtrace.cpp.o CMakeFiles/rstudio-core.dir/Base64.cpp.o CMakeFiles/rstudio-core.dir/BoostErrors.cpp.o CMakeFiles/rstudio-core.dir/BrowserUtils.cpp.o CMakeFiles/rstudio-core.dir/ConfigUtils.cpp.o CMakeFiles/rstudio-core.dir/DateTime.cpp.o CMakeFiles/rstudio-core.dir/Error.cpp.o CMakeFiles/rstudio-core.dir/Exec.cpp.o CMakeFiles/rstudio-core.dir/FileInfo.cpp.o CMakeFiles/rstudio-core.dir/FileLogWriter.cpp.o CMakeFiles/rstudio-core.dir/FilePath.cpp.o CMakeFiles/rstudio-core.dir/FileSerializer.cpp.o CMakeFiles/rstudio-core.dir/FileUtils.cpp.o CMakeFiles/rstudio-core.dir/GitGraph.cpp.o CMakeFiles/rstudio-core.dir/Hash.cpp.o CMakeFiles/rstudio-core.dir/HtmlUtils.cpp.o CMakeFiles/rstudio-core.dir/Log.cpp.o CMakeFiles/rstudio-core.dir/LogWriter.cpp.o CMakeFiles/rstudio-core.dir/PerformanceTimer.cpp.o CMakeFiles/rstudio-core.dir/ProgramOptions.cpp.o CMakeFiles/rstudio-core.dir/RegexUtils.cpp.o CMakeFiles/rstudio-core.dir/RecursionGuard.cpp.o CMakeFiles/rstudio-core.dir/SafeConvert.cpp.o CMakeFiles/rstudio-core.dir/Settings.cpp.o CMakeFiles/rstudio-core.dir/StderrLogWriter.cpp.o CMakeFiles/rstudio-core.dir/StringUtils.cpp.o CMakeFiles/rstudio-core.dir/ColorUtils.cpp.o CMakeFiles/rstudio-core.dir/Thread.cpp.o CMakeFiles/rstudio-core.dir/Trace.cpp.o CMakeFiles/rstudio-core.dir/YamlUtil.cpp.o CMakeFiles/rstudio-core.dir/WaitUtils.cpp.o CMakeFiles/rstudio-core.dir/file_lock/FileLock.cpp.o CMakeFiles/rstudio-core.dir/file_lock/AdvisoryFileLock.cpp.o CMakeFiles/rstudio-core.dir/file_lock/LinkBasedFileLock.cpp.o CMakeFiles/rstudio-core.dir/gwt/GwtFileHandler.cpp.o CMakeFiles/rstudio-core.dir/gwt/GwtLogHandler.cpp.o CMakeFiles/rstudio-core.dir/gwt/GwtSymbolMaps.cpp.o CMakeFiles/rstudio-core.dir/libclang/CodeCompleteResults.cpp.o CMakeFiles/rstudio-core.dir/libclang/Cursor.cpp.o CMakeFiles/rstudio-core.dir/libclang/Diagnostic.cpp.o CMakeFiles/rstudio-core.dir/libclang/LibClang.cpp.o CMakeFiles/rstudio-core.dir/libclang/SourceIndex.cpp.o CMakeFiles/rstudio-core.dir/libclang/SourceLocation.cpp.o CMakeFiles/rstudio-core.dir/libclang/SourceRange.cpp.o CMakeFiles/rstudio-core.dir/libclang/Token.cpp.o CMakeFiles/rstudio-core.dir/libclang/TranslationUnit.cpp.o CMakeFiles/rstudio-core.dir/libclang/UnsavedFiles.cpp.o CMakeFiles/rstudio-core.dir/libclang/Utils.cpp.o CMakeFiles/rstudio-core.dir/json/Json.cpp.o CMakeFiles/rstudio-core.dir/json/JsonRpc.cpp.o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_reader.cpp.o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_value.cpp.o CMakeFiles/rstudio-core.dir/json/spirit/json_spirit_writer.cpp.o CMakeFiles/rstudio-core.dir/http/Cookie.cpp.o CMakeFiles/rstudio-core.dir/http/Header.cpp.o CMakeFiles/rstudio-core.dir/http/Message.cpp.o CMakeFiles/rstudio-core.dir/http/MultipartRelated.cpp.o CMakeFiles/rstudio-core.dir/http/ChunkParser.cpp.o CMakeFiles/rstudio-core.dir/http/Request.cpp.o CMakeFiles/rstudio-core.dir/http/RequestParser.cpp.o CMakeFiles/rstudio-core.dir/http/Response.cpp.o CMakeFiles/rstudio-core.dir/http/SocketProxy.cpp.o CMakeFiles/rstudio-core.dir/http/URL.cpp.o CMakeFiles/rstudio-core.dir/http/UriHandler.cpp.o CMakeFiles/rstudio-core.dir/http/Util.cpp.o CMakeFiles/rstudio-core.dir/markdown/Markdown.cpp.o CMakeFiles/rstudio-core.dir/markdown/MathJax.cpp.o CMakeFiles/rstudio-core.dir/markdown/sundown/autolink.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/buffer.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_href_e.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/houdini_html_e.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/html.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/html_smartypants.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/markdown.c.o CMakeFiles/rstudio-core.dir/markdown/sundown/stack.c.o CMakeFiles/rstudio-core.dir/r_util/RActiveSessions.cpp.o CMakeFiles/rstudio-core.dir/r_util/RPackageInfo.cpp.o CMakeFiles/rstudio-core.dir/r_util/RProjectFile.cpp.o CMakeFiles/rstudio-core.dir/r_util/RSessionContext.cpp.o CMakeFiles/rstudio-core.dir/r_util/RTokenizer.cpp.o CMakeFiles/rstudio-core.dir/r_util/RSourceIndex.cpp.o CMakeFiles/rstudio-core.dir/r_util/RTokenizerTests.cpp.o CMakeFiles/rstudio-core.dir/r_util/RUserData.cpp.o CMakeFiles/rstudio-core.dir/spelling/HunspellCustomDictionaries.cpp.o CMakeFiles/rstudio-core.dir/spelling/HunspellDictionaryManager.cpp.o CMakeFiles/rstudio-core.dir/spelling/HunspellSpellingEngine.cpp.o CMakeFiles/rstudio-core.dir/system/ChildProcessSubprocPoll.cpp.o CMakeFiles/rstudio-core.dir/system/Crypto.cpp.o CMakeFiles/rstudio-core.dir/system/Environment.cpp.o CMakeFiles/rstudio-core.dir/system/Process.cpp.o CMakeFiles/rstudio-core.dir/system/ShellUtils.cpp.o CMakeFiles/rstudio-core.dir/system/System.cpp.o CMakeFiles/rstudio-core.dir/system/file_monitor/FileMonitor.cpp.o CMakeFiles/rstudio-core.dir/terminal/PrivateCommand.cpp.o CMakeFiles/rstudio-core.dir/tex/TexLogParser.cpp.o CMakeFiles/rstudio-core.dir/tex/TexMagicComment.cpp.o CMakeFiles/rstudio-core.dir/tex/TexSynctex.cpp.o CMakeFiles/rstudio-core.dir/text/AnsiCodeParser.cpp.o CMakeFiles/rstudio-core.dir/text/DcfParser.cpp.o CMakeFiles/rstudio-core.dir/text/TemplateFilter.cpp.o CMakeFiles/rstudio-core.dir/text/TermBufferParser.cpp.o CMakeFiles/rstudio-core.dir/PosixStringUtils.cpp.o CMakeFiles/rstudio-core.dir/r_util/REnvironmentPosix.cpp.o CMakeFiles/rstudio-core.dir/r_util/RSessionLaunchProfile.cpp.o CMakeFiles/rstudio-core.dir/r_util/RVersionsPosix.cpp.o CMakeFiles/rstudio-core.dir/SyslogLogWriter.cpp.o CMakeFiles/rstudio-core.dir/system/PosixChildProcessTracker.cpp.o CMakeFiles/rstudio-core.dir/system/PosixEnvironment.cpp.o CMakeFiles/rstudio-core.dir/system/PosixFileScanner.cpp.o CMakeFiles/rstudio-core.dir/system/PosixLibraryLoader.cpp.o CMakeFiles/rstudio-core.dir/system/PosixNfs.cpp.o CMakeFiles/rstudio-core.dir/system/PosixParentProcessMonitor.cpp.o CMakeFiles/rstudio-core.dir/system/PosixOutputCapture.cpp.o CMakeFiles/rstudio-core.dir/system/PosixSched.cpp.o CMakeFiles/rstudio-core.dir/system/PosixShellUtils.cpp.o CMakeFiles/rstudio-core.dir/system/PosixSystem.cpp.o CMakeFiles/rstudio-core.dir/system/PosixUser.cpp.o CMakeFiles/rstudio-core.dir/system/PosixGroup.cpp.o CMakeFiles/rstudio-core.dir/system/PosixChildProcess.cpp.o CMakeFiles/rstudio-core.dir/system/PosixProcess.cpp.o CMakeFiles/rstudio-core.dir/system/file_monitor/LinuxFileMonitor.cpp.o CMakeFiles/rstudio-core.dir/system/recycle_bin/LinuxRecycleBin.cpp.o
+/usr/bin/ranlib librstudio-core.a
+make[2]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+[ 28%] Built target rstudio-core
+make[1]: Leaving directory '/builddir/build/BUILD/rstudio-master/build'
+make: *** [Makefile:155: all] Error 2
+error: Bad exit status from /var/tmp/rpm-tmp.hWEgiX (%build)
+RPM build errors:
+    Macro expanded in comment on line 17: %{version}/%{name}-%{version}.tar.gz
+    Macro expanded in comment on line 25: %{_gwtver}.zip
+    Bad exit status from /var/tmp/rpm-tmp.hWEgiX (%build)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.6/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 0cf917b40f5d4ba9aed8f030f1bd40a7 -D /var/lib/mock/mageia-cauldron-x86_64/root -a --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/rstudio.spec
+
