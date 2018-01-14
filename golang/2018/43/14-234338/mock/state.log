@@ -1,0 +1,15 @@
+2018-01-14 23:32:53,347 - Mock Version: 1.4.8
+2018-01-14 23:32:55,991 - Start: dnf update
+2018-01-14 23:33:16,702 - Finish: dnf update
+2018-01-14 23:33:16,717 - Finish: chroot init
+2018-01-14 23:33:16,720 - Start: build phase for golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:33:16,722 - Start: build setup for golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:33:48,714 - Finish: build setup for golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:33:48,714 - Start: rpmbuild golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:33:48,716 - Start: Outputting list of installed packages
+2018-01-14 23:33:48,762 - Finish: Outputting list of installed packages
+2018-01-14 23:40:33,362 - Finish: rpmbuild golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:40:33,365 - Finish: build phase for golang-1.8.5-1.mga7.src.rpm
+2018-01-14 23:40:33,367 - Start: clean chroot
+2018-01-14 23:40:39,711 - Finish: clean chroot
+2018-01-14 23:40:39,713 - Finish: run
