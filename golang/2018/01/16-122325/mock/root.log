@@ -1,0 +1,1068 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '40e6a79ff7074b5597f2da7d747489d1', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd289ebe88885454f93a8c1c1eb9778e5', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '92c241edeade4a61a4c62e2153cd0d4e', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ba0bec7a93294620ab51aa3c254475ac', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e8f06fb49f1a4fe1bcb8013705b4707a', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd082208e71f94beda672fe906b0ee779', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:15:55 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '99ebc41eee5a4761817aebfd07f8753f', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0a6125d20d7f40c4afe8e96f3a0b9311', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '883a4afab7cb4666b26ef600fcbd992f', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a8c302c6ef7d4b6a9c20afd640a8a8a0', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5321d04637904fce8a9c90fb979623a9', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c65710badc8849c1805e5abff956d073', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:23:54 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'cb8905c9659c4fea93b1088839fb77fd', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '496ca39e414e4ddaaa3a3446e2cc71d8', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3b4f6fe296444813b11931d384c3becd', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '984990b0ffab4829b82781664b335e76', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '98efcbbce47f46f1a0d17b29fa71890a', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5f3104a5a82f4db6ba1e5bb934f97b8d', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:34:35 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a805e472fd044f3e8f0a5024bf9a8fe0', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b37c61c1f088419baf0879fdb5fd3075', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'f2ff336c0e6f437c8bf90b2d5e04f159', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'bdb89105abd04936b5e089c44f7a9e33', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '382ca51b910044dbaa03a72b50cca789', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b647f6e53fa045eeb5282a28626a713c', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:39:22 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd500f72362d54716b4fb09359809d624', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3e60b961b0914b4d89579c477b850a58', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '84d025b0d2fd49508e58f794c6b82712', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8cb161effa904174932761714f004ea2', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '75ba80740ea446eb94ab50cbe4324b5a', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '879eb174351840ba80aa37058d15bba6', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:43:39 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.13-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '24cbfac6b142424bae78de59fad7cede', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c4d864ef25a04ec79878936a6807984a', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e164f3fd0b7046aaad5675f6d7180245', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '46e12e4db8904fa880e76bc0ebf7abb5', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '14983f68a0f843eeaff7b6dc0833d489', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  golang-1.8.5-2.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b1c679ee9bf448c89eb1dfe6e801f275', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/golang-1.8.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  go1.5-zoneinfo_testing_only.patch
+DEBUG util.py:479:  go1.8.5-fix-negative-test-filtering.patch
+DEBUG util.py:479:  go1.8.5.src.tar.gz
+DEBUG util.py:479:  golang-1.5-bootstrap-binary-path.patch
+DEBUG util.py:479:  golang-gdbinit
+DEBUG util.py:479:  golang-prelink.conf
+DEBUG util.py:479:  golang.spec
+DEBUG util.py:479:  macros.golang
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/golang-1.8.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 11:48:11 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package net-tools-2.0-0.20150915git.4.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:   Package                            Arch                   Version                          Repository               Size
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   glibc-static-devel                 x86_64                 6:2.22-26.mga6                   updates                 9.3 M
+DEBUG util.py:479:   golang                             x86_64                 1.8.1-6.mga6                     mageia                  1.1 M
+DEBUG util.py:479:   lib64pcre-devel                    x86_64                 8.41-1.mga6                      updates                 440 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   golang-bin                         x86_64                 1.8.1-6.mga6                     mageia                   42 M
+DEBUG util.py:479:   golang-src                         noarch                 1.8.1-6.mga6                     mageia                  4.4 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ==========================================================================================================================
+DEBUG util.py:479:  Install  5 Packages
+DEBUG util.py:479:  Total size: 57 M
+DEBUG util.py:479:  Installed size: 311 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: golang-1.8.1-6.mga6.x86_64                                                                       1/1 
+DEBUG util.py:479:    Preparing        :                                                                                                  1/1 
+DEBUG util.py:479:    Installing       : golang-src-1.8.1-6.mga6.noarch                                                                   1/5 
+DEBUG util.py:479:    Installing       : golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Running scriptlet: golang-bin-1.8.1-6.mga6.x86_64                                                                   2/5 
+DEBUG util.py:479:    Installing       : golang-1.8.1-6.mga6.x86_64                                                                       3/5 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                                               4/5 
+DEBUG util.py:479:    Installing       : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         5/5 
+DEBUG util.py:479:    Verifying        : golang-1.8.1-6.mga6.x86_64                                                                       1/5 
+DEBUG util.py:479:    Verifying        : glibc-static-devel-6:2.22-26.mga6.x86_64                                                         2/5 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                                               3/5 
+DEBUG util.py:479:    Verifying        : golang-bin-1.8.1-6.mga6.x86_64                                                                   4/5 
+DEBUG util.py:479:    Verifying        : golang-src-1.8.1-6.mga6.noarch                                                                   5/5 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    glibc-static-devel.x86_64 6:2.22-26.mga6     golang.x86_64 1.8.1-6.mga6         lib64pcre-devel.x86_64 8.41-1.mga6    
+DEBUG util.py:479:    golang-bin.x86_64 1.8.1-6.mga6               golang-src.noarch 1.8.1-6.mga6    
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
