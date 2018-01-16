@@ -1,0 +1,13 @@
+2018-01-16 12:40:24,599 - Mock Version: 1.4.8
+2018-01-16 12:40:26,039 - Finish: chroot init
+2018-01-16 12:40:26,042 - Start: build phase for golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:40:26,043 - Start: build setup for golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:40:36,595 - Finish: build setup for golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:40:36,595 - Start: rpmbuild golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:40:36,597 - Start: Outputting list of installed packages
+2018-01-16 12:40:36,645 - Finish: Outputting list of installed packages
+2018-01-16 12:48:51,938 - Finish: rpmbuild golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:48:51,941 - Finish: build phase for golang-1.9.2-1.mga7.src.rpm
+2018-01-16 12:48:51,942 - Start: clean chroot
+2018-01-16 12:48:58,608 - Finish: clean chroot
+2018-01-16 12:48:58,609 - Finish: run
