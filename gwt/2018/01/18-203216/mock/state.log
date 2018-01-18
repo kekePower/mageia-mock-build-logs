@@ -1,0 +1,8 @@
+2018-01-18 20:31:34,320 - Mock Version: 1.4.8
+2018-01-18 20:31:34,447 - Start: dnf install
+2018-01-18 20:31:37,205 - Start: clean chroot
+2018-01-18 20:31:38,062 - Finish: clean chroot
+2018-01-18 20:32:15,930 - Mock Version: 1.4.8
+2018-01-18 20:32:16,019 - Start: dnf install
+2018-01-18 20:32:16,575 - Start: clean chroot
+2018-01-18 20:32:16,694 - Finish: clean chroot
