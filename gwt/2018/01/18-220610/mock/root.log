@@ -1,0 +1,1293 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia', disabling.
+DEBUG util.py:479:  Cache-only enabled but no cache for 'updates', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '004883000e4a48fba78467cfc7fdb0af', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7779128bded2467d9c2633f4996b3a1d', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '04ed3099deef49deb98affcec2dfcbf9', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '47a4d45c549b4137975c127870447533', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Thu 18 Jan 2018 08:46:51 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '68acdfc2d554486eb0e438659dc87dc1', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  gwt-2.8.2-1.mga7                      warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3d35546f1f994cfda70334eb35074326', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  gwt-2.6.1.pom
+DEBUG util.py:479:  gwt-2.8.2.tar.gz
+DEBUG util.py:479:  gwt-codeserver-2.6.1.pom
+DEBUG util.py:479:  gwt-dev-2.6.1.pom
+DEBUG util.py:479:  gwt-servlet-2.6.1.pom
+DEBUG util.py:479:  gwt-tools.tar.xz
+DEBUG util.py:479:  gwt-user-2.6.1.pom
+DEBUG util.py:479:  gwt.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No matching package to install: 'ant'
+DEBUG util.py:479:  No matching package to install: 'ant-lib'
+DEBUG util.py:479:  Package gcc-7.3.0-0.rc.20180117.1.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  No matching package to install: 'git'
+DEBUG util.py:479:  No matching package to install: 'java-devel'
+DEBUG util.py:479:  No matching package to install: 'jcommon'
+DEBUG util.py:479:  No matching package to install: 'jpackage-utils'
+DEBUG util.py:479:  Package python3-3.6.2-4.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Not all dependencies satisfied
+DEBUG util.py:479:  Error: Some packages could not be found.
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3a55700e93f84b42bd2ddb03f9e818d0', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '88fa1f89ec004b3fb811fa6cc8a4bbb9', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '43ddd9c6d688415696746a258c72bb9d', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'da3cbdc734d44e9cbd9f54c5d1177aa9', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Thu 18 Jan 2018 08:47:39 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /var/lib/mock/mageia-cauldron-x86_64/root/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ee60a1259555498f98769fcd13167b7e', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  gwt-2.8.2-1.mga7                      warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'eef47da8063047fe87a5b588eaf8372c', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  gwt-2.6.1.pom
+DEBUG util.py:479:  gwt-2.8.2.tar.gz
+DEBUG util.py:479:  gwt-codeserver-2.6.1.pom
+DEBUG util.py:479:  gwt-dev-2.6.1.pom
+DEBUG util.py:479:  gwt-servlet-2.6.1.pom
+DEBUG util.py:479:  gwt-tools.tar.xz
+DEBUG util.py:479:  gwt-user-2.6.1.pom
+DEBUG util.py:479:  gwt.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                            1.2 MB/s |  39 MB     00:32    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:31 ago on Thu 18 Jan 2018 08:48:13 PM CET.
+DEBUG util.py:479:  Package gcc-7.3.0-0.rc.20180117.1.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package python3-3.6.2-4.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                         Arch       Version                       Repository           Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   ant                             noarch     1.10.1-1.mga7                 mageia-cauldron     154 k
+DEBUG util.py:479:   ant-lib                         noarch     1.10.1-1.mga7                 mageia-cauldron     1.9 M
+DEBUG util.py:479:   git                             x86_64     1:2.15.1-2.mga7               mageia-cauldron      11 k
+DEBUG util.py:479:   java-1.8.0-openjdk-devel        x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron     8.8 M
+DEBUG util.py:479:   javapackages-tools              noarch     5.0.0-3.mga7                  mageia-cauldron      34 k
+DEBUG util.py:479:   jcommon                         noarch     1.0.23-6.mga6                 mageia-cauldron     319 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   copy-jdk-configs                noarch     3.3-3.mga7                    mageia-cauldron      24 k
+DEBUG util.py:479:   fontconfig                      x86_64     2.12.6-1.mga7                 mageia-cauldron     111 k
+DEBUG util.py:479:   git-core                        x86_64     1:2.15.1-2.mga7               mageia-cauldron     6.5 M
+DEBUG util.py:479:   git-email                       x86_64     1:2.15.1-2.mga7               mageia-cauldron      34 k
+DEBUG util.py:479:   java-1.8.0-openjdk              x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron     194 k
+DEBUG util.py:479:   java-1.8.0-openjdk-headless     x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron      28 M
+DEBUG util.py:479:   lib64alsa2                      x86_64     2:1.1.5-1.mga7                mageia-cauldron     393 k
+DEBUG util.py:479:   lib64bsd0                       x86_64     0.8.3-1.mga6                  mageia-cauldron      42 k
+DEBUG util.py:479:   lib64edit0                      x86_64     3.1-0.20150325.2.mga6         mageia-cauldron      83 k
+DEBUG util.py:479:   lib64fontconfig1                x86_64     2.12.6-1.mga7                 mageia-cauldron     117 k
+DEBUG util.py:479:   lib64fontenc1                   x86_64     1.1.3-2.mga6                  mageia-cauldron      18 k
+DEBUG util.py:479:   lib64freetype6                  x86_64     2.8.1-1.mga7                  mageia-cauldron     299 k
+DEBUG util.py:479:   lib64gif7                       x86_64     5.1.4-1.mga6                  mageia-cauldron      44 k
+DEBUG util.py:479:   lib64jpeg8                      x86_64     1:1.5.3-1.mga7                mageia-cauldron     185 k
+DEBUG util.py:479:   lib64png16_16                   x86_64     2:1.6.34-1.mga7               mageia-cauldron     175 k
+DEBUG util.py:479:   lib64sctp1                      x86_64     1.0.17-1.mga7                 mageia-cauldron      44 k
+DEBUG util.py:479:   lib64x11_6                      x86_64     1.6.5-1.mga6                  mageia-cauldron     562 k
+DEBUG util.py:479:   lib64xau6                       x86_64     1.0.8-7.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xcb1                       x86_64     1.12-2.mga6                   mageia-cauldron      45 k
+DEBUG util.py:479:   lib64xcomposite1                x86_64     0.4.4-8.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xdmcp6                     x86_64     1.1.2-5.mga6                  mageia-cauldron      15 k
+DEBUG util.py:479:   lib64xext6                      x86_64     1:1.3.3-4.mga6                mageia-cauldron      55 k
+DEBUG util.py:479:   lib64xi6                        x86_64     1.7.9-1.mga6                  mageia-cauldron      32 k
+DEBUG util.py:479:   lib64xrender1                   x86_64     0.9.10-1.mga6                 mageia-cauldron      22 k
+DEBUG util.py:479:   lib64xtst6                      x86_64     1.2.3-1.mga6                  mageia-cauldron      16 k
+DEBUG util.py:479:   libalsa-data                    noarch     2:1.1.5-1.mga7                mageia-cauldron      62 k
+DEBUG util.py:479:   lksctp-tools                    x86_64     1.0.17-1.mga7                 mageia-cauldron      45 k
+DEBUG util.py:479:   lua                             x86_64     5.2.4-2.mga7                  mageia-cauldron     192 k
+DEBUG util.py:479:   lua-posix                       x86_64     33.3.1-2.mga6                 mageia-cauldron     165 k
+DEBUG util.py:479:   mkfontdir                       noarch     1.0.7-8.mga6                  mageia-cauldron     7.2 k
+DEBUG util.py:479:   mkfontscale                     x86_64     1.1.2-3.mga6                  mageia-cauldron      24 k
+DEBUG util.py:479:   openssh                         x86_64     7.6p1-2.mga7                  mageia-cauldron     428 k
+DEBUG util.py:479:   openssh-clients                 x86_64     7.6p1-2.mga7                  mageia-cauldron     456 k
+DEBUG util.py:479:   openssl                         x86_64     1.1.0g-1.mga7                 mageia-cauldron     432 k
+DEBUG util.py:479:   perl-DBI                        x86_64     1.639.0-1.mga7                mageia-cauldron     634 k
+DEBUG util.py:479:   perl-Error                      noarch     1:0.170.250-2.mga7            mageia-cauldron      36 k
+DEBUG util.py:479:   perl-Git                        x86_64     1:2.15.1-2.mga7               mageia-cauldron      38 k
+DEBUG util.py:479:   rootcerts-java                  noarch     1:20171122.00-1.mga7          mageia-cauldron     133 k
+DEBUG util.py:479:   rsync                           x86_64     3.1.2-3.mga7                  mageia-cauldron     399 k
+DEBUG util.py:479:   tcp_wrappers                    x86_64     7.6-47.mga6                   mageia-cauldron      89 k
+DEBUG util.py:479:   timezone-java                   noarch     6:2017b-1.mga6                mageia-cauldron     145 k
+DEBUG util.py:479:   x11-font-bitstream-type1        noarch     1.0.3-6.mga6                  mageia-cauldron     308 k
+DEBUG util.py:479:   x11-font-type1                  noarch     1.0.0-13.mga6                 mageia-cauldron     6.1 k
+DEBUG util.py:479:   x11-font-xfree86-type1          noarch     1.0.4-6.mga6                  mageia-cauldron      36 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  50 Packages
+DEBUG util.py:479:  Total size: 52 M
+DEBUG util.py:479:  Total download size: 6.5 M
+DEBUG util.py:479:  Installed size: 200 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] ant-1.10.1-1.mga7.noarch.rpm: Already downloaded                                         
+DEBUG util.py:479:  [SKIPPED] ant-lib-1.10.1-1.mga7.noarch.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] java-1.8.0-openjdk-devel-1.8.0.151-1.b12.1.mga7.x86_64.rpm: Already downloaded           
+DEBUG util.py:479:  [SKIPPED] jcommon-1.0.23-6.mga6.noarch.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] javapackages-tools-5.0.0-3.mga7.noarch.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] java-1.8.0-openjdk-headless-1.8.0.151-1.b12.1.mga7.x86_64.rpm: Already downloaded        
+DEBUG util.py:479:  [SKIPPED] java-1.8.0-openjdk-1.8.0.151-1.b12.1.mga7.x86_64.rpm: Already downloaded                 
+DEBUG util.py:479:  [SKIPPED] copy-jdk-configs-3.3-3.mga7.noarch.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64freetype6-2.8.1-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64jpeg8-1.5.3-1.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lksctp-tools-1.0.17-1.mga7.x86_64.rpm: Already downloaded                                
+DEBUG util.py:479:  [SKIPPED] rootcerts-java-20171122.00-1.mga7.noarch.rpm: Already downloaded                         
+DEBUG util.py:479:  [SKIPPED] timezone-java-2017b-1.mga6.noarch.rpm: Already downloaded                                
+DEBUG util.py:479:  [SKIPPED] openssh-clients-7.6p1-2.mga7.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] perl-DBI-1.639.0-1.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] rsync-3.1.2-3.mga7.x86_64.rpm: Already downloaded                                        
+DEBUG util.py:479:  [SKIPPED] perl-Error-0.170.250-2.mga7.noarch.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] fontconfig-2.12.6-1.mga7.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64alsa2-1.1.5-1.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64gif7-5.1.4-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] lib64png16_16-1.6.34-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64x11_6-1.6.5-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64xcomposite1-0.4.4-8.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64xext6-1.3.3-4.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64xi6-1.7.9-1.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] lib64xrender1-0.9.10-1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64xtst6-1.2.3-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] x11-font-type1-1.0.0-13.mga6.noarch.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lua-5.2.4-2.mga7.x86_64.rpm: Already downloaded                                          
+DEBUG util.py:479:  [SKIPPED] lua-posix-33.3.1-2.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64sctp1-1.0.17-1.mga7.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64edit0-3.1-0.20150325.2.mga6.x86_64.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] openssh-7.6p1-2.mga7.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:479:  [SKIPPED] lib64fontconfig1-2.12.6-1.mga7.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] libalsa-data-1.1.5-1.mga7.noarch.rpm: Already downloaded                                 
+DEBUG util.py:479:  [SKIPPED] lib64xcb1-1.12-2.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] x11-font-bitstream-type1-1.0.3-6.mga6.noarch.rpm: Already downloaded                     
+DEBUG util.py:479:  [SKIPPED] x11-font-xfree86-type1-1.0.4-6.mga6.noarch.rpm: Already downloaded                       
+DEBUG util.py:479:  [SKIPPED] openssl-1.1.0g-1.mga7.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] tcp_wrappers-7.6-47.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64xau6-1.0.8-7.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] lib64xdmcp6-1.1.2-5.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] mkfontdir-1.0.7-8.mga6.noarch.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] mkfontscale-1.1.2-3.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64bsd0-0.8.3-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] lib64fontenc1-1.1.3-2.mga6.x86_64.rpm: Already downloaded                                
+DEBUG util.py:479:  (47/50): git-2.15.1-2.mga7.x86_64.rpm                                33 kB/s |  11 kB     00:00    
+DEBUG util.py:479:  (48/50): git-email-2.15.1-2.mga7.x86_64.rpm                          70 kB/s |  34 kB     00:00    
+DEBUG util.py:479:  (49/50): perl-Git-2.15.1-2.mga7.x86_64.rpm                          109 kB/s |  38 kB     00:00    
+DEBUG util.py:479:  (50/50): git-core-2.15.1-2.mga7.x86_64.rpm                          3.3 MB/s | 6.5 MB     00:01    
+DEBUG util.py:479:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                               3.0 MB/s | 6.5 MB     00:02     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                         1/1 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64                1/1 
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Installing       : lua-5.2.4-2.mga7.x86_64                                                   1/50 
+DEBUG util.py:479:    Running scriptlet: lua-5.2.4-2.mga7.x86_64                                                   1/50 
+DEBUG util.py:479:    Installing       : lib64png16_16-2:1.6.34-1.mga7.x86_64                                      2/50 
+DEBUG util.py:479:    Installing       : lib64freetype6-2.8.1-1.mga7.x86_64                                        3/50 
+DEBUG util.py:479:    Installing       : lib64fontconfig1-2.12.6-1.mga7.x86_64                                     4/50 
+DEBUG util.py:479:    Installing       : fontconfig-2.12.6-1.mga7.x86_64                                           5/50 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                           5/50 
+DEBUG util.py:479:    Installing       : perl-Error-1:0.170.250-2.mga7.noarch                                      6/50 
+DEBUG util.py:479:    Installing       : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                          7/50 
+DEBUG util.py:479:    Installing       : lua-posix-33.3.1-2.mga6.x86_64                                            8/50 
+DEBUG util.py:479:    Installing       : copy-jdk-configs-3.3-3.mga7.noarch                                        9/50 
+DEBUG util.py:479:    Installing       : lib64fontenc1-1.1.3-2.mga6.x86_64                                        10/50 
+DEBUG util.py:479:    Installing       : mkfontscale-1.1.2-3.mga6.x86_64                                          11/50 
+DEBUG util.py:479:    Installing       : mkfontdir-1.0.7-8.mga6.noarch                                            12/50 
+DEBUG util.py:479:    Installing       : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             13/50 
+DEBUG util.py:479:    Running scriptlet: x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             13/50 
+DEBUG util.py:479:    Installing       : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               14/50 
+DEBUG util.py:479:    Running scriptlet: x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               14/50 
+DEBUG util.py:479:    Installing       : x11-font-type1-1.0.0-13.mga6.noarch                                      15/50 
+DEBUG util.py:479:    Installing       : lib64bsd0-0.8.3-1.mga6.x86_64                                            16/50 
+DEBUG util.py:479:    Installing       : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          17/50 
+DEBUG util.py:479:    Installing       : lib64xau6-1.0.8-7.mga6.x86_64                                            18/50 
+DEBUG util.py:479:    Installing       : lib64xcb1-1.12-2.mga6.x86_64                                             19/50 
+DEBUG util.py:479:    Installing       : lib64x11_6-1.6.5-1.mga6.x86_64                                           20/50 
+DEBUG util.py:479:    Running scriptlet: lib64x11_6-1.6.5-1.mga6.x86_64                                           20/50 
+DEBUG util.py:479:    Installing       : lib64xext6-1:1.3.3-4.mga6.x86_64                                         21/50 
+DEBUG util.py:479:    Installing       : lib64xi6-1.7.9-1.mga6.x86_64                                             22/50 
+DEBUG util.py:479:    Installing       : lib64xtst6-1.2.3-1.mga6.x86_64                                           23/50 
+DEBUG util.py:479:    Installing       : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     24/50 
+DEBUG util.py:479:    Installing       : lib64xrender1-0.9.10-1.mga6.x86_64                                       25/50 
+DEBUG util.py:479:    Installing       : tcp_wrappers-7.6-47.mga6.x86_64                                          26/50 
+DEBUG util.py:479:    Installing       : openssl-1.1.0g-1.mga7.x86_64                                             27/50 
+DEBUG util.py:479:    Installing       : openssh-7.6p1-2.mga7.x86_64                                              28/50 
+DEBUG util.py:479:    Installing       : libalsa-data-2:1.1.5-1.mga7.noarch                                       29/50 
+DEBUG util.py:479:    Running scriptlet: libalsa-data-2:1.1.5-1.mga7.noarch                                       29/50 
+DEBUG util.py:479:    Installing       : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         30/50 
+DEBUG util.py:479:    Installing       : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                  31/50 
+DEBUG util.py:479:    Installing       : openssh-clients-7.6p1-2.mga7.x86_64                                      32/50 
+DEBUG util.py:479:    Installing       : lib64sctp1-1.0.17-1.mga7.x86_64                                          33/50 
+DEBUG util.py:479:    Installing       : lksctp-tools-1.0.17-1.mga7.x86_64                                        34/50 
+DEBUG util.py:479:    Installing       : lib64gif7-5.1.4-1.mga6.x86_64                                            35/50 
+DEBUG util.py:479:    Installing       : rsync-3.1.2-3.mga7.x86_64                                                36/50 
+DEBUG util.py:479:    Installing       : perl-DBI-1.639.0-1.mga7.x86_64                                           37/50 
+DEBUG util.py:479:    Installing       : perl-Git-1:2.15.1-2.mga7.x86_64                                          38/50 
+DEBUG util.py:479:    Installing       : git-core-1:2.15.1-2.mga7.x86_64                                          39/50 
+DEBUG util.py:479:    Installing       : git-email-1:2.15.1-2.mga7.x86_64                                         40/50 
+DEBUG util.py:479:    Installing       : timezone-java-6:2017b-1.mga6.noarch                                      41/50 
+DEBUG util.py:479:    Installing       : rootcerts-java-1:20171122.00-1.mga7.noarch                               42/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64              43/50 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64              43/50 
+DEBUG util.py:479:    Installing       : javapackages-tools-5.0.0-3.mga7.noarch                                   44/50 
+DEBUG util.py:479:    Installing       : ant-lib-1.10.1-1.mga7.noarch                                             45/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-1:1.8.0.151-1.b12.1.mga7.x86_64                       46/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                 47/50 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                 47/50 
+DEBUG util.py:479:    Installing       : ant-1.10.1-1.mga7.noarch                                                 48/50 
+DEBUG util.py:479:    Installing       : jcommon-1.0.23-6.mga6.noarch                                             49/50 
+DEBUG util.py:479:    Installing       : git-1:2.15.1-2.mga7.x86_64                                               50/50 
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                       50/50 
+DEBUG util.py:479:    Running scriptlet: git-1:2.15.1-2.mga7.x86_64                                               50/50 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                          50/50 
+DEBUG util.py:479:    Verifying        : ant-1.10.1-1.mga7.noarch                                                  1/50 
+DEBUG util.py:479:    Verifying        : ant-lib-1.10.1-1.mga7.noarch                                              2/50 
+DEBUG util.py:479:    Verifying        : git-1:2.15.1-2.mga7.x86_64                                                3/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                  4/50 
+DEBUG util.py:479:    Verifying        : jcommon-1.0.23-6.mga6.noarch                                              5/50 
+DEBUG util.py:479:    Verifying        : javapackages-tools-5.0.0-3.mga7.noarch                                    6/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64               7/50 
+DEBUG util.py:479:    Verifying        : git-core-1:2.15.1-2.mga7.x86_64                                           8/50 
+DEBUG util.py:479:    Verifying        : git-email-1:2.15.1-2.mga7.x86_64                                          9/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-1:1.8.0.151-1.b12.1.mga7.x86_64                       10/50 
+DEBUG util.py:479:    Verifying        : copy-jdk-configs-3.3-3.mga7.noarch                                       11/50 
+DEBUG util.py:479:    Verifying        : lib64freetype6-2.8.1-1.mga7.x86_64                                       12/50 
+DEBUG util.py:479:    Verifying        : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                         13/50 
+DEBUG util.py:479:    Verifying        : lksctp-tools-1.0.17-1.mga7.x86_64                                        14/50 
+DEBUG util.py:479:    Verifying        : rootcerts-java-1:20171122.00-1.mga7.noarch                               15/50 
+DEBUG util.py:479:    Verifying        : timezone-java-6:2017b-1.mga6.noarch                                      16/50 
+DEBUG util.py:479:    Verifying        : openssh-clients-7.6p1-2.mga7.x86_64                                      17/50 
+DEBUG util.py:479:    Verifying        : perl-DBI-1.639.0-1.mga7.x86_64                                           18/50 
+DEBUG util.py:479:    Verifying        : perl-Git-1:2.15.1-2.mga7.x86_64                                          19/50 
+DEBUG util.py:479:    Verifying        : rsync-3.1.2-3.mga7.x86_64                                                20/50 
+DEBUG util.py:479:    Verifying        : perl-Error-1:0.170.250-2.mga7.noarch                                     21/50 
+DEBUG util.py:479:    Verifying        : fontconfig-2.12.6-1.mga7.x86_64                                          22/50 
+DEBUG util.py:479:    Verifying        : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         23/50 
+DEBUG util.py:479:    Verifying        : lib64gif7-5.1.4-1.mga6.x86_64                                            24/50 
+DEBUG util.py:479:    Verifying        : lib64png16_16-2:1.6.34-1.mga7.x86_64                                     25/50 
+DEBUG util.py:479:    Verifying        : lib64x11_6-1.6.5-1.mga6.x86_64                                           26/50 
+DEBUG util.py:479:    Verifying        : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     27/50 
+DEBUG util.py:479:    Verifying        : lib64xext6-1:1.3.3-4.mga6.x86_64                                         28/50 
+DEBUG util.py:479:    Verifying        : lib64xi6-1.7.9-1.mga6.x86_64                                             29/50 
+DEBUG util.py:479:    Verifying        : lib64xrender1-0.9.10-1.mga6.x86_64                                       30/50 
+DEBUG util.py:479:    Verifying        : lib64xtst6-1.2.3-1.mga6.x86_64                                           31/50 
+DEBUG util.py:479:    Verifying        : x11-font-type1-1.0.0-13.mga6.noarch                                      32/50 
+DEBUG util.py:479:    Verifying        : lua-5.2.4-2.mga7.x86_64                                                  33/50 
+DEBUG util.py:479:    Verifying        : lua-posix-33.3.1-2.mga6.x86_64                                           34/50 
+DEBUG util.py:479:    Verifying        : lib64sctp1-1.0.17-1.mga7.x86_64                                          35/50 
+DEBUG util.py:479:    Verifying        : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                  36/50 
+DEBUG util.py:479:    Verifying        : openssh-7.6p1-2.mga7.x86_64                                              37/50 
+DEBUG util.py:479:    Verifying        : lib64fontconfig1-2.12.6-1.mga7.x86_64                                    38/50 
+DEBUG util.py:479:    Verifying        : libalsa-data-2:1.1.5-1.mga7.noarch                                       39/50 
+DEBUG util.py:479:    Verifying        : lib64xcb1-1.12-2.mga6.x86_64                                             40/50 
+DEBUG util.py:479:    Verifying        : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             41/50 
+DEBUG util.py:479:    Verifying        : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               42/50 
+DEBUG util.py:479:    Verifying        : openssl-1.1.0g-1.mga7.x86_64                                             43/50 
+DEBUG util.py:479:    Verifying        : tcp_wrappers-7.6-47.mga6.x86_64                                          44/50 
+DEBUG util.py:479:    Verifying        : lib64xau6-1.0.8-7.mga6.x86_64                                            45/50 
+DEBUG util.py:479:    Verifying        : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          46/50 
+DEBUG util.py:479:    Verifying        : mkfontdir-1.0.7-8.mga6.noarch                                            47/50 
+DEBUG util.py:479:    Verifying        : mkfontscale-1.1.2-3.mga6.x86_64                                          48/50 
+DEBUG util.py:479:    Verifying        : lib64bsd0-0.8.3-1.mga6.x86_64                                            49/50 
+DEBUG util.py:479:    Verifying        : lib64fontenc1-1.1.3-2.mga6.x86_64                                        50/50 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    ant.noarch 1.10.1-1.mga7                                                                          
+DEBUG util.py:479:    ant-lib.noarch 1.10.1-1.mga7                                                                      
+DEBUG util.py:479:    git.x86_64 1:2.15.1-2.mga7                                                                        
+DEBUG util.py:479:    java-1.8.0-openjdk-devel.x86_64 1:1.8.0.151-1.b12.1.mga7                                          
+DEBUG util.py:479:    javapackages-tools.noarch 5.0.0-3.mga7                                                            
+DEBUG util.py:479:    jcommon.noarch 1.0.23-6.mga6                                                                      
+DEBUG util.py:479:    copy-jdk-configs.noarch 3.3-3.mga7                                                                
+DEBUG util.py:479:    fontconfig.x86_64 2.12.6-1.mga7                                                                   
+DEBUG util.py:479:    git-core.x86_64 1:2.15.1-2.mga7                                                                   
+DEBUG util.py:479:    git-email.x86_64 1:2.15.1-2.mga7                                                                  
+DEBUG util.py:479:    java-1.8.0-openjdk.x86_64 1:1.8.0.151-1.b12.1.mga7                                                
+DEBUG util.py:479:    java-1.8.0-openjdk-headless.x86_64 1:1.8.0.151-1.b12.1.mga7                                       
+DEBUG util.py:479:    lib64alsa2.x86_64 2:1.1.5-1.mga7                                                                  
+DEBUG util.py:479:    lib64bsd0.x86_64 0.8.3-1.mga6                                                                     
+DEBUG util.py:479:    lib64edit0.x86_64 3.1-0.20150325.2.mga6                                                           
+DEBUG util.py:479:    lib64fontconfig1.x86_64 2.12.6-1.mga7                                                             
+DEBUG util.py:479:    lib64fontenc1.x86_64 1.1.3-2.mga6                                                                 
+DEBUG util.py:479:    lib64freetype6.x86_64 2.8.1-1.mga7                                                                
+DEBUG util.py:479:    lib64gif7.x86_64 5.1.4-1.mga6                                                                     
+DEBUG util.py:479:    lib64jpeg8.x86_64 1:1.5.3-1.mga7                                                                  
+DEBUG util.py:479:    lib64png16_16.x86_64 2:1.6.34-1.mga7                                                              
+DEBUG util.py:479:    lib64sctp1.x86_64 1.0.17-1.mga7                                                                   
+DEBUG util.py:479:    lib64x11_6.x86_64 1.6.5-1.mga6                                                                    
+DEBUG util.py:479:    lib64xau6.x86_64 1.0.8-7.mga6                                                                     
+DEBUG util.py:479:    lib64xcb1.x86_64 1.12-2.mga6                                                                      
+DEBUG util.py:479:    lib64xcomposite1.x86_64 0.4.4-8.mga6                                                              
+DEBUG util.py:479:    lib64xdmcp6.x86_64 1.1.2-5.mga6                                                                   
+DEBUG util.py:479:    lib64xext6.x86_64 1:1.3.3-4.mga6                                                                  
+DEBUG util.py:479:    lib64xi6.x86_64 1.7.9-1.mga6                                                                      
+DEBUG util.py:479:    lib64xrender1.x86_64 0.9.10-1.mga6                                                                
+DEBUG util.py:479:    lib64xtst6.x86_64 1.2.3-1.mga6                                                                    
+DEBUG util.py:479:    libalsa-data.noarch 2:1.1.5-1.mga7                                                                
+DEBUG util.py:479:    lksctp-tools.x86_64 1.0.17-1.mga7                                                                 
+DEBUG util.py:479:    lua.x86_64 5.2.4-2.mga7                                                                           
+DEBUG util.py:479:    lua-posix.x86_64 33.3.1-2.mga6                                                                    
+DEBUG util.py:479:    mkfontdir.noarch 1.0.7-8.mga6                                                                     
+DEBUG util.py:479:    mkfontscale.x86_64 1.1.2-3.mga6                                                                   
+DEBUG util.py:479:    openssh.x86_64 7.6p1-2.mga7                                                                       
+DEBUG util.py:479:    openssh-clients.x86_64 7.6p1-2.mga7                                                               
+DEBUG util.py:479:    openssl.x86_64 1.1.0g-1.mga7                                                                      
+DEBUG util.py:479:    perl-DBI.x86_64 1.639.0-1.mga7                                                                    
+DEBUG util.py:479:    perl-Error.noarch 1:0.170.250-2.mga7                                                              
+DEBUG util.py:479:    perl-Git.x86_64 1:2.15.1-2.mga7                                                                   
+DEBUG util.py:479:    rootcerts-java.noarch 1:20171122.00-1.mga7                                                        
+DEBUG util.py:479:    rsync.x86_64 3.1.2-3.mga7                                                                         
+DEBUG util.py:479:    tcp_wrappers.x86_64 7.6-47.mga6                                                                   
+DEBUG util.py:479:    timezone-java.noarch 6:2017b-1.mga6                                                               
+DEBUG util.py:479:    x11-font-bitstream-type1.noarch 1.0.3-6.mga6                                                      
+DEBUG util.py:479:    x11-font-type1.noarch 1.0.0-13.mga6                                                               
+DEBUG util.py:479:    x11-font-xfree86-type1.noarch 1.0.4-6.mga6                                                        
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-cauldron-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock/installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5c0f6a0826604797aff20b9c0a2bd808', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b79517113e2f4427b670ccc4dd8058ce', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'eac3be9ed66c4d929cea84f20b058ffe', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0a9ac244730a4a808c7af886899318b8', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4421b25279b44c04a072880b3552fc72', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  gwt-2.8.2-1.mga7                      warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '690a4e813a5c4993b7f507acf145ab3d', '-D', '/var/lib/mock/mageia-cauldron-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  gwt-2.6.1.pom
+DEBUG util.py:479:  gwt-2.8.2.tar.gz
+DEBUG util.py:479:  gwt-codeserver-2.6.1.pom
+DEBUG util.py:479:  gwt-dev-2.6.1.pom
+DEBUG util.py:479:  gwt-servlet-2.6.1.pom
+DEBUG util.py:479:  gwt-tools.tar.xz
+DEBUG util.py:479:  gwt-user-2.6.1.pom
+DEBUG util.py:479:  gwt.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '/var/lib/mock/mageia-cauldron-x86_64/root//builddir/build/SRPMS/gwt-2.8.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 1:07:34 ago on Thu 18 Jan 2018 08:48:13 PM CET.
+DEBUG util.py:479:  Package gcc-7.3.0-0.rc.20180117.1.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package python3-3.6.2-4.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                         Arch       Version                       Repository           Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   ant                             noarch     1.10.1-1.mga7                 mageia-cauldron     154 k
+DEBUG util.py:479:   ant-lib                         noarch     1.10.1-1.mga7                 mageia-cauldron     1.9 M
+DEBUG util.py:479:   git                             x86_64     1:2.15.1-2.mga7               mageia-cauldron      11 k
+DEBUG util.py:479:   java-1.8.0-openjdk-devel        x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron     8.8 M
+DEBUG util.py:479:   javapackages-tools              noarch     5.0.0-3.mga7                  mageia-cauldron      34 k
+DEBUG util.py:479:   jcommon                         noarch     1.0.23-6.mga6                 mageia-cauldron     319 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   copy-jdk-configs                noarch     3.3-3.mga7                    mageia-cauldron      24 k
+DEBUG util.py:479:   fontconfig                      x86_64     2.12.6-1.mga7                 mageia-cauldron     111 k
+DEBUG util.py:479:   git-core                        x86_64     1:2.15.1-2.mga7               mageia-cauldron     6.5 M
+DEBUG util.py:479:   git-email                       x86_64     1:2.15.1-2.mga7               mageia-cauldron      34 k
+DEBUG util.py:479:   java-1.8.0-openjdk              x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron     194 k
+DEBUG util.py:479:   java-1.8.0-openjdk-headless     x86_64     1:1.8.0.151-1.b12.1.mga7      mageia-cauldron      28 M
+DEBUG util.py:479:   lib64alsa2                      x86_64     2:1.1.5-1.mga7                mageia-cauldron     393 k
+DEBUG util.py:479:   lib64bsd0                       x86_64     0.8.3-1.mga6                  mageia-cauldron      42 k
+DEBUG util.py:479:   lib64edit0                      x86_64     3.1-0.20150325.2.mga6         mageia-cauldron      83 k
+DEBUG util.py:479:   lib64fontconfig1                x86_64     2.12.6-1.mga7                 mageia-cauldron     117 k
+DEBUG util.py:479:   lib64fontenc1                   x86_64     1.1.3-2.mga6                  mageia-cauldron      18 k
+DEBUG util.py:479:   lib64freetype6                  x86_64     2.8.1-1.mga7                  mageia-cauldron     299 k
+DEBUG util.py:479:   lib64gif7                       x86_64     5.1.4-1.mga6                  mageia-cauldron      44 k
+DEBUG util.py:479:   lib64jpeg8                      x86_64     1:1.5.3-1.mga7                mageia-cauldron     185 k
+DEBUG util.py:479:   lib64png16_16                   x86_64     2:1.6.34-1.mga7               mageia-cauldron     175 k
+DEBUG util.py:479:   lib64sctp1                      x86_64     1.0.17-1.mga7                 mageia-cauldron      44 k
+DEBUG util.py:479:   lib64x11_6                      x86_64     1.6.5-1.mga6                  mageia-cauldron     562 k
+DEBUG util.py:479:   lib64xau6                       x86_64     1.0.8-7.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xcb1                       x86_64     1.12-2.mga6                   mageia-cauldron      45 k
+DEBUG util.py:479:   lib64xcomposite1                x86_64     0.4.4-8.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xdmcp6                     x86_64     1.1.2-5.mga6                  mageia-cauldron      15 k
+DEBUG util.py:479:   lib64xext6                      x86_64     1:1.3.3-4.mga6                mageia-cauldron      55 k
+DEBUG util.py:479:   lib64xi6                        x86_64     1.7.9-1.mga6                  mageia-cauldron      32 k
+DEBUG util.py:479:   lib64xrender1                   x86_64     0.9.10-1.mga6                 mageia-cauldron      22 k
+DEBUG util.py:479:   lib64xtst6                      x86_64     1.2.3-1.mga6                  mageia-cauldron      16 k
+DEBUG util.py:479:   libalsa-data                    noarch     2:1.1.5-1.mga7                mageia-cauldron      62 k
+DEBUG util.py:479:   lksctp-tools                    x86_64     1.0.17-1.mga7                 mageia-cauldron      45 k
+DEBUG util.py:479:   lua                             x86_64     5.2.4-2.mga7                  mageia-cauldron     192 k
+DEBUG util.py:479:   lua-posix                       x86_64     33.3.1-2.mga6                 mageia-cauldron     165 k
+DEBUG util.py:479:   mkfontdir                       noarch     1.0.7-8.mga6                  mageia-cauldron     7.2 k
+DEBUG util.py:479:   mkfontscale                     x86_64     1.1.2-3.mga6                  mageia-cauldron      24 k
+DEBUG util.py:479:   openssh                         x86_64     7.6p1-2.mga7                  mageia-cauldron     428 k
+DEBUG util.py:479:   openssh-clients                 x86_64     7.6p1-2.mga7                  mageia-cauldron     456 k
+DEBUG util.py:479:   openssl                         x86_64     1.1.0g-1.mga7                 mageia-cauldron     432 k
+DEBUG util.py:479:   perl-DBI                        x86_64     1.639.0-1.mga7                mageia-cauldron     634 k
+DEBUG util.py:479:   perl-Error                      noarch     1:0.170.250-2.mga7            mageia-cauldron      36 k
+DEBUG util.py:479:   perl-Git                        x86_64     1:2.15.1-2.mga7               mageia-cauldron      38 k
+DEBUG util.py:479:   rootcerts-java                  noarch     1:20171122.00-1.mga7          mageia-cauldron     133 k
+DEBUG util.py:479:   rsync                           x86_64     3.1.2-3.mga7                  mageia-cauldron     399 k
+DEBUG util.py:479:   tcp_wrappers                    x86_64     7.6-47.mga6                   mageia-cauldron      89 k
+DEBUG util.py:479:   timezone-java                   noarch     6:2017b-1.mga6                mageia-cauldron     145 k
+DEBUG util.py:479:   x11-font-bitstream-type1        noarch     1.0.3-6.mga6                  mageia-cauldron     308 k
+DEBUG util.py:479:   x11-font-type1                  noarch     1.0.0-13.mga6                 mageia-cauldron     6.1 k
+DEBUG util.py:479:   x11-font-xfree86-type1          noarch     1.0.4-6.mga6                  mageia-cauldron      36 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  50 Packages
+DEBUG util.py:479:  Total size: 52 M
+DEBUG util.py:479:  Installed size: 200 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                         1/1 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64                1/1 
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Installing       : lua-5.2.4-2.mga7.x86_64                                                   1/50 
+DEBUG util.py:479:    Running scriptlet: lua-5.2.4-2.mga7.x86_64                                                   1/50 
+DEBUG util.py:479:    Installing       : lib64png16_16-2:1.6.34-1.mga7.x86_64                                      2/50 
+DEBUG util.py:479:    Installing       : lib64freetype6-2.8.1-1.mga7.x86_64                                        3/50 
+DEBUG util.py:479:    Installing       : lib64fontconfig1-2.12.6-1.mga7.x86_64                                     4/50 
+DEBUG util.py:479:    Installing       : fontconfig-2.12.6-1.mga7.x86_64                                           5/50 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                           5/50 
+DEBUG util.py:479:    Installing       : perl-Error-1:0.170.250-2.mga7.noarch                                      6/50 
+DEBUG util.py:479:    Installing       : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                          7/50 
+DEBUG util.py:479:    Installing       : lua-posix-33.3.1-2.mga6.x86_64                                            8/50 
+DEBUG util.py:479:    Installing       : copy-jdk-configs-3.3-3.mga7.noarch                                        9/50 
+DEBUG util.py:479:    Installing       : lib64fontenc1-1.1.3-2.mga6.x86_64                                        10/50 
+DEBUG util.py:479:    Installing       : mkfontscale-1.1.2-3.mga6.x86_64                                          11/50 
+DEBUG util.py:479:    Installing       : mkfontdir-1.0.7-8.mga6.noarch                                            12/50 
+DEBUG util.py:479:    Installing       : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             13/50 
+DEBUG util.py:479:    Running scriptlet: x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             13/50 
+DEBUG util.py:479:    Installing       : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               14/50 
+DEBUG util.py:479:    Running scriptlet: x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               14/50 
+DEBUG util.py:479:    Installing       : x11-font-type1-1.0.0-13.mga6.noarch                                      15/50 
+DEBUG util.py:479:    Installing       : lib64bsd0-0.8.3-1.mga6.x86_64                                            16/50 
+DEBUG util.py:479:    Installing       : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          17/50 
+DEBUG util.py:479:    Installing       : lib64xau6-1.0.8-7.mga6.x86_64                                            18/50 
+DEBUG util.py:479:    Installing       : lib64xcb1-1.12-2.mga6.x86_64                                             19/50 
+DEBUG util.py:479:    Installing       : lib64x11_6-1.6.5-1.mga6.x86_64                                           20/50 
+DEBUG util.py:479:    Running scriptlet: lib64x11_6-1.6.5-1.mga6.x86_64                                           20/50 
+DEBUG util.py:479:    Installing       : lib64xext6-1:1.3.3-4.mga6.x86_64                                         21/50 
+DEBUG util.py:479:    Installing       : lib64xi6-1.7.9-1.mga6.x86_64                                             22/50 
+DEBUG util.py:479:    Installing       : lib64xtst6-1.2.3-1.mga6.x86_64                                           23/50 
+DEBUG util.py:479:    Installing       : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     24/50 
+DEBUG util.py:479:    Installing       : lib64xrender1-0.9.10-1.mga6.x86_64                                       25/50 
+DEBUG util.py:479:    Installing       : tcp_wrappers-7.6-47.mga6.x86_64                                          26/50 
+DEBUG util.py:479:    Installing       : openssl-1.1.0g-1.mga7.x86_64                                             27/50 
+DEBUG util.py:479:    Installing       : openssh-7.6p1-2.mga7.x86_64                                              28/50 
+DEBUG util.py:479:    Installing       : libalsa-data-2:1.1.5-1.mga7.noarch                                       29/50 
+DEBUG util.py:479:    Running scriptlet: libalsa-data-2:1.1.5-1.mga7.noarch                                       29/50 
+DEBUG util.py:479:    Installing       : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         30/50 
+DEBUG util.py:479:    Installing       : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                  31/50 
+DEBUG util.py:479:    Installing       : openssh-clients-7.6p1-2.mga7.x86_64                                      32/50 
+DEBUG util.py:479:    Installing       : lib64sctp1-1.0.17-1.mga7.x86_64                                          33/50 
+DEBUG util.py:479:    Installing       : lksctp-tools-1.0.17-1.mga7.x86_64                                        34/50 
+DEBUG util.py:479:    Installing       : lib64gif7-5.1.4-1.mga6.x86_64                                            35/50 
+DEBUG util.py:479:    Installing       : rsync-3.1.2-3.mga7.x86_64                                                36/50 
+DEBUG util.py:479:    Installing       : perl-DBI-1.639.0-1.mga7.x86_64                                           37/50 
+DEBUG util.py:479:    Installing       : perl-Git-1:2.15.1-2.mga7.x86_64                                          38/50 
+DEBUG util.py:479:    Installing       : git-core-1:2.15.1-2.mga7.x86_64                                          39/50 
+DEBUG util.py:479:    Installing       : git-email-1:2.15.1-2.mga7.x86_64                                         40/50 
+DEBUG util.py:479:    Installing       : timezone-java-6:2017b-1.mga6.noarch                                      41/50 
+DEBUG util.py:479:    Installing       : rootcerts-java-1:20171122.00-1.mga7.noarch                               42/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64              43/50 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64              43/50 
+DEBUG util.py:479:    Installing       : javapackages-tools-5.0.0-3.mga7.noarch                                   44/50 
+DEBUG util.py:479:    Installing       : ant-lib-1.10.1-1.mga7.noarch                                             45/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-1:1.8.0.151-1.b12.1.mga7.x86_64                       46/50 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                 47/50 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                 47/50 
+DEBUG util.py:479:    Installing       : ant-1.10.1-1.mga7.noarch                                                 48/50 
+DEBUG util.py:479:    Installing       : jcommon-1.0.23-6.mga6.noarch                                             49/50 
+DEBUG util.py:479:    Installing       : git-1:2.15.1-2.mga7.x86_64                                               50/50 
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                       50/50 
+DEBUG util.py:479:    Running scriptlet: git-1:2.15.1-2.mga7.x86_64                                               50/50 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                          50/50 
+DEBUG util.py:479:    Verifying        : ant-1.10.1-1.mga7.noarch                                                  1/50 
+DEBUG util.py:479:    Verifying        : ant-lib-1.10.1-1.mga7.noarch                                              2/50 
+DEBUG util.py:479:    Verifying        : git-1:2.15.1-2.mga7.x86_64                                                3/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-devel-1:1.8.0.151-1.b12.1.mga7.x86_64                  4/50 
+DEBUG util.py:479:    Verifying        : jcommon-1.0.23-6.mga6.noarch                                              5/50 
+DEBUG util.py:479:    Verifying        : javapackages-tools-5.0.0-3.mga7.noarch                                    6/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-headless-1:1.8.0.151-1.b12.1.mga7.x86_64               7/50 
+DEBUG util.py:479:    Verifying        : git-core-1:2.15.1-2.mga7.x86_64                                           8/50 
+DEBUG util.py:479:    Verifying        : git-email-1:2.15.1-2.mga7.x86_64                                          9/50 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-1:1.8.0.151-1.b12.1.mga7.x86_64                       10/50 
+DEBUG util.py:479:    Verifying        : copy-jdk-configs-3.3-3.mga7.noarch                                       11/50 
+DEBUG util.py:479:    Verifying        : lib64freetype6-2.8.1-1.mga7.x86_64                                       12/50 
+DEBUG util.py:479:    Verifying        : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                         13/50 
+DEBUG util.py:479:    Verifying        : lksctp-tools-1.0.17-1.mga7.x86_64                                        14/50 
+DEBUG util.py:479:    Verifying        : rootcerts-java-1:20171122.00-1.mga7.noarch                               15/50 
+DEBUG util.py:479:    Verifying        : timezone-java-6:2017b-1.mga6.noarch                                      16/50 
+DEBUG util.py:479:    Verifying        : openssh-clients-7.6p1-2.mga7.x86_64                                      17/50 
+DEBUG util.py:479:    Verifying        : perl-DBI-1.639.0-1.mga7.x86_64                                           18/50 
+DEBUG util.py:479:    Verifying        : perl-Git-1:2.15.1-2.mga7.x86_64                                          19/50 
+DEBUG util.py:479:    Verifying        : rsync-3.1.2-3.mga7.x86_64                                                20/50 
+DEBUG util.py:479:    Verifying        : perl-Error-1:0.170.250-2.mga7.noarch                                     21/50 
+DEBUG util.py:479:    Verifying        : fontconfig-2.12.6-1.mga7.x86_64                                          22/50 
+DEBUG util.py:479:    Verifying        : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         23/50 
+DEBUG util.py:479:    Verifying        : lib64gif7-5.1.4-1.mga6.x86_64                                            24/50 
+DEBUG util.py:479:    Verifying        : lib64png16_16-2:1.6.34-1.mga7.x86_64                                     25/50 
+DEBUG util.py:479:    Verifying        : lib64x11_6-1.6.5-1.mga6.x86_64                                           26/50 
+DEBUG util.py:479:    Verifying        : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     27/50 
+DEBUG util.py:479:    Verifying        : lib64xext6-1:1.3.3-4.mga6.x86_64                                         28/50 
+DEBUG util.py:479:    Verifying        : lib64xi6-1.7.9-1.mga6.x86_64                                             29/50 
+DEBUG util.py:479:    Verifying        : lib64xrender1-0.9.10-1.mga6.x86_64                                       30/50 
+DEBUG util.py:479:    Verifying        : lib64xtst6-1.2.3-1.mga6.x86_64                                           31/50 
+DEBUG util.py:479:    Verifying        : x11-font-type1-1.0.0-13.mga6.noarch                                      32/50 
+DEBUG util.py:479:    Verifying        : lua-5.2.4-2.mga7.x86_64                                                  33/50 
+DEBUG util.py:479:    Verifying        : lua-posix-33.3.1-2.mga6.x86_64                                           34/50 
+DEBUG util.py:479:    Verifying        : lib64sctp1-1.0.17-1.mga7.x86_64                                          35/50 
+DEBUG util.py:479:    Verifying        : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                  36/50 
+DEBUG util.py:479:    Verifying        : openssh-7.6p1-2.mga7.x86_64                                              37/50 
+DEBUG util.py:479:    Verifying        : lib64fontconfig1-2.12.6-1.mga7.x86_64                                    38/50 
+DEBUG util.py:479:    Verifying        : libalsa-data-2:1.1.5-1.mga7.noarch                                       39/50 
+DEBUG util.py:479:    Verifying        : lib64xcb1-1.12-2.mga6.x86_64                                             40/50 
+DEBUG util.py:479:    Verifying        : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             41/50 
+DEBUG util.py:479:    Verifying        : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               42/50 
+DEBUG util.py:479:    Verifying        : openssl-1.1.0g-1.mga7.x86_64                                             43/50 
+DEBUG util.py:479:    Verifying        : tcp_wrappers-7.6-47.mga6.x86_64                                          44/50 
+DEBUG util.py:479:    Verifying        : lib64xau6-1.0.8-7.mga6.x86_64                                            45/50 
+DEBUG util.py:479:    Verifying        : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          46/50 
+DEBUG util.py:479:    Verifying        : mkfontdir-1.0.7-8.mga6.noarch                                            47/50 
+DEBUG util.py:479:    Verifying        : mkfontscale-1.1.2-3.mga6.x86_64                                          48/50 
+DEBUG util.py:479:    Verifying        : lib64bsd0-0.8.3-1.mga6.x86_64                                            49/50 
+DEBUG util.py:479:    Verifying        : lib64fontenc1-1.1.3-2.mga6.x86_64                                        50/50 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    ant.noarch 1.10.1-1.mga7                                                                          
+DEBUG util.py:479:    ant-lib.noarch 1.10.1-1.mga7                                                                      
+DEBUG util.py:479:    git.x86_64 1:2.15.1-2.mga7                                                                        
+DEBUG util.py:479:    java-1.8.0-openjdk-devel.x86_64 1:1.8.0.151-1.b12.1.mga7                                          
+DEBUG util.py:479:    javapackages-tools.noarch 5.0.0-3.mga7                                                            
+DEBUG util.py:479:    jcommon.noarch 1.0.23-6.mga6                                                                      
+DEBUG util.py:479:    copy-jdk-configs.noarch 3.3-3.mga7                                                                
+DEBUG util.py:479:    fontconfig.x86_64 2.12.6-1.mga7                                                                   
+DEBUG util.py:479:    git-core.x86_64 1:2.15.1-2.mga7                                                                   
+DEBUG util.py:479:    git-email.x86_64 1:2.15.1-2.mga7                                                                  
+DEBUG util.py:479:    java-1.8.0-openjdk.x86_64 1:1.8.0.151-1.b12.1.mga7                                                
+DEBUG util.py:479:    java-1.8.0-openjdk-headless.x86_64 1:1.8.0.151-1.b12.1.mga7                                       
+DEBUG util.py:479:    lib64alsa2.x86_64 2:1.1.5-1.mga7                                                                  
+DEBUG util.py:479:    lib64bsd0.x86_64 0.8.3-1.mga6                                                                     
+DEBUG util.py:479:    lib64edit0.x86_64 3.1-0.20150325.2.mga6                                                           
+DEBUG util.py:479:    lib64fontconfig1.x86_64 2.12.6-1.mga7                                                             
+DEBUG util.py:479:    lib64fontenc1.x86_64 1.1.3-2.mga6                                                                 
+DEBUG util.py:479:    lib64freetype6.x86_64 2.8.1-1.mga7                                                                
+DEBUG util.py:479:    lib64gif7.x86_64 5.1.4-1.mga6                                                                     
+DEBUG util.py:479:    lib64jpeg8.x86_64 1:1.5.3-1.mga7                                                                  
+DEBUG util.py:479:    lib64png16_16.x86_64 2:1.6.34-1.mga7                                                              
+DEBUG util.py:479:    lib64sctp1.x86_64 1.0.17-1.mga7                                                                   
+DEBUG util.py:479:    lib64x11_6.x86_64 1.6.5-1.mga6                                                                    
+DEBUG util.py:479:    lib64xau6.x86_64 1.0.8-7.mga6                                                                     
+DEBUG util.py:479:    lib64xcb1.x86_64 1.12-2.mga6                                                                      
+DEBUG util.py:479:    lib64xcomposite1.x86_64 0.4.4-8.mga6                                                              
+DEBUG util.py:479:    lib64xdmcp6.x86_64 1.1.2-5.mga6                                                                   
+DEBUG util.py:479:    lib64xext6.x86_64 1:1.3.3-4.mga6                                                                  
+DEBUG util.py:479:    lib64xi6.x86_64 1.7.9-1.mga6                                                                      
+DEBUG util.py:479:    lib64xrender1.x86_64 0.9.10-1.mga6                                                                
+DEBUG util.py:479:    lib64xtst6.x86_64 1.2.3-1.mga6                                                                    
+DEBUG util.py:479:    libalsa-data.noarch 2:1.1.5-1.mga7                                                                
+DEBUG util.py:479:    lksctp-tools.x86_64 1.0.17-1.mga7                                                                 
+DEBUG util.py:479:    lua.x86_64 5.2.4-2.mga7                                                                           
+DEBUG util.py:479:    lua-posix.x86_64 33.3.1-2.mga6                                                                    
+DEBUG util.py:479:    mkfontdir.noarch 1.0.7-8.mga6                                                                     
+DEBUG util.py:479:    mkfontscale.x86_64 1.1.2-3.mga6                                                                   
+DEBUG util.py:479:    openssh.x86_64 7.6p1-2.mga7                                                                       
+DEBUG util.py:479:    openssh-clients.x86_64 7.6p1-2.mga7                                                               
+DEBUG util.py:479:    openssl.x86_64 1.1.0g-1.mga7                                                                      
+DEBUG util.py:479:    perl-DBI.x86_64 1.639.0-1.mga7                                                                    
+DEBUG util.py:479:    perl-Error.noarch 1:0.170.250-2.mga7                                                              
+DEBUG util.py:479:    perl-Git.x86_64 1:2.15.1-2.mga7                                                                   
+DEBUG util.py:479:    rootcerts-java.noarch 1:20171122.00-1.mga7                                                        
+DEBUG util.py:479:    rsync.x86_64 3.1.2-3.mga7                                                                         
+DEBUG util.py:479:    tcp_wrappers.x86_64 7.6-47.mga6                                                                   
+DEBUG util.py:479:    timezone-java.noarch 6:2017b-1.mga6                                                               
+DEBUG util.py:479:    x11-font-bitstream-type1.noarch 1.0.3-6.mga6                                                      
+DEBUG util.py:479:    x11-font-type1.noarch 1.0.0-13.mga6                                                               
+DEBUG util.py:479:    x11-font-xfree86-type1.noarch 1.0.4-6.mga6                                                        
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/var/lib/mock/mageia-cauldron-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./mock//installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
