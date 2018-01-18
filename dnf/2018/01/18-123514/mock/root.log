@@ -1,0 +1,854 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4a52a19d01ce40c896f67511bd8b60fe', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '203b754d5bcc4e699336614265d7f3fa', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '46313e37b3b74e7d8adbb43bcb1d7e7c', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '1cc6bc3fee704242bc9cc8326bbe3bc5', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7ef0bb96b1d14d8f950e0f0eaf11a499', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/dnf-2.7.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  dnf-2.7.5-2.mga7                      warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a117125aae3542019db25cfc457eee8f', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/dnf-2.7.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  1001-Disable-the-dnf-makecache-timer-for-Mageia-live-envi.patch
+DEBUG util.py:479:  1002-Run-the-makecache-service-timer-only-if-the-DNF-cach.patch
+DEBUG util.py:479:  dnf-2.7.5.tar.gz
+DEBUG util.py:479:  dnf.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/dnf-2.7.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/dnf-2.7.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 2 days, 11:59:47 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package gettext-0.19.8.1-1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package python2-rpm-1:4.13.0.2-3.1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                                  Arch        Version                    Repository    Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   cmake                                    x86_64      1:3.7.2-3.mga6             mageia       4.2 M
+DEBUG util.py:479:   git-core                                 x86_64      1:2.13.6-1.1.mga6          updates      6.2 M
+DEBUG util.py:479:   lib64python-devel                        x86_64      2.7.13-1.1.mga6            updates      2.1 M
+DEBUG util.py:479:   lib64python3-devel                       x86_64      3.5.3-1.1.mga6             updates      154 k
+DEBUG util.py:479:   python-iniparse                          noarch      0.4-14.mga6                mageia        40 k
+DEBUG util.py:479:   python-lzma                              x86_64      0.5.3-9.mga6               mageia        51 k
+DEBUG util.py:479:   python-nose                              noarch      1.3.7-4.mga6               mageia       249 k
+DEBUG util.py:479:   python-sphinx                            noarch      1.4.9-1.mga6               mageia       1.3 M
+DEBUG util.py:479:   python-sphinx_rtd_theme                  noarch      0.1.9-1.mga6               mageia       536 k
+DEBUG util.py:479:   python2-bugzilla                         noarch      1.2.2-4.mga6               mageia        65 k
+DEBUG util.py:479:   python2-gpg                              x86_64      1.8.0-11.mga6              mageia       168 k
+DEBUG util.py:479:   python2-hawkey                           x86_64      0.11.1-1.mga6              updates       51 k
+DEBUG util.py:479:   python2-libcomps                         x86_64      0.1.8-2.mga6               mageia        42 k
+DEBUG util.py:479:   python2-librepo                          x86_64      1.7.20-2.mga6              mageia        40 k
+DEBUG util.py:479:   python3-gpg                              x86_64      1.8.0-11.mga6              mageia       171 k
+DEBUG util.py:479:   python3-hawkey                           x86_64      0.11.1-1.mga6              updates       51 k
+DEBUG util.py:479:   python3-iniparse                         noarch      0.4-14.mga6                mageia        41 k
+DEBUG util.py:479:   python3-libcomps                         x86_64      0.1.8-2.mga6               mageia        42 k
+DEBUG util.py:479:   python3-librepo                          x86_64      1.7.20-2.mga6              mageia        40 k
+DEBUG util.py:479:   python3-nose                             noarch      1.3.7-4.mga6               mageia       258 k
+DEBUG util.py:479:   python3-rpm                              x86_64      1:4.13.0.2-3.1.mga6        updates       70 k
+DEBUG util.py:479:   systemd-devel                            x86_64      230-12.2.mga6              updates       30 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   gnupg2                                   x86_64      2.1.21-2.mga6              mageia       2.4 M
+DEBUG util.py:479:   hawkey-man                               noarch      0.11.1-1.mga6              updates       23 k
+DEBUG util.py:479:   lib64assuan0                             x86_64      2.4.3-1.mga6               mageia        39 k
+DEBUG util.py:479:   lib64comps0                              x86_64      0.1.8-2.mga6               mageia        69 k
+DEBUG util.py:479:   lib64dnf1                                x86_64      0.11.1-1.mga6              updates      113 k
+DEBUG util.py:479:   lib64edit0                               x86_64      3.1-0.20150325.2.mga6      mageia        83 k
+DEBUG util.py:479:   lib64gcrypt-devel                        x86_64      1.7.8-1.1.mga6             updates      206 k
+DEBUG util.py:479:   lib64gpg-error-devel                     x86_64      1.24-1.mga6                mageia        66 k
+DEBUG util.py:479:   lib64gpgme11                             x86_64      1.8.0-11.mga6              mageia       126 k
+DEBUG util.py:479:   lib64jsoncpp1                            x86_64      1.6.5-6.mga6               mageia        69 k
+DEBUG util.py:479:   lib64ksba8                               x86_64      1.3.5-1.mga6               mageia        91 k
+DEBUG util.py:479:   lib64lzma-devel                          x86_64      5.2.3-1.mga6               mageia       383 k
+DEBUG util.py:479:   lib64npth0                               x86_64      1.5-1.mga6                 mageia        22 k
+DEBUG util.py:479:   lib64python3.5                           x86_64      3.5.3-1.1.mga6             updates      843 k
+DEBUG util.py:479:   lib64python3.5-stdlib                    x86_64      3.5.3-1.1.mga6             updates      5.5 M
+DEBUG util.py:479:   lib64repo0                               x86_64      1.7.20-2.mga6              mageia        65 k
+DEBUG util.py:479:   lib64secret1_0                           x86_64      0.18.5-2.mga6              mageia       100 k
+DEBUG util.py:479:   lib64solv0                               x86_64      0.6.30-1.mga6              updates      362 k
+DEBUG util.py:479:   lib64usb1.0_0                            x86_64      1.0.21-1.mga6              mageia        62 k
+DEBUG util.py:479:   lib64uv1                                 x86_64      1.9.0-4.mga6               mageia        72 k
+DEBUG util.py:479:   libsecret-i18n                           noarch      0.18.5-2.mga6              mageia        30 k
+DEBUG util.py:479:   libsecret-tools                          x86_64      0.18.5-2.mga6              mageia        16 k
+DEBUG util.py:479:   libsolv-tools                            x86_64      0.6.30-1.mga6              updates       89 k
+DEBUG util.py:479:   openssh                                  x86_64      7.5p1-2.1.mga6             updates      420 k
+DEBUG util.py:479:   openssh-clients                          x86_64      7.5p1-2.1.mga6             updates      454 k
+DEBUG util.py:479:   openssl                                  x86_64      1.0.2n-1.mga6              updates      395 k
+DEBUG util.py:479:   perl-DBI                                 x86_64      1.636.0-2.mga6             mageia       628 k
+DEBUG util.py:479:   perl-Error                               noarch      1:0.170.240-3.mga6         mageia        36 k
+DEBUG util.py:479:   perl-Git                                 x86_64      1:2.13.6-1.1.mga6          updates       38 k
+DEBUG util.py:479:   pinentry                                 x86_64      1.0.0-2.mga6               mageia        78 k
+DEBUG util.py:479:   python-babel                             noarch      2.3.4-2.mga6               mageia       4.0 M
+DEBUG util.py:479:   python-backports                         x86_64      1.0-5.mga6                 mageia        10 k
+DEBUG util.py:479:   python-backports-ssl_match_hostname      noarch      3.5.0.1-1.mga6             mageia        15 k
+DEBUG util.py:479:   python-chardet                           noarch      2.3.0-3.mga6               mageia       204 k
+DEBUG util.py:479:   python-docutils                          noarch      0.12-2.svn7747.5.mga6      mageia       1.4 M
+DEBUG util.py:479:   python-imagesize                         noarch      0.7.1-1.mga6               mageia        11 k
+DEBUG util.py:479:   python-ipaddress                         noarch      1.0.16-1.mga6              mageia        37 k
+DEBUG util.py:479:   python-jinja2                            noarch      2.8-4.mga6                 mageia       484 k
+DEBUG util.py:479:   python-markupsafe                        x86_64      0.23-8.mga6                mageia        32 k
+DEBUG util.py:479:   python-pygments                          noarch      2.1.3-1.mga6               mageia       1.1 M
+DEBUG util.py:479:   python-pytz                              noarch      2016.3-1.mga6              mageia       207 k
+DEBUG util.py:479:   python-requests                          noarch      2.11.1-2.mga6              mageia        97 k
+DEBUG util.py:479:   python-setuptools                        noarch      19.6.2-1.mga6              mageia       309 k
+DEBUG util.py:479:   python-six                               noarch      1.10.0-2.mga6              mageia        31 k
+DEBUG util.py:479:   python-snowballstemmer                   noarch      1.2.0-3.mga6               mageia        95 k
+DEBUG util.py:479:   python-sphinx-locales                    noarch      1.4.9-1.mga6               mageia       111 k
+DEBUG util.py:479:   python-sphinx-theme-alabaster            noarch      0.7.8-1.mga6               mageia        28 k
+DEBUG util.py:479:   python-urllib3                           noarch      1.18.1-1.mga6              mageia       121 k
+DEBUG util.py:479:   python3                                  x86_64      3.5.3-1.1.mga6             updates       21 k
+DEBUG util.py:479:   python3-pip                              noarch      8.0.2-6.mga6               mageia       1.5 M
+DEBUG util.py:479:   python3-pkg-resources                    noarch      19.6.2-1.mga6              mageia        96 k
+DEBUG util.py:479:   python3-rpm-macros                       noarch      3-4.mga6                   mageia       7.6 k
+DEBUG util.py:479:   python3-setuptools                       noarch      19.6.2-1.mga6              mageia       315 k
+DEBUG util.py:479:   python3-six                              noarch      1.10.0-2.mga6              mageia        31 k
+DEBUG util.py:479:   rsync                                    x86_64      3.1.2-1.2.mga6             updates      397 k
+DEBUG util.py:479:   tcp_wrappers                             x86_64      7.6-47.mga6                mageia        89 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  78 Packages
+DEBUG util.py:479:  Total size: 39 M
+DEBUG util.py:479:  Total download size: 38 M
+DEBUG util.py:479:  Installed size: 196 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/cmake-3.7.2-3.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "cmake-1:3.7.2-3.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-bugzilla-1.2.2-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python2-bugzilla-1.2.2-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-iniparse-0.4-14.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-iniparse-0.4-14.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-lzma-0.5.3-9.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-lzma-0.5.3-9.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-nose-1.3.7-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-nose-1.3.7-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-1.4.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-1.4.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx_rtd_theme-0.1.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx_rtd_theme-0.1.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-gpg-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-gpg-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python2-hawkey-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-hawkey-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-libcomps-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-libcomps-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-librepo-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-librepo-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-gpg-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-gpg-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-hawkey-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-hawkey-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-iniparse-0.4-14.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-iniparse-0.4-14.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-libcomps-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-libcomps-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-librepo-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-librepo-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-nose-1.3.7-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-nose-1.3.7-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/git-core-2.13.6-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "git-core-1:2.13.6-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python-devel-2.7.13-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python-devel-2.7.13-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3-devel-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3-devel-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-rpm-4.13.0.2-3.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-rpm-1:4.13.0.2-3.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64jsoncpp1-1.6.5-6.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64jsoncpp1-1.6.5-6.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64uv1-1.9.0-4.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64uv1-1.9.0-4.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-requests-2.11.1-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-requests-2.11.1-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-six-1.10.0-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-six-1.10.0-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-setuptools-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-setuptools-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-babel-2.3.4-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-babel-2.3.4-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-docutils-0.12-2.svn7747.5.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-docutils-0.12-2.svn7747.5.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-imagesize-0.7.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-imagesize-0.7.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-jinja2-2.8-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-jinja2-2.8-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-pygments-2.1.3-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-pygments-2.1.3-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-snowballstemmer-1.2.0-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-snowballstemmer-1.2.0-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-locales-1.4.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-locales-1.4.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-theme-alabaster-0.7.8-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-theme-alabaster-0.7.8-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64gpgme11-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64gpgme11-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/hawkey-man-0.11.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "hawkey-man-0.11.1-1.mga6.noarch" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64dnf1-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64dnf1-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64comps0-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64comps0-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64repo0-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64repo0-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-six-1.10.0-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-six-1.10.0-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-setuptools-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-setuptools-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/perl-DBI-1.636.0-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "perl-DBI-1.636.0-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3.5-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3.5-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-backports-ssl_match_hostname-3.5.0.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-backports-ssl_match_hostname-3.5.0.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-chardet-2.3.0-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-chardet-2.3.0-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-urllib3-1.18.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-urllib3-1.18.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-pytz-2016.3-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-pytz-2016.3-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-markupsafe-0.23-8.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-markupsafe-0.23-8.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/gnupg2-2.1.21-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "gnupg2-2.1.21-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64assuan0-2.4.3-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64assuan0-2.4.3-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64solv0-0.6.30-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64solv0-0.6.30-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-pkg-resources-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-pkg-resources-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3.5-stdlib-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3.5-stdlib-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-backports-1.0-5.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-backports-1.0-5.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-ipaddress-1.0.16-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-ipaddress-1.0.16-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64ksba8-1.3.5-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64ksba8-1.3.5-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64npth0-1.5-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64npth0-1.5-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/pinentry-1.0.0-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "pinentry-1.0.0-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/libsolv-tools-0.6.30-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "libsolv-tools-0.6.30-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/perl-Git-2.13.6-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "perl-Git-1:2.13.6-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-pip-8.0.2-6.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-pip-8.0.2-6.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64secret1_0-0.18.5-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64secret1_0-0.18.5-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/perl-Error-0.170.240-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "perl-Error-1:0.170.240-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/libsecret-i18n-0.18.5-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "libsecret-i18n-0.18.5-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/libsecret-tools-0.18.5-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "libsecret-tools-0.18.5-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-rpm-macros-3-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-rpm-macros-3-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssh-clients-7.5p1-2.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssh-clients-7.5p1-2.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64edit0-3.1-0.20150325.2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64edit0-3.1-0.20150325.2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssh-7.5p1-2.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssh-7.5p1-2.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssl-1.0.2n-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssl-1.0.2n-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/tcp_wrappers-7.6-47.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "tcp_wrappers-7.6-47.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/rsync-3.1.2-1.2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "rsync-3.1.2-1.2.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error: Some packages have invalid cache, but cannot be downloaded due to "--cacheonly" option
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '297a242967cb4dcb81ff67d97b116df3', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ce54ed0228a54a80999e68014be2e9c2', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4c7b9e6ab3f142b3a9fff50aab99dcba', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5ac78aad74954d0ca120ee41796502d3', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/builddir/build/originals
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'be8c5760f32749db9fce69b0e1bd7187', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/dnf-2.7.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  dnf-2.7.5-2.mga7                      warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '844838d7e11a4b9088420f7d867cdef3', '-D', '/var/lib/mock/mageia-6-x86_64/root', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/dnf-2.7.5-2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  1001-Disable-the-dnf-makecache-timer-for-Mageia-live-envi.patch
+DEBUG util.py:479:  1002-Run-the-makecache-service-timer-only-if-the-DNF-cach.patch
+DEBUG util.py:479:  dnf-2.7.5.tar.gz
+DEBUG util.py:479:  dnf.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/dnf-2.7.5-2.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '/var/lib/mock/mageia-6-x86_64/root//builddir/build/SRPMS/dnf-2.7.5-2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 2 days, 12:02:50 ago on Tue 16 Jan 2018 12:31:33 AM CET.
+DEBUG util.py:479:  Package gettext-0.19.8.1-1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package python2-rpm-1:4.13.0.2-3.1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                                  Arch        Version                    Repository    Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   cmake                                    x86_64      1:3.7.2-3.mga6             mageia       4.2 M
+DEBUG util.py:479:   git-core                                 x86_64      1:2.13.6-1.1.mga6          updates      6.2 M
+DEBUG util.py:479:   lib64python-devel                        x86_64      2.7.13-1.1.mga6            updates      2.1 M
+DEBUG util.py:479:   lib64python3-devel                       x86_64      3.5.3-1.1.mga6             updates      154 k
+DEBUG util.py:479:   python-iniparse                          noarch      0.4-14.mga6                mageia        40 k
+DEBUG util.py:479:   python-lzma                              x86_64      0.5.3-9.mga6               mageia        51 k
+DEBUG util.py:479:   python-nose                              noarch      1.3.7-4.mga6               mageia       249 k
+DEBUG util.py:479:   python-sphinx                            noarch      1.4.9-1.mga6               mageia       1.3 M
+DEBUG util.py:479:   python-sphinx_rtd_theme                  noarch      0.1.9-1.mga6               mageia       536 k
+DEBUG util.py:479:   python2-bugzilla                         noarch      1.2.2-4.mga6               mageia        65 k
+DEBUG util.py:479:   python2-gpg                              x86_64      1.8.0-11.mga6              mageia       168 k
+DEBUG util.py:479:   python2-hawkey                           x86_64      0.11.1-1.mga6              updates       51 k
+DEBUG util.py:479:   python2-libcomps                         x86_64      0.1.8-2.mga6               mageia        42 k
+DEBUG util.py:479:   python2-librepo                          x86_64      1.7.20-2.mga6              mageia        40 k
+DEBUG util.py:479:   python3-gpg                              x86_64      1.8.0-11.mga6              mageia       171 k
+DEBUG util.py:479:   python3-hawkey                           x86_64      0.11.1-1.mga6              updates       51 k
+DEBUG util.py:479:   python3-iniparse                         noarch      0.4-14.mga6                mageia        41 k
+DEBUG util.py:479:   python3-libcomps                         x86_64      0.1.8-2.mga6               mageia        42 k
+DEBUG util.py:479:   python3-librepo                          x86_64      1.7.20-2.mga6              mageia        40 k
+DEBUG util.py:479:   python3-nose                             noarch      1.3.7-4.mga6               mageia       258 k
+DEBUG util.py:479:   python3-rpm                              x86_64      1:4.13.0.2-3.1.mga6        updates       70 k
+DEBUG util.py:479:   systemd-devel                            x86_64      230-12.2.mga6              updates       30 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   gnupg2                                   x86_64      2.1.21-2.mga6              mageia       2.4 M
+DEBUG util.py:479:   hawkey-man                               noarch      0.11.1-1.mga6              updates       23 k
+DEBUG util.py:479:   lib64assuan0                             x86_64      2.4.3-1.mga6               mageia        39 k
+DEBUG util.py:479:   lib64comps0                              x86_64      0.1.8-2.mga6               mageia        69 k
+DEBUG util.py:479:   lib64dnf1                                x86_64      0.11.1-1.mga6              updates      113 k
+DEBUG util.py:479:   lib64edit0                               x86_64      3.1-0.20150325.2.mga6      mageia        83 k
+DEBUG util.py:479:   lib64gcrypt-devel                        x86_64      1.7.8-1.1.mga6             updates      206 k
+DEBUG util.py:479:   lib64gpg-error-devel                     x86_64      1.24-1.mga6                mageia        66 k
+DEBUG util.py:479:   lib64gpgme11                             x86_64      1.8.0-11.mga6              mageia       126 k
+DEBUG util.py:479:   lib64jsoncpp1                            x86_64      1.6.5-6.mga6               mageia        69 k
+DEBUG util.py:479:   lib64ksba8                               x86_64      1.3.5-1.mga6               mageia        91 k
+DEBUG util.py:479:   lib64lzma-devel                          x86_64      5.2.3-1.mga6               mageia       383 k
+DEBUG util.py:479:   lib64npth0                               x86_64      1.5-1.mga6                 mageia        22 k
+DEBUG util.py:479:   lib64python3.5                           x86_64      3.5.3-1.1.mga6             updates      843 k
+DEBUG util.py:479:   lib64python3.5-stdlib                    x86_64      3.5.3-1.1.mga6             updates      5.5 M
+DEBUG util.py:479:   lib64repo0                               x86_64      1.7.20-2.mga6              mageia        65 k
+DEBUG util.py:479:   lib64secret1_0                           x86_64      0.18.5-2.mga6              mageia       100 k
+DEBUG util.py:479:   lib64solv0                               x86_64      0.6.30-1.mga6              updates      362 k
+DEBUG util.py:479:   lib64usb1.0_0                            x86_64      1.0.21-1.mga6              mageia        62 k
+DEBUG util.py:479:   lib64uv1                                 x86_64      1.9.0-4.mga6               mageia        72 k
+DEBUG util.py:479:   libsecret-i18n                           noarch      0.18.5-2.mga6              mageia        30 k
+DEBUG util.py:479:   libsecret-tools                          x86_64      0.18.5-2.mga6              mageia        16 k
+DEBUG util.py:479:   libsolv-tools                            x86_64      0.6.30-1.mga6              updates       89 k
+DEBUG util.py:479:   openssh                                  x86_64      7.5p1-2.1.mga6             updates      420 k
+DEBUG util.py:479:   openssh-clients                          x86_64      7.5p1-2.1.mga6             updates      454 k
+DEBUG util.py:479:   openssl                                  x86_64      1.0.2n-1.mga6              updates      395 k
+DEBUG util.py:479:   perl-DBI                                 x86_64      1.636.0-2.mga6             mageia       628 k
+DEBUG util.py:479:   perl-Error                               noarch      1:0.170.240-3.mga6         mageia        36 k
+DEBUG util.py:479:   perl-Git                                 x86_64      1:2.13.6-1.1.mga6          updates       38 k
+DEBUG util.py:479:   pinentry                                 x86_64      1.0.0-2.mga6               mageia        78 k
+DEBUG util.py:479:   python-babel                             noarch      2.3.4-2.mga6               mageia       4.0 M
+DEBUG util.py:479:   python-backports                         x86_64      1.0-5.mga6                 mageia        10 k
+DEBUG util.py:479:   python-backports-ssl_match_hostname      noarch      3.5.0.1-1.mga6             mageia        15 k
+DEBUG util.py:479:   python-chardet                           noarch      2.3.0-3.mga6               mageia       204 k
+DEBUG util.py:479:   python-docutils                          noarch      0.12-2.svn7747.5.mga6      mageia       1.4 M
+DEBUG util.py:479:   python-imagesize                         noarch      0.7.1-1.mga6               mageia        11 k
+DEBUG util.py:479:   python-ipaddress                         noarch      1.0.16-1.mga6              mageia        37 k
+DEBUG util.py:479:   python-jinja2                            noarch      2.8-4.mga6                 mageia       484 k
+DEBUG util.py:479:   python-markupsafe                        x86_64      0.23-8.mga6                mageia        32 k
+DEBUG util.py:479:   python-pygments                          noarch      2.1.3-1.mga6               mageia       1.1 M
+DEBUG util.py:479:   python-pytz                              noarch      2016.3-1.mga6              mageia       207 k
+DEBUG util.py:479:   python-requests                          noarch      2.11.1-2.mga6              mageia        97 k
+DEBUG util.py:479:   python-setuptools                        noarch      19.6.2-1.mga6              mageia       309 k
+DEBUG util.py:479:   python-six                               noarch      1.10.0-2.mga6              mageia        31 k
+DEBUG util.py:479:   python-snowballstemmer                   noarch      1.2.0-3.mga6               mageia        95 k
+DEBUG util.py:479:   python-sphinx-locales                    noarch      1.4.9-1.mga6               mageia       111 k
+DEBUG util.py:479:   python-sphinx-theme-alabaster            noarch      0.7.8-1.mga6               mageia        28 k
+DEBUG util.py:479:   python-urllib3                           noarch      1.18.1-1.mga6              mageia       121 k
+DEBUG util.py:479:   python3                                  x86_64      3.5.3-1.1.mga6             updates       21 k
+DEBUG util.py:479:   python3-pip                              noarch      8.0.2-6.mga6               mageia       1.5 M
+DEBUG util.py:479:   python3-pkg-resources                    noarch      19.6.2-1.mga6              mageia        96 k
+DEBUG util.py:479:   python3-rpm-macros                       noarch      3-4.mga6                   mageia       7.6 k
+DEBUG util.py:479:   python3-setuptools                       noarch      19.6.2-1.mga6              mageia       315 k
+DEBUG util.py:479:   python3-six                              noarch      1.10.0-2.mga6              mageia        31 k
+DEBUG util.py:479:   rsync                                    x86_64      3.1.2-1.2.mga6             updates      397 k
+DEBUG util.py:479:   tcp_wrappers                             x86_64      7.6-47.mga6                mageia        89 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  78 Packages
+DEBUG util.py:479:  Total size: 39 M
+DEBUG util.py:479:  Total download size: 38 M
+DEBUG util.py:479:  Installed size: 196 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/cmake-3.7.2-3.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "cmake-1:3.7.2-3.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-bugzilla-1.2.2-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python2-bugzilla-1.2.2-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-iniparse-0.4-14.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-iniparse-0.4-14.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-lzma-0.5.3-9.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-lzma-0.5.3-9.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-nose-1.3.7-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-nose-1.3.7-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-1.4.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-1.4.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx_rtd_theme-0.1.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx_rtd_theme-0.1.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-gpg-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-gpg-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python2-hawkey-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-hawkey-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-libcomps-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-libcomps-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python2-librepo-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python2-librepo-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-gpg-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-gpg-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-hawkey-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-hawkey-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-iniparse-0.4-14.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-iniparse-0.4-14.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-libcomps-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-libcomps-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-librepo-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-librepo-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-nose-1.3.7-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-nose-1.3.7-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/git-core-2.13.6-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "git-core-1:2.13.6-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python-devel-2.7.13-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python-devel-2.7.13-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3-devel-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3-devel-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-rpm-4.13.0.2-3.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-rpm-1:4.13.0.2-3.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64jsoncpp1-1.6.5-6.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64jsoncpp1-1.6.5-6.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64uv1-1.9.0-4.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64uv1-1.9.0-4.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-requests-2.11.1-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-requests-2.11.1-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-six-1.10.0-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-six-1.10.0-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-setuptools-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-setuptools-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-babel-2.3.4-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-babel-2.3.4-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-docutils-0.12-2.svn7747.5.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-docutils-0.12-2.svn7747.5.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-imagesize-0.7.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-imagesize-0.7.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-jinja2-2.8-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-jinja2-2.8-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-pygments-2.1.3-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-pygments-2.1.3-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-snowballstemmer-1.2.0-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-snowballstemmer-1.2.0-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-locales-1.4.9-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-locales-1.4.9-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-sphinx-theme-alabaster-0.7.8-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-sphinx-theme-alabaster-0.7.8-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64gpgme11-1.8.0-11.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64gpgme11-1.8.0-11.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/hawkey-man-0.11.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "hawkey-man-0.11.1-1.mga6.noarch" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64dnf1-0.11.1-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64dnf1-0.11.1-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64comps0-0.1.8-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64comps0-0.1.8-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64repo0-1.7.20-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64repo0-1.7.20-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-six-1.10.0-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-six-1.10.0-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-setuptools-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-setuptools-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/perl-DBI-1.636.0-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "perl-DBI-1.636.0-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3.5-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3.5-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-backports-ssl_match_hostname-3.5.0.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-backports-ssl_match_hostname-3.5.0.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-chardet-2.3.0-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-chardet-2.3.0-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-urllib3-1.18.1-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-urllib3-1.18.1-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-pytz-2016.3-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-pytz-2016.3-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-markupsafe-0.23-8.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-markupsafe-0.23-8.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/gnupg2-2.1.21-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "gnupg2-2.1.21-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64assuan0-2.4.3-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64assuan0-2.4.3-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64solv0-0.6.30-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64solv0-0.6.30-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-pkg-resources-19.6.2-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-pkg-resources-19.6.2-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/lib64python3.5-stdlib-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64python3.5-stdlib-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-backports-1.0-5.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python-backports-1.0-5.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python-ipaddress-1.0.16-1.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python-ipaddress-1.0.16-1.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64ksba8-1.3.5-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64ksba8-1.3.5-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64npth0-1.5-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64npth0-1.5-1.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/pinentry-1.0.0-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "pinentry-1.0.0-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/libsolv-tools-0.6.30-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "libsolv-tools-0.6.30-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/perl-Git-2.13.6-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "perl-Git-1:2.13.6-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-pip-8.0.2-6.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-pip-8.0.2-6.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64secret1_0-0.18.5-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64secret1_0-0.18.5-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/perl-Error-0.170.240-3.mga6.noarch.rpm
+DEBUG util.py:479:  Package "perl-Error-1:0.170.240-3.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/python3-3.5.3-1.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "python3-3.5.3-1.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/libsecret-i18n-0.18.5-2.mga6.noarch.rpm
+DEBUG util.py:479:  Package "libsecret-i18n-0.18.5-2.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/libsecret-tools-0.18.5-2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "libsecret-tools-0.18.5-2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/python3-rpm-macros-3-4.mga6.noarch.rpm
+DEBUG util.py:479:  Package "python3-rpm-macros-3-4.mga6.noarch" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssh-clients-7.5p1-2.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssh-clients-7.5p1-2.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/lib64edit0-3.1-0.20150325.2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "lib64edit0-3.1-0.20150325.2.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssh-7.5p1-2.1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssh-7.5p1-2.1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/openssl-1.0.2n-1.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "openssl-1.0.2n-1.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/mageia-1504d44e4c5fa801/packages/tcp_wrappers-7.6-47.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "tcp_wrappers-7.6-47.mga6.x86_64" from repository "mageia" has incorrect checksum
+DEBUG util.py:479:  Error opening file for checksum: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/updates-eb95c1bd4d9805cc/packages/rsync-3.1.2-1.2.mga6.x86_64.rpm
+DEBUG util.py:479:  Package "rsync-3.1.2-1.2.mga6.x86_64" from repository "updates" has incorrect checksum
+DEBUG util.py:479:  Error: Some packages have invalid cache, but cannot be downloaded due to "--cacheonly" option
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-cauldron-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-cauldron-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-cauldron-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-cauldron-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-cauldron-x86_64/root/', '--releasever', '7', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-cauldron-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-cauldron-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
