@@ -1,0 +1,68 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-1.mga7
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/fstab
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /var/lib/mock/mageia-6-x86_64/root/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /var/lib/mock/mageia-6-x86_64/root
+DEBUG buildroot.py:143:  resultdir = ./mock/
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:113:  creating dir: /var/lib/mock/mageia-6-x86_64/root/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /var/lib/mock/mageia-6-x86_64/root/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/var/lib/mock/mageia-6-x86_64/root/', '--releasever', '6', '-C', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Cache-only enabled but no cache for 'mageia', disabling.
+DEBUG util.py:479:  Cache-only enabled but no cache for 'updates', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/mageia-6-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/mageia-6-x86_64/root/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
