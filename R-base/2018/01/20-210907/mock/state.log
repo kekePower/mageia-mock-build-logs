@@ -1,0 +1,59 @@
+2018-01-20 19:21:12,118 - Mock Version: 1.4.8
+2018-01-20 19:21:13,888 - Start: dnf update
+2018-01-20 19:21:20,212 - Finish: dnf update
+2018-01-20 19:21:20,234 - Finish: chroot init
+2018-01-20 19:21:20,236 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:21:20,238 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:21:28,892 - Start: clean chroot
+2018-01-20 19:21:32,497 - Finish: clean chroot
+2018-01-20 19:21:57,365 - Mock Version: 1.4.8
+2018-01-20 19:21:59,384 - Start: dnf update
+2018-01-20 19:22:21,652 - Finish: dnf update
+2018-01-20 19:22:21,673 - Finish: chroot init
+2018-01-20 19:22:21,677 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:22:21,678 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:33:13,729 - Finish: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:33:13,729 - Start: rpmbuild R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:33:13,732 - Start: Outputting list of installed packages
+2018-01-20 19:33:13,976 - Finish: Outputting list of installed packages
+2018-01-20 19:45:33,386 - Finish: rpmbuild R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:45:33,388 - Finish: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:45:33,390 - Start: clean chroot
+2018-01-20 19:46:12,326 - Finish: clean chroot
+2018-01-20 19:46:12,327 - Finish: run
+2018-01-20 19:51:33,268 - Mock Version: 1.4.8
+2018-01-20 19:51:34,968 - Start: dnf update
+2018-01-20 19:51:56,502 - Finish: dnf update
+2018-01-20 19:51:56,524 - Finish: chroot init
+2018-01-20 19:51:56,528 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:51:56,529 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:52:10,432 - Start: clean chroot
+2018-01-20 19:52:14,213 - Finish: clean chroot
+2018-01-20 20:01:50,896 - Mock Version: 1.4.8
+2018-01-20 20:01:53,004 - Start: dnf update
+2018-01-20 20:02:16,592 - Finish: dnf update
+2018-01-20 20:02:16,619 - Finish: chroot init
+2018-01-20 20:02:16,624 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:02:16,627 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:10:54,358 - Finish: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:10:54,358 - Start: rpmbuild R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:10:54,360 - Start: Outputting list of installed packages
+2018-01-20 20:10:54,509 - Finish: Outputting list of installed packages
+2018-01-20 20:23:04,886 - Start: clean chroot
+2018-01-20 20:23:57,780 - Finish: clean chroot
+2018-01-20 20:29:23,958 - Mock Version: 1.4.8
+2018-01-20 20:29:25,903 - Start: dnf update
+2018-01-20 20:29:51,442 - Finish: dnf update
+2018-01-20 20:29:51,456 - Finish: chroot init
+2018-01-20 20:29:51,459 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:29:51,461 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 20:39:08,973 - Start: clean chroot
+2018-01-20 20:40:28,469 - Finish: clean chroot
+2018-01-20 21:00:06,772 - Mock Version: 1.4.8
+2018-01-20 21:00:08,713 - Start: dnf update
+2018-01-20 21:00:10,402 - Finish: dnf update
+2018-01-20 21:00:10,425 - Finish: chroot init
+2018-01-20 21:00:10,428 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 21:00:10,430 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 21:08:03,003 - Start: clean chroot
+2018-01-20 21:09:07,031 - Finish: clean chroot
