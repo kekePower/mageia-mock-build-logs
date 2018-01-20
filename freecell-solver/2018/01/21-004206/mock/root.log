@@ -1,0 +1,855 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'eff88a66749f44dcb1253a31fa99042b', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '340c14bdb69940a885287e40ec15341f', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a2c5ce171f0e4926afe9e1557ffa7d9c', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a39a815a2872443db15909a868c61f23', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/originals
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'LC_MESSAGES': 'C', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.2 MB/s |  36 MB     00:08    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:08 ago on Sun 21 Jan 2018 12:29:38 AM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /share/dev/mock/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '89a5e3edd161476fa208dc18b0402929', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  freecell-solver-4.16.0-1              warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '917b7924bfe844eeb45c7404d4571962', '-D', '/share/dev/mock', '-a', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  freecell-solver-4.16.0.tar.xz
+DEBUG util.py:479:  freecell-solver.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm'] with env {'LC_MESSAGES': 'C', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    2.4 MB/s |  37 MB     00:15    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:15 ago on Sun 21 Jan 2018 12:30:03 AM CET.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-List-MoreUtils-0.428.0-1.mga7.noarch is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Error: 
+DEBUG util.py:479:   Problem: package perl-2:5.26.1-1.mga7.x86_64 requires perl-base = 2:5.26.1-1.mga7, but none of the providers can be installed
+DEBUG util.py:479:    - cannot install both perl-base-2:5.26.1-1.mga7.x86_64 and perl-base-2:5.26.1-2.mga7.x86_64
+DEBUG util.py:479:    - package perl-devel-2:5.26.1-1.mga7.x86_64 requires perl = 2:5.26.1-1.mga7, but none of the providers can be installed
+DEBUG util.py:479:    - cannot install the best candidate for the job
+DEBUG util.py:479:    - conflicting requests
+DEBUG util.py:479:  (try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages)
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '9e74a8a9bcb645b99fb6195983dbf874', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '35ab1a20591048359a75158970b11922', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a68539da6d9148efa200add7c909ef8f', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd3343fd0419341908f5731682aec1793', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/originals
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'HOME': '/builddir', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.0 MB/s |  36 MB     00:09    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:14 ago on Sun 21 Jan 2018 12:35:58 AM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /share/dev/mock/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '52ec400ebed7497d8571168123c5872a', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  freecell-solver-4.16.0-1              warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '2607adadf1224091a7cdc2d4560f3d59', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'HOME': '/builddir', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  freecell-solver-4.16.0.tar.xz
+DEBUG util.py:479:  freecell-solver.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm'] with env {'HOME': '/builddir', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    2.9 MB/s |  37 MB     00:12    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:14 ago on Sun 21 Jan 2018 12:36:26 AM CET.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-List-MoreUtils-0.428.0-1.mga7.noarch is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Error: 
+DEBUG util.py:479:   Problem: package perl-2:5.26.1-1.mga7.x86_64 requires perl-base = 2:5.26.1-1.mga7, but none of the providers can be installed
+DEBUG util.py:479:    - cannot install both perl-base-2:5.26.1-1.mga7.x86_64 and perl-base-2:5.26.1-2.mga7.x86_64
+DEBUG util.py:479:    - package perl-devel-2:5.26.1-1.mga7.x86_64 requires perl = 2:5.26.1-1.mga7, but none of the providers can be installed
+DEBUG util.py:479:    - cannot install the best candidate for the job
+DEBUG util.py:479:    - conflicting requests
+DEBUG util.py:479:  (try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages)
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e4f4a31755e849228d1104afbf5dd4c8', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b10ad46fb162425ba81202e7d74c5929', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '/usr/sbin/groupdel', 'mock'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '77fde31fe632426cbbf4b617abbbd1c0', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'bae19695c4fb4941a96245abd4639f8e', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/originals
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.0 MB/s |  36 MB     00:09    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:14 ago on Sun 21 Jan 2018 12:40:49 AM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /share/dev/mock/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /share/dev/mock/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '9ede46db26e04e1e995f1ddace800e00', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  freecell-solver-4.16.0-1              warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e0c45197b8014b70a99050c4156ee7eb', '-D', '/share/dev/mock', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/freecell-solver-4.16.0-1.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  freecell-solver-4.16.0.tar.xz
+DEBUG util.py:479:  freecell-solver.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/freecell-solver-4.16.0-1.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    3.9 MB/s |  37 MB     00:09    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:15 ago on Sun 21 Jan 2018 12:41:11 AM CET.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-List-MoreUtils-0.428.0-1.mga7.noarch is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Package perl-base-2:5.26.1-2.mga7.x86_64 is already installed, skipping.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                         Arch                     Version                                   Repository                         Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   cmake                                           x86_64                   1:3.10.1-1.mga7                           mageia-cauldron                   4.5 M
+DEBUG util.py:479:   lib64gmp-devel                                  x86_64                   6.1.2-2.mga7                              mageia-cauldron                   524 k
+DEBUG util.py:479:   lib64tap-devel                                  x86_64                   1.03-7.mga6                               mageia-cauldron                    15 k
+DEBUG util.py:479:   perl-Env-Path                                   noarch                   0.190.0-7.mga6                            mageia-cauldron                    25 k
+DEBUG util.py:479:   perl-File-Which                                 noarch                   1.220.0-2.mga7                            mageia-cauldron                    27 k
+DEBUG util.py:479:   perl-Games-Solitaire-Verify                     noarch                   0.170.100-2.mga6                          mageia-cauldron                    86 k
+DEBUG util.py:479:   perl-Inline                                     noarch                   0.800.0-6.mga7                            mageia-cauldron                    86 k
+DEBUG util.py:479:   perl-Inline-C                                   noarch                   0.780.0-3.mga7                            mageia-cauldron                    83 k
+DEBUG util.py:479:   perl-Moo                                        noarch                   2.3.4-1.mga7                              mageia-cauldron                    62 k
+DEBUG util.py:479:   perl-MooX                                       noarch                   0.101.0-8.mga6                            mageia-cauldron                    20 k
+DEBUG util.py:479:   perl-MooX-late                                  noarch                   0.15.0-5.mga6                             mageia-cauldron                    27 k
+DEBUG util.py:479:   perl-Path-Tiny                                  noarch                   0.104.0-1.mga6                            mageia-cauldron                    63 k
+DEBUG util.py:479:   perl-String-ShellQuote                          noarch                   1.40.0-10.mga6                            mageia-cauldron                    17 k
+DEBUG util.py:479:   perl-Template-Toolkit                           x86_64                   2.270.0-5.mga7                            mageia-cauldron                   500 k
+DEBUG util.py:479:   perl-Test-Data-Split                            noarch                   0.2.0-2.mga6                              mageia-cauldron                    22 k
+DEBUG util.py:479:   perl-Test-Differences                           noarch                   0.640.0-2.mga6                            mageia-cauldron                    23 k
+DEBUG util.py:479:   perl-Test-PerlTidy                              noarch                   20130104.0.0-1.mga6                       mageia-cauldron                    17 k
+DEBUG util.py:479:   perl-Test-RunValgrind                           noarch                   0.0.2-1.mga7                              mageia-cauldron                    19 k
+DEBUG util.py:479:   perl-Test-TrailingSpace                         noarch                   0.30.100-1.mga7                           mageia-cauldron                    15 k
+DEBUG util.py:479:   perl-Test-Trap                                  noarch                   0.3.3-2.mga7                              mageia-cauldron                    51 k
+DEBUG util.py:479:   perl-YAML-LibYAML                               x86_64                   0.690.0-1.mga7                            mageia-cauldron                    82 k
+DEBUG util.py:479:   perl-devel                                      x86_64                   2:5.26.1-2.mga7                           mageia-cauldron                   365 k
+DEBUG util.py:479:   python3-random2                                 noarch                   1.0.1-5.mga7                              mageia-cauldron                    25 k
+DEBUG util.py:479:   the_silver_searcher                             x86_64                   2.1.0-1.20170825.mga7                     mageia-cauldron                    52 k
+DEBUG util.py:479:   valgrind                                        x86_64                   3.13.0-10.mga7                            mageia-cauldron                   6.2 M
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   lib64jsoncpp19                                  x86_64                   1.8.3-1.mga7                              mageia-cauldron                    70 k
+DEBUG util.py:479:   lib64rhash0                                     x86_64                   1.3.4-4.mga7                              mageia-cauldron                    82 k
+DEBUG util.py:479:   lib64tap0                                       x86_64                   1.03-7.mga6                               mageia-cauldron                    14 k
+DEBUG util.py:479:   lib64uv1                                        x86_64                   1.18.0-1.mga7                             mageia-cauldron                    82 k
+DEBUG util.py:479:   perl-Algorithm-Diff                             noarch                   1:1.190.300-4.mga7                        mageia-cauldron                    45 k
+DEBUG util.py:479:   perl-AppConfig                                  noarch                   1.710.0-4.mga7                            mageia-cauldron                    74 k
+DEBUG util.py:479:   perl-Capture-Tiny                               noarch                   0.460.0-1.mga7                            mageia-cauldron                    34 k
+DEBUG util.py:479:   perl-Class-Data-Inheritable                     noarch                   0.80.0-7.mga6                             mageia-cauldron                    12 k
+DEBUG util.py:479:   perl-Class-Method-Modifiers                     noarch                   2.120.0-2.mga6                            mageia-cauldron                    37 k
+DEBUG util.py:479:   perl-Class-XSAccessor                           x86_64                   1.190.0-12.mga7                           mageia-cauldron                    47 k
+DEBUG util.py:479:   perl-Data-Dump                                  noarch                   1.230.0-3.mga6                            mageia-cauldron                    31 k
+DEBUG util.py:479:   perl-Data-OptList                               noarch                   0.110.0-2.mga6                            mageia-cauldron                    25 k
+DEBUG util.py:479:   perl-Devel-GlobalDestruction                    noarch                   0.140.0-1.mga7                            mageia-cauldron                    14 k
+DEBUG util.py:479:   perl-Devel-StackTrace                           noarch                   2.30.0-1.mga7                             mageia-cauldron                    34 k
+DEBUG util.py:479:   perl-Exception-Class                            noarch                   1.440.0-1.mga7                            mageia-cauldron                    44 k
+DEBUG util.py:479:   perl-File-Find-Object                           noarch                   0.3.2-1.mga7                              mageia-cauldron                    37 k
+DEBUG util.py:479:   perl-File-Find-Object-Rule                      noarch                   0.30.600-1.mga7                           mageia-cauldron                    41 k
+DEBUG util.py:479:   perl-File-Finder                                noarch                   0.530.0-8.mga6                            mageia-cauldron                    28 k
+DEBUG util.py:479:   perl-IO-All                                     noarch                   0.870.0-1.mga7                            mageia-cauldron                    77 k
+DEBUG util.py:479:   perl-Import-Into                                noarch                   1.2.5-3.mga6                              mageia-cauldron                    19 k
+DEBUG util.py:479:   perl-Module-Build                               noarch                   1:0.422.400-1.mga7                        mageia-cauldron                   222 k
+DEBUG util.py:479:   perl-Module-Runtime                             noarch                   0.16.0-1.mga7                             mageia-cauldron                    24 k
+DEBUG util.py:479:   perl-Number-Compare                             noarch                   0.30.0-7.mga6                             mageia-cauldron                    12 k
+DEBUG util.py:479:   perl-Params-Util                                x86_64                   1.70.0-15.mga7                            mageia-cauldron                    37 k
+DEBUG util.py:479:   perl-Parse-RecDescent                           noarch                   1.967.15-1.mga7                           mageia-cauldron                   146 k
+DEBUG util.py:479:   perl-Pegex                                      noarch                   0.640.0-2.mga7                            mageia-cauldron                   109 k
+DEBUG util.py:479:   perl-Pod-POM                                    noarch                   2.10.0-4.mga6                             mageia-cauldron                    80 k
+DEBUG util.py:479:   perl-Role-Tiny                                  noarch                   2.0.6-1.mga7                              mageia-cauldron                    24 k
+DEBUG util.py:479:   perl-Sub-Exporter-Progressive                   noarch                   0.1.13-1.mga7                             mageia-cauldron                    20 k
+DEBUG util.py:479:   perl-Sub-Install                                noarch                   0.928.0-5.mga6                            mageia-cauldron                    24 k
+DEBUG util.py:479:   perl-Sub-Quote                                  noarch                   2.4.0-1.mga7                              mageia-cauldron                    22 k
+DEBUG util.py:479:   perl-Text-Diff                                  noarch                   1.450.0-2.mga7                            mageia-cauldron                    38 k
+DEBUG util.py:479:   perl-Text-Glob                                  noarch                   0.110.0-1.mga7                            mageia-cauldron                    13 k
+DEBUG util.py:479:   perl-Type-Tiny                                  noarch                   1.2.1-1.mga7                              mageia-cauldron                   230 k
+DEBUG util.py:479:   perltidy                                        noarch                   20180101.0.0-1.mga7                       mageia-cauldron                   354 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Install  60 Packages
+DEBUG util.py:479:  Total size: 15 M
+DEBUG util.py:479:  Total download size: 9.1 M
+DEBUG util.py:479:  Installed size: 87 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] cmake-3.10.1-1.mga7.x86_64.rpm: Already downloaded                                                                                               
+DEBUG util.py:479:  [SKIPPED] lib64gmp-devel-6.1.2-2.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] perl-File-Which-1.220.0-2.mga7.noarch.rpm: Already downloaded                                                                                    
+DEBUG util.py:479:  [SKIPPED] perl-Path-Tiny-0.104.0-1.mga6.noarch.rpm: Already downloaded                                                                                     
+DEBUG util.py:479:  [SKIPPED] perl-devel-5.26.1-2.mga7.x86_64.rpm: Already downloaded                                                                                          
+DEBUG util.py:479:  [SKIPPED] lib64jsoncpp19-1.8.3-1.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] lib64rhash0-1.3.4-4.mga7.x86_64.rpm: Already downloaded                                                                                          
+DEBUG util.py:479:  [SKIPPED] lib64uv1-1.18.0-1.mga7.x86_64.rpm: Already downloaded                                                                                            
+DEBUG util.py:479:  [SKIPPED] perl-Parse-RecDescent-1.967.15-1.mga7.noarch.rpm: Already downloaded                                                                             
+DEBUG util.py:479:  [SKIPPED] perl-Data-Dump-1.230.0-3.mga6.noarch.rpm: Already downloaded                                                                                     
+DEBUG util.py:479:  [SKIPPED] perl-Algorithm-Diff-1.190.300-4.mga7.noarch.rpm: Already downloaded                                                                              
+DEBUG util.py:479:  (12/60): perl-Env-Path-0.190.0-7.mga6.noarch.rpm                                                                             33 kB/s |  25 kB     00:00    
+DEBUG util.py:479:  (13/60): perl-Inline-0.800.0-6.mga7.noarch.rpm                                                                              110 kB/s |  86 kB     00:00    
+DEBUG util.py:479:  (14/60): perl-Games-Solitaire-Verify-0.170.100-2.mga6.noarch.rpm                                                            101 kB/s |  86 kB     00:00    
+DEBUG util.py:479:  (15/60): perl-Inline-C-0.780.0-3.mga7.noarch.rpm                                                                            298 kB/s |  83 kB     00:00    
+DEBUG util.py:479:  (16/60): perl-MooX-0.101.0-8.mga6.noarch.rpm                                                                                100 kB/s |  20 kB     00:00    
+DEBUG util.py:479:  (17/60): perl-Moo-2.3.4-1.mga7.noarch.rpm                                                                                   187 kB/s |  62 kB     00:00    
+DEBUG util.py:479:  (18/60): perl-String-ShellQuote-1.40.0-10.mga6.noarch.rpm                                                                    89 kB/s |  17 kB     00:00    
+DEBUG util.py:479:  (19/60): perl-MooX-late-0.15.0-5.mga6.noarch.rpm                                                                            120 kB/s |  27 kB     00:00    
+DEBUG util.py:479:  (20/60): perl-Test-Data-Split-0.2.0-2.mga6.noarch.rpm                                                                        78 kB/s |  22 kB     00:00    
+DEBUG util.py:479:  (21/60): perl-Test-Differences-0.640.0-2.mga6.noarch.rpm                                                                     74 kB/s |  23 kB     00:00    
+DEBUG util.py:479:  (22/60): perl-Template-Toolkit-2.270.0-5.mga7.x86_64.rpm                                                                    902 kB/s | 500 kB     00:00    
+DEBUG util.py:479:  (23/60): perl-Test-RunValgrind-0.0.2-1.mga7.noarch.rpm                                                                       94 kB/s |  19 kB     00:00    
+DEBUG util.py:479:  (24/60): perl-Test-PerlTidy-20130104.0.0-1.mga6.noarch.rpm                                                                   69 kB/s |  17 kB     00:00    
+DEBUG util.py:479:  (25/60): perl-Test-TrailingSpace-0.30.100-1.mga7.noarch.rpm                                                                  68 kB/s |  15 kB     00:00    
+DEBUG util.py:479:  (26/60): perl-Test-Trap-0.3.3-2.mga7.noarch.rpm                                                                             213 kB/s |  51 kB     00:00    
+DEBUG util.py:479:  (27/60): perl-YAML-LibYAML-0.690.0-1.mga7.x86_64.rpm                                                                        352 kB/s |  82 kB     00:00    
+DEBUG util.py:479:  (28/60): python3-random2-1.0.1-5.mga7.noarch.rpm                                                                            121 kB/s |  25 kB     00:00    
+DEBUG util.py:479:  (29/60): lib64tap-devel-1.03-7.mga6.x86_64.rpm                                                                               80 kB/s |  15 kB     00:00    
+DEBUG util.py:479:  (30/60): the_silver_searcher-2.1.0-1.20170825.mga7.x86_64.rpm                                                               237 kB/s |  52 kB     00:00    
+DEBUG util.py:479:  (31/60): perl-Class-XSAccessor-1.190.0-12.mga7.x86_64.rpm                                                                   187 kB/s |  47 kB     00:00    
+DEBUG util.py:479:  (32/60): perl-Exception-Class-1.440.0-1.mga7.noarch.rpm                                                                     170 kB/s |  44 kB     00:00    
+DEBUG util.py:479:  (33/60): perl-Pegex-0.640.0-2.mga7.noarch.rpm                                                                               408 kB/s | 109 kB     00:00    
+DEBUG util.py:479:  (34/60): perl-Class-Method-Modifiers-2.120.0-2.mga6.noarch.rpm                                                              148 kB/s |  37 kB     00:00    
+DEBUG util.py:479:  (35/60): perl-Devel-GlobalDestruction-0.140.0-1.mga7.noarch.rpm                                                              63 kB/s |  14 kB     00:00    
+DEBUG util.py:479:  (36/60): perl-Import-Into-1.2.5-3.mga6.noarch.rpm                                                                            53 kB/s |  19 kB     00:00    
+DEBUG util.py:479:  (37/60): perl-Module-Runtime-0.16.0-1.mga7.noarch.rpm                                                                        64 kB/s |  24 kB     00:00    
+DEBUG util.py:479:  (38/60): perl-Role-Tiny-2.0.6-1.mga7.noarch.rpm                                                                              51 kB/s |  24 kB     00:00    
+DEBUG util.py:479:  (39/60): valgrind-3.13.0-10.mga7.x86_64.rpm                                                                                 3.7 MB/s | 6.2 MB     00:01    
+DEBUG util.py:479:  (40/60): perl-Sub-Quote-2.4.0-1.mga7.noarch.rpm                                                                              48 kB/s |  22 kB     00:00    
+DEBUG util.py:479:  (41/60): perl-Data-OptList-0.110.0-2.mga6.noarch.rpm                                                                         94 kB/s |  25 kB     00:00    
+DEBUG util.py:479:  (42/60): perl-AppConfig-1.710.0-4.mga7.noarch.rpm                                                                           313 kB/s |  74 kB     00:00    
+DEBUG util.py:479:  (43/60): perl-Type-Tiny-1.2.1-1.mga7.noarch.rpm                                                                             676 kB/s | 230 kB     00:00    
+DEBUG util.py:479:  (44/60): perl-Pod-POM-2.10.0-4.mga6.noarch.rpm                                                                              291 kB/s |  80 kB     00:00    
+DEBUG util.py:479:  (45/60): perl-IO-All-0.870.0-1.mga7.noarch.rpm                                                                              291 kB/s |  77 kB     00:00    
+DEBUG util.py:479:  (46/60): perl-Text-Diff-1.450.0-2.mga7.noarch.rpm                                                                           199 kB/s |  38 kB     00:00    
+DEBUG util.py:479:  (47/60): perl-Capture-Tiny-0.460.0-1.mga7.noarch.rpm                                                                        148 kB/s |  34 kB     00:00    
+DEBUG util.py:479:  (48/60): perl-File-Finder-0.530.0-8.mga6.noarch.rpm                                                                         135 kB/s |  28 kB     00:00    
+DEBUG util.py:479:  (49/60): perl-File-Find-Object-Rule-0.30.600-1.mga7.noarch.rpm                                                              195 kB/s |  41 kB     00:00    
+DEBUG util.py:479:  (50/60): perltidy-20180101.0.0-1.mga7.noarch.rpm                                                                            1.1 MB/s | 354 kB     00:00    
+DEBUG util.py:479:  (51/60): lib64tap0-1.03-7.mga6.x86_64.rpm                                                                                    83 kB/s |  14 kB     00:00    
+DEBUG util.py:479:  (52/60): perl-Class-Data-Inheritable-0.80.0-7.mga6.noarch.rpm                                                                54 kB/s |  12 kB     00:00    
+DEBUG util.py:479:  (53/60): perl-Sub-Exporter-Progressive-0.1.13-1.mga7.noarch.rpm                                                              94 kB/s |  20 kB     00:00    
+DEBUG util.py:479:  (54/60): perl-Devel-StackTrace-2.30.0-1.mga7.noarch.rpm                                                                     138 kB/s |  34 kB     00:00    
+DEBUG util.py:479:  (55/60): perl-Module-Build-0.422.400-1.mga7.noarch.rpm                                                                      758 kB/s | 222 kB     00:00    
+DEBUG util.py:479:  (56/60): perl-Params-Util-1.70.0-15.mga7.x86_64.rpm                                                                         167 kB/s |  37 kB     00:00    
+DEBUG util.py:479:  (57/60): perl-Sub-Install-0.928.0-5.mga6.noarch.rpm                                                                         110 kB/s |  24 kB     00:00    
+DEBUG util.py:479:  (58/60): perl-Text-Glob-0.110.0-1.mga7.noarch.rpm                                                                            70 kB/s |  13 kB     00:00    
+DEBUG util.py:479:  (59/60): perl-Number-Compare-0.30.0-7.mga6.noarch.rpm                                                                        72 kB/s |  12 kB     00:00    
+DEBUG util.py:479:  (60/60): perl-File-Find-Object-0.3.2-1.mga7.noarch.rpm                                                                      187 kB/s |  37 kB     00:00    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       1.6 MB/s | 9.1 MB     00:05     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Installing       : perl-Class-XSAccessor-1.190.0-12.mga7.x86_64                                                                                      1/60 
+DEBUG util.py:479:    Installing       : perl-Text-Glob-0.110.0-1.mga7.noarch                                                                                              2/60 
+DEBUG util.py:479:    Installing       : perl-Parse-RecDescent-1.967.15-1.mga7.noarch                                                                                      3/60 
+DEBUG util.py:479:    Installing       : perl-Inline-0.800.0-6.mga7.noarch                                                                                                 4/60 
+DEBUG util.py:479:    Installing       : perl-File-Finder-0.530.0-8.mga6.noarch                                                                                            5/60 
+DEBUG util.py:479:    Installing       : perl-File-Find-Object-0.3.2-1.mga7.noarch                                                                                         6/60 
+DEBUG util.py:479:    Installing       : perl-Number-Compare-0.30.0-7.mga6.noarch                                                                                          7/60 
+DEBUG util.py:479:    Installing       : perl-File-Find-Object-Rule-0.30.600-1.mga7.noarch                                                                                 8/60 
+DEBUG util.py:479:    Installing       : perl-Algorithm-Diff-1:1.190.300-4.mga7.noarch                                                                                     9/60 
+DEBUG util.py:479:    Installing       : perl-Text-Diff-1.450.0-2.mga7.noarch                                                                                             10/60 
+DEBUG util.py:479:    Installing       : perl-Sub-Install-0.928.0-5.mga6.noarch                                                                                           11/60 
+DEBUG util.py:479:    Installing       : perl-Params-Util-1.70.0-15.mga7.x86_64                                                                                           12/60 
+DEBUG util.py:479:    Installing       : perl-Data-OptList-0.110.0-2.mga6.noarch                                                                                          13/60 
+DEBUG util.py:479:    Installing       : perl-Module-Build-1:0.422.400-1.mga7.noarch                                                                                      14/60 
+DEBUG util.py:479:    Installing       : perl-Module-Runtime-0.16.0-1.mga7.noarch                                                                                         15/60 
+DEBUG util.py:479:    Installing       : perl-Import-Into-1.2.5-3.mga6.noarch                                                                                             16/60 
+DEBUG util.py:479:    Installing       : perl-Sub-Exporter-Progressive-0.1.13-1.mga7.noarch                                                                               17/60 
+DEBUG util.py:479:    Installing       : perl-Devel-GlobalDestruction-0.140.0-1.mga7.noarch                                                                               18/60 
+DEBUG util.py:479:    Installing       : perl-Devel-StackTrace-2.30.0-1.mga7.noarch                                                                                       19/60 
+DEBUG util.py:479:    Installing       : perl-Class-Data-Inheritable-0.80.0-7.mga6.noarch                                                                                 20/60 
+DEBUG util.py:479:    Installing       : perl-Exception-Class-1.440.0-1.mga7.noarch                                                                                       21/60 
+DEBUG util.py:479:    Installing       : lib64tap0-1.03-7.mga6.x86_64                                                                                                     22/60 
+DEBUG util.py:479:    Installing       : perl-Data-Dump-1.230.0-3.mga6.noarch                                                                                             23/60 
+DEBUG util.py:479:    Installing       : perl-Test-Trap-0.3.3-2.mga7.noarch                                                                                               24/60 
+DEBUG util.py:479:    Installing       : perltidy-20180101.0.0-1.mga7.noarch                                                                                              25/60 
+DEBUG util.py:479:    Installing       : perl-Capture-Tiny-0.460.0-1.mga7.noarch                                                                                          26/60 
+DEBUG util.py:479:    Installing       : perl-IO-All-0.870.0-1.mga7.noarch                                                                                                27/60 
+DEBUG util.py:479:    Installing       : perl-Pod-POM-2.10.0-4.mga6.noarch                                                                                                28/60 
+DEBUG util.py:479:    Installing       : perl-AppConfig-1.710.0-4.mga7.noarch                                                                                             29/60 
+DEBUG util.py:479:    Installing       : perl-Type-Tiny-1.2.1-1.mga7.noarch                                                                                               30/60 
+DEBUG util.py:479:    Installing       : perl-Sub-Quote-2.4.0-1.mga7.noarch                                                                                               31/60 
+DEBUG util.py:479:    Installing       : perl-Role-Tiny-2.0.6-1.mga7.noarch                                                                                               32/60 
+DEBUG util.py:479:    Installing       : perl-Class-Method-Modifiers-2.120.0-2.mga6.noarch                                                                                33/60 
+DEBUG util.py:479:    Installing       : perl-Moo-2.3.4-1.mga7.noarch                                                                                                     34/60 
+DEBUG util.py:479:    Installing       : perl-MooX-0.101.0-8.mga6.noarch                                                                                                  35/60 
+DEBUG util.py:479:    Installing       : perl-MooX-late-0.15.0-5.mga6.noarch                                                                                              36/60 
+DEBUG util.py:479:    Installing       : perl-Pegex-0.640.0-2.mga7.noarch                                                                                                 37/60 
+DEBUG util.py:479:    Installing       : lib64uv1-1.18.0-1.mga7.x86_64                                                                                                    38/60 
+DEBUG util.py:479:    Installing       : lib64rhash0-1.3.4-4.mga7.x86_64                                                                                                  39/60 
+DEBUG util.py:479:    Installing       : lib64jsoncpp19-1.8.3-1.mga7.x86_64                                                                                               40/60 
+DEBUG util.py:479:    Installing       : perl-Path-Tiny-0.104.0-1.mga6.noarch                                                                                             41/60 
+DEBUG util.py:479:    Installing       : perl-Test-RunValgrind-0.0.2-1.mga7.noarch                                                                                        42/60 
+DEBUG util.py:479:    Installing       : cmake-1:3.10.1-1.mga7.x86_64                                                                                                     43/60 
+DEBUG util.py:479:    Installing       : perl-Inline-C-0.780.0-3.mga7.noarch                                                                                              44/60 
+DEBUG util.py:479:    Installing       : perl-Test-Data-Split-0.2.0-2.mga6.noarch                                                                                         45/60 
+DEBUG util.py:479:    Installing       : perl-Template-Toolkit-2.270.0-5.mga7.x86_64                                                                                      46/60 
+DEBUG util.py:479:    Installing       : perl-Test-Differences-0.640.0-2.mga6.noarch                                                                                      47/60 
+DEBUG util.py:479:    Installing       : perl-Test-PerlTidy-20130104.0.0-1.mga6.noarch                                                                                    48/60 
+DEBUG util.py:479:    Installing       : lib64tap-devel-1.03-7.mga6.x86_64                                                                                                49/60 
+DEBUG util.py:479:    Installing       : perl-Games-Solitaire-Verify-0.170.100-2.mga6.noarch                                                                              50/60 
+DEBUG util.py:479:    Installing       : perl-Test-TrailingSpace-0.30.100-1.mga7.noarch                                                                                   51/60 
+DEBUG util.py:479:    Installing       : the_silver_searcher-2.1.0-1.20170825.mga7.x86_64                                                                                 52/60 
+DEBUG util.py:479:    Installing       : python3-random2-1.0.1-5.mga7.noarch                                                                                              53/60 
+DEBUG util.py:479:    Installing       : perl-devel-2:5.26.1-2.mga7.x86_64                                                                                                54/60 
+DEBUG util.py:479:    Installing       : perl-YAML-LibYAML-0.690.0-1.mga7.x86_64                                                                                          55/60 
+DEBUG util.py:479:    Installing       : perl-String-ShellQuote-1.40.0-10.mga6.noarch                                                                                     56/60 
+DEBUG util.py:479:    Installing       : perl-File-Which-1.220.0-2.mga7.noarch                                                                                            57/60 
+DEBUG util.py:479:    Installing       : perl-Env-Path-0.190.0-7.mga6.noarch                                                                                              58/60 
+DEBUG util.py:479:    Installing       : lib64gmp-devel-6.1.2-2.mga7.x86_64                                                                                               59/60 
+DEBUG util.py:479:    Running scriptlet: lib64gmp-devel-6.1.2-2.mga7.x86_64                                                                                               59/60 
+DEBUG util.py:479:    Installing       : valgrind-3.13.0-10.mga7.x86_64                                                                                                   60/60 
+DEBUG util.py:479:    Verifying        : cmake-1:3.10.1-1.mga7.x86_64                                                                                                      1/60 
+DEBUG util.py:479:    Verifying        : lib64gmp-devel-6.1.2-2.mga7.x86_64                                                                                                2/60 
+DEBUG util.py:479:    Verifying        : perl-Env-Path-0.190.0-7.mga6.noarch                                                                                               3/60 
+DEBUG util.py:479:    Verifying        : perl-File-Which-1.220.0-2.mga7.noarch                                                                                             4/60 
+DEBUG util.py:479:    Verifying        : perl-Games-Solitaire-Verify-0.170.100-2.mga6.noarch                                                                               5/60 
+DEBUG util.py:479:    Verifying        : perl-Inline-0.800.0-6.mga7.noarch                                                                                                 6/60 
+DEBUG util.py:479:    Verifying        : perl-Inline-C-0.780.0-3.mga7.noarch                                                                                               7/60 
+DEBUG util.py:479:    Verifying        : perl-Moo-2.3.4-1.mga7.noarch                                                                                                      8/60 
+DEBUG util.py:479:    Verifying        : perl-MooX-0.101.0-8.mga6.noarch                                                                                                   9/60 
+DEBUG util.py:479:    Verifying        : perl-MooX-late-0.15.0-5.mga6.noarch                                                                                              10/60 
+DEBUG util.py:479:    Verifying        : perl-Path-Tiny-0.104.0-1.mga6.noarch                                                                                             11/60 
+DEBUG util.py:479:    Verifying        : perl-String-ShellQuote-1.40.0-10.mga6.noarch                                                                                     12/60 
+DEBUG util.py:479:    Verifying        : perl-Template-Toolkit-2.270.0-5.mga7.x86_64                                                                                      13/60 
+DEBUG util.py:479:    Verifying        : perl-Test-Data-Split-0.2.0-2.mga6.noarch                                                                                         14/60 
+DEBUG util.py:479:    Verifying        : perl-Test-Differences-0.640.0-2.mga6.noarch                                                                                      15/60 
+DEBUG util.py:479:    Verifying        : perl-Test-PerlTidy-20130104.0.0-1.mga6.noarch                                                                                    16/60 
+DEBUG util.py:479:    Verifying        : perl-Test-RunValgrind-0.0.2-1.mga7.noarch                                                                                        17/60 
+DEBUG util.py:479:    Verifying        : perl-Test-TrailingSpace-0.30.100-1.mga7.noarch                                                                                   18/60 
+DEBUG util.py:479:    Verifying        : perl-Test-Trap-0.3.3-2.mga7.noarch                                                                                               19/60 
+DEBUG util.py:479:    Verifying        : perl-YAML-LibYAML-0.690.0-1.mga7.x86_64                                                                                          20/60 
+DEBUG util.py:479:    Verifying        : perl-devel-2:5.26.1-2.mga7.x86_64                                                                                                21/60 
+DEBUG util.py:479:    Verifying        : python3-random2-1.0.1-5.mga7.noarch                                                                                              22/60 
+DEBUG util.py:479:    Verifying        : lib64tap-devel-1.03-7.mga6.x86_64                                                                                                23/60 
+DEBUG util.py:479:    Verifying        : the_silver_searcher-2.1.0-1.20170825.mga7.x86_64                                                                                 24/60 
+DEBUG util.py:479:    Verifying        : valgrind-3.13.0-10.mga7.x86_64                                                                                                   25/60 
+DEBUG util.py:479:    Verifying        : lib64jsoncpp19-1.8.3-1.mga7.x86_64                                                                                               26/60 
+DEBUG util.py:479:    Verifying        : lib64rhash0-1.3.4-4.mga7.x86_64                                                                                                  27/60 
+DEBUG util.py:479:    Verifying        : lib64uv1-1.18.0-1.mga7.x86_64                                                                                                    28/60 
+DEBUG util.py:479:    Verifying        : perl-Class-XSAccessor-1.190.0-12.mga7.x86_64                                                                                     29/60 
+DEBUG util.py:479:    Verifying        : perl-Exception-Class-1.440.0-1.mga7.noarch                                                                                       30/60 
+DEBUG util.py:479:    Verifying        : perl-Parse-RecDescent-1.967.15-1.mga7.noarch                                                                                     31/60 
+DEBUG util.py:479:    Verifying        : perl-Pegex-0.640.0-2.mga7.noarch                                                                                                 32/60 
+DEBUG util.py:479:    Verifying        : perl-Class-Method-Modifiers-2.120.0-2.mga6.noarch                                                                                33/60 
+DEBUG util.py:479:    Verifying        : perl-Devel-GlobalDestruction-0.140.0-1.mga7.noarch                                                                               34/60 
+DEBUG util.py:479:    Verifying        : perl-Import-Into-1.2.5-3.mga6.noarch                                                                                             35/60 
+DEBUG util.py:479:    Verifying        : perl-Module-Runtime-0.16.0-1.mga7.noarch                                                                                         36/60 
+DEBUG util.py:479:    Verifying        : perl-Role-Tiny-2.0.6-1.mga7.noarch                                                                                               37/60 
+DEBUG util.py:479:    Verifying        : perl-Sub-Quote-2.4.0-1.mga7.noarch                                                                                               38/60 
+DEBUG util.py:479:    Verifying        : perl-Data-OptList-0.110.0-2.mga6.noarch                                                                                          39/60 
+DEBUG util.py:479:    Verifying        : perl-Type-Tiny-1.2.1-1.mga7.noarch                                                                                               40/60 
+DEBUG util.py:479:    Verifying        : perl-AppConfig-1.710.0-4.mga7.noarch                                                                                             41/60 
+DEBUG util.py:479:    Verifying        : perl-Pod-POM-2.10.0-4.mga6.noarch                                                                                                42/60 
+DEBUG util.py:479:    Verifying        : perl-IO-All-0.870.0-1.mga7.noarch                                                                                                43/60 
+DEBUG util.py:479:    Verifying        : perl-Capture-Tiny-0.460.0-1.mga7.noarch                                                                                          44/60 
+DEBUG util.py:479:    Verifying        : perl-Text-Diff-1.450.0-2.mga7.noarch                                                                                             45/60 
+DEBUG util.py:479:    Verifying        : perl-File-Finder-0.530.0-8.mga6.noarch                                                                                           46/60 
+DEBUG util.py:479:    Verifying        : perltidy-20180101.0.0-1.mga7.noarch                                                                                              47/60 
+DEBUG util.py:479:    Verifying        : perl-File-Find-Object-Rule-0.30.600-1.mga7.noarch                                                                                48/60 
+DEBUG util.py:479:    Verifying        : perl-Data-Dump-1.230.0-3.mga6.noarch                                                                                             49/60 
+DEBUG util.py:479:    Verifying        : lib64tap0-1.03-7.mga6.x86_64                                                                                                     50/60 
+DEBUG util.py:479:    Verifying        : perl-Class-Data-Inheritable-0.80.0-7.mga6.noarch                                                                                 51/60 
+DEBUG util.py:479:    Verifying        : perl-Devel-StackTrace-2.30.0-1.mga7.noarch                                                                                       52/60 
+DEBUG util.py:479:    Verifying        : perl-Sub-Exporter-Progressive-0.1.13-1.mga7.noarch                                                                               53/60 
+DEBUG util.py:479:    Verifying        : perl-Module-Build-1:0.422.400-1.mga7.noarch                                                                                      54/60 
+DEBUG util.py:479:    Verifying        : perl-Params-Util-1.70.0-15.mga7.x86_64                                                                                           55/60 
+DEBUG util.py:479:    Verifying        : perl-Sub-Install-0.928.0-5.mga6.noarch                                                                                           56/60 
+DEBUG util.py:479:    Verifying        : perl-Algorithm-Diff-1:1.190.300-4.mga7.noarch                                                                                    57/60 
+DEBUG util.py:479:    Verifying        : perl-Text-Glob-0.110.0-1.mga7.noarch                                                                                             58/60 
+DEBUG util.py:479:    Verifying        : perl-File-Find-Object-0.3.2-1.mga7.noarch                                                                                        59/60 
+DEBUG util.py:479:    Verifying        : perl-Number-Compare-0.30.0-7.mga6.noarch                                                                                         60/60 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    cmake.x86_64 1:3.10.1-1.mga7                      lib64gmp-devel.x86_64 6.1.2-2.mga7                 lib64tap-devel.x86_64 1.03-7.mga6                  
+DEBUG util.py:479:    perl-Env-Path.noarch 0.190.0-7.mga6               perl-File-Which.noarch 1.220.0-2.mga7              perl-Games-Solitaire-Verify.noarch 0.170.100-2.mga6
+DEBUG util.py:479:    perl-Inline.noarch 0.800.0-6.mga7                 perl-Inline-C.noarch 0.780.0-3.mga7                perl-Moo.noarch 2.3.4-1.mga7                       
+DEBUG util.py:479:    perl-MooX.noarch 0.101.0-8.mga6                   perl-MooX-late.noarch 0.15.0-5.mga6                perl-Path-Tiny.noarch 0.104.0-1.mga6               
+DEBUG util.py:479:    perl-String-ShellQuote.noarch 1.40.0-10.mga6      perl-Template-Toolkit.x86_64 2.270.0-5.mga7        perl-Test-Data-Split.noarch 0.2.0-2.mga6           
+DEBUG util.py:479:    perl-Test-Differences.noarch 0.640.0-2.mga6       perl-Test-PerlTidy.noarch 20130104.0.0-1.mga6      perl-Test-RunValgrind.noarch 0.0.2-1.mga7          
+DEBUG util.py:479:    perl-Test-TrailingSpace.noarch 0.30.100-1.mga7    perl-Test-Trap.noarch 0.3.3-2.mga7                 perl-YAML-LibYAML.x86_64 0.690.0-1.mga7            
+DEBUG util.py:479:    perl-devel.x86_64 2:5.26.1-2.mga7                 python3-random2.noarch 1.0.1-5.mga7                the_silver_searcher.x86_64 2.1.0-1.20170825.mga7   
+DEBUG util.py:479:    valgrind.x86_64 3.13.0-10.mga7                    lib64jsoncpp19.x86_64 1.8.3-1.mga7                 lib64rhash0.x86_64 1.3.4-4.mga7                    
+DEBUG util.py:479:    lib64tap0.x86_64 1.03-7.mga6                      lib64uv1.x86_64 1.18.0-1.mga7                      perl-Algorithm-Diff.noarch 1:1.190.300-4.mga7      
+DEBUG util.py:479:    perl-AppConfig.noarch 1.710.0-4.mga7              perl-Capture-Tiny.noarch 0.460.0-1.mga7            perl-Class-Data-Inheritable.noarch 0.80.0-7.mga6   
+DEBUG util.py:479:    perl-Class-Method-Modifiers.noarch 2.120.0-2.mga6 perl-Class-XSAccessor.x86_64 1.190.0-12.mga7       perl-Data-Dump.noarch 1.230.0-3.mga6               
+DEBUG util.py:479:    perl-Data-OptList.noarch 0.110.0-2.mga6           perl-Devel-GlobalDestruction.noarch 0.140.0-1.mga7 perl-Devel-StackTrace.noarch 2.30.0-1.mga7         
+DEBUG util.py:479:    perl-Exception-Class.noarch 1.440.0-1.mga7        perl-File-Find-Object.noarch 0.3.2-1.mga7          perl-File-Find-Object-Rule.noarch 0.30.600-1.mga7  
+DEBUG util.py:479:    perl-File-Finder.noarch 0.530.0-8.mga6            perl-IO-All.noarch 0.870.0-1.mga7                  perl-Import-Into.noarch 1.2.5-3.mga6               
+DEBUG util.py:479:    perl-Module-Build.noarch 1:0.422.400-1.mga7       perl-Module-Runtime.noarch 0.16.0-1.mga7           perl-Number-Compare.noarch 0.30.0-7.mga6           
+DEBUG util.py:479:    perl-Params-Util.x86_64 1.70.0-15.mga7            perl-Parse-RecDescent.noarch 1.967.15-1.mga7       perl-Pegex.noarch 0.640.0-2.mga7                   
+DEBUG util.py:479:    perl-Pod-POM.noarch 2.10.0-4.mga6                 perl-Role-Tiny.noarch 2.0.6-1.mga7                 perl-Sub-Exporter-Progressive.noarch 0.1.13-1.mga7 
+DEBUG util.py:479:    perl-Sub-Install.noarch 0.928.0-5.mga6            perl-Sub-Quote.noarch 2.4.0-1.mga7                 perl-Text-Diff.noarch 1.450.0-2.mga7               
+DEBUG util.py:479:    perl-Text-Glob.noarch 0.110.0-1.mga7              perl-Type-Tiny.noarch 1.2.1-1.mga7                 perltidy.noarch 20180101.0.0-1.mga7                
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/share/dev/mock' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
