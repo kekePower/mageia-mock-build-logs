@@ -1,0 +1,271 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '2ac2a8fa7fac46508e85424bfef06745', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '93ea0e859d59410bb98e6110f45762fc', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupdel', 'mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd73dfaa81649443093c09d2445c8b070', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '735e6d6b584e47f1a89c241503c575fe', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/originals
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.5 MB/s |  37 MB     00:08    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:14 ago on Sat 20 Jan 2018 11:42:20 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                     Arch                       Version                                   Repository                           Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrading:
+DEBUG util.py:479:   glibc                                       x86_64                     6:2.22-27.mga7                            mageia-cauldron                     5.5 M
+DEBUG util.py:479:   glibc-devel                                 x86_64                     6:2.22-27.mga7                            mageia-cauldron                     2.9 M
+DEBUG util.py:479:   publicsuffix-list-dafsa                     noarch                     20180111-1.mga7                           mageia-cauldron                      44 k
+DEBUG util.py:479:   rootcerts                                   noarch                     1:20180104.00-1.mga7                      mageia-cauldron                     555 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrade  4 Packages
+DEBUG util.py:479:  Total size: 8.9 M
+DEBUG util.py:479:  Total download size: 8.3 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] publicsuffix-list-dafsa-20180111-1.mga7.noarch.rpm: Already downloaded                                                                           
+DEBUG util.py:479:  [SKIPPED] rootcerts-20180104.00-1.mga7.noarch.rpm: Already downloaded                                                                                      
+DEBUG util.py:479:  [MIRROR] glibc-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://ftp.fau.de/mageia/distrib/cauldron/x86_64/media/core/release/glibc-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-devel-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://ftp.fau.de/mageia/distrib/cauldron/x86_64/media/core/release/glibc-devel-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://www.mirrorservice.org/sites/mageia.org/pub/mageia/distrib/cauldron/x86_64/media/core/release/glibc-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-devel-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://www.mirrorservice.org/sites/mageia.org/pub/mageia/distrib/cauldron/x86_64/media/core/release/glibc-devel-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  (3/4): glibc-2.22-27.mga7.x86_64.rpm                                                                                        1.7 MB/s | 5.5 MB     00:03    
+DEBUG util.py:479:  (4/4): glibc-devel-2.22-27.mga7.x86_64.rpm                                                                                  855 kB/s | 2.9 MB     00:03    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       2.2 MB/s | 8.3 MB     00:03     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Upgrading        : glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Running scriptlet: glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Upgrading        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Upgrading        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                              3/8 
+DEBUG util.py:479:    Upgrading        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                     4/8 
+DEBUG util.py:479:    Cleanup          : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                  5/8 
+DEBUG util.py:479:    Cleanup          : glibc-6:2.22-26.mga7.x86_64                                                                                                        6/8 
+DEBUG util.py:479:    Cleanup          : rootcerts-1:20171122.00-1.mga7.noarch                                                                                              7/8 
+DEBUG util.py:479:    Cleanup          : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                     8/8 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        8/8 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                     3/8 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                              4/8 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-26.mga7.x86_64                                                                                                        5/8 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                  6/8 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                     7/8 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20171122.00-1.mga7.noarch                                                                                              8/8 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Upgraded:
+DEBUG util.py:479:    glibc.x86_64 6:2.22-27.mga7   glibc-devel.x86_64 6:2.22-27.mga7   publicsuffix-list-dafsa.noarch 20180111-1.mga7   rootcerts.noarch 1:20180104.00-1.mga7  
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /share/dev/mock/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '08847da627c94832a954117d048015c4', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/e3-2.82-1.intelsb.mga6.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  e3-2.82-1.intelsb.mga6                warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '981d135511da44f59bb3a0a279a90751', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/e3-2.82-1.intelsb.mga6.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  e3-2.82-makefile.patch
+DEBUG util.py:479:  e3-2.82.tgz
+DEBUG util.py:479:  e3.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/e3-2.82-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/e3-2.82-1.mga7.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Sat 20 Jan 2018 11:42:55 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                         Arch                              Version                                 Repository                                  Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   yasm                            x86_64                            1.3.0-2.mga6                            mageia-cauldron                            382 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Install  1 Package
+DEBUG util.py:479:  Total download size: 382 k
+DEBUG util.py:479:  Installed size: 2.0 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  yasm-1.3.0-2.mga6.x86_64.rpm                                                                                                146 kB/s | 382 kB     00:02    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       129 kB/s | 382 kB     00:02     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Installing       : yasm-1.3.0-2.mga6.x86_64                                                                                                           1/1 
+DEBUG util.py:479:    Verifying        : yasm-1.3.0-2.mga6.x86_64                                                                                                           1/1 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    yasm.x86_64 1.3.0-2.mga6                                                                                                                                  
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/share/dev/mock' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'HOME': '/builddir', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
