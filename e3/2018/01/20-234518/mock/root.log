@@ -1,0 +1,787 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '2ac2a8fa7fac46508e85424bfef06745', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '93ea0e859d59410bb98e6110f45762fc', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupdel', 'mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd73dfaa81649443093c09d2445c8b070', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '735e6d6b584e47f1a89c241503c575fe', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/builddir/build/originals
+DEBUG util.py:113:  creating dir: /share/dev/mock/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.5 MB/s |  37 MB     00:08    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:14 ago on Sat 20 Jan 2018 11:42:20 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                     Arch                       Version                                   Repository                           Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrading:
+DEBUG util.py:479:   glibc                                       x86_64                     6:2.22-27.mga7                            mageia-cauldron                     5.5 M
+DEBUG util.py:479:   glibc-devel                                 x86_64                     6:2.22-27.mga7                            mageia-cauldron                     2.9 M
+DEBUG util.py:479:   publicsuffix-list-dafsa                     noarch                     20180111-1.mga7                           mageia-cauldron                      44 k
+DEBUG util.py:479:   rootcerts                                   noarch                     1:20180104.00-1.mga7                      mageia-cauldron                     555 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrade  4 Packages
+DEBUG util.py:479:  Total size: 8.9 M
+DEBUG util.py:479:  Total download size: 8.3 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] publicsuffix-list-dafsa-20180111-1.mga7.noarch.rpm: Already downloaded                                                                           
+DEBUG util.py:479:  [SKIPPED] rootcerts-20180104.00-1.mga7.noarch.rpm: Already downloaded                                                                                      
+DEBUG util.py:479:  [MIRROR] glibc-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://ftp.fau.de/mageia/distrib/cauldron/x86_64/media/core/release/glibc-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-devel-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://ftp.fau.de/mageia/distrib/cauldron/x86_64/media/core/release/glibc-devel-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://www.mirrorservice.org/sites/mageia.org/pub/mageia/distrib/cauldron/x86_64/media/core/release/glibc-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] glibc-devel-2.22-27.mga7.x86_64.rpm: Curl error (78): Remote file not found for ftp://www.mirrorservice.org/sites/mageia.org/pub/mageia/distrib/cauldron/x86_64/media/core/release/glibc-devel-2.22-27.mga7.x86_64.rpm [RETR response: 550]
+DEBUG util.py:479:  (3/4): glibc-2.22-27.mga7.x86_64.rpm                                                                                        1.7 MB/s | 5.5 MB     00:03    
+DEBUG util.py:479:  (4/4): glibc-devel-2.22-27.mga7.x86_64.rpm                                                                                  855 kB/s | 2.9 MB     00:03    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       2.2 MB/s | 8.3 MB     00:03     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Upgrading        : glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Running scriptlet: glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Upgrading        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Upgrading        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                              3/8 
+DEBUG util.py:479:    Upgrading        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                     4/8 
+DEBUG util.py:479:    Cleanup          : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                  5/8 
+DEBUG util.py:479:    Cleanup          : glibc-6:2.22-26.mga7.x86_64                                                                                                        6/8 
+DEBUG util.py:479:    Cleanup          : rootcerts-1:20171122.00-1.mga7.noarch                                                                                              7/8 
+DEBUG util.py:479:    Cleanup          : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                     8/8 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                        8/8 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-27.mga7.x86_64                                                                                                        1/8 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                  2/8 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                     3/8 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                              4/8 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-26.mga7.x86_64                                                                                                        5/8 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                  6/8 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                     7/8 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20171122.00-1.mga7.noarch                                                                                              8/8 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Upgraded:
+DEBUG util.py:479:    glibc.x86_64 6:2.22-27.mga7   glibc-devel.x86_64 6:2.22-27.mga7   publicsuffix-list-dafsa.noarch 20180111-1.mga7   rootcerts.noarch 1:20180104.00-1.mga7  
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /share/dev/mock/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '08847da627c94832a954117d048015c4', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/e3-2.82-1.intelsb.mga6.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  e3-2.82-1.intelsb.mga6                warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '981d135511da44f59bb3a0a279a90751', '-D', '/share/dev/mock', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/e3-2.82-1.intelsb.mga6.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  e3-2.82-makefile.patch
+DEBUG util.py:479:  e3-2.82.tgz
+DEBUG util.py:479:  e3.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/e3-2.82-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/share/dev/mock/', '--releasever', '7', '/share/dev/mock//builddir/build/SRPMS/e3-2.82-1.mga7.src.rpm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Sat 20 Jan 2018 11:42:55 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                         Arch                              Version                                 Repository                                  Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   yasm                            x86_64                            1.3.0-2.mga6                            mageia-cauldron                            382 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Install  1 Package
+DEBUG util.py:479:  Total download size: 382 k
+DEBUG util.py:479:  Installed size: 2.0 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  yasm-1.3.0-2.mga6.x86_64.rpm                                                                                                146 kB/s | 382 kB     00:02    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       129 kB/s | 382 kB     00:02     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Installing       : yasm-1.3.0-2.mga6.x86_64                                                                                                           1/1 
+DEBUG util.py:479:    Verifying        : yasm-1.3.0-2.mga6.x86_64                                                                                                           1/1 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    yasm.x86_64 1.3.0-2.mga6                                                                                                                                  
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/share/dev/mock' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'HOME': '/builddir', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-i586/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:113:  creating dir: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LC_MESSAGES': 'C', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No match for argument: basesystem-minimal
+DEBUG util.py:479:  No match for argument: rpm-build
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup
+DEBUG util.py:479:  No match for argument: rpm-mageia-setup-build
+DEBUG util.py:479:  Error: Unable to find a match
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/sh', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:113:  creating dir: /share/dev/mock/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/fstab
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /share/dev/mock/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-i586/dnf_cache/', '/share/dev/mock/var/cache/dnf/'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /share/dev/mock
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/pki/mock
+DEBUG util.py:113:  creating dir: /share/dev/mock/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/etc/dnf
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /share/dev/mock/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/share/dev/mock/', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LC_MESSAGES': 'C', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - i586                                                                                                      2.5 MB/s |  36 MB     00:14    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:16 ago on Sat 20 Jan 2018 11:44:48 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                     Arch                    Version                                         Repository                        Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   basesystem-minimal                          i586                    1:7-0.1.mga7                                    mageia-cauldron                  8.1 k
+DEBUG util.py:479:   rpm-build                                   i586                    1:4.14.0-5.mga7                                 mageia-cauldron                  121 k
+DEBUG util.py:479:   rpm-mageia-setup                            i586                    2.25-2.mga7                                     mageia-cauldron                   17 k
+DEBUG util.py:479:   rpm-mageia-setup-build                      i586                    2.25-2.mga7                                     mageia-cauldron                   60 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   autoconf                                    noarch                  1:2.69-9.mga7                                   mageia-cauldron                  582 k
+DEBUG util.py:479:   automake                                    noarch                  1.15.1-1.mga7                                   mageia-cauldron                  679 k
+DEBUG util.py:479:   bash                                        i586                    4.4-12.1.mga7                                   mageia-cauldron                  1.1 M
+DEBUG util.py:479:   binutils                                    i586                    1:2.29.1-6.mga7                                 mageia-cauldron                  4.6 M
+DEBUG util.py:479:   bzip2                                       i586                    1.0.6-10.mga6                                   mageia-cauldron                   69 k
+DEBUG util.py:479:   chkconfig                                   i586                    1.10-1.mga7                                     mageia-cauldron                  151 k
+DEBUG util.py:479:   cmake-rpm-macros                            i586                    1:3.10.0-0.rc4.1.mga7                           mageia-cauldron                   13 k
+DEBUG util.py:479:   common-licenses                             noarch                  1.1-8.mga6                                      mageia-cauldron                   46 k
+DEBUG util.py:479:   coreutils                                   i586                    8.28-1.mga7                                     mageia-cauldron                  2.3 M
+DEBUG util.py:479:   cpio                                        i586                    2.12-3.mga6                                     mageia-cauldron                  218 k
+DEBUG util.py:479:   cracklib-dicts                              i586                    2.9.6-5.mga6                                    mageia-cauldron                  3.5 M
+DEBUG util.py:479:   cronie                                      i586                    1.5.1-1.mga6                                    mageia-cauldron                   87 k
+DEBUG util.py:479:   crontabs                                    noarch                  1.10-22.mga6                                    mageia-cauldron                  8.0 k
+DEBUG util.py:479:   crypto-policies                             noarch                  20170606-2.mga7                                 mageia-cauldron                   29 k
+DEBUG util.py:479:   dash-static                                 i586                    0.5.9-2.mga7                                    mageia-cauldron                   66 k
+DEBUG util.py:479:   dbus                                        i586                    1.10.16-1.mga6                                  mageia-cauldron                  201 k
+DEBUG util.py:479:   deltarpm                                    i586                    3.6.1-6.mga7                                    mageia-cauldron                  236 k
+DEBUG util.py:479:   desktop-file-utils                          i586                    0.23-2.mga6                                     mageia-cauldron                   85 k
+DEBUG util.py:479:   diffutils                                   i586                    3.6-1.mga7                                      mageia-cauldron                  305 k
+DEBUG util.py:479:   dmsetup                                     i586                    1.02.137-1.mga6                                 mageia-cauldron                  101 k
+DEBUG util.py:479:   dnf                                         noarch                  2.7.5-1.mga7                                    mageia-cauldron                  283 k
+DEBUG util.py:479:   dnf-conf                                    noarch                  2.7.5-1.mga7                                    mageia-cauldron                   30 k
+DEBUG util.py:479:   dnf-plugins-core                            noarch                  2.1.5-1.mga7                                    mageia-cauldron                   74 k
+DEBUG util.py:479:   dnf-utils                                   noarch                  2.1.5-1.mga7                                    mageia-cauldron                   12 k
+DEBUG util.py:479:   dwz                                         i586                    0.12-2.mga6                                     mageia-cauldron                   98 k
+DEBUG util.py:479:   e2fsprogs                                   i586                    1.43.6-1.mga7                                   mageia-cauldron                  1.0 M
+DEBUG util.py:479:   elfutils                                    i586                    0.170-1.mga7                                    mageia-cauldron                  457 k
+DEBUG util.py:479:   enchant                                     i586                    1.6.0-14.mga7                                   mageia-cauldron                   22 k
+DEBUG util.py:479:   etcskel                                     noarch                  1.63-34.mga6                                    mageia-cauldron                  8.1 k
+DEBUG util.py:479:   ethtool                                     i586                    1:4.13-1.mga7                                   mageia-cauldron                  109 k
+DEBUG util.py:479:   file                                        i586                    5.32-1.mga7                                     mageia-cauldron                  420 k
+DEBUG util.py:479:   filesystem                                  i586                    2.1.9-28.mga6                                   mageia-cauldron                   15 k
+DEBUG util.py:479:   findutils                                   i586                    4.6.0-1.mga6                                    mageia-cauldron                  455 k
+DEBUG util.py:479:   gawk                                        i586                    4.2.0-1.mga7                                    mageia-cauldron                  951 k
+DEBUG util.py:479:   gcc                                         i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                   12 M
+DEBUG util.py:479:   gcc-c++                                     i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                  7.5 M
+DEBUG util.py:479:   gcc-cpp                                     i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                  6.8 M
+DEBUG util.py:479:   gdb-headless                                i586                    8.0.1-3.mga7                                    mageia-cauldron                  2.4 M
+DEBUG util.py:479:   gettext                                     i586                    0.19.8.1-1.mga6                                 mageia-cauldron                  549 k
+DEBUG util.py:479:   gettext-base                                i586                    0.19.8.1-1.mga6                                 mageia-cauldron                  458 k
+DEBUG util.py:479:   glibc                                       i586                    6:2.22-25.mga6                                  mageia-cauldron                  3.8 M
+DEBUG util.py:479:   glibc-devel                                 i586                    6:2.22-25.mga6                                  mageia-cauldron                  2.5 M
+DEBUG util.py:479:   gnupg2                                      i586                    2.1.22-1.mga7                                   mageia-cauldron                  2.5 M
+DEBUG util.py:479:   gobject-introspection                       i586                    1.54.1-1.mga7                                   mageia-cauldron                  397 k
+DEBUG util.py:479:   grep                                        i586                    3.1-1.mga7                                      mageia-cauldron                  176 k
+DEBUG util.py:479:   groff-for-man                               i586                    1.22.3-1.mga6                                   mageia-cauldron                  701 k
+DEBUG util.py:479:   guile-runtime                               i586                    2.0.14-1.mga7                                   mageia-cauldron                  1.8 M
+DEBUG util.py:479:   gzip                                        i586                    1.8-1.mga6                                      mageia-cauldron                  115 k
+DEBUG util.py:479:   hawkey-man                                  noarch                  0.11.1-1.mga7                                   mageia-cauldron                   23 k
+DEBUG util.py:479:   hostname                                    i586                    3.18-1.mga6                                     mageia-cauldron                   24 k
+DEBUG util.py:479:   icu58-data                                  noarch                  1:58.2-3.mga6                                   mageia-cauldron                  6.1 M
+DEBUG util.py:479:   ifmetric                                    i586                    0.3-17.mga6                                     mageia-cauldron                   14 k
+DEBUG util.py:479:   ifplugd                                     i586                    0.28-20.mga6                                    mageia-cauldron                   46 k
+DEBUG util.py:479:   info-install                                i586                    6.1-1.mga6                                      mageia-cauldron                   32 k
+DEBUG util.py:479:   initscripts                                 i586                    9.55-27.mga7                                    mageia-cauldron                  1.0 M
+DEBUG util.py:479:   iproute2                                    i586                    4.14.1-1.mga7                                   mageia-cauldron                  714 k
+DEBUG util.py:479:   iputils                                     i586                    20161105-2.mga6                                 mageia-cauldron                  127 k
+DEBUG util.py:479:   isl                                         i586                    0.16.1-1.mga6                                   mageia-cauldron                   15 k
+DEBUG util.py:479:   kbd                                         i586                    2.0.3-1.mga6                                    mageia-cauldron                  1.6 M
+DEBUG util.py:479:   kernel-userspace-headers                    i586                    4.14.4-1.mga7                                   mageia-cauldron                  1.0 M
+DEBUG util.py:479:   kmod                                        i586                    24-2.mga6                                       mageia-cauldron                  107 k
+DEBUG util.py:479:   krb5                                        i586                    1.15.2-1.mga7                                   mageia-cauldron                   34 k
+DEBUG util.py:479:   less                                        i586                    487-2.mga7                                      mageia-cauldron                  180 k
+DEBUG util.py:479:   libacl1                                     i586                    2.2.52-7.mga6                                   mageia-cauldron                   55 k
+DEBUG util.py:479:   libarchive13                                i586                    3.3.2-3.mga7                                    mageia-cauldron                  342 k
+DEBUG util.py:479:   libassuan0                                  i586                    2.4.3-1.mga6                                    mageia-cauldron                   41 k
+DEBUG util.py:479:   libatomic_ops1                              i586                    7.4.2-6.mga6                                    mageia-cauldron                   10 k
+DEBUG util.py:479:   libattr1                                    i586                    2.4.47-7.mga6                                   mageia-cauldron                   25 k
+DEBUG util.py:479:   libaudit1                                   i586                    2.8.1-1.mga7                                    mageia-cauldron                   45 k
+DEBUG util.py:479:   libbabeltrace1                              i586                    1.5.3-3.mga7                                    mageia-cauldron                  214 k
+DEBUG util.py:479:   libblkid1                                   i586                    2.30.1-2.mga7                                   mageia-cauldron                  131 k
+DEBUG util.py:479:   libbrotlicommon1                            i586                    1.0.2-1.mga7                                    mageia-cauldron                   61 k
+DEBUG util.py:479:   libbrotlidec1                               i586                    1.0.2-1.mga7                                    mageia-cauldron                   30 k
+DEBUG util.py:479:   libbzip2_1                                  i586                    1.0.6-10.mga6                                   mageia-cauldron                   36 k
+DEBUG util.py:479:   libcap-ng0                                  i586                    0.7.8-2.mga7                                    mageia-cauldron                   25 k
+DEBUG util.py:479:   libcap2                                     i586                    2.25-1.mga6                                     mageia-cauldron                   26 k
+DEBUG util.py:479:   libcomps0                                   i586                    0.1.8-3.mga7                                    mageia-cauldron                   76 k
+DEBUG util.py:479:   libcrack2                                   i586                    2.9.6-5.mga6                                    mageia-cauldron                   21 k
+DEBUG util.py:479:   libcroco0.6_3                               i586                    0.6.12-2.mga6                                   mageia-cauldron                  148 k
+DEBUG util.py:479:   libcryptsetup4                              i586                    1.7.5-1.mga6                                    mageia-cauldron                   84 k
+DEBUG util.py:479:   libcurl4                                    i586                    1:7.57.0-2.mga7                                 mageia-cauldron                  257 k
+DEBUG util.py:479:   libdaemon0                                  i586                    0.14-10.mga6                                    mageia-cauldron                   18 k
+DEBUG util.py:479:   libdb5.3                                    i586                    5.3.28-13.mga7                                  mageia-cauldron                  541 k
+DEBUG util.py:479:   libdbus1_3                                  i586                    1.10.16-1.mga6                                  mageia-cauldron                  140 k
+DEBUG util.py:479:   libdevmapper-event1.02                      i586                    1.02.137-1.mga6                                 mageia-cauldron                   19 k
+DEBUG util.py:479:   libdevmapper1.02                            i586                    1.02.137-1.mga6                                 mageia-cauldron                  151 k
+DEBUG util.py:479:   libdnf1                                     i586                    0.11.1-1.mga7                                   mageia-cauldron                  124 k
+DEBUG util.py:479:   libelfutils1                                i586                    0.170-1.mga7                                    mageia-cauldron                  313 k
+DEBUG util.py:479:   libenchant1                                 i586                    1.6.0-14.mga7                                   mageia-cauldron                   38 k
+DEBUG util.py:479:   libexpat1                                   i586                    2.2.5-1.mga7                                    mageia-cauldron                   68 k
+DEBUG util.py:479:   libext2fs2                                  i586                    1.43.6-1.mga7                                   mageia-cauldron                  205 k
+DEBUG util.py:479:   libfdisk1                                   i586                    2.30.1-2.mga7                                   mageia-cauldron                  162 k
+DEBUG util.py:479:   libffi6                                     i586                    3.2.1-5.mga6                                    mageia-cauldron                   30 k
+DEBUG util.py:479:   libfuse2                                    i586                    2.9.7-3.mga7                                    mageia-cauldron                   97 k
+DEBUG util.py:479:   libgc1                                      i586                    7.4.2-8.mga6                                    mageia-cauldron                   94 k
+DEBUG util.py:479:   libgcc1                                     i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                   98 k
+DEBUG util.py:479:   libgcrypt20                                 i586                    1.8.1-1.mga7                                    mageia-cauldron                  408 k
+DEBUG util.py:479:   libgdbm4                                    i586                    1.13-1.mga7                                     mageia-cauldron                   45 k
+DEBUG util.py:479:   libgettextmisc                              i586                    0.19.8.1-1.mga6                                 mageia-cauldron                  288 k
+DEBUG util.py:479:   libgio2.0_0                                 i586                    2.54.2-1.mga7                                   mageia-cauldron                  584 k
+DEBUG util.py:479:   libgirepository1.0_1                        i586                    1.54.1-1.mga7                                   mageia-cauldron                   95 k
+DEBUG util.py:479:   libglib2.0_0                                i586                    2.54.2-1.mga7                                   mageia-cauldron                  527 k
+DEBUG util.py:479:   libglibmm2.4_1                              i586                    2.50.1-2.mga7                                   mageia-cauldron                  510 k
+DEBUG util.py:479:   libgmp10                                    i586                    6.1.2-1.mga6                                    mageia-cauldron                  233 k
+DEBUG util.py:479:   libgnutls30                                 i586                    3.6.1-3.mga7                                    mageia-cauldron                  508 k
+DEBUG util.py:479:   libgomp1                                    i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                   95 k
+DEBUG util.py:479:   libgpg-error-common                         noarch                  1.27-1.mga7                                     mageia-cauldron                   77 k
+DEBUG util.py:479:   libgpg-error0                               i586                    1.27-1.mga7                                     mageia-cauldron                   44 k
+DEBUG util.py:479:   libgpgme11                                  i586                    1.9.0-1.mga7                                    mageia-cauldron                  136 k
+DEBUG util.py:479:   libguile2.0_22                              i586                    2.0.14-1.mga7                                   mageia-cauldron                  477 k
+DEBUG util.py:479:   libhfstospell8                              i586                    0.4.3-3.mga6                                    mageia-cauldron                   83 k
+DEBUG util.py:479:   libhogweed4                                 i586                    1:3.3-1.mga6                                    mageia-cauldron                  230 k
+DEBUG util.py:479:   libhunspell1.6_0                            i586                    1.6.2-1.mga7                                    mageia-cauldron                  163 k
+DEBUG util.py:479:   libicu58                                    i586                    1:58.2-3.mga6                                   mageia-cauldron                  1.5 M
+DEBUG util.py:479:   libidn11                                    i586                    1.33-3.mga7                                     mageia-cauldron                   88 k
+DEBUG util.py:479:   libidn2_0                                   i586                    2.0.4-1.mga7                                    mageia-cauldron                   54 k
+DEBUG util.py:479:   libintl8                                    i586                    0.19.8.1-1.mga6                                 mageia-cauldron                   75 k
+DEBUG util.py:479:   libipt1                                     i586                    1.4.4-2.mga6                                    mageia-cauldron                   41 k
+DEBUG util.py:479:   libisl15                                    i586                    0.16.1-1.mga6                                   mageia-cauldron                  598 k
+DEBUG util.py:479:   libkmod2                                    i586                    24-2.mga6                                       mageia-cauldron                   52 k
+DEBUG util.py:479:   libkrb53                                    i586                    1.15.2-1.mga7                                   mageia-cauldron                  710 k
+DEBUG util.py:479:   libksba8                                    i586                    1.3.5-1.mga6                                    mageia-cauldron                  100 k
+DEBUG util.py:479:   libldap2.4_2                                i586                    2.4.45-3.mga7                                   mageia-cauldron                  213 k
+DEBUG util.py:479:   liblockdev1                                 i586                    1.0.4-0.120111007git.12.mga6                    mageia-cauldron                   20 k
+DEBUG util.py:479:   libltdl7                                    i586                    2.4.6-6.mga7                                    mageia-cauldron                   27 k
+DEBUG util.py:479:   liblua5.3                                   i586                    5.3.4-3.mga7                                    mageia-cauldron                  116 k
+DEBUG util.py:479:   liblzma5                                    i586                    5.2.3-2.mga7                                    mageia-cauldron                  112 k
+DEBUG util.py:479:   libmagic1                                   i586                    5.32-1.mga7                                     mageia-cauldron                   76 k
+DEBUG util.py:479:   libmicrohttpd12                             i586                    0.9.58-1.mga7                                   mageia-cauldron                  103 k
+DEBUG util.py:479:   libmount1                                   i586                    2.30.1-2.mga7                                   mageia-cauldron                  139 k
+DEBUG util.py:479:   libmpc3                                     i586                    1.0.3-1.mga6                                    mageia-cauldron                   54 k
+DEBUG util.py:479:   libmpfr4                                    i586                    3.1.5-1.mga6                                    mageia-cauldron                  176 k
+DEBUG util.py:479:   libnatspec0                                 i586                    0.3.1-2.mga6                                    mageia-cauldron                   50 k
+DEBUG util.py:479:   libncurses6                                 i586                    6.0-9.mga7                                      mageia-cauldron                  228 k
+DEBUG util.py:479:   libncursesw6                                i586                    6.0-9.mga7                                      mageia-cauldron                  182 k
+DEBUG util.py:479:   libnettle6                                  i586                    1:3.3-1.mga6                                    mageia-cauldron                  243 k
+DEBUG util.py:479:   libnghttp2_14                               i586                    1.25.0-1.mga7                                   mageia-cauldron                   71 k
+DEBUG util.py:479:   libnpth0                                    i586                    1.5-1.mga6                                      mageia-cauldron                   22 k
+DEBUG util.py:479:   libopenssl1.1                               i586                    1.1.0g-1.mga7                                   mageia-cauldron                  1.1 M
+DEBUG util.py:479:   libp11-kit0                                 i586                    0.23.2-2.mga6                                   mageia-cauldron                  120 k
+DEBUG util.py:479:   libpam0                                     i586                    1.3.0-6.mga7                                    mageia-cauldron                  233 k
+DEBUG util.py:479:   libpam_userpass1                            i586                    1.0.2-13.mga7                                   mageia-cauldron                   14 k
+DEBUG util.py:479:   libpcre1                                    i586                    8.40-2.mga6                                     mageia-cauldron                  159 k
+DEBUG util.py:479:   libpcre16_0                                 i586                    8.40-2.mga6                                     mageia-cauldron                  152 k
+DEBUG util.py:479:   libpcre32_0                                 i586                    8.40-2.mga6                                     mageia-cauldron                  143 k
+DEBUG util.py:479:   libpcreposix1                               i586                    8.40-2.mga6                                     mageia-cauldron                   13 k
+DEBUG util.py:479:   libpopt0                                    i586                    1:1.16-13.mga6                                  mageia-cauldron                   32 k
+DEBUG util.py:479:   libprocps6                                  i586                    3.3.12-1.mga6                                   mageia-cauldron                   45 k
+DEBUG util.py:479:   libpsl5                                     i586                    0.19.1-1.mga7                                   mageia-cauldron                   47 k
+DEBUG util.py:479:   libpython2.7                                i586                    2.7.14-1.mga7                                   mageia-cauldron                  610 k
+DEBUG util.py:479:   libpython2.7-stdlib                         i586                    2.7.14-1.mga7                                   mageia-cauldron                  4.0 M
+DEBUG util.py:479:   libpython3.6                                i586                    3.6.2-3.mga7                                    mageia-cauldron                  911 k
+DEBUG util.py:479:   libpython3.6-stdlib                         i586                    3.6.2-3.mga7                                    mageia-cauldron                  5.5 M
+DEBUG util.py:479:   libqrencode3                                i586                    3.4.4-5.mga6                                    mageia-cauldron                  140 k
+DEBUG util.py:479:   libreadline6                                i586                    6.3-9.mga6                                      mageia-cauldron                  122 k
+DEBUG util.py:479:   libreadline7                                i586                    7.0-1.mga7                                      mageia-cauldron                  131 k
+DEBUG util.py:479:   librepo0                                    i586                    1.7.20-3.mga7                                   mageia-cauldron                   70 k
+DEBUG util.py:479:   librpm8                                     i586                    1:4.14.0-5.mga7                                 mageia-cauldron                  294 k
+DEBUG util.py:479:   librpmbuild8                                i586                    1:4.14.0-5.mga7                                 mageia-cauldron                   99 k
+DEBUG util.py:479:   librpmsign8                                 i586                    1:4.14.0-5.mga7                                 mageia-cauldron                   31 k
+DEBUG util.py:479:   libsasl2_3                                  i586                    2.1.26-13.mga7                                  mageia-cauldron                   62 k
+DEBUG util.py:479:   libsecret-i18n                              noarch                  0.18.5-2.mga6                                   mageia-cauldron                   30 k
+DEBUG util.py:479:   libsecret-tools                             i586                    0.18.5-2.mga6                                   mageia-cauldron                   16 k
+DEBUG util.py:479:   libsecret1_0                                i586                    0.18.5-2.mga6                                   mageia-cauldron                  104 k
+DEBUG util.py:479:   libsigc++2.0_0                              i586                    2.10.0-1.mga6                                   mageia-cauldron                   35 k
+DEBUG util.py:479:   libsigsegv2                                 i586                    2.10-7.mga6                                     mageia-cauldron                   26 k
+DEBUG util.py:479:   libsmartcols1                               i586                    2.30.1-2.mga7                                   mageia-cauldron                   84 k
+DEBUG util.py:479:   libsolv-tools                               i586                    0.6.30-1.mga7                                   mageia-cauldron                   93 k
+DEBUG util.py:479:   libsolv0                                    i586                    0.6.30-1.mga7                                   mageia-cauldron                  391 k
+DEBUG util.py:479:   libsqlite3_0                                i586                    3.21.0-1.mga7                                   mageia-cauldron                  510 k
+DEBUG util.py:479:   libssh2_1                                   i586                    1.8.0-1.mga7                                    mageia-cauldron                  142 k
+DEBUG util.py:479:   libstdc++-devel                             i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                  1.3 M
+DEBUG util.py:479:   libstdc++6                                  i586                    7.2.2-20171207.1.mga7                           mageia-cauldron                  406 k
+DEBUG util.py:479:   libsystemd0                                 i586                    230-12.mga6                                     mageia-cauldron                  231 k
+DEBUG util.py:479:   libtasn1_6                                  i586                    4.12-1.mga6                                     mageia-cauldron                   42 k
+DEBUG util.py:479:   libtcb0                                     i586                    1.1-7.mga6                                      mageia-cauldron                   17 k
+DEBUG util.py:479:   libtool-base                                i586                    2.4.6-6.mga7                                    mageia-cauldron                  407 k
+DEBUG util.py:479:   libudev1                                    i586                    230-12.mga6                                     mageia-cauldron                   66 k
+DEBUG util.py:479:   libunistring2                               i586                    0.9.7-1.mga6                                    mageia-cauldron                  379 k
+DEBUG util.py:479:   libusb1.0_0                                 i586                    1.0.21-1.mga6                                   mageia-cauldron                   66 k
+DEBUG util.py:479:   libuser                                     i586                    0.62-9.mga7                                     mageia-cauldron                  281 k
+DEBUG util.py:479:   libuser1                                    i586                    0.62-9.mga7                                     mageia-cauldron                   53 k
+DEBUG util.py:479:   libutempter                                 i586                    1.1.6-5.mga6                                    mageia-cauldron                   23 k
+DEBUG util.py:479:   libuuid1                                    i586                    2.30.1-2.mga7                                   mageia-cauldron                   20 k
+DEBUG util.py:479:   libverto1                                   i586                    0.2.6-7.mga7                                    mageia-cauldron                   18 k
+DEBUG util.py:479:   libvoikko1                                  i586                    4.1.1-2.mga7                                    mageia-cauldron                  120 k
+DEBUG util.py:479:   libxml++2.6_2                               i586                    2.40.1-2.mga6                                   mageia-cauldron                   71 k
+DEBUG util.py:479:   libxml2_2                                   i586                    2.9.7-1.mga7                                    mageia-cauldron                  596 k
+DEBUG util.py:479:   libzlib1                                    i586                    1.2.11-4.mga6                                   mageia-cauldron                   64 k
+DEBUG util.py:479:   lockdev                                     i586                    1.0.4-0.120111007git.12.mga6                    mageia-cauldron                   12 k
+DEBUG util.py:479:   logrotate                                   i586                    3.12.2-1.mga6                                   mageia-cauldron                   61 k
+DEBUG util.py:479:   lsb-release                                 noarch                  2.0-53.mga7                                     mageia-cauldron                   15 k
+DEBUG util.py:479:   m4                                          i586                    1.4.18-1.mga6                                   mageia-cauldron                  180 k
+DEBUG util.py:479:   mageia-dnf-conf                             noarch                  1.0-1.mga6                                      mageia-cauldron                  6.3 k
+DEBUG util.py:479:   mageia-release-Default                      i586                    7-0.1.mga6                                      mageia-cauldron                   12 k
+DEBUG util.py:479:   mageia-release-common                       i586                    7-0.1.mga6                                      mageia-cauldron                   41 k
+DEBUG util.py:479:   mageia-repos                                i586                    7-0.0.1.mga6                                    mageia-cauldron                   10 k
+DEBUG util.py:479:   mageia-repos-cauldron                       i586                    7-0.0.1.mga6                                    mageia-cauldron                   10 k
+DEBUG util.py:479:   mageia-repos-keys                           noarch                  7-0.0.1.mga6                                    mageia-cauldron                  9.4 k
+DEBUG util.py:479:   mageia-repos-pkgprefs                       noarch                  7-0.0.1.mga6                                    mageia-cauldron                  8.6 k
+DEBUG util.py:479:   make                                        i586                    1:4.2.1-1.mga7                                  mageia-cauldron                  441 k
+DEBUG util.py:479:   makedev                                     noarch                  4.4-21.mga6                                     mageia-cauldron                   61 k
+DEBUG util.py:479:   multiarch-utils                             noarch                  1.0.13-7.mga6                                   mageia-cauldron                   12 k
+DEBUG util.py:479:   ncurses                                     i586                    6.0-9.mga7                                      mageia-cauldron                  197 k
+DEBUG util.py:479:   net-tools                                   i586                    2.0-0.20150915git.4.mga6                        mageia-cauldron                  278 k
+DEBUG util.py:479:   nikto                                       noarch                  2.1.5-9.mga6                                    mageia-cauldron                  308 k
+DEBUG util.py:479:   nss-myhostname                              i586                    230-12.mga6                                     mageia-cauldron                  192 k
+DEBUG util.py:479:   nss_tcb                                     i586                    1.1-7.mga6                                      mageia-cauldron                   11 k
+DEBUG util.py:479:   openldap                                    i586                    2.4.45-3.mga7                                   mageia-cauldron                   22 k
+DEBUG util.py:479:   p11-kit                                     i586                    0.23.2-2.mga6                                   mageia-cauldron                   32 k
+DEBUG util.py:479:   pam                                         i586                    1.3.0-6.mga7                                    mageia-cauldron                  283 k
+DEBUG util.py:479:   pam_tcb                                     i586                    1.1-7.mga6                                      mageia-cauldron                   26 k
+DEBUG util.py:479:   passwd                                      i586                    0.79-6.mga6                                     mageia-cauldron                   85 k
+DEBUG util.py:479:   patch                                       i586                    2.7.5-2.mga6                                    mageia-cauldron                  117 k
+DEBUG util.py:479:   pcre                                        i586                    8.40-2.mga6                                     mageia-cauldron                  104 k
+DEBUG util.py:479:   perl                                        i586                    2:5.26.1-1.mga7                                 mageia-cauldron                   10 M
+DEBUG util.py:479:   perl-Exporter-Tiny                          noarch                  1.0.0-1.mga7                                    mageia-cauldron                   47 k
+DEBUG util.py:479:   perl-File-Slurp                             noarch                  9999.190.0-8.mga6                               mageia-cauldron                   28 k
+DEBUG util.py:479:   perl-File-Sync                              i586                    0.110.0-22.mga7                                 mageia-cauldron                   17 k
+DEBUG util.py:479:   perl-JSON                                   noarch                  2.970.0-1.mga7                                  mageia-cauldron                   81 k
+DEBUG util.py:479:   perl-List-MoreUtils                         noarch                  0.426.0-1.mga7                                  mageia-cauldron                   51 k
+DEBUG util.py:479:   perl-List-MoreUtils-XS                      i586                    0.426-1.mga7                                    mageia-cauldron                   55 k
+DEBUG util.py:479:   perl-MDK-Common                             noarch                  1.2.34-1.mga7                                   mageia-cauldron                   54 k
+DEBUG util.py:479:   perl-YAML                                   noarch                  1.240.0-1.mga7                                  mageia-cauldron                   70 k
+DEBUG util.py:479:   perl-YAML-Tiny                              noarch                  1.700.0-1.mga7                                  mageia-cauldron                   48 k
+DEBUG util.py:479:   perl-base                                   i586                    2:5.26.1-1.mga7                                 mageia-cauldron                  1.7 M
+DEBUG util.py:479:   pinentry                                    i586                    1.0.0-2.mga6                                    mageia-cauldron                   79 k
+DEBUG util.py:479:   pkgconfig                                   i586                    0.29.2-1.mga7                                   mageia-cauldron                   69 k
+DEBUG util.py:479:   popt-data                                   noarch                  1:1.16-13.mga6                                  mageia-cauldron                   24 k
+DEBUG util.py:479:   procps-ng                                   i586                    3.3.12-1.mga6                                   mageia-cauldron                  328 k
+DEBUG util.py:479:   psmisc                                      i586                    22.21-7.mga6                                    mageia-cauldron                  123 k
+DEBUG util.py:479:   publicsuffix-list-dafsa                     noarch                  20171028-1.mga7                                 mageia-cauldron                   44 k
+DEBUG util.py:479:   python                                      i586                    2.7.14-1.mga7                                   mageia-cauldron                   76 k
+DEBUG util.py:479:   python-rpm-macros                           noarch                  3-5.mga7                                        mageia-cauldron                  8.6 k
+DEBUG util.py:479:   python-srpm-macros                          noarch                  3-5.mga7                                        mageia-cauldron                  7.6 k
+DEBUG util.py:479:   python2-pkg-resources                       noarch                  36.2.4-6.mga7                                   mageia-cauldron                  181 k
+DEBUG util.py:479:   python2-rpm-macros                          noarch                  3-5.mga7                                        mageia-cauldron                  7.7 k
+DEBUG util.py:479:   python3                                     i586                    3.6.2-3.mga7                                    mageia-cauldron                   22 k
+DEBUG util.py:479:   python3-dnf                                 noarch                  2.7.5-1.mga7                                    mageia-cauldron                  389 k
+DEBUG util.py:479:   python3-dnf-plugins-core                    noarch                  2.1.5-1.mga7                                    mageia-cauldron                   62 k
+DEBUG util.py:479:   python3-enchant                             noarch                  1.6.10-1.mga7                                   mageia-cauldron                  100 k
+DEBUG util.py:479:   python3-gpg                                 i586                    1.9.0-1.mga7                                    mageia-cauldron                  207 k
+DEBUG util.py:479:   python3-hawkey                              i586                    0.11.1-1.mga7                                   mageia-cauldron                   54 k
+DEBUG util.py:479:   python3-iniparse                            noarch                  0.4-15.mga7                                     mageia-cauldron                   41 k
+DEBUG util.py:479:   python3-libcomps                            i586                    0.1.8-3.mga7                                    mageia-cauldron                   45 k
+DEBUG util.py:479:   python3-librepo                             i586                    1.7.20-3.mga7                                   mageia-cauldron                   42 k
+DEBUG util.py:479:   python3-magic                               noarch                  5.32-1.mga7                                     mageia-cauldron                   15 k
+DEBUG util.py:479:   python3-pip                                 noarch                  9.0.1-2.mga7                                    mageia-cauldron                  1.5 M
+DEBUG util.py:479:   python3-pkg-resources                       noarch                  36.2.4-6.mga7                                   mageia-cauldron                  183 k
+DEBUG util.py:479:   python3-rpm                                 i586                    1:4.14.0-5.mga7                                 mageia-cauldron                   76 k
+DEBUG util.py:479:   python3-rpm-generators                      noarch                  4.13.0.1-2.6.mga7                               mageia-cauldron                   25 k
+DEBUG util.py:479:   python3-rpm-macros                          noarch                  3-5.mga7                                        mageia-cauldron                  7.8 k
+DEBUG util.py:479:   python3-setuptools                          noarch                  36.2.4-6.mga7                                   mageia-cauldron                  348 k
+DEBUG util.py:479:   python3-six                                 noarch                  1.10.0-3.mga7                                   mageia-cauldron                   31 k
+DEBUG util.py:479:   resolvconf                                  noarch                  1.79-1.mga6                                     mageia-cauldron                   36 k
+DEBUG util.py:479:   rmt                                         i586                    0.4b46-3.mga7                                   mageia-cauldron                   23 k
+DEBUG util.py:479:   rootcerts                                   noarch                  1:20171025.00-1.mga7                            mageia-cauldron                  614 k
+DEBUG util.py:479:   rootfiles                                   noarch                  11.0-14.mga6                                    mageia-cauldron                   11 k
+DEBUG util.py:479:   rpm                                         i586                    1:4.14.0-5.mga7                                 mageia-cauldron                  462 k
+DEBUG util.py:479:   rpm-helper                                  noarch                  0.24.17-4.mga6                                  mageia-cauldron                   22 k
+DEBUG util.py:479:   rpm-plugin-syslog                           i586                    1:4.14.0-5.mga7                                 mageia-cauldron                   26 k
+DEBUG util.py:479:   rpm-plugin-systemd-inhibit                  i586                    1:4.14.0-5.mga7                                 mageia-cauldron                   28 k
+DEBUG util.py:479:   rpmlint                                     noarch                  1.10-2.mga7                                     mageia-cauldron                  232 k
+DEBUG util.py:479:   rpmlint-mageia-policy                       noarch                  0.2.29-3.mga7                                   mageia-cauldron                   11 k
+DEBUG util.py:479:   run-parts                                   i586                    1:4.4-7.mga6                                    mageia-cauldron                   42 k
+DEBUG util.py:479:   rust-srpm-macros                            noarch                  4-1.mga7                                        mageia-cauldron                  7.4 k
+DEBUG util.py:479:   sash                                        i586                    3.8-6.mga6                                      mageia-cauldron                  340 k
+DEBUG util.py:479:   sed                                         i586                    4.4-1.mga7                                      mageia-cauldron                  243 k
+DEBUG util.py:479:   setup                                       noarch                  2.7.24-1.mga6                                   mageia-cauldron                  122 k
+DEBUG util.py:479:   shadow-utils                                i586                    2:4.4-1.mga6                                    mageia-cauldron                  1.0 M
+DEBUG util.py:479:   shared-mime-info                            i586                    1.8-2.mga7                                      mageia-cauldron                  294 k
+DEBUG util.py:479:   spec-helper                                 noarch                  0.31.11-1.mga6                                  mageia-cauldron                   21 k
+DEBUG util.py:479:   systemd                                     i586                    230-12.mga6                                     mageia-cauldron                  5.6 M
+DEBUG util.py:479:   systemd-units                               i586                    230-12.mga6                                     mageia-cauldron                  396 k
+DEBUG util.py:479:   tar                                         i586                    1.29-4.mga7                                     mageia-cauldron                  825 k
+DEBUG util.py:479:   tcb                                         i586                    1.1-7.mga6                                      mageia-cauldron                   24 k
+DEBUG util.py:479:   time                                        i586                    1.7-45.mga6                                     mageia-cauldron                   20 k
+DEBUG util.py:479:   timezone                                    i586                    6:2017b-1.mga6                                  mageia-cauldron                  353 k
+DEBUG util.py:479:   traceroute                                  i586                    2.1.0-1.mga6                                    mageia-cauldron                   45 k
+DEBUG util.py:479:   unzip                                       i586                    6.0-17.mga6                                     mageia-cauldron                  208 k
+DEBUG util.py:479:   util-linux                                  i586                    2.30.1-2.mga7                                   mageia-cauldron                  2.2 M
+DEBUG util.py:479:   vim-minimal                                 i586                    8.0.1283-1.mga7                                 mageia-cauldron                  403 k
+DEBUG util.py:479:   which                                       i586                    2.21-3.mga6                                     mageia-cauldron                   30 k
+DEBUG util.py:479:   xz                                          i586                    5.2.3-2.mga7                                    mageia-cauldron                  163 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Install  288 Packages
+DEBUG util.py:479:  Total download size: 136 M
+DEBUG util.py:479:  Installed size: 526 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [MIRROR] rpm-build-4.14.0-5.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/rpm-build-4.14.0-5.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  (1/288): basesystem-minimal-7-0.1.mga7.i586.rpm                                                                              12 kB/s | 8.1 kB     00:00    
+DEBUG util.py:479:  (2/288): rpm-mageia-setup-2.25-2.mga7.i586.rpm                                                                               24 kB/s |  17 kB     00:00    
+DEBUG util.py:479:  [MIRROR] rpm-build-4.14.0-5.mga7.i586.rpm: Status code: 404 for https://ftp.fau.de/mageia/distrib/cauldron/i586/media/core/release/rpm-build-4.14.0-5.mga7.i586.rpm
+DEBUG util.py:479:  (3/288): rpm-mageia-setup-build-2.25-2.mga7.i586.rpm                                                                        206 kB/s |  60 kB     00:00    
+DEBUG util.py:479:  (4/288): chkconfig-1.10-1.mga7.i586.rpm                                                                                     418 kB/s | 151 kB     00:00    
+DEBUG util.py:479:  (5/288): common-licenses-1.1-8.mga6.noarch.rpm                                                                              179 kB/s |  46 kB     00:00    
+DEBUG util.py:479:  (6/288): cronie-1.5.1-1.mga6.i586.rpm                                                                                       261 kB/s |  87 kB     00:00    
+DEBUG util.py:479:  (7/288): coreutils-8.28-1.mga7.i586.rpm                                                                                     3.1 MB/s | 2.3 MB     00:00    
+DEBUG util.py:479:  (8/288): crontabs-1.10-22.mga6.noarch.rpm                                                                                    21 kB/s | 8.0 kB     00:00    
+DEBUG util.py:479:  (9/288): etcskel-1.63-34.mga6.noarch.rpm                                                                                     43 kB/s | 8.1 kB     00:00    
+DEBUG util.py:479:  (10/288): rpm-build-4.14.0-5.mga7.i586.rpm                                                                                   56 kB/s | 121 kB     00:02    
+DEBUG util.py:479:  (11/288): e2fsprogs-1.43.6-1.mga7.i586.rpm                                                                                  2.0 MB/s | 1.0 MB     00:00    
+DEBUG util.py:479:  (12/288): filesystem-2.1.9-28.mga6.i586.rpm                                                                                  69 kB/s |  15 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gzip-1.8-1.mga6.i586.rpm: Curl error (78): Remote file not found for ftp://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/gzip-1.8-1.mga6.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  (13/288): findutils-4.6.0-1.mga6.i586.rpm                                                                                   1.2 MB/s | 455 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gzip-1.8-1.mga6.i586.rpm: Status code: 404 for https://ftp.fau.de/mageia/distrib/cauldron/i586/media/core/release/gzip-1.8-1.mga6.i586.rpm        
+DEBUG util.py:479:  (14/288): grep-3.1-1.mga7.i586.rpm                                                                                          529 kB/s | 176 kB     00:00    
+DEBUG util.py:479:  (15/288): hostname-3.18-1.mga6.i586.rpm                                                                                      94 kB/s |  24 kB     00:00    
+DEBUG util.py:479:  [MIRROR] initscripts-9.55-27.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/initscripts-9.55-27.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] initscripts-9.55-27.mga7.i586.rpm: Status code: 404 for https://ftp.fau.de/mageia/distrib/cauldron/i586/media/core/release/initscripts-9.55-27.mga7.i586.rpm
+DEBUG util.py:479:  (16/288): gzip-1.8-1.mga6.i586.rpm                                                                                          187 kB/s | 115 kB     00:00    
+DEBUG util.py:479:  (17/288): kmod-24-2.mga6.i586.rpm                                                                                           267 kB/s | 107 kB     00:00    
+DEBUG util.py:479:  (18/288): kbd-2.0.3-1.mga6.i586.rpm                                                                                         2.7 MB/s | 1.6 MB     00:00    
+DEBUG util.py:479:  (19/288): libutempter-1.1.6-5.mga6.i586.rpm                                                                                 108 kB/s |  23 kB     00:00    
+DEBUG util.py:479:  (20/288): less-487-2.mga7.i586.rpm                                                                                          512 kB/s | 180 kB     00:00    
+DEBUG util.py:479:  [MIRROR] mageia-release-Default-7-0.1.mga6.i586.rpm: Curl error (78): Remote file not found for ftp://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/mageia-release-Default-7-0.1.mga6.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  (21/288): logrotate-3.12.2-1.mga6.i586.rpm                                                                                  221 kB/s |  61 kB     00:00    
+DEBUG util.py:479:  [MIRROR] mageia-release-Default-7-0.1.mga6.i586.rpm: Status code: 404 for https://ftp.fau.de/mageia/distrib/cauldron/i586/media/core/release/mageia-release-Default-7-0.1.mga6.i586.rpm
+DEBUG util.py:479:  (22/288): initscripts-9.55-27.mga7.i586.rpm                                                                                 722 kB/s | 1.0 MB     00:01    
+DEBUG util.py:479:  (23/288): makedev-4.4-21.mga6.noarch.rpm                                                                                    237 kB/s |  61 kB     00:00    
+DEBUG util.py:479:  (24/288): mageia-release-Default-7-0.1.mga6.i586.rpm                                                                         25 kB/s |  12 kB     00:00    
+DEBUG util.py:479:  (25/288): ncurses-6.0-9.mga7.i586.rpm                                                                                       467 kB/s | 197 kB     00:00    
+DEBUG util.py:479:  (26/288): net-tools-2.0-0.20150915git.4.mga6.i586.rpm                                                                       601 kB/s | 278 kB     00:00    
+DEBUG util.py:479:  (27/288): procps-ng-3.3.12-1.mga6.i586.rpm                                                                                  589 kB/s | 328 kB     00:00    
+DEBUG util.py:479:  (28/288): passwd-0.79-6.mga6.i586.rpm                                                                                        80 kB/s |  85 kB     00:01    
+DEBUG util.py:479:  (29/288): perl-base-5.26.1-1.mga7.i586.rpm                                                                                  2.2 MB/s | 1.7 MB     00:00    
+DEBUG util.py:479:  (30/288): rootfiles-11.0-14.mga6.noarch.rpm                                                                                  48 kB/s |  11 kB     00:00    
+DEBUG util.py:479:  (31/288): psmisc-22.21-7.mga6.i586.rpm                                                                                      357 kB/s | 123 kB     00:00    
+DEBUG util.py:479:  (32/288): rpm-4.14.0-5.mga7.i586.rpm                                                                                        1.0 MB/s | 462 kB     00:00    
+DEBUG util.py:479:  (33/288): rpm-plugin-syslog-4.14.0-5.mga7.i586.rpm                                                                           88 kB/s |  26 kB     00:00    
+DEBUG util.py:479:  (34/288): rpm-plugin-systemd-inhibit-4.14.0-5.mga7.i586.rpm                                                                 100 kB/s |  28 kB     00:00    
+DEBUG util.py:479:  (35/288): setup-2.7.24-1.mga6.noarch.rpm                                                                                    342 kB/s | 122 kB     00:00    
+DEBUG util.py:479:  (36/288): sash-3.8-6.mga6.i586.rpm                                                                                          780 kB/s | 340 kB     00:00    
+DEBUG util.py:479:  (37/288): sed-4.4-1.mga7.i586.rpm                                                                                           514 kB/s | 243 kB     00:00    
+DEBUG util.py:479:  (38/288): time-1.7-45.mga6.i586.rpm                                                                                          69 kB/s |  20 kB     00:00    
+DEBUG util.py:479:  (39/288): shadow-utils-4.4-1.mga6.i586.rpm                                                                                  1.6 MB/s | 1.0 MB     00:00    
+DEBUG util.py:479:  (40/288): tar-1.29-4.mga7.i586.rpm                                                                                          1.4 MB/s | 825 kB     00:00    
+DEBUG util.py:479:  (41/288): timezone-2017b-1.mga6.i586.rpm                                                                                    750 kB/s | 353 kB     00:00    
+DEBUG util.py:479:  (42/288): which-2.21-3.mga6.i586.rpm                                                                                        100 kB/s |  30 kB     00:00    
+DEBUG util.py:479:  (43/288): util-linux-2.30.1-2.mga7.i586.rpm                                                                                 2.7 MB/s | 2.2 MB     00:00    
+DEBUG util.py:479:  (44/288): autoconf-2.69-9.mga7.noarch.rpm                                                                                   828 kB/s | 582 kB     00:00    
+DEBUG util.py:479:  (45/288): elfutils-0.170-1.mga7.i586.rpm                                                                                    959 kB/s | 457 kB     00:00    
+DEBUG util.py:479:  (46/288): file-5.32-1.mga7.i586.rpm                                                                                         914 kB/s | 420 kB     00:00    
+DEBUG util.py:479:  (47/288): automake-1.15.1-1.mga7.noarch.rpm                                                                                 581 kB/s | 679 kB     00:01    
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://mirror.onet.pl/pub/mirrors/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for https://ftp.fau.de/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  (48/288): libacl1-2.2.52-7.mga6.i586.rpm                                                                                    153 kB/s |  55 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for http://mirror.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  (49/288): glibc-2.22-25.mga6.i586.rpm                                                                                       3.2 MB/s | 3.8 MB     00:01    
+DEBUG util.py:479:  (50/288): libbzip2_1-1.0.6-10.mga6.i586.rpm                                                                                  36 kB/s |  36 kB     00:00    
+DEBUG util.py:479:  (51/288): libcap2-2.25-1.mga6.i586.rpm                                                                                       92 kB/s |  26 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://ftp.free.fr/mirrors/mageia.org/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for http://mirror2.tuxinator.org/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  (52/288): libelfutils1-0.170-1.mga7.i586.rpm                                                                                729 kB/s | 313 kB     00:00    
+DEBUG util.py:479:  (53/288): libdb5.3-5.3.28-13.mga7.i586.rpm                                                                                  899 kB/s | 541 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for http://mirror.datacenter.by/pub/mirrors/mageia.org/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  [MIRROR] liblua5.3-5.3.4-3.mga7.i586.rpm: Curl error (78): Remote file not found for ftp://mirror.onet.pl/pub/mirrors/mageia/distrib/cauldron/i586/media/core/release/liblua5.3-5.3.4-3.mga7.i586.rpm [RETR response: 550]
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for http://magie.remi.lu/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Downloading successful, but checksum doesn't match. Calculated: 29b6aa5eff3dd286bb1ad725e4d5d3c8ae650ba2cd3768979219c8b54dcfb140(sha256)  Expected: 467f9ae5b5f7ffb5ad63a55947cfbfba77bf52e8cd3397b998f9805cd1011120(sha256) 
+DEBUG util.py:479:  (54/288): liblzma5-5.2.3-2.mga7.i586.rpm                                                                                    242 kB/s | 112 kB     00:00    
+DEBUG util.py:479:  (55/288): liblua5.3-5.3.4-3.mga7.i586.rpm                                                                                   201 kB/s | 116 kB     00:00    
+DEBUG util.py:479:  [MIRROR] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: Status code: 404 for http://ftp.snt.utwente.nl/pub/os/linux/mageia/distrib/cauldron/i586/media/core/release/gcc-c++-7.2.2-20171207.1.mga7.i586.rpm
+DEBUG util.py:479:  [FAILED] gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: No more mirrors to try - All mirrors were already tried without success                                   
+DEBUG util.py:479:  (57-58/288): libopenssl1.1-1.1.0g-1.mga7.i586.rpm          22% [============-                                             ] 3.6 MB/s |  30 MB     00:29 ETA
+DEBUG util.py:479:  Error: Error downloading packages:
+DEBUG util.py:479:    Cannot download gcc-c++-7.2.2-20171207.1.mga7.i586.rpm: All mirrors were tried
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/pts'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/dev/shm'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/sys'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/share/dev/mock/proc'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/share/dev/mock/var/cache/dnf/'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
