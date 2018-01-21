@@ -1,0 +1,8 @@
+2018-01-21 22:13:53,977 - Mock Version: 1.4.8
+2018-01-21 22:13:57,151 - Start: dnf update
+2018-01-21 22:14:08,382 - Finish: dnf update
+2018-01-21 22:14:08,404 - Finish: chroot init
+2018-01-21 22:14:08,407 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:14:08,409 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:14:16,462 - Start: clean chroot
+2018-01-21 22:14:20,018 - Finish: clean chroot
