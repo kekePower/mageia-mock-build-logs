@@ -1,0 +1,819 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /mock/cauldron/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7689dcd316dd43eeba87218dd9fe1ba6', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'db776953330040de98cfebd419e88962', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '/usr/sbin/groupdel', 'mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'faab1609d9894a609a7588ed006a877a', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b6e2a8c2207f4812b5930b8641b97249', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'LC_MESSAGES': 'C', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e6156f454f3048829a5112ffcb4a96bb', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  pure-ftpd-1.0.47-1.mga7               warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8108fbc813e7420da8f37e53994546c6', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  pure-ftpd-1.0.47.tar.bz2
+DEBUG util.py:479:  pure-ftpd-xinetd
+DEBUG util.py:479:  pure-ftpd.init
+DEBUG util.py:479:  pure-ftpd.logrotate
+DEBUG util.py:479:  pure-ftpd.mgaconf.patch
+DEBUG util.py:479:  pure-ftpd.pam
+DEBUG util.py:479:  pure-ftpd.pam-0.77
+DEBUG util.py:479:  pure-ftpd.service
+DEBUG util.py:479:  pure-ftpd.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'LC_MESSAGES': 'C', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No matching package to install: 'mysql-devel'
+DEBUG util.py:479:  No matching package to install: 'openldap-devel'
+DEBUG util.py:479:  No matching package to install: 'pam-devel'
+DEBUG util.py:479:  No matching package to install: 'pkgconfig(openssl)'
+DEBUG util.py:479:  No matching package to install: 'postgresql-devel'
+DEBUG util.py:479:  Not all dependencies satisfied
+DEBUG util.py:479:  Error: Some packages could not be found.
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'SHELL': '/bin/sh', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /mock/cauldron/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '75d26f7961e14b6db36d5158fbea1e4f', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '913b20bde5724ba2bbc6c7433e5de11d', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '/usr/sbin/groupdel', 'mock'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'cc2c068d080744af98ceeb73f08845ff', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8d5e3a62589b4caeb802fadac601808b', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /mock/cauldron/x86_64/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'bd4292124b6f4ba386039df25d8607fa', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  pure-ftpd-1.0.47-1.mga7               warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '52b80d3100c34ab6a6093b7d70505d21', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOSTNAME=mock', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  pure-ftpd-1.0.47.tar.bz2
+DEBUG util.py:479:  pure-ftpd-xinetd
+DEBUG util.py:479:  pure-ftpd.init
+DEBUG util.py:479:  pure-ftpd.logrotate
+DEBUG util.py:479:  pure-ftpd.mgaconf.patch
+DEBUG util.py:479:  pure-ftpd.pam
+DEBUG util.py:479:  pure-ftpd.pam-0.77
+DEBUG util.py:479:  pure-ftpd.service
+DEBUG util.py:479:  pure-ftpd.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'TERM': 'vt100', 'LC_MESSAGES': 'C', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.4 MB/s |  37 MB     00:08    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:10 ago on Sun 21 Jan 2018 10:24:08 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                      Arch                         Version                              Repository                             Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   lib64mariadb-devel                           x86_64                       10.2.12-1.mga7                       mageia-cauldron                       849 k
+DEBUG util.py:479:   lib64openssl-devel                           x86_64                       1.1.0g-1.mga7                        mageia-cauldron                       1.7 M
+DEBUG util.py:479:   lib64pam-devel                               x86_64                       1.3.0-6.mga7                         mageia-cauldron                        76 k
+DEBUG util.py:479:   openldap-servers-devel                       x86_64                       2.4.45-3.mga7                        mageia-cauldron                        17 k
+DEBUG util.py:479:   postgresql9.6-devel                          x86_64                       9.6.6-2.mga7                         mageia-cauldron                       1.9 M
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   lib64aio1                                    x86_64                       0.3.110-4.mga6                       mageia-cauldron                        11 k
+DEBUG util.py:479:   lib64audit-devel                             x86_64                       2.8.2-1.mga7                         mageia-cauldron                        61 k
+DEBUG util.py:479:   lib64cap-ng-devel                            x86_64                       0.7.8-2.mga7                         mageia-cauldron                        23 k
+DEBUG util.py:479:   lib64ecpg9.6_6                               x86_64                       9.6.6-2.mga7                         mageia-cauldron                        79 k
+DEBUG util.py:479:   lib64ldap2.4_2-devel                         x86_64                       2.4.45-3.mga7                        mageia-cauldron                       249 k
+DEBUG util.py:479:   lib64lmdb0                                   x86_64                       0.9.21-2.mga7                        mageia-cauldron                        49 k
+DEBUG util.py:479:   lib64lzo2_2                                  x86_64                       2.09-4.mga6                          mageia-cauldron                        59 k
+DEBUG util.py:479:   lib64mariadb3                                x86_64                       10.2.12-1.mga7                       mageia-cauldron                       113 k
+DEBUG util.py:479:   lib64pq5                                     x86_64                       9.6.6-2.mga7                         mageia-cauldron                        83 k
+DEBUG util.py:479:   lib64sasl2-devel                             x86_64                       2.1.26-14.mga7                       mageia-cauldron                        74 k
+DEBUG util.py:479:   lib64unixODBC2                               x86_64                       2.3.4-3.mga7                         mageia-cauldron                       311 k
+DEBUG util.py:479:   lib64wrap-devel                              x86_64                       7.6-47.mga6                          mageia-cauldron                        69 k
+DEBUG util.py:479:   lib64wrap0                                   x86_64                       7.6-47.mga6                          mageia-cauldron                        38 k
+DEBUG util.py:479:   lib64zlib-devel                              x86_64                       1.2.11-4.mga6                        mageia-cauldron                       220 k
+DEBUG util.py:479:   lmdb                                         x86_64                       0.9.21-2.mga7                        mageia-cauldron                        28 k
+DEBUG util.py:479:   mariadb-client                               x86_64                       10.2.12-1.mga7                       mageia-cauldron                       5.6 M
+DEBUG util.py:479:   mariadb-common                               x86_64                       10.2.12-1.mga7                       mageia-cauldron                       2.8 M
+DEBUG util.py:479:   openldap-back_mdb                            x86_64                       2.4.45-3.mga7                        mageia-cauldron                        74 k
+DEBUG util.py:479:   openldap-extra-schemas                       noarch                       1.3-18.mga6                          mageia-cauldron                        48 k
+DEBUG util.py:479:   openldap-servers                             x86_64                       2.4.45-3.mga7                        mageia-cauldron                       1.3 M
+DEBUG util.py:479:   perl-DBI                                     x86_64                       1.639.0-1.mga7                       mageia-cauldron                       634 k
+DEBUG util.py:479:   postgresql9.6                                x86_64                       9.6.6-2.mga7                         mageia-cauldron                       1.3 M
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Install  27 Packages
+DEBUG util.py:479:  Total size: 18 M
+DEBUG util.py:479:  Total download size: 11 M
+DEBUG util.py:479:  Installed size: 164 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] lib64pam-devel-1.3.0-6.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] lib64ldap2.4_2-devel-2.4.45-3.mga7.x86_64.rpm: Already downloaded                                                                                
+DEBUG util.py:479:  [SKIPPED] lib64audit-devel-2.8.2-1.mga7.x86_64.rpm: Already downloaded                                                                                     
+DEBUG util.py:479:  [SKIPPED] lib64mariadb3-10.2.12-1.mga7.x86_64.rpm: Already downloaded                                                                                      
+DEBUG util.py:479:  [SKIPPED] lib64zlib-devel-1.2.11-4.mga6.x86_64.rpm: Already downloaded                                                                                     
+DEBUG util.py:479:  [SKIPPED] lib64sasl2-devel-2.1.26-14.mga7.x86_64.rpm: Already downloaded                                                                                   
+DEBUG util.py:479:  [SKIPPED] lib64wrap-devel-7.6-47.mga6.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] lib64unixODBC2-2.3.4-3.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] lib64wrap0-7.6-47.mga6.x86_64.rpm: Already downloaded                                                                                            
+DEBUG util.py:479:  [SKIPPED] lib64cap-ng-devel-0.7.8-2.mga7.x86_64.rpm: Already downloaded                                                                                    
+DEBUG util.py:479:  [SKIPPED] postgresql9.6-devel-9.6.6-2.mga7.x86_64.rpm: Already downloaded                                                                                  
+DEBUG util.py:479:  [SKIPPED] lib64ecpg9.6_6-9.6.6-2.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] lib64pq5-9.6.6-2.mga7.x86_64.rpm: Already downloaded                                                                                             
+DEBUG util.py:479:  [SKIPPED] postgresql9.6-9.6.6-2.mga7.x86_64.rpm: Already downloaded                                                                                        
+DEBUG util.py:479:  [SKIPPED] lib64openssl-devel-1.1.0g-1.mga7.x86_64.rpm: Already downloaded                                                                                  
+DEBUG util.py:479:  (16/27): openldap-servers-devel-2.4.45-3.mga7.x86_64.rpm                                                                    8.1 kB/s |  17 kB     00:02    
+DEBUG util.py:479:  (17/27): lib64mariadb-devel-10.2.12-1.mga7.x86_64.rpm                                                                       323 kB/s | 849 kB     00:02    
+DEBUG util.py:479:  (18/27): openldap-servers-2.4.45-3.mga7.x86_64.rpm                                                                          480 kB/s | 1.3 MB     00:02    
+DEBUG util.py:479:  (19/27): openldap-back_mdb-2.4.45-3.mga7.x86_64.rpm                                                                          93 kB/s |  74 kB     00:00    
+DEBUG util.py:479:  (20/27): openldap-extra-schemas-1.3-18.mga6.noarch.rpm                                                                       58 kB/s |  48 kB     00:00    
+DEBUG util.py:479:  (21/27): lib64aio1-0.3.110-4.mga6.x86_64.rpm                                                                                 23 kB/s |  11 kB     00:00    
+DEBUG util.py:479:  (22/27): mariadb-common-10.2.12-1.mga7.x86_64.rpm                                                                           1.2 MB/s | 2.8 MB     00:02    
+DEBUG util.py:479:  (23/27): lib64lzo2_2-2.09-4.mga6.x86_64.rpm                                                                                  76 kB/s |  59 kB     00:00    
+DEBUG util.py:479:  (24/27): perl-DBI-1.639.0-1.mga7.x86_64.rpm                                                                                 573 kB/s | 634 kB     00:01    
+DEBUG util.py:479:  (25/27): lib64lmdb0-0.9.21-2.mga7.x86_64.rpm                                                                                 71 kB/s |  49 kB     00:00    
+DEBUG util.py:479:  (26/27): lmdb-0.9.21-2.mga7.x86_64.rpm                                                                                       42 kB/s |  28 kB     00:00    
+DEBUG util.py:479:  (27/27): mariadb-client-10.2.12-1.mga7.x86_64.rpm                                                                           796 kB/s | 5.6 MB     00:07    
+DEBUG util.py:479:  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                                                                       1.2 MB/s |  11 MB     00:09     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Installing       : lib64pq5-9.6.6-2.mga7.x86_64                                                                                                      1/27 
+DEBUG util.py:479:    Installing       : lib64wrap0-7.6-47.mga6.x86_64                                                                                                     2/27 
+DEBUG util.py:479:    Installing       : postgresql9.6-9.6.6-2.mga7.x86_64                                                                                                 3/27 
+DEBUG util.py:479:    Installing       : lib64lmdb0-0.9.21-2.mga7.x86_64                                                                                                   4/27 
+DEBUG util.py:479:    Installing       : lib64zlib-devel-1.2.11-4.mga6.x86_64                                                                                              5/27 
+DEBUG util.py:479:    Installing       : lib64openssl-devel-1.1.0g-1.mga7.x86_64                                                                                           6/27 
+DEBUG util.py:479:    Installing       : lib64mariadb3-10.2.12-1.mga7.x86_64                                                                                               7/27 
+DEBUG util.py:479:    Installing       : lmdb-0.9.21-2.mga7.x86_64                                                                                                         8/27 
+DEBUG util.py:479:    Installing       : lib64ecpg9.6_6-9.6.6-2.mga7.x86_64                                                                                                9/27 
+DEBUG util.py:479:    Installing       : lib64wrap-devel-7.6-47.mga6.x86_64                                                                                               10/27 
+DEBUG util.py:479:    Installing       : perl-DBI-1.639.0-1.mga7.x86_64                                                                                                   11/27 
+DEBUG util.py:479:    Installing       : lib64lzo2_2-2.09-4.mga6.x86_64                                                                                                   12/27 
+DEBUG util.py:479:    Installing       : lib64aio1-0.3.110-4.mga6.x86_64                                                                                                  13/27 
+DEBUG util.py:479:    Installing       : mariadb-client-10.2.12-1.mga7.x86_64                                                                                             14/27 
+DEBUG util.py:479:    Running scriptlet: mariadb-common-10.2.12-1.mga7.x86_64                                                                                             15/27 
+DEBUG util.py:479:    Installing       : mariadb-common-10.2.12-1.mga7.x86_64                                                                                             15/27 
+DEBUG util.py:479:    Installing       : lib64cap-ng-devel-0.7.8-2.mga7.x86_64                                                                                            16/27 
+DEBUG util.py:479:    Installing       : lib64audit-devel-2.8.2-1.mga7.x86_64                                                                                             17/27 
+DEBUG util.py:479:    Installing       : lib64pam-devel-1.3.0-6.mga7.x86_64                                                                                               18/27 
+DEBUG util.py:479:    Installing       : lib64sasl2-devel-2.1.26-14.mga7.x86_64                                                                                           19/27 
+DEBUG util.py:479:    Installing       : lib64ldap2.4_2-devel-2.4.45-3.mga7.x86_64                                                                                        20/27 
+DEBUG util.py:479:    Installing       : lib64unixODBC2-2.3.4-3.mga7.x86_64                                                                                               21/27 
+DEBUG util.py:479:    Installing       : openldap-back_mdb-2.4.45-3.mga7.x86_64                                                                                           22/27 
+DEBUG util.py:479:    Installing       : openldap-extra-schemas-1.3-18.mga6.noarch                                                                                        23/27 
+DEBUG util.py:479:    Running scriptlet: openldap-servers-2.4.45-3.mga7.x86_64                                                                                            24/27 
+DEBUG util.py:479:    Installing       : openldap-servers-2.4.45-3.mga7.x86_64                                                                                            24/27 
+DEBUG util.py:479:    Running scriptlet: openldap-servers-2.4.45-3.mga7.x86_64                                                                                            24/27 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:  /etc/init.d/slapd: line 27: /etc/sysconfig/network: No such file or directory
+DEBUG util.py:479:  perl: warning: Setting locale failed.
+DEBUG util.py:479:  perl: warning: Please check that your locale settings:
+DEBUG util.py:479:  	LANGUAGE = (unset),
+DEBUG util.py:479:  	LC_ALL = (unset),
+DEBUG util.py:479:  	LC_MESSAGES = "C",
+DEBUG util.py:479:  	LANG = "en_US.UTF-8"
+DEBUG util.py:479:      are supported and installed on your system.
+DEBUG util.py:479:  perl: warning: Falling back to the standard locale ("C").
+DEBUG util.py:479:  Can't open /etc/rsyslog.d/openldap.conf for writing: No such file or directory at /usr/share/rpm-helper/add-syslog line 57.
+DEBUG util.py:479:  perl: warning: Setting locale failed.
+DEBUG util.py:479:  perl: warning: Please check that your locale settings:
+DEBUG util.py:479:  	LANGUAGE = (unset),
+DEBUG util.py:479:  	LC_ALL = (unset),
+DEBUG util.py:479:  	LC_MESSAGES = "C",
+DEBUG util.py:479:  	LANG = "en_US.UTF-8"
+DEBUG util.py:479:      are supported and installed on your system.
+DEBUG util.py:479:  perl: warning: Falling back to the standard locale ("C").
+DEBUG util.py:479:  /usr/share/rpm-helper/create-ssl-certificate: line 62: openssl: command not found
+DEBUG util.py:479:  chmod: cannot access '/etc/pki/tls/private/ldap.pem': No such file or directory
+DEBUG util.py:479:  chgrp: cannot access '/etc/pki/tls/private/ldap.pem': No such file or directory
+DEBUG util.py:479:    Installing       : openldap-servers-devel-2.4.45-3.mga7.x86_64                                                                                      25/27 
+DEBUG util.py:479:    Installing       : lib64mariadb-devel-10.2.12-1.mga7.x86_64                                                                                         26/27 
+DEBUG util.py:479:    Installing       : postgresql9.6-devel-9.6.6-2.mga7.x86_64                                                                                          27/27 
+DEBUG util.py:479:  python3: backend/dbiset.c:62: dbiIndexSetUniq: Assertion `set->count > 0' failed.
+DEBUG util.py:617:  Child return code was: -6
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'LANG': 'en_US.UTF-8', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.9.77-ck1
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /mock/cauldron/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'cc49d3b2d93c49b29426251dc044a033', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '9fdfd773b855478e985deb6e46bfcc68', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '517f013c1b434f52b8a8ee25716f9d5f', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4016c37a9cf64146831a806e72ce9a05', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LC_MESSAGES': 'C', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                                                                                    4.7 MB/s |  37 MB     00:07    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:12 ago on Sun 21 Jan 2018 10:27:08 PM CET.
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:   Package                                       Arch                      Version                                   Repository                          Size
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrading:
+DEBUG util.py:479:   glibc                                         x86_64                    6:2.22-27.mga7                            mageia-cauldron                    5.5 M
+DEBUG util.py:479:   glibc-devel                                   x86_64                    6:2.22-27.mga7                            mageia-cauldron                    2.9 M
+DEBUG util.py:479:   kbd                                           x86_64                    2.0.4-1.mga7                              mageia-cauldron                    1.6 M
+DEBUG util.py:479:   lib64gdbm4                                    x86_64                    1.14-1.mga7                               mageia-cauldron                     42 k
+DEBUG util.py:479:   lib64rpm8                                     x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                    270 k
+DEBUG util.py:479:   lib64rpmbuild8                                x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                     92 k
+DEBUG util.py:479:   lib64rpmsign8                                 x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                     31 k
+DEBUG util.py:479:   publicsuffix-list-dafsa                       noarch                    20180111-1.mga7                           mageia-cauldron                     44 k
+DEBUG util.py:479:   python3-rpm                                   x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                     76 k
+DEBUG util.py:479:   rootcerts                                     noarch                    1:20180104.00-1.mga7                      mageia-cauldron                    555 k
+DEBUG util.py:479:   rpm                                           x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                    464 k
+DEBUG util.py:479:   rpm-build                                     x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                    120 k
+DEBUG util.py:479:   rpm-plugin-syslog                             x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                     27 k
+DEBUG util.py:479:   rpm-plugin-systemd-inhibit                    x86_64                    1:4.14.1-3.mga7                           mageia-cauldron                     28 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ============================================================================================================================================================
+DEBUG util.py:479:  Upgrade  14 Packages
+DEBUG util.py:479:  Total size: 12 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] glibc-2.22-27.mga7.x86_64.rpm: Already downloaded                                                                                                
+DEBUG util.py:479:  [SKIPPED] glibc-devel-2.22-27.mga7.x86_64.rpm: Already downloaded                                                                                          
+DEBUG util.py:479:  [SKIPPED] kbd-2.0.4-1.mga7.x86_64.rpm: Already downloaded                                                                                                  
+DEBUG util.py:479:  [SKIPPED] lib64gdbm4-1.14-1.mga7.x86_64.rpm: Already downloaded                                                                                            
+DEBUG util.py:479:  [SKIPPED] lib64rpm8-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                           
+DEBUG util.py:479:  [SKIPPED] lib64rpmbuild8-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                      
+DEBUG util.py:479:  [SKIPPED] lib64rpmsign8-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                       
+DEBUG util.py:479:  [SKIPPED] publicsuffix-list-dafsa-20180111-1.mga7.noarch.rpm: Already downloaded                                                                           
+DEBUG util.py:479:  [SKIPPED] python3-rpm-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                         
+DEBUG util.py:479:  [SKIPPED] rootcerts-20180104.00-1.mga7.noarch.rpm: Already downloaded                                                                                      
+DEBUG util.py:479:  [SKIPPED] rpm-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                                 
+DEBUG util.py:479:  [SKIPPED] rpm-build-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                           
+DEBUG util.py:479:  [SKIPPED] rpm-plugin-syslog-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                                   
+DEBUG util.py:479:  [SKIPPED] rpm-plugin-systemd-inhibit-4.14.1-3.mga7.x86_64.rpm: Already downloaded                                                                          
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                                                                    1/1 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                       1/28 
+DEBUG util.py:479:    Upgrading        : glibc-6:2.22-27.mga7.x86_64                                                                                                       1/28 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                       1/28 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Upgrading        : lib64rpm8-1:4.14.1-3.mga7.x86_64                                                                                                  2/28 
+DEBUG util.py:479:    Upgrading        : lib64rpmbuild8-1:4.14.1-3.mga7.x86_64                                                                                             3/28 
+DEBUG util.py:479:    Running scriptlet: rpm-1:4.14.1-3.mga7.x86_64                                                                                                        4/28 
+DEBUG util.py:479:    Upgrading        : rpm-1:4.14.1-3.mga7.x86_64                                                                                                        4/28 
+DEBUG util.py:479:    Running scriptlet: rpm-1:4.14.1-3.mga7.x86_64                                                                                                        4/28 
+DEBUG util.py:479:    Upgrading        : lib64rpmsign8-1:4.14.1-3.mga7.x86_64                                                                                              5/28 
+DEBUG util.py:479:    Upgrading        : python3-rpm-1:4.14.1-3.mga7.x86_64                                                                                                6/28 
+DEBUG util.py:479:    Upgrading        : rpm-build-1:4.14.1-3.mga7.x86_64                                                                                                  7/28 
+DEBUG util.py:479:    Upgrading        : rpm-plugin-syslog-1:4.14.1-3.mga7.x86_64                                                                                          8/28 
+DEBUG util.py:479:    Upgrading        : rpm-plugin-systemd-inhibit-1:4.14.1-3.mga7.x86_64                                                                                 9/28 
+DEBUG util.py:479:    Running scriptlet: glibc-devel-6:2.22-27.mga7.x86_64                                                                                                10/28 
+DEBUG util.py:479:    Upgrading        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                10/28 
+DEBUG util.py:479:    Upgrading        : kbd-2.0.4-1.mga7.x86_64                                                                                                          11/28 
+DEBUG util.py:479:    Upgrading        : lib64gdbm4-1.14-1.mga7.x86_64                                                                                                    12/28 
+DEBUG util.py:479:    Upgrading        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                            13/28 
+DEBUG util.py:479:    Upgrading        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                   14/28 
+DEBUG util.py:479:    Cleanup          : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                15/28 
+DEBUG util.py:479:    Cleanup          : rpm-build-1:4.14.1-1.mga7.x86_64                                                                                                 16/28 
+DEBUG util.py:479:    Cleanup          : python3-rpm-1:4.14.1-1.mga7.x86_64                                                                                               17/28 
+DEBUG util.py:479:    Cleanup          : rpm-1:4.14.1-1.mga7.x86_64                                                                                                       18/28 
+DEBUG util.py:479:    Running scriptlet: rpm-1:4.14.1-1.mga7.x86_64                                                                                                       18/28 
+DEBUG util.py:479:    Cleanup          : rpm-plugin-systemd-inhibit-1:4.14.1-1.mga7.x86_64                                                                                19/28 
+DEBUG util.py:479:    Cleanup          : rpm-plugin-syslog-1:4.14.1-1.mga7.x86_64                                                                                         20/28 
+DEBUG util.py:479:    Cleanup          : lib64rpmbuild8-1:4.14.1-1.mga7.x86_64                                                                                            21/28 
+DEBUG util.py:479:    Cleanup          : lib64rpmsign8-1:4.14.1-1.mga7.x86_64                                                                                             22/28 
+DEBUG util.py:479:    Cleanup          : lib64rpm8-1:4.14.1-1.mga7.x86_64                                                                                                 23/28 
+DEBUG util.py:479:    Cleanup          : lib64gdbm4-1.13-1.mga7.x86_64                                                                                                    24/28 
+DEBUG util.py:479:    Cleanup          : kbd-2.0.3-1.mga6.x86_64                                                                                                          25/28 
+DEBUG util.py:479:    Cleanup          : glibc-6:2.22-26.mga7.x86_64                                                                                                      26/28 
+DEBUG util.py:479:    Cleanup          : rootcerts-1:20171122.00-1.mga7.noarch                                                                                            27/28 
+DEBUG util.py:479:    Cleanup          : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                   28/28 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga7.x86_64                                                                                                      28/28 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-27.mga7.x86_64                                                                                                       1/28 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-27.mga7.x86_64                                                                                                 2/28 
+DEBUG util.py:479:    Verifying        : kbd-2.0.4-1.mga7.x86_64                                                                                                           3/28 
+DEBUG util.py:479:    Verifying        : lib64gdbm4-1.14-1.mga7.x86_64                                                                                                     4/28 
+DEBUG util.py:479:    Verifying        : lib64rpm8-1:4.14.1-3.mga7.x86_64                                                                                                  5/28 
+DEBUG util.py:479:    Verifying        : lib64rpmbuild8-1:4.14.1-3.mga7.x86_64                                                                                             6/28 
+DEBUG util.py:479:    Verifying        : lib64rpmsign8-1:4.14.1-3.mga7.x86_64                                                                                              7/28 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20180111-1.mga7.noarch                                                                                    8/28 
+DEBUG util.py:479:    Verifying        : python3-rpm-1:4.14.1-3.mga7.x86_64                                                                                                9/28 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20180104.00-1.mga7.noarch                                                                                            10/28 
+DEBUG util.py:479:    Verifying        : rpm-1:4.14.1-3.mga7.x86_64                                                                                                       11/28 
+DEBUG util.py:479:    Verifying        : rpm-build-1:4.14.1-3.mga7.x86_64                                                                                                 12/28 
+DEBUG util.py:479:    Verifying        : rpm-plugin-syslog-1:4.14.1-3.mga7.x86_64                                                                                         13/28 
+DEBUG util.py:479:    Verifying        : rpm-plugin-systemd-inhibit-1:4.14.1-3.mga7.x86_64                                                                                14/28 
+DEBUG util.py:479:    Verifying        : lib64rpmbuild8-1:4.14.1-1.mga7.x86_64                                                                                            15/28 
+DEBUG util.py:479:    Verifying        : lib64rpmsign8-1:4.14.1-1.mga7.x86_64                                                                                             16/28 
+DEBUG util.py:479:    Verifying        : python3-rpm-1:4.14.1-1.mga7.x86_64                                                                                               17/28 
+DEBUG util.py:479:    Verifying        : lib64gdbm4-1.13-1.mga7.x86_64                                                                                                    18/28 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20171122.00-1.mga7.noarch                                                                                            19/28 
+DEBUG util.py:479:    Verifying        : rpm-1:4.14.1-1.mga7.x86_64                                                                                                       20/28 
+DEBUG util.py:479:    Verifying        : rpm-build-1:4.14.1-1.mga7.x86_64                                                                                                 21/28 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-26.mga7.x86_64                                                                                                      22/28 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-26.mga7.x86_64                                                                                                23/28 
+DEBUG util.py:479:    Verifying        : publicsuffix-list-dafsa-20171028-1.mga7.noarch                                                                                   24/28 
+DEBUG util.py:479:    Verifying        : rpm-plugin-syslog-1:4.14.1-1.mga7.x86_64                                                                                         25/28 
+DEBUG util.py:479:    Verifying        : rpm-plugin-systemd-inhibit-1:4.14.1-1.mga7.x86_64                                                                                26/28 
+DEBUG util.py:479:    Verifying        : kbd-2.0.3-1.mga6.x86_64                                                                                                          27/28 
+DEBUG util.py:479:    Verifying        : lib64rpm8-1:4.14.1-1.mga7.x86_64                                                                                                 28/28 
+DEBUG util.py:479:  *** Please tell me who you are.
+DEBUG util.py:479:  Run
+DEBUG util.py:479:    git config --global user.email "you@example.com"
+DEBUG util.py:479:    git config --global user.name "Your Name"
+DEBUG util.py:479:  to set your account's default identity.
+DEBUG util.py:479:  Omit --global to set the identity only in this repository.
+DEBUG util.py:479:  fatal: unable to auto-detect email address (got 'root@dellirium.(none)')
+DEBUG util.py:479:  warning: etckeeper failed to commit changes in /etc using git
+DEBUG util.py:479:  Upgraded:
+DEBUG util.py:479:    glibc.x86_64 6:2.22-27.mga7                      glibc-devel.x86_64 6:2.22-27.mga7                         kbd.x86_64 2.0.4-1.mga7                      
+DEBUG util.py:479:    lib64gdbm4.x86_64 1.14-1.mga7                    lib64rpm8.x86_64 1:4.14.1-3.mga7                          lib64rpmbuild8.x86_64 1:4.14.1-3.mga7        
+DEBUG util.py:479:    lib64rpmsign8.x86_64 1:4.14.1-3.mga7             publicsuffix-list-dafsa.noarch 20180111-1.mga7            python3-rpm.x86_64 1:4.14.1-3.mga7           
+DEBUG util.py:479:    rootcerts.noarch 1:20180104.00-1.mga7            rpm.x86_64 1:4.14.1-3.mga7                                rpm-build.x86_64 1:4.14.1-3.mga7             
+DEBUG util.py:479:    rpm-plugin-syslog.x86_64 1:4.14.1-3.mga7         rpm-plugin-systemd-inhibit.x86_64 1:4.14.1-3.mga7        
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /mock/cauldron/x86_64/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '01dba5d5164c434694f8b68a54e3a350', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  pure-ftpd-1.0.47-1.mga7               warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #######################################warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c4d97bee99b34f799a4e3b340aa940fe', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  pure-ftpd-1.0.47.tar.bz2
+DEBUG util.py:479:  pure-ftpd-xinetd
+DEBUG util.py:479:  pure-ftpd.init
+DEBUG util.py:479:  pure-ftpd.logrotate
+DEBUG util.py:479:  pure-ftpd.mgaconf.patch
+DEBUG util.py:479:  pure-ftpd.pam
+DEBUG util.py:479:  pure-ftpd.pam-0.77
+DEBUG util.py:479:  pure-ftpd.service
+DEBUG util.py:479:  pure-ftpd.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/mock/cauldron/x86_64/', '--releasever', '7', '/mock/cauldron/x86_64//builddir/build/SRPMS/pure-ftpd-1.0.47-1.mga7.src.rpm'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LC_MESSAGES': 'C', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  Failed to synchronize cache for repo 'mageia-cauldron', disabling.
+DEBUG util.py:479:  No matching package to install: 'openldap-servers-devel'
+DEBUG util.py:479:  No matching package to install: 'openssl'
+DEBUG util.py:479:  No matching package to install: 'pam-devel'
+DEBUG util.py:479:  No matching package to install: 'pkgconfig(libpq)'
+DEBUG util.py:479:  No matching package to install: 'pkgconfig(mariadb)'
+DEBUG util.py:479:  No matching package to install: 'pkgconfig(openssl)'
+DEBUG util.py:479:  Not all dependencies satisfied
+DEBUG util.py:479:  Error: Some packages could not be found.
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/pts'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/dev/shm'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/sys'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/mock/cauldron/x86_64/proc'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/mock/cauldron/x86_64/var/cache/dnf/'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'SHELL': '/bin/sh', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
