@@ -1,0 +1,88 @@
+2018-01-21 01:22:30,204 - Mock Version: 1.4.8
+2018-01-21 01:22:32,873 - Finish: chroot init
+2018-01-21 01:22:32,877 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:22:32,878 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:23:35,884 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:23:35,884 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:23:35,886 - Start: Outputting list of installed packages
+2018-01-21 01:23:35,953 - Finish: Outputting list of installed packages
+2018-01-21 01:24:44,119 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:24:44,121 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:24:44,122 - Start: clean chroot
+2018-01-21 01:24:50,028 - Finish: clean chroot
+2018-01-21 01:24:50,029 - Finish: run
+2018-01-21 01:28:56,362 - Mock Version: 1.4.8
+2018-01-21 01:28:58,162 - Start: dnf update
+2018-01-21 01:29:41,432 - Finish: dnf update
+2018-01-21 01:29:41,446 - Finish: chroot init
+2018-01-21 01:29:41,449 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:29:41,451 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:30:53,475 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:30:53,475 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:30:53,477 - Start: Outputting list of installed packages
+2018-01-21 01:30:53,557 - Finish: Outputting list of installed packages
+2018-01-21 01:32:01,469 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:32:01,472 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 01:32:01,473 - Start: clean chroot
+2018-01-21 01:32:07,112 - Finish: clean chroot
+2018-01-21 01:32:07,113 - Finish: run
+2018-01-21 09:11:33,991 - Mock Version: 1.4.8
+2018-01-21 09:11:35,820 - Start: dnf update
+2018-01-21 09:12:14,842 - Finish: dnf update
+2018-01-21 09:12:14,856 - Finish: chroot init
+2018-01-21 09:12:14,860 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:12:14,863 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:13:45,364 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:13:45,364 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:13:45,367 - Start: Outputting list of installed packages
+2018-01-21 09:13:45,438 - Finish: Outputting list of installed packages
+2018-01-21 09:14:55,351 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:14:55,354 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:14:55,355 - Start: clean chroot
+2018-01-21 09:15:00,953 - Finish: clean chroot
+2018-01-21 09:15:00,955 - Finish: run
+2018-01-21 09:41:02,430 - Mock Version: 1.4.8
+2018-01-21 09:41:04,464 - Start: dnf update
+2018-01-21 09:41:42,863 - Finish: dnf update
+2018-01-21 09:41:42,877 - Finish: chroot init
+2018-01-21 09:41:42,880 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:41:42,882 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:43:51,215 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:43:51,215 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:43:51,217 - Start: Outputting list of installed packages
+2018-01-21 09:43:51,291 - Finish: Outputting list of installed packages
+2018-01-21 09:45:00,450 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:45:00,452 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:45:00,454 - Start: clean chroot
+2018-01-21 09:45:09,279 - Finish: clean chroot
+2018-01-21 09:45:09,280 - Finish: run
+2018-01-21 09:51:05,241 - Mock Version: 1.4.8
+2018-01-21 09:51:07,309 - Start: dnf update
+2018-01-21 09:51:48,212 - Finish: dnf update
+2018-01-21 09:51:48,227 - Finish: chroot init
+2018-01-21 09:51:48,230 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:51:48,232 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:53:11,534 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:53:11,535 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:53:11,537 - Start: Outputting list of installed packages
+2018-01-21 09:53:11,615 - Finish: Outputting list of installed packages
+2018-01-21 09:54:21,564 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:54:21,567 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 09:54:21,568 - Start: clean chroot
+2018-01-21 09:54:27,148 - Finish: clean chroot
+2018-01-21 09:54:27,149 - Finish: run
+2018-01-21 10:02:19,049 - Mock Version: 1.4.8
+2018-01-21 10:02:20,950 - Start: dnf update
+2018-01-21 10:02:30,793 - Finish: dnf update
+2018-01-21 10:02:30,815 - Finish: chroot init
+2018-01-21 10:02:30,818 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:02:30,820 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:03:47,624 - Finish: build setup for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:03:47,624 - Start: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:03:47,627 - Start: Outputting list of installed packages
+2018-01-21 10:03:47,701 - Finish: Outputting list of installed packages
+2018-01-21 10:04:57,130 - Finish: rpmbuild freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:04:57,133 - Finish: build phase for freecell-solver-4.16.0-1.src.rpm
+2018-01-21 10:04:57,134 - Start: clean chroot
+2018-01-21 10:05:02,767 - Finish: clean chroot
+2018-01-21 10:05:02,768 - Finish: run
