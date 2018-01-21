@@ -13,7 +13,7 @@ CPU family:          6
 Model:               42
 Model name:          Intel(R) Xeon(R) CPU E31270 @ 3.40GHz
 Stepping:            7
-CPU MHz:             3643.627
+CPU MHz:             3609.387
 CPU max MHz:         3800.0002
 CPU min MHz:         1600.0001
 BogoMIPS:            6784.49
@@ -28,8 +28,8 @@ Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cm
 
 Memory:
               total        used        free      shared  buff/cache   available
-Mem:       16391560     3006808     1050152     4783416    12334600     8264184
-Swap:       4191428      434808     3756620
+Mem:       16391560     3104628      805660     4769068    12481272     8180712
+Swap:       4191428      434540     3756888
 
 
 Storage:

@@ -70,3 +70,51 @@
 2018-01-21 22:39:10,941 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
 2018-01-21 22:39:19,522 - Start: clean chroot
 2018-01-21 22:39:23,219 - Finish: clean chroot
+2018-01-21 22:42:57,496 - Mock Version: 1.4.8
+2018-01-21 22:43:00,859 - Start: dnf update
+2018-01-21 22:43:08,032 - Finish: dnf update
+2018-01-21 22:43:08,054 - Finish: chroot init
+2018-01-21 22:43:08,057 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:43:08,059 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:43:37,472 - Start: clean chroot
+2018-01-21 22:43:41,128 - Finish: clean chroot
+2018-01-21 22:44:05,234 - Mock Version: 1.4.8
+2018-01-21 22:44:15,290 - Start: dnf update
+2018-01-21 22:44:21,633 - Finish: dnf update
+2018-01-21 22:44:21,656 - Finish: chroot init
+2018-01-21 22:44:21,659 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:44:21,661 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 22:44:31,942 - Start: clean chroot
+2018-01-21 22:44:35,877 - Finish: clean chroot
+2018-01-21 23:13:58,100 - Mock Version: 1.4.8
+2018-01-21 23:13:59,815 - Start: dnf update
+2018-01-21 23:14:24,713 - Finish: dnf update
+2018-01-21 23:14:24,736 - Finish: chroot init
+2018-01-21 23:14:24,740 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:14:24,741 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:14:39,052 - Start: clean chroot
+2018-01-21 23:14:42,697 - Finish: clean chroot
+2018-01-21 23:41:45,661 - Mock Version: 1.4.8
+2018-01-21 23:41:48,451 - Start: dnf update
+2018-01-21 23:42:22,042 - Finish: dnf update
+2018-01-21 23:42:22,056 - Finish: chroot init
+2018-01-21 23:42:22,059 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:42:22,061 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:42:57,602 - Start: clean chroot
+2018-01-21 23:43:01,690 - Finish: clean chroot
+2018-01-21 23:45:08,983 - Mock Version: 1.4.8
+2018-01-21 23:45:10,549 - Start: dnf update
+2018-01-21 23:45:33,792 - Finish: dnf update
+2018-01-21 23:45:33,814 - Finish: chroot init
+2018-01-21 23:45:33,817 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:45:33,819 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:45:47,242 - Start: clean chroot
+2018-01-21 23:45:50,830 - Finish: clean chroot
+2018-01-21 23:46:27,848 - Mock Version: 1.4.8
+2018-01-21 23:46:31,969 - Start: dnf update
+2018-01-21 23:46:45,412 - Finish: dnf update
+2018-01-21 23:46:45,434 - Finish: chroot init
+2018-01-21 23:46:45,437 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:46:45,439 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-21 23:47:17,872 - Start: clean chroot
+2018-01-21 23:47:21,858 - Finish: clean chroot
