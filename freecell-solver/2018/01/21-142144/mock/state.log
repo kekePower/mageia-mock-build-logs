@@ -1,0 +1,24 @@
+2018-01-21 14:02:36,164 - Mock Version: 1.4.8
+2018-01-21 14:02:38,587 - Start: dnf update
+2018-01-21 14:03:17,783 - Finish: dnf update
+2018-01-21 14:03:17,797 - Finish: chroot init
+2018-01-21 14:03:17,800 - Start: build phase for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:03:17,801 - Start: build setup for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:05:04,714 - Finish: build setup for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:05:04,715 - Start: rpmbuild freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:05:04,716 - Start: Outputting list of installed packages
+2018-01-21 14:05:04,782 - Finish: Outputting list of installed packages
+2018-01-21 14:05:05,440 - Start: clean chroot
+2018-01-21 14:05:16,046 - Finish: clean chroot
+2018-01-21 14:19:53,918 - Mock Version: 1.4.8
+2018-01-21 14:19:55,841 - Start: dnf update
+2018-01-21 14:20:05,302 - Finish: dnf update
+2018-01-21 14:20:05,326 - Finish: chroot init
+2018-01-21 14:20:05,329 - Start: build phase for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:20:05,331 - Start: build setup for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:21:38,154 - Finish: build setup for freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:21:38,154 - Start: rpmbuild freecell-solver-4.16.0-1.mga7.src.rpm
+2018-01-21 14:21:38,156 - Start: Outputting list of installed packages
+2018-01-21 14:21:38,224 - Finish: Outputting list of installed packages
+2018-01-21 14:21:38,870 - Start: clean chroot
+2018-01-21 14:21:44,006 - Finish: clean chroot
