@@ -1,0 +1,333 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], unshare_net=Trueuser='mockbuild'timeout=0nspawn_args=[]chrootPath='/mock/cauldron/x86_64'env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '}gid=135shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f99e832fda0>uid=1000printOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '80d5a7fe090c4af3a5d5aa18d25b8640', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-1.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], unshare_net=Trueuser='mockbuild'timeout=0nspawn_args=[]chrootPath='/mock/cauldron/x86_64'env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '}gid=135shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f99e832fda0>uid=1000printOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4300d795ac214113af784f081d545d2a', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.7cPPIg
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.9.0
++ /usr/bin/gzip -dc /builddir/build/SOURCES/bazel-0.9.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd bazel-0.9.0
++ /usr/bin/xz -dc /builddir/build/SOURCES/bazel-bin.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.O9DE7t
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ ./.rpm-build/bazel --output_base=/var/tmp/bazel build //src:bazel
+Extracting Bazel installation...
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+____Loading package: src
+____Loading package: @bazel_tools//tools/cpp
+____Loading package: @local_config_xcode//
+____Loading package: @local_config_cc//
+____Loading complete.  Analyzing...
+____Loading package: src/conditions
+____Loading package: @bazel_tools//platforms
+____Loading package: third_party/py/concurrent
+____Loading package: third_party/py/six
+____Loading package: @bazel_tools//tools/zip
+____Loading package: @bazel_tools//tools/def_parser
+____Loading package: @bazel_tools//src/tools/launcher
+____Loading package: @bazel_tools//src/tools/launcher/util
+____Loading package: third_party/jformatstring
+____Loading package: src/java_tools/buildjar/java/com/google/devtools/build/buildjar
+____Loading package: src/java_tools/buildjar/java/com/google/devtools/build/java/turbine/javac
+____Loading package: src/java_tools/junitrunner/java/com/google/testing/junit/runner/sharding/api
+____Loading package: src/java_tools/junitrunner/java/com/google/testing/junit/junit4
+____Loading package: third_party/java/android_databinding
+____Loading package: src/java_tools/singlejar/java/com/google/devtools/build/zip
+____Loading package: tools/whitelists/config_feature_flag
+____Loading package: src/main/java/com/google/devtools/common/options/processor
+____Loading package: third_party/grpc
+____Loading package: src/main/java/com/google/devtools/build/lib/shell
+____Loading package: @com_google_protobuf_cc//
+____Loading package: src/main/java/com/google/devtools/build/lib/bazel/repository/downloader
+____Loading package: src/main/java/com/google/devtools/build/lib/causes
+____Loading package: src/main/java/com/google/devtools/build/lib/buildeventstream/proto
+____Loading package: third_party/protobuf/3.4.0/util/python
+____Loading package: src/main/java/com/google/devtools/build/lib/exec/apple
+____Found 1 target...
+____Building...
+____[1 / 22] Executing genrule //tools/osx:xcode-locator-genrule
+____[28 / 46] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]
+____[178 / 200] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]
+____[227 / 248] Compiling external/com_google_protobuf_cc/src/google/protobuf/generated_message_reflection.cc
+____[265 / 286] Compiling third_party/grpc/src/cpp/server/create_default_thread_pool.cc
+____[298 / 319] Compiling third_party/protobuf/3.4.0/src/google/protobuf/map_field.cc
+____[350 / 377] Compiling third_party/protobuf/3.4.0/src/google/protobuf/io/tokenizer.cc [for host]
+____[579 / 610] Compiling third_party/grpc/src/cpp/util/time.cc
+____From Compiling src/main/cpp/blaze_util_posix.cc:
+src/main/cpp/blaze_util_posix.cc: In function 'int blaze::ExecuteDaemon(const string&, const std::vector<std::__cxx11::basic_string<char> >&, const string&, const string&, blaze::BlazeServerStartup**)':
+src/main/cpp/blaze_util_posix.cc:402:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+____[761 / 772] Writing file src/main/java/com/google/devtools/build/lib/libbase-util-hjar.jar-2.params
+____[763 / 778] Writing file src/main/java/com/google/devtools/build/lib/vfs/libpathfragment-hjar.jar-2.params
+____[776 / 806] Writing file src/main/java/com/google/devtools/build/lib/graph/libgraph-hjar.jar-2.params
+____[778 / 812] Writing file src/main/protobuf/liboption_filters_proto-speed.jar-2.params
+____[807 / 861] Writing file src/main/java/com/google/devtools/build/lib/skyframe/serialization/libserialization-hjar.jar-2.params
+____[855 / 936] Writing file src/main/java/com/google/devtools/build/lib/bazel/repository/cache/libcache-hjar.jar-2.params
+____[873 / 965] Generating Java (Immutable) proto_library //src/main/protobuf:android_deploy_info_proto
+____[877 / 972] Writing file src/main/java/com/google/devtools/build/lib/rules/config/libconfig-hjar.jar-2.params
+____[899 / 1,008] Writing file src/main/java/com/google/devtools/build/lib/profiler/memory/libcurrent_rule_tracker-hjar.jar-2.params
+____[913 / 1,028] Writing file src/main/java/com/google/devtools/build/lib/libbuild-base-hjar.jar-2.params
+____From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+____[1,013 / 1,182] Writing file external/googleapis/libgoogle_devtools_remoteexecution_v1test_remote_execution_proto-speed-hjar.jar-2.params
+____From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+____From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+____From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+____From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+____[1,069 / 1,244] Writing file src/main/java/com/google/devtools/build/lib/collect/nestedset/libfingerprint_cache.jar-2.params
+____[1,084 / 1,266] Writing file src/main/java/com/google/devtools/build/lib/libos_util.jar-2.params
+____[1,116 / 1,304] Writing script src/main/java/com/google/devtools/build/lib/merge_licenses.genrule_script.sh
+____[1,118 / 1,306] Writing file src/main/java/com/google/devtools/build/lib/libbazel-class.jar-2.params
+____[1,132 / 1,334] Writing file src/main/java/com/google/devtools/build/lib/rules/genquery/libgenquery-hjar.jar-2.params
+____[1,180 / 1,397] Extracting interface //third_party:android_common_25_0_0
+____[1,223 / 1,427] Extracting interface //third_party:netty
+____[1,296 / 1,439] Extracting interface //third_party:android_common_25_0_0
+____[1,378 / 1,473] Executing genrule //src/main/java/com/google/devtools/build/lib:merge_licenses
+____[1,483 / 1,504] Compiling src/main/tools/process-wrapper-legacy.cc
+____[1,505 / 1,518] Executing genrule //src:dummy_darwin_tool_src_tools_xcode_ibtoolwrapper_ibtoolwrapper
+____[1,506 / 1,519] Executing genrule //src:dummy_darwin_tool_src_tools_xcode_environment_environment_plist
+____[1,507 / 1,522] Writing file src/java_tools/buildjar/java/com/google/devtools/build/buildjar/libJarOwner.jar-2.params
+____[1,518 / 1,532] Compiling Java headers src/java_tools/buildjar/java/com/google/devtools/build/buildjar/libinvalid_command_line_exception-hjar.jar (1 files)
+____[1,554 / 1,564] Extracting interface //third_party/java/jacoco:core
+____[1,564 / 1,578] Writing file src/java_tools/buildjar/java/com/google/devtools/build/buildjar/libbuildjar.jar-2.params
+____[1,580 / 1,598] Writing file src/java_tools/buildjar/java/com/google/devtools/build/buildjar/liboptionsparser.jar-2.params
+____[1,581 / 1,599] Writing file src/java_tools/buildjar/VanillaJavaBuilder_deploy.jar-2.params
+____[1,587 / 1,608] Creating source manifest for //src/java_tools/buildjar:VanillaJavaBuilder
+____[1,594 / 1,609] Writing file src/embedded_tools.params
+____[1,595 / 1,612] Writing file third_party/ijar/zipper-2.params
+____[1,596 / 1,616] Writing file src/tools/android/java/com/google/devtools/build/android/proto/libresources_proto-speed.jar-2.params
+____[1,598 / 1,623] Writing file src/tools/android/java/com/google/devtools/build/android/proto/libformat_proto-speed-hjar.jar-2.params
+____[1,599 / 1,626] Writing file src/tools/android/java/com/google/devtools/build/android/proto/libserialize_format_proto-speed-hjar.jar-2.params
+____[1,602 / 1,630] Writing file third_party/java/aosp_gradle_core/libaosp_gradle_core-hjar.jar-2.params
+____[1,603 / 1,631] Extracting interface //third_party/java/jcommander:jcommander
+____[1,608 / 1,637] Writing file src/java_tools/singlejar/java/com/google/devtools/build/singlejar/liblibSingleJar-hjar.jar-2.params
+____[1,625 / 1,659] Writing file src/tools/android/java/com/google/devtools/build/android/libandroid_builder_lib-hjar.jar-2.params
+____[1,629 / 1,664] Building third_party/java/aosp_gradle_core/libaosp_gradle_core.jar (1 source file)
+____[1,635 / 1,671] Executing genrule //src:dummy_darwin_tool_src_tools_xcode_stdredirect_StdRedirect.dylib
+____[1,643 / 1,677] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/junit4/librunner-hjar.jar-2.params
+____[1,645 / 1,681] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/sharding/api/libapi-hjar.jar-2.params
+____[1,649 / 1,686] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/util/libutil-hjar.jar-2.params
+____[1,651 / 1,688] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/sharding/libsharding-hjar.jar-2.params
+____[1,653 / 1,691] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/libtest_runner.jar-2.params
+____[1,654 / 1,696] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/util/libutil.jar-2.params
+____[1,675 / 1,719] Building src/java_tools/buildjar/java/com/google/devtools/build/java/turbine/javac/libzip_util.jar (1 source file)
+____[1,750 / 1,798] Compiling Java headers src/java_tools/junitrunner/java/com/google/testing/coverage/libbitfield-hjar.jar (2 files)
+____[1,780 / 1,830] Building src/tools/android/java/com/google/devtools/build/android/junctions/libjunctions.jar (3 source files)
+____[1,784 / 1,833] Compiling Java headers third_party/java/jopt-simple/libjopt-simple-hjar.jar (50 files)
+____[1,793 / 1,842] Expanding template third_party/java/jarjar/jarjar_command
+____[1,816 / 1,856] Generating Java (Immutable) proto_library //src/main/protobuf:desugar_deps_proto
+____[1,820 / 1,859] Writing file src/java_tools/junitrunner/java/com/google/testing/junit/runner/libexperimental_test_runner.jar-2.params
+____[1,829 / 1,867] Compiling third_party/ijar/ijar.cc
+____[1,833 / 1,870] Executing genrule //src:dummy_darwin_tool_src_objc_tools_bundlemerge_bundlemerge_deploy.jar
+____[1,834 / 1,871] Executing genrule //src:dummy_darwin_tool_src_objc_tools_plmerge_plmerge_deploy.jar
+____[1,835 / 1,871] Compiling src/tools/singlejar/options.cc
+____From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar:
+Jan 22, 2018 10:18:17 AM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/var/tmp/bazel/bazel-sandbox/904071814620850639/execroot/io_bazel/bazel-out/local-fastbuild/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Jan 22, 2018 10:18:19 AM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException: RemappingClassAdapter is deprecated, use ClassRemapper instead
+____[1,841 / 1,873] Creating source manifest for //src:create_embedded_tools [for host]
+____[1,843 / 1,873] Compiling src/tools/singlejar/combiners.cc
+Target //src:bazel up-to-date:
+  bazel-bin/src/bazel
+____Elapsed time: 390.339s, Critical Path: 52.90s
++ ./.rpm-build/bazel --output_base=/var/tmp/bazel build //scripts:bazel-complete.bash
+____Loading package: scripts
+____Loading complete.  Analyzing...
+____Found 1 target...
+____Building...
+____[0 / 5] BazelWorkspaceStatusAction stable-status.txt
+____[1 / 18] Compiling third_party/grpc/src/core/json/json_reader.c [for host]
+____[34 / 46] Compiling third_party/grpc/src/core/client_config/subchannel_factory.c [for host]
+____[98 / 110] Compiling third_party/grpc/src/core/surface/alarm.c [for host]
+____[127 / 140] Compiling third_party/grpc/src/core/iomgr/socket_utils_common_posix.c [for host]
+____[133 / 146] Compiling third_party/grpc/src/core/profiling/stap_timers.c [for host]
+____From Compiling src/main/cpp/blaze_util_posix.cc [for host]:
+src/main/cpp/blaze_util_posix.cc: In function 'int blaze::ExecuteDaemon(const string&, const std::vector<std::__cxx11::basic_string<char> >&, const string&, const string&, blaze::BlazeServerStartup**)':
+src/main/cpp/blaze_util_posix.cc:402:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/main/cpp/blaze_util_posix.cc: In function 'void blaze::Daemonize(const char*)':
+src/main/cpp/blaze_util_posix.cc:225:3: warning: ignoring return value of 'int dup(int)', declared with attribute warn_unused_result [-Wunused-result]
+   (void) dup(STDOUT_FILENO);  // stderr (2>&1)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc: In function 'void blaze::DieAfterFork(const char*)':
+src/main/cpp/blaze_util_posix.cc:272:8: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   write(STDERR_FILENO, message, strlen(message));  // strlen should be OK
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:273:8: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   write(STDERR_FILENO, ": ", 2);
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:274:8: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   write(STDERR_FILENO, error_string, strlen(error_string));
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:275:8: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)', declared with attribute warn_unused_result [-Wunused-result]
+   write(STDERR_FILENO, "\n", 1);
+   ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc: In function 'uint64_t blaze::AcquireLock(const string&, bool, bool, blaze::BlazeLock*)':
+src/main/cpp/blaze_util_posix.cc:667:3: warning: ignoring return value of 'int ftruncate(int, __off_t)', declared with attribute warn_unused_result [-Wunused-result]
+   (void) ftruncate(lockfd, 0);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+____From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+____From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+____From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+____From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+____From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto [for host]:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+____[637 / 659] Compiling Java headers src/main/java/com/google/devtools/build/lib/libbazel-rules-hjar.jar (109 files) [for host]
+____[648 / 665] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/apple/libapple-hjar.jar (2 files) [for host]
+____[651 / 669] Writing file src/main/java/com/google/devtools/build/lib/windows/jni/libjni-loader.jar-2.params [for host]
+____[863 / 874] Executing genrule //src/main/java/com/google/devtools/build/lib:merge_licenses [for host]
+____From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]:
+Jan 22, 2018 10:20:24 AM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/var/tmp/bazel/bazel-sandbox/3818887304382042389/execroot/io_bazel/bazel-out/host/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Jan 22, 2018 10:20:26 AM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException: RemappingClassAdapter is deprecated, use ClassRemapper instead
+____From Executing genrule //scripts:bash_completion:
+Extracting Bazel installation...
+Target //scripts:bazel-complete.bash up-to-date:
+  bazel-bin/scripts/bazel-complete.bash
+____Elapsed time: 153.180s, Critical Path: 32.34s
++ ./.rpm-build/bazel shutdown
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.dBxmwM
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64
+++ dirname /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ export DONT_STRIP=1
++ DONT_STRIP=1
++ install -Dm 0755 bazel-bin/src/bazel /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64//usr/bin
++ install -Dm 0644 bazel-bin/scripts/bazel-complete.bash /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/bash-completion/completions/bazel
++ install -Dm 0644 scripts/zsh_completion/_bazel /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/Linux/_bazel
+Processing files: bazel-0.9.0-1.mga7.x86_64
+error: File not found: /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/bin/bazel
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.8ncCm5
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.9.0
++ DOCDIR=/builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ cp -pr LICENSE /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ cp -pr AUTHORS /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ cp -pr CONTRIBUTORS /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ cp -pr CONTRIBUTING.md /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ cp -pr README.md /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/share/doc/bazel
++ exit 0
+RPM build errors:
+    File not found: /builddir/build/BUILDROOT/bazel-0.9.0-1.mga7.x86_64/usr/bin/bazel
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 4300d795ac214113af784f081d545d2a -D /mock/cauldron/x86_64 -a --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=LANG=en_US.UTF-8 --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=HOSTNAME=mock --setenv=TERM=vt100 --setenv=PS1=<mock-chroot> \s-\v\$  -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], uid=1000gid=135nspawn_args=[]shell=FalseprintOutput=Trueuser='mockbuild'logger=<mockbuild.trace_decorator.getLog object at 0x7f1397d45cf8>timeout=0chrootPath='/mock/cauldron/x86_64'unshare_net=Trueenv={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100'})
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8c7a36b95f334c01a5c17f669e51c268', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-1.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], uid=1000gid=135nspawn_args=[]shell=FalseprintOutput=Trueuser='mockbuild'logger=<mockbuild.trace_decorator.getLog object at 0x7f1397d45cf8>timeout=0chrootPath='/mock/cauldron/x86_64'unshare_net=Trueenv={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100'})
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '051731720cdc4236a504f799fae98515', '-D', '/mock/cauldron/x86_64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.KySRgj
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/bin/mkdir -p /builddir/build/BUILD/bazel-0.9.0
++ /usr/bin/unzip -qd /builddir/build/BUILD/bazel-0.9.0/ /builddir/build/SOURCES/bazel-0.9.0-dist.zip
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.2pnjwM
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CC=gcc
+RPM build errors:
++ CXX=g++
++ ./compile.sh
+/var/tmp/rpm-tmp.2pnjwM: line 33: ./compile.sh: No such file or directory
+error: Bad exit status from /var/tmp/rpm-tmp.2pnjwM (%build)
+    Bad exit status from /var/tmp/rpm-tmp.2pnjwM (%build)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 051731720cdc4236a504f799fae98515 -D /mock/cauldron/x86_64 -a --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=SHELL=/bin/bash --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=HOSTNAME=mock --setenv=HOME=/builddir --setenv=LANG=en_US.UTF-8 --setenv=TERM=vt100 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
