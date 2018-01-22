@@ -1,0 +1,605 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/mock/cauldron/x64'gid=135logger=<mockbuild.trace_decorator.getLog object at 0x7f8bf80df860>user='mockbuild'uid=1000unshare_net=TrueprintOutput=Truetimeout=0nspawn_args=[]shell=Falseenv={'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '})
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0317f3de88e1495ab9691089a657c583', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], printOutput=Truelogger=<mockbuild.trace_decorator.getLog object at 0x7fbf5fa58860>gid=135nspawn_args=[]env={'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ '}shell=Falseuser='mockbuild'unshare_net=Truetimeout=0uid=1000chrootPath='/mock/cauldron/x64')
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '52a9f9c88f3245918b78c906e4b2d49b', '-D', '/mock/cauldron/x64', '-a', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], env={'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100'}uid=1000logger=<mockbuild.trace_decorator.getLog object at 0x7fe07ec68908>user='mockbuild'unshare_net=Truetimeout=0printOutput=Truegid=135nspawn_args=[]chrootPath='/mock/cauldron/x64'shell=False)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8c60fae6df2640fb9a6ab115bc04352a', '-D', '/mock/cauldron/x64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=TERM=vt100', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'LANG': 'en_US.UTF-8', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'TERM': 'vt100'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/mock/cauldron/x64'shell=Falsetimeout=0user='mockbuild'printOutput=Trueuid=1000gid=135unshare_net=Truenspawn_args=[]env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'TERM': 'vt100'}logger=<mockbuild.trace_decorator.getLog object at 0x7f0737f86898>)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '442173f996e6455b83e3bedae595e442', '-D', '/mock/cauldron/x64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=LANG=en_US.UTF-8', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'TERM': 'vt100'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/mock/cauldron/x64'shell=Falsetimeout=0user='mockbuild'printOutput=Trueuid=1000gid=135unshare_net=Truenspawn_args=[]env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'TERM': 'vt100'}logger=<mockbuild.trace_decorator.getLog object at 0x7f0737f86898>)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0e6d668d252846cc97ba76b83361509d', '-D', '/mock/cauldron/x64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=LANG=en_US.UTF-8', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'TERM': 'vt100'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.D3zbYo
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.9.0
++ /usr/bin/mkdir -p bazel-0.9.0
++ cd bazel-0.9.0
++ /usr/bin/unzip -qq /builddir/build/SOURCES/bazel-0.9.0-dist.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.PInIS1
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ ./compile.sh compile /usr/bin/bazel
+Building Bazel from scratch......
+Building Bazel with Bazel.
+.Loading: 
+[1ALoading: 0 packages loaded
+[1AWARNING: /tmp/bazel_Koj25L5a/out/external/bazel_tools/WORKSPACE:1: Workspace name in /tmp/bazel_Koj25L5a/out/external/bazel_tools/WORKSPACE (@io_bazel) does not match the name given in the repository's definition (@bazel_tools); this will cause a build error in future versions
+Loading: 0 packages loaded
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+[1AAnalyzing: target //src:bazel (1 packages loaded)
+EXCEPTION: [KeyboardInterrupt()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 582, in do
+    chrootPath=chrootPath)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 439, in logOutput
+    i_rdy, o_rdy, e_rdy = select.select(fds, [], [], 1)
+KeyboardInterrupt
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], logger=<mockbuild.trace_decorator.getLog object at 0x7fd672a34828>uid=1000user='mockbuild'nspawn_args=[]printOutput=Truegid=135unshare_net=Truetimeout=0env={'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'}shell=FalsechrootPath='/mock/cauldron/x64')
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c25a663d592647d78de5f8c8391af4ca', '-D', '/mock/cauldron/x64', '-a', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'SHELL': '/bin/bash', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], uid=1000user='mockbuild'env={'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/bash', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'}printOutput=Trueshell=Falsenspawn_args=[]chrootPath='/mock/cauldron/x64'unshare_net=Truetimeout=0gid=135logger=<mockbuild.trace_decorator.getLog object at 0x7f209e6568d0>)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '24e3e8a4fcf74b63a95d84e162396856', '-D', '/mock/cauldron/x64', '-a', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=SHELL=/bin/bash', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'SHELL': '/bin/bash', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], nspawn_args=[]timeout=0unshare_net=TrueprintOutput=Truelogger=<mockbuild.trace_decorator.getLog object at 0x7f47810c2898>user='mockbuild'uid=1000env={'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8'}chrootPath='/mock/cauldron/x64'gid=135shell=False)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3401e9cd9eb041adb3daf16a96b2049d', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], nspawn_args=[]timeout=0unshare_net=TrueprintOutput=Truelogger=<mockbuild.trace_decorator.getLog object at 0x7f47810c2898>user='mockbuild'uid=1000env={'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8'}chrootPath='/mock/cauldron/x64'gid=135shell=False)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ce0db90166dc48d6bae62ccce626b0fc', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.WzkMa0
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.9.0
++ /usr/bin/mkdir -p bazel-0.9.0
++ cd bazel-0.9.0
++ /usr/bin/unzip -qq /builddir/build/SOURCES/bazel-0.9.0-dist.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.ICR9lM
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/bazel build //src:bazel
+Extracting Bazel installation...
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+INFO: Analysed target //src:bazel (181 packages loaded).
+INFO: Found 1 target...
+[0 / 16] [-----] BazelWorkspaceStatusAction stable-status.txt
+[90 / 205] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/javanano/javanano_helpers.cc [for host]; 2s linux-sandbox ... (4 actions running)
+INFO: From Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc [for host]:
+third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[121 / 239] Compiling third_party/protobuf/3.4.0/src/google/protobuf/wire_format.cc [for host]; 2s linux-sandbox ... (4 actions running)
+[149 / 268] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/javanano/javanano_field.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[175 / 294] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.cc [for host]; 8s linux-sandbox ... (4 actions running)
+[217 / 337] Compiling third_party/protobuf/3.4.0/src/google/protobuf/dynamic_message.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[259 / 383] Compiling third_party/protobuf/3.4.0/src/google/protobuf/message.cc; 1s linux-sandbox ... (5 actions, 4 running)
+[398 / 801] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.pb.cc; 3s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/main/cpp/blaze_util_posix.cc:
+src/main/cpp/blaze_util_posix.cc:402:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+INFO: From Compiling third_party/ijar/zip.cc:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[699 / 948] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 3s linux-sandbox ... (4 actions running)
+[767 / 1,017] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 2s linux-sandbox ... (4 actions running)
+INFO: From Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]:
+external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[834 / 1,086] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_primitive_field_lite.cc [for host]; 3s linux-sandbox ... (4 actions running)
+[1,213 / 1,847] Compiling external/com_google_protobuf/src/google/protobuf/wire_format.cc; 2s linux-sandbox ... (4 actions running)
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+[1,620 / 1,878] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar); 2s worker ... (5 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar:
+Jan 22, 2018 8:42:39 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/18717fcc2876761641371df889eeda91/bazel-sandbox/2972218189275875704/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Jan 22, 2018 8:42:41 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException: RemappingClassAdapter is deprecated, use ClassRemapper instead
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+[1,870 / 1,878] Executing genrule //src:embedded_tools; 3s linux-sandbox ... (3 actions, 2 running)
+Target //src:bazel up-to-date:
+  bazel-bin/src/bazel
+INFO: Elapsed time: 418.536s, Critical Path: 45.95s
+INFO: Build completed successfully, 1878 total actions
++ /usr/bin/bazel build //scripts:bazel-complete.bash
+Loading: 
+Loading: 0 packages loaded
+INFO: Analysed target //scripts:bazel-complete.bash (1 packages loaded).
+INFO: Found 1 target...
+Building: no action
+[0 / 8] [-----] BazelWorkspaceStatusAction stable-status.txt
+[14 / 49] Compiling third_party/grpc/src/core/transport/chttp2/bin_encoder.c [for host]; 0s linux-sandbox ... (4 actions running)
+[27 / 52] Compiling third_party/grpc/src/cpp/client/channel.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[38 / 64] Compiling third_party/grpc/src/cpp/client/insecure_credentials.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[55 / 82] Compiling third_party/grpc/src/cpp/client/client_context.cc [for host]; 0s linux-sandbox ... (3 actions running)
+[61 / 89] Compiling third_party/grpc/src/cpp/server/server_builder.cc [for host]; 2s linux-sandbox ... (5 actions running)
+[77 / 104] Compiling third_party/grpc/src/cpp/codegen/grpc_library.cc [for host]; 0s linux-sandbox ... (5 actions running)
+[102 / 133] Compiling third_party/grpc/src/cpp/proto/proto_utils.cc [for host]; 0s linux-sandbox ... (4 actions running)
+[128 / 156] Compiling src/main/cpp/util/errors_posix.cc [for host]; 0s linux-sandbox ... (4 actions running)
+INFO: From Compiling third_party/ijar/zip.cc [for host]:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[140 / 159] Compiling src/main/cpp/blaze_util_linux.cc [for host]; 1s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/main/cpp/blaze_util_posix.cc [for host]:
+src/main/cpp/blaze_util_posix.cc:272:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, message, strlen(message));  // strlen should be OK
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:273:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, ": ", 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:274:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, error_string, strlen(error_string));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:275:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, "\n", 1);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:402:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+5 warnings generated.
+[172 / 188] Compiling third_party/grpc/src/cpp/client/create_channel_internal.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[202 / 217] Compiling src/main/cpp/startup_options.cc [for host]; 1s linux-sandbox ... (4 actions running)
+[227 / 239] Compiling src/main/protobuf/command_server.grpc.pb.cc [for host]; 2s linux-sandbox ... (3 actions running)
+[261 / 276] Compiling src/main/cpp/util/strings.cc [for host]; 0s linux-sandbox ... (5 actions, 4 running)
+[332 / 351] Compiling Java headers external/com_google_protobuf/libwell_known_types_any_proto-speed-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (5 actions, 4 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto [for host]:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+[408 / 422] Building src/main/protobuf/libbundlemerge_proto-speed.jar (1 source jar) [for host]; 0s worker ... (5 actions, 4 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[531 / 563] Compiling Java headers src/main/java/com/google/devtools/build/lib/windows/jni/libfile-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (5 actions, 4 running)
+[606 / 626] Building src/main/protobuf/libcrosstool_config_proto-speed.jar (1 source jar) [for host]; 1s worker ... (5 actions, 4 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+[673 / 683] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar) [for host]; 6s worker ... (5 actions running)
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[751 / 765] Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (441 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 13s worker ... (5 actions, 4 running)
+[869 / 880] Building external/com_google_protobuf/libwell_known_types_descriptor_proto-speed.jar (1 source jar) [for host]; 2s worker ... (5 actions, 4 running)
+[1,041 / 1,057] Compiling third_party/ijar/classfile.cc [for host]; 1s linux-sandbox ... (5 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]:
+Jan 22, 2018 8:44:44 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/18717fcc2876761641371df889eeda91/bazel-sandbox/1435135633307504887/execroot/io_bazel/bazel-out/host/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Jan 22, 2018 8:44:46 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException: RemappingClassAdapter is deprecated, use ClassRemapper instead
+[1,234 / 1,238] [-----] Executing genrule //src:install_base_key-file [for host]
+[1,237 / 1,238] Executing genrule //scripts:bash_completion; 11s linux-sandbox
+INFO: From Executing genrule //scripts:bash_completion:
+Extracting Bazel installation...
+Target //scripts:bazel-complete.bash up-to-date:
+  bazel-bin/scripts/bazel-complete.bash
+INFO: Elapsed time: 144.943s, Critical Path: 55.84s
+INFO: Build completed successfully, 1238 total actions
++ /usr/bin/bazel shutdown
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.YiaA0m
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/bazel-0.9.0-2.mga7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/bazel-0.9.0-2.mga7.x86_64
+++ dirname /builddir/build/BUILDROOT/bazel-0.9.0-2.mga7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/bazel-0.9.0-2.mga7.x86_64
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ export DONT_STRIP=1
++ DONT_STRIP=1
++ install -Dm 0755 output/bazel /builddir/build/BUILDROOT/bazel-0.9.0-2.mga7.x86_64//usr/bin/bazel
+install: cannot stat 'output/bazel': No such file or directory
+RPM build errors:
+error: Bad exit status from /var/tmp/rpm-tmp.YiaA0m (%install)
+    Bad exit status from /var/tmp/rpm-tmp.YiaA0m (%install)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M ce0db90166dc48d6bae62ccce626b0fc -D /mock/cauldron/x64 -a --setenv=HOSTNAME=mock --setenv=HOME=/builddir --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], uid=1000logger=<mockbuild.trace_decorator.getLog object at 0x7f5ff3c6e828>timeout=0user='mockbuild'unshare_net=Trueshell=Falsegid=135env={'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash'}chrootPath='/mock/cauldron/x64'nspawn_args=[]printOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7f39ed7397c741ed97f7a1c958396274', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=SHELL=/bin/bash', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'TERM': 'vt100', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], logger=<mockbuild.trace_decorator.getLog object at 0x7f3fa091f860>env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'}chrootPath='/mock/cauldron/x64'nspawn_args=[]timeout=0user='mockbuild'uid=1000printOutput=Trueshell=Falsegid=135unshare_net=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd95b290c79ce4d01acc2bb43d4b2f88d', '-D', '/mock/cauldron/x64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=HOSTNAME=mock', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], logger=<mockbuild.trace_decorator.getLog object at 0x7f3fa091f860>env={'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'}chrootPath='/mock/cauldron/x64'nspawn_args=[]timeout=0user='mockbuild'uid=1000printOutput=Trueshell=Falsegid=135unshare_net=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '65539d6b123541e492872dcfdcce348e', '-D', '/mock/cauldron/x64', '-a', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=HOSTNAME=mock', '--setenv=TERM=vt100', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'TERM': 'vt100', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.dEbtja
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.9.0
++ /usr/bin/mkdir -p bazel-0.9.0
++ cd bazel-0.9.0
++ /usr/bin/unzip -qq /builddir/build/SOURCES/bazel-0.9.0-dist.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.ovlsvQ
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.9.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ export BAZEL=bazel
++ BAZEL=bazel
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ ./compile.sh compile bazel
+Building Bazel from scratch......
+Building Bazel with Bazel.
+.Extracting Bazel installation...
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+Analyzing: target //src:bazel (1 packages loaded)
+INFO: Analysed target //src:bazel (174 packages loaded).
+INFO: Found 1 target...
+[0 / 8] [-----] Executing genrule //tools/osx:xcode-locator-genrule
+ERROR: Process exited with status 127: Process exited with status 127
+scripts/ci/build_status_command.sh: line 25: git: command not found
+Target //src:bazel failed to build
+INFO: Elapsed time: 65.695s, Critical Path: 0.03s
+FAILED: Build did NOT complete successfully
+FAILED: Build did NOT complete successfully
+
+ERROR: Could not build Bazel
+RPM build errors:
+error: Bad exit status from /var/tmp/rpm-tmp.ovlsvQ (%build)
+    Bad exit status from /var/tmp/rpm-tmp.ovlsvQ (%build)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.5/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 65539d6b123541e492872dcfdcce348e -D /mock/cauldron/x64 -a --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=HOSTNAME=mock --setenv=TERM=vt100 --setenv=HOME=/builddir --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=SHELL=/bin/bash --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], env={'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'}gid=135uid=1000printOutput=Truelogger=<mockbuild.trace_decorator.getLog object at 0x7f40662967b8>shell=FalsechrootPath='/mock/cauldron/x64'unshare_net=Trueuser='mockbuild'nspawn_args=[]timeout=0)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '16c6ba6341384d368fbfd56e0fdd90d6', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/mock/cauldron/x64'unshare_net=Trueshell=Falseuid=1000timeout=0env={'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"'}printOutput=Trueuser='mockbuild'nspawn_args=[]gid=135logger=<mockbuild.trace_decorator.getLog object at 0x7f0d7a8ba860>)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '1d169bad96a7457dbdc633bd8b75eddf', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], env={'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ '}printOutput=Trueuser='mockbuild'uid=1000nspawn_args=[]shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f31cb83e898>gid=135chrootPath='/mock/cauldron/x64'timeout=0unshare_net=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd6023aa57b7e43ba9c804ff605a2ffd2', '-D', '/mock/cauldron/x64', '-a', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=HOSTNAME=mock', '--setenv=SHELL=/bin/bash', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOSTNAME': 'mock', 'SHELL': '/bin/bash', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], nspawn_args=[]gid=135shell=Falseenv={'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOME': '/builddir'}timeout=0chrootPath='/mock/cauldron/x64'uid=1000user='mockbuild'logger=<mockbuild.trace_decorator.getLog object at 0x7f0d247d4828>unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'acbe9cd236384361b67e01b2d60161ef', '-D', '/mock/cauldron/x64', '-a', '--setenv=SHELL=/bin/bash', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=HOSTNAME=mock', '--setenv=LANG=en_US.UTF-8', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=HOME=/builddir', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'HOSTNAME': 'mock', 'LANG': 'en_US.UTF-8', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'HOME': '/builddir'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/mock/cauldron/x64'user='mockbuild'uid=1000gid=135logger=<mockbuild.trace_decorator.getLog object at 0x7f1c3e934828>env={'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir'}nspawn_args=[]printOutput=Trueshell=Falseunshare_net=Truetimeout=0)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ce2a53631fab49699df2ec8c7ace2bb5', '-D', '/mock/cauldron/x64', '-a', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'SHELL': '/bin/bash', 'HOME': '/builddir'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], user='mockbuild'chrootPath='/mock/cauldron/x64'env={'HOME': '/builddir', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash'}printOutput=Trueunshare_net=Truetimeout=0logger=<mockbuild.trace_decorator.getLog object at 0x7f336d06e828>nspawn_args=[]shell=Falsegid=135uid=1000)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '149c70469e074d7da90d8f8db7d0f7b9', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOME=/builddir', '--setenv=TERM=vt100', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=LANG=en_US.UTF-8', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=SHELL=/bin/bash', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOME': '/builddir', 'TERM': 'vt100', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'LANG': 'en_US.UTF-8', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'SHELL': '/bin/bash'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], printOutput=Trueunshare_net=TruechrootPath='/mock/cauldron/x64'gid=135uid=1000logger=<mockbuild.trace_decorator.getLog object at 0x7f0467e87898>env={'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'}user='mockbuild'shell=Falsetimeout=0nspawn_args=[])
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '140170ab59de4af4adbc4e0d06f21574', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=LANG=en_US.UTF-8', '--setenv=TERM=vt100', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], logger=<mockbuild.trace_decorator.getLog object at 0x7f083cff88d0>uid=1000chrootPath='/mock/cauldron/x64'unshare_net=Truenspawn_args=[]timeout=0gid=135printOutput=Trueuser='mockbuild'shell=Falseenv={'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'})
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3b72ba4c5d70486d8666b1fc2230cc23', '-D', '/mock/cauldron/x64', '-a', '--setenv=LANG=en_US.UTF-8', '--setenv=HOME=/builddir', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'LANG': 'en_US.UTF-8', 'HOME': '/builddir', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], unshare_net=Trueuid=1000env={'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8'}nspawn_args=[]shell=FalsechrootPath='/mock/cauldron/x64'timeout=0printOutput=Truelogger=<mockbuild.trace_decorator.getLog object at 0x7f6d0f60e828>user='mockbuild'gid=135)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e7beb2704b50442f8e48483f0711d0f3', '-D', '/mock/cauldron/x64', '-a', '--setenv=HOSTNAME=mock', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=TERM=vt100', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'HOSTNAME': 'mock', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'TERM': 'vt100', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.9.0-2.mga7.src.rpm
+Child return code was: 0

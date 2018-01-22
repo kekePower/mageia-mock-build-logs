@@ -1,0 +1,149 @@
+2018-01-22 10:09:23,942 - Mock Version: 1.4.8
+2018-01-22 10:09:26,377 - Start: dnf update
+2018-01-22 10:09:37,703 - Finish: dnf update
+2018-01-22 10:09:37,724 - Finish: chroot init
+2018-01-22 10:09:37,727 - Start: build phase for bazel-0.9.0-1.intelsb.mga6.src.rpm
+2018-01-22 10:09:37,728 - Start: build setup for bazel-0.9.0-1.intelsb.mga6.src.rpm
+2018-01-22 10:10:43,958 - Finish: build setup for bazel-0.9.0-1.intelsb.mga6.src.rpm
+2018-01-22 10:10:43,959 - Start: rpmbuild bazel-0.9.0-1.intelsb.mga6.src.rpm
+2018-01-22 10:10:43,961 - Start: Outputting list of installed packages
+2018-01-22 10:10:44,021 - Finish: Outputting list of installed packages
+2018-01-22 10:22:17,240 - Start: clean chroot
+2018-01-22 10:22:56,739 - Finish: clean chroot
+2018-01-22 11:00:33,563 - Mock Version: 1.4.8
+2018-01-22 11:00:35,921 - Start: dnf update
+2018-01-22 11:01:55,063 - Finish: dnf update
+2018-01-22 11:01:55,078 - Finish: chroot init
+2018-01-22 11:01:55,082 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:01:55,083 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:03:24,038 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:03:24,039 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:03:24,041 - Start: Outputting list of installed packages
+2018-01-22 11:03:24,103 - Finish: Outputting list of installed packages
+2018-01-22 11:03:41,818 - Start: clean chroot
+2018-01-22 11:03:53,383 - Finish: clean chroot
+2018-01-22 11:07:25,867 - Mock Version: 1.4.8
+2018-01-22 11:07:28,878 - Start: dnf update
+2018-01-22 11:08:45,623 - Finish: dnf update
+2018-01-22 11:08:45,637 - Finish: chroot init
+2018-01-22 11:08:45,640 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:08:45,642 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:09:41,881 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:09:41,881 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:09:41,884 - Start: Outputting list of installed packages
+2018-01-22 11:09:41,950 - Finish: Outputting list of installed packages
+2018-01-22 11:18:24,900 - Start: clean chroot
+2018-01-22 11:18:37,150 - Finish: clean chroot
+2018-01-22 11:20:09,081 - Mock Version: 1.4.8
+2018-01-22 11:20:19,080 - Start: dnf update
+2018-01-22 11:21:22,463 - Finish: dnf update
+2018-01-22 11:21:22,476 - Finish: chroot init
+2018-01-22 11:21:22,479 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:21:22,481 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:22:00,039 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:22:00,039 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:22:00,041 - Start: Outputting list of installed packages
+2018-01-22 11:22:00,105 - Finish: Outputting list of installed packages
+2018-01-22 11:38:16,640 - Start: clean chroot
+2018-01-22 11:38:44,797 - Finish: clean chroot
+2018-01-22 11:43:12,037 - Mock Version: 1.4.8
+2018-01-22 11:43:15,681 - Start: dnf update
+2018-01-22 11:44:01,133 - Finish: dnf update
+2018-01-22 11:44:01,154 - Finish: chroot init
+2018-01-22 11:44:01,157 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 11:44:01,159 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:20:05,631 - Mock Version: 1.4.8
+2018-01-22 12:20:07,452 - Start: dnf update
+2018-01-22 12:20:46,293 - Finish: dnf update
+2018-01-22 12:20:46,306 - Finish: chroot init
+2018-01-22 12:20:46,309 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:20:46,311 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:21:31,675 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:21:31,675 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:21:31,677 - Start: Outputting list of installed packages
+2018-01-22 12:21:31,732 - Finish: Outputting list of installed packages
+2018-01-22 12:36:17,198 - Finish: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:36:17,201 - Finish: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:36:17,202 - Start: clean chroot
+2018-01-22 12:36:24,004 - Finish: clean chroot
+2018-01-22 12:36:24,005 - Finish: run
+2018-01-22 12:37:32,402 - Mock Version: 1.4.8
+2018-01-22 12:37:37,596 - Start: dnf update
+2018-01-22 12:38:13,303 - Finish: dnf update
+2018-01-22 12:38:13,316 - Finish: chroot init
+2018-01-22 12:38:13,319 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:38:13,320 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:38:25,442 - Start: clean chroot
+2018-01-22 12:38:28,889 - Finish: clean chroot
+2018-01-22 12:39:40,883 - Mock Version: 1.4.8
+2018-01-22 12:39:46,238 - Start: dnf update
+2018-01-22 12:40:07,843 - Finish: dnf update
+2018-01-22 12:40:07,865 - Finish: chroot init
+2018-01-22 12:40:07,868 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:40:07,871 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:41:07,975 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:41:07,975 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:41:07,977 - Start: Outputting list of installed packages
+2018-01-22 12:41:08,032 - Finish: Outputting list of installed packages
+2018-01-22 12:42:46,261 - Start: clean chroot
+2018-01-22 12:42:53,007 - Finish: clean chroot
+2018-01-22 12:44:45,889 - Mock Version: 1.4.8
+2018-01-22 12:44:50,713 - Start: dnf update
+2018-01-22 12:45:27,123 - Finish: dnf update
+2018-01-22 12:45:27,136 - Finish: chroot init
+2018-01-22 12:45:27,139 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:45:27,140 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:45:40,363 - Start: clean chroot
+2018-01-22 12:45:43,894 - Finish: clean chroot
+2018-01-22 12:46:28,779 - Mock Version: 1.4.8
+2018-01-22 12:46:33,607 - Start: dnf update
+2018-01-22 12:46:45,873 - Finish: dnf update
+2018-01-22 12:46:45,886 - Finish: chroot init
+2018-01-22 12:46:45,889 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:46:45,891 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:47:03,462 - Start: clean chroot
+2018-01-22 12:47:06,950 - Finish: clean chroot
+2018-01-22 12:48:25,572 - Mock Version: 1.4.8
+2018-01-22 12:48:30,512 - Start: dnf update
+2018-01-22 12:48:42,233 - Finish: dnf update
+2018-01-22 12:48:42,246 - Finish: chroot init
+2018-01-22 12:48:42,249 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:48:42,250 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:49:34,485 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:49:34,485 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:49:34,486 - Start: Outputting list of installed packages
+2018-01-22 12:49:34,542 - Finish: Outputting list of installed packages
+2018-01-22 12:51:13,381 - Start: clean chroot
+2018-01-22 12:51:20,121 - Finish: clean chroot
+2018-01-22 12:53:12,598 - Mock Version: 1.4.8
+2018-01-22 12:53:20,228 - Start: dnf update
+2018-01-22 12:53:26,683 - Finish: dnf update
+2018-01-22 12:53:26,705 - Finish: chroot init
+2018-01-22 12:53:26,708 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:53:26,709 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:53:43,772 - Start: clean chroot
+2018-01-22 12:53:47,225 - Finish: clean chroot
+2018-01-22 12:54:07,373 - Mock Version: 1.4.8
+2018-01-22 12:54:12,038 - Start: dnf update
+2018-01-22 12:54:48,973 - Finish: dnf update
+2018-01-22 12:54:48,986 - Finish: chroot init
+2018-01-22 12:54:48,989 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:54:48,990 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:55:36,715 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:55:36,715 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:55:36,716 - Start: Outputting list of installed packages
+2018-01-22 12:55:36,771 - Finish: Outputting list of installed packages
+2018-01-22 12:57:14,821 - Start: clean chroot
+2018-01-22 12:57:21,480 - Finish: clean chroot
+2018-01-22 12:59:11,870 - Mock Version: 1.4.8
+2018-01-22 12:59:17,136 - Start: dnf update
+2018-01-22 12:59:27,523 - Finish: dnf update
+2018-01-22 12:59:27,546 - Finish: chroot init
+2018-01-22 12:59:27,549 - Start: build phase for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 12:59:27,550 - Start: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 13:00:15,085 - Finish: build setup for bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 13:00:15,085 - Start: rpmbuild bazel-0.9.0-1.mga7.src.rpm
+2018-01-22 13:00:15,086 - Start: Outputting list of installed packages
+2018-01-22 13:00:15,140 - Finish: Outputting list of installed packages
+2018-01-22 13:01:57,411 - Start: clean chroot
+2018-01-22 13:02:04,064 - Finish: clean chroot

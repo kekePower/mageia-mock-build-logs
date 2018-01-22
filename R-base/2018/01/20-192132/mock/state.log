@@ -1,0 +1,8 @@
+2018-01-20 19:21:12,118 - Mock Version: 1.4.8
+2018-01-20 19:21:13,888 - Start: dnf update
+2018-01-20 19:21:20,212 - Finish: dnf update
+2018-01-20 19:21:20,234 - Finish: chroot init
+2018-01-20 19:21:20,236 - Start: build phase for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:21:20,238 - Start: build setup for R-base-3.4.3-1.mga7.src.rpm
+2018-01-20 19:21:28,892 - Start: clean chroot
+2018-01-20 19:21:32,497 - Finish: clean chroot
