@@ -1,0 +1,15 @@
+2018-01-23 10:53:26,510 - Mock Version: 1.4.8
+2018-01-23 10:53:27,987 - Start: dnf update
+2018-01-23 10:53:45,725 - Finish: dnf update
+2018-01-23 10:53:45,748 - Finish: chroot init
+2018-01-23 10:53:45,751 - Start: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:53:45,753 - Start: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:54:05,717 - Finish: build setup for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:54:05,717 - Start: rpmbuild pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:54:05,719 - Start: Outputting list of installed packages
+2018-01-23 10:54:05,766 - Finish: Outputting list of installed packages
+2018-01-23 10:54:28,132 - Finish: rpmbuild pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:54:28,135 - Finish: build phase for pure-ftpd-1.0.47-1.mga7.src.rpm
+2018-01-23 10:54:28,137 - Start: clean chroot
+2018-01-23 10:54:31,359 - Finish: clean chroot
+2018-01-23 10:54:31,360 - Finish: run
