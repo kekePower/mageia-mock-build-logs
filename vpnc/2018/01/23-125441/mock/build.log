@@ -1,0 +1,270 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/vpnc.spec'], chrootPath='/home/stig/rpmbuild/mock/6/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f338c8d96a0>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '57ab54b7cefe4bb39930bddaafe0bcbd', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/vpnc.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/10lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/vpnc-0.5.3-14.mga6.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/vpnc.spec'], chrootPath='/home/stig/rpmbuild/mock/6/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f338c8d96a0>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5c24eae9dee048dfa539e13849dee961', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/vpnc.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/10lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.uCsmJd
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf vpnc-0.5.3
++ /usr/bin/gzip -dc /builddir/build/SOURCES/vpnc-0.5.3.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd vpnc-0.5.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
+Patch #0 (vpnc-0.5.3-linkage.patch):
++ echo 'Patch #0 (vpnc-0.5.3-linkage.patch):'
++ /usr/bin/patch --no-backup-if-mismatch -p0 --fuzz=0
+patching file Makefile
+Patch #1 (vpnc-0.5.3-fix-script.patch):
++ echo 'Patch #1 (vpnc-0.5.3-fix-script.patch):'
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file vpnc-script.in
+Patch #2 (vpnc-0.5.3-upstream-patch-isakmp-auth-failure.patch):
++ echo 'Patch #2 (vpnc-0.5.3-upstream-patch-isakmp-auth-failure.patch):'
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file vpnc.c
++ perl -pi -e 's|/var/run/vpnc/|/var/lib/vpnc/|' vpnc-script
+Can't open vpnc-script: No such file or directory.
++ perl -pi -e 's|/var/run/vpnc/pid|/var/run/vpnc.pid|' config.c vpnc-disconnect
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.LMNzFY
++ umask 022
++ cd /builddir/build/BUILD
++ cd vpnc-0.5.3
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ export 'CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ export 'RPM_OPT_FLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ RPM_OPT_FLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all'
++ echo 'warning: %make is deprecated, try %make_build instead'
+warning: %make is deprecated, try %make_build instead
++ /usr/bin/make -O -j8 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all' 'LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
+LC_ALL=C perl -w ./enum2debug.pl isakmp.h >vpnc-debug.c 2>vpnc-debug.h
+gcc -MM sysdep.c vpnc-debug.c isakmp-pkt.c tunip.c config.c dh.c math_group.c supp.c decrypt-utils.c vpnc.c cisco-decrypt.c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"  > .depend
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o vpnc-debug.o vpnc-debug.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o dh.o dh.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o supp.o supp.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o sysdep.o sysdep.c
+sed -e 's,@''PREFIX''@,/usr/local,g' vpnc-script.in > vpnc-script && chmod 755 vpnc-script
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o math_group.o math_group.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o decrypt-utils.o decrypt-utils.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o cisco-decrypt.o cisco-decrypt.c
+gcc -o cisco-decrypt cisco-decrypt.o decrypt-utils.o -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -lgcrypt -lgpg-error 
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o config.o config.c
+config.c: In function 'do_config':
+config.c:791:4: warning: ignoring return value of 'getline', declared with attribute warn_unused_result [-Wunused-result]
+    getline(&s, &s_len, stdin);
+    ^
+config.c: In function 'config_def_app_version':
+config.c:170:2: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+  asprintf(&version, "Cisco Systems VPN Client %s:%s", VERSION, uts.sysname);
+  ^
+config.c: In function 'get_config_filename':
+config.c:459:2: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+  asprintf(&realname, "%s%s%s", index(name, '/') ? "" : "/etc/vpnc/", name, add_dot_conf ? ".conf" : "");
+  ^
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o tunip.o tunip.c
+tunip.c: In function 'encap_rawip_recv':
+tunip.c:180:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'ssize_t {aka long int}' [-Wformat=]
+   syslog(LOG_ALERT, "packet too short. got %d, expected %d", r, (p->ip_hl << 2) + s->ipsec.em->fixed_header_size);
+                     ^
+tunip.c: In function 'encap_udp_recv':
+tunip.c:219:21: warning: format '%d' expects argument of type 'int', but argument 4 has type 'ssize_t {aka long int}' [-Wformat=]
+   syslog(LOG_ALERT, "packet too short from %s. got %d, expected %d",
+                     ^
+tunip.c: In function 'vpnc_doit':
+tunip.c:1043:2: warning: ignoring return value of 'chdir', declared with attribute warn_unused_result [-Wunused-result]
+  chdir("/");
+  ^
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o isakmp-pkt.o isakmp-pkt.c
+In file included from sysdep.h:31:0,
+                 from isakmp-pkt.c:28:
+isakmp-pkt.c: In function 'parse_isakmp_packet':
+isakmp-pkt.c:823:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'size_t {aka long unsigned int}' [-Wformat=]
+  DEBUG(3, printf("Recieved Packet Len: %d\n", data_len));
+                  ^
+config.h:127:4: note: in definition of macro 'DEBUG'
+    COMMAND;  \
+    ^
+gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fstack-protector-all -DVERSION=\"0.5.3\"   -c -o vpnc.o vpnc.c
+vpnc.c: In function 'close_tunnel':
+vpnc.c:369:2: warning: ignoring return value of 'system', declared with attribute warn_unused_result [-Wunused-result]
+  system(config[CONFIG_SCRIPT]);
+  ^
+vpnc.c: In function 'setup_tunnel':
+vpnc.c:335:2: warning: ignoring return value of 'system', declared with attribute warn_unused_result [-Wunused-result]
+  system(config[CONFIG_SCRIPT]);
+  ^
+vpnc.c: In function 'do_phase2_xauth':
+vpnc.c:2310:6: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+      asprintf(&prompt, "%s for VPN %s@%s: ",
+      ^
+vpnc.c: In function 'do_config_to_env':
+vpnc.c:940:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "%d", mask_to_masklen(*((struct in_addr *)a->u.lots.data)));
+     ^
+vpnc.c:1017:4: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+    asprintf(&strbuf, "%d", a->u.acl.count);
+    ^
+vpnc.c:1025:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_ADDR", i);
+     ^
+vpnc.c:1026:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%s", inet_ntoa(a->u.acl.acl_ent[i].addr));
+     ^
+vpnc.c:1031:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_MASK", i);
+     ^
+vpnc.c:1032:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%s", inet_ntoa(a->u.acl.acl_ent[i].mask));
+     ^
+vpnc.c:1038:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_MASKLEN", i);
+     ^
+vpnc.c:1039:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%d", mask_to_masklen(a->u.acl.acl_ent[i].mask));
+     ^
+vpnc.c:1044:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_PROTOCOL", i);
+     ^
+vpnc.c:1045:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%hu", a->u.acl.acl_ent[i].protocol);
+     ^
+vpnc.c:1050:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_SPORT", i);
+     ^
+vpnc.c:1051:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%hu", a->u.acl.acl_ent[i].sport);
+     ^
+vpnc.c:1056:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf, "CISCO_SPLIT_INC_%d_DPORT", i);
+     ^
+vpnc.c:1057:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&strbuf2, "%hu", a->u.acl.acl_ent[i].dport);
+     ^
+vpnc.c: In function 'config_tunnel':
+vpnc.c:363:2: warning: ignoring return value of 'system', declared with attribute warn_unused_result [-Wunused-result]
+  system(config[CONFIG_SCRIPT]);
+  ^
+gcc -o vpnc sysdep.o vpnc-debug.o isakmp-pkt.o tunip.o config.o dh.o math_group.o supp.o decrypt-utils.o vpnc.o -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -lgcrypt -lgpg-error 
+./makeman.pl
++ perl -pi -e s/1412/1000/ vpnc-script
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.GuxRyO
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64
+++ dirname /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64
++ cd vpnc-0.5.3
++ '[' 1 -eq 1 ']'
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/sbin
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/bin
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/man/man8
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/man/man1
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/var/lib/vpnc
++ install -m 755 vpnc vpnc-script vpnc-disconnect cisco-decrypt /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/sbin
++ install -m 755 pcf2vpnc /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/bin
++ install -m 755 vpnc.8 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/man/man8
++ install -m 755 cisco-decrypt.1 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/man/man1
++ install -d -m 755 /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/etc/vpnc
++ ln -s /usr/sbin/vpnc-script /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/etc/vpnc/vpnc-script
++ /usr/lib/rpm/find-debuginfo.sh -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /builddir/build/BUILD/vpnc-0.5.3
+extracting debug info from /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/sbin/vpnc
+extracting debug info from /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/sbin/cisco-decrypt
+/usr/lib/rpm/sepdebugcrcfix: Updated 2 CRC32s, 0 CRC32s did match.
+564 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/mageia/brp-java-repack-jars
++ '[' 1 -eq 1 ']'
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
+Processing files: vpnc-0.5.3-14.mga6.x86_64
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.fxAsjG
++ umask 022
++ cd /builddir/build/BUILD
++ cd vpnc-0.5.3
++ DOCDIR=/builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ export DOCDIR
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ cp -pr COPYING /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ cp -pr README /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ cp -pr TODO /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ cp -pr VERSION /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ cp -pr ChangeLog /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64/usr/share/doc/vpnc
++ exit 0
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_SOURCED = "1",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Provides: kvpnc-backend vpnc = 0.5.3-14.mga6 vpnc(x86-64) = 0.5.3-14.mga6
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.8)(64bit) libgcrypt.so.20()(64bit) libgcrypt.so.20(GCRYPT_1.6)(64bit) perl(IO::File) perl(strict) perl(warnings) perl-base >= 2:5.22.3
+Processing files: vpnc-debuginfo-0.5.3-14.mga6.x86_64
+Provides: vpnc-debuginfo = 0.5.3-14.mga6 vpnc-debuginfo(x86-64) = 0.5.3-14.mga6
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64
+Wrote: /builddir/build/RPMS/vpnc-0.5.3-14.mga6.x86_64.rpm
+Wrote: /builddir/build/RPMS/vpnc-debuginfo-0.5.3-14.mga6.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.6nLmEz
++ umask 022
++ cd /builddir/build/BUILD
++ cd vpnc-0.5.3
++ /usr/bin/rm -rf /builddir/build/BUILDROOT/vpnc-0.5.3-14.mga6.x86_64
++ exit 0
+Child return code was: 0

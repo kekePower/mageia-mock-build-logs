@@ -1,0 +1,200 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-4.mga7
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /home/stig/rpmbuild/mock/6/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '4283ae72b69b44c0ac46e837b6fcf58c', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '25dfbe26e78542a2b7c6c224b86911f1', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ed2320e8c98846fdb5af36009e2a169b', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '91d4ac0138134f33b7cb411010198468', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Tue 23 Jan 2018 12:54:32 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  Nothing to do.
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/.initialized
+DEBUG buildroot.py:367:  removing 3 rpm db files
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /home/stig/rpmbuild/mock/6/x86_64/var/lib/rpm/__db.001
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /home/stig/rpmbuild/mock/6/x86_64/var/lib/rpm/__db.002
+DEBUG buildroot.py:372:  nuke_rpm_db: removing /home/stig/rpmbuild/mock/6/x86_64/var/lib/rpm/__db.003
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '1918065cc9184450816d021da37e0c6d', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/vpnc-0.5.3-14.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  vpnc-0.5.3-14.mga7                    warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  #warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ######################################warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  #
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7dc1f40919c24002bb5aabf3936fafff', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/vpnc-0.5.3-14.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  vpnc-0.5.3-fix-script.patch
+DEBUG util.py:479:  vpnc-0.5.3-linkage.patch
+DEBUG util.py:479:  vpnc-0.5.3-upstream-patch-isakmp-auth-failure.patch
+DEBUG util.py:479:  vpnc-0.5.3.tar.gz
+DEBUG util.py:479:  vpnc.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/vpnc-0.5.3-14.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/vpnc-0.5.3-14.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Tue 23 Jan 2018 12:54:35 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  =======================================================================================================================
+DEBUG util.py:479:   Package                             Arch                  Version                        Repository              Size
+DEBUG util.py:479:  =======================================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   lib64gcrypt-devel                   x86_64                1.7.8-1.1.mga6                 updates                206 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   lib64gpg-error-devel                x86_64                1.24-1.mga6                    mageia                  66 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  =======================================================================================================================
+DEBUG util.py:479:  Install  2 Packages
+DEBUG util.py:479:  Total size: 272 k
+DEBUG util.py:479:  Installed size: 759 k
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64.rpm: Already downloaded                                             
+DEBUG util.py:479:  [SKIPPED] lib64gpg-error-devel-1.24-1.mga6.x86_64.rpm: Already downloaded                                             
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                                               1/1 
+DEBUG util.py:479:    Installing       : lib64gpg-error-devel-1.24-1.mga6.x86_64                                                       1/2 
+DEBUG util.py:479:    Installing       : lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                                       2/2 
+DEBUG util.py:479:    Running scriptlet: lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                                       2/2 
+DEBUG util.py:479:    Verifying        : lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                                       1/2 
+DEBUG util.py:479:    Verifying        : lib64gpg-error-devel-1.24-1.mga6.x86_64                                                       2/2 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    lib64gcrypt-devel.x86_64 1.7.8-1.1.mga6                    lib64gpg-error-devel.x86_64 1.24-1.mga6                   
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/home/stig/rpmbuild/mock/6/x86_64' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
