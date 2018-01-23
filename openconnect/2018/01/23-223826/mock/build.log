@@ -1,0 +1,759 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/openconnect.spec'], chrootPath='/home/stig/rpmbuild/mock/6/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fccaf900630>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7a9c41a42eeb4739a7fcbb3b0c52ccc6', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/openconnect.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/10lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/openconnect-7.08-1.mga6.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/openconnect.spec'], chrootPath='/home/stig/rpmbuild/mock/6/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fccaf900630>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7a843a3124f04e9ba0faab7fede307dd', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/openconnect.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/10lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/10lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.udhUs3
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf openconnect-7.08
++ /usr/bin/gzip -dc /builddir/build/SOURCES/openconnect-7.08.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd openconnect-7.08
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.TjCVaT
++ umask 022
++ cd /builddir/build/BUILD
++ cd openconnect-7.08
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
+Fixing libtool's ltmain.sh to prevent overlinking (cf http://wiki.mandriva.com/en/Overlinking)
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
+Fixing libtool inside configure to pass -Wl,xxx options before libraries
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ '[' -f ./configure.in -o -f ./configure.ac ']'
++ CONFIGURE_XPATH='--x-includes=/usr/include --x-libraries=/usr/lib64'
++ ./configure --build=x86_64-mageia-linux-gnu --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --x-includes=/usr/include --x-libraries=/usr/lib64 --disable-static --with-vpnc-script=/etc/vpnc/vpnc-script
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '135' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+configure: Applying feature macros for GNU build
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for fdevname_r... no
+checking for statfs... yes
+checking for getline... yes
+checking for strcasestr... yes
+checking for strndup... yes
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for supported compiler flags...  -Wall -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wno-unused-parameter -Werror=pointer-to-int-cast -Wdeclaration-after-statement -Werror-implicit-function-declaration -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Wnested-externs -Wpointer-arith -Wwrite-strings
+checking for socket... yes
+checking for inet_aton... yes
+checking for IPV6_PATHMTU socket option... yes
+checking for __android_log_vprint... no
+checking for __android_log_vprint in -llog... no
+checking for nl_langinfo... yes
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for msgfmt... /usr/bin/msgfmt
+checking for functional NLS support... yes
+checking for GNUTLS... yes
+checking for gnutls_dtls_set_data_mtu... yes
+checking for gnutls_pkcs11_get_raw_issuer... yes
+checking for gnutls_certificate_set_x509_system_trust... yes
+checking for gnutls_cipher_set_iv... yes
+checking for gnutls_pkcs12_simple_parse... yes
+checking for gnutls_certificate_set_key... yes
+checking for gnutls_pk_to_sign... yes
+checking for gnutls_pubkey_export2... yes
+checking for gnutls_x509_crt_set_pin_function... yes
+checking for gnutls_url_is_supported... yes
+checking for gnutls_system_key_add_x509... yes
+checking for gnutls_session_set_premaster... yes
+checking for gnutls_pkcs11_add_provider... yes
+checking for P11KIT... yes
+checking for tss library... no
+checking for softhsm2-util... no
+checking for LIBLZ4... yes
+checking for LZ4_compress_default()... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking for LIBXML2... yes
+checking for ZLIB... yes
+checking for LIBPROXY... yes
+checking for LIBSTOKEN... no
+checking for LIBPCSCLITE... yes
+checking for LIBPSKC... no
+checking for krb5-config... /usr/bin/krb5-config
+checking whether /usr/bin/krb5-config supports gssapi... yes
+checking gssapi/gssapi.h usability... yes
+checking gssapi/gssapi.h presence... yes
+checking for gssapi/gssapi.h... yes
+checking GSSAPI compilation with "-lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err"... yes
+checking if_tun.h usability... no
+checking if_tun.h presence... no
+checking for if_tun.h... no
+checking linux/if_tun.h usability... yes
+checking linux/if_tun.h presence... yes
+checking for linux/if_tun.h... yes
+checking net/if_utun.h usability... no
+checking net/if_utun.h presence... no
+checking for net/if_utun.h... no
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking for python2... /usr/bin/python2
+checking that python is version 2.x... yes
+checking if groff can create UTF-8 XHTML... yes
+checking for CWRAP... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating openconnect.pc
+config.status: creating po/Makefile
+config.status: creating www/Makefile
+config.status: creating libopenconnect.map
+config.status: creating openconnect.8
+config.status: creating www/styles/Makefile
+config.status: creating www/inc/Makefile
+config.status: creating www/images/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/softhsm2.conf
+config.status: creating tests/configs/test-user-cert.config
+config.status: creating tests/configs/test-user-pass.config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+BUILD OPTIONS:
+  SSL library:            GnuTLS
+  PKCS#11 support:        GnuTLS
+  DTLS support:           yes
+  ESP support:            yes
+  libproxy support:       yes
+  RSA SecurID support:    no
+  PSKC OATH file support: no
+  GSSAPI support:         yes
+  Yubikey support:        yes
+  LZ4 compression:        yes
+  Java bindings:          no
+  Build docs:             yes
+  Unit tests:             no
++ /usr/bin/make -O -j8
+/usr/bin/make  all-recursive
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-version.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-compat.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-auth-common.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-lzs.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-http-auth.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-ssl.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-mainloop.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-library.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-http.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-digest.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-script.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-lzo.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-ntlm.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-esp-seqno.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-esp.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-auth-juniper.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gnutls-esp.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-oncp.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gnutls-dtls.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-dtls.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-auth.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-oath.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gnutls_pkcs12.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gssapi.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-yubikey.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-cstp.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gnutls_tpm.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-iconv.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-tun.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       libopenconnect_la-gnutls.lo
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CCLD     libopenconnect.la
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+Making all in tests
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CC       serverhash.o
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CC       seqtest.o
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CC       lzstest.o
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CCLD     seqtest
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CCLD     serverhash
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+  CCLD     lzstest
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+Making all in www
+Making all in styles
+make[3]: Nothing to be done for 'all'.
+Making all in inc
+make[3]: Nothing to be done for 'all'.
+Making all in images
+make[3]: Nothing to be done for 'all'.
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . features.xml > features.html || (rm features.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . tpm.xml > tpm.html || (rm tpm.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . csd.xml > csd.html || (rm csd.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . pkcs11.xml > pkcs11.html || (rm pkcs11.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . gui.xml > gui.html || (rm gui.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . token.xml > token.html || (rm token.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . nonroot.xml > nonroot.html || (rm nonroot.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . charset.xml > charset.html || (rm charset.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . building.xml > building.html || (rm building.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . download.xml > download.html || (rm download.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . connecting.xml > connecting.html || (rm connecting.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . vpnc-script.xml > vpnc-script.html || (rm vpnc-script.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . index.xml > index.html || (rm index.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . changelog.xml > changelog.html || (rm changelog.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . packages.xml > packages.html || (rm packages.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . platforms.xml > platforms.html || (rm platforms.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . mail.xml > mail.html || (rm mail.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . juniper.xml > juniper.html || (rm juniper.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . contribute.xml > contribute.html || (rm contribute.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . anyconnect.xml > anyconnect.html || (rm anyconnect.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/bin/groff -t -K UTF-8 -mandoc -Txhtml ../openconnect.8 | \
+	sed -e 's/&minus;/-/g' -e '1,/<body>/d' -e '/<\/body>/,$d' > openconnect.8.inc
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+/usr/bin/python2 "./html.py" -d . manual.xml > manual.html || (rm manual.html; exit 1)
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+Making all in po
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o ar.mo ar.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o bs.mo bs.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o ca.mo ca.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o en_GB.mo en_GB.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o en_US.mo en_US.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o el.mo el.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o cs.mo cs.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o fr.mo fr.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o de.mo de.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o es.mo es.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o eu.mo eu.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o fi.mo fi.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o gl.mo gl.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o it.mo it.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o hu.mo hu.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o id.mo id.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o nl.mo nl.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o pa.mo pa.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o lt.mo lt.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o pl.mo pl.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o sl.mo sl.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o pt_BR.mo pt_BR.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o sk.mo sk.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o pt.mo pt.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o sv.mo sv.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o sr@latin.mo sr@latin.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o uk.mo uk.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o sr.mo sr.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o tr.mo tr.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o tg.mo tg.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o zh_CN.mo zh_CN.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o ug.mo ug.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+rm -f  && /usr/bin/msgfmt -o zh_TW.mo zh_TW.po
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       openconnect-xml.o
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CC       openconnect-main.o
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+  CCLD     openconnect
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.a98Kyj
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
+++ dirname /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
++ cd openconnect-7.08
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
+Making install in tests
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/tests'
+Making install in www
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+Making install in styles
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/styles'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/styles'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/styles'
+ /usr/bin/install -c -m 644 main.css '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/styles'
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/styles'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/styles'
+Making install in inc
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/inc'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/inc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/inc'
+ /usr/bin/install -c -m 644 ./content.tmpl ./footer.tmpl ./header.tmpl '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/inc'
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/inc'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/inc'
+Making install in images
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/images'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www/images'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/images'
+ /usr/bin/install -c -m 644 ./left.png ./left2.png ./leftsel.png ./leftsel2.png ./openconnect.png ./right.png ./right2.png ./rightsel.png ./rightsel2.png ./openconnect.svg '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect/images'
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/images'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www/images'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect'
+ /usr/bin/install -c -m 644 csd.html charset.html token.html pkcs11.html tpm.html features.html gui.html nonroot.html building.html connecting.html manual.html vpnc-script.html changelog.html download.html index.html packages.html platforms.html contribute.html mail.html anyconnect.html juniper.html '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect'
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/www'
+Making install in po
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Nothing to be done for 'install-exec-am'.
+/usr/bin/make  install-data-hook
+make[3]: Entering directory '/builddir/build/BUILD/openconnect-7.08/po'
+linguas="ar bs ca cs de el en_GB en_US es eu fi fr gl hu id it lt nl pa pl pt_BR pt sk sl sr@latin sr sv tg tr ug uk zh_CN zh_TW"; \
+for l in $linguas; do \
+  dir="/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/$l/LC_MESSAGES"; \
+  /usr/bin/mkdir -p $dir; \
+  echo Installing $l.mo to $dir/openconnect.mo ; \
+  /usr/bin/install -c -m 644 $l.mo $dir/openconnect.mo; \
+done
+Installing ar.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/ar/LC_MESSAGES/openconnect.mo
+Installing bs.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/bs/LC_MESSAGES/openconnect.mo
+Installing ca.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/ca/LC_MESSAGES/openconnect.mo
+Installing cs.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/cs/LC_MESSAGES/openconnect.mo
+Installing de.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/de/LC_MESSAGES/openconnect.mo
+Installing el.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/el/LC_MESSAGES/openconnect.mo
+Installing en_GB.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/en_GB/LC_MESSAGES/openconnect.mo
+Installing en_US.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/en_US/LC_MESSAGES/openconnect.mo
+Installing es.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/es/LC_MESSAGES/openconnect.mo
+Installing eu.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/eu/LC_MESSAGES/openconnect.mo
+Installing fi.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/fi/LC_MESSAGES/openconnect.mo
+Installing fr.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/fr/LC_MESSAGES/openconnect.mo
+Installing gl.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/gl/LC_MESSAGES/openconnect.mo
+Installing hu.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/hu/LC_MESSAGES/openconnect.mo
+Installing id.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/id/LC_MESSAGES/openconnect.mo
+Installing it.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/it/LC_MESSAGES/openconnect.mo
+Installing lt.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/lt/LC_MESSAGES/openconnect.mo
+Installing nl.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/nl/LC_MESSAGES/openconnect.mo
+Installing pa.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/pa/LC_MESSAGES/openconnect.mo
+Installing pl.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/pl/LC_MESSAGES/openconnect.mo
+Installing pt_BR.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/pt_BR/LC_MESSAGES/openconnect.mo
+Installing pt.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/pt/LC_MESSAGES/openconnect.mo
+Installing sk.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/sk/LC_MESSAGES/openconnect.mo
+Installing sl.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/sl/LC_MESSAGES/openconnect.mo
+Installing sr@latin.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/sr@latin/LC_MESSAGES/openconnect.mo
+Installing sr.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/sr/LC_MESSAGES/openconnect.mo
+Installing sv.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/sv/LC_MESSAGES/openconnect.mo
+Installing tg.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/tg/LC_MESSAGES/openconnect.mo
+Installing tr.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/tr/LC_MESSAGES/openconnect.mo
+Installing ug.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/ug/LC_MESSAGES/openconnect.mo
+Installing uk.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/uk/LC_MESSAGES/openconnect.mo
+Installing zh_CN.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/zh_CN/LC_MESSAGES/openconnect.mo
+Installing zh_TW.mo to /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/locale/zh_TW/LC_MESSAGES/openconnect.mo
+make[3]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08/po'
+make[1]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+make[2]: Entering directory '/builddir/build/BUILD/openconnect-7.08'
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libopenconnect.la '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64'
+libtool: install: /usr/bin/install -c .libs/libopenconnect.so.5.4.0 /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64/libopenconnect.so.5.4.0
+libtool: install: (cd /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64 && { ln -s -f libopenconnect.so.5.4.0 libopenconnect.so.5 || { rm -f libopenconnect.so.5 && ln -s libopenconnect.so.5.4.0 libopenconnect.so.5; }; })
+libtool: install: (cd /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64 && { ln -s -f libopenconnect.so.5.4.0 libopenconnect.so || { rm -f libopenconnect.so && ln -s libopenconnect.so.5.4.0 libopenconnect.so; }; })
+libtool: install: /usr/bin/install -c .libs/libopenconnect.lai /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64/libopenconnect.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/sbin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c openconnect '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/sbin'
+libtool: warning: 'libopenconnect.la' has not been installed in '/usr/lib64'
+libtool: install: /usr/bin/install -c .libs/openconnect /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/sbin/openconnect
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/include'
+ /usr/bin/install -c -m 644 openconnect.h '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/include'
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/man/man8'
+ /usr/bin/install -c -m 644 openconnect.8 '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/man/man8'
+ /usr/bin/mkdir -p '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64/pkgconfig'
+ /usr/bin/install -c -m 644 openconnect.pc '/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64/pkgconfig'
+make[2]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
+make[1]: Leaving directory '/builddir/build/BUILD/openconnect-7.08'
++ /usr/lib/rpm/mageia/find-lang.pl /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64 openconnect
++ find /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64 -name '*.la' -delete
++ /usr/lib/rpm/find-debuginfo.sh -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /builddir/build/BUILD/openconnect-7.08
+extracting debug info from /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/lib64/libopenconnect.so.5.4.0
+extracting debug info from /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/sbin/openconnect
+/usr/lib/rpm/sepdebugcrcfix: Updated 2 CRC32s, 0 CRC32s did match.
+symlinked /usr/lib/debug/usr/lib64/libopenconnect.so.5.4.0.debug to /usr/lib/debug/usr/lib64/libopenconnect.so.5.debug
+symlinked /usr/lib/debug/usr/lib64/libopenconnect.so.5.4.0.debug to /usr/lib/debug/usr/lib64/libopenconnect.so.debug
+1259 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/mageia/brp-java-repack-jars
++ '[' 1 -eq 1 ']'
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
+Processing files: openconnect-7.08-1.mga6.x86_64
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.2goeuN
++ umask 022
++ cd /builddir/build/BUILD
++ cd openconnect-7.08
++ DOCDIR=/builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect
++ export DOCDIR
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect
++ cp -pr AUTHORS /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect
++ cp -pr TODO /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect
++ cp -pr COPYING.LGPL /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64/usr/share/doc/openconnect
++ exit 0
+warning: File listed twice: /usr/share/doc/openconnect
+Provides: openconnect = 7.08-1.mga6 openconnect(x86-64) = 7.08-1.mga6
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.8)(64bit) libgnutls.so.30()(64bit) libgnutls.so.30(GNUTLS_3_4)(64bit) libopenconnect.so.5()(64bit) libopenconnect.so.5(OPENCONNECT_5.0)(64bit) libopenconnect.so.5(OPENCONNECT_5_1)(64bit) libopenconnect.so.5(OPENCONNECT_5_2)(64bit) libopenconnect.so.5(OPENCONNECT_5_3)(64bit) libopenconnect.so.5(OPENCONNECT_5_4)(64bit) libopenconnect.so.5(OPENCONNECT_PRIVATE)(64bit) libproxy.so.1()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libxml2.so.2()(64bit) libxml2.so.2(LIBXML2_2.4.30)(64bit) libxml2.so.2(LIBXML2_2.6.0)(64bit)
+Processing files: lib64openconnect5-7.08-1.mga6.x86_64
+Provides: lib64openconnect5 = 7.08-1.mga6 lib64openconnect5(x86-64) = 7.08-1.mga6 libopenconnect.so.5()(64bit) libopenconnect.so.5(OPENCONNECT_5.0)(64bit) libopenconnect.so.5(OPENCONNECT_5_1)(64bit) libopenconnect.so.5(OPENCONNECT_5_2)(64bit) libopenconnect.so.5(OPENCONNECT_5_3)(64bit) libopenconnect.so.5(OPENCONNECT_5_4)(64bit) libopenconnect.so.5(OPENCONNECT_PRIVATE)(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.8)(64bit) libgnutls.so.30()(64bit) libgnutls.so.30(GNUTLS_3_4)(64bit) libgssapi_krb5.so.2()(64bit) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) liblz4.so.1()(64bit) libp11-kit.so.0()(64bit) libpcsclite.so.1()(64bit) libproxy.so.1()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libxml2.so.2()(64bit) libxml2.so.2(LIBXML2_2.4.30)(64bit) libxml2.so.2(LIBXML2_2.6.0)(64bit) libz.so.1()(64bit) libz.so.1(ZLIB_1.2.0)(64bit)
+Processing files: lib64openconnect-devel-7.08-1.mga6.x86_64
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_SOURCED = "1",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Provides: devel(libopenconnect(64bit)) lib64openconnect-devel = 7.08-1.mga6 lib64openconnect-devel(x86-64) = 7.08-1.mga6 libopenconnect-devel = 7.08-1.mga6 openconnect-devel = 7.08-1.mga6 pkgconfig(openconnect) = 7.08
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: devel(libgnutls(64bit)) devel(libgssapi_krb5(64bit)) devel(liblz4(64bit)) devel(libp11-kit(64bit)) devel(libpcsclite(64bit)) devel(libproxy(64bit)) devel(libxml2(64bit)) devel(libz(64bit)) pkgconfig pkgconfig(gnutls) pkgconfig(liblz4) pkgconfig(libpcsclite) pkgconfig(libproxy-1.0) pkgconfig(libxml-2.0) pkgconfig(p11-kit-1) pkgconfig(zlib)
+Processing files: openconnect-debuginfo-7.08-1.mga6.x86_64
+Provides: openconnect-debuginfo = 7.08-1.mga6 openconnect-debuginfo(x86-64) = 7.08-1.mga6
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
+Wrote: /builddir/build/RPMS/openconnect-7.08-1.mga6.x86_64.rpm
+Wrote: /builddir/build/RPMS/lib64openconnect5-7.08-1.mga6.x86_64.rpm
+Wrote: /builddir/build/RPMS/lib64openconnect-devel-7.08-1.mga6.x86_64.rpm
+Wrote: /builddir/build/RPMS/openconnect-debuginfo-7.08-1.mga6.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.LqAAzm
++ umask 022
++ cd /builddir/build/BUILD
++ cd openconnect-7.08
++ /usr/bin/rm -rf /builddir/build/BUILDROOT/openconnect-7.08-1.mga6.x86_64
++ exit 0
+Child return code was: 0

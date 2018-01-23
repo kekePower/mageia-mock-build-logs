@@ -1,0 +1,15 @@
+2018-01-23 22:37:50,097 - Mock Version: 1.4.8
+2018-01-23 22:37:51,478 - Start: dnf update
+2018-01-23 22:37:54,065 - Finish: dnf update
+2018-01-23 22:37:54,095 - Finish: chroot init
+2018-01-23 22:37:54,100 - Start: build phase for openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:37:54,103 - Start: build setup for openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:38:08,807 - Finish: build setup for openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:38:08,807 - Start: rpmbuild openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:38:08,809 - Start: Outputting list of installed packages
+2018-01-23 22:38:08,860 - Finish: Outputting list of installed packages
+2018-01-23 22:38:21,594 - Finish: rpmbuild openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:38:21,598 - Finish: build phase for openconnect-7.08-1.mga7.src.rpm
+2018-01-23 22:38:21,600 - Start: clean chroot
+2018-01-23 22:38:26,234 - Finish: clean chroot
+2018-01-23 22:38:26,236 - Finish: run
