@@ -1,0 +1,442 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.14-server-4.mga7
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /home/stig/rpmbuild/mock/6/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '633a1d2d2e5e41018ccc705cb0d69a3a', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '8417ad293b6944ca815e876f7cd7bd89', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'fbf6715c4885408aba30c53e52833bcf', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'acd90455c12a41ccb465af39ff308f4f', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Mageia 6 - x86_64 - Updates                                         870 kB/s |  13 MB     00:15    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Thu 25 Jan 2018 07:39:33 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                  Arch             Version                          Repository         Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Upgrading:
+DEBUG util.py:479:   glibc                    x86_64           6:2.22-27.mga6                   updates           5.3 M
+DEBUG util.py:479:   glibc-devel              x86_64           6:2.22-27.mga6                   updates           2.7 M
+DEBUG util.py:479:   lib64nspr4               x86_64           2:4.18-1.mga6                    updates           117 k
+DEBUG util.py:479:   lib64nss3                x86_64           2:3.28.6-1.3.mga6                updates           1.1 M
+DEBUG util.py:479:   lib64systemd0            x86_64           230-12.3.mga6                    updates           213 k
+DEBUG util.py:479:   lib64udev1               x86_64           230-12.3.mga6                    updates            60 k
+DEBUG util.py:479:   nss                      x86_64           2:3.28.6-1.3.mga6                updates           2.5 M
+DEBUG util.py:479:   nss-myhostname           x86_64           230-12.3.mga6                    updates           185 k
+DEBUG util.py:479:   rootcerts                noarch           1:20180104.00-1.mga6             updates           554 k
+DEBUG util.py:479:   systemd                  x86_64           230-12.3.mga6                    updates           5.5 M
+DEBUG util.py:479:   systemd-units            x86_64           230-12.3.mga6                    updates           382 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Upgrade  11 Packages
+DEBUG util.py:479:  Total download size: 19 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  (1/11): lib64nspr4-4.18-1.mga6.x86_64.rpm                            45 kB/s | 117 kB     00:02    
+DEBUG util.py:479:  (2/11): lib64nss3-3.28.6-1.3.mga6.x86_64.rpm                        315 kB/s | 1.1 MB     00:03    
+DEBUG util.py:479:  (3/11): lib64systemd0-230-12.3.mga6.x86_64.rpm                      172 kB/s | 213 kB     00:01    
+DEBUG util.py:479:  (4/11): lib64udev1-230-12.3.mga6.x86_64.rpm                          63 kB/s |  60 kB     00:00    
+DEBUG util.py:479:  (5/11): glibc-2.22-27.mga6.x86_64.rpm                               652 kB/s | 5.3 MB     00:08    
+DEBUG util.py:479:  (6/11): glibc-devel-2.22-27.mga6.x86_64.rpm                         315 kB/s | 2.7 MB     00:08    
+DEBUG util.py:479:  (7/11): nss-myhostname-230-12.3.mga6.x86_64.rpm                     200 kB/s | 185 kB     00:00    
+DEBUG util.py:479:  (8/11): rootcerts-20180104.00-1.mga6.noarch.rpm                     322 kB/s | 554 kB     00:01    
+DEBUG util.py:479:  (9/11): systemd-units-230-12.3.mga6.x86_64.rpm                      186 kB/s | 382 kB     00:02    
+DEBUG util.py:479:  (10/11): nss-3.28.6-1.3.mga6.x86_64.rpm                             466 kB/s | 2.5 MB     00:05    
+DEBUG util.py:479:  (11/11): systemd-230-12.3.mga6.x86_64.rpm                           1.2 MB/s | 5.5 MB     00:04    
+DEBUG util.py:479:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                               1.3 MB/s |  19 MB     00:14     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga6.x86_64                                               1/22 
+DEBUG util.py:479:    Upgrading        : glibc-6:2.22-27.mga6.x86_64                                               1/22 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga6.x86_64                                               1/22 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Upgrading        : lib64nspr4-2:4.18-1.mga6.x86_64                                           2/22 
+DEBUG util.py:479:    Upgrading        : nss-2:3.28.6-1.3.mga6.x86_64                                              3/22 
+DEBUG util.py:479:    Upgrading        : lib64nss3-2:3.28.6-1.3.mga6.x86_64                                        4/22 
+DEBUG util.py:479:    Running scriptlet: lib64nss3-2:3.28.6-1.3.mga6.x86_64                                        4/22 
+DEBUG util.py:479:    Upgrading        : nss-myhostname-230-12.3.mga6.x86_64                                       5/22 
+DEBUG util.py:479:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                              6/22 
+DEBUG util.py:479:    Upgrading        : systemd-230-12.3.mga6.x86_64                                              6/22 
+DEBUG util.py:479:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                              6/22 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Upgrading        : systemd-units-230-12.3.mga6.x86_64                                        7/22 
+DEBUG util.py:479:    Running scriptlet: systemd-units-230-12.3.mga6.x86_64                                        7/22 
+DEBUG util.py:479:    Running scriptlet: glibc-devel-6:2.22-27.mga6.x86_64                                         8/22 
+DEBUG util.py:479:    Upgrading        : glibc-devel-6:2.22-27.mga6.x86_64                                         8/22 
+DEBUG util.py:479:    Upgrading        : lib64systemd0-230-12.3.mga6.x86_64                                        9/22 
+DEBUG util.py:479:    Upgrading        : lib64udev1-230-12.3.mga6.x86_64                                          10/22 
+DEBUG util.py:479:    Upgrading        : rootcerts-1:20180104.00-1.mga6.noarch                                    11/22 
+DEBUG util.py:479:    Cleanup          : glibc-devel-6:2.22-26.mga6.x86_64                                        12/22 
+DEBUG util.py:479:    Cleanup          : systemd-230-12.2.mga6.x86_64                                             13/22 
+DEBUG util.py:479:    Cleanup          : nss-myhostname-230-12.2.mga6.x86_64                                      14/22 
+DEBUG util.py:479:    Running scriptlet: systemd-units-230-12.2.mga6.x86_64                                       15/22 
+DEBUG util.py:479:    Cleanup          : systemd-units-230-12.2.mga6.x86_64                                       15/22 
+DEBUG util.py:479:    Running scriptlet: systemd-units-230-12.2.mga6.x86_64                                       15/22 
+DEBUG util.py:479:  Running in chroot, ignoring request.
+DEBUG util.py:479:    Cleanup          : lib64systemd0-230-12.2.mga6.x86_64                                       16/22 
+DEBUG util.py:479:    Cleanup          : lib64nss3-2:3.28.6-1.2.mga6.x86_64                                       17/22 
+DEBUG util.py:479:    Cleanup          : nss-2:3.28.6-1.2.mga6.x86_64                                             18/22 
+DEBUG util.py:479:    Cleanup          : lib64nspr4-2:4.17-1.mga6.x86_64                                          19/22 
+DEBUG util.py:479:    Cleanup          : lib64udev1-230-12.2.mga6.x86_64                                          20/22 
+DEBUG util.py:479:    Cleanup          : glibc-6:2.22-26.mga6.x86_64                                              21/22 
+DEBUG util.py:479:    Cleanup          : rootcerts-1:20171122.00-1.1.mga6.noarch                                  22/22 
+DEBUG util.py:479:    Running scriptlet: glibc-6:2.22-27.mga6.x86_64                                              22/22 
+DEBUG util.py:479:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                             22/22 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-27.mga6.x86_64                                               1/22 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-27.mga6.x86_64                                         2/22 
+DEBUG util.py:479:    Verifying        : lib64nspr4-2:4.18-1.mga6.x86_64                                           3/22 
+DEBUG util.py:479:    Verifying        : lib64nss3-2:3.28.6-1.3.mga6.x86_64                                        4/22 
+DEBUG util.py:479:    Verifying        : lib64systemd0-230-12.3.mga6.x86_64                                        5/22 
+DEBUG util.py:479:    Verifying        : lib64udev1-230-12.3.mga6.x86_64                                           6/22 
+DEBUG util.py:479:    Verifying        : nss-2:3.28.6-1.3.mga6.x86_64                                              7/22 
+DEBUG util.py:479:    Verifying        : nss-myhostname-230-12.3.mga6.x86_64                                       8/22 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20180104.00-1.mga6.noarch                                     9/22 
+DEBUG util.py:479:    Verifying        : systemd-230-12.3.mga6.x86_64                                             10/22 
+DEBUG util.py:479:    Verifying        : systemd-units-230-12.3.mga6.x86_64                                       11/22 
+DEBUG util.py:479:    Verifying        : glibc-6:2.22-26.mga6.x86_64                                              12/22 
+DEBUG util.py:479:    Verifying        : glibc-devel-6:2.22-26.mga6.x86_64                                        13/22 
+DEBUG util.py:479:    Verifying        : lib64systemd0-230-12.2.mga6.x86_64                                       14/22 
+DEBUG util.py:479:    Verifying        : nss-2:3.28.6-1.2.mga6.x86_64                                             15/22 
+DEBUG util.py:479:    Verifying        : nss-myhostname-230-12.2.mga6.x86_64                                      16/22 
+DEBUG util.py:479:    Verifying        : lib64udev1-230-12.2.mga6.x86_64                                          17/22 
+DEBUG util.py:479:    Verifying        : rootcerts-1:20171122.00-1.1.mga6.noarch                                  18/22 
+DEBUG util.py:479:    Verifying        : lib64nspr4-2:4.17-1.mga6.x86_64                                          19/22 
+DEBUG util.py:479:    Verifying        : lib64nss3-2:3.28.6-1.2.mga6.x86_64                                       20/22 
+DEBUG util.py:479:    Verifying        : systemd-230-12.2.mga6.x86_64                                             21/22 
+DEBUG util.py:479:    Verifying        : systemd-units-230-12.2.mga6.x86_64                                       22/22 
+DEBUG util.py:479:  Upgraded:
+DEBUG util.py:479:    glibc.x86_64 6:2.22-27.mga6                       glibc-devel.x86_64 6:2.22-27.mga6              
+DEBUG util.py:479:    lib64nspr4.x86_64 2:4.18-1.mga6                   lib64nss3.x86_64 2:3.28.6-1.3.mga6             
+DEBUG util.py:479:    lib64systemd0.x86_64 230-12.3.mga6                lib64udev1.x86_64 230-12.3.mga6                
+DEBUG util.py:479:    nss.x86_64 2:3.28.6-1.3.mga6                      nss-myhostname.x86_64 230-12.3.mga6            
+DEBUG util.py:479:    rootcerts.noarch 1:20180104.00-1.mga6             systemd.x86_64 230-12.3.mga6                   
+DEBUG util.py:479:    systemd-units.x86_64 230-12.3.mga6               
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/6/x86_64/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '5b82228f0f1241919ad31281011d2aba', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/quodlibet-4.0.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  quodlibet-4.0.2-1.mga7                warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0e0f13686fe54abf874d2d746b851d71', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/quodlibet-4.0.2-1.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  quodlibet-3.9.0-mga-remove-unity-integration.patch
+DEBUG util.py:479:  quodlibet-4.0.2.tar.gz
+DEBUG util.py:479:  quodlibet.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/quodlibet-4.0.2-1.mga6.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/quodlibet-4.0.2-1.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Thu 25 Jan 2018 07:40:19 PM CET.
+DEBUG util.py:479:  Package gettext-0.19.8.1-1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                        Arch             Version                    Repository         Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   intltool                       noarch           0.51.0-3.mga6              mageia             54 k
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   gettext-devel                  x86_64           0.19.8.1-1.mga6            mageia            1.3 M
+DEBUG util.py:479:   glib-gettextize                x86_64           2.52.2-2.mga6              mageia             22 k
+DEBUG util.py:479:   glib2.0-common                 x86_64           2.52.2-2.mga6              mageia            1.1 M
+DEBUG util.py:479:   lib64acl-devel                 x86_64           2.2.52-7.mga6              mageia            120 k
+DEBUG util.py:479:   lib64attr-devel                x86_64           2.4.47-7.mga6              mageia             32 k
+DEBUG util.py:479:   lib64blkid-devel               x86_64           2.28.2-2.mga6              mageia             16 k
+DEBUG util.py:479:   lib64croco-devel               x86_64           0.6.12-2.mga6              mageia             83 k
+DEBUG util.py:479:   lib64ffi-devel                 x86_64           3.2.1-5.mga6               mageia             24 k
+DEBUG util.py:479:   lib64glib2.0-devel             x86_64           2.52.2-2.mga6              mageia            1.9 M
+DEBUG util.py:479:   lib64lzma-devel                x86_64           5.2.3-1.mga6               mageia            383 k
+DEBUG util.py:479:   lib64mount-devel               x86_64           2.28.2-2.mga6              mageia             17 k
+DEBUG util.py:479:   lib64ncurses-devel             x86_64           6.0-8.1.mga6               updates           1.6 M
+DEBUG util.py:479:   lib64pcre-devel                x86_64           8.41-1.mga6                updates           440 k
+DEBUG util.py:479:   lib64unistring-devel           x86_64           0.9.7-1.mga6               mageia            142 k
+DEBUG util.py:479:   lib64uuid-devel                x86_64           2.28.2-2.mga6              mageia             52 k
+DEBUG util.py:479:   lib64xml2-devel                x86_64           2.9.7-1.mga6               updates           1.0 M
+DEBUG util.py:479:   lib64zlib-devel                x86_64           1.2.11-4.1.mga6            updates           219 k
+DEBUG util.py:479:   perl-Encode-Locale             noarch           1.50.0-3.mga6              mageia             20 k
+DEBUG util.py:479:   perl-File-Listing              noarch           6.40.0-8.mga6              mageia             16 k
+DEBUG util.py:479:   perl-HTML-Parser               x86_64           3.720.0-2.mga6             mageia             97 k
+DEBUG util.py:479:   perl-HTML-Tagset               noarch           3.200.0-9.mga6             mageia             17 k
+DEBUG util.py:479:   perl-HTTP-Cookies              noarch           6.10.0-10.mga6             mageia             26 k
+DEBUG util.py:479:   perl-HTTP-Daemon               noarch           6.10.0-7.mga6              mageia             23 k
+DEBUG util.py:479:   perl-HTTP-Date                 noarch           6.20.0-7.mga6              mageia             16 k
+DEBUG util.py:479:   perl-HTTP-Message              noarch           6.110.0-3.mga6             mageia             77 k
+DEBUG util.py:479:   perl-HTTP-Negotiate            noarch           6.10.0-7.mga6              mageia             20 k
+DEBUG util.py:479:   perl-IO-HTML                   noarch           1.1.0-6.mga6               mageia             28 k
+DEBUG util.py:479:   perl-LWP-MediaTypes            noarch           6.20.0-7.mga6              mageia             26 k
+DEBUG util.py:479:   perl-Net-HTTP                  noarch           6.90.0-3.mga6              mageia             29 k
+DEBUG util.py:479:   perl-URI                       noarch           1.710.0-2.mga6             mageia             98 k
+DEBUG util.py:479:   perl-WWW-RobotRules            noarch           6.20.0-8.mga6              mageia             19 k
+DEBUG util.py:479:   perl-XML-Parser                x86_64           2.440.0-5.mga6             mageia            160 k
+DEBUG util.py:479:   perl-libwww-perl               noarch           6.150.0-2.mga6             mageia            179 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  34 Packages
+DEBUG util.py:479:  Total size: 9.3 M
+DEBUG util.py:479:  Installed size: 64 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] intltool-0.51.0-3.mga6.noarch.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] gettext-devel-0.19.8.1-1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] perl-XML-Parser-2.440.0-5.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64acl-devel-2.2.52-7.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lib64croco-devel-0.6.12-2.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64unistring-devel-0.9.7-1.mga6.x86_64.rpm: Already downloaded                         
+DEBUG util.py:479:  [SKIPPED] perl-libwww-perl-6.150.0-2.mga6.noarch.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] lib64attr-devel-2.4.47-7.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64glib2.0-devel-2.52.2-2.mga6.x86_64.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] perl-Encode-Locale-1.50.0-3.mga6.noarch.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] perl-File-Listing-6.40.0-8.mga6.noarch.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] perl-HTML-Parser-3.720.0-2.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] perl-HTTP-Cookies-6.10.0-10.mga6.noarch.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] perl-HTTP-Daemon-6.10.0-7.mga6.noarch.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] perl-HTTP-Date-6.20.0-7.mga6.noarch.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] perl-HTTP-Message-6.110.0-3.mga6.noarch.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] perl-HTTP-Negotiate-6.10.0-7.mga6.noarch.rpm: Already downloaded                         
+DEBUG util.py:479:  [SKIPPED] perl-LWP-MediaTypes-6.20.0-7.mga6.noarch.rpm: Already downloaded                         
+DEBUG util.py:479:  [SKIPPED] perl-Net-HTTP-6.90.0-3.mga6.noarch.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] perl-URI-1.710.0-2.mga6.noarch.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] perl-WWW-RobotRules-6.20.0-8.mga6.noarch.rpm: Already downloaded                         
+DEBUG util.py:479:  [SKIPPED] glib-gettextize-2.52.2-2.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] glib2.0-common-2.52.2-2.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lib64ffi-devel-3.2.1-5.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64mount-devel-2.28.2-2.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] perl-HTML-Tagset-3.200.0-9.mga6.noarch.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] perl-IO-HTML-1.1.0-6.mga6.noarch.rpm: Already downloaded                                 
+DEBUG util.py:479:  [SKIPPED] lib64blkid-devel-2.28.2-2.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64uuid-devel-2.28.2-2.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64ncurses-devel-6.0-8.1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:479:  [SKIPPED] lib64pcre-devel-8.41-1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64xml2-devel-2.9.7-1.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lib64lzma-devel-5.2.3-1.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lib64zlib-devel-1.2.11-4.1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Installing       : perl-HTTP-Date-6.20.0-7.mga6.noarch                                       1/34 
+DEBUG util.py:479:    Installing       : perl-URI-1.710.0-2.mga6.noarch                                            2/34 
+DEBUG util.py:479:    Installing       : perl-LWP-MediaTypes-6.20.0-7.mga6.noarch                                  3/34 
+DEBUG util.py:479:    Installing       : lib64zlib-devel-1.2.11-4.1.mga6.x86_64                                    4/34 
+DEBUG util.py:479:    Installing       : perl-Encode-Locale-1.50.0-3.mga6.noarch                                   5/34 
+DEBUG util.py:479:    Installing       : perl-Net-HTTP-6.90.0-3.mga6.noarch                                        6/34 
+DEBUG util.py:479:    Installing       : perl-WWW-RobotRules-6.20.0-8.mga6.noarch                                  7/34 
+DEBUG util.py:479:    Installing       : perl-File-Listing-6.40.0-8.mga6.noarch                                    8/34 
+DEBUG util.py:479:    Installing       : lib64lzma-devel-5.2.3-1.mga6.x86_64                                       9/34 
+DEBUG util.py:479:    Installing       : lib64xml2-devel-2.9.7-1.mga6.x86_64                                      10/34 
+DEBUG util.py:479:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                       11/34 
+DEBUG util.py:479:    Installing       : lib64ncurses-devel-6.0-8.1.mga6.x86_64                                   12/34 
+DEBUG util.py:479:    Installing       : lib64uuid-devel-2.28.2-2.mga6.x86_64                                     13/34 
+DEBUG util.py:479:    Installing       : lib64blkid-devel-2.28.2-2.mga6.x86_64                                    14/34 
+DEBUG util.py:479:    Installing       : lib64mount-devel-2.28.2-2.mga6.x86_64                                    15/34 
+DEBUG util.py:479:    Installing       : perl-IO-HTML-1.1.0-6.mga6.noarch                                         16/34 
+DEBUG util.py:479:    Installing       : perl-HTTP-Message-6.110.0-3.mga6.noarch                                  17/34 
+DEBUG util.py:479:    Installing       : perl-HTTP-Cookies-6.10.0-10.mga6.noarch                                  18/34 
+DEBUG util.py:479:    Installing       : perl-HTTP-Daemon-6.10.0-7.mga6.noarch                                    19/34 
+DEBUG util.py:479:    Installing       : perl-HTTP-Negotiate-6.10.0-7.mga6.noarch                                 20/34 
+DEBUG util.py:479:    Installing       : perl-HTML-Tagset-3.200.0-9.mga6.noarch                                   21/34 
+DEBUG util.py:479:    Installing       : perl-HTML-Parser-3.720.0-2.mga6.x86_64                                   22/34 
+DEBUG util.py:479:    Installing       : perl-libwww-perl-6.150.0-2.mga6.noarch                                   23/34 
+DEBUG util.py:479:    Installing       : perl-XML-Parser-2.440.0-5.mga6.x86_64                                    24/34 
+DEBUG util.py:479:    Installing       : lib64ffi-devel-3.2.1-5.mga6.x86_64                                       25/34 
+DEBUG util.py:479:    Running scriptlet: lib64ffi-devel-3.2.1-5.mga6.x86_64                                       25/34 
+DEBUG util.py:479:    Installing       : glib2.0-common-2.52.2-2.mga6.x86_64                                      26/34 
+DEBUG util.py:479:    Installing       : glib-gettextize-2.52.2-2.mga6.x86_64                                     27/34 
+DEBUG util.py:479:    Installing       : lib64glib2.0-devel-2.52.2-2.mga6.x86_64                                  28/34 
+DEBUG util.py:479:    Installing       : lib64croco-devel-0.6.12-2.mga6.x86_64                                    29/34 
+DEBUG util.py:479:    Installing       : lib64attr-devel-2.4.47-7.mga6.x86_64                                     30/34 
+DEBUG util.py:479:    Installing       : lib64acl-devel-2.2.52-7.mga6.x86_64                                      31/34 
+DEBUG util.py:479:    Installing       : lib64unistring-devel-0.9.7-1.mga6.x86_64                                 32/34 
+DEBUG util.py:479:    Running scriptlet: lib64unistring-devel-0.9.7-1.mga6.x86_64                                 32/34 
+DEBUG util.py:479:    Installing       : gettext-devel-0.19.8.1-1.mga6.x86_64                                     33/34 
+DEBUG util.py:479:    Running scriptlet: gettext-devel-0.19.8.1-1.mga6.x86_64                                     33/34 
+DEBUG util.py:479:    Installing       : intltool-0.51.0-3.mga6.noarch                                            34/34 
+DEBUG util.py:479:    Running scriptlet: glib2.0-common-2.52.2-2.mga6.x86_64                                      34/34 
+DEBUG util.py:479:  No schema files found: doing nothing.
+DEBUG util.py:479:    Verifying        : intltool-0.51.0-3.mga6.noarch                                             1/34 
+DEBUG util.py:479:    Verifying        : gettext-devel-0.19.8.1-1.mga6.x86_64                                      2/34 
+DEBUG util.py:479:    Verifying        : perl-XML-Parser-2.440.0-5.mga6.x86_64                                     3/34 
+DEBUG util.py:479:    Verifying        : lib64acl-devel-2.2.52-7.mga6.x86_64                                       4/34 
+DEBUG util.py:479:    Verifying        : lib64croco-devel-0.6.12-2.mga6.x86_64                                     5/34 
+DEBUG util.py:479:    Verifying        : lib64unistring-devel-0.9.7-1.mga6.x86_64                                  6/34 
+DEBUG util.py:479:    Verifying        : perl-libwww-perl-6.150.0-2.mga6.noarch                                    7/34 
+DEBUG util.py:479:    Verifying        : lib64attr-devel-2.4.47-7.mga6.x86_64                                      8/34 
+DEBUG util.py:479:    Verifying        : lib64glib2.0-devel-2.52.2-2.mga6.x86_64                                   9/34 
+DEBUG util.py:479:    Verifying        : perl-Encode-Locale-1.50.0-3.mga6.noarch                                  10/34 
+DEBUG util.py:479:    Verifying        : perl-File-Listing-6.40.0-8.mga6.noarch                                   11/34 
+DEBUG util.py:479:    Verifying        : perl-HTML-Parser-3.720.0-2.mga6.x86_64                                   12/34 
+DEBUG util.py:479:    Verifying        : perl-HTTP-Cookies-6.10.0-10.mga6.noarch                                  13/34 
+DEBUG util.py:479:    Verifying        : perl-HTTP-Daemon-6.10.0-7.mga6.noarch                                    14/34 
+DEBUG util.py:479:    Verifying        : perl-HTTP-Date-6.20.0-7.mga6.noarch                                      15/34 
+DEBUG util.py:479:    Verifying        : perl-HTTP-Message-6.110.0-3.mga6.noarch                                  16/34 
+DEBUG util.py:479:    Verifying        : perl-HTTP-Negotiate-6.10.0-7.mga6.noarch                                 17/34 
+DEBUG util.py:479:    Verifying        : perl-LWP-MediaTypes-6.20.0-7.mga6.noarch                                 18/34 
+DEBUG util.py:479:    Verifying        : perl-Net-HTTP-6.90.0-3.mga6.noarch                                       19/34 
+DEBUG util.py:479:    Verifying        : perl-URI-1.710.0-2.mga6.noarch                                           20/34 
+DEBUG util.py:479:    Verifying        : perl-WWW-RobotRules-6.20.0-8.mga6.noarch                                 21/34 
+DEBUG util.py:479:    Verifying        : glib-gettextize-2.52.2-2.mga6.x86_64                                     22/34 
+DEBUG util.py:479:    Verifying        : glib2.0-common-2.52.2-2.mga6.x86_64                                      23/34 
+DEBUG util.py:479:    Verifying        : lib64ffi-devel-3.2.1-5.mga6.x86_64                                       24/34 
+DEBUG util.py:479:    Verifying        : lib64mount-devel-2.28.2-2.mga6.x86_64                                    25/34 
+DEBUG util.py:479:    Verifying        : perl-HTML-Tagset-3.200.0-9.mga6.noarch                                   26/34 
+DEBUG util.py:479:    Verifying        : perl-IO-HTML-1.1.0-6.mga6.noarch                                         27/34 
+DEBUG util.py:479:    Verifying        : lib64blkid-devel-2.28.2-2.mga6.x86_64                                    28/34 
+DEBUG util.py:479:    Verifying        : lib64uuid-devel-2.28.2-2.mga6.x86_64                                     29/34 
+DEBUG util.py:479:    Verifying        : lib64ncurses-devel-6.0-8.1.mga6.x86_64                                   30/34 
+DEBUG util.py:479:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                       31/34 
+DEBUG util.py:479:    Verifying        : lib64xml2-devel-2.9.7-1.mga6.x86_64                                      32/34 
+DEBUG util.py:479:    Verifying        : lib64lzma-devel-5.2.3-1.mga6.x86_64                                      33/34 
+DEBUG util.py:479:    Verifying        : lib64zlib-devel-1.2.11-4.1.mga6.x86_64                                   34/34 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    intltool.noarch 0.51.0-3.mga6                    gettext-devel.x86_64 0.19.8.1-1.mga6            
+DEBUG util.py:479:    glib-gettextize.x86_64 2.52.2-2.mga6             glib2.0-common.x86_64 2.52.2-2.mga6             
+DEBUG util.py:479:    lib64acl-devel.x86_64 2.2.52-7.mga6              lib64attr-devel.x86_64 2.4.47-7.mga6            
+DEBUG util.py:479:    lib64blkid-devel.x86_64 2.28.2-2.mga6            lib64croco-devel.x86_64 0.6.12-2.mga6           
+DEBUG util.py:479:    lib64ffi-devel.x86_64 3.2.1-5.mga6               lib64glib2.0-devel.x86_64 2.52.2-2.mga6         
+DEBUG util.py:479:    lib64lzma-devel.x86_64 5.2.3-1.mga6              lib64mount-devel.x86_64 2.28.2-2.mga6           
+DEBUG util.py:479:    lib64ncurses-devel.x86_64 6.0-8.1.mga6           lib64pcre-devel.x86_64 8.41-1.mga6              
+DEBUG util.py:479:    lib64unistring-devel.x86_64 0.9.7-1.mga6         lib64uuid-devel.x86_64 2.28.2-2.mga6            
+DEBUG util.py:479:    lib64xml2-devel.x86_64 2.9.7-1.mga6              lib64zlib-devel.x86_64 1.2.11-4.1.mga6          
+DEBUG util.py:479:    perl-Encode-Locale.noarch 1.50.0-3.mga6          perl-File-Listing.noarch 6.40.0-8.mga6          
+DEBUG util.py:479:    perl-HTML-Parser.x86_64 3.720.0-2.mga6           perl-HTML-Tagset.noarch 3.200.0-9.mga6          
+DEBUG util.py:479:    perl-HTTP-Cookies.noarch 6.10.0-10.mga6          perl-HTTP-Daemon.noarch 6.10.0-7.mga6           
+DEBUG util.py:479:    perl-HTTP-Date.noarch 6.20.0-7.mga6              perl-HTTP-Message.noarch 6.110.0-3.mga6         
+DEBUG util.py:479:    perl-HTTP-Negotiate.noarch 6.10.0-7.mga6         perl-IO-HTML.noarch 1.1.0-6.mga6                
+DEBUG util.py:479:    perl-LWP-MediaTypes.noarch 6.20.0-7.mga6         perl-Net-HTTP.noarch 6.90.0-3.mga6              
+DEBUG util.py:479:    perl-URI.noarch 1.710.0-2.mga6                   perl-WWW-RobotRules.noarch 6.20.0-8.mga6        
+DEBUG util.py:479:    perl-XML-Parser.x86_64 2.440.0-5.mga6            perl-libwww-perl.noarch 6.150.0-2.mga6          
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/home/stig/rpmbuild/mock/6/x86_64' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
