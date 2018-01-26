@@ -1,0 +1,15 @@
+2018-01-23 12:54:29,564 - Mock Version: 1.4.8
+2018-01-23 12:54:31,051 - Start: dnf update
+2018-01-23 12:54:33,185 - Finish: dnf update
+2018-01-23 12:54:33,212 - Finish: chroot init
+2018-01-23 12:54:33,216 - Start: build phase for vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:33,218 - Start: build setup for vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:36,017 - Finish: build setup for vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:36,017 - Start: rpmbuild vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:36,019 - Start: Outputting list of installed packages
+2018-01-23 12:54:36,064 - Finish: Outputting list of installed packages
+2018-01-23 12:54:38,771 - Finish: rpmbuild vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:38,774 - Finish: build phase for vpnc-0.5.3-14.mga7.src.rpm
+2018-01-23 12:54:38,775 - Start: clean chroot
+2018-01-23 12:54:41,484 - Finish: clean chroot
+2018-01-23 12:54:41,486 - Finish: run

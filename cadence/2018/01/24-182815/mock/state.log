@@ -1,0 +1,12 @@
+2018-01-24 18:27:40,270 - Mock Version: 1.4.8
+2018-01-24 18:27:41,710 - Start: dnf update
+2018-01-24 18:27:43,065 - Finish: dnf update
+2018-01-24 18:27:43,089 - Finish: chroot init
+2018-01-24 18:27:43,092 - Start: build phase for cadence-1.0-0.git20170707.1.mga7.src.rpm
+2018-01-24 18:27:43,094 - Start: build setup for cadence-1.0-0.git20170707.1.mga7.src.rpm
+2018-01-24 18:28:07,887 - Finish: build setup for cadence-1.0-0.git20170707.1.mga7.src.rpm
+2018-01-24 18:28:07,887 - Start: rpmbuild cadence-1.0-0.git20170707.1.mga7.src.rpm
+2018-01-24 18:28:07,889 - Start: Outputting list of installed packages
+2018-01-24 18:28:07,953 - Finish: Outputting list of installed packages
+2018-01-24 18:28:09,033 - Start: clean chroot
+2018-01-24 18:28:14,958 - Finish: clean chroot
