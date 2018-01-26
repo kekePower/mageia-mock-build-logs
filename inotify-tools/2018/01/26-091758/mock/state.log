@@ -1,0 +1,27 @@
+2018-01-26 09:14:19,061 - Mock Version: 1.4.8
+2018-01-26 09:14:22,216 - Start: dnf update
+2018-01-26 09:14:43,653 - Finish: dnf update
+2018-01-26 09:14:43,674 - Finish: chroot init
+2018-01-26 09:14:43,677 - Start: build phase for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:14:43,679 - Start: build setup for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:15:06,285 - Finish: build setup for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:15:06,285 - Start: rpmbuild inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:15:06,286 - Start: Outputting list of installed packages
+2018-01-26 09:15:06,360 - Finish: Outputting list of installed packages
+2018-01-26 09:15:06,802 - Start: clean chroot
+2018-01-26 09:15:11,131 - Finish: clean chroot
+2018-01-26 09:16:27,758 - Mock Version: 1.4.8
+2018-01-26 09:16:30,447 - Start: dnf update
+2018-01-26 09:17:12,093 - Finish: dnf update
+2018-01-26 09:17:12,106 - Finish: chroot init
+2018-01-26 09:17:12,109 - Start: build phase for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:12,111 - Start: build setup for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:45,026 - Finish: build setup for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:45,026 - Start: rpmbuild inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:45,028 - Start: Outputting list of installed packages
+2018-01-26 09:17:45,082 - Finish: Outputting list of installed packages
+2018-01-26 09:17:54,437 - Finish: rpmbuild inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:54,440 - Finish: build phase for inotify-tools-3.20.1-1.intelsb.mga6.src.rpm
+2018-01-26 09:17:54,441 - Start: clean chroot
+2018-01-26 09:17:57,927 - Finish: clean chroot
+2018-01-26 09:17:57,928 - Finish: run
