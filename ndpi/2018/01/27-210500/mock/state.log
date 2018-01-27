@@ -1,0 +1,12 @@
+2018-01-27 21:04:20,618 - Mock Version: 1.4.8
+2018-01-27 21:04:21,917 - Start: dnf update
+2018-01-27 21:04:43,612 - Finish: dnf update
+2018-01-27 21:04:43,638 - Finish: chroot init
+2018-01-27 21:04:43,641 - Start: build phase for ndpi-2.2-1.mga7.src.rpm
+2018-01-27 21:04:43,643 - Start: build setup for ndpi-2.2-1.mga7.src.rpm
+2018-01-27 21:04:46,873 - Finish: build setup for ndpi-2.2-1.mga7.src.rpm
+2018-01-27 21:04:46,873 - Start: rpmbuild ndpi-2.2-1.mga7.src.rpm
+2018-01-27 21:04:46,875 - Start: Outputting list of installed packages
+2018-01-27 21:04:46,942 - Finish: Outputting list of installed packages
+2018-01-27 21:04:55,299 - Start: clean chroot
+2018-01-27 21:04:59,877 - Finish: clean chroot
