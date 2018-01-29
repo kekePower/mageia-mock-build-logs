@@ -1,0 +1,12 @@
+2018-01-29 23:33:35,214 - Mock Version: 1.4.8
+2018-01-29 23:33:37,824 - Start: dnf update
+2018-01-29 23:33:53,865 - Finish: dnf update
+2018-01-29 23:33:53,882 - Finish: chroot init
+2018-01-29 23:33:53,885 - Start: build phase for yarock-1.3.0-1.6.mga7.src.rpm
+2018-01-29 23:33:53,887 - Start: build setup for yarock-1.3.0-1.6.mga7.src.rpm
+2018-01-29 23:34:50,443 - Finish: build setup for yarock-1.3.0-1.6.mga7.src.rpm
+2018-01-29 23:34:50,444 - Start: rpmbuild yarock-1.3.0-1.6.mga7.src.rpm
+2018-01-29 23:34:50,446 - Start: Outputting list of installed packages
+2018-01-29 23:34:50,578 - Finish: Outputting list of installed packages
+2018-01-29 23:36:52,569 - Start: clean chroot
+2018-01-29 23:37:05,003 - Finish: clean chroot
