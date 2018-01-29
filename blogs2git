@@ -1,0 +1,80 @@
+#!/bin/env zsh
+
+# Version 3
+
+# Dependencies
+# - Git
+# - zsh
+# - xclip
+
+# Changelog
+# - 2018-01-29
+#   * Added GITHUB_URL
+#   * Check if there are any log files in the mock dir, if not, exit
+# - 2018-01-16
+#   * Check if rpms are present, if so, delete them
+# - 2018-01-14
+#   * Delete rpms if present before pushing to git
+#   * Add a little bit of color...
+
+function include () {
+
+        # Edit this path to reflect your installation
+	local inc_file
+	inc_file=${HOME}/bin/include/${1}.inc
+	if [[ ! -f ${inc_file} ]]; then
+		local inc_opt
+		inc_opt=$( echo ${1} | cut -d\/ -f2 )
+		echo "Supplied option \"${inc_opt}\" is not valid."
+        else
+                builtin source ${inc_file} ${2}
+        fi
+
+}
+
+include common/slash_to_array
+include common/colors
+
+GIT_SRC=${HOME}/rpmbuild/mageia-mock-build-logs
+GITHUB_URL="https://github.com/kekePower/mmbl"
+
+PROJ_DIR=$(pwd)
+
+slash_to_array ${PROJ_DIR}
+PROJ_NAME=${sta[-1]}
+
+YEAR=$(date +%Y)
+MONTH=$(date +%m)
+TIMESTAMP=$(date +%d-%H%M%S)
+
+DIR_STRUCT=${GIT_SRC}/${PROJ_NAME}/${YEAR}/${MONTH}/${TIMESTAMP}
+
+if [[ ! -d ${PROJ_DIR}/mock ]]; then
+	echo "${red}Are you sure you're in the right directory?${END}"
+	echo ${PROJ_DIR}
+	exit
+fi
+
+if [[ ! -a ${PROJ_DIR}/mock/build.log ]]; then
+	echo "${red}No logs found. Exiting."
+	exit
+fi
+
+if [[ ! -d ${DIR_STRUCT} ]]; then
+        echo "${white}-${green}>${END} ${blue}Creating directory structure for ${PROJ_NAME}${END}"
+	echo "${white}-${green}>${END} ${green}${DIR_STRUCT}${END}"
+        mkdir -p ${DIR_STRUCT}
+fi
+
+cp -a mock ${DIR_STRUCT}/
+if [[ $( ls ${DIR_STRUCT}/mock/*rpm 2>&1 ) ]]; then
+	rm -f ${DIR_STRUCT}/mock/*rpm
+fi
+
+builtin cd ${GIT_SRC}
+git pull
+git add .
+git commit -m "Build logs for ${PROJ_NAME} on ${YEAR}${MONTH}${TIMESTAMP}"
+git push
+
+echo "${GITHUB_URL}/tree/master/${PROJ_NAME}/${YEAR}/${MONTH}/${TIMESTAMP}/mock" | tee /dev/tty | xclip -selection clipboard
