@@ -67,7 +67,7 @@ if [[ ! -d ${DIR_STRUCT} ]]; then
 fi
 
 cp -a mock ${DIR_STRUCT}/
-find ${DIR_STRUCT} *.rpm -delete
+find ${DIR_STRUCT} -name *.rpm -delete
 
 builtin cd ${GIT_SRC}
 git pull
