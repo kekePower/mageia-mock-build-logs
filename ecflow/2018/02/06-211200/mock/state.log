@@ -1,0 +1,12 @@
+2018-02-06 20:58:22,934 - Mock Version: 1.4.8
+2018-02-06 20:58:24,483 - Start: dnf update
+2018-02-06 20:58:57,057 - Finish: dnf update
+2018-02-06 20:58:57,072 - Finish: chroot init
+2018-02-06 20:58:57,076 - Start: build phase for ecflow-4.8.0-1.mga7.src.rpm
+2018-02-06 20:58:57,078 - Start: build setup for ecflow-4.8.0-1.mga7.src.rpm
+2018-02-06 20:59:49,409 - Finish: build setup for ecflow-4.8.0-1.mga7.src.rpm
+2018-02-06 20:59:49,409 - Start: rpmbuild ecflow-4.8.0-1.mga7.src.rpm
+2018-02-06 20:59:49,410 - Start: Outputting list of installed packages
+2018-02-06 20:59:49,529 - Finish: Outputting list of installed packages
+2018-02-06 21:11:49,116 - Start: clean chroot
+2018-02-06 21:12:00,081 - Finish: clean chroot
