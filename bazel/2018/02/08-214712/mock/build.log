@@ -1,0 +1,575 @@
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f24e9d52b00>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '17dc5d540e4f4c4abcf7b5c70e39fc49', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.10.0-9.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f24e9d52b00>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ebbf54e6f9594fabbab187679f79e984', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.jh4sba
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.10.0
++ /usr/bin/mkdir -p bazel-0.10.0
++ cd bazel-0.10.0
++ /usr/bin/gzip -dc /builddir/build/SOURCES/bazel-0.10.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.EOMKVL
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.10.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ touch WORKSPACE
++ bazel build //src:bazel
+Extracting Bazel installation...
+............
+Loading: 
+Loading: 0 packages loaded
+ERROR: Skipping '//src:bazel': no such package 'src': BUILD file not found on package path
+WARNING: Target pattern parsing failed.
+ERROR: no such package 'src': BUILD file not found on package path
+INFO: Elapsed time: 1.132s
+FAILED: Build did NOT complete successfully (0 packages loaded)
+RPM build errors:
+error: Bad exit status from /var/tmp/rpm-tmp.EOMKVL (%build)
+    Bad exit status from /var/tmp/rpm-tmp.EOMKVL (%build)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.6/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M ebbf54e6f9594fabbab187679f79e984 -D /home/stig/rpmbuild/mock/cauldron/x86_64 -a --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f6a756e4048>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '655682e4654f409fa9e474e8cda1c488', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.10.0-9.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f6a756e4048>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3dca82d60b1e4f6fb3cafc3eed68b80e', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.hBKVLF
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.10.0
++ /usr/bin/gzip -dc /builddir/build/SOURCES/bazel-0.10.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd bazel-0.10.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.McEx50
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.10.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ bazel build //src:bazel
+Extracting Bazel installation...
+.............
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (3 packages loaded)
+Analyzing: target //src:bazel (4 packages loaded)
+Analyzing: target //src:bazel (11 packages loaded)
+Analyzing: target //src:bazel (107 packages loaded)
+Analyzing: target //src:bazel (133 packages loaded)
+INFO: Analysed target //src:bazel (184 packages loaded).
+INFO: Found 1 target...
+[0 / 18] [-----] BazelWorkspaceStatusAction stable-status.txt
+[3 / 24] no action
+[3 / 45] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_enum.cc [for host]; 1s linux-sandbox ... (8 actions running)
+[5 / 45] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_enum.cc [for host]; 2s linux-sandbox ... (8 actions running)
+[12 / 45] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_enum_lite.cc [for host]; 2s linux-sandbox ... (8 actions, 7 running)
+[15 / 46] Compiling external/com_google_protobuf/src/google/protobuf/compiler/objectivec/objectivec_file.cc [for host]; 3s linux-sandbox ... (7 actions running)
+[21 / 52] Compiling external/com_google_protobuf/src/google/protobuf/text_format.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[29 / 60] Compiling external/com_google_protobuf/src/google/protobuf/descriptor_database.cc [for host]; 2s linux-sandbox ... (7 actions running)
+[36 / 67] Compiling external/com_google_protobuf/src/google/protobuf/extension_set.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[46 / 77] Compiling external/com_google_protobuf/src/google/protobuf/compiler/javanano/javanano_map_field.cc [for host]; 3s linux-sandbox ... (7 actions running)
+[56 / 87] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/default_value_objectwriter.cc [for host]; 4s linux-sandbox ... (8 actions running)
+[66 / 97] Compiling external/com_google_protobuf/src/google/protobuf/compiler/parser.cc [for host]; 4s linux-sandbox ... (8 actions running)
+[79 / 110] Compiling external/com_google_protobuf/src/google/protobuf/api.pb.cc [for host]; 3s linux-sandbox ... (7 actions running)
+[91 / 122] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 7s linux-sandbox ... (7 actions running)
+[108 / 139] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 12s linux-sandbox ... (7 actions running)
+[126 / 157] Compiling external/com_google_protobuf/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[143 / 174] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 5s linux-sandbox ... (7 actions running)
+[169 / 200] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 7s linux-sandbox ... (7 actions running)
+INFO: From Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]:
+external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[292 / 469] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/command_line_interface.cc [for host]; 5s linux-sandbox ... (7 actions running)
+[325 / 502] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.cc [for host]; 16s linux-sandbox ... (7 actions running)
+[366 / 544] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/csharp/csharp_message.cc [for host]; 4s linux-sandbox ... (7 actions running)
+INFO: From Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc [for host]:
+third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[418 / 597] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/java/java_file.cc [for host]; 3s linux-sandbox ... (7 actions running)
+[900 / 1,470] Compiling third_party/grpc/src/compiler/cpp_generator.cc [for host]; 3s linux-sandbox ... (7 actions running)
+INFO: From Compiling third_party/ijar/zip.cc:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[1,191 / 1,734] Compiling third_party/protobuf/3.4.0/src/google/protobuf/duration.pb.cc; 1s linux-sandbox ... (8 actions, 7 running)
+[1,375 / 1,937] Compiling external/com_google_protobuf/src/google/protobuf/struct.pb.cc; 3s linux-sandbox ... (7 actions running)
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From Executing genrule @bazel_tools//tools/jdk:gen_platformclasspath [for host]:
+Note: external/bazel_tools/tools/jdk/DumpPlatformClassPath.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[1,530 / 1,958] Building third_party/checker_framework_dataflow/libchecker_framework_dataflow.jar (116 source files); 5s worker ... (8 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar:
+Feb 08, 2018 9:30:54 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/614333a02ef4a788bb70f6cb05ce19e1/bazel-sandbox/8807037404482496373/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Feb 08, 2018 9:30:58 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+[1,699 / 1,958] Building external/com_google_protobuf/libwell_known_types_descriptor_proto-speed.jar (1 source jar); 5s worker ... (8 actions, 5 running)
+[1,865 / 1,958] Compiling Java headers src/main/java/com/google/devtools/build/lib/profiler/libprofiler-output-hjar.jar (30 files); 0s linux-sandbox ... (5 actions, 4 running)
+Target //src:bazel up-to-date:
+  bazel-bin/src/bazel
+INFO: Elapsed time: 390.385s, Critical Path: 85.43s
+INFO: Build completed successfully, 1958 total actions
++ bazel build //scripts:bazel-complete.bash
+Loading: 
+Loading: 0 packages loaded
+INFO: Analysed target //scripts:bazel-complete.bash (1 packages loaded).
+INFO: Found 1 target...
+Building: no action
+[0 / 5] [-----] BazelWorkspaceStatusAction stable-status.txt
+[30 / 66] Compiling Java headers src/main/java/com/google/devtools/build/lib/libstring_util-hjar.jar (2 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto [for host]:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+[44 / 84] Compiling Java headers src/main/protobuf/libextra_actions_base_proto-speed-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 6 running)
+[54 / 95] Compiling Java headers src/main/protobuf/libextra_actions_base_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 6 running)
+[67 / 110] Compiling Java headers src/main/protobuf/libcrosstool_config_proto-speed-hjar.jar (1 files) [for host]; 3s linux-sandbox ... (8 actions, 6 running)
+[78 / 121] Compiling Java headers external/com_google_protobuf/libwell_known_types_descriptor_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 7 running)
+[94 / 145] Compiling Java headers external/com_google_protobuf/libwell_known_types_descriptor_proto-speed-hjar.jar (1 files) [for host]; 2s linux-sandbox ... (8 actions, 7 running)
+[112 / 164] Compiling Java headers src/main/protobuf/libaction_cache_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 6 running)
+[121 / 169] Compiling Java headers third_party/pprof/libprofile_proto-speed-hjar.jar (1 files) [for host]; 2s linux-sandbox ... (8 actions, 5 running)
+[149 / 193] Compiling Java headers src/main/protobuf/libcommand_line_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+[198 / 258] Compiling Java headers src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed-hjar.jar (1 files) [for host]; 2s linux-sandbox ... (8 actions, 5 running)
+[224 / 283] Compiling Java headers src/main/protobuf/libbundlemerge_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+[253 / 311] Compiling Java headers src/main/java/com/google/devtools/build/lib/query2/libquery-engine-hjar.jar (44 files) [for host]; 0s linux-sandbox ... (8 actions, 3 running)
+[280 / 337] Compiling Java headers src/main/java/com/google/devtools/build/lib/libsyntax-hjar.jar (79 files) [for host]; 1s linux-sandbox ... (8 actions, 4 running)
+[305 / 364] Building external/googleapis/libgoogle_devtools_remoteexecution_v1test_remote_execution_proto-speed.jar (1 source jar) [for host]; 1s worker ... (8 actions, 3 running)
+[327 / 383] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar) [for host]; 2s worker ... (8 actions, 4 running)
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+[388 / 451] Compiling Java headers src/main/java/com/google/devtools/build/lib/profiler/libprofiler-output-hjar.jar (30 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[411 / 466] Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (447 source files) and running annotation processors (AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 4s worker ... (8 actions, 3 running)
+[431 / 477] Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (447 source files) and running annotation processors (AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 11s worker ... (8 actions, 4 running)
+[481 / 517] Building src/main/java/com/google/devtools/build/lib/libpackages-internal.jar (114 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 1s worker ... (8 actions, 3 running)
+[528 / 559] Building src/main/java/com/google/devtools/build/lib/libruntime.jar (111 source files) and running annotation processors (OptionProcessor) [for host]; 1s worker ... (8 actions, 3 running)
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[610 / 626] Building src/main/java/com/google/devtools/build/lib/libjava-compilation.jar (43 source files) and running annotation processors (AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 1s worker ... (8 actions, 4 running)
+[705 / 726] Compiling Java headers src/main/protobuf/libdeps_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 6 running)
+INFO: From Compiling third_party/ijar/zip.cc [for host]:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[893 / 921] Compiling Java headers src/tools/android/java/com/google/devtools/build/android/proto/libserialize_format_proto-speed-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]:
+Feb 08, 2018 9:34:31 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/614333a02ef4a788bb70f6cb05ce19e1/bazel-sandbox/225198482824981832/execroot/io_bazel/bazel-out/host/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Feb 08, 2018 9:34:33 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException
+[1,066 / 1,079] Executing genrule //src:embedded_tools [for host]; 2s linux-sandbox ... (8 actions running)
+INFO: From Compiling src/main/cpp/blaze_util_posix.cc [for host]:
+src/main/cpp/blaze_util_posix.cc:272:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, message, strlen(message));  // strlen should be OK
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:273:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, ": ", 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:274:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, error_string, strlen(error_string));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:275:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, "\n", 1);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[1,237 / 1,240] Executing genrule //src:package-zip [for host]; 1s linux-sandbox
+INFO: From Executing genrule //scripts:bash_completion:
+Extracting Bazel installation...
+Target //scripts:bazel-complete.bash up-to-date:
+  bazel-bin/scripts/bazel-complete.bash
+INFO: Elapsed time: 139.395s, Critical Path: 94.27s
+INFO: Build completed successfully, 1240 total actions
++ bazel shutdown
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.ay21va
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
+++ dirname /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
++ cd bazel-0.10.0
++ '[' 1 -eq 1 ']'
++ export DONT_STRIP=1
++ DONT_STRIP=1
++ install -Dm 0755 bazel-bin/bin/bazel /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/bin/bazel
+install: cannot stat 'bazel-bin/bin/bazel': No such file or directory
+error: Bad exit status from /var/tmp/rpm-tmp.ay21va (%install)
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.ay21va (%install)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.6/site-packages/mockbuild/util.py", line 619, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 3dca82d60b1e4f6fb3cafc3eed68b80e -D /home/stig/rpmbuild/mock/cauldron/x86_64 -a --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec
+
+Mock Version: 1.4.8
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fab49bdea90>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e9a013f80ba14762b258af7d7e61a323', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/bazel-0.10.0-9.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fab49bdea90>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'b649e48441c24ea7a3b10cd53e605d12', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/bazel.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+/etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+/etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.G2ALSq
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf bazel-0.10.0
++ /usr/bin/gzip -dc /builddir/build/SOURCES/bazel-0.10.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd bazel-0.10.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.eeyhdt
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.10.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4'
++ export FFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ bazel build //src:bazel
+Extracting Bazel installation...
+............
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (3 packages loaded)
+Analyzing: target //src:bazel (4 packages loaded)
+Analyzing: target //src:bazel (44 packages loaded)
+Analyzing: target //src:bazel (117 packages loaded)
+INFO: Analysed target //src:bazel (184 packages loaded).
+Building: no action
+INFO: Found 1 target...
+[0 / 13] [-----] BazelWorkspaceStatusAction stable-status.txt
+[9 / 27] Compiling external/com_google_protobuf/src/google/protobuf/extension_set_heavy.cc; 0s linux-sandbox ... (7 actions running)
+[18 / 36] Compiling external/com_google_protobuf/src/google/protobuf/extension_set_heavy.cc; 1s linux-sandbox ... (8 actions running)
+[31 / 49] Compiling third_party/protobuf/3.4.0/src/google/protobuf/util/internal/utility.cc; 1s linux-sandbox ... (8 actions running)
+[41 / 59] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor_database.cc; 1s linux-sandbox ... (8 actions running)
+[59 / 77] Compiling third_party/protobuf/3.4.0/src/google/protobuf/duration.pb.cc; 2s linux-sandbox ... (8 actions running)
+[75 / 93] Compiling third_party/protobuf/3.4.0/src/google/protobuf/arena.cc; 1s linux-sandbox ... (8 actions running)
+INFO: From Compiling third_party/ijar/zip.cc:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[97 / 115] Compiling third_party/protobuf/3.4.0/src/google/protobuf/empty.pb.cc; 2s linux-sandbox ... (8 actions running)
+[123 / 141] Compiling third_party/protobuf/3.4.0/src/google/protobuf/type.pb.cc; 2s linux-sandbox ... (7 actions running)
+[156 / 177] Compiling third_party/protobuf/3.4.0/src/google/protobuf/map_field.cc; 1s linux-sandbox ... (7 actions running)
+[164 / 185] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.pb.cc [for host]; 5s linux-sandbox ... (7 actions running)
+INFO: From Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc [for host]:
+third_party/protobuf/3.4.0/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[178 / 203] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.pb.cc [for host]; 9s linux-sandbox ... (7 actions running)
+[190 / 215] Compiling third_party/protobuf/3.4.0/src/google/protobuf/wrappers.pb.cc [for host]; 3s linux-sandbox ... (8 actions running)
+[200 / 225] Compiling third_party/protobuf/3.4.0/src/google/protobuf/generated_message_table_driven_lite.cc [for host]; 3s linux-sandbox ... (8 actions running)
+[217 / 242] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 5s linux-sandbox ... (7 actions running)
+[233 / 258] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor_database.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[257 / 282] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/java/java_field.cc [for host]; 2s linux-sandbox ... (7 actions running)
+[279 / 304] Compiling third_party/protobuf/3.4.0/src/google/protobuf/struct.pb.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[305 / 329] Compiling third_party/protobuf/3.4.0/src/google/protobuf/compiler/cpp/cpp_helpers.cc [for host]; 4s linux-sandbox ... (7 actions running)
+[346 / 371] Compiling third_party/protobuf/3.4.0/src/google/protobuf/descriptor.cc [for host]; 13s linux-sandbox ... (7 actions running)
+[471 / 497] Compiling third_party/protobuf/3.4.0/src/google/protobuf/source_context.pb.cc; 2s linux-sandbox ... (7 actions running)
+[559 / 625] Compiling external/com_google_protobuf/src/google/protobuf/util/message_differencer.cc [for host]; 5s linux-sandbox ... (7 actions running)
+INFO: From Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]:
+external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc:37:12: warning: unused variable 'output_file' [-Wunused-const-variable]
+const char output_file[] = "well_known_types_embed.cc";
+           ^
+1 warning generated.
+[607 / 676] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 14s linux-sandbox ... (7 actions running)
+[663 / 732] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 7s linux-sandbox ... (7 actions running)
+INFO: From Executing genrule @bazel_tools//tools/jdk:gen_platformclasspath [for host]:
+Note: external/bazel_tools/tools/jdk/DumpPlatformClassPath.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[930 / 1,237] Compiling external/com_google_protobuf/src/google/protobuf/compiler/parser.cc; 2s linux-sandbox ... (8 actions, 4 running)
+[1,142 / 1,435] Compiling external/com_google_protobuf/src/google/protobuf/struct.pb.cc; 2s linux-sandbox ... (8 actions, 7 running)
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+[1,297 / 1,483] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 9s linux-sandbox ... (8 actions running)
+[1,570 / 1,697] Building src/main/java/com/google/devtools/build/lib/actions/libactions.jar (102 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor); 1s worker ... (8 actions, 4 running)
+[1,844 / 1,898] Compiling Java headers src/main/java/com/google/devtools/build/lib/libbazel-rules-hjar.jar (111 files); 1s linux-sandbox ... (8 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar:
+Feb 08, 2018 9:43:47 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/614333a02ef4a788bb70f6cb05ce19e1/bazel-sandbox/4932844791721014390/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Feb 08, 2018 9:43:50 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException
+Target //src:bazel up-to-date:
+  bazel-bin/src/bazel
+INFO: Elapsed time: 390.246s, Critical Path: 87.24s
+INFO: Build completed successfully, 1958 total actions
++ bazel build //scripts:bazel-complete.bash
+Loading: 
+Loading: 0 packages loaded
+INFO: Analysed target //scripts:bazel-complete.bash (1 packages loaded).
+INFO: Found 1 target...
+Building: no action
+[0 / 5] [-----] Executing genrule //tools/osx:xcode-locator-genrule [for host]
+[32 / 63] Compiling src/main/tools/build-runfiles.cc [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+[49 / 81] Compiling Java headers src/java_tools/buildjar/java/com/google/devtools/build/buildjar/javac/plugins/libplugins-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+[92 / 142] Compiling Java headers src/java_tools/buildjar/java/com/google/devtools/build/buildjar/javac/plugins/libdependency-hjar.jar (3 files) [for host]; 0s linux-sandbox ... (8 actions, 3 running)
+[109 / 154] Compiling Java headers src/java_tools/junitrunner/java/com/google/testing/junit/junit4/librunner-hjar.jar (6 files) [for host]; 0s linux-sandbox ... (8 actions, 3 running)
+[125 / 167] Compiling Java headers src/java_tools/buildjar/java/com/google/devtools/build/java/turbine/javac/libjavac_transitive-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+[139 / 172] Compiling Java headers src/java_tools/buildjar/java/com/google/devtools/build/java/turbine/javac/libjavac_turbine_java_compiler-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 5 running)
+[152 / 183] Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]; 1s linux-sandbox ... (8 actions, 4 running)
+[161 / 188] Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]; 3s linux-sandbox ... (8 actions, 4 running)
+INFO: From Executing genrule //src/java_tools/junitrunner/java/com/google/testing/coverage:Jacoco_jarjar [for host]:
+Feb 08, 2018 9:44:11 PM com.tonicsystems.jarjar.transform.JarTransformer transform
+INFO: Transforming archive ZipArchive(/builddir/.cache/bazel/_bazel_mockbuild/614333a02ef4a788bb70f6cb05ce19e1/bazel-sandbox/597047410915285477/execroot/io_bazel/bazel-out/host/bin/src/java_tools/junitrunner/java/com/google/testing/coverage/JacocoCoverage_deploy.jar)
+Feb 08, 2018 9:44:14 PM com.tonicsystems.jarjar.transform.jar.ClassTransformerJarProcessor process
+WARNING: Failed to read class module-info.class: java.lang.RuntimeException
+[173 / 198] Compiling Java headers third_party/checker_framework_javacutil/libchecker_framework_javacutil-hjar.jar (19 files) [for host]; 0s linux-sandbox ... (8 actions, 4 running)
+[200 / 224] Compiling Java headers third_party/checker_framework_dataflow/libchecker_framework_dataflow-hjar.jar (116 files) [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+INFO: From Compiling third_party/ijar/zip.cc [for host]:
+third_party/ijar/zip.cc:153:7: warning: private field 'uncompressed_data_' is not used [-Wunused-private-field]
+  u1 *uncompressed_data_;
+      ^
+third_party/ijar/zip.cc:154:10: warning: private field 'uncompressed_data_allocated_' is not used [-Wunused-private-field]
+  size_t uncompressed_data_allocated_;
+         ^
+2 warnings generated.
+[221 / 240] Compiling third_party/ijar/classfile.cc [for host]; 2s linux-sandbox ... (7 actions, 6 running)
+[293 / 315] Building src/tools/android/java/com/google/devtools/build/android/proto/libserialize_format_proto-speed.jar (1 source jar) [for host]; 0s worker ... (8 actions, 6 running)
+[319 / 346] Compiling third_party/ijar/zip_main.cc [for host]; 1s linux-sandbox ... (8 actions, 6 running)
+[350 / 373] Compiling Java headers src/tools/android/java/com/google/devtools/build/android/libandroid_builder_lib-hjar.jar (91 files) [for host]; 2s linux-sandbox ... (8 actions, 5 running)
+[382 / 410] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar) [for host]; 3s worker ... (8 actions, 5 running)
+[430 / 470] Compiling Java headers src/main/protobuf/libtest_status_proto-speed-hjar.jar (1 files) [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+[478 / 531] Compiling Java headers src/main/java/com/google/devtools/build/lib/libsyntax-hjar.jar (79 files) [for host]; 1s linux-sandbox ... (8 actions, 5 running)
+[547 / 599] Compiling Java headers src/main/java/com/google/devtools/build/lib/libskylark-provider-collection-hjar.jar (1 files) [for host]; 0s linux-sandbox ... (8 actions, 5 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_bytestream_bytestream_proto [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+INFO: From SkylarkAction external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar [for host]:
+google/bytestream/bytestream.proto: warning: Import google/protobuf/wrappers.proto but not used.
+[619 / 679] Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (447 source files) and running annotation processors (AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 3s worker ... (8 actions, 3 running)
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_devtools_build_v1_build_events_proto [for host]:
+google/devtools/build/v1/build_events.proto: warning: Import google/rpc/status.proto but not used.
+INFO: From Generating Java (Immutable) proto_library @googleapis//:google_watch_v1_proto [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[661 / 715] Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (447 source files) and running annotation processors (AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 12s worker ... (8 actions, 5 running)
+INFO: From SkylarkAction external/googleapis/google_watch_v1_java_grpc_srcs.jar [for host]:
+google/watcher/v1/watch.proto: warning: Import google/protobuf/empty.proto but not used.
+[738 / 776] Building src/main/java/com/google/devtools/build/lib/libpackages-internal.jar (114 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor) [for host]; 2s worker ... (8 actions, 4 running)
+[821 / 850] Compiling Java headers src/main/java/com/google/devtools/build/lib/libbazel-rules-hjar.jar (111 files) [for host]; 0s linux-sandbox ... (8 actions, 3 running)
+[944 / 962] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar) [for host]; 2s worker ... (8 actions, 2 running)
+[1,124 / 1,138] Compiling src/main/cpp/option_processor.cc [for host]; 2s linux-sandbox ... (7 actions running)
+INFO: From Compiling src/main/cpp/blaze_util_posix.cc [for host]:
+src/main/cpp/blaze_util_posix.cc:272:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, message, strlen(message));  // strlen should be OK
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:273:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, ": ", 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:274:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, error_string, strlen(error_string));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main/cpp/blaze_util_posix.cc:275:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  write(STDERR_FILENO, "\n", 1);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+INFO: From Executing genrule //scripts:bash_completion:
+Extracting Bazel installation...
+Target //scripts:bazel-complete.bash up-to-date:
+  bazel-bin/scripts/bazel-complete.bash
+INFO: Elapsed time: 138.806s, Critical Path: 99.14s
+INFO: Build completed successfully, 1240 total actions
++ bazel shutdown
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.NKrjue
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
+++ dirname /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
++ cd bazel-0.10.0
++ '[' 1 -eq 1 ']'
++ export DONT_STRIP=1
++ DONT_STRIP=1
++ install -Dm 0755 bazel-bin/src/bazel /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/bin/bazel
++ install -Dm 0644 bazel-bin/scripts/bazel-complete.bash /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/bash-completion/completions/bazel
++ install -Dm 0644 scripts/zsh_completion/_bazel /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/zsh/5.4.2/functions/Completion/Linux/_bazel
+Processing files: bazel-0.10.0-9.mga7.x86_64
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.dJnr8Z
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.10.0
++ DOCDIR=/builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ cp -pr LICENSE /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ cp -pr AUTHORS /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ cp -pr CONTRIBUTORS /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ cp -pr CONTRIBUTING.md /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ cp -pr README.md /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64/usr/share/doc/bazel
++ exit 0
+Provides: bazel = 0.10.0-9.mga7 bazel(x86-64) = 0.10.0-9.mga7
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libm.so.6()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) libstdc++.so.6(GLIBCXX_3.4.23)(64bit)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/bazel-0.10.0-9.mga7.x86_64
+Wrote: /builddir/build/RPMS/bazel-0.10.0-9.mga7.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.uImmo4
++ umask 022
++ cd /builddir/build/BUILD
++ cd bazel-0.10.0
++ rm -rf /var/tmp/bazel
++ rm -rf '/tmp/bazel_*'
++ rm -rf /builddir/.cache/bazel
++ exit 0
+Child return code was: 0
