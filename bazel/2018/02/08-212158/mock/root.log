@@ -1,0 +1,576 @@
+INFO buildroot.py:348:  Mock Version: 1.4.8
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.17-server-2.mga7
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/fstab
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/yum/yum.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/var/log/yum.log
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /home/stig/rpmbuild/mock/cauldron/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/dnf
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '551280c0a38f4de0adcbb0aa0a06dfad', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a3ca830149f64786b6cb6de5759ff70d', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'f9a6fb5c54df4f359728ae74b00757f8', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'e9546f132e554f3fa7cc15fe65fd4187', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/RPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SPECS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SRPMS
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/SOURCES
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/BUILD
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:113:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/builddir/build/originals
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '-y', '--releasever', '7', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Mageia Cauldron - x86_64                                             28 MB/s |  40 MB     00:01    
+DEBUG util.py:479:  Last metadata expiration check: 0:00:09 ago on Thu 08 Feb 2018 09:20:54 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                         Arch          Version                 Repository              Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Upgrading:
+DEBUG util.py:479:   cmake-rpm-macros                x86_64        1:3.10.2-1.mga7         mageia-cauldron         13 k
+DEBUG util.py:479:   gdb-headless                    x86_64        8.1-2.mga7              mageia-cauldron        2.4 M
+DEBUG util.py:479:   kernel-userspace-headers        x86_64        4.14.18-1.mga7          mageia-cauldron        1.0 M
+DEBUG util.py:479:   lib64gio2.0_0                   x86_64        2.55.2-1.mga7           mageia-cauldron        563 k
+DEBUG util.py:479:   lib64glib2.0_0                  x86_64        2.55.2-1.mga7           mageia-cauldron        510 k
+DEBUG util.py:479:   lib64sasl2_3                    x86_64        2.1.26-15.mga7          mageia-cauldron         57 k
+DEBUG util.py:479:   lib64solv0                      x86_64        0.6.31-1.mga7           mageia-cauldron        377 k
+DEBUG util.py:479:   lib64tasn1_6                    x86_64        4.13-1.mga7             mageia-cauldron         40 k
+DEBUG util.py:479:   libsolv-tools                   x86_64        0.6.31-1.mga7           mageia-cauldron         94 k
+DEBUG util.py:479:   perl                            x86_64        2:5.26.1-3.mga7         mageia-cauldron         11 M
+DEBUG util.py:479:   perl-base                       x86_64        2:5.26.1-3.mga7         mageia-cauldron        1.6 M
+DEBUG util.py:479:   python3-six                     noarch        1.11.0-1.mga7           mageia-cauldron         32 k
+DEBUG util.py:479:   shared-mime-info                x86_64        1.9-1.mga7              mageia-cauldron        300 k
+DEBUG util.py:479:   vim-minimal                     x86_64        8.0.1451-2.mga7         mageia-cauldron        406 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Upgrade  14 Packages
+DEBUG util.py:479:  Total size: 18 M
+DEBUG util.py:479:  Total download size: 4.4 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] cmake-rpm-macros-3.10.2-1.mga7.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64sasl2_3-2.1.26-15.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64solv0-0.6.31-1.mga7.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64tasn1_6-4.13-1.mga7.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] libsolv-tools-0.6.31-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] perl-5.26.1-3.mga7.x86_64.rpm: Already downloaded                                        
+DEBUG util.py:479:  [SKIPPED] perl-base-5.26.1-3.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] python3-six-1.11.0-1.mga7.noarch.rpm: Already downloaded                                 
+DEBUG util.py:479:  [SKIPPED] shared-mime-info-1.9-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] vim-minimal-8.0.1451-2.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  (11/14): gdb-headless-8.1-2.mga7.x86_64.rpm                          14 MB/s | 2.4 MB     00:00    
+DEBUG util.py:479:  (12/14): lib64glib2.0_0-2.55.2-1.mga7.x86_64.rpm                    7.9 MB/s | 510 kB     00:00    
+DEBUG util.py:479:  (13/14): kernel-userspace-headers-4.14.18-1.mga7.x86_64.rpm         3.3 MB/s | 1.0 MB     00:00    
+DEBUG util.py:479:  (14/14): lib64gio2.0_0-2.55.2-1.mga7.x86_64.rpm                     1.7 MB/s | 563 kB     00:00    
+DEBUG util.py:479:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                12 MB/s | 4.4 MB     00:00     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Upgrading        : lib64glib2.0_0-2.55.2-1.mga7.x86_64                                       1/28 
+DEBUG util.py:479:    Upgrading        : shared-mime-info-1.9-1.mga7.x86_64                                        2/28 
+DEBUG util.py:479:    Running scriptlet: shared-mime-info-1.9-1.mga7.x86_64                                        2/28 
+DEBUG util.py:479:    Upgrading        : libsolv-tools-0.6.31-1.mga7.x86_64                                        3/28 
+DEBUG util.py:479:    Upgrading        : lib64solv0-0.6.31-1.mga7.x86_64                                           4/28 
+DEBUG util.py:479:    Upgrading        : perl-base-2:5.26.1-3.mga7.x86_64                                          5/28 
+DEBUG util.py:479:    Upgrading        : perl-2:5.26.1-3.mga7.x86_64                                               6/28 
+DEBUG util.py:479:    Upgrading        : lib64gio2.0_0-2.55.2-1.mga7.x86_64                                        7/28 
+DEBUG util.py:479:    Running scriptlet: lib64gio2.0_0-2.55.2-1.mga7.x86_64                                        7/28 
+DEBUG util.py:479:    Upgrading        : vim-minimal-8.0.1451-2.mga7.x86_64                                        8/28 
+DEBUG util.py:479:    Running scriptlet: vim-minimal-8.0.1451-2.mga7.x86_64                                        8/28 
+DEBUG util.py:479:    Upgrading        : python3-six-1.11.0-1.mga7.noarch                                          9/28 
+DEBUG util.py:479:    Upgrading        : lib64tasn1_6-4.13-1.mga7.x86_64                                          10/28 
+DEBUG util.py:479:    Upgrading        : lib64sasl2_3-2.1.26-15.mga7.x86_64                                       11/28 
+DEBUG util.py:479:    Upgrading        : kernel-userspace-headers-4.14.18-1.mga7.x86_64                           12/28 
+DEBUG util.py:479:    Upgrading        : gdb-headless-8.1-2.mga7.x86_64                                           13/28 
+DEBUG util.py:479:    Upgrading        : cmake-rpm-macros-1:3.10.2-1.mga7.x86_64                                  14/28 
+DEBUG util.py:479:    Cleanup          : python3-six-1.10.0-3.mga7.noarch                                         15/28 
+DEBUG util.py:479:    Cleanup          : kernel-userspace-headers-4.14.15-2.mga7.x86_64                           16/28 
+DEBUG util.py:479:    Cleanup          : cmake-rpm-macros-1:3.10.1-1.mga7.x86_64                                  17/28 
+DEBUG util.py:479:    Cleanup          : perl-2:5.26.1-2.mga7.x86_64                                              18/28 
+DEBUG util.py:479:    Cleanup          : lib64gio2.0_0-2.54.3-1.mga7.x86_64                                       19/28 
+DEBUG util.py:479:    Cleanup          : shared-mime-info-1.8-2.mga7.x86_64                                       20/28 
+DEBUG util.py:479:    Cleanup          : lib64solv0-0.6.30-1.mga7.x86_64                                          21/28 
+DEBUG util.py:479:    Cleanup          : libsolv-tools-0.6.30-1.mga7.x86_64                                       22/28 
+DEBUG util.py:479:    Cleanup          : lib64glib2.0_0-2.54.3-1.mga7.x86_64                                      23/28 
+DEBUG util.py:479:    Cleanup          : perl-base-2:5.26.1-2.mga7.x86_64                                         24/28 
+DEBUG util.py:479:    Cleanup          : vim-minimal-8.0.1428-2.mga7.x86_64                                       25/28 
+DEBUG util.py:479:    Running scriptlet: vim-minimal-8.0.1428-2.mga7.x86_64                                       25/28 
+DEBUG util.py:479:    Cleanup          : lib64tasn1_6-4.12-1.mga6.x86_64                                          26/28 
+DEBUG util.py:479:    Cleanup          : lib64sasl2_3-2.1.26-14.mga7.x86_64                                       27/28 
+DEBUG util.py:479:    Cleanup          : gdb-headless-8.0.50.20171213-1.mga7.x86_64                               28/28 
+DEBUG util.py:479:    Running scriptlet: gdb-headless-8.0.50.20171213-1.mga7.x86_64                               28/28 
+DEBUG util.py:479:    Running scriptlet: shared-mime-info-1.9-1.mga7.x86_64                                       28/28 
+DEBUG util.py:479:    Verifying        : cmake-rpm-macros-1:3.10.2-1.mga7.x86_64                                   1/28 
+DEBUG util.py:479:    Verifying        : gdb-headless-8.1-2.mga7.x86_64                                            2/28 
+DEBUG util.py:479:    Verifying        : kernel-userspace-headers-4.14.18-1.mga7.x86_64                            3/28 
+DEBUG util.py:479:    Verifying        : lib64gio2.0_0-2.55.2-1.mga7.x86_64                                        4/28 
+DEBUG util.py:479:    Verifying        : lib64glib2.0_0-2.55.2-1.mga7.x86_64                                       5/28 
+DEBUG util.py:479:    Verifying        : lib64sasl2_3-2.1.26-15.mga7.x86_64                                        6/28 
+DEBUG util.py:479:    Verifying        : lib64solv0-0.6.31-1.mga7.x86_64                                           7/28 
+DEBUG util.py:479:    Verifying        : lib64tasn1_6-4.13-1.mga7.x86_64                                           8/28 
+DEBUG util.py:479:    Verifying        : libsolv-tools-0.6.31-1.mga7.x86_64                                        9/28 
+DEBUG util.py:479:    Verifying        : perl-2:5.26.1-3.mga7.x86_64                                              10/28 
+DEBUG util.py:479:    Verifying        : perl-base-2:5.26.1-3.mga7.x86_64                                         11/28 
+DEBUG util.py:479:    Verifying        : python3-six-1.11.0-1.mga7.noarch                                         12/28 
+DEBUG util.py:479:    Verifying        : shared-mime-info-1.9-1.mga7.x86_64                                       13/28 
+DEBUG util.py:479:    Verifying        : vim-minimal-8.0.1451-2.mga7.x86_64                                       14/28 
+DEBUG util.py:479:    Verifying        : lib64sasl2_3-2.1.26-14.mga7.x86_64                                       15/28 
+DEBUG util.py:479:    Verifying        : python3-six-1.10.0-3.mga7.noarch                                         16/28 
+DEBUG util.py:479:    Verifying        : vim-minimal-8.0.1428-2.mga7.x86_64                                       17/28 
+DEBUG util.py:479:    Verifying        : lib64gio2.0_0-2.54.3-1.mga7.x86_64                                       18/28 
+DEBUG util.py:479:    Verifying        : perl-base-2:5.26.1-2.mga7.x86_64                                         19/28 
+DEBUG util.py:479:    Verifying        : gdb-headless-8.0.50.20171213-1.mga7.x86_64                               20/28 
+DEBUG util.py:479:    Verifying        : cmake-rpm-macros-1:3.10.1-1.mga7.x86_64                                  21/28 
+DEBUG util.py:479:    Verifying        : lib64glib2.0_0-2.54.3-1.mga7.x86_64                                      22/28 
+DEBUG util.py:479:    Verifying        : lib64tasn1_6-4.12-1.mga6.x86_64                                          23/28 
+DEBUG util.py:479:    Verifying        : lib64solv0-0.6.30-1.mga7.x86_64                                          24/28 
+DEBUG util.py:479:    Verifying        : shared-mime-info-1.8-2.mga7.x86_64                                       25/28 
+DEBUG util.py:479:    Verifying        : libsolv-tools-0.6.30-1.mga7.x86_64                                       26/28 
+DEBUG util.py:479:    Verifying        : perl-2:5.26.1-2.mga7.x86_64                                              27/28 
+DEBUG util.py:479:    Verifying        : kernel-userspace-headers-4.14.15-2.mga7.x86_64                           28/28 
+DEBUG util.py:479:  Upgraded:
+DEBUG util.py:479:    cmake-rpm-macros.x86_64 1:3.10.2-1.mga7                gdb-headless.x86_64 8.1-2.mga7            
+DEBUG util.py:479:    kernel-userspace-headers.x86_64 4.14.18-1.mga7         lib64gio2.0_0.x86_64 2.55.2-1.mga7        
+DEBUG util.py:479:    lib64glib2.0_0.x86_64 2.55.2-1.mga7                    lib64sasl2_3.x86_64 2.1.26-15.mga7        
+DEBUG util.py:479:    lib64solv0.x86_64 0.6.31-1.mga7                        lib64tasn1_6.x86_64 4.13-1.mga7           
+DEBUG util.py:479:    libsolv-tools.x86_64 0.6.31-1.mga7                     perl.x86_64 2:5.26.1-3.mga7               
+DEBUG util.py:479:    perl-base.x86_64 2:5.26.1-3.mga7                       python3-six.noarch 1.11.0-1.mga7          
+DEBUG util.py:479:    shared-mime-info.x86_64 1.9-1.mga7                     vim-minimal.x86_64 8.0.1451-2.mga7        
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:123:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/.initialized
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '6f5717bda6ee41c09f75643a204e0026', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/bazel-0.10.0-9.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  Updating / installing...
+DEBUG util.py:479:  bazel-0.10.0-9.mga7                   warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  ########################################
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:479:  warning: user stig does not exist - using root
+DEBUG util.py:479:  warning: group stig does not exist - using root
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '91766b5cb09e4f46a84867574bd71de8', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/bazel-0.10.0-9.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:479:  bazel-0.10.0-fix-arm-out-of-resources.patch
+DEBUG util.py:479:  bazel-0.10.0.tar.gz
+DEBUG util.py:479:  bazel-0.9.0-mga-fix-32bit-build.patch
+DEBUG util.py:479:  bazel.spec
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/proc
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/sys
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:110:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '--releasever', '7', '/home/stig/rpmbuild/mock/cauldron/x86_64//builddir/build/SRPMS/bazel-0.10.0-9.mga7.src.rpm']
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '--releasever', '7', '/home/stig/rpmbuild/mock/cauldron/x86_64//builddir/build/SRPMS/bazel-0.10.0-9.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:479:  Last metadata expiration check: 0:00:00 ago on Thu 08 Feb 2018 09:21:19 PM CET.
+DEBUG util.py:479:  Dependencies resolved.
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:   Package                         Arch       Version                       Repository           Size
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Installing:
+DEBUG util.py:479:   bash-completion                 noarch     2:2.7-2.mga7                  mageia-cauldron     224 k
+DEBUG util.py:479:   bazel                           x86_64     0.10.0-9.mga7                 mageia-cauldron      84 M
+DEBUG util.py:479:   clang                           x86_64     5.0.1-3.mga7                  mageia-cauldron     525 k
+DEBUG util.py:479:   java-1.8.0-openjdk-devel        x86_64     1:1.8.0.161-1.b14.1.mga7      mageia-cauldron     8.8 M
+DEBUG util.py:479:   lib64clang-devel                x86_64     5.0.1-3.mga7                  mageia-cauldron     1.4 M
+DEBUG util.py:479:   lib64zlib-devel                 x86_64     1.2.11-4.mga6                 mageia-cauldron     220 k
+DEBUG util.py:479:   zip                             x86_64     3.0-10.mga7                   mageia-cauldron     248 k
+DEBUG util.py:479:   zsh                             x86_64     1:5.4.2-1.mga7                mageia-cauldron     2.8 M
+DEBUG util.py:479:  Installing dependencies:
+DEBUG util.py:479:   clang-tools-extra               x86_64     5.0.1-3.mga7                  mageia-cauldron     328 k
+DEBUG util.py:479:   copy-jdk-configs                noarch     3.3-3.mga7                    mageia-cauldron      24 k
+DEBUG util.py:479:   fontconfig                      x86_64     2.12.6-1.mga7                 mageia-cauldron     111 k
+DEBUG util.py:479:   java-1.8.0-openjdk              x86_64     1:1.8.0.161-1.b14.1.mga7      mageia-cauldron     195 k
+DEBUG util.py:479:   java-1.8.0-openjdk-headless     x86_64     1:1.8.0.161-1.b14.1.mga7      mageia-cauldron      28 M
+DEBUG util.py:479:   javapackages-tools              noarch     5.0.0-3.mga7                  mageia-cauldron      34 k
+DEBUG util.py:479:   lib64alsa2                      x86_64     2:1.1.5-1.mga7                mageia-cauldron     393 k
+DEBUG util.py:479:   lib64bsd0                       x86_64     0.8.3-1.mga6                  mageia-cauldron      42 k
+DEBUG util.py:479:   lib64clang5.0                   x86_64     5.0.1-3.mga7                  mageia-cauldron      12 M
+DEBUG util.py:479:   lib64edit-devel                 x86_64     3.1-0.20150325.2.mga6         mageia-cauldron      20 k
+DEBUG util.py:479:   lib64edit0                      x86_64     3.1-0.20150325.2.mga6         mageia-cauldron      83 k
+DEBUG util.py:479:   lib64ffi-devel                  x86_64     3.2.1-5.mga6                  mageia-cauldron      24 k
+DEBUG util.py:479:   lib64fontconfig1                x86_64     2.12.6-1.mga7                 mageia-cauldron     117 k
+DEBUG util.py:479:   lib64fontenc1                   x86_64     1.1.3-2.mga6                  mageia-cauldron      18 k
+DEBUG util.py:479:   lib64freetype6                  x86_64     2.8.1-1.mga7                  mageia-cauldron     299 k
+DEBUG util.py:479:   lib64gif7                       x86_64     5.1.4-1.mga6                  mageia-cauldron      44 k
+DEBUG util.py:479:   lib64jpeg8                      x86_64     1:1.5.3-1.mga7                mageia-cauldron     185 k
+DEBUG util.py:479:   lib64llvm-devel                 x86_64     5.0.1-1.mga7                  mageia-cauldron     4.1 M
+DEBUG util.py:479:   lib64llvm5.0                    x86_64     5.0.1-1.mga7                  mageia-cauldron      13 M
+DEBUG util.py:479:   lib64ncurses-devel              x86_64     6.0-20171223.2.mga7           mageia-cauldron     3.2 M
+DEBUG util.py:479:   lib64png16_16                   x86_64     2:1.6.34-1.mga7               mageia-cauldron     175 k
+DEBUG util.py:479:   lib64sctp1                      x86_64     1.0.17-1.mga7                 mageia-cauldron      44 k
+DEBUG util.py:479:   lib64x11_6                      x86_64     1.6.5-1.mga6                  mageia-cauldron     562 k
+DEBUG util.py:479:   lib64xau6                       x86_64     1.0.8-7.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xcb1                       x86_64     1.12-2.mga6                   mageia-cauldron      45 k
+DEBUG util.py:479:   lib64xcomposite1                x86_64     0.4.4-8.mga6                  mageia-cauldron      12 k
+DEBUG util.py:479:   lib64xdmcp6                     x86_64     1.1.2-5.mga6                  mageia-cauldron      15 k
+DEBUG util.py:479:   lib64xext6                      x86_64     1:1.3.3-4.mga6                mageia-cauldron      55 k
+DEBUG util.py:479:   lib64xi6                        x86_64     1.7.9-1.mga6                  mageia-cauldron      32 k
+DEBUG util.py:479:   lib64xrender1                   x86_64     0.9.10-1.mga6                 mageia-cauldron      22 k
+DEBUG util.py:479:   lib64xtst6                      x86_64     1.2.3-1.mga6                  mageia-cauldron      16 k
+DEBUG util.py:479:   libalsa-data                    noarch     2:1.1.5-1.mga7                mageia-cauldron      62 k
+DEBUG util.py:479:   libedit                         x86_64     3.1-0.20150325.2.mga6         mageia-cauldron      25 k
+DEBUG util.py:479:   lksctp-tools                    x86_64     1.0.17-1.mga7                 mageia-cauldron      45 k
+DEBUG util.py:479:   llvm                            x86_64     5.0.1-1.mga7                  mageia-cauldron     2.6 M
+DEBUG util.py:479:   lua                             x86_64     5.2.4-2.mga7                  mageia-cauldron     192 k
+DEBUG util.py:479:   lua-posix                       x86_64     33.3.1-2.mga6                 mageia-cauldron     165 k
+DEBUG util.py:479:   mkfontdir                       noarch     1.0.7-8.mga6                  mageia-cauldron     7.2 k
+DEBUG util.py:479:   mkfontscale                     x86_64     1.1.2-3.mga6                  mageia-cauldron      24 k
+DEBUG util.py:479:   rootcerts-java                  noarch     1:20180104.00-1.mga7          mageia-cauldron     130 k
+DEBUG util.py:479:   timezone-java                   noarch     6:2017b-1.mga6                mageia-cauldron     145 k
+DEBUG util.py:479:   x11-font-bitstream-type1        noarch     1.0.3-6.mga6                  mageia-cauldron     308 k
+DEBUG util.py:479:   x11-font-type1                  noarch     1.0.0-13.mga6                 mageia-cauldron     6.1 k
+DEBUG util.py:479:   x11-font-xfree86-type1          noarch     1.0.4-6.mga6                  mageia-cauldron      36 k
+DEBUG util.py:479:  Transaction Summary
+DEBUG util.py:479:  ====================================================================================================
+DEBUG util.py:479:  Install  52 Packages
+DEBUG util.py:479:  Total size: 164 M
+DEBUG util.py:479:  Total download size: 125 M
+DEBUG util.py:479:  Installed size: 413 M
+DEBUG util.py:479:  Downloading Packages:
+DEBUG util.py:479:  [SKIPPED] clang-5.0.1-3.mga7.x86_64.rpm: Already downloaded                                        
+DEBUG util.py:479:  [SKIPPED] lib64clang-devel-5.0.1-3.mga7.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64zlib-devel-1.2.11-4.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64clang5.0-5.0.1-3.mga7.x86_64.rpm: Already downloaded                                
+DEBUG util.py:479:  [SKIPPED] lib64llvm5.0-5.0.1-1.mga7.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:479:  [SKIPPED] clang-tools-extra-5.0.1-3.mga7.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64llvm-devel-5.0.1-1.mga7.x86_64.rpm: Already downloaded                              
+DEBUG util.py:479:  [SKIPPED] lib64edit0-3.1-0.20150325.2.mga6.x86_64.rpm: Already downloaded                          
+DEBUG util.py:479:  [SKIPPED] fontconfig-2.12.6-1.mga7.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64alsa2-1.1.5-1.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64jpeg8-1.5.3-1.mga7.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64png16_16-1.6.34-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64x11_6-1.6.5-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64xcomposite1-0.4.4-8.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64xext6-1.3.3-4.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64xi6-1.7.9-1.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] lib64xrender1-0.9.10-1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64xtst6-1.2.3-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:479:  [SKIPPED] lib64edit-devel-3.1-0.20150325.2.mga6.x86_64.rpm: Already downloaded                     
+DEBUG util.py:479:  [SKIPPED] lib64ffi-devel-3.2.1-5.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] lib64ncurses-devel-6.0-20171223.2.mga7.x86_64.rpm: Already downloaded                    
+DEBUG util.py:479:  [SKIPPED] llvm-5.0.1-1.mga7.x86_64.rpm: Already downloaded                                         
+DEBUG util.py:479:  [SKIPPED] lib64fontconfig1-2.12.6-1.mga7.x86_64.rpm: Already downloaded                            
+DEBUG util.py:479:  [SKIPPED] lib64freetype6-2.8.1-1.mga7.x86_64.rpm: Already downloaded                               
+DEBUG util.py:479:  [SKIPPED] libalsa-data-1.1.5-1.mga7.noarch.rpm: Already downloaded                                 
+DEBUG util.py:479:  [SKIPPED] lib64xcb1-1.12-2.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:479:  [SKIPPED] libedit-3.1-0.20150325.2.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:479:  [SKIPPED] lib64xau6-1.0.8-7.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] lib64xdmcp6-1.1.2-5.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] mkfontdir-1.0.7-8.mga6.noarch.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] mkfontscale-1.1.2-3.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:479:  [SKIPPED] lib64bsd0-0.8.3-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:479:  [SKIPPED] lib64fontenc1-1.1.3-2.mga6.x86_64.rpm: Already downloaded                                
+DEBUG util.py:479:  (34/52): bash-completion-2.7-2.mga7.noarch.rpm                      759 kB/s | 224 kB     00:00    
+DEBUG util.py:479:  (35/52): zip-3.0-10.mga7.x86_64.rpm                                 2.2 MB/s | 248 kB     00:00    
+DEBUG util.py:479:  (36/52): java-1.8.0-openjdk-devel-1.8.0.161-1.b14.1.mga7.x86_64.rpm  12 MB/s | 8.8 MB     00:00    
+DEBUG util.py:479:  (37/52): zsh-5.4.2-1.mga7.x86_64.rpm                                7.2 MB/s | 2.8 MB     00:00    
+DEBUG util.py:479:  (38/52): java-1.8.0-openjdk-1.8.0.161-1.b14.1.mga7.x86_64.rpm       2.4 MB/s | 195 kB     00:00    
+DEBUG util.py:479:  (39/52): lib64gif7-5.1.4-1.mga6.x86_64.rpm                          345 kB/s |  44 kB     00:00    
+DEBUG util.py:479:  (40/52): x11-font-type1-1.0.0-13.mga6.noarch.rpm                     95 kB/s | 6.1 kB     00:00    
+DEBUG util.py:479:  (41/52): copy-jdk-configs-3.3-3.mga7.noarch.rpm                     220 kB/s |  24 kB     00:00    
+DEBUG util.py:479:  (42/52): javapackages-tools-5.0.0-3.mga7.noarch.rpm                 865 kB/s |  34 kB     00:00    
+DEBUG util.py:479:  (43/52): lksctp-tools-1.0.17-1.mga7.x86_64.rpm                      427 kB/s |  45 kB     00:00    
+DEBUG util.py:479:  (44/52): rootcerts-java-20180104.00-1.mga7.noarch.rpm               684 kB/s | 130 kB     00:00    
+DEBUG util.py:479:  (45/52): timezone-java-2017b-1.mga6.noarch.rpm                      1.8 MB/s | 145 kB     00:00    
+DEBUG util.py:479:  (46/52): x11-font-bitstream-type1-1.0.3-6.mga6.noarch.rpm           4.2 MB/s | 308 kB     00:00    
+DEBUG util.py:479:  (47/52): x11-font-xfree86-type1-1.0.4-6.mga6.noarch.rpm             523 kB/s |  36 kB     00:00    
+DEBUG util.py:479:  (48/52): lua-5.2.4-2.mga7.x86_64.rpm                                1.9 MB/s | 192 kB     00:00    
+DEBUG util.py:479:  (49/52): lua-posix-33.3.1-2.mga6.x86_64.rpm                         1.9 MB/s | 165 kB     00:00    
+DEBUG util.py:479:  (50/52): lib64sctp1-1.0.17-1.mga7.x86_64.rpm                        684 kB/s |  44 kB     00:00    
+DEBUG util.py:479:  (51/52): java-1.8.0-openjdk-headless-1.8.0.161-1.b14.1.mga7.x86_64.  19 MB/s |  28 MB     00:01    
+DEBUG util.py:479:  (52/52): bazel-0.10.0-9.mga7.x86_64.rpm                              21 MB/s |  84 MB     00:03    
+DEBUG util.py:479:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:479:  Total                                                                32 MB/s | 125 MB     00:03     
+DEBUG util.py:479:  Running transaction check
+DEBUG util.py:479:  Transaction check succeeded.
+DEBUG util.py:479:  Running transaction test
+DEBUG util.py:479:  Transaction test succeeded.
+DEBUG util.py:479:  Running transaction
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                         1/1 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.161-1.b14.1.mga7.x86_64                1/1 
+DEBUG util.py:479:    Preparing        :                                                                            1/1 
+DEBUG util.py:479:    Installing       : lua-5.2.4-2.mga7.x86_64                                                   1/52 
+DEBUG util.py:479:    Running scriptlet: lua-5.2.4-2.mga7.x86_64                                                   1/52 
+DEBUG util.py:479:    Installing       : lib64ncurses-devel-6.0-20171223.2.mga7.x86_64                             2/52 
+DEBUG util.py:479:    Installing       : lib64png16_16-2:1.6.34-1.mga7.x86_64                                      3/52 
+DEBUG util.py:479:    Installing       : lib64freetype6-2.8.1-1.mga7.x86_64                                        4/52 
+DEBUG util.py:479:    Installing       : lib64fontconfig1-2.12.6-1.mga7.x86_64                                     5/52 
+DEBUG util.py:479:    Installing       : fontconfig-2.12.6-1.mga7.x86_64                                           6/52 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                           6/52 
+DEBUG util.py:479:    Installing       : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                          7/52 
+DEBUG util.py:479:    Installing       : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                   8/52 
+DEBUG util.py:479:    Installing       : lib64llvm5.0-5.0.1-1.mga7.x86_64                                          9/52 
+DEBUG util.py:479:    Installing       : llvm-5.0.1-1.mga7.x86_64                                                 10/52 
+DEBUG util.py:479:    Installing       : lua-posix-33.3.1-2.mga6.x86_64                                           11/52 
+DEBUG util.py:479:    Installing       : copy-jdk-configs-3.3-3.mga7.noarch                                       12/52 
+DEBUG util.py:479:    Installing       : lib64fontenc1-1.1.3-2.mga6.x86_64                                        13/52 
+DEBUG util.py:479:    Installing       : mkfontscale-1.1.2-3.mga6.x86_64                                          14/52 
+DEBUG util.py:479:    Installing       : mkfontdir-1.0.7-8.mga6.noarch                                            15/52 
+DEBUG util.py:479:    Installing       : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             16/52 
+DEBUG util.py:479:    Running scriptlet: x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             16/52 
+DEBUG util.py:479:    Installing       : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               17/52 
+DEBUG util.py:479:    Running scriptlet: x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               17/52 
+DEBUG util.py:479:    Installing       : x11-font-type1-1.0.0-13.mga6.noarch                                      18/52 
+DEBUG util.py:479:    Installing       : lib64bsd0-0.8.3-1.mga6.x86_64                                            19/52 
+DEBUG util.py:479:    Installing       : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          20/52 
+DEBUG util.py:479:    Installing       : lib64xau6-1.0.8-7.mga6.x86_64                                            21/52 
+DEBUG util.py:479:    Installing       : lib64xcb1-1.12-2.mga6.x86_64                                             22/52 
+DEBUG util.py:479:    Installing       : lib64x11_6-1.6.5-1.mga6.x86_64                                           23/52 
+DEBUG util.py:479:    Running scriptlet: lib64x11_6-1.6.5-1.mga6.x86_64                                           23/52 
+DEBUG util.py:479:    Installing       : lib64xext6-1:1.3.3-4.mga6.x86_64                                         24/52 
+DEBUG util.py:479:    Installing       : lib64xi6-1.7.9-1.mga6.x86_64                                             25/52 
+DEBUG util.py:479:    Installing       : lib64xtst6-1.2.3-1.mga6.x86_64                                           26/52 
+DEBUG util.py:479:    Installing       : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     27/52 
+DEBUG util.py:479:    Installing       : lib64xrender1-0.9.10-1.mga6.x86_64                                       28/52 
+DEBUG util.py:479:    Installing       : lib64sctp1-1.0.17-1.mga7.x86_64                                          29/52 
+DEBUG util.py:479:    Installing       : lksctp-tools-1.0.17-1.mga7.x86_64                                        30/52 
+DEBUG util.py:479:    Installing       : libedit-3.1-0.20150325.2.mga6.x86_64                                     31/52 
+DEBUG util.py:479:    Installing       : lib64edit-devel-3.1-0.20150325.2.mga6.x86_64                             32/52 
+DEBUG util.py:479:    Installing       : libalsa-data-2:1.1.5-1.mga7.noarch                                       33/52 
+DEBUG util.py:479:    Running scriptlet: libalsa-data-2:1.1.5-1.mga7.noarch                                       33/52 
+DEBUG util.py:479:    Installing       : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         34/52 
+DEBUG util.py:479:    Installing       : timezone-java-6:2017b-1.mga6.noarch                                      35/52 
+DEBUG util.py:479:    Installing       : rootcerts-java-1:20180104.00-1.mga7.noarch                               36/52 
+DEBUG util.py:479:    Installing       : javapackages-tools-5.0.0-3.mga7.noarch                                   37/52 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-headless-1:1.8.0.161-1.b14.1.mga7.x86_64              38/52 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.161-1.b14.1.mga7.x86_64              38/52 
+DEBUG util.py:479:    Installing       : lib64ffi-devel-3.2.1-5.mga6.x86_64                                       39/52 
+DEBUG util.py:479:    Running scriptlet: lib64ffi-devel-3.2.1-5.mga6.x86_64                                       39/52 
+DEBUG util.py:479:    Installing       : lib64gif7-5.1.4-1.mga6.x86_64                                            40/52 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-1:1.8.0.161-1.b14.1.mga7.x86_64                       41/52 
+DEBUG util.py:479:    Installing       : java-1.8.0-openjdk-devel-1:1.8.0.161-1.b14.1.mga7.x86_64                 42/52 
+DEBUG util.py:479:    Running scriptlet: java-1.8.0-openjdk-devel-1:1.8.0.161-1.b14.1.mga7.x86_64                 42/52 
+DEBUG util.py:479:    Installing       : lib64zlib-devel-1.2.11-4.mga6.x86_64                                     43/52 
+DEBUG util.py:479:    Installing       : lib64llvm-devel-5.0.1-1.mga7.x86_64                                      44/52 
+DEBUG util.py:479:    Installing       : lib64clang5.0-5.0.1-3.mga7.x86_64                                        45/52 
+DEBUG util.py:479:    Installing       : clang-5.0.1-3.mga7.x86_64                                                46/52 
+DEBUG util.py:479:    Installing       : clang-tools-extra-5.0.1-3.mga7.x86_64                                    47/52 
+DEBUG util.py:479:    Installing       : lib64clang-devel-5.0.1-3.mga7.x86_64                                     48/52 
+DEBUG util.py:479:    Installing       : bazel-0.10.0-9.mga7.x86_64                                               49/52 
+DEBUG util.py:479:    Installing       : zsh-1:5.4.2-1.mga7.x86_64                                                50/52 
+DEBUG util.py:479:    Running scriptlet: zsh-1:5.4.2-1.mga7.x86_64                                                50/52 
+DEBUG util.py:479:    Installing       : zip-3.0-10.mga7.x86_64                                                   51/52 
+DEBUG util.py:479:    Installing       : bash-completion-2:2.7-2.mga7.noarch                                      52/52 
+DEBUG util.py:479:    Running scriptlet: copy-jdk-configs-3.3-3.mga7.noarch                                       52/52 
+DEBUG util.py:479:    Running scriptlet: bash-completion-2:2.7-2.mga7.noarch                                      52/52 
+DEBUG util.py:479:    Running scriptlet: fontconfig-2.12.6-1.mga7.x86_64                                          52/52 
+DEBUG util.py:479:    Verifying        : bazel-0.10.0-9.mga7.x86_64                                                1/52 
+DEBUG util.py:479:    Verifying        : clang-5.0.1-3.mga7.x86_64                                                 2/52 
+DEBUG util.py:479:    Verifying        : lib64clang-devel-5.0.1-3.mga7.x86_64                                      3/52 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-devel-1:1.8.0.161-1.b14.1.mga7.x86_64                  4/52 
+DEBUG util.py:479:    Verifying        : bash-completion-2:2.7-2.mga7.noarch                                       5/52 
+DEBUG util.py:479:    Verifying        : lib64zlib-devel-1.2.11-4.mga6.x86_64                                      6/52 
+DEBUG util.py:479:    Verifying        : zip-3.0-10.mga7.x86_64                                                    7/52 
+DEBUG util.py:479:    Verifying        : zsh-1:5.4.2-1.mga7.x86_64                                                 8/52 
+DEBUG util.py:479:    Verifying        : lib64clang5.0-5.0.1-3.mga7.x86_64                                         9/52 
+DEBUG util.py:479:    Verifying        : lib64llvm5.0-5.0.1-1.mga7.x86_64                                         10/52 
+DEBUG util.py:479:    Verifying        : clang-tools-extra-5.0.1-3.mga7.x86_64                                    11/52 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-1:1.8.0.161-1.b14.1.mga7.x86_64                       12/52 
+DEBUG util.py:479:    Verifying        : lib64llvm-devel-5.0.1-1.mga7.x86_64                                      13/52 
+DEBUG util.py:479:    Verifying        : lib64edit0-3.1-0.20150325.2.mga6.x86_64                                  14/52 
+DEBUG util.py:479:    Verifying        : fontconfig-2.12.6-1.mga7.x86_64                                          15/52 
+DEBUG util.py:479:    Verifying        : java-1.8.0-openjdk-headless-1:1.8.0.161-1.b14.1.mga7.x86_64              16/52 
+DEBUG util.py:479:    Verifying        : lib64alsa2-2:1.1.5-1.mga7.x86_64                                         17/52 
+DEBUG util.py:479:    Verifying        : lib64gif7-5.1.4-1.mga6.x86_64                                            18/52 
+DEBUG util.py:479:    Verifying        : lib64jpeg8-1:1.5.3-1.mga7.x86_64                                         19/52 
+DEBUG util.py:479:    Verifying        : lib64png16_16-2:1.6.34-1.mga7.x86_64                                     20/52 
+DEBUG util.py:479:    Verifying        : lib64x11_6-1.6.5-1.mga6.x86_64                                           21/52 
+DEBUG util.py:479:    Verifying        : lib64xcomposite1-0.4.4-8.mga6.x86_64                                     22/52 
+DEBUG util.py:479:    Verifying        : lib64xext6-1:1.3.3-4.mga6.x86_64                                         23/52 
+DEBUG util.py:479:    Verifying        : lib64xi6-1.7.9-1.mga6.x86_64                                             24/52 
+DEBUG util.py:479:    Verifying        : lib64xrender1-0.9.10-1.mga6.x86_64                                       25/52 
+DEBUG util.py:479:    Verifying        : lib64xtst6-1.2.3-1.mga6.x86_64                                           26/52 
+DEBUG util.py:479:    Verifying        : x11-font-type1-1.0.0-13.mga6.noarch                                      27/52 
+DEBUG util.py:479:    Verifying        : lib64edit-devel-3.1-0.20150325.2.mga6.x86_64                             28/52 
+DEBUG util.py:479:    Verifying        : lib64ffi-devel-3.2.1-5.mga6.x86_64                                       29/52 
+DEBUG util.py:479:    Verifying        : lib64ncurses-devel-6.0-20171223.2.mga7.x86_64                            30/52 
+DEBUG util.py:479:    Verifying        : llvm-5.0.1-1.mga7.x86_64                                                 31/52 
+DEBUG util.py:479:    Verifying        : lib64fontconfig1-2.12.6-1.mga7.x86_64                                    32/52 
+DEBUG util.py:479:    Verifying        : lib64freetype6-2.8.1-1.mga7.x86_64                                       33/52 
+DEBUG util.py:479:    Verifying        : copy-jdk-configs-3.3-3.mga7.noarch                                       34/52 
+DEBUG util.py:479:    Verifying        : javapackages-tools-5.0.0-3.mga7.noarch                                   35/52 
+DEBUG util.py:479:    Verifying        : lksctp-tools-1.0.17-1.mga7.x86_64                                        36/52 
+DEBUG util.py:479:    Verifying        : rootcerts-java-1:20180104.00-1.mga7.noarch                               37/52 
+DEBUG util.py:479:    Verifying        : timezone-java-6:2017b-1.mga6.noarch                                      38/52 
+DEBUG util.py:479:    Verifying        : libalsa-data-2:1.1.5-1.mga7.noarch                                       39/52 
+DEBUG util.py:479:    Verifying        : lib64xcb1-1.12-2.mga6.x86_64                                             40/52 
+DEBUG util.py:479:    Verifying        : x11-font-bitstream-type1-1.0.3-6.mga6.noarch                             41/52 
+DEBUG util.py:479:    Verifying        : x11-font-xfree86-type1-1.0.4-6.mga6.noarch                               42/52 
+DEBUG util.py:479:    Verifying        : libedit-3.1-0.20150325.2.mga6.x86_64                                     43/52 
+DEBUG util.py:479:    Verifying        : lua-5.2.4-2.mga7.x86_64                                                  44/52 
+DEBUG util.py:479:    Verifying        : lua-posix-33.3.1-2.mga6.x86_64                                           45/52 
+DEBUG util.py:479:    Verifying        : lib64sctp1-1.0.17-1.mga7.x86_64                                          46/52 
+DEBUG util.py:479:    Verifying        : lib64xau6-1.0.8-7.mga6.x86_64                                            47/52 
+DEBUG util.py:479:    Verifying        : lib64xdmcp6-1.1.2-5.mga6.x86_64                                          48/52 
+DEBUG util.py:479:    Verifying        : mkfontdir-1.0.7-8.mga6.noarch                                            49/52 
+DEBUG util.py:479:    Verifying        : mkfontscale-1.1.2-3.mga6.x86_64                                          50/52 
+DEBUG util.py:479:    Verifying        : lib64bsd0-0.8.3-1.mga6.x86_64                                            51/52 
+DEBUG util.py:479:    Verifying        : lib64fontenc1-1.1.3-2.mga6.x86_64                                        52/52 
+DEBUG util.py:479:  Installed:
+DEBUG util.py:479:    bash-completion.noarch 2:2.7-2.mga7                                                               
+DEBUG util.py:479:    bazel.x86_64 0.10.0-9.mga7                                                                        
+DEBUG util.py:479:    clang.x86_64 5.0.1-3.mga7                                                                         
+DEBUG util.py:479:    java-1.8.0-openjdk-devel.x86_64 1:1.8.0.161-1.b14.1.mga7                                          
+DEBUG util.py:479:    lib64clang-devel.x86_64 5.0.1-3.mga7                                                              
+DEBUG util.py:479:    lib64zlib-devel.x86_64 1.2.11-4.mga6                                                              
+DEBUG util.py:479:    zip.x86_64 3.0-10.mga7                                                                            
+DEBUG util.py:479:    zsh.x86_64 1:5.4.2-1.mga7                                                                         
+DEBUG util.py:479:    clang-tools-extra.x86_64 5.0.1-3.mga7                                                             
+DEBUG util.py:479:    copy-jdk-configs.noarch 3.3-3.mga7                                                                
+DEBUG util.py:479:    fontconfig.x86_64 2.12.6-1.mga7                                                                   
+DEBUG util.py:479:    java-1.8.0-openjdk.x86_64 1:1.8.0.161-1.b14.1.mga7                                                
+DEBUG util.py:479:    java-1.8.0-openjdk-headless.x86_64 1:1.8.0.161-1.b14.1.mga7                                       
+DEBUG util.py:479:    javapackages-tools.noarch 5.0.0-3.mga7                                                            
+DEBUG util.py:479:    lib64alsa2.x86_64 2:1.1.5-1.mga7                                                                  
+DEBUG util.py:479:    lib64bsd0.x86_64 0.8.3-1.mga6                                                                     
+DEBUG util.py:479:    lib64clang5.0.x86_64 5.0.1-3.mga7                                                                 
+DEBUG util.py:479:    lib64edit-devel.x86_64 3.1-0.20150325.2.mga6                                                      
+DEBUG util.py:479:    lib64edit0.x86_64 3.1-0.20150325.2.mga6                                                           
+DEBUG util.py:479:    lib64ffi-devel.x86_64 3.2.1-5.mga6                                                                
+DEBUG util.py:479:    lib64fontconfig1.x86_64 2.12.6-1.mga7                                                             
+DEBUG util.py:479:    lib64fontenc1.x86_64 1.1.3-2.mga6                                                                 
+DEBUG util.py:479:    lib64freetype6.x86_64 2.8.1-1.mga7                                                                
+DEBUG util.py:479:    lib64gif7.x86_64 5.1.4-1.mga6                                                                     
+DEBUG util.py:479:    lib64jpeg8.x86_64 1:1.5.3-1.mga7                                                                  
+DEBUG util.py:479:    lib64llvm-devel.x86_64 5.0.1-1.mga7                                                               
+DEBUG util.py:479:    lib64llvm5.0.x86_64 5.0.1-1.mga7                                                                  
+DEBUG util.py:479:    lib64ncurses-devel.x86_64 6.0-20171223.2.mga7                                                     
+DEBUG util.py:479:    lib64png16_16.x86_64 2:1.6.34-1.mga7                                                              
+DEBUG util.py:479:    lib64sctp1.x86_64 1.0.17-1.mga7                                                                   
+DEBUG util.py:479:    lib64x11_6.x86_64 1.6.5-1.mga6                                                                    
+DEBUG util.py:479:    lib64xau6.x86_64 1.0.8-7.mga6                                                                     
+DEBUG util.py:479:    lib64xcb1.x86_64 1.12-2.mga6                                                                      
+DEBUG util.py:479:    lib64xcomposite1.x86_64 0.4.4-8.mga6                                                              
+DEBUG util.py:479:    lib64xdmcp6.x86_64 1.1.2-5.mga6                                                                   
+DEBUG util.py:479:    lib64xext6.x86_64 1:1.3.3-4.mga6                                                                  
+DEBUG util.py:479:    lib64xi6.x86_64 1.7.9-1.mga6                                                                      
+DEBUG util.py:479:    lib64xrender1.x86_64 0.9.10-1.mga6                                                                
+DEBUG util.py:479:    lib64xtst6.x86_64 1.2.3-1.mga6                                                                    
+DEBUG util.py:479:    libalsa-data.noarch 2:1.1.5-1.mga7                                                                
+DEBUG util.py:479:    libedit.x86_64 3.1-0.20150325.2.mga6                                                              
+DEBUG util.py:479:    lksctp-tools.x86_64 1.0.17-1.mga7                                                                 
+DEBUG util.py:479:    llvm.x86_64 5.0.1-1.mga7                                                                          
+DEBUG util.py:479:    lua.x86_64 5.2.4-2.mga7                                                                           
+DEBUG util.py:479:    lua-posix.x86_64 33.3.1-2.mga6                                                                    
+DEBUG util.py:479:    mkfontdir.noarch 1.0.7-8.mga6                                                                     
+DEBUG util.py:479:    mkfontscale.x86_64 1.1.2-3.mga6                                                                   
+DEBUG util.py:479:    rootcerts-java.noarch 1:20180104.00-1.mga7                                                        
+DEBUG util.py:479:    timezone-java.noarch 6:2017b-1.mga6                                                               
+DEBUG util.py:479:    x11-font-bitstream-type1.noarch 1.0.3-6.mga6                                                      
+DEBUG util.py:479:    x11-font-type1.noarch 1.0.0-13.mga6                                                               
+DEBUG util.py:479:    x11-font-xfree86-type1.noarch 1.0.4-6.mga6                                                        
+DEBUG util.py:479:  Complete!
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: rpm -qa --root '/home/stig/rpmbuild/mock/cauldron/x86_64' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:317:  Unsharing. Flags: 1073741824
+DEBUG util.py:317:  Unsharing. Flags: 134217728
+DEBUG util.py:222:  kill orphans
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['/bin/umount', '-n', '/home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:617:  Child return code was: 0
+DEBUG util.py:636:  child environment: None
+DEBUG util.py:562:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:479:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:479:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:617:  Child return code was: 1
+DEBUG util.py:1339:  Please ignore the error above above about btrfs.
