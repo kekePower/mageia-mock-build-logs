@@ -1,0 +1,39 @@
+2018-02-11 00:04:27,070 - Mock Version: 1.4.8
+2018-02-11 00:04:28,492 - Start: dnf update
+2018-02-11 00:04:39,918 - Finish: dnf update
+2018-02-11 00:04:39,943 - Finish: chroot init
+2018-02-11 00:04:39,946 - Start: build phase for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:04:39,948 - Start: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:04:52,600 - Finish: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:04:52,600 - Start: rpmbuild pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:04:52,602 - Start: Outputting list of installed packages
+2018-02-11 00:04:52,652 - Finish: Outputting list of installed packages
+2018-02-11 00:05:12,697 - Start: clean chroot
+2018-02-11 00:05:16,476 - Finish: clean chroot
+2018-02-11 00:06:28,416 - Mock Version: 1.4.8
+2018-02-11 00:06:29,773 - Start: dnf update
+2018-02-11 00:06:31,808 - Finish: dnf update
+2018-02-11 00:06:31,832 - Finish: chroot init
+2018-02-11 00:06:31,835 - Start: build phase for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:06:31,837 - Start: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:06:46,890 - Finish: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:06:46,891 - Start: rpmbuild pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:06:46,893 - Start: Outputting list of installed packages
+2018-02-11 00:06:46,942 - Finish: Outputting list of installed packages
+2018-02-11 00:07:06,218 - Start: clean chroot
+2018-02-11 00:07:09,681 - Finish: clean chroot
+2018-02-11 00:09:18,606 - Mock Version: 1.4.8
+2018-02-11 00:09:19,994 - Start: dnf update
+2018-02-11 00:09:27,898 - Finish: dnf update
+2018-02-11 00:09:27,922 - Finish: chroot init
+2018-02-11 00:09:27,926 - Start: build phase for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:09:27,928 - Start: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:09:45,510 - Finish: build setup for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:09:45,510 - Start: rpmbuild pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:09:45,512 - Start: Outputting list of installed packages
+2018-02-11 00:09:45,560 - Finish: Outputting list of installed packages
+2018-02-11 00:10:07,096 - Finish: rpmbuild pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:10:07,099 - Finish: build phase for pure-ftpd-1.0.47-1.2.mga7.src.rpm
+2018-02-11 00:10:07,100 - Start: clean chroot
+2018-02-11 00:10:10,430 - Finish: clean chroot
+2018-02-11 00:10:10,431 - Finish: run
