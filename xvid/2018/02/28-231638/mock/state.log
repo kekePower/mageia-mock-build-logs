@@ -1,0 +1,32 @@
+2018-02-28 23:10:20,267 - Mock Version: 1.4.9
+2018-02-28 23:10:21,905 - Start: dnf update
+2018-02-28 23:10:38,445 - Finish: dnf update
+2018-02-28 23:10:38,471 - Finish: chroot init
+2018-02-28 23:10:38,474 - Start: build phase for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:38,476 - Start: build setup for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:41,257 - Finish: build setup for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:41,257 - Start: rpmbuild xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:41,259 - Start: Outputting list of installed packages
+2018-02-28 23:10:41,307 - Finish: Outputting list of installed packages
+2018-02-28 23:10:51,313 - Finish: rpmbuild xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:51,316 - Finish: build phase for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:10:51,317 - Start: clean chroot
+2018-02-28 23:10:54,253 - Finish: clean chroot
+2018-02-28 23:10:54,254 - Finish: run
+2018-02-28 23:14:54,951 - Mock Version: 1.4.9
+2018-02-28 23:14:55,046 - Start: dnf install
+2018-02-28 23:16:11,545 - Finish: dnf install
+2018-02-28 23:16:13,679 - Start: creating root cache
+2018-02-28 23:16:17,527 - Finish: creating root cache
+2018-02-28 23:16:17,531 - Finish: chroot init
+2018-02-28 23:16:17,583 - Start: build phase for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:17,585 - Start: build setup for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:24,696 - Finish: build setup for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:24,697 - Start: rpmbuild xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:24,698 - Start: Outputting list of installed packages
+2018-02-28 23:16:24,743 - Finish: Outputting list of installed packages
+2018-02-28 23:16:34,445 - Finish: rpmbuild xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:34,448 - Finish: build phase for xvid-1.3.4-3.1.mga7.src.rpm
+2018-02-28 23:16:34,450 - Start: clean chroot
+2018-02-28 23:16:37,943 - Finish: clean chroot
+2018-02-28 23:16:37,945 - Finish: run
