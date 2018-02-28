@@ -1,0 +1,15 @@
+2018-02-28 21:34:29,763 - Mock Version: 1.4.9
+2018-02-28 21:34:31,248 - Start: dnf update
+2018-02-28 21:34:32,025 - Finish: dnf update
+2018-02-28 21:34:32,049 - Finish: chroot init
+2018-02-28 21:34:32,052 - Start: build phase for imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:34:32,054 - Start: build setup for imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:34:57,557 - Finish: build setup for imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:34:57,557 - Start: rpmbuild imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:34:57,559 - Start: Outputting list of installed packages
+2018-02-28 21:34:57,628 - Finish: Outputting list of installed packages
+2018-02-28 21:37:53,957 - Finish: rpmbuild imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:37:53,959 - Finish: build phase for imagemagick-6.9.9.36-1.mga7.src.rpm
+2018-02-28 21:37:53,961 - Start: clean chroot
+2018-02-28 21:37:59,727 - Finish: clean chroot
+2018-02-28 21:37:59,729 - Finish: run
