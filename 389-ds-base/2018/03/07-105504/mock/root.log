@@ -1,0 +1,894 @@
+INFO buildroot.py:348:  Mock Version: 1.4.9
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG buildroot.py:479:  kernel version == 4.14.24-server-1.mga7
+DEBUG util.py:124:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/fstab
+DEBUG util.py:124:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/yum/yum.conf
+DEBUG util.py:124:  touching file: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:124:  touching file: /home/stig/rpmbuild/mock/6/x86_64/var/log/yum.log
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-6-x86_64/dnf_cache/', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG buildroot.py:142:  rootdir = /home/stig/rpmbuild/mock/6/x86_64
+DEBUG buildroot.py:143:  resultdir = mock
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/pki/mock
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/etc/dnf
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0d278fa214b245c1bda20a833999c6a3', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:482:  BUILDSTDERR: userdel: mockbuild mail spool (/var/spool/mail/mockbuild) not found
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0cb356ad7e394dde937282da152ca4fc', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '91cd94355bf0453eab6007e7c4bf9489', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ef8a9720304d48bab0fa44bad87177bb', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/RPMS
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SPECS
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SRPMS
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/SOURCES
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILD
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/BUILDROOT
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:114:  creating dir: /home/stig/rpmbuild/mock/6/x86_64/builddir/build/originals
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update']
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '-y', '--releasever', '6', '--disableplugin=local', '--setopt=deltarpm=False', 'update'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:484:  Mageia 6 - x86_64 - Updates                                         3.3 MB/s |  17 MB     00:05    
+DEBUG util.py:484:  Last metadata expiration check: 0:00:02 ago on Wed 07 Mar 2018 10:52:02 AM CET.
+DEBUG util.py:484:  Dependencies resolved.
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:   Package                          Arch          Version                        Repository      Size
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:  Upgrading:
+DEBUG util.py:484:   gcc                              x86_64        5.5.0-1.mga6                   updates         11 M
+DEBUG util.py:484:   gcc-c++                          x86_64        5.5.0-1.mga6                   updates        6.5 M
+DEBUG util.py:484:   gcc-cpp                          x86_64        5.5.0-1.mga6                   updates        5.9 M
+DEBUG util.py:484:   glibc                            x86_64        6:2.22-28.mga6                 updates        5.3 M
+DEBUG util.py:484:   glibc-devel                      x86_64        6:2.22-28.mga6                 updates        2.7 M
+DEBUG util.py:484:   icu58-data                       noarch        1:58.2-3.2.mga6                updates        6.1 M
+DEBUG util.py:484:   iproute2                         x86_64        4.14.1-1.mga6                  updates        676 k
+DEBUG util.py:484:   kernel-userspace-headers         x86_64        4.14.20-1.mga6                 updates        1.0 M
+DEBUG util.py:484:   krb5                             x86_64        1.15.1-2.3.mga6                updates         33 k
+DEBUG util.py:484:   lib64archive13                   x86_64        3.3.1-1.1.mga6                 updates        303 k
+DEBUG util.py:484:   lib64curl4                       x86_64        1:7.54.1-2.5.mga6              updates        217 k
+DEBUG util.py:484:   lib64db5.3                       x86_64        5.3.28-10.1.mga6               updates        681 k
+DEBUG util.py:484:   lib64dbnss5.3                    x86_64        5.3.28-10.1.mga6               updates        478 k
+DEBUG util.py:484:   lib64gcrypt20                    x86_64        1.7.8-1.1.mga6                 updates        412 k
+DEBUG util.py:484:   lib64icu58                       x86_64        1:58.2-3.2.mga6                updates        1.4 M
+DEBUG util.py:484:   lib64idn11                       x86_64        1.33-1.1.mga6                  updates         87 k
+DEBUG util.py:484:   lib64krb53                       x86_64        1.15.1-2.3.mga6                updates        655 k
+DEBUG util.py:484:   lib64ncurses6                    x86_64        6.0-8.1.mga6                   updates        221 k
+DEBUG util.py:484:   lib64ncursesw6                   x86_64        6.0-8.1.mga6                   updates        171 k
+DEBUG util.py:484:   lib64nspr4                       x86_64        2:4.18-1.mga6                  updates        117 k
+DEBUG util.py:484:   lib64nss3                        x86_64        2:3.28.6-1.3.mga6              updates        1.1 M
+DEBUG util.py:484:   lib64openssl-engines1.0.0        x86_64        1.0.2n-1.mga6                  updates         89 k
+DEBUG util.py:484:   lib64openssl1.0.0                x86_64        1.0.2n-1.mga6                  updates        1.1 M
+DEBUG util.py:484:   lib64pcre1                       x86_64        8.41-1.mga6                    updates        158 k
+DEBUG util.py:484:   lib64pcre16_0                    x86_64        8.41-1.mga6                    updates        151 k
+DEBUG util.py:484:   lib64pcre32_0                    x86_64        8.41-1.mga6                    updates        142 k
+DEBUG util.py:484:   lib64pcreposix1                  x86_64        8.41-1.mga6                    updates         12 k
+DEBUG util.py:484:   lib64python2.7                   x86_64        2.7.13-1.1.mga6                updates        589 k
+DEBUG util.py:484:   lib64python2.7-stdlib            x86_64        2.7.13-1.1.mga6                updates        3.9 M
+DEBUG util.py:484:   lib64rpm7                        x86_64        1:4.13.0.2-3.1.mga6            updates        260 k
+DEBUG util.py:484:   lib64rpmbuild7                   x86_64        1:4.13.0.2-3.1.mga6            updates         79 k
+DEBUG util.py:484:   lib64sqlite3_0                   x86_64        3.17.0-2.1.mga6                updates        412 k
+DEBUG util.py:484:   lib64systemd0                    x86_64        230-12.3.mga6                  updates        213 k
+DEBUG util.py:484:   lib64tasn1_6                     x86_64        4.13-1.mga6                    updates         39 k
+DEBUG util.py:484:   lib64udev1                       x86_64        230-12.3.mga6                  updates         60 k
+DEBUG util.py:484:   lib64user1                       x86_64        0.62-8.1.mga6                  updates         50 k
+DEBUG util.py:484:   lib64xml2_2                      x86_64        2.9.7-1.mga6                   updates        559 k
+DEBUG util.py:484:   lib64zlib1                       x86_64        1.2.11-4.1.mga6                updates         62 k
+DEBUG util.py:484:   libgcc1                          x86_64        5.5.0-1.mga6                   updates        121 k
+DEBUG util.py:484:   libgomp1                         x86_64        5.5.0-1.mga6                   updates        128 k
+DEBUG util.py:484:   libstdc++-devel                  x86_64        5.5.0-1.mga6                   updates        1.3 M
+DEBUG util.py:484:   libstdc++6                       x86_64        5.5.0-1.mga6                   updates        714 k
+DEBUG util.py:484:   libuser                          x86_64        0.62-8.1.mga6                  updates        276 k
+DEBUG util.py:484:   ncurses                          x86_64        6.0-8.1.mga6                   updates        205 k
+DEBUG util.py:484:   nss                              x86_64        2:3.28.6-1.3.mga6              updates        2.5 M
+DEBUG util.py:484:   nss-myhostname                   x86_64        230-12.3.mga6                  updates        185 k
+DEBUG util.py:484:   pcre                             x86_64        8.41-1.mga6                    updates        105 k
+DEBUG util.py:484:   perl                             x86_64        2:5.22.3-3.1.mga6              updates         10 M
+DEBUG util.py:484:   perl-base                        x86_64        2:5.22.3-3.1.mga6              updates        1.6 M
+DEBUG util.py:484:   python                           x86_64        2.7.13-1.1.mga6                updates         75 k
+DEBUG util.py:484:   python2-rpm                      x86_64        1:4.13.0.2-3.1.mga6            updates         69 k
+DEBUG util.py:484:   rootcerts                        noarch        1:20180104.00-1.mga6           updates        554 k
+DEBUG util.py:484:   rpm                              x86_64        1:4.13.0.2-3.1.mga6            updates        506 k
+DEBUG util.py:484:   rpm-build                        x86_64        1:4.13.0.2-3.1.mga6            updates        157 k
+DEBUG util.py:484:   rpm-mageia-setup                 x86_64        2.20.1-1.mga6                  updates         14 k
+DEBUG util.py:484:   rpm-mageia-setup-build           x86_64        2.20.1-1.mga6                  updates         64 k
+DEBUG util.py:484:   shadow-utils                     x86_64        2:4.4-1.1.mga6                 updates        1.0 M
+DEBUG util.py:484:   systemd                          x86_64        230-12.3.mga6                  updates        5.5 M
+DEBUG util.py:484:   systemd-units                    x86_64        230-12.3.mga6                  updates        382 k
+DEBUG util.py:484:  Installing dependencies:
+DEBUG util.py:484:   lib64rpmsign7                    x86_64        1:4.13.0.2-3.1.mga6            updates         26 k
+DEBUG util.py:484:   rust-srpm-macros                 noarch        4-1.mga6                       updates        7.5 k
+DEBUG util.py:484:  Transaction Summary
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:  Install   2 Packages
+DEBUG util.py:484:  Upgrade  59 Packages
+DEBUG util.py:484:  Total size: 78 M
+DEBUG util.py:484:  Total download size: 8.6 M
+DEBUG util.py:484:  Downloading Packages:
+DEBUG util.py:484:  [SKIPPED] rust-srpm-macros-4-1.mga6.noarch.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] lib64rpmsign7-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:484:  [SKIPPED] gcc-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                          
+DEBUG util.py:484:  [SKIPPED] gcc-c++-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:484:  [SKIPPED] gcc-cpp-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:484:  [SKIPPED] icu58-data-58.2-3.2.mga6.noarch.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] iproute2-4.14.1-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:484:  [SKIPPED] kernel-userspace-headers-4.14.20-1.mga6.x86_64.rpm: Already downloaded                   
+DEBUG util.py:484:  [SKIPPED] lib64archive13-3.3.1-1.1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] lib64curl4-7.54.1-2.5.mga6.x86_64.rpm: Already downloaded                                
+DEBUG util.py:484:  [SKIPPED] lib64db5.3-5.3.28-10.1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64dbnss5.3-5.3.28-10.1.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] lib64gcrypt20-1.7.8-1.1.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] lib64icu58-58.2-3.2.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64idn11-1.33-1.1.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64ncurses6-6.0-8.1.mga6.x86_64.rpm: Already downloaded                                
+DEBUG util.py:484:  [SKIPPED] lib64ncursesw6-6.0-8.1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64nspr4-4.18-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:484:  [SKIPPED] lib64nss3-3.28.6-1.3.mga6.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] lib64openssl-engines1.0.0-1.0.2n-1.mga6.x86_64.rpm: Already downloaded                   
+DEBUG util.py:484:  [SKIPPED] lib64openssl1.0.0-1.0.2n-1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:484:  [SKIPPED] lib64pcre1-8.41-1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:484:  [SKIPPED] lib64pcre16_0-8.41-1.mga6.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] lib64pcre32_0-8.41-1.mga6.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] lib64pcreposix1-8.41-1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64python2.7-2.7.13-1.1.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] lib64python2.7-stdlib-2.7.13-1.1.mga6.x86_64.rpm: Already downloaded                     
+DEBUG util.py:484:  [SKIPPED] lib64rpm7-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64rpmbuild7-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                          
+DEBUG util.py:484:  [SKIPPED] lib64sqlite3_0-3.17.0-2.1.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] lib64systemd0-230-12.3.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64tasn1_6-4.13-1.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64udev1-230-12.3.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64user1-0.62-8.1.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64xml2_2-2.9.7-1.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64zlib1-1.2.11-4.1.mga6.x86_64.rpm: Already downloaded                                
+DEBUG util.py:484:  [SKIPPED] libgcc1-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:484:  [SKIPPED] libgomp1-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:484:  [SKIPPED] libstdc++-devel-5.5.0-1.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] libstdc++6-5.5.0-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:484:  [SKIPPED] libuser-0.62-8.1.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:484:  [SKIPPED] ncurses-6.0-8.1.mga6.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:484:  [SKIPPED] nss-3.28.6-1.3.mga6.x86_64.rpm: Already downloaded                                       
+DEBUG util.py:484:  [SKIPPED] nss-myhostname-230-12.3.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] pcre-8.41-1.mga6.x86_64.rpm: Already downloaded                                          
+DEBUG util.py:484:  [SKIPPED] perl-5.22.3-3.1.mga6.x86_64.rpm: Already downloaded                                      
+DEBUG util.py:484:  [SKIPPED] perl-base-5.22.3-3.1.mga6.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] python-2.7.13-1.1.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:484:  [SKIPPED] python2-rpm-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] rootcerts-20180104.00-1.mga6.noarch.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] rpm-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:484:  [SKIPPED] rpm-build-4.13.0.2-3.1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] rpm-mageia-setup-2.20.1-1.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] rpm-mageia-setup-build-2.20.1-1.mga6.x86_64.rpm: Already downloaded                      
+DEBUG util.py:484:  [SKIPPED] shadow-utils-4.4-1.1.mga6.x86_64.rpm: Already downloaded                                 
+DEBUG util.py:484:  [SKIPPED] systemd-230-12.3.mga6.x86_64.rpm: Already downloaded                                     
+DEBUG util.py:484:  [SKIPPED] systemd-units-230-12.3.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  (58/61): krb5-1.15.1-2.3.mga6.x86_64.rpm                            130 kB/s |  33 kB     00:00    
+DEBUG util.py:484:  (59/61): lib64krb53-1.15.1-2.3.mga6.x86_64.rpm                      673 kB/s | 655 kB     00:00    
+DEBUG util.py:484:  (60/61): glibc-devel-2.22-28.mga6.x86_64.rpm                        2.0 MB/s | 2.7 MB     00:01    
+DEBUG util.py:484:  (61/61): glibc-2.22-28.mga6.x86_64.rpm                              1.6 MB/s | 5.3 MB     00:03    
+DEBUG util.py:484:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:484:  Total                                                               1.9 MB/s | 8.6 MB     00:04     
+DEBUG util.py:484:  Running transaction check
+DEBUG util.py:484:  Transaction check succeeded.
+DEBUG util.py:484:  Running transaction test
+DEBUG util.py:484:  Transaction test succeeded.
+DEBUG util.py:484:  Running transaction
+DEBUG util.py:484:    Preparing        :                                                                            1/1 
+DEBUG util.py:484:    Upgrading        : rpm-mageia-setup-2.20.1-1.mga6.x86_64                                    1/120 
+DEBUG util.py:484:    Upgrading        : rootcerts-1:20180104.00-1.mga6.noarch                                    2/120 
+DEBUG util.py:484:    Upgrading        : krb5-1.15.1-2.3.mga6.x86_64                                              3/120 
+DEBUG util.py:484:    Upgrading        : kernel-userspace-headers-4.14.20-1.mga6.x86_64                           4/120 
+DEBUG util.py:484:    Upgrading        : icu58-data-1:58.2-3.2.mga6.noarch                                        5/120 
+DEBUG util.py:484:    Installing       : rust-srpm-macros-4-1.mga6.noarch                                         6/120 
+DEBUG util.py:484:    Running scriptlet: glibc-6:2.22-28.mga6.x86_64                                              7/120 
+DEBUG util.py:484:    Upgrading        : glibc-6:2.22-28.mga6.x86_64                                              7/120 
+DEBUG util.py:484:    Running scriptlet: glibc-6:2.22-28.mga6.x86_64                                              7/120 
+DEBUG util.py:484:  Running in chroot, ignoring request.
+DEBUG util.py:484:    Upgrading        : lib64zlib1-1.2.11-4.1.mga6.x86_64                                        8/120 
+DEBUG util.py:484:    Upgrading        : perl-base-2:5.22.3-3.1.mga6.x86_64                                       9/120 
+DEBUG util.py:484:    Upgrading        : lib64db5.3-5.3.28-10.1.mga6.x86_64                                      10/120 
+DEBUG util.py:484:    Upgrading        : lib64gcrypt20-1.7.8-1.1.mga6.x86_64                                     11/120 
+DEBUG util.py:484:    Upgrading        : perl-2:5.22.3-3.1.mga6.x86_64                                           12/120 
+DEBUG util.py:484:    Upgrading        : lib64nspr4-2:4.18-1.mga6.x86_64                                         13/120 
+DEBUG util.py:484:    Upgrading        : lib64pcre1-8.41-1.mga6.x86_64                                           14/120 
+DEBUG util.py:484:    Upgrading        : lib64pcreposix1-8.41-1.mga6.x86_64                                      15/120 
+DEBUG util.py:484:    Upgrading        : gcc-cpp-5.5.0-1.mga6.x86_64                                             16/120 
+DEBUG util.py:484:    Running scriptlet: gcc-cpp-5.5.0-1.mga6.x86_64                                             16/120 
+DEBUG util.py:484:    Upgrading        : lib64openssl-engines1.0.0-1.0.2n-1.mga6.x86_64                          17/120 
+DEBUG util.py:484:    Upgrading        : lib64openssl1.0.0-1.0.2n-1.mga6.x86_64                                  18/120 
+DEBUG util.py:484:    Upgrading        : lib64xml2_2-2.9.7-1.mga6.x86_64                                         19/120 
+DEBUG util.py:484:    Upgrading        : lib64archive13-3.3.1-1.1.mga6.x86_64                                    20/120 
+DEBUG util.py:484:    Running scriptlet: glibc-devel-6:2.22-28.mga6.x86_64                                       21/120 
+DEBUG util.py:484:    Upgrading        : glibc-devel-6:2.22-28.mga6.x86_64                                       21/120 
+DEBUG util.py:484:    Upgrading        : lib64idn11-1.33-1.1.mga6.x86_64                                         22/120 
+DEBUG util.py:484:    Running scriptlet: lib64idn11-1.33-1.1.mga6.x86_64                                         22/120 
+DEBUG util.py:484:    Upgrading        : lib64krb53-1.15.1-2.3.mga6.x86_64                                       23/120 
+DEBUG util.py:484:    Upgrading        : lib64curl4-1:7.54.1-2.5.mga6.x86_64                                     24/120 
+DEBUG util.py:484:    Upgrading        : lib64pcre16_0-8.41-1.mga6.x86_64                                        25/120 
+DEBUG util.py:484:    Upgrading        : lib64pcre32_0-8.41-1.mga6.x86_64                                        26/120 
+DEBUG util.py:484:    Upgrading        : pcre-8.41-1.mga6.x86_64                                                 27/120 
+DEBUG util.py:484:    Upgrading        : lib64user1-0.62-8.1.mga6.x86_64                                         28/120 
+DEBUG util.py:484:    Running scriptlet: lib64user1-0.62-8.1.mga6.x86_64                                         28/120 
+DEBUG util.py:484:    Upgrading        : libuser-0.62-8.1.mga6.x86_64                                            29/120 
+DEBUG util.py:484:    Upgrading        : nss-myhostname-230-12.3.mga6.x86_64                                     30/120 
+DEBUG util.py:484:    Upgrading        : shadow-utils-2:4.4-1.1.mga6.x86_64                                      31/120 
+DEBUG util.py:484:    Running scriptlet: shadow-utils-2:4.4-1.1.mga6.x86_64                                      31/120 
+DEBUG util.py:484:    Upgrading        : libgcc1-5.5.0-1.mga6.x86_64                                             32/120 
+DEBUG util.py:484:    Upgrading        : libstdc++6-5.5.0-1.mga6.x86_64                                          33/120 
+DEBUG util.py:484:    Upgrading        : lib64ncurses6-6.0-8.1.mga6.x86_64                                       34/120 
+DEBUG util.py:484:    Upgrading        : lib64ncursesw6-6.0-8.1.mga6.x86_64                                      35/120 
+DEBUG util.py:484:    Upgrading        : lib64icu58-1:58.2-3.2.mga6.x86_64                                       36/120 
+DEBUG util.py:484:    Upgrading        : lib64sqlite3_0-3.17.0-2.1.mga6.x86_64                                   37/120 
+DEBUG util.py:484:    Upgrading        : lib64python2.7-2.7.13-1.1.mga6.x86_64                                   38/120 
+DEBUG util.py:484:    Upgrading        : python-2.7.13-1.1.mga6.x86_64                                           39/120 
+DEBUG util.py:484:    Upgrading        : lib64python2.7-stdlib-2.7.13-1.1.mga6.x86_64                            40/120 
+DEBUG util.py:484:    Upgrading        : libstdc++-devel-5.5.0-1.mga6.x86_64                                     41/120 
+DEBUG util.py:484:    Upgrading        : nss-2:3.28.6-1.3.mga6.x86_64                                            42/120 
+DEBUG util.py:484:    Upgrading        : lib64nss3-2:3.28.6-1.3.mga6.x86_64                                      43/120 
+DEBUG util.py:484:    Running scriptlet: lib64nss3-2:3.28.6-1.3.mga6.x86_64                                      43/120 
+DEBUG util.py:484:    Upgrading        : lib64rpm7-1:4.13.0.2-3.1.mga6.x86_64                                    44/120 
+DEBUG util.py:484:    Upgrading        : lib64rpmbuild7-1:4.13.0.2-3.1.mga6.x86_64                               45/120 
+DEBUG util.py:484:    Running scriptlet: rpm-1:4.13.0.2-3.1.mga6.x86_64                                          46/120 
+DEBUG util.py:484:    Upgrading        : rpm-1:4.13.0.2-3.1.mga6.x86_64                                          46/120 
+DEBUG util.py:484:    Running scriptlet: rpm-1:4.13.0.2-3.1.mga6.x86_64                                          46/120 
+DEBUG util.py:484:    Installing       : lib64rpmsign7-1:4.13.0.2-3.1.mga6.x86_64                                47/120 
+DEBUG util.py:484:    Upgrading        : gcc-5.5.0-1.mga6.x86_64                                                 48/120 
+DEBUG util.py:484:    Running scriptlet: gcc-5.5.0-1.mga6.x86_64                                                 48/120 
+DEBUG util.py:484:    Upgrading        : gcc-c++-5.5.0-1.mga6.x86_64                                             49/120 
+DEBUG util.py:484:    Running scriptlet: gcc-c++-5.5.0-1.mga6.x86_64                                             49/120 
+DEBUG util.py:484:    Upgrading        : rpm-mageia-setup-build-2.20.1-1.mga6.x86_64                             50/120 
+DEBUG util.py:484:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                            51/120 
+DEBUG util.py:484:    Upgrading        : systemd-230-12.3.mga6.x86_64                                            51/120 
+DEBUG util.py:484:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                            51/120 
+DEBUG util.py:484:  Running in chroot, ignoring request.
+DEBUG util.py:484:    Upgrading        : systemd-units-230-12.3.mga6.x86_64                                      52/120 
+DEBUG util.py:484:    Running scriptlet: systemd-units-230-12.3.mga6.x86_64                                      52/120 
+DEBUG util.py:484:    Upgrading        : rpm-build-1:4.13.0.2-3.1.mga6.x86_64                                    53/120 
+DEBUG util.py:484:    Upgrading        : python2-rpm-1:4.13.0.2-3.1.mga6.x86_64                                  54/120 
+DEBUG util.py:484:    Upgrading        : ncurses-6.0-8.1.mga6.x86_64                                             55/120 
+DEBUG util.py:484:    Upgrading        : lib64systemd0-230-12.3.mga6.x86_64                                      56/120 
+DEBUG util.py:484:    Upgrading        : iproute2-4.14.1-1.mga6.x86_64                                           57/120 
+DEBUG util.py:484:    Upgrading        : lib64dbnss5.3-5.3.28-10.1.mga6.x86_64                                   58/120 
+DEBUG util.py:484:    Upgrading        : lib64tasn1_6-4.13-1.mga6.x86_64                                         59/120 
+DEBUG util.py:484:    Upgrading        : lib64udev1-230-12.3.mga6.x86_64                                         60/120 
+DEBUG util.py:484:    Upgrading        : libgomp1-5.5.0-1.mga6.x86_64                                            61/120 
+DEBUG util.py:484:    Cleanup          : libgomp1-5.4.0-5.mga6.x86_64                                            62/120 
+DEBUG util.py:484:    Cleanup          : systemd-230-12.mga6.x86_64                                              63/120 
+DEBUG util.py:484:    Running scriptlet: systemd-units-230-12.mga6.x86_64                                        64/120 
+DEBUG util.py:484:    Cleanup          : systemd-units-230-12.mga6.x86_64                                        64/120 
+DEBUG util.py:484:    Running scriptlet: systemd-units-230-12.mga6.x86_64                                        64/120 
+DEBUG util.py:484:  Running in chroot, ignoring request.
+DEBUG util.py:484:    Cleanup          : rpm-build-1:4.13.0.1-3.mga6.x86_64                                      65/120 
+DEBUG util.py:484:    Cleanup          : lib64systemd0-230-12.mga6.x86_64                                        66/120 
+DEBUG util.py:484:    Cleanup          : gcc-c++-5.4.0-5.mga6.x86_64                                             67/120 
+DEBUG util.py:484:    Running scriptlet: gcc-c++-5.4.0-5.mga6.x86_64                                             67/120 
+DEBUG util.py:484:    Cleanup          : gcc-5.4.0-5.mga6.x86_64                                                 68/120 
+DEBUG util.py:484:    Running scriptlet: gcc-5.4.0-5.mga6.x86_64                                                 68/120 
+DEBUG util.py:484:    Cleanup          : nss-myhostname-230-12.mga6.x86_64                                       69/120 
+DEBUG util.py:484:    Cleanup          : gcc-cpp-5.4.0-5.mga6.x86_64                                             70/120 
+DEBUG util.py:484:    Running scriptlet: gcc-cpp-5.4.0-5.mga6.x86_64                                             70/120 
+DEBUG util.py:484:    Cleanup          : lib64curl4-1:7.54.1-2.mga6.x86_64                                       71/120 
+DEBUG util.py:484:    Cleanup          : lib64krb53-1.15.1-2.mga6.x86_64                                         72/120 
+DEBUG util.py:484:    Cleanup          : lib64udev1-230-12.mga6.x86_64                                           73/120 
+DEBUG util.py:484:    Cleanup          : lib64user1-0.62-8.mga6.x86_64                                           74/120 
+DEBUG util.py:484:    Cleanup          : python2-rpm-1:4.13.0.1-3.mga6.x86_64                                    75/120 
+DEBUG util.py:484:    Cleanup          : rpm-1:4.13.0.1-3.mga6.x86_64                                            76/120 
+DEBUG util.py:484:    Running scriptlet: rpm-1:4.13.0.1-3.mga6.x86_64                                            76/120 
+DEBUG util.py:484:    Cleanup          : lib64archive13-3.3.1-1.mga6.x86_64                                      77/120 
+DEBUG util.py:484:    Cleanup          : lib64xml2_2-2.9.4-8.mga6.x86_64                                         78/120 
+DEBUG util.py:484:    Cleanup          : lib64rpmbuild7-1:4.13.0.1-3.mga6.x86_64                                 79/120 
+DEBUG util.py:484:    Cleanup          : lib64rpm7-1:4.13.0.1-3.mga6.x86_64                                      80/120 
+DEBUG util.py:484:    Cleanup          : lib64nss3-2:3.28.5-1.mga6.x86_64                                        81/120 
+DEBUG util.py:484:    Cleanup          : nss-2:3.28.5-1.mga6.x86_64                                              82/120 
+DEBUG util.py:484:    Cleanup          : lib64nspr4-2:4.15-2.mga6.x86_64                                         83/120 
+DEBUG util.py:484:    Cleanup          : iproute2-4.9.0-1.mga6.x86_64                                            84/120 
+DEBUG util.py:484:    Cleanup          : lib64dbnss5.3-5.3.28-10.mga6.x86_64                                     85/120 
+DEBUG util.py:484:    Cleanup          : rpm-mageia-setup-build-2.20-9.mga6.x86_64                               86/120 
+DEBUG util.py:484:    Cleanup          : perl-2:5.22.3-3.mga6.x86_64                                             87/120 
+DEBUG util.py:484:    Cleanup          : perl-base-2:5.22.3-3.mga6.x86_64                                        88/120 
+DEBUG util.py:484:    Cleanup          : pcre-8.40-2.mga6.x86_64                                                 89/120 
+DEBUG util.py:484:    Cleanup          : shadow-utils-2:4.4-1.mga6.x86_64                                        90/120 
+DEBUG util.py:484:    Cleanup          : lib64openssl-engines1.0.0-1.0.2l-1.mga6.x86_64                          91/120 
+DEBUG util.py:484:    Cleanup          : lib64pcre16_0-8.40-2.mga6.x86_64                                        92/120 
+DEBUG util.py:484:    Cleanup          : libuser-0.62-8.mga6.x86_64                                              93/120 
+DEBUG util.py:484:    Cleanup          : lib64pcre32_0-8.40-2.mga6.x86_64                                        94/120 
+DEBUG util.py:484:    Cleanup          : lib64gcrypt20-1.7.8-1.mga6.x86_64                                       95/120 
+DEBUG util.py:484:    Cleanup          : ncurses-6.0-8.mga6.x86_64                                               96/120 
+DEBUG util.py:484:    Cleanup          : lib64tasn1_6-4.12-1.mga6.x86_64                                         97/120 
+DEBUG util.py:484:    Cleanup          : lib64pcreposix1-8.40-2.mga6.x86_64                                      98/120 
+DEBUG util.py:484:    Cleanup          : lib64pcre1-8.40-2.mga6.x86_64                                           99/120 
+DEBUG util.py:484:    Cleanup          : lib64idn11-1.33-1.mga6.x86_64                                          100/120 
+DEBUG util.py:484:    Running scriptlet: lib64idn11-1.33-1.mga6.x86_64                                          100/120 
+DEBUG util.py:484:    Cleanup          : glibc-devel-6:2.22-25.mga6.x86_64                                      101/120 
+DEBUG util.py:484:    Cleanup          : libstdc++-devel-5.4.0-5.mga6.x86_64                                    102/120 
+DEBUG util.py:484:    Cleanup          : kernel-userspace-headers-4.9.35-1.mga6.x86_64                          103/120 
+DEBUG util.py:484:    Cleanup          : rpm-mageia-setup-2.20-9.mga6.x86_64                                    104/120 
+DEBUG util.py:484:    Cleanup          : krb5-1.15.1-2.mga6.x86_64                                              105/120 
+DEBUG util.py:484:    Cleanup          : rootcerts-1:20170404.00-1.mga6.noarch                                  106/120 
+DEBUG util.py:484:    Cleanup          : lib64python2.7-2.7.13-1.mga6.x86_64                                    107/120 
+DEBUG util.py:484:    Cleanup          : lib64python2.7-stdlib-2.7.13-1.mga6.x86_64                             108/120 
+DEBUG util.py:484:    Cleanup          : python-2.7.13-1.mga6.x86_64                                            109/120 
+DEBUG util.py:484:    Cleanup          : lib64ncursesw6-6.0-8.mga6.x86_64                                       110/120 
+DEBUG util.py:484:    Cleanup          : lib64ncurses6-6.0-8.mga6.x86_64                                        111/120 
+DEBUG util.py:484:    Cleanup          : lib64db5.3-5.3.28-10.mga6.x86_64                                       112/120 
+DEBUG util.py:484:    Cleanup          : lib64sqlite3_0-3.17.0-2.mga6.x86_64                                    113/120 
+DEBUG util.py:484:    Cleanup          : lib64icu58-1:58.2-3.mga6.x86_64                                        114/120 
+DEBUG util.py:484:    Cleanup          : libstdc++6-5.4.0-5.mga6.x86_64                                         115/120 
+DEBUG util.py:484:    Cleanup          : libgcc1-5.4.0-5.mga6.x86_64                                            116/120 
+DEBUG util.py:484:    Cleanup          : lib64openssl1.0.0-1.0.2l-1.mga6.x86_64                                 117/120 
+DEBUG util.py:484:    Cleanup          : icu58-data-1:58.2-3.mga6.noarch                                        118/120 
+DEBUG util.py:484:    Cleanup          : lib64zlib1-1.2.11-4.mga6.x86_64                                        119/120 
+DEBUG util.py:484:    Cleanup          : glibc-6:2.22-25.mga6.x86_64                                            120/120 
+DEBUG util.py:484:    Running scriptlet: glibc-6:2.22-28.mga6.x86_64                                            120/120 
+DEBUG util.py:484:    Running scriptlet: systemd-230-12.3.mga6.x86_64                                           120/120 
+DEBUG util.py:484:    Verifying        : rust-srpm-macros-4-1.mga6.noarch                                         1/120 
+DEBUG util.py:484:    Verifying        : lib64rpmsign7-1:4.13.0.2-3.1.mga6.x86_64                                 2/120 
+DEBUG util.py:484:    Verifying        : gcc-5.5.0-1.mga6.x86_64                                                  3/120 
+DEBUG util.py:484:    Verifying        : gcc-c++-5.5.0-1.mga6.x86_64                                              4/120 
+DEBUG util.py:484:    Verifying        : gcc-cpp-5.5.0-1.mga6.x86_64                                              5/120 
+DEBUG util.py:484:    Verifying        : glibc-6:2.22-28.mga6.x86_64                                              6/120 
+DEBUG util.py:484:    Verifying        : glibc-devel-6:2.22-28.mga6.x86_64                                        7/120 
+DEBUG util.py:484:    Verifying        : icu58-data-1:58.2-3.2.mga6.noarch                                        8/120 
+DEBUG util.py:484:    Verifying        : iproute2-4.14.1-1.mga6.x86_64                                            9/120 
+DEBUG util.py:484:    Verifying        : kernel-userspace-headers-4.14.20-1.mga6.x86_64                          10/120 
+DEBUG util.py:484:    Verifying        : krb5-1.15.1-2.3.mga6.x86_64                                             11/120 
+DEBUG util.py:484:    Verifying        : lib64archive13-3.3.1-1.1.mga6.x86_64                                    12/120 
+DEBUG util.py:484:    Verifying        : lib64curl4-1:7.54.1-2.5.mga6.x86_64                                     13/120 
+DEBUG util.py:484:    Verifying        : lib64db5.3-5.3.28-10.1.mga6.x86_64                                      14/120 
+DEBUG util.py:484:    Verifying        : lib64dbnss5.3-5.3.28-10.1.mga6.x86_64                                   15/120 
+DEBUG util.py:484:    Verifying        : lib64gcrypt20-1.7.8-1.1.mga6.x86_64                                     16/120 
+DEBUG util.py:484:    Verifying        : lib64icu58-1:58.2-3.2.mga6.x86_64                                       17/120 
+DEBUG util.py:484:    Verifying        : lib64idn11-1.33-1.1.mga6.x86_64                                         18/120 
+DEBUG util.py:484:    Verifying        : lib64krb53-1.15.1-2.3.mga6.x86_64                                       19/120 
+DEBUG util.py:484:    Verifying        : lib64ncurses6-6.0-8.1.mga6.x86_64                                       20/120 
+DEBUG util.py:484:    Verifying        : lib64ncursesw6-6.0-8.1.mga6.x86_64                                      21/120 
+DEBUG util.py:484:    Verifying        : lib64nspr4-2:4.18-1.mga6.x86_64                                         22/120 
+DEBUG util.py:484:    Verifying        : lib64nss3-2:3.28.6-1.3.mga6.x86_64                                      23/120 
+DEBUG util.py:484:    Verifying        : lib64openssl-engines1.0.0-1.0.2n-1.mga6.x86_64                          24/120 
+DEBUG util.py:484:    Verifying        : lib64openssl1.0.0-1.0.2n-1.mga6.x86_64                                  25/120 
+DEBUG util.py:484:    Verifying        : lib64pcre1-8.41-1.mga6.x86_64                                           26/120 
+DEBUG util.py:484:    Verifying        : lib64pcre16_0-8.41-1.mga6.x86_64                                        27/120 
+DEBUG util.py:484:    Verifying        : lib64pcre32_0-8.41-1.mga6.x86_64                                        28/120 
+DEBUG util.py:484:    Verifying        : lib64pcreposix1-8.41-1.mga6.x86_64                                      29/120 
+DEBUG util.py:484:    Verifying        : lib64python2.7-2.7.13-1.1.mga6.x86_64                                   30/120 
+DEBUG util.py:484:    Verifying        : lib64python2.7-stdlib-2.7.13-1.1.mga6.x86_64                            31/120 
+DEBUG util.py:484:    Verifying        : lib64rpm7-1:4.13.0.2-3.1.mga6.x86_64                                    32/120 
+DEBUG util.py:484:    Verifying        : lib64rpmbuild7-1:4.13.0.2-3.1.mga6.x86_64                               33/120 
+DEBUG util.py:484:    Verifying        : lib64sqlite3_0-3.17.0-2.1.mga6.x86_64                                   34/120 
+DEBUG util.py:484:    Verifying        : lib64systemd0-230-12.3.mga6.x86_64                                      35/120 
+DEBUG util.py:484:    Verifying        : lib64tasn1_6-4.13-1.mga6.x86_64                                         36/120 
+DEBUG util.py:484:    Verifying        : lib64udev1-230-12.3.mga6.x86_64                                         37/120 
+DEBUG util.py:484:    Verifying        : lib64user1-0.62-8.1.mga6.x86_64                                         38/120 
+DEBUG util.py:484:    Verifying        : lib64xml2_2-2.9.7-1.mga6.x86_64                                         39/120 
+DEBUG util.py:484:    Verifying        : lib64zlib1-1.2.11-4.1.mga6.x86_64                                       40/120 
+DEBUG util.py:484:    Verifying        : libgcc1-5.5.0-1.mga6.x86_64                                             41/120 
+DEBUG util.py:484:    Verifying        : libgomp1-5.5.0-1.mga6.x86_64                                            42/120 
+DEBUG util.py:484:    Verifying        : libstdc++-devel-5.5.0-1.mga6.x86_64                                     43/120 
+DEBUG util.py:484:    Verifying        : libstdc++6-5.5.0-1.mga6.x86_64                                          44/120 
+DEBUG util.py:484:    Verifying        : libuser-0.62-8.1.mga6.x86_64                                            45/120 
+DEBUG util.py:484:    Verifying        : ncurses-6.0-8.1.mga6.x86_64                                             46/120 
+DEBUG util.py:484:    Verifying        : nss-2:3.28.6-1.3.mga6.x86_64                                            47/120 
+DEBUG util.py:484:    Verifying        : nss-myhostname-230-12.3.mga6.x86_64                                     48/120 
+DEBUG util.py:484:    Verifying        : pcre-8.41-1.mga6.x86_64                                                 49/120 
+DEBUG util.py:484:    Verifying        : perl-2:5.22.3-3.1.mga6.x86_64                                           50/120 
+DEBUG util.py:484:    Verifying        : perl-base-2:5.22.3-3.1.mga6.x86_64                                      51/120 
+DEBUG util.py:484:    Verifying        : python-2.7.13-1.1.mga6.x86_64                                           52/120 
+DEBUG util.py:484:    Verifying        : python2-rpm-1:4.13.0.2-3.1.mga6.x86_64                                  53/120 
+DEBUG util.py:484:    Verifying        : rootcerts-1:20180104.00-1.mga6.noarch                                   54/120 
+DEBUG util.py:484:    Verifying        : rpm-1:4.13.0.2-3.1.mga6.x86_64                                          55/120 
+DEBUG util.py:484:    Verifying        : rpm-build-1:4.13.0.2-3.1.mga6.x86_64                                    56/120 
+DEBUG util.py:484:    Verifying        : rpm-mageia-setup-2.20.1-1.mga6.x86_64                                   57/120 
+DEBUG util.py:484:    Verifying        : rpm-mageia-setup-build-2.20.1-1.mga6.x86_64                             58/120 
+DEBUG util.py:484:    Verifying        : shadow-utils-2:4.4-1.1.mga6.x86_64                                      59/120 
+DEBUG util.py:484:    Verifying        : systemd-230-12.3.mga6.x86_64                                            60/120 
+DEBUG util.py:484:    Verifying        : systemd-units-230-12.3.mga6.x86_64                                      61/120 
+DEBUG util.py:484:    Verifying        : lib64sqlite3_0-3.17.0-2.mga6.x86_64                                     62/120 
+DEBUG util.py:484:    Verifying        : lib64systemd0-230-12.mga6.x86_64                                        63/120 
+DEBUG util.py:484:    Verifying        : lib64tasn1_6-4.12-1.mga6.x86_64                                         64/120 
+DEBUG util.py:484:    Verifying        : lib64udev1-230-12.mga6.x86_64                                           65/120 
+DEBUG util.py:484:    Verifying        : lib64user1-0.62-8.mga6.x86_64                                           66/120 
+DEBUG util.py:484:    Verifying        : lib64xml2_2-2.9.4-8.mga6.x86_64                                         67/120 
+DEBUG util.py:484:    Verifying        : lib64zlib1-1.2.11-4.mga6.x86_64                                         68/120 
+DEBUG util.py:484:    Verifying        : libgcc1-5.4.0-5.mga6.x86_64                                             69/120 
+DEBUG util.py:484:    Verifying        : libgomp1-5.4.0-5.mga6.x86_64                                            70/120 
+DEBUG util.py:484:    Verifying        : libstdc++-devel-5.4.0-5.mga6.x86_64                                     71/120 
+DEBUG util.py:484:    Verifying        : libstdc++6-5.4.0-5.mga6.x86_64                                          72/120 
+DEBUG util.py:484:    Verifying        : libuser-0.62-8.mga6.x86_64                                              73/120 
+DEBUG util.py:484:    Verifying        : gcc-5.4.0-5.mga6.x86_64                                                 74/120 
+DEBUG util.py:484:    Verifying        : gcc-c++-5.4.0-5.mga6.x86_64                                             75/120 
+DEBUG util.py:484:    Verifying        : gcc-cpp-5.4.0-5.mga6.x86_64                                             76/120 
+DEBUG util.py:484:    Verifying        : ncurses-6.0-8.mga6.x86_64                                               77/120 
+DEBUG util.py:484:    Verifying        : glibc-6:2.22-25.mga6.x86_64                                             78/120 
+DEBUG util.py:484:    Verifying        : glibc-devel-6:2.22-25.mga6.x86_64                                       79/120 
+DEBUG util.py:484:    Verifying        : nss-2:3.28.5-1.mga6.x86_64                                              80/120 
+DEBUG util.py:484:    Verifying        : nss-myhostname-230-12.mga6.x86_64                                       81/120 
+DEBUG util.py:484:    Verifying        : icu58-data-1:58.2-3.mga6.noarch                                         82/120 
+DEBUG util.py:484:    Verifying        : pcre-8.40-2.mga6.x86_64                                                 83/120 
+DEBUG util.py:484:    Verifying        : iproute2-4.9.0-1.mga6.x86_64                                            84/120 
+DEBUG util.py:484:    Verifying        : perl-2:5.22.3-3.mga6.x86_64                                             85/120 
+DEBUG util.py:484:    Verifying        : kernel-userspace-headers-4.9.35-1.mga6.x86_64                           86/120 
+DEBUG util.py:484:    Verifying        : krb5-1.15.1-2.mga6.x86_64                                               87/120 
+DEBUG util.py:484:    Verifying        : lib64archive13-3.3.1-1.mga6.x86_64                                      88/120 
+DEBUG util.py:484:    Verifying        : perl-base-2:5.22.3-3.mga6.x86_64                                        89/120 
+DEBUG util.py:484:    Verifying        : python-2.7.13-1.mga6.x86_64                                             90/120 
+DEBUG util.py:484:    Verifying        : lib64curl4-1:7.54.1-2.mga6.x86_64                                       91/120 
+DEBUG util.py:484:    Verifying        : python2-rpm-1:4.13.0.1-3.mga6.x86_64                                    92/120 
+DEBUG util.py:484:    Verifying        : lib64db5.3-5.3.28-10.mga6.x86_64                                        93/120 
+DEBUG util.py:484:    Verifying        : lib64dbnss5.3-5.3.28-10.mga6.x86_64                                     94/120 
+DEBUG util.py:484:    Verifying        : rootcerts-1:20170404.00-1.mga6.noarch                                   95/120 
+DEBUG util.py:484:    Verifying        : rpm-1:4.13.0.1-3.mga6.x86_64                                            96/120 
+DEBUG util.py:484:    Verifying        : rpm-build-1:4.13.0.1-3.mga6.x86_64                                      97/120 
+DEBUG util.py:484:    Verifying        : rpm-mageia-setup-2.20-9.mga6.x86_64                                     98/120 
+DEBUG util.py:484:    Verifying        : rpm-mageia-setup-build-2.20-9.mga6.x86_64                               99/120 
+DEBUG util.py:484:    Verifying        : lib64gcrypt20-1.7.8-1.mga6.x86_64                                      100/120 
+DEBUG util.py:484:    Verifying        : shadow-utils-2:4.4-1.mga6.x86_64                                       101/120 
+DEBUG util.py:484:    Verifying        : systemd-230-12.mga6.x86_64                                             102/120 
+DEBUG util.py:484:    Verifying        : systemd-units-230-12.mga6.x86_64                                       103/120 
+DEBUG util.py:484:    Verifying        : lib64icu58-1:58.2-3.mga6.x86_64                                        104/120 
+DEBUG util.py:484:    Verifying        : lib64idn11-1.33-1.mga6.x86_64                                          105/120 
+DEBUG util.py:484:    Verifying        : lib64krb53-1.15.1-2.mga6.x86_64                                        106/120 
+DEBUG util.py:484:    Verifying        : lib64ncurses6-6.0-8.mga6.x86_64                                        107/120 
+DEBUG util.py:484:    Verifying        : lib64ncursesw6-6.0-8.mga6.x86_64                                       108/120 
+DEBUG util.py:484:    Verifying        : lib64nspr4-2:4.15-2.mga6.x86_64                                        109/120 
+DEBUG util.py:484:    Verifying        : lib64nss3-2:3.28.5-1.mga6.x86_64                                       110/120 
+DEBUG util.py:484:    Verifying        : lib64openssl-engines1.0.0-1.0.2l-1.mga6.x86_64                         111/120 
+DEBUG util.py:484:    Verifying        : lib64openssl1.0.0-1.0.2l-1.mga6.x86_64                                 112/120 
+DEBUG util.py:484:    Verifying        : lib64pcre1-8.40-2.mga6.x86_64                                          113/120 
+DEBUG util.py:484:    Verifying        : lib64pcre16_0-8.40-2.mga6.x86_64                                       114/120 
+DEBUG util.py:484:    Verifying        : lib64pcre32_0-8.40-2.mga6.x86_64                                       115/120 
+DEBUG util.py:484:    Verifying        : lib64pcreposix1-8.40-2.mga6.x86_64                                     116/120 
+DEBUG util.py:484:    Verifying        : lib64python2.7-2.7.13-1.mga6.x86_64                                    117/120 
+DEBUG util.py:484:    Verifying        : lib64python2.7-stdlib-2.7.13-1.mga6.x86_64                             118/120 
+DEBUG util.py:484:    Verifying        : lib64rpm7-1:4.13.0.1-3.mga6.x86_64                                     119/120 
+DEBUG util.py:484:    Verifying        : lib64rpmbuild7-1:4.13.0.1-3.mga6.x86_64                                120/120 
+DEBUG util.py:484:  Installed:
+DEBUG util.py:484:    lib64rpmsign7.x86_64 1:4.13.0.2-3.1.mga6             rust-srpm-macros.noarch 4-1.mga6            
+DEBUG util.py:484:  Upgraded:
+DEBUG util.py:484:    gcc.x86_64 5.5.0-1.mga6                         gcc-c++.x86_64 5.5.0-1.mga6                      
+DEBUG util.py:484:    gcc-cpp.x86_64 5.5.0-1.mga6                     glibc.x86_64 6:2.22-28.mga6                      
+DEBUG util.py:484:    glibc-devel.x86_64 6:2.22-28.mga6               icu58-data.noarch 1:58.2-3.2.mga6                
+DEBUG util.py:484:    iproute2.x86_64 4.14.1-1.mga6                   kernel-userspace-headers.x86_64 4.14.20-1.mga6   
+DEBUG util.py:484:    krb5.x86_64 1.15.1-2.3.mga6                     lib64archive13.x86_64 3.3.1-1.1.mga6             
+DEBUG util.py:484:    lib64curl4.x86_64 1:7.54.1-2.5.mga6             lib64db5.3.x86_64 5.3.28-10.1.mga6               
+DEBUG util.py:484:    lib64dbnss5.3.x86_64 5.3.28-10.1.mga6           lib64gcrypt20.x86_64 1.7.8-1.1.mga6              
+DEBUG util.py:484:    lib64icu58.x86_64 1:58.2-3.2.mga6               lib64idn11.x86_64 1.33-1.1.mga6                  
+DEBUG util.py:484:    lib64krb53.x86_64 1.15.1-2.3.mga6               lib64ncurses6.x86_64 6.0-8.1.mga6                
+DEBUG util.py:484:    lib64ncursesw6.x86_64 6.0-8.1.mga6              lib64nspr4.x86_64 2:4.18-1.mga6                  
+DEBUG util.py:484:    lib64nss3.x86_64 2:3.28.6-1.3.mga6              lib64openssl-engines1.0.0.x86_64 1.0.2n-1.mga6   
+DEBUG util.py:484:    lib64openssl1.0.0.x86_64 1.0.2n-1.mga6          lib64pcre1.x86_64 8.41-1.mga6                    
+DEBUG util.py:484:    lib64pcre16_0.x86_64 8.41-1.mga6                lib64pcre32_0.x86_64 8.41-1.mga6                 
+DEBUG util.py:484:    lib64pcreposix1.x86_64 8.41-1.mga6              lib64python2.7.x86_64 2.7.13-1.1.mga6            
+DEBUG util.py:484:    lib64python2.7-stdlib.x86_64 2.7.13-1.1.mga6    lib64rpm7.x86_64 1:4.13.0.2-3.1.mga6             
+DEBUG util.py:484:    lib64rpmbuild7.x86_64 1:4.13.0.2-3.1.mga6       lib64sqlite3_0.x86_64 3.17.0-2.1.mga6            
+DEBUG util.py:484:    lib64systemd0.x86_64 230-12.3.mga6              lib64tasn1_6.x86_64 4.13-1.mga6                  
+DEBUG util.py:484:    lib64udev1.x86_64 230-12.3.mga6                 lib64user1.x86_64 0.62-8.1.mga6                  
+DEBUG util.py:484:    lib64xml2_2.x86_64 2.9.7-1.mga6                 lib64zlib1.x86_64 1.2.11-4.1.mga6                
+DEBUG util.py:484:    libgcc1.x86_64 5.5.0-1.mga6                     libgomp1.x86_64 5.5.0-1.mga6                     
+DEBUG util.py:484:    libstdc++-devel.x86_64 5.5.0-1.mga6             libstdc++6.x86_64 5.5.0-1.mga6                   
+DEBUG util.py:484:    libuser.x86_64 0.62-8.1.mga6                    ncurses.x86_64 6.0-8.1.mga6                      
+DEBUG util.py:484:    nss.x86_64 2:3.28.6-1.3.mga6                    nss-myhostname.x86_64 230-12.3.mga6              
+DEBUG util.py:484:    pcre.x86_64 8.41-1.mga6                         perl.x86_64 2:5.22.3-3.1.mga6                    
+DEBUG util.py:484:    perl-base.x86_64 2:5.22.3-3.1.mga6              python.x86_64 2.7.13-1.1.mga6                    
+DEBUG util.py:484:    python2-rpm.x86_64 1:4.13.0.2-3.1.mga6          rootcerts.noarch 1:20180104.00-1.mga6            
+DEBUG util.py:484:    rpm.x86_64 1:4.13.0.2-3.1.mga6                  rpm-build.x86_64 1:4.13.0.2-3.1.mga6             
+DEBUG util.py:484:    rpm-mageia-setup.x86_64 2.20.1-1.mga6           rpm-mageia-setup-build.x86_64 2.20.1-1.mga6      
+DEBUG util.py:484:    shadow-utils.x86_64 2:4.4-1.1.mga6              systemd.x86_64 230-12.3.mga6                     
+DEBUG util.py:484:    systemd-units.x86_64 230-12.3.mga6             
+DEBUG util.py:484:  Complete!
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:124:  touching file: /home/stig/rpmbuild/mock/6/x86_64/.initialized
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '077f87204a6c4f95870da1cc7bce67c0', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/389-ds-base-1.3.5.17-1.2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 1073741824
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:484:  Updating / installing...
+DEBUG util.py:482:  BUILDSTDERR: 389-ds-base-1.3.5.17-1.2.mga7         warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: ####################################warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: user stig does not exist - using root
+DEBUG util.py:482:  BUILDSTDERR: warning: group stig does not exist - using root
+DEBUG util.py:484:  ####
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '28df5cd9c204434386f62234fc167406', '-D', '/home/stig/rpmbuild/mock/6/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/389-ds-base-1.3.5.17-1.2.mga7.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:318:  Unsharing. Flags: 1073741824
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:484:  389-ds-base-1.3.4.14_CVE-2017-2591.patch
+DEBUG util.py:484:  389-ds-base-1.3.5.17-CVE-2018-1054.patch
+DEBUG util.py:484:  389-ds-base-1.3.5.17.tar.bz2
+DEBUG util.py:484:  389-ds-base-1.3.5.17_CVE-2017-7551_brute-force.patch
+DEBUG util.py:484:  389-ds-base-1.3.5.19-CVE-2017-15134.patch
+DEBUG util.py:484:  389-ds-base-devel.README
+DEBUG util.py:484:  389-ds-base-git.sh
+DEBUG util.py:484:  389-ds-base.spec
+DEBUG util.py:484:  nunc-stans-0.1.8.tar.bz2
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:318:  Unsharing. Flags: 1073741824
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/proc
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/sys
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/shm
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:111:  ensuring that dir exists: /home/stig/rpmbuild/mock/6/x86_64/dev/pts
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG package_manager.py:111:  ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/389-ds-base-1.3.5.17-1.2.mga6.src.rpm']
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/home/stig/rpmbuild/mock/6/x86_64/', '--releasever', '6', '/home/stig/rpmbuild/mock/6/x86_64//builddir/build/SRPMS/389-ds-base-1.3.5.17-1.2.mga6.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C'} and shell False
+DEBUG util.py:484:  Last metadata expiration check: 0:00:00 ago on Wed 07 Mar 2018 10:52:39 AM CET.
+DEBUG util.py:482:  BUILDSTDERR: Package gcc-c++-5.5.0-1.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:482:  BUILDSTDERR: Package systemd-units-230-12.3.mga6.x86_64 is already installed, skipping.
+DEBUG util.py:484:  Dependencies resolved.
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:   Package                        Arch            Version                      Repository        Size
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:  Installing:
+DEBUG util.py:484:   icu                            x86_64          1:58.2-3.2.mga6              updates          164 k
+DEBUG util.py:484:   lib64bzip2-devel               x86_64          1.0.6-10.mga6                mageia           109 k
+DEBUG util.py:484:   lib64db5.3-devel               x86_64          5.3.28-10.1.mga6             updates          5.2 M
+DEBUG util.py:484:   lib64event-devel               x86_64          2.1.8-1.mga6                 mageia           291 k
+DEBUG util.py:484:   lib64icu-devel                 x86_64          1:58.2-3.2.mga6              updates          609 k
+DEBUG util.py:484:   lib64krb53-devel               x86_64          1.15.1-2.3.mga6              updates          428 k
+DEBUG util.py:484:   lib64ldap2.4_2-devel           x86_64          2.4.45-2.mga6                mageia           249 k
+DEBUG util.py:484:   lib64lm_sensors-devel          x86_64          1:3.4.0-3.mga6               mageia            16 k
+DEBUG util.py:484:   lib64net-snmp-devel            x86_64          5.7.3-4.mga6                 mageia           1.1 M
+DEBUG util.py:484:   lib64nspr-devel                x86_64          2:4.18-1.mga6                updates          100 k
+DEBUG util.py:484:   lib64nss-devel                 x86_64          2:3.28.6-1.3.mga6            updates          205 k
+DEBUG util.py:484:   lib64openssl-devel             x86_64          1.0.2n-1.mga6                updates          1.4 M
+DEBUG util.py:484:   lib64pam-devel                 x86_64          1.3.0-5.mga6                 mageia            77 k
+DEBUG util.py:484:   lib64pcre-devel                x86_64          8.41-1.mga6                  updates          440 k
+DEBUG util.py:484:   lib64sasl2-devel               x86_64          2.1.26-12.mga6               mageia            75 k
+DEBUG util.py:484:   lib64svrcore-devel             x86_64          4.1.2-1.mga6                 mageia            11 k
+DEBUG util.py:484:   lib64talloc-devel              x86_64          1:2.1.10-1.1.mga6            updates           28 k
+DEBUG util.py:484:   lib64tevent-devel              x86_64          1:0.9.34-1.1.mga6            updates           20 k
+DEBUG util.py:484:   lib64zlib-devel                x86_64          1.2.11-4.1.mga6              updates          219 k
+DEBUG util.py:484:   systemd-devel                  x86_64          230-12.3.mga6                updates           30 k
+DEBUG util.py:484:   tcp_wrappers                   x86_64          7.6-47.mga6                  mageia            89 k
+DEBUG util.py:484:  Installing dependencies:
+DEBUG util.py:484:   lib64aio1                      x86_64          0.3.110-4.mga6               mageia            11 k
+DEBUG util.py:484:   lib64audit-devel               x86_64          2.7.7-1.mga6                 mageia            60 k
+DEBUG util.py:484:   lib64cap-ng-devel              x86_64          0.7.8-1.mga6                 mageia            23 k
+DEBUG util.py:484:   lib64dbcxx5.3                  x86_64          5.3.28-10.1.mga6             updates          712 k
+DEBUG util.py:484:   lib64dbjava5.3                 x86_64          5.3.28-10.1.mga6             updates          1.3 M
+DEBUG util.py:484:   lib64dbsql5.3                  x86_64          5.3.28-10.1.mga6             updates          910 k
+DEBUG util.py:484:   lib64dbtcl5.3                  x86_64          5.3.28-10.1.mga6             updates          753 k
+DEBUG util.py:484:   lib64event6                    x86_64          2.1.8-1.mga6                 mageia           193 k
+DEBUG util.py:484:   lib64ext2fs-devel              x86_64          1.43.4-1.mga6                mageia           774 k
+DEBUG util.py:484:   lib64gcrypt-devel              x86_64          1.7.8-1.1.mga6               updates          206 k
+DEBUG util.py:484:   lib64gpg-error-devel           x86_64          1.24-1.mga6                  mageia            66 k
+DEBUG util.py:484:   lib64jemalloc2                 x86_64          4.5.0-4.mga6                 mageia           145 k
+DEBUG util.py:484:   lib64lm_sensors4               x86_64          1:3.4.0-3.mga6               mageia            30 k
+DEBUG util.py:484:   lib64lz4_1                     x86_64          1.7.5-1.mga6                 mageia            40 k
+DEBUG util.py:484:   lib64lzma-devel                x86_64          5.2.3-1.mga6                 mageia           383 k
+DEBUG util.py:484:   lib64lzo2_2                    x86_64          2.09-4.mga6                  mageia            59 k
+DEBUG util.py:484:   lib64mariadb-devel             x86_64          10.1.30-1.mga6               updates          788 k
+DEBUG util.py:484:   lib64mariadb18                 x86_64          10.1.30-1.mga6               updates          565 k
+DEBUG util.py:484:   lib64net-snmp30                x86_64          5.7.3-4.mga6                 mageia           875 k
+DEBUG util.py:484:   lib64svrcore0                  x86_64          4.1.2-1.mga6                 mageia            17 k
+DEBUG util.py:484:   lib64talloc2                   x86_64          1:2.1.10-1.1.mga6            updates           38 k
+DEBUG util.py:484:   lib64tcl-devel                 x86_64          1:8.6.5-1.mga6               mageia           197 k
+DEBUG util.py:484:   lib64tcl8.6                    x86_64          1:8.6.5-1.mga6               mageia           629 k
+DEBUG util.py:484:   lib64tevent0                   x86_64          1:0.9.34-1.1.mga6            updates           33 k
+DEBUG util.py:484:   lib64verto-devel               x86_64          0.2.6-6.mga6                 mageia            13 k
+DEBUG util.py:484:   lib64wrap-devel                x86_64          7.6-47.mga6                  mageia            69 k
+DEBUG util.py:484:   lib64wrap0                     x86_64          7.6-47.mga6                  mageia            38 k
+DEBUG util.py:484:   mariadb-client                 x86_64          10.1.30-1.mga6               updates          5.1 M
+DEBUG util.py:484:   mariadb-common                 x86_64          10.1.30-1.mga6               updates          2.7 M
+DEBUG util.py:484:   openssl                        x86_64          1.0.2n-1.mga6                updates          395 k
+DEBUG util.py:484:   perl-DBI                       x86_64          1.636.0-2.mga6               mageia           628 k
+DEBUG util.py:484:   perl-devel                     x86_64          2:5.22.3-3.1.mga6            updates          357 k
+DEBUG util.py:484:   tcl                            x86_64          1:8.6.5-1.mga6               mageia           1.5 M
+DEBUG util.py:484:  Transaction Summary
+DEBUG util.py:484:  ====================================================================================================
+DEBUG util.py:484:  Install  54 Packages
+DEBUG util.py:484:  Total size: 30 M
+DEBUG util.py:484:  Total download size: 16 M
+DEBUG util.py:484:  Installed size: 209 M
+DEBUG util.py:484:  Downloading Packages:
+DEBUG util.py:484:  [SKIPPED] lib64bzip2-devel-1.0.6-10.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] lib64sasl2-devel-2.1.26-12.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:484:  [SKIPPED] lib64ldap2.4_2-devel-2.4.45-2.mga6.x86_64.rpm: Already downloaded                        
+DEBUG util.py:484:  [SKIPPED] lib64pam-devel-1.3.0-5.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64icu-devel-58.2-3.2.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] lib64openssl-devel-1.0.2n-1.mga6.x86_64.rpm: Already downloaded                          
+DEBUG util.py:484:  [SKIPPED] lib64pcre-devel-8.41-1.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64zlib-devel-1.2.11-4.1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:484:  [SKIPPED] lib64wrap-devel-7.6-47.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64audit-devel-2.7.7-1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] lib64ext2fs-devel-1.43.4-1.mga6.x86_64.rpm: Already downloaded                           
+DEBUG util.py:484:  [SKIPPED] lib64verto-devel-0.2.6-6.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] lib64lzma-devel-5.2.3-1.mga6.x86_64.rpm: Already downloaded                              
+DEBUG util.py:484:  [SKIPPED] lib64wrap0-7.6-47.mga6.x86_64.rpm: Already downloaded                                    
+DEBUG util.py:484:  [SKIPPED] lib64cap-ng-devel-0.7.8-1.mga6.x86_64.rpm: Already downloaded                            
+DEBUG util.py:484:  [SKIPPED] lib64mariadb18-10.1.30-1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] lib64mariadb-devel-10.1.30-1.mga6.x86_64.rpm: Already downloaded                         
+DEBUG util.py:484:  [SKIPPED] mariadb-client-10.1.30-1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] mariadb-common-10.1.30-1.mga6.x86_64.rpm: Already downloaded                             
+DEBUG util.py:484:  [SKIPPED] lib64aio1-0.3.110-4.mga6.x86_64.rpm: Already downloaded                                  
+DEBUG util.py:484:  [SKIPPED] lib64jemalloc2-4.5.0-4.mga6.x86_64.rpm: Already downloaded                               
+DEBUG util.py:484:  [SKIPPED] lib64lz4_1-1.7.5-1.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:484:  [SKIPPED] lib64lzo2_2-2.09-4.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:484:  [SKIPPED] perl-DBI-1.636.0-2.mga6.x86_64.rpm: Already downloaded                                   
+DEBUG util.py:484:  (25/54): lib64lm_sensors-devel-3.4.0-3.mga6.x86_64.rpm               43 kB/s |  16 kB     00:00    
+DEBUG util.py:484:  (26/54): lib64event-devel-2.1.8-1.mga6.x86_64.rpm                   750 kB/s | 291 kB     00:00    
+DEBUG util.py:484:  (27/54): lib64svrcore-devel-4.1.2-1.mga6.x86_64.rpm                  82 kB/s |  11 kB     00:00    
+DEBUG util.py:484:  (28/54): lib64net-snmp-devel-5.7.3-4.mga6.x86_64.rpm                2.1 MB/s | 1.1 MB     00:00    
+DEBUG util.py:484:  (29/54): tcp_wrappers-7.6-47.mga6.x86_64.rpm                        530 kB/s |  89 kB     00:00    
+DEBUG util.py:484:  [MIRROR] lib64nspr-devel-4.18-1.mga6.x86_64.rpm: Curl error (28): Timeout was reached for ftp://ftp.snt.utwente.nl/pub/os/linux/mageia/distrib/6/x86_64/media/core/updates/lib64nspr-devel-4.18-1.mga6.x86_64.rpm []
+DEBUG util.py:484:  (30/54): lib64nspr-devel-4.18-1.mga6.x86_64.rpm                     155 kB/s | 100 kB     00:00    
+DEBUG util.py:484:  (31/54): lib64nss-devel-3.28.6-1.3.mga6.x86_64.rpm                  1.2 MB/s | 205 kB     00:00    
+DEBUG util.py:484:  (32/54): systemd-devel-230-12.3.mga6.x86_64.rpm                     165 kB/s |  30 kB     00:00    
+DEBUG util.py:484:  (33/54): icu-58.2-3.2.mga6.x86_64.rpm                               147 kB/s | 164 kB     00:01    
+DEBUG util.py:484:  (34/54): lib64talloc-devel-2.1.10-1.1.mga6.x86_64.rpm               282 kB/s |  28 kB     00:00    
+DEBUG util.py:484:  (35/54): lib64krb53-devel-1.15.1-2.3.mga6.x86_64.rpm                359 kB/s | 428 kB     00:01    
+DEBUG util.py:484:  (36/54): lib64lm_sensors4-3.4.0-3.mga6.x86_64.rpm                   301 kB/s |  30 kB     00:00    
+DEBUG util.py:484:  (37/54): lib64event6-2.1.8-1.mga6.x86_64.rpm                        964 kB/s | 193 kB     00:00    
+DEBUG util.py:484:  (38/54): lib64tevent-devel-0.9.34-1.1.mga6.x86_64.rpm                85 kB/s |  20 kB     00:00    
+DEBUG util.py:484:  (39/54): lib64svrcore0-4.1.2-1.mga6.x86_64.rpm                      204 kB/s |  17 kB     00:00    
+DEBUG util.py:484:  (40/54): lib64net-snmp30-5.7.3-4.mga6.x86_64.rpm                    4.0 MB/s | 875 kB     00:00    
+DEBUG util.py:484:  (41/54): lib64talloc2-2.1.10-1.1.mga6.x86_64.rpm                    146 kB/s |  38 kB     00:00    
+DEBUG util.py:484:  (42/54): lib64tevent0-0.9.34-1.1.mga6.x86_64.rpm                    175 kB/s |  33 kB     00:00    
+DEBUG util.py:484:  (43/54): lib64tcl-devel-8.6.5-1.mga6.x86_64.rpm                     1.1 MB/s | 197 kB     00:00    
+DEBUG util.py:484:  (44/54): lib64dbcxx5.3-5.3.28-10.1.mga6.x86_64.rpm                  2.3 MB/s | 712 kB     00:00    
+DEBUG util.py:484:  (45/54): lib64dbsql5.3-5.3.28-10.1.mga6.x86_64.rpm                  2.2 MB/s | 910 kB     00:00    
+DEBUG util.py:484:  (46/54): lib64dbtcl5.3-5.3.28-10.1.mga6.x86_64.rpm                  2.3 MB/s | 753 kB     00:00    
+DEBUG util.py:484:  (47/54): lib64tcl8.6-8.6.5-1.mga6.x86_64.rpm                        2.3 MB/s | 629 kB     00:00    
+DEBUG util.py:484:  (48/54): lib64dbjava5.3-5.3.28-10.1.mga6.x86_64.rpm                 1.0 MB/s | 1.3 MB     00:01    
+DEBUG util.py:484:  (49/54): lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64.rpm                727 kB/s | 206 kB     00:00    
+DEBUG util.py:484:  (50/54): tcl-8.6.5-1.mga6.x86_64.rpm                                2.6 MB/s | 1.5 MB     00:00    
+DEBUG util.py:484:  (51/54): lib64gpg-error-devel-1.24-1.mga6.x86_64.rpm                318 kB/s |  66 kB     00:00    
+DEBUG util.py:484:  (52/54): openssl-1.0.2n-1.mga6.x86_64.rpm                           1.2 MB/s | 395 kB     00:00    
+DEBUG util.py:484:  (53/54): perl-devel-5.22.3-3.1.mga6.x86_64.rpm                      661 kB/s | 357 kB     00:00    
+DEBUG util.py:484:  (54/54): lib64db5.3-devel-5.3.28-10.1.mga6.x86_64.rpm               1.6 MB/s | 5.2 MB     00:03    
+DEBUG util.py:484:  ----------------------------------------------------------------------------------------------------
+DEBUG util.py:484:  Total                                                               2.7 MB/s |  16 MB     00:05     
+DEBUG util.py:484:  Running transaction check
+DEBUG util.py:484:  Transaction check succeeded.
+DEBUG util.py:484:  Running transaction test
+DEBUG util.py:484:  Transaction test succeeded.
+DEBUG util.py:484:  Running transaction
+DEBUG util.py:484:    Preparing        :                                                                            1/1 
+DEBUG util.py:484:    Installing       : lib64mariadb18-10.1.30-1.mga6.x86_64                                      1/54 
+DEBUG util.py:484:    Installing       : lib64tcl8.6-1:8.6.5-1.mga6.x86_64                                         2/54 
+DEBUG util.py:484:    Installing       : lib64wrap0-7.6-47.mga6.x86_64                                             3/54 
+DEBUG util.py:484:    Installing       : lib64zlib-devel-1.2.11-4.1.mga6.x86_64                                    4/54 
+DEBUG util.py:484:    Installing       : lib64openssl-devel-1.0.2n-1.mga6.x86_64                                   5/54 
+DEBUG util.py:484:    Installing       : lib64wrap-devel-7.6-47.mga6.x86_64                                        6/54 
+DEBUG util.py:484:    Installing       : lib64talloc2-1:2.1.10-1.1.mga6.x86_64                                     7/54 
+DEBUG util.py:484:    Installing       : lib64lm_sensors4-1:3.4.0-3.mga6.x86_64                                    8/54 
+DEBUG util.py:484:    Installing       : lib64nspr-devel-2:4.18-1.mga6.x86_64                                      9/54 
+DEBUG util.py:484:    Installing       : lib64nss-devel-2:3.28.6-1.3.mga6.x86_64                                  10/54 
+DEBUG util.py:484:    Installing       : lib64lm_sensors-devel-1:3.4.0-3.mga6.x86_64                              11/54 
+DEBUG util.py:484:    Installing       : lib64talloc-devel-1:2.1.10-1.1.mga6.x86_64                               12/54 
+DEBUG util.py:484:    Installing       : lib64tevent0-1:0.9.34-1.1.mga6.x86_64                                    13/54 
+DEBUG util.py:484:    Installing       : lib64dbtcl5.3-5.3.28-10.1.mga6.x86_64                                    14/54 
+DEBUG util.py:484:    Installing       : tcl-1:8.6.5-1.mga6.x86_64                                                15/54 
+DEBUG util.py:484:    Installing       : lib64tcl-devel-1:8.6.5-1.mga6.x86_64                                     16/54 
+DEBUG util.py:484:    Installing       : perl-DBI-1.636.0-2.mga6.x86_64                                           17/54 
+DEBUG util.py:484:    Installing       : lib64lzo2_2-2.09-4.mga6.x86_64                                           18/54 
+DEBUG util.py:484:    Installing       : lib64lz4_1-1.7.5-1.mga6.x86_64                                           19/54 
+DEBUG util.py:484:    Installing       : lib64jemalloc2-4.5.0-4.mga6.x86_64                                       20/54 
+DEBUG util.py:484:    Installing       : lib64aio1-0.3.110-4.mga6.x86_64                                          21/54 
+DEBUG util.py:484:    Installing       : mariadb-client-10.1.30-1.mga6.x86_64                                     22/54 
+DEBUG util.py:484:    Running scriptlet: mariadb-common-10.1.30-1.mga6.x86_64                                     23/54 
+DEBUG util.py:484:    Installing       : mariadb-common-10.1.30-1.mga6.x86_64                                     23/54 
+DEBUG util.py:484:    Installing       : lib64mariadb-devel-10.1.30-1.mga6.x86_64                                 24/54 
+DEBUG util.py:484:    Installing       : perl-devel-2:5.22.3-3.1.mga6.x86_64                                      25/54 
+DEBUG util.py:484:    Installing       : openssl-1.0.2n-1.mga6.x86_64                                             26/54 
+DEBUG util.py:484:    Installing       : lib64net-snmp30-5.7.3-4.mga6.x86_64                                      27/54 
+DEBUG util.py:484:    Installing       : lib64gpg-error-devel-1.24-1.mga6.x86_64                                  28/54 
+DEBUG util.py:484:    Installing       : lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                  29/54 
+DEBUG util.py:484:    Running scriptlet: lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                  29/54 
+DEBUG util.py:484:    Installing       : lib64dbsql5.3-5.3.28-10.1.mga6.x86_64                                    30/54 
+DEBUG util.py:484:    Installing       : lib64dbjava5.3-5.3.28-10.1.mga6.x86_64                                   31/54 
+DEBUG util.py:484:    Running scriptlet: lib64dbjava5.3-5.3.28-10.1.mga6.x86_64                                   31/54 
+DEBUG util.py:484:    Installing       : lib64dbcxx5.3-5.3.28-10.1.mga6.x86_64                                    32/54 
+DEBUG util.py:484:    Installing       : lib64cap-ng-devel-0.7.8-1.mga6.x86_64                                    33/54 
+DEBUG util.py:484:    Installing       : lib64audit-devel-2.7.7-1.mga6.x86_64                                     34/54 
+DEBUG util.py:484:    Installing       : lib64pam-devel-1.3.0-5.mga6.x86_64                                       35/54 
+DEBUG util.py:484:    Installing       : lib64sasl2-devel-2.1.26-12.mga6.x86_64                                   36/54 
+DEBUG util.py:484:    Installing       : lib64lzma-devel-5.2.3-1.mga6.x86_64                                      37/54 
+DEBUG util.py:484:    Installing       : lib64verto-devel-0.2.6-6.mga6.x86_64                                     38/54 
+DEBUG util.py:484:    Installing       : lib64ext2fs-devel-1.43.4-1.mga6.x86_64                                   39/54 
+DEBUG util.py:484:    Running scriptlet: lib64ext2fs-devel-1.43.4-1.mga6.x86_64                                   39/54 
+DEBUG util.py:484:    Installing       : lib64svrcore0-4.1.2-1.mga6.x86_64                                        40/54 
+DEBUG util.py:484:    Installing       : lib64event6-2.1.8-1.mga6.x86_64                                          41/54 
+DEBUG util.py:484:    Installing       : lib64event-devel-2.1.8-1.mga6.x86_64                                     42/54 
+DEBUG util.py:484:    Installing       : lib64svrcore-devel-4.1.2-1.mga6.x86_64                                   43/54 
+DEBUG util.py:484:    Installing       : lib64krb53-devel-1.15.1-2.3.mga6.x86_64                                  44/54 
+DEBUG util.py:484:    Installing       : systemd-devel-230-12.3.mga6.x86_64                                       45/54 
+DEBUG util.py:484:    Installing       : lib64ldap2.4_2-devel-2.4.45-2.mga6.x86_64                                46/54 
+DEBUG util.py:484:    Installing       : lib64db5.3-devel-5.3.28-10.1.mga6.x86_64                                 47/54 
+DEBUG util.py:484:    Installing       : lib64net-snmp-devel-5.7.3-4.mga6.x86_64                                  48/54 
+DEBUG util.py:484:    Installing       : lib64tevent-devel-1:0.9.34-1.1.mga6.x86_64                               49/54 
+DEBUG util.py:484:    Installing       : lib64pcre-devel-8.41-1.mga6.x86_64                                       50/54 
+DEBUG util.py:484:    Installing       : lib64icu-devel-1:58.2-3.2.mga6.x86_64                                    51/54 
+DEBUG util.py:484:    Installing       : icu-1:58.2-3.2.mga6.x86_64                                               52/54 
+DEBUG util.py:484:    Installing       : tcp_wrappers-7.6-47.mga6.x86_64                                          53/54 
+DEBUG util.py:484:    Installing       : lib64bzip2-devel-1.0.6-10.mga6.x86_64                                    54/54 
+DEBUG util.py:484:    Running scriptlet: lib64bzip2-devel-1.0.6-10.mga6.x86_64                                    54/54 
+DEBUG util.py:484:    Verifying        : lib64bzip2-devel-1.0.6-10.mga6.x86_64                                     1/54 
+DEBUG util.py:484:    Verifying        : lib64event-devel-2.1.8-1.mga6.x86_64                                      2/54 
+DEBUG util.py:484:    Verifying        : lib64sasl2-devel-2.1.26-12.mga6.x86_64                                    3/54 
+DEBUG util.py:484:    Verifying        : lib64lm_sensors-devel-1:3.4.0-3.mga6.x86_64                               4/54 
+DEBUG util.py:484:    Verifying        : lib64net-snmp-devel-5.7.3-4.mga6.x86_64                                   5/54 
+DEBUG util.py:484:    Verifying        : lib64ldap2.4_2-devel-2.4.45-2.mga6.x86_64                                 6/54 
+DEBUG util.py:484:    Verifying        : lib64pam-devel-1.3.0-5.mga6.x86_64                                        7/54 
+DEBUG util.py:484:    Verifying        : lib64svrcore-devel-4.1.2-1.mga6.x86_64                                    8/54 
+DEBUG util.py:484:    Verifying        : tcp_wrappers-7.6-47.mga6.x86_64                                           9/54 
+DEBUG util.py:484:    Verifying        : icu-1:58.2-3.2.mga6.x86_64                                               10/54 
+DEBUG util.py:484:    Verifying        : lib64krb53-devel-1.15.1-2.3.mga6.x86_64                                  11/54 
+DEBUG util.py:484:    Verifying        : lib64icu-devel-1:58.2-3.2.mga6.x86_64                                    12/54 
+DEBUG util.py:484:    Verifying        : lib64nspr-devel-2:4.18-1.mga6.x86_64                                     13/54 
+DEBUG util.py:484:    Verifying        : lib64nss-devel-2:3.28.6-1.3.mga6.x86_64                                  14/54 
+DEBUG util.py:484:    Verifying        : lib64openssl-devel-1.0.2n-1.mga6.x86_64                                  15/54 
+DEBUG util.py:484:    Verifying        : lib64pcre-devel-8.41-1.mga6.x86_64                                       16/54 
+DEBUG util.py:484:    Verifying        : systemd-devel-230-12.3.mga6.x86_64                                       17/54 
+DEBUG util.py:484:    Verifying        : lib64talloc-devel-1:2.1.10-1.1.mga6.x86_64                               18/54 
+DEBUG util.py:484:    Verifying        : lib64tevent-devel-1:0.9.34-1.1.mga6.x86_64                               19/54 
+DEBUG util.py:484:    Verifying        : lib64zlib-devel-1.2.11-4.1.mga6.x86_64                                   20/54 
+DEBUG util.py:484:    Verifying        : lib64event6-2.1.8-1.mga6.x86_64                                          21/54 
+DEBUG util.py:484:    Verifying        : lib64lm_sensors4-1:3.4.0-3.mga6.x86_64                                   22/54 
+DEBUG util.py:484:    Verifying        : lib64net-snmp30-5.7.3-4.mga6.x86_64                                      23/54 
+DEBUG util.py:484:    Verifying        : lib64wrap-devel-7.6-47.mga6.x86_64                                       24/54 
+DEBUG util.py:484:    Verifying        : lib64audit-devel-2.7.7-1.mga6.x86_64                                     25/54 
+DEBUG util.py:484:    Verifying        : lib64svrcore0-4.1.2-1.mga6.x86_64                                        26/54 
+DEBUG util.py:484:    Verifying        : lib64ext2fs-devel-1.43.4-1.mga6.x86_64                                   27/54 
+DEBUG util.py:484:    Verifying        : lib64verto-devel-0.2.6-6.mga6.x86_64                                     28/54 
+DEBUG util.py:484:    Verifying        : lib64lzma-devel-5.2.3-1.mga6.x86_64                                      29/54 
+DEBUG util.py:484:    Verifying        : lib64talloc2-1:2.1.10-1.1.mga6.x86_64                                    30/54 
+DEBUG util.py:484:    Verifying        : lib64tevent0-1:0.9.34-1.1.mga6.x86_64                                    31/54 
+DEBUG util.py:484:    Verifying        : lib64wrap0-7.6-47.mga6.x86_64                                            32/54 
+DEBUG util.py:484:    Verifying        : lib64cap-ng-devel-0.7.8-1.mga6.x86_64                                    33/54 
+DEBUG util.py:484:    Verifying        : lib64db5.3-devel-5.3.28-10.1.mga6.x86_64                                 34/54 
+DEBUG util.py:484:    Verifying        : lib64tcl-devel-1:8.6.5-1.mga6.x86_64                                     35/54 
+DEBUG util.py:484:    Verifying        : lib64dbcxx5.3-5.3.28-10.1.mga6.x86_64                                    36/54 
+DEBUG util.py:484:    Verifying        : lib64dbjava5.3-5.3.28-10.1.mga6.x86_64                                   37/54 
+DEBUG util.py:484:    Verifying        : lib64dbsql5.3-5.3.28-10.1.mga6.x86_64                                    38/54 
+DEBUG util.py:484:    Verifying        : lib64dbtcl5.3-5.3.28-10.1.mga6.x86_64                                    39/54 
+DEBUG util.py:484:    Verifying        : lib64tcl8.6-1:8.6.5-1.mga6.x86_64                                        40/54 
+DEBUG util.py:484:    Verifying        : tcl-1:8.6.5-1.mga6.x86_64                                                41/54 
+DEBUG util.py:484:    Verifying        : lib64gcrypt-devel-1.7.8-1.1.mga6.x86_64                                  42/54 
+DEBUG util.py:484:    Verifying        : lib64gpg-error-devel-1.24-1.mga6.x86_64                                  43/54 
+DEBUG util.py:484:    Verifying        : openssl-1.0.2n-1.mga6.x86_64                                             44/54 
+DEBUG util.py:484:    Verifying        : perl-devel-2:5.22.3-3.1.mga6.x86_64                                      45/54 
+DEBUG util.py:484:    Verifying        : lib64mariadb18-10.1.30-1.mga6.x86_64                                     46/54 
+DEBUG util.py:484:    Verifying        : lib64mariadb-devel-10.1.30-1.mga6.x86_64                                 47/54 
+DEBUG util.py:484:    Verifying        : mariadb-client-10.1.30-1.mga6.x86_64                                     48/54 
+DEBUG util.py:484:    Verifying        : mariadb-common-10.1.30-1.mga6.x86_64                                     49/54 
+DEBUG util.py:484:    Verifying        : lib64aio1-0.3.110-4.mga6.x86_64                                          50/54 
+DEBUG util.py:484:    Verifying        : lib64jemalloc2-4.5.0-4.mga6.x86_64                                       51/54 
+DEBUG util.py:484:    Verifying        : lib64lz4_1-1.7.5-1.mga6.x86_64                                           52/54 
+DEBUG util.py:484:    Verifying        : lib64lzo2_2-2.09-4.mga6.x86_64                                           53/54 
+DEBUG util.py:484:    Verifying        : perl-DBI-1.636.0-2.mga6.x86_64                                           54/54 
+DEBUG util.py:484:  Installed:
+DEBUG util.py:484:    icu.x86_64 1:58.2-3.2.mga6                       lib64bzip2-devel.x86_64 1.0.6-10.mga6            
+DEBUG util.py:484:    lib64db5.3-devel.x86_64 5.3.28-10.1.mga6         lib64event-devel.x86_64 2.1.8-1.mga6             
+DEBUG util.py:484:    lib64icu-devel.x86_64 1:58.2-3.2.mga6            lib64krb53-devel.x86_64 1.15.1-2.3.mga6          
+DEBUG util.py:484:    lib64ldap2.4_2-devel.x86_64 2.4.45-2.mga6        lib64lm_sensors-devel.x86_64 1:3.4.0-3.mga6      
+DEBUG util.py:484:    lib64net-snmp-devel.x86_64 5.7.3-4.mga6          lib64nspr-devel.x86_64 2:4.18-1.mga6             
+DEBUG util.py:484:    lib64nss-devel.x86_64 2:3.28.6-1.3.mga6          lib64openssl-devel.x86_64 1.0.2n-1.mga6          
+DEBUG util.py:484:    lib64pam-devel.x86_64 1.3.0-5.mga6               lib64pcre-devel.x86_64 8.41-1.mga6               
+DEBUG util.py:484:    lib64sasl2-devel.x86_64 2.1.26-12.mga6           lib64svrcore-devel.x86_64 4.1.2-1.mga6           
+DEBUG util.py:484:    lib64talloc-devel.x86_64 1:2.1.10-1.1.mga6       lib64tevent-devel.x86_64 1:0.9.34-1.1.mga6       
+DEBUG util.py:484:    lib64zlib-devel.x86_64 1.2.11-4.1.mga6           systemd-devel.x86_64 230-12.3.mga6               
+DEBUG util.py:484:    tcp_wrappers.x86_64 7.6-47.mga6                  lib64aio1.x86_64 0.3.110-4.mga6                  
+DEBUG util.py:484:    lib64audit-devel.x86_64 2.7.7-1.mga6             lib64cap-ng-devel.x86_64 0.7.8-1.mga6            
+DEBUG util.py:484:    lib64dbcxx5.3.x86_64 5.3.28-10.1.mga6            lib64dbjava5.3.x86_64 5.3.28-10.1.mga6           
+DEBUG util.py:484:    lib64dbsql5.3.x86_64 5.3.28-10.1.mga6            lib64dbtcl5.3.x86_64 5.3.28-10.1.mga6            
+DEBUG util.py:484:    lib64event6.x86_64 2.1.8-1.mga6                  lib64ext2fs-devel.x86_64 1.43.4-1.mga6           
+DEBUG util.py:484:    lib64gcrypt-devel.x86_64 1.7.8-1.1.mga6          lib64gpg-error-devel.x86_64 1.24-1.mga6          
+DEBUG util.py:484:    lib64jemalloc2.x86_64 4.5.0-4.mga6               lib64lm_sensors4.x86_64 1:3.4.0-3.mga6           
+DEBUG util.py:484:    lib64lz4_1.x86_64 1.7.5-1.mga6                   lib64lzma-devel.x86_64 5.2.3-1.mga6              
+DEBUG util.py:484:    lib64lzo2_2.x86_64 2.09-4.mga6                   lib64mariadb-devel.x86_64 10.1.30-1.mga6         
+DEBUG util.py:484:    lib64mariadb18.x86_64 10.1.30-1.mga6             lib64net-snmp30.x86_64 5.7.3-4.mga6              
+DEBUG util.py:484:    lib64svrcore0.x86_64 4.1.2-1.mga6                lib64talloc2.x86_64 1:2.1.10-1.1.mga6            
+DEBUG util.py:484:    lib64tcl-devel.x86_64 1:8.6.5-1.mga6             lib64tcl8.6.x86_64 1:8.6.5-1.mga6                
+DEBUG util.py:484:    lib64tevent0.x86_64 1:0.9.34-1.1.mga6            lib64verto-devel.x86_64 0.2.6-6.mga6             
+DEBUG util.py:484:    lib64wrap-devel.x86_64 7.6-47.mga6               lib64wrap0.x86_64 7.6-47.mga6                    
+DEBUG util.py:484:    mariadb-client.x86_64 10.1.30-1.mga6             mariadb-common.x86_64 10.1.30-1.mga6             
+DEBUG util.py:484:    openssl.x86_64 1.0.2n-1.mga6                     perl-DBI.x86_64 1.636.0-2.mga6                   
+DEBUG util.py:484:    perl-devel.x86_64 2:5.22.3-3.1.mga6              tcl.x86_64 1:8.6.5-1.mga6                        
+DEBUG util.py:484:  Complete!
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/6/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: rpm -qa --root '/home/stig/rpmbuild/mock/6/x86_64' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > mock/installed_pkgs.log with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell True
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:318:  Unsharing. Flags: 1073741824
+DEBUG util.py:318:  Unsharing. Flags: 134217728
+DEBUG backend.py:505:  Copying packages to result dir
+DEBUG util.py:223:  kill orphans
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['/bin/umount', '-n', '/home/stig/rpmbuild/mock/6/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:624:  Child return code was: 0
+DEBUG util.py:642:  child environment: None
+DEBUG util.py:569:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:482:  BUILDSTDERR: ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:482:  BUILDSTDERR: ERROR: can't access '/var/lib/mock'
+DEBUG util.py:624:  Child return code was: 1
+DEBUG util.py:1354:  Please ignore the error above above about btrfs.
