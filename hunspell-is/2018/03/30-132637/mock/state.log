@@ -1,0 +1,14 @@
+2018-03-30 13:19:41,600 - Mock Version: 1.4.9
+2018-03-30 13:19:41,692 - Start: dnf install
+2018-03-30 13:20:51,557 - Finish: dnf install
+2018-03-30 13:21:21,719 - Start: creating root cache
+2018-03-30 13:21:26,733 - Finish: creating root cache
+2018-03-30 13:21:26,736 - Finish: chroot init
+2018-03-30 13:21:26,798 - Start: build phase for hunspell-is-0.20160314.1-11.mga7.src.rpm
+2018-03-30 13:21:26,801 - Start: build setup for hunspell-is-0.20160314.1-11.mga7.src.rpm
+2018-03-30 13:21:30,880 - Finish: build setup for hunspell-is-0.20160314.1-11.mga7.src.rpm
+2018-03-30 13:21:30,880 - Start: rpmbuild hunspell-is-0.20160314.1-11.mga7.src.rpm
+2018-03-30 13:21:30,882 - Start: Outputting list of installed packages
+2018-03-30 13:21:30,960 - Finish: Outputting list of installed packages
+2018-03-30 13:26:28,447 - Start: clean chroot
+2018-03-30 13:26:36,890 - Finish: clean chroot

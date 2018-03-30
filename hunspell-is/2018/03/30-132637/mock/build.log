@@ -1,0 +1,2724 @@
+Mock Version: 1.4.9
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/hunspell-is.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fc8a4810b70>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '2dd51ece6a57433cb5f3f57c483d5dda', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/hunspell-is.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+BUILDSTDERR: /etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/hunspell-is-0.20160314.1-11.mga7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/hunspell-is.spec'], chrootPath='/home/stig/rpmbuild/mock/cauldron/x86_64'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fc8a4810b70>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '6e0161d28b314a32b05702cdc31a3e71', '-D', '/home/stig/rpmbuild/mock/cauldron/x86_64', '-a', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/hunspell-is.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8'} and shell False
+BUILDSTDERR: /etc/profile.d/lang.sh: line 28: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 29: warning: setlocale: LC_COLLATE: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 32: warning: setlocale: LC_MESSAGES: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 35: warning: setlocale: LC_NUMERIC: cannot change locale (en_US.UTF-8): No such file or directory
+BUILDSTDERR: /etc/profile.d/lang.sh: line 38: warning: setlocale: LC_TIME: cannot change locale (en_US.UTF-8): No such file or directory
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.2nBYeA
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /builddir/build/BUILD
++ rm -rf hunspell-is-master
++ /usr/bin/tar -xof -
++ /usr/bin/gzip -dc /builddir/build/SOURCES/hunspell-is-0.20160314.1.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd hunspell-is-master
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /builddir/build/SOURCES/hunspell-is-0.20160314.1-mythes-path.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ cp /builddir/build/SOURCES/iswiktionary-latest-pages-articles.xml.bz2 .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.k0pyZM
++ umask 022
++ cd /builddir/build/BUILD
++ cd hunspell-is-master
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/bin/make
+bunzip2 -kf iswiktionary-latest-pages-articles.xml.bz2
+touch iswiktionary-latest-pages-articles.xml
+tr -d "\r\n" < iswiktionary-latest-pages-articles.xml | grep -o "{{[^.|{}]*|[^-.}][^ }]*[}|][^}]*" | sed "s/mynd=.*//g" | sed "s/lo.nf.et.ó=.*//g" | sort | uniq > iswiktionary-latest-pages-articles.xml.texts
+./makedict.sh is
+Extracting valid words from the wiktionary dump...
+parsing xml
+done parsing xml, found 25123 pages
+Collecting all rules.
+BUILDSTDERR: Traceback (most recent call last):
+BUILDSTDERR:   File "./makedict.py", line 64, in <module>
+BUILDSTDERR:     print("Can not parse template for inflection " + tag + " of rule " + template.get("\xf6nnur or\xf0").value.strip() + ". Skipping.")
+BUILDSTDERR: UnicodeEncodeError: 'ascii' codec can't encode character '\xf3' in position 40: ordinal not in range(128)
+   Extracting rule Fallbeyging karlmannsnafn 01
+   Extracting rule Fallbeyging karlmannsnafn 01 n
+   Extracting rule Fallbeyging karlmannsnafn 01a
+   Extracting rule Fallbeyging karlmannsnafn 04
+BUILDSTDERR: Traceback (most recent call last):
+BUILDSTDERR:   File "./makealias.py", line 10, in <module>
+BUILDSTDERR:     indic = open(inbasename+".dic", "r").read().splitlines()
+BUILDSTDERR:   File "/usr/lib64/python3.6/encodings/ascii.py", line 26, in decode
+BUILDSTDERR:     return codecs.ascii_decode(input, self.errors)[0]
+BUILDSTDERR: UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 14: ordinal not in range(128)
+Finding extra words in the wordlist...
+Merging the wordlist and the wiktionary words...
+BUILDSTDERR: sort: cannot read: dicts/is.dic: No such file or directory
+BUILDSTDERR: ./makedict.sh: line 85: dicts/is.dic: No such file or directory
+Cannot open input file
+?
+Invalid address
+?
+Invalid address
+?
+Invalid address
+?
+No current filename
+Done building dictionary, see dicts/is.dic and dicts/is.aff.
+./makedict.sh is
+Extracting valid words from the wiktionary dump...
+parsing xml
+done parsing xml, found 25123 pages
+Collecting all rules.
+BUILDSTDERR: Traceback (most recent call last):
+BUILDSTDERR:   File "./makedict.py", line 64, in <module>
+BUILDSTDERR:     print("Can not parse template for inflection " + tag + " of rule " + template.get("\xf6nnur or\xf0").value.strip() + ". Skipping.")
+BUILDSTDERR: UnicodeEncodeError: 'ascii' codec can't encode character '\xf3' in position 40: ordinal not in range(128)
+   Extracting rule Fallbeyging karlmannsnafn 01
+   Extracting rule Fallbeyging karlmannsnafn 01 n
+   Extracting rule Fallbeyging karlmannsnafn 01a
+   Extracting rule Fallbeyging karlmannsnafn 04
+BUILDSTDERR: Traceback (most recent call last):
+BUILDSTDERR:   File "./makealias.py", line 10, in <module>
+BUILDSTDERR:     indic = open(inbasename+".dic", "r").read().splitlines()
+BUILDSTDERR:   File "/usr/lib64/python3.6/encodings/ascii.py", line 26, in decode
+BUILDSTDERR:     return codecs.ascii_decode(input, self.errors)[0]
+BUILDSTDERR: UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 14: ordinal not in range(128)
+Finding extra words in the wordlist...
+Merging the wordlist and the wiktionary words...
+BUILDSTDERR: sort: cannot read: dicts/is.dic: No such file or directory
+BUILDSTDERR: ./makedict.sh: line 85: dicts/is.dic: No such file or directory
+Cannot open input file
+?
+Invalid address
+?
+Invalid address
+?
+Invalid address
+?
+No current filename
+Done building dictionary, see dicts/is.dic and dicts/is.aff.
+LC_ALL=is_IS.utf8 gawk -F " " -f makethes.awk <iswiktionary-latest-pages-articles.xml | LC_ALL=is_IS.utf8 ./sortthes.py > dicts/th_is.dat
+LC_ALL=is_IS.utf8 /usr/bin/th_gen_idx.pl -o dicts/th_is.idx < dicts/th_is.dat
+BUILDSTDERR: perl: warning: Setting locale failed.
+BUILDSTDERR: perl: warning: Please check that your locale settings:
+BUILDSTDERR: 	LANGUAGE = (unset),
+BUILDSTDERR: 	LC_ALL = "is_IS.utf8",
+BUILDSTDERR: 	LC_SOURCED = "1",
+BUILDSTDERR: 	LANG = "C"
+BUILDSTDERR:     are supported and installed on your system.
+BUILDSTDERR: perl: warning: Falling back to the standard locale ("C").
+UTF-8
+2570
+Afríka|6
+Ameríka|161
+Antarktíka|258
+Asía|337
+Atlantshaf|509
+Babýlon|586
+Bandaríkin|623
+Bereníkuhaddur|675
+Bernikkuhaddur|709
+Bogamaðurinn|743
+Bretlandseyjar|773
+Brussel|913
+DKS|936
+Englandshaf|947
+Evrasía|975
+Eyjaálfa|1010
+Eyrbekkingur|1046
+Frón|1103
+Hafnfirðingur|1137
+Heljarhrun|1189
+Hjaltland|1256
+Hjaltlandseyjar|1227
+Kuiperbelti|1285
+Kópavogur|1318
+Kórea|1346
+Lithá|1430
+Litháen|1411
+Mars|1449
+Merkúr|1478
+Merkúríus|1501
+Mesópótamía|1524
+Miklihvellur|1568
+Mið-Afríka|1606
+Máninn|1957
+Mónakó|1984
+Nepal|2019
+Norður-Afríka|2055
+Norður-Ameríka|2121
+Norður-Atlantshaf|2194
+Norður-Kórea|2269
+Norðurheimskaut|2306
+Norðursjór|2354
+Norðurstjarnan|2382
+Nýja Gínea|2414
+Oortský|2494
+Papúa-Nýja Gínea|2523
+Pólstjarnan|2571
+R.|2603
+RKS|2624
+Risinn|2635
+Rómanska Ameríka|2669
+Sextantinn|2712
+Sextungurinn|2739
+Skandinavía|2766
+Suður-Afríka|2795
+Suður-Ameríka|2861
+Suður-Atlantshaf|2908
+Suður-Kórea|2983
+Suðurheimskaut|3019
+Suðurskautsland|3084
+Suðurskautsálfa|3179
+Svaðilför|3258
+Tunglið|3296
+Tékkland|3316
+Veiðimaðurinn|3338
+Vesturheimur|3372
+Vesturálfa|3400
+Wikiorðabók|3428
+adrenalín|3532
+af því að|3561
+affosfórun|3587
+afi|3623
+aflangur|3646
+afmæli|3692
+afmælisdagur|3667
+aforismi|3717
+afsprengi|3739
+aftur|3932
+afturelding|3763
+afturfótur|3822
+afturhólf|3879
+agnageislun|3957
+agnúi|3997
+agúrka|4065
+akasía|4083
+akasíutré|4106
+akkadíska|4129
+akur|4197
+akurgæs|4168
+alaskalúpína|4254
+aldin|4311
+aldrei|4375
+alfræðibók|4426
+alfræðiorðabók|4475
+alfræðirit|4524
+algleymi|4573
+alibýfluga|4598
+alidýr|4634
+alkalímálmur|4694
+allir kettir eru gráir í myrkri|4838
+alls staðar|4909
+allsnakinn|4964
+allsstaðar|4989
+allt|5156
+alltaf|5043
+alltjent|5098
+alltént|5193
+allur|5251
+allverulegur|5342
+almenningur|5381
+alnæmi|5421
+alskegg|5439
+alstaðar|5468
+alur|5537
+alæta|5551
+amma|5603
+andefni|5626
+andeind|5675
+andheiti|5702
+andlangur|5734
+andlit|5769
+andljóseind|5804
+andrúmsloft|5901
+andrúmsloft jarðar|5841
+apabrauðstré|5991
+apaköttur|6047
+apalhraun|6073
+api|6104
+appelsínugulur|6132
+appelsínusafi|6318
+aprílgabb|6377
+apótek|6402
+arabískur|6424
+armbandsúr|6447
+asi|6478
+askorbínsýra|6499
+askur|6529
+asma|6556
+athugull|6574
+atkvæði|6608
+atlassedrus|6630
+atómkjarni|6712
+auga|6751
+augnablik|6810
+augnfró|6835
+augnhlaup|6863
+augntönn|6899
+auk heldur|6930
+auk þess|7010
+auk þess heldur|6965
+aukasól|7071
+aukin heldur|7132
+aukinheldur|7177
+austræni kakkalakki|7222
+auðn|7317
+auðnalóa|7269
+auðvirðilegur|7355
+axlaband|7388
+að morgni|7419
+að sjálfsögðu|7445
+aðalbláber|7488
+aðalminni|7524
+aðalsögn|7746
+aðalvopn|7784
+aðdáunarverður|7814
+aðfall|7849
+aðfangadagskvöld|7926
+aðfangadagskvöld jóla|7879
+aðfangadagur|7973
+aðför|8043
+baka|8068
+bakki|8122
+balkanspæta|8155
+ballett|8190
+banani|8222
+bani|8243
+bara|8267
+barkspæta|8300
+barnalæknir|8333
+barnamosi|8369
+barnamál|8411
+barnatönn|8446
+barningur|8474
+barnungur|8495
+barrspæta|8552
+barrtré|8585
+basi|8617
+batterí|8642
+baun|8675
+baðmull|8726
+beinkímfruma|8746
+beitilyng|8786
+belgbólga|8810
+belgjastör|8870
+belgmein|8903
+ber er hver að baki|9021
+ber er hver að baki, nema sér bróður eigi|8951
+bergkvika|9090
+berkja|9114
+berkjubólga|9142
+berkjukvef|9191
+berklar|9240
+beygla|9275
+beyki|9385
+beykiskógur|9330
+beykitré|9366
+bifreið|9478
+binda|9496
+birgðir|9526
+birki|9576
+birkiskóf|9544
+birta|9602
+bismút|9629
+bitmý|9648
+bjargbelti|9679
+bjarkarskógur|9737
+bjartur|9775
+bjór|9804
+björg|10205
+björgun|9993
+björgunarbelti|9887
+björgunarhringur|9945
+björk|10222
+björn|10266
+bjúgstör|10283
+blautur|10315
+blað|10454
+blaðsellerí|10401
+bleikja|10560
+blesgæs|10589
+bleshæna|10618
+blesönd|10651
+blinda|10684
+blindsker|10705
+blundur|10724
+blysbjalla|10745
+bláber|10803
+blár|10840
+blátoppastör|10922
+bláæð|10958
+bláþyrill|10990
+blæðing|11048
+blíður|11098
+blómi|11140
+blóð|11978
+blóðbeyki|11156
+blóðflaga|11194
+blóðfruma|11251
+blóðgjöf|11277
+blóðheitur|11334
+blóðinngjöf|11374
+blóðkorn|11415
+blóðleysi|11572
+blóðmaur|11648
+blóðsermi|11694
+blóðsjúkdómafræði|11771
+blóðsuga|11843
+blóðvatn|11866
+blóðvökvi|11943
+blöðruhálskirtill|12010
+blöðruplástur|12055
+blýantur|12096
+bogmaður|12225
+bolludagur|12257
+borgari|12287
+borða morgunmat|12416
+borða morgunverð|12455
+borðsalt|12494
+botnlangi|12518
+brauð|12551
+breiddargráða|12595
+brenninetla|12640
+brennisóley|12676
+brennivín|12699
+breyta|12727
+breyttur|12754
+bringubein|12788
+bris|12814
+brjóstmylkingur|12834
+broddafura|12869
+broddastör|12893
+broddatanni|12926
+broddfura|12974
+broddgöltur|12998
+bros|13067
+brosandi|13035
+brot|13101
+brynna músum|13131
+brárgjörð|13161
+bræðingur|13194
+bræðsluslys|13214
+bróðir|13257
+brönugras|13339
+brú|13604
+brúnn|13418
+brúða|13690
+brúðarsveipur|13641
+brúðkaup|13708
+bugaristill|13745
+burstajafni|13780
+bursti|13818
+burtfararpróf|13852
+buxur|13880
+bylting|13912
+byrkningur|13947
+byrðingur|14021
+byssa|14055
+byssukúla|14102
+bæ|14159
+bæki|14122
+bílaleigubíll|14181
+bílbelti|14219
+bíll|14258
+bíó|14310
+bíómynd|14276
+bók|14354
+bókstafur|14333
+bólgueyðandi|14535
+bólstraberg|14598
+bólstrari|14632
+bóndi|14666
+bótúlíneitrun|14698
+búddismi|14733
+búköttur|14794
+búpeningur|14841
+búrhvalur|14883
+bý|15121
+býfluga|14939
+býlingur|14981
+býsvelgur|15099
+býæta|15137
+d.|15159
+dagbók|15179
+dagdraumur|15207
+dagdreymi|15231
+dagrenning|15255
+dagur|15359
+dagvakt|15385
+dalur|15413
+dapur|15439
+dausgörn|15492
+dauðarefsing|15571
+dauðatilfelli|15602
+dauði|15641
+dauðlegur|15728
+dauður|15786
+deiling|15891
+demókrati|15918
+deplasilfurfiskur|15956
+deyfing|16010
+deyja|16047
+deyða|16086
+digurgirni|16107
+digurskeggur|16342
+dindill|16391
+disklingur|16420
+djúpur|16443
+drangi|16473
+draugasól|16491
+draumaprins|16553
+draumaprinsessa|16511
+draumheimur|16595
+draumsóley|16623
+draumur|16662
+draumveröld|16691
+drengur|16719
+drottinn|16739
+drottning|16769
+drumbspæta|16827
+drykkfelldur|16861
+drykkur|16920
+dufl|16948
+duglegur|17021
+dulfrævingur|17055
+dulvitund|17162
+dvergbítur|17246
+dvergstjarna|17284
+dvergstör|17313
+dvergtungljurt|17345
+dvergur|17386
+dyggur|17413
+dyggð|17457
+dygð|17486
+dyr|17574
+dyrakarmur|17514
+dáinn|17679
+dæla|17697
+dísilvél|17779
+dómari|17853
+dómur|17896
+dóttir|17932
+dótturdóttir|17960
+dóttursonur|18025
+dögg|18090
+dögun|18119
+dúkkulísa|18220
+dúnhulstrastör|18290
+dúnurt|18328
+dýptarmælir|18388
+dýr|18502
+dýridagur|18467
+e.Kr.|18876
+edik|18902
+ef.|19079
+efsta stig|19134
+eftir hádegi|19197
+eftirminnilegur|19251
+eftirmynd|19285
+eftirmáli|19309
+eftirsjá|19353
+eftirsjón|19403
+egg|19427
+egóisti|19456
+ei|21199
+eiginkona|19483
+eiginmaður|19519
+eik|19555
+eindahraðall|19583
+einfeldni|19654
+einhverjum vegnar illa|19723
+einhverjum vegnar vel|19782
+einhvers staðar|19841
+einhversstaðar|19877
+einkasjúkrahús|19912
+einkaspítali|19946
+einlitur|19980
+einmitt það|20012
+einneginn|20041
+einnig|20120
+einninn|20199
+eins|20582
+eins langt og augað eygir|20278
+eins og|20488
+eins og alþjóð veit|20335
+eins og kunnugt er|20397
+eins og vant er|20459
+einstefnuakstursgata|20506
+einstefnugata|20544
+eintala|20613
+einær|20645
+eitrun|20707
+eitthvað skiptir ekki máli|20747
+eitthvað skiptir engu máli|20850
+eitthvað skiptir litlu máli|20953
+eitthvað skiptir miklu máli|21086
+ekkert|21227
+eldfjall|21316
+eldfjallafræði|21253
+eldfluga|21386
+elding|21444
+eldstæði|21479
+eldstöð|21501
+eldtunga|21523
+elgur|21540
+elja|21573
+elli|21595
+elliær|21614
+elska|21634
+enda þótt|21660
+endanlegur|21691
+endaþarmur|21729
+endurlífgun|21775
+endurminning|21882
+endurnýjanleg orka|21906
+enn|22199
+enn betri|22075
+enn fremur|22103
+enn þá|22155
+enn þá betri|22127
+ennfremur|22175
+ennþá|22251
+ensím|22271
+eplasafi|22291
+epli|22344
+erfðamengi|22374
+erfðavísir|22399
+eskiviður|22419
+evrópulerki|22438
+ey|22617
+ey og ey|22472
+eyja|22494
+eyrarrós|22512
+eyrir|22545
+eyríki|22581
+eyðileggja|22634
+eyðimerkurrefur|22673
+eyðimörk|22725
+eyðni|22745
+eða|22763
+eðlisfræðingur|22800
+f.Kr.|23001
+f.h.|23027
+fall|23213
+falla í ónáð|23051
+fallbeyging|23101
+fallbreyting|23129
+fallega|23157
+fallristill|23178
+fangelsi|23226
+fannhvítur|23254
+fannkoma|23330
+fara eins og eldur í sinu|23474
+fara eins og logi yfir akur|23569
+fara í kjölfar einhvers|23664
+faraldur|23720
+farmaskip|23741
+farmaur|23777
+farsæll|23823
+farsími|23857
+farsótt|23901
+fartölva|23922
+fastastjarna|23962
+fauskspæta|24056
+faxaskeggur|24090
+faðir|24138
+faðma|24180
+faðmlag|24199
+feigur|24217
+feitur|24299
+felustaður|24328
+ferhyrningur|24351
+ferlömun|24519
+ferðatölva|24551
+feðradagur|24591
+feðraveldi|24630
+fimmtíu og ein|24735
+fimmtíu og einn|24668
+fimmtíu og eitt|24801
+fimmtíu og fjórar|24868
+fimmtíu og fjórir|24944
+fimmtíu og fjögur|25021
+fimmtíu og tveir|25098
+fimmtíu og tvær|25168
+fimmtíu og tvö|25237
+fimmtíu og þrjár|25307
+fimmtíu og þrjú|25381
+fimmtíu og þrír|25456
+fingur|25554
+fingurgómur|25531
+finnungsstör|25940
+firðingur|25975
+fiseind|26002
+fitjalóa|26056
+fitna|26103
+fiðla|26132
+fiðrildi|26253
+fjall|26667
+fjallafura|26299
+fjallageit|26324
+fjallahjól|26348
+fjallaljón|26404
+fjallarefur|26446
+fjallasmári|26499
+fjallastör|26527
+fjallavíðir|26560
+fjalldrapi|26589
+fjalllóa|26620
+fjara|26716
+fjarlægur|26743
+fjárhirðir|26778
+fjólublár|26818
+fjölbrautaskóli|26848
+fjöltyngdur|26888
+fjölær|26926
+fjörutíu og ein|27049
+fjörutíu og einn|26976
+fjörutíu og eitt|27121
+fjörutíu og fjórar|27194
+fjörutíu og fjórir|27276
+fjörutíu og fjögur|27359
+fjörutíu og tveir|27442
+fjörutíu og tvær|27518
+fjörutíu og tvö|27593
+fjörutíu og þrjár|27669
+fjörutíu og þrjú|27749
+fjörutíu og þrír|27830
+fjötra|27911
+flaga|27954
+flagð|27988
+flaska|28005
+flatbaka|28051
+fleirtala|28092
+fleirtöluorð|28124
+flensa|28161
+flest er hey í harðindum|28199
+fleyta fram lífinu|28257
+fljóðjlós|28299
+fljúga|28333
+flogaveiki|28361
+flugeldur|28404
+flygsa|28425
+flækings-|28484
+flækingshundur|28584
+flækingsköttur|28622
+flækingur|28662
+flæmingi|28789
+flæðastör|28813
+flétta|28847
+fléttingur|28870
+fló|28925
+flóastör|28893
+flóð|29002
+fordómur|29053
+forgengilegur|29079
+forgöngumaður|29123
+formlegur|29153
+fornafn|29189
+fornfíll|29437
+fornnorræna|29468
+forrit|29493
+fortíð|29599
+fosfórun|29652
+fram|29940
+framfótur|29688
+framhólf|29745
+framtíð|29798
+framtönn|29851
+framvegis|29882
+frekjuskarð|29965
+frelsi|30008
+fress|30054
+freta|30070
+freysfura|30106
+frilla|30133
+friðarbogi|30181
+friðarsamningur|30205
+friðsæll|30275
+friður|30300
+frjáls|30428
+frostrós|30489
+fruma|30513
+frumdýr|30547
+frumeind|30725
+frumeindarkjarni|30686
+frumstig|30781
+fræ|30909
+frænka|30835
+fræplanta|30874
+fræði|32297
+fræðiheiti|30926
+fræðingur|30965
+frétt|32317
+frí|32416
+frímínútur|32355
+frón|32447
+frú|32461
+frýna|32546
+fuglasöngur|32574
+fullt tungl|32610
+fullur|32648
+fura|32676
+furðuverk|32932
+fylgd|32962
+fylgja|32980
+fylgsn|32998
+fyrir hádegi|33016
+fyrir utan|33068
+fyrr|33099
+fá sér sæti|33126
+fá útrás fyrir reiði sína|33160
+fá útrás tilfinninga sinna|33236
+fákænska|33313
+fálki|33346
+fálmari|33673
+fælinn|33707
+fælni|33794
+félagslegur|33838
+félagsskordýr|33881
+fífill|33921
+fíkja|33944
+fíll|33978
+fótbolti|34008
+fóðra|34033
+fölheiðir|34081
+fölvastör|34116
+fötlun|34149
+föðurforeldrar|34319
+föðurland|34511
+föðurlandssvik|34407
+föðurlandssvikari|34367
+föðurlandsvinur|34437
+föðurlandsást|34475
+fús|34537
+fýll|34563
+gagnasafn|34595
+galdramaður|34647
+galdranorn|34738
+galdrastafur|34782
+galdur|34818
+gallópnir|34836
+gamall|34855
+gamalær|34909
+gammageisli|34929
+gammageislun|34957
+gammur|34986
+ganga|35193
+garn|35339
+garðabrúða|35437
+garðasól|35466
+gaukur|35504
+geimgeisli|35539
+geimgeislun|35630
+geimhöfn|35657
+geimskip|35681
+geimstöð|35735
+geimur|35759
+geisladiskadrif|35818
+geisli|35859
+geit|36093
+gekkó|36166
+gemlingur|36193
+gemsi|36212
+gera úlfala úr mýflugunni|36230
+gera úlfalda úr mýflugu|36289
+gereyðingarvopn|36348
+gerill|36387
+gerið þið svo vel|36453
+germynd|36506
+gerningur|36555
+gervitungl|36576
+gerðu svo vel|36604
+gestabók|36659
+gestafiðrildi|36689
+getnaðarlimur|36750
+geðlægð|36776
+geðlæknir|36807
+gifting|36842
+gjöreyðingarvopn|36875
+glas|36914
+glaðlyndur|36945
+glaður|36981
+gleraugu|37028
+glermey|37182
+glermær|37229
+gleym-mér-ei|37277
+gleymmérei|37306
+gleymni|37335
+gljái|37355
+gluggakarmur|37371
+glænýr|37413
+glætuormur|37499
+glæða|37557
+glóðargrýta|37609
+glúkósi|37641
+gos|37825
+gosberg|37791
+gott kvöld|37839
+goð|37898
+goðafræði|37871
+grafletur|37911
+grafskrift|37935
+gramm|37959
+granni|38026
+grannur|38071
+grasafræði|38147
+grasafræðigarður|38100
+grasdrjóli|38183
+grasgarður|38221
+grasmús|38269
+grassnákur|38356
+grein|38527
+greinrof|38439
+greni|38566
+grenitré|38547
+griffín|38685
+grunlaus|38706
+grunnendurlífgun|38726
+grunnur|38772
+gráblika|38802
+grágæs|38836
+gráhvalur|38865
+grálóa|38910
+grár|38987
+grárefur|38956
+gráspæta|39173
+grástör|39206
+gráta|39237
+grænblár|39294
+grænskjaldbaka|39326
+grænspæta|39368
+grænþörungur|39402
+gróðurhús|39426
+gröf|39462
+gufuvél|39501
+gulfura|39521
+gullfífill|39566
+gullstör|39592
+gulrófa|39623
+gulstör|39641
+gulur|39671
+gunnfálki|39857
+guð|39982
+guðfræði|39890
+gyðingur|40037
+gáfa|40057
+gáfulegur|40114
+gælunafn|40165
+gæs|40211
+gæðingur|40493
+gígur|40553
+gíll|40586
+gísl|40623
+gómur|40667
+góða kvöldið|40793
+góða nótt|40825
+góðan dag|40945
+góðan daginn|40890
+góði besti|41000
+góðmennska|41031
+góðmálmur|41058
+góðs viti|41087
+góður|41123
+göfuglyndi|41153
+gönguferð|41180
+görn|41238
+götuviti|41255
+gúmmískór|41283
+gúrka|41317
+haf|41407
+hafa illan þokka á einhverjum|41335
+hagamús|41555
+hagastör|41642
+hagfræði|41673
+haglabyssa|41760
+haglél|41812
+halló|41841
+hamar|41868
+hanakambur|41901
+handarbak|41941
+handarkoss|41971
+handbolti|41994
+handkoss|42033
+handlæknir|42056
+hani|42091
+hanki|42116
+hannyrðir|42141
+hark|42173
+harmur|42214
+harðdiskur|42229
+harðgómur|42259
+harðindi|42328
+harður|42350
+hata|42380
+haukur|42421
+haust|42603
+heilablæðing|42685
+heilablóðfall|42731
+heilabrú|42828
+heilabólga|42865
+heilahimna|42903
+heimili|43115
+heimilisfræði|43037
+heimilislæknir|43076
+heimsborgari|43310
+heimsfaraldur|43376
+heimsfarsótt|43457
+heimsfriður|43504
+heimskaut|43858
+heimskautadagur|43567
+heimskautanótt|43613
+heimskautarefur|43686
+heimskautsdagur|43739
+heimskautsnótt|43785
+heimskingi|43930
+heimur|43952
+heitur|43970
+heiðafura|43998
+heiðagæs|44023
+heiðir|44054
+heiðlóa|44166
+heiður|44213
+helluhraun|44241
+helvíti|44273
+hengistör|44310
+her|44542
+herfi|44342
+herlæknir|44453
+hermaður|44487
+herra|44518
+hestur|44593
+hey|44609
+hilling|44622
+himalajafura|44641
+himinblár|44691
+himingeimur|44723
+himinhnöttur|44767
+himinhvolf|44795
+himinn|44827
+himintungl|44945
+himnaríki|44973
+hingað|44994
+hinsta smurning|45025
+hirðir|45063
+hitabelti|45087
+hiti|45111
+hjarta-lungnalífgun|45136
+hjartakveisa|45185
+hjartardýr|45212
+hjartaslag|45267
+hjartastilling|45294
+hjartastillir|45353
+hjartastopp|45414
+hjartaáfall|45635
+hjartaöng|45676
+hjálmfura|45703
+hjálp|45770
+hjálparsögn|45736
+hjásól|45796
+hjól|45857
+hjónaband|45899
+hjörtur|45943
+hjúkrunarfræðingur|45979
+hk.|46049
+hlaup|46147
+hlaupalæknir|46116
+hleypidómur|46265
+hljómlist|46291
+hljómsveit|46333
+hljóðan|46392
+hljóðbók|46418
+hljóðgervingur|46450
+hlutabréf|46485
+hluti|46522
+hláturmáfur|46538
+hlébarði|46574
+hlífðargleraugu|46625
+hlýðni|46667
+hnappstör|46701
+hneppa einhvern í fjötra|46733
+hnjúkur|46780
+hnykill|46831
+hné|46995
+hnéfiðla|46860
+hnífur|47028
+hnöttur|47075
+hnúkur|47141
+holdgómur|47207
+holdvotur|47275
+hollenska|47306
+holspegill|47332
+hommi|47382
+hoppa|47430
+horn|47446
+hrafn|47518
+hrafnastör|47485
+hrapsteinadrífa|47534
+hrapsteinn|47571
+hraun|47633
+hraunkvika|47598
+hraðall|47733
+hreinn|47772
+hreisturvængja|47823
+hrekkjalómur|47852
+hreyfill|47894
+hreyfing|47967
+hross|48039
+hrossalæknir|48002
+hrumur|48067
+hryggdýr|48087
+hryggleysingi|48145
+hryggur|48183
+hryssa|48231
+hráslagalegur|48292
+hráungur|48333
+hrævareldur|48385
+hrævarljós|48437
+hræða|48489
+hríð|48630
+hríðarbylur|48526
+hríðskotariffill|48574
+hróp|48669
+hrós|48708
+hrútur|48726
+hugdeigur|48758
+hugdirfska|48814
+hugdirfð|48850
+hugdjarfur|48885
+hugfró|48933
+huggun|48962
+hugleysingi|49013
+hugrakkur|49056
+hugrekki|49102
+huldumaður|49148
+humboldtsmörgæs|49216
+hunangsfluga|49258
+hundafló|49426
+hundasúra|49456
+hundrað og ein|49547
+hundrað og einn|49480
+hundrað og eitt|49613
+hundur|49680
+hurð|49717
+hvalur|49796
+hvarvetna|49887
+hvatskeytislegur|49941
+hvatskeytlegur|49992
+hvatskeytslegur|50043
+hvað segir þú|50173
+hvað segir þú gott|50094
+hvelatengsl|50252
+hver hefur sinn djöful að draga|50637
+hver hefur sinn drösul að draga|50741
+hver hefur sína byrði að bera|50845
+hvernig gengur|50949
+hvernig líður þér|51028
+hvirfilpunktur|51107
+hvirfilvindur|51179
+hvolf|51209
+hvorki æmta né skræmta|51265
+hvort sem er|51318
+hvorugkyn|51347
+hví|52209
+hvíld|51416
+hvítabjörn|51451
+hvítingi|51477
+hvítkorn|51508
+hvítkál|51613
+hvítmáfur|51643
+hvítsmári|51670
+hvítstyrnir|51757
+hvítstör|51806
+hvítt blóðkorn|51838
+hvítur|51943
+hyrningur|52239
+hádegismatur|52304
+hádegisverður|52337
+háfur|52370
+háhyrningur|52399
+hálfsjálfvirk hjartarafstuðstæki|52424
+hálfsjálfvirk hjartarafstuðtæki|52590
+hárleggjastör|52756
+háskalaus|52793
+hástafur|52855
+hástig|52914
+hátta|53015
+háttarsögn|52977
+háttur|53063
+hávella|53163
+háþrýstingur|53192
+háþrýstisvæði|53239
+hæ|53768
+hægra greinrof|53292
+hægt|53442
+hægt og hægt|53361
+hæna|53527
+hænublundur|53620
+hættulaus|53654
+hættulegur|53716
+hæðarmælir|53828
+hér|54017
+hér og hvar|53870
+hér og þar|53899
+héraðslæknir|53928
+hérna|53967
+hófsóley|54059
+hóll|54086
+hópferðabifreið|54118
+hópferðabíll|54156
+hóra|54226
+höfrungur|54279
+höfuð|54321
+höggormur|54349
+hönd|54381
+hörgull|54408
+hörgur|54436
+hörpudiskur|54456
+húm|54493
+húnköttur|54608
+húrrahróp|54643
+hús|54853
+húsamús|54676
+húsdýr|54764
+húsköttur|54818
+húðflúr|54881
+hýsill|54922
+ills viti|54985
+ilmur|55021
+ilmvatn|55138
+ilpunktur|55161
+ilskór|55254
+inflúensa|55283
+innblástur|55325
+innilega|55349
+innkirtlafræði|55373
+internet|55477
+internetslangur|55438
+ja hérna|55598
+ja hérna hér|55570
+jafnrétti|55626
+jafnsnemma|55651
+jagúar|55676
+jaki|55712
+jarmur|55765
+jarðalkalímálmur|55780
+jarðarber|55933
+jarðarför|55981
+jarðepli|56038
+jarðhræring|56060
+jarðskjálfti|56106
+jaðar|56152
+jungur|56195
+jurtaæta|56223
+já|56368
+já einmitt|56275
+jákvæður|56304
+játa|56342
+jæja|56390
+jómfrú|56402
+jónhvolf|56420
+jóðungur|56555
+jökull|56598
+jörð|56738
+jötunn|56757
+jötunuxi|56773
+k.|56807
+kafari|56864
+kakkalakki|56893
+kaldhæðni|57102
+kaldur|57131
+kaliforníurauðviður|57279
+kalk|57317
+kalkúni|57349
+kalsíumblokki|57389
+kalsíumgangaloki|57425
+kanadagæs|57461
+karl|57746
+karlfugl|57492
+karlkyn|57524
+karlmannsnafn|57593
+karlmaður|57653
+kartafla|57770
+kassagítar|57792
+kastali|57826
+kattafló|57842
+keisaraviður|57872
+keldustör|57900
+kemba|57932
+kemst þó hægt fari|57952
+kenna til|58001
+keppnishjól|58024
+ker|58114
+kerti|58081
+kettlingur|58162
+kind|58281
+kirsuberjatré|58299
+kirsuberjatómatur|58339
+kið|58407
+kiðlingur|58382
+kjarklaus|58426
+kjarkmikill|58510
+kjarnasprengja|58579
+kjarni|58644
+kjarnorkuslys|58853
+kjarnorkuver|58897
+kjarnsýra|58933
+kjálkastirnir|59017
+kjálkastyrnir|59068
+kjölfar|59119
+kjöltutölva|59150
+kjördagur|59190
+kjöt|59219
+kjötæta|59353
+kk.|59405
+klaki|59458
+klapparmáfur|59471
+klaustri|59507
+klaustur|59528
+klink|59557
+klippimynd|59598
+klukk|59697
+klukka|59621
+klukkustund|59643
+klukkutími|59670
+klumbuskeggur|59712
+klífa|59762
+klóþang|59779
+klútur|59815
+knattspyrna|59852
+kné|60012
+knéfiðla|59877
+knöttur|60039
+koffínlaus|60060
+kolamyrkur|60100
+kolbíldur|60159
+koldíoxíð|60206
+kollstör|60265
+kolskeggur|60296
+kolsýringur|60343
+kolsýrlingur|60373
+koltvíildi|60403
+koltvíoxíð|60462
+koltvísýringur|60521
+kolvetni|60580
+koma spánskt fyrir sjónir|60628
+kona|60700
+konungsdóttir|60740
+konungur|60847
+kornungur|60967
+kort|61019
+kosningardagur|61051
+kot|61080
+krans|61139
+krati|61161
+kreppa|61205
+kristall|61295
+kristallur|61272
+kristni|61318
+kroppa|61355
+krossfífill|61378
+krossnefur|61404
+krummi|61436
+kræklingur|61457
+kría|61499
+kríublundur|61515
+krókus|61549
+kuldalegur|61584
+kuldi|61625
+kuðungur|61650
+kv.|61671
+kvars|61722
+kvaðratrót|61752
+kveld|61781
+kvelja|61797
+kvenfugl|61822
+kvenkyn|61854
+kvenlæknir|61923
+kvenmannsnafn|61958
+kvenmaður|62018
+kvennaveldi|62056
+kveði|62094
+kvikmynd|62208
+kvikmyndahús|62146
+kvikmyndavél|62169
+kviknakinn|62243
+kvk.|62268
+kvöl|62579
+kvöld|62501
+kvöldfréttir|62320
+kvöldlóa|62364
+kvöldmatur|62412
+kvöldvakt|62441
+kvöldverður|62472
+kyn|62658
+kyndiltré|62603
+kyrrð|62689
+kálfiðrildi|62725
+kálfur|62866
+kátína|62915
+kænska|62943
+kæra þökk|62976
+kærar þakkir|63007
+kærulaus|63038
+kíló|63605
+kílógramm|63098
+kílómetri|63578
+kímplanta|63627
+kíví|63662
+kólibrísvarmi|63696
+kóngablár|63742
+kóngafiðrildi|63775
+kóngasvarmi|63835
+kóngsdóttir|63895
+kónguló|64039
+kóngulóarvefur|64002
+kóngur|64222
+kópernikín|64242
+kór|64324
+kórallur|64275
+köfnunarefni|64356
+köfunargleraugu|64379
+könguló|64457
+köngulóarvefur|64420
+köttur|64480
+kúfskel|64740
+kúla|64795
+kúlupenni|64862
+kúpling|64913
+kúskel|64933
+kýli|64987
+kýprusviður|65021
+kýr|65066
+l.|65167
+lag|65177
+landareign|65201
+landlukt land|65234
+landlæknir|65270
+landráð|65345
+landráðamaður|65305
+landspendýr|65375
+langafasta|65440
+langastöng|65469
+langatöng|65527
+langbylgja|65585
+langdegi|65720
+languggi|65753
+langur|65798
+lauf|65969
+laufarönd|65827
+laufblað|65858
+lauffroskur|65876
+laufspæta|65904
+lauftré|65937
+laumufarþegi|65987
+laun|66045
+launungarmál|66016
+lausamjöll|66076
+legghlíf|66098
+leggja hlustir við einhverju|66122
+leggja hlustirnar við einhverju|66185
+leggja við hlustir|66307
+leggja við hlustirnar|66251
+legstaður|66360
+leigubifreið|66380
+leigubíll|66408
+leikari|66436
+leikkona|66467
+leirutjörn|66498
+leiruvatn|66523
+leiðarljós|66548
+leiðarstjarna|66601
+leiðinlegur|66665
+lending|66711
+lengdargráða|66741
+lerki|66848
+lerkisveppur|66786
+lerkisúlungur|66817
+letiblóð|66923
+leyndarmál|66955
+lind|67020
+lindadúnurt|66984
+lindýr|67106
+lirfa|67289
+list|67407
+listi|67392
+lithimna|67549
+litlaus|67601
+litli kakkalakki|67659
+litlifingur|67722
+litín|67759
+liðsmaður|67796
+ljón|67881
+ljós|68628
+ljósaskipti|67915
+ljósastaur|68030
+ljósbjalla|68059
+ljósblár|68108
+ljóseind|68140
+ljósfræði|68198
+ljósfælinn|68234
+ljósgeisli|68273
+ljóshraði|68334
+ljósleysi|68360
+ljósmerki|68416
+ljósmóðir|68454
+ljósmögnun|68510
+ljósormur|68570
+ljósálfur|68699
+ljóð|68758
+ljóðlist|68737
+lofnarblóm|68868
+loft|69285
+lofthjúpur|68904
+loftkastali|68993
+loftslag|69053
+loftslagsbelti|69019
+loftsteinn|69123
+lofttæmi|69163
+lofttóm|69202
+loftvog|69234
+loftárás|69324
+logi|69357
+loksins|69369
+lotukerfi|69396
+loðfluga|69451
+loðfíll|69481
+lumma|69512
+lungnakrabbamein|69538
+lungnakrabbi|69571
+lungnakvef|69604
+lungnateppa|69653
+lyfjabúð|69738
+lyflækningar|69760
+lyflæknir|69795
+lyktareyðir|69829
+lystarstol|69863
+lágfiðla|69921
+lágnætti|70021
+lágstafur|70074
+lágþrýstingur|70133
+lágþrýstisvæði|70180
+láta eins og vind um eyru þjóta|70233
+látún|70342
+læknir|70367
+læða|70903
+létteind|70940
+léttir|70973
+líf|71534
+lífbelti|70995
+líffræði|71037
+líffærafræði|71065
+lífhvati|71203
+lífljómun|71223
+líflát|71283
+lífsviðurværi|71501
+líka|71577
+líkan|71560
+líklegur|71622
+lím|71670
+límóna|71745
+lítilvægur|71767
+lóa|71855
+lófi|72232
+lóuþræll|72262
+löglegur|72297
+lögregla|72345
+lömun|72414
+löngutöng|72472
+lúinn|72530
+lúr|72558
+lúsmý|72579
+lúða|72599
+lýsingarháttur|72637
+magabólga|72741
+mamma|72764
+mammút|72816
+mandarína|72847
+mannafló|72890
+mannsnafn|72920
+mannúð|73049
+mannúðlegur|73005
+mara|73083
+maraþon|73158
+maraþonhlaup|73113
+margföldun|73184
+marglot|73218
+marglytta|73326
+margæs|73434
+marningur|73462
+mars|73575
+marsmánuður|73482
+marsnákur|73504
+marsvín|73551
+maríubjalla|73597
+maríuhæna|73677
+matareitrun|73816
+matreiðslubók|73881
+matur|73917
+maur|74048
+maður|74092
+meginland|74161
+mein|74238
+meinafræði|74204
+meitill|74283
+melfluga|74302
+mergur|74329
+meyja|74411
+meyjarfluga|74363
+með köflum|74439
+mikilvægur|74466
+minkur|74524
+minning|74597
+mislyndur|74621
+misþyrming|74657
+miðbaugur|74703
+miðbylgja|74752
+miðdegi|74861
+miðeyra|74904
+miðjarðarhafsfura|74927
+miðjarðarlína|74961
+miðmynd|74992
+miðnætti|75025
+miðnætursól|75070
+miðnótt|75135
+miðský|75170
+miðstig|75445
+mjaldur|75499
+mjallahvítur|75548
+mjallhvítur|75590
+mjaðjurt|75652
+mjaðmagrind|75686
+mjógörn|75719
+mjólk|75934
+mjólkursúkkulaði|75859
+mjólkurtönn|75906
+mjónefur|76069
+mjög|76102
+mjöll|76146
+mjöðm|76168
+monthani|76184
+mordýr|76230
+morgunfrú|76273
+morgunmatur|76299
+morgunn|76500
+morgunstund|76811
+morgunstund ber gull í mund|76529
+morgunstund gefur gull í mund|76623
+morgunstund hefur gull í mund|76717
+morgunsár|76849
+mosi|76953
+moskítófluga|76984
+myndavél|77047
+myrkfælinn|77087
+myrkur|77140
+myrkvi|77175
+myrkviði|77234
+myrkviður|77258
+mágkona|77282
+mágur|77326
+mál|77507
+málaliði|77372
+málbein|77401
+málning|77441
+máttleysi|77550
+mávur|77583
+mælir|77600
+mænudeyfing|78011
+mæðgin|78047
+mæðgur|78079
+mæðradagur|78111
+móka|78150
+mótorhjól|78166
+móðir|78296
+móðurforeldrar|78332
+mölfiðrildi|78380
+mölfluga|78456
+mörgæs|78484
+mörk|79410
+múndering|79425
+múrari|79449
+mý|79683
+mýfluga|79514
+mýraljós|79530
+mýrarljós|79568
+mýri|79620
+mýrlendi|79638
+nafnorð|79699
+nefkvef|79781
+nei|79846
+neikvæður|79808
+nellika|79868
+nema|79915
+nethimna|79929
+netjuský|79985
+nf.|80045
+nirfill|80100
+nitur|80123
+niðamyrkur|80146
+niður|80205
+njóla|80255
+njóli|80289
+njólubaugur|80333
+njósnaflugvél|80370
+no.|80410
+nokkrir|80420
+norræna|80440
+norðanvindur|80465
+norðanátt|80494
+norðurheimskaut|80566
+norðurhvel|80640
+norðurljós|80677
+norðurpóll|80716
+norðurstjarna|80800
+ná hylli einhvers|80933
+nábúi|80983
+nágranni|81028
+náhvalur|81073
+náhveli|81095
+nákvæmlegur|81117
+nákvæmur|81145
+náma|81173
+nátt|81482
+náttfiðrildi|81350
+nátttröll|81448
+náttúrlega|81515
+náttúrlegur|81552
+náttúrulegur|81584
+náttúruvernd|81616
+náð|81649
+næpa|81677
+nærbuxur|81720
+næturgali|81751
+næturró|81787
+næturvakt|81822
+næturvirkur|81853
+nístingskaldur|81890
+nístingskuldi|81928
+níðingur|81964
+nótt|81987
+nös|82041
+nú er það|82057
+nútíð|82088
+nýr|82209
+nýratota|82184
+nýstirni|82235
+nýtt tungl|82276
+nýár|82337
+nýársdagur|82314
+ofankoma|82360
+offita|82400
+ofskynjun|82434
+oft|82469
+og|82495
+okkar|82529
+olbogi|82556
+olnbogi|82598
+olíva|82641
+orkuver|82674
+orsök|82735
+orðabók|82761
+orðufiskur|82791
+pabbi|82839
+panna|82872
+paradís|82891
+pardusdýr|82921
+pensill|83004
+persónulegur|83032
+piltur|83076
+pinkill|83103
+pitsa|83129
+pizza|83160
+planta|83201
+platanviður|83232
+pláneta|83261
+plástur|83306
+polli|83402
+popp|83444
+prentletur|83475
+prentplata|83511
+prins|83596
+prinsessa|83535
+prósent|83640
+purpurarauður|83667
+puti|83697
+putti|83712
+pylsuský|83728
+pápi|83758
+píanó|83798
+píka|83819
+píkómetri|83873
+pítsa|83906
+póll|83947
+pólstjarna|84030
+pöntun|84178
+púkabit|84225
+púls|84244
+púma|84268
+rafeindasmásjá|84311
+rafgas|84352
+rafhlaða|84388
+rafmagnsfiðla|84420
+raforkuver|84457
+rafpóstur|84491
+rafstraumur|84598
+rafstuð|84622
+raftónlist|84716
+rakur|84746
+rangeygð|84772
+raunveruleiki|84794
+rautt blóðkorn|84821
+rauðbeyki|84902
+rauðkorn|85013
+rauðrefur|85142
+rauður risi|85174
+rauðviður|85210
+refur|85248
+reglulegur|85830
+regn|86249
+regnbogahimna|85868
+regnbogi|85920
+regndropi|86106
+regnskúr|86187
+regnský|86225
+regnþykkni|86297
+reikistjarna|86321
+reiðhjól|86380
+reiður|86498
+reka út úr sér tunguna|86552
+rembingskoss|86598
+renna út eins og heitar lummur|86631
+rif|86711
+rifbein|86696
+rigning|86755
+ringulreið|86792
+risi|86828
+risristill|86887
+ristill|86921
+rithöfundur|87078
+ritill|87116
+ritmál|87143
+ritvél|87173
+rjómaís|87270
+rjómi|87287
+rostungur|87326
+ruslrafpóstur|87350
+ruðningur|87417
+ránarstirnir|87438
+rándýr|87488
+ráð|87517
+ræfill|87537
+ræningi|87559
+ræða|87607
+ræðari|87580
+réttritun|87624
+réttur|87650
+ríkisborgararéttur|87679
+ríkisborgari|87714
+ríkisfang|87751
+ró|87855
+rólegur|87786
+rósmarín|87820
+rökkur|87879
+röntgen|88033
+röntgengeislun|87994
+röðull|88175
+rúlla|88192
+rúm|88426
+rúmgóður|88320
+rúmlítill|88358
+rúmmál|88396
+rúta|88448
+safaspæta|88473
+sagnfræðingur|88506
+sagnmynd|88601
+sagnorð|88678
+saklaus|88711
+salat|88754
+sambúð|88904
+samdóma einhverjum|88924
+samheiti|88967
+samhljómur|88999
+samhljóð|89027
+samhverfa|89089
+samklipp|89123
+samloka|89146
+samlyndi|89180
+sammála einhverjum|89215
+samnafn|89258
+samsekur|89290
+samsett orð|89312
+samóa|89501
+samóska|89520
+samúð|89539
+sandali|89559
+sandbylur|89597
+sandfok|89622
+sandlægja|89655
+sandlóa|89742
+sandur|89788
+sanngjarn|89834
+sannindi|89870
+sannleikur|89904
+sannur|89967
+sauðahús|90015
+sauðfé|90039
+sauðkind|90146
+sauður|90180
+sebrahestur|90212
+sedrus|90305
+sedrustré|90237
+sedrusviður|90271
+segja einhverjum sannleikann|90383
+segja sannleikann|90450
+segja satt|90506
+segull|90555
+segulsteinn|90577
+seiður|90599
+seljast eins og heitar lummur|90617
+selló|90682
+sendiferð|90817
+sendiför|90872
+sendill|90896
+sendlingur|90919
+sermi|90978
+setbein|91055
+seytján|91076
+sic|91097
+sigla milli skers og báru|91118
+sigla í kjölfar einhvers|91201
+sigta|91257
+sigð|91278
+silfurkambur|91297
+simpansi|91337
+sitja á hlustunum|91370
+sjakali|91426
+sjaldan|91702
+sjaldan er ein báran stök|91643
+sjampó|91728
+sjimpansi|91767
+sjálfsfróun|91801
+sjálfsmorð|91848
+sjálfsvíg|91876
+sjálfvirk hjartarafstuðstæki|91904
+sjálfvirk hjartarafstuðtæki|92072
+sjávarbakki|92293
+sjávarloft|92329
+sjávarlíffræðingur|92353
+sjávarskafl|92410
+sjávarspendýr|92448
+sjávarströnd|92513
+sjóher|92551
+sjókort|92589
+sjóloft|92618
+sjóna|92662
+sjónauki|92642
+sjóndeildarhringur|92692
+sjónhimna|92727
+sjónleysi|92783
+sjónvarpstæki|92804
+sjósótt|92853
+sjóveiki|92876
+sjödepla|92899
+sjöstirni|92961
+sjöstjarna|92987
+sjöviknafasta|93013
+sjúkdómafræði|93042
+sjúkdómur|93076
+sjúkrahús|93121
+skakki silfurfiskur|93162
+skammdegi|93218
+skammur|93251
+skarpur|93270
+skaðlaus|93292
+skaðlegur|93327
+skegg|93434
+skeggmeiti|93387
+skeifugörn|93464
+skemmtun|93545
+skiljanlegur|93572
+skin|93614
+skipherra|93667
+skipstjóri|93689
+skjaldbaka|93734
+skjaldkirtill|94026
+skjálfandi|94085
+skjálftasvæði|94109
+skopparakringla|94151
+skordýr|94255
+skordýrafræði|94189
+skottulæknir|94314
+skrautkambur|94345
+skrifa|94385
+skrifletur|94431
+skriðdýr|94467
+skrápflúra|94498
+skuggahlébarði|94532
+skuggi|94577
+skurðlæknir|94650
+skurður|94700
+skutulönd|94750
+skyndibiti|94781
+skyndihjálp|94897
+skyndilega|95039
+skyndiminni|95142
+skynsemi|95192
+skynvilla|95236
+skyrpa|95272
+skírnarnafn|95297
+skíðagleraugu|95321
+skíðishvalur|95361
+skógarbelti|95421
+skógarbeyki|95461
+skógareldur|95546
+skógarjarðarber|95575
+skógur|95623
+skólalæknir|95774
+skór|95811
+skögultönn|96065
+skúr|96099
+ský|96172
+skýfall|96138
+slagharpa|96207
+slagæð|96248
+slanga|96343
+slenja|96391
+sletta|96464
+slippur|96499
+slys|96529
+slytti|96625
+sláttarstöðvun|96642
+slétta|96699
+sléttbakur|96722
+slóans gelgja|96768
+slökkviliðsmaður|96819
+smali|96866
+smergill|96988
+smurning|97013
+smám saman|97057
+smámaur|97138
+smámsaman|97155
+smán|97221
+smásjá|97237
+smáslys|97279
+smátt og smátt|97308
+smáþarmur|97374
+snepill|97420
+snigill|97437
+sniglapóstur|97458
+snilld|97500
+snittubrauð|97543
+snjall|97671
+snjallkaldur|97578
+snjallsími|97635
+snjóflygsa|97690
+snjófugl|97737
+snjógæs|97803
+snjóhvítur|97833
+snjókoma|97897
+snjókorn|98011
+snjór|98058
+snjóskúr|98229
+snjótittlingur|98266
+snákur|98320
+snæhlébarði|98345
+snæhnefla|98388
+snæsteinbrjótur|98422
+sníkill|98469
+sokkabuxur|98586
+sokkur|98618
+sonardóttir|98646
+sonarsonur|98707
+sonur|98768
+spakur|98833
+spari-|98862
+spekingur|98941
+spendýr|98966
+spjaldbein|99025
+spjót|99052
+sprengidagur|99079
+sprengistjarna|99112
+sprengja|99184
+spurning|99215
+spæta|99243
+spíritismi|99525
+spítali|99551
+stafsetning|99619
+stafur|99645
+starfsheiti|100063
+steinaldin|100091
+steinbrjótur|100123
+steingeit|100206
+steinn|100275
+stelpa|100294
+sterkeind|100358
+sterkja|100391
+stigi|100425
+stikk|100482
+stjarna|100502
+stjarnfræði|100628
+stjarnfræðieining|100583
+stjarnmeiti|100661
+stjórnleysi|100709
+stjörnufræði|100889
+stjörnufræðieining|100745
+stjörnufræðingur|100790
+stjörnuhrap|100990
+stjörnumerki|101053
+stjörnusteinbrjótur|101082
+stokkönd|101133
+storkuberg|101206
+stormfugl|101396
+stranddögg|101418
+strandfura|101453
+strandlóa|101487
+straujárn|101535
+strákur|101601
+strætisvagn|101631
+strætó|101681
+stríð|101789
+stríðsguð|101718
+strýtutota|101840
+stubbspæta|101865
+sturta|101899
+stuttbuxur|101920
+stuttbylgja|101952
+stutti silfurfiskur|102061
+stuðningur|102117
+styrjöld|102141
+styrkur|102192
+stækka|102224
+stóismi|102277
+stóri silfurfiskur|102300
+stórköttur|102356
+stórmaur|102589
+stóuspeki|102635
+stökkull|102737
+stör|102823
+stöð|103750
+stöðugt|103707
+stöðuvatn|103730
+stúfa|103844
+stúfmús|103863
+stúlka|103951
+stýri|103975
+sumardagur|104130
+sumarfrí|104167
+sumargrænn|104197
+sumarstjarna|104233
+sundföt|104262
+sundgleraugu|104304
+sundurlyndi|104341
+sunnan|104404
+sunnanátt|104433
+suðrænisilfurfiskur|104504
+suðurheimskaut|104562
+suðurhvel|104634
+suðurljós|104671
+suðurpóll|104710
+suðurstjarna|104794
+svar|105620
+svarmfiðrildi|104885
+svarmi|105085
+svartamyrkur|105110
+svartfugl|105169
+svartfura|105203
+svartidauði|105250
+svartmeiti|105315
+svartspæta|105362
+svartur|105396
+svartálfur|105582
+svefn|105779
+svefnfriður|105648
+svefnleysi|105683
+svefnró|105744
+sveinn|105910
+sverð|105952
+svili|105970
+svilkona|105999
+svitalyktareyðir|106028
+svo langt sem augað eygir|106062
+svín|106119
+svörun|106180
+sykur|106203
+synda milli skers og báru|106297
+synjun|106373
+systir|106404
+systkini|106434
+sá|106763
+sál|106552
+sála|106488
+sálnaflakk|106502
+sáralæknir|106566
+sárasótt|106602
+sárkaldur|106686
+sársauki|106743
+sædögg|106777
+sæfiðrildi|106812
+sælindýr|106843
+sæmd|107344
+sænorn|107381
+sæskjaldbaka|107409
+sæstjarna|107449
+sævarströnd|107475
+sérhljóð|107512
+sérhver|107624
+sérnafn|107655
+sérstakur|107688
+sí og æ|107716
+síberíulerki|107746
+sígrænn|107782
+sílamáfur|107818
+síld|107852
+sími|108062
+sívalningur|108115
+síðar|108159
+síðasta smurning|108186
+síðdegis|108224
+sól|109113
+sólargeisli|108273
+sólarorka|108345
+sólaruppkoma|108391
+sólarupprás|108452
+sólblóm|108513
+sóley|108538
+sólfífill|108561
+sólgleraugu|108586
+sólmyrkvi|108623
+sólris|108680
+sólsetur|108741
+sólskin|108790
+sólskjálftafræði|108837
+sólskríkja|108889
+sólstjarna|108933
+sólstöður|109035
+sótugur|109138
+sóðalegur|109161
+sögn|109216
+söngur|109234
+súld|109921
+súra|110190
+súrefnisríkur|110272
+súrefnissnauður|110320
+súrmjólk|110368
+sýki|110413
+sýkill|110389
+sýnilegur|110458
+sýprisviður|110496
+sýprusviður|110541
+sýra|110586
+sýrustig|110611
+tafl|110633
+taka einhvern í faðm sinn|110666
+taka sér sæti|110722
+takk|110951
+takk fyrir|110756
+takmark|111058
+tala|111078
+talmál|111099
+taminn|111129
+tangerína|111159
+tannhvalur|111184
+tannpína|111244
+tattóvering|111287
+taugahvot|111328
+taugalæknir|111416
+taugasjúkdómafræði|111452
+taumgæs|111505
+telpa|111534
+tengdadóttir|111563
+tengdafaðir|111603
+tengdamamma|111673
+tengdamóðir|111755
+tengdapabbi|111825
+tengdasonur|111906
+teningur|111946
+til hamingju með afmælið|111986
+til hamingju með daginn|112042
+til hægri|112098
+til vinstri|112135
+tilfelli|112172
+tilfinningaleysi|112273
+tilgáta|112320
+tilvera|112352
+tilvist|112380
+tilvísunarfornafn|112399
+titra|112485
+titran|112465
+titrandi|112441
+titring|112531
+titringur|112503
+tittlingur|112552
+toppsproti|112588
+traust|112655
+traustur|112621
+traðka|112686
+tregi|112737
+treysta|112758
+trjábolur|112791
+trjáfroskur|112817
+trjágrein|112907
+trjámáfur|112935
+trjáspör|112969
+trjónutoppa|113005
+tryggja|113033
+tryggur|113117
+tryggð|113195
+tré|113239
+tröll|113363
+tröllkarl|113291
+tröllkona|113327
+trúfastur|113407
+trúr|113473
+tungl|113588
+tunglmyrkvi|113501
+tunglskin|113558
+tungubein|113620
+tungumál|113642
+tunna|113666
+turtildúfa|113777
+tvisvar|113808
+tvívegis|113829
+tvíær|113850
+tyrkjaþyrill|113879
+tá|113979
+tár|113960
+tárast|113918
+tárfella|113939
+tækisfall|114076
+tíbrá|114114
+tígrisdýr|114133
+tígur|114181
+tímamót|114229
+títa|114264
+tíð|114319
+tófa|114408
+tólfall|114463
+tómarúm|114501
+tómati|114523
+tómatur|114543
+tómrúm|114600
+tómur|114622
+tónlist|114650
+tónstigi|114692
+töfrasproti|114972
+tölvuforrit|115001
+tölvupóstur|115024
+tönn|115131
+túnfiskur|115303
+túnfífill|115336
+túnsúra|115359
+umburðarlyndi|115396
+umbúðir|115440
+umdæmi|115593
+umfangslítill|115630
+umfangsmikill|115673
+umfaðma|115729
+umhverfisvernd|115748
+umhverfisvænn|115781
+umhyggja|115827
+undirheiti|115852
+undrun|115887
+undurverk|115904
+ungdæmi|115923
+ungdómur|115945
+ungplanta|115967
+ungur|116002
+unnusta|116029
+unnusti|116059
+uppreisn|116089
+uppspretta|116110
+vafri|116138
+vakt|116189
+vakúm|116242
+vandamál|116272
+vantraust|116302
+vantreysta|116333
+varkár|116366
+varla|116398
+varmi|116445
+varmur|116477
+varúlfur|116505
+vatn|116699
+vatna músum|116528
+vatnalóa|116558
+vatnsdropi|116605
+vatnsheldur|116642
+vatnshæna|116666
+vaxkaka|116749
+vaða|116796
+vefdýr|116817
+vefsjá|116882
+vefskoðari|116921
+veggfóður|116964
+veggmynd|116989
+veggmálverk|117014
+veggur|117061
+vegur|117159
+veiki|117355
+veikindi|117289
+veikur|117390
+veira|117441
+vel|117470
+ventill|117493
+vera auðskilinn|117509
+vera auðskiljanlegur|117560
+vera hætt kominn|117616
+vera milli steins og sleggju|117660
+vera milli tveggja elda|117770
+vera óskiljanlegur|117880
+veraldlegur|117936
+verkamaður|117963
+verkfæri|118029
+verkfærisfall|117991
+verksmiðja|118049
+verkstæði|118150
+verkur|118231
+vernda|118548
+verndarengill|118519
+vertu blessaður|118573
+veruleiki|118639
+verða hungurmorða|118666
+veröld|118703
+verúlfur|118721
+vesen|118744
+vetnissprengja|118759
+vetrardagur|118823
+vettlingur|118860
+vetur|118892
+villidýr|118950
+villijarðarber|119023
+villiköttur|119071
+villiljós|119107
+villuljós|119146
+vina|119185
+vindill|119209
+vindlingur|119235
+vindorka|119260
+vindur|119304
+vinkona|119330
+vinningur|119352
+vinnsluminni|119375
+vinstra greinrof|119597
+vinstri|119666
+vinsæll|119695
+vinur|119729
+vismút|119757
+viss|119800
+vissulegur|119776
+vitaturn|119844
+viti|119861
+vitki|119890
+vitleysa|119912
+vitund|119954
+viðarbolur|120129
+viðbót|120155
+viður|120187
+viðvörun|120221
+vogvængja|120298
+volfram|120367
+von|120390
+vopn|120484
+vordverglilja|120660
+vorkrókus|120711
+vorkunn|120763
+vortími|120802
+vothey|120830
+votlendi|120848
+vængjasnigill|120893
+værðarvoð|120945
+væta|120983
+vættur|121005
+vélbyssa|121042
+vélhjól|121093
+vélmenni|121187
+vígtönn|121232
+vímuefni|121263
+vín|121287
+vís|121400
+vísdómstönn|121364
+víti|121444
+vítt|121481
+víxill|121524
+víða|121584
+víðast hvar|121547
+víðir|121627
+völundarhús|121817
+yddari|121979
+yfirheiti|122043
+ylfingur|122078
+yrðlingur|122109
+Ástralía|122141
+Ísland|122178
+Óríon|122209
+Þór|122243
+á eftir|122274
+á köflum|122306
+á laun|122333
+á morgnana|122353
+á morgun|122379
+á næturnar|122452
+á nóttunni|122481
+á sumrin|122510
+á síðkvöldi|122566
+á síðkvöldum|122602
+á undan|122638
+á vetrin|122670
+á veturna|122716
+á vorin|122762
+ábyrgð|122983
+ábyrgðarlaus|122786
+ábyrgðarmikill|122890
+ágreiningur|123024
+áhyggjufullur|123061
+áhyggjulaus|123118
+áhættulaus|123173
+áhættusamur|123260
+ákveðinn|123343
+ákveðinn greinir|123289
+ála|123381
+álfkona|123396
+álfur|123426
+álka|123480
+álver|123511
+árangur|123624
+árangurslaus|123536
+árangursríkur|123580
+árbakki|123646
+árdegis|123682
+árla|123731
+árás|123807
+árásarriffill|123751
+ásgörn|123841
+áskrifandi|123919
+ást|124001
+ástaraldin|123943
+ástæðulaus|124026
+ávaxtasafi|124080
+æ|124525
+ægisstyrnir|124151
+æmta ekki né skræmta|124200
+æsing|124253
+æskilegur|124272
+ætisveppur|124310
+ættarnafn|124345
+ættjarðarvinur|124376
+ættjarðarást|124414
+ævikvöld|124450
+æviminning|124469
+él|124587
+élhöll|124568
+í dag|124663
+í fyrradag|124736
+í gær|124809
+í laumi|124882
+í myrkri eru allir kettir gráir|124902
+ígulstör|124973
+ílangur|125005
+íris|125026
+ís|125349
+ísbjörn|125072
+ískaldur|125118
+ískuldi|125175
+ísmáfur|125221
+ísmávur|125244
+ísrisi|125267
+ísskápur|125322
+óbeygjanlegur|125397
+óblíður|125439
+óbreyttur|125493
+ódauðlegur|125527
+ódýr|125565
+óendanlegur|125607
+ófarsæll|125645
+ófeigur|125679
+óforgengilegur|125709
+óformlegur|125753
+ófriður|125789
+ófrjáls|125821
+ófús|125853
+óhlýðni|125879
+ókurteis|125913
+ólífa|125945
+ólíklegur|125978
+ólíva|126028
+ólöglegur|126061
+ómannúð|126155
+ómannúðlegur|126111
+ómissandi|126189
+ónáð|126258
+óp|126330
+ópersónulegur|126286
+óreglulegur|126348
+órói|126386
+órólegur|126407
+ósannur|126441
+óskiljanlegur|126479
+óstyrkur|126521
+ósæmd|126553
+ósýnilegur|126581
+ótaminn|126619
+ótraustur|126649
+ótrúr|126683
+ótti|126711
+óumhverfisvænn|126730
+óvar|126776
+óvenjulegur|126829
+óveður|126901
+óveðursský|126867
+óvinsæll|126975
+óvinur|127009
+óviss|127037
+óvís|127079
+óákveðinn|127175
+óákveðinn greinir|127121
+óæskilegur|127213
+óþekktur|127251
+óþolinmæði|127285
+óþolinmóður|127338
+óþreyja|127382
+óþægilegur|127430
+öfund|127470
+öl|127515
+ölvaður|127492
+öndun|127634
+öndunarfæri|127528
+öndunarkerfi|127559
+öndunarstopp|127590
+öreind|127891
+örn|128018
+öruggur|128433
+örvilnun|128467
+örvinglun|128519
+örvænta|128571
+örvænting|128607
+öryggisbelti|128669
+öðruvísi|128709
+úlfaldi|128783
+úlfur|128946
+úlfur undir sauðargæru|128842
+úlfur í sauðargæru|128894
+úrhellisregn|129216
+úrhellisrigning|129271
+útbreidd sótt|129326
+útdáinn|129407
+útfall|129431
+útflutningur|129461
+úthaf|129503
+útihús|129541
+útivera|129590
+útivist|129611
+útlendur|129632
+útlenskur|129676
+þakka þér fyrir|129721
+þangað|129864
+þar að auk|129941
+þar að auki|129895
+þar liggur fiskur undir steini|129986
+þar til|130053
+þaraðauki|130069
+þarmur|130113
+það er ekki nema sjálfsagt|130462
+það er sjálfsagt|130515
+það er ýmist of eða van|130568
+þefur|130663
+þei|130693
+þekking|130743
+þekkingarþorsti|130706
+þenkjandi|130811
+þernumáfur|130854
+þeysireið|130889
+þf.|130915
+þgf.|130970
+þinur|131025
+þistilhjarta|131115
+þjarki|131178
+þjóbein|131199
+þjófur|131220
+þjóðhátíð|131241
+þoka|131283
+þokki|131311
+þokubogi|131333
+þolinmæði|131367
+þolinmóður|131418
+þolmynd|131462
+þreifandi myrkur|131512
+þrekstjarna|131552
+þrettándinn|131599
+þreyja|131636
+þrisvar|131682
+þrái|131705
+þráðskeggur|131727
+þrívítt form|131778
+þröng|131916
+þröngur|131883
+þröstur|131944
+þula|132125
+þumalfingur|132152
+þumall|132188
+þumalputti|132244
+þungarokk|132280
+þungbrýnn|132310
+þungsteinn|132383
+þurr|132508
+þurrkur|132406
+þurrlendi|132453
+þvegill|132570
+þverlömun|132588
+þverristill|132622
+þvottaduft|132658
+þvottaefni|132685
+því að|132712
+því síður|132738
+þykkur|132772
+þyngdareind|132834
+þyrill|132908
+þátíð|133049
+þægilegur|133082
+þéttur|133122
+þótt|133174
+þúsundblaðarós|133205
+þýski kakkalakki|133250
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.1advEJ
+RPM build errors:
++ exit 0
++ umask 022
++ cd /builddir/build/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /builddir/build/BUILDROOT/hunspell-is-0.20160314.1-11.mga7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/hunspell-is-0.20160314.1-11.mga7.x86_64
+BUILDSTDERR: ++ dirname /builddir/build/BUILDROOT/hunspell-is-0.20160314.1-11.mga7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/hunspell-is-0.20160314.1-11.mga7.x86_64
++ cd hunspell-is-master
++ '[' 1 -eq 1 ']'
++ install -D -m 0644 -p 'dicts/is*.dic' /builddir/build/BUILDROOT/hunspell-is-0.20160314.1-11.mga7.x86_64/usr/share/hunspell/is_IS.dic
+BUILDSTDERR: install: cannot stat 'dicts/is*.dic': No such file or directory
+BUILDSTDERR: error: Bad exit status from /var/tmp/rpm-tmp.1advEJ (%install)
+BUILDSTDERR:     Bad exit status from /var/tmp/rpm-tmp.1advEJ (%install)
+Child return code was: 1
+EXCEPTION: [Error()]
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/mockbuild/trace_decorator.py", line 96, in trace
+    result = func(*args, **kw)
+  File "/usr/lib/python3.6/site-packages/mockbuild/util.py", line 626, in do
+    raise exception.Error("Command failed: \n # %s\n%s" % (command, output), child.returncode)
+mockbuild.exception.Error: Command failed: 
+ # /usr/bin/systemd-nspawn -q -M 6e0161d28b314a32b05702cdc31a3e71 -D /home/stig/rpmbuild/mock/cauldron/x86_64 -a --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin --setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007" --setenv=PS1=<mock-chroot> \s-\v\$  --setenv=LANG=en_US.UTF-8 -u mockbuild bash --login -c /usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/hunspell-is.spec
+
