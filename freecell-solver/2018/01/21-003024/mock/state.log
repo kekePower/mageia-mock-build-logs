@@ -1,8 +1,0 @@
-2018-01-21 00:29:26,438 - Mock Version: 1.4.8
-2018-01-21 00:29:28,244 - Start: dnf update
-2018-01-21 00:29:49,292 - Finish: dnf update
-2018-01-21 00:29:49,314 - Finish: chroot init
-2018-01-21 00:29:49,317 - Start: build phase for freecell-solver-4.16.0-1.src.rpm
-2018-01-21 00:29:49,319 - Start: build setup for freecell-solver-4.16.0-1.src.rpm
-2018-01-21 00:30:20,203 - Start: clean chroot
-2018-01-21 00:30:24,188 - Finish: clean chroot

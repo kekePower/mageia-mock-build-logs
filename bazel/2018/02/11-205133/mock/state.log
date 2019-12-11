@@ -1,8 +1,0 @@
-2018-02-11 20:51:19,350 - Mock Version: 1.4.8
-2018-02-11 20:51:20,553 - Start: dnf update
-2018-02-11 20:51:22,288 - Finish: dnf update
-2018-02-11 20:51:22,311 - Finish: chroot init
-2018-02-11 20:51:22,315 - Start: build phase for bazel-0.10.0-13.mga7.src.rpm
-2018-02-11 20:51:22,316 - Start: build setup for bazel-0.10.0-13.mga7.src.rpm
-2018-02-11 20:51:28,728 - Start: clean chroot
-2018-02-11 20:51:33,844 - Finish: clean chroot

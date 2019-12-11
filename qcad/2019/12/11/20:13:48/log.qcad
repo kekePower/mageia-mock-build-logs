@@ -1,0 +1,1554 @@
+Executing(%prep): /bin/sh -e /share/home/stig/monster/Downloads/mgarepo/qcad/BUILDROOT/rpm-tmp.bPm9KF
++ umask 022
++ cd /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD
++ rm -rf qcad-3.23.0.9
++ /usr/bin/gzip -dc /share/home/stig/monster/Downloads/mgarepo/qcad/SOURCES/qcad-3.23.0.9.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd qcad-3.23.0.9
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /share/home/stig/monster/Downloads/mgarepo/qcad/SOURCES/qcad-3.19.2.2-use-system-spatialindex.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ rm -rf src/3rdparty/spatialindexnavel/include/spatialindex
++ /usr/bin/mkdir -p /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/qt-labs-qtscriptgenerator-5.13.1
++ cp /share/home/stig/monster/Downloads/mgarepo/qcad/SOURCES/qt-labs-qtscriptgenerator-5.13.1.pro src/3rdparty/qt-labs-qtscriptgenerator-5.13.1/qt-labs-qtscriptgenerator-5.13.1.pro
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /share/home/stig/monster/Downloads/mgarepo/qcad/BUILDROOT/rpm-tmp.FOYPrJ
++ umask 022
++ cd /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD
++ cd qcad-3.23.0.9
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/lib64/qt5/bin/qmake libsuff=64 'QMAKE_CFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_CXXFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP=
+Info: creating stash file /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/.qmake.stash
+Info: creating cache file /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/.qmake.cache
++ /usr/bin/make -O -j8 V=1 VERBOSE=1
+cd src/ && ( test -e Makefile || /usr/lib64/qt5/bin/qmake -o Makefile /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/src.pro libsuff=64 'QMAKE_CFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_CXXFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP= ) && /usr/bin/make -f Makefile 
+cd 3rdparty/ && ( test -e Makefile || /usr/lib64/qt5/bin/qmake -o Makefile /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/3rdparty.pro libsuff=64 'QMAKE_CFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_CXXFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP= ) && /usr/bin/make -f Makefile 
+cd spatialindexnavel/ && ( test -e Makefile || /usr/lib64/qt5/bin/qmake -o Makefile /share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel/spatialindexnavel.pro libsuff=64 'QMAKE_CFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_CXXFLAGS=-g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP= ) && /usr/bin/make -f Makefile 
+/usr/bin/make -f Makefile.Release
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/Index.o src/rtree/Index.cc
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Index.cc:31:
+src/rtree/Node.h:55:41: error: 'byte' does not name a type
+   55 |    virtual void loadFromByteArray(const byte* data);
+      |                                         ^~~~
+src/rtree/Node.h:56:34: error: 'byte' has not been declared
+   56 |    virtual void storeToByteArray(byte** data, uint32_t& len);
+      |                                  ^~~~
+src/rtree/Node.h:70:85: error: 'byte' has not been declared
+   70 |                         virtual void getChildData(uint32_t index, uint32_t& length, byte** data) const;
+      |                                                                                     ^~~~
+src/rtree/Node.h:81:50: error: 'byte' has not been declared
+   81 |    virtual void insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                                  ^~~~
+src/rtree/Node.h:84:49: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                 ^~~~
+src/rtree/Node.h:84:120: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                                                                                        ^~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Index.cc:31:
+src/rtree/Node.h:85:51: error: 'byte' has not been declared
+   85 |    virtual void reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep);
+      |                                                   ^~~~
+src/rtree/Node.h:87:49: error: 'byte' has not been declared
+   87 |    virtual void rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:88:49: error: 'byte' has not been declared
+   88 |    virtual void rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:97:44: error: 'byte' has not been declared
+   97 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right) = 0;
+      |                                            ^~~~
+src/rtree/Node.h:118:4: error: 'byte' does not name a type
+  118 |    byte** m_pData;
+      |    ^~~~
+In file included from src/rtree/RTree.h:32,
+                 from src/rtree/Index.cc:31:
+src/rtree/PointerPoolNode.h: In member function 'void Tools::PointerPool<SpatialIndex::RTree::Node>::release(SpatialIndex::RTree::Node*)':
+src/rtree/PointerPoolNode.h:95:13: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+   95 |      if (p->m_pData != 0)
+      |             ^~~~~~~
+src/rtree/PointerPoolNode.h:102:15: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |               ^~~~~~~
+src/rtree/PointerPoolNode.h:102:49: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |                                                 ^~~~~~~
+In file included from src/rtree/Index.cc:31:
+src/rtree/RTree.h: At global scope:
+src/rtree/RTree.h:70:48: error: 'byte' does not name a type
+   70 |    virtual void insertData(uint32_t len, const byte* pData, const IShape& shape, id_type shapeIdentifier);
+      |                                                ^~~~
+src/rtree/RTree.h:90:46: error: 'byte' has not been declared
+   90 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                              ^~~~
+src/rtree/RTree.h:91:46: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                              ^~~~
+src/rtree/RTree.h:91:100: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                                                                                    ^~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:142:44: error: template argument 1 is invalid
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:142:44: error: template argument 2 is invalid
+src/rtree/RTree.h:142:46: error: expected unqualified-id before '>' token
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:143:44: error: template argument 1 is invalid
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:143:44: error: template argument 2 is invalid
+src/rtree/RTree.h:143:46: error: expected unqualified-id before '>' token
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:144:44: error: template argument 1 is invalid
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:144:44: error: template argument 2 is invalid
+src/rtree/RTree.h:144:46: error: expected unqualified-id before '>' token
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                              ^
+In file included from src/rtree/Index.cc:33:
+src/rtree/Leaf.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+In file included from src/rtree/Index.cc:34:
+src/rtree/Index.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Index.h:51:56: error: 'byte' has not been declared
+   51 |    void adjustTree(Node*, Node*, std::stack<id_type>&, byte* overflowTable);
+      |                                                        ^~~~
+src/rtree/Index.cc:105:40: error: 'byte' has not been declared
+  105 | void Index::split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& ptrLeft, NodePtr& ptrRight)
+      |                                        ^~~~
+src/rtree/Index.cc: In member function 'virtual void SpatialIndex::RTree::Index::split(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, SpatialIndex::RTree::NodePtr&, SpatialIndex::RTree::NodePtr&)':
+src/rtree/Index.cc:127:84: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Index'
+  127 |  if (ptrLeft.get() == 0) ptrLeft = NodePtr(new Index(m_pTree, m_identifier, m_level), &(m_pTree->m_indexPool));
+      |                                                                                    ^
+In file included from src/rtree/Index.cc:34:
+src/rtree/Index.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Index':
+   34 |   class Index : public Node
+      |         ^~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/Index.cc:30:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/Index.cc:30:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/Index.cc:128:76: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Index'
+  128 |  if (ptrRight.get() == 0) ptrRight = NodePtr(new Index(m_pTree, -1, m_level), &(m_pTree->m_indexPool));
+      |                                                                            ^
+src/rtree/Index.cc: At global scope:
+src/rtree/Index.cc:329:77: error: 'byte' has not been declared
+  329 | void Index::adjustTree(Node* n1, Node* n2, std::stack<id_type>& pathBuffer, byte* overflowTable)
+      |                                                                             ^~~~
+make[4]: *** [Makefile.Release:223: release/Index.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: *** Waiting for unfinished jobs....
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/Leaf.o src/rtree/Leaf.cc
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Leaf.cc:32:
+src/rtree/Node.h:55:41: error: 'byte' does not name a type
+   55 |    virtual void loadFromByteArray(const byte* data);
+      |                                         ^~~~
+src/rtree/Node.h:56:34: error: 'byte' has not been declared
+   56 |    virtual void storeToByteArray(byte** data, uint32_t& len);
+      |                                  ^~~~
+src/rtree/Node.h:70:85: error: 'byte' has not been declared
+   70 |                         virtual void getChildData(uint32_t index, uint32_t& length, byte** data) const;
+      |                                                                                     ^~~~
+src/rtree/Node.h:81:50: error: 'byte' has not been declared
+   81 |    virtual void insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                                  ^~~~
+src/rtree/Node.h:84:49: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                 ^~~~
+src/rtree/Node.h:84:120: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                                                                                        ^~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Leaf.cc:32:
+src/rtree/Node.h:85:51: error: 'byte' has not been declared
+   85 |    virtual void reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep);
+      |                                                   ^~~~
+src/rtree/Node.h:87:49: error: 'byte' has not been declared
+   87 |    virtual void rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:88:49: error: 'byte' has not been declared
+   88 |    virtual void rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:97:44: error: 'byte' has not been declared
+   97 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right) = 0;
+      |                                            ^~~~
+src/rtree/Node.h:118:4: error: 'byte' does not name a type
+  118 |    byte** m_pData;
+      |    ^~~~
+In file included from src/rtree/RTree.h:32,
+                 from src/rtree/Leaf.cc:32:
+src/rtree/PointerPoolNode.h: In member function 'void Tools::PointerPool<SpatialIndex::RTree::Node>::release(SpatialIndex::RTree::Node*)':
+src/rtree/PointerPoolNode.h:95:13: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+   95 |      if (p->m_pData != 0)
+      |             ^~~~~~~
+src/rtree/PointerPoolNode.h:102:15: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |               ^~~~~~~
+src/rtree/PointerPoolNode.h:102:49: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |                                                 ^~~~~~~
+In file included from src/rtree/Leaf.cc:32:
+src/rtree/RTree.h: At global scope:
+src/rtree/RTree.h:70:48: error: 'byte' does not name a type
+   70 |    virtual void insertData(uint32_t len, const byte* pData, const IShape& shape, id_type shapeIdentifier);
+      |                                                ^~~~
+src/rtree/RTree.h:90:46: error: 'byte' has not been declared
+   90 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                              ^~~~
+src/rtree/RTree.h:91:46: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                              ^~~~
+src/rtree/RTree.h:91:100: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                                                                                    ^~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:142:44: error: template argument 1 is invalid
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:142:44: error: template argument 2 is invalid
+src/rtree/RTree.h:142:46: error: expected unqualified-id before '>' token
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:143:44: error: template argument 1 is invalid
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:143:44: error: template argument 2 is invalid
+src/rtree/RTree.h:143:46: error: expected unqualified-id before '>' token
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:144:44: error: template argument 1 is invalid
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:144:44: error: template argument 2 is invalid
+src/rtree/RTree.h:144:46: error: expected unqualified-id before '>' token
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                              ^
+In file included from src/rtree/Leaf.cc:34:
+src/rtree/Index.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Index.h:51:56: error: 'byte' has not been declared
+   51 |    void adjustTree(Node*, Node*, std::stack<id_type>&, byte* overflowTable);
+      |                                                        ^~~~
+In file included from src/rtree/Leaf.cc:35:
+src/rtree/Leaf.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Leaf.cc:67:39: error: 'byte' has not been declared
+   67 | void Leaf::split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& pLeft, NodePtr& pRight)
+      |                                       ^~~~
+src/rtree/Leaf.cc: In member function 'virtual void SpatialIndex::RTree::Leaf::split(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, SpatialIndex::RTree::NodePtr&, SpatialIndex::RTree::NodePtr&)':
+src/rtree/Leaf.cc:89:60: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Leaf'
+   89 |  if (pLeft.get() == 0) pLeft = NodePtr(new Leaf(m_pTree, -1), &(m_pTree->m_leafPool));
+      |                                                            ^
+In file included from src/rtree/Leaf.cc:35:
+src/rtree/Leaf.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Leaf':
+   34 |   class Leaf : public Node
+      |         ^~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/Leaf.cc:30:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/Leaf.cc:30:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/Leaf.cc:90:62: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Leaf'
+   90 |  if (pRight.get() == 0) pRight = NodePtr(new Leaf(m_pTree, -1), &(m_pTree->m_leafPool));
+      |                                                              ^
+src/rtree/Leaf.cc:99:49: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+   99 |   pLeft->insertEntry(m_pDataLength[g1[cIndex]], m_pData[g1[cIndex]], *(m_ptrMBR[g1[cIndex]]), m_pIdentifier[g1[cIndex]]);
+      |                                                 ^~~~~~~
+      |                                                 pData
+src/rtree/Leaf.cc:106:50: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  106 |   pRight->insertEntry(m_pDataLength[g2[cIndex]], m_pData[g2[cIndex]], *(m_ptrMBR[g2[cIndex]]), m_pIdentifier[g2[cIndex]]);
+      |                                                  ^~~~~~~
+      |                                                  pData
+src/rtree/Leaf.cc: In member function 'virtual void SpatialIndex::RTree::Leaf::deleteData(SpatialIndex::id_type, std::stack<long int>&)':
+src/rtree/Leaf.cc:138:4: error: 'byte' was not declared in this scope
+  138 |    byte* overflowTable = new byte[m_pTree->m_stats.m_u32TreeHeight];
+      |    ^~~~
+src/rtree/Leaf.cc:138:10: error: 'overflowTable' was not declared in this scope
+  138 |    byte* overflowTable = new byte[m_pTree->m_stats.m_u32TreeHeight];
+      |          ^~~~~~~~~~~~~
+src/rtree/Leaf.cc:138:30: error: 'byte' does not name a type
+  138 |    byte* overflowTable = new byte[m_pTree->m_stats.m_u32TreeHeight];
+      |                              ^~~~
+src/rtree/Leaf.cc:140:58: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  140 |    m_pTree->insertData_impl(n->m_pDataLength[cChild], n->m_pData[cChild], *(n->m_ptrMBR[cChild]), n->m_pIdentifier[cChild], n->m_level, overflowTable);
+      |                                                          ^~~~~~~
+src/rtree/Leaf.cc:141:7: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  141 |    n->m_pData[cChild] = 0;
+      |       ^~~~~~~
+src/rtree/Leaf.cc:142:13: error: type '<type error>' argument given to 'delete', expected pointer
+  142 |    delete[] overflowTable;
+      |             ^~~~~~~~~~~~~
+make[4]: *** [Makefile.Release:231: release/Leaf.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/MovingPoint.o src/spatialindex/MovingPoint.cc
+src/spatialindex/MovingPoint.cc:228:43: error: 'byte' does not name a type
+  228 | void MovingPoint::loadFromByteArray(const byte* ptr)
+      |                                           ^~~~
+src/spatialindex/MovingPoint.cc:228:6: error: no declaration matches 'void SpatialIndex::MovingPoint::loadFromByteArray(const int*)'
+  228 | void MovingPoint::loadFromByteArray(const byte* ptr)
+      |      ^~~~~~~~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:252,
+                 from src/spatialindex/MovingPoint.cc:32:
+/usr/include/spatialindex/MovingPoint.h:60:8: note: candidate is: 'virtual void SpatialIndex::MovingPoint::loadFromByteArray(const uint8_t*)'
+   60 |   void loadFromByteArray(const uint8_t* data) override;
+      |        ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/MovingPoint.h:32:17: note: 'class SpatialIndex::MovingPoint' defined here
+   32 |  class SIDX_DLL MovingPoint : public TimePoint, public IEvolvingShape
+      |                 ^~~~~~~~~~~
+src/spatialindex/MovingPoint.cc:245:36: error: variable or field 'storeToByteArray' declared void
+  245 | void MovingPoint::storeToByteArray(byte** data, uint32_t& len)
+      |                                    ^~~~
+src/spatialindex/MovingPoint.cc:245:36: error: 'byte' was not declared in this scope
+src/spatialindex/MovingPoint.cc:245:43: error: 'data' was not declared in this scope
+  245 | void MovingPoint::storeToByteArray(byte** data, uint32_t& len)
+      |                                           ^~~~
+src/spatialindex/MovingPoint.cc:245:57: error: expected primary-expression before '&' token
+  245 | void MovingPoint::storeToByteArray(byte** data, uint32_t& len)
+      |                                                         ^
+src/spatialindex/MovingPoint.cc:245:59: error: 'len' was not declared in this scope; did you mean 'mblen'?
+  245 | void MovingPoint::storeToByteArray(byte** data, uint32_t& len)
+      |                                                           ^~~
+      |                                                           mblen
+make[4]: *** [Makefile.Release:256: release/MovingPoint.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/LineSegment.o src/spatialindex/LineSegment.cc
+src/spatialindex/LineSegment.cc:134:43: error: 'byte' does not name a type
+  134 | void LineSegment::loadFromByteArray(const byte* ptr)
+      |                                           ^~~~
+src/spatialindex/LineSegment.cc:134:6: error: no declaration matches 'void SpatialIndex::LineSegment::loadFromByteArray(const int*)'
+  134 | void LineSegment::loadFromByteArray(const byte* ptr)
+      |      ^~~~~~~~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:249,
+                 from src/spatialindex/LineSegment.cc:32:
+/usr/include/spatialindex/LineSegment.h:53:8: note: candidate is: 'virtual void SpatialIndex::LineSegment::loadFromByteArray(const uint8_t*)'
+   53 |   void loadFromByteArray(const uint8_t* data) override;
+      |        ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/LineSegment.h:32:17: note: 'class SpatialIndex::LineSegment' defined here
+   32 |  class SIDX_DLL LineSegment : public Tools::IObject, public virtual IShape
+      |                 ^~~~~~~~~~~
+src/spatialindex/LineSegment.cc:147:36: error: variable or field 'storeToByteArray' declared void
+  147 | void LineSegment::storeToByteArray(byte** data, uint32_t& len)
+      |                                    ^~~~
+src/spatialindex/LineSegment.cc:147:36: error: 'byte' was not declared in this scope
+src/spatialindex/LineSegment.cc:147:43: error: 'data' was not declared in this scope
+  147 | void LineSegment::storeToByteArray(byte** data, uint32_t& len)
+      |                                           ^~~~
+src/spatialindex/LineSegment.cc:147:57: error: expected primary-expression before '&' token
+  147 | void LineSegment::storeToByteArray(byte** data, uint32_t& len)
+      |                                                         ^
+src/spatialindex/LineSegment.cc:147:59: error: 'len' was not declared in this scope; did you mean 'mblen'?
+  147 | void LineSegment::storeToByteArray(byte** data, uint32_t& len)
+      |                                                           ^~~
+      |                                                           mblen
+make[4]: *** [Makefile.Release:253: release/LineSegment.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/Node.o src/rtree/Node.cc
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Node.cc:34:
+src/rtree/Node.h:55:41: error: 'byte' does not name a type
+   55 |    virtual void loadFromByteArray(const byte* data);
+      |                                         ^~~~
+src/rtree/Node.h:56:34: error: 'byte' has not been declared
+   56 |    virtual void storeToByteArray(byte** data, uint32_t& len);
+      |                                  ^~~~
+src/rtree/Node.h:70:85: error: 'byte' has not been declared
+   70 |                         virtual void getChildData(uint32_t index, uint32_t& length, byte** data) const;
+      |                                                                                     ^~~~
+src/rtree/Node.h:81:50: error: 'byte' has not been declared
+   81 |    virtual void insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                                  ^~~~
+src/rtree/Node.h:84:49: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                 ^~~~
+src/rtree/Node.h:84:120: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                                                                                        ^~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Node.cc:34:
+src/rtree/Node.h:85:51: error: 'byte' has not been declared
+   85 |    virtual void reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep);
+      |                                                   ^~~~
+src/rtree/Node.h:87:49: error: 'byte' has not been declared
+   87 |    virtual void rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:88:49: error: 'byte' has not been declared
+   88 |    virtual void rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:97:44: error: 'byte' has not been declared
+   97 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right) = 0;
+      |                                            ^~~~
+src/rtree/Node.h:118:4: error: 'byte' does not name a type
+  118 |    byte** m_pData;
+      |    ^~~~
+In file included from src/rtree/RTree.h:32,
+                 from src/rtree/Node.cc:34:
+src/rtree/PointerPoolNode.h: In member function 'void Tools::PointerPool<SpatialIndex::RTree::Node>::release(SpatialIndex::RTree::Node*)':
+src/rtree/PointerPoolNode.h:95:13: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+   95 |      if (p->m_pData != 0)
+      |             ^~~~~~~
+src/rtree/PointerPoolNode.h:102:15: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |               ^~~~~~~
+src/rtree/PointerPoolNode.h:102:49: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |                                                 ^~~~~~~
+In file included from src/rtree/Node.cc:34:
+src/rtree/RTree.h: At global scope:
+src/rtree/RTree.h:70:48: error: 'byte' does not name a type
+   70 |    virtual void insertData(uint32_t len, const byte* pData, const IShape& shape, id_type shapeIdentifier);
+      |                                                ^~~~
+src/rtree/RTree.h:90:46: error: 'byte' has not been declared
+   90 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                              ^~~~
+src/rtree/RTree.h:91:46: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                              ^~~~
+src/rtree/RTree.h:91:100: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                                                                                    ^~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:142:44: error: template argument 1 is invalid
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:142:44: error: template argument 2 is invalid
+src/rtree/RTree.h:142:46: error: expected unqualified-id before '>' token
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:143:44: error: template argument 1 is invalid
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:143:44: error: template argument 2 is invalid
+src/rtree/RTree.h:143:46: error: expected unqualified-id before '>' token
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:144:44: error: template argument 1 is invalid
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:144:44: error: template argument 2 is invalid
+src/rtree/RTree.h:144:46: error: expected unqualified-id before '>' token
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                              ^
+In file included from src/rtree/Node.cc:36:
+src/rtree/Index.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Index.h:51:56: error: 'byte' has not been declared
+   51 |    void adjustTree(Node*, Node*, std::stack<id_type>&, byte* overflowTable);
+      |                                                        ^~~~
+src/rtree/Node.cc:63:36: error: 'byte' does not name a type
+   63 | void Node::loadFromByteArray(const byte* ptr)
+      |                                    ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::loadFromByteArray(const int*)':
+src/rtree/Node.cc:94:4: error: 'm_pData' was not declared in this scope
+   94 |    m_pData[u32Child] = new byte[m_pDataLength[u32Child]];
+      |    ^~~~~~~
+src/rtree/Node.cc:94:28: error: 'byte' does not name a type
+   94 |    m_pData[u32Child] = new byte[m_pDataLength[u32Child]];
+      |                            ^~~~
+src/rtree/Node.cc:100:4: error: 'm_pData' was not declared in this scope
+  100 |    m_pData[u32Child] = 0;
+      |    ^~~~~~~
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:112:29: error: variable or field 'storeToByteArray' declared void
+  112 | void Node::storeToByteArray(byte** data, uint32_t& len)
+      |                             ^~~~
+src/rtree/Node.cc:112:29: error: 'byte' was not declared in this scope
+src/rtree/Node.cc:112:36: error: 'data' was not declared in this scope
+  112 | void Node::storeToByteArray(byte** data, uint32_t& len)
+      |                                    ^~~~
+src/rtree/Node.cc:112:50: error: expected primary-expression before '&' token
+  112 | void Node::storeToByteArray(byte** data, uint32_t& len)
+      |                                                  ^
+src/rtree/Node.cc:112:52: error: 'len' was not declared in this scope; did you mean 'mblen'?
+  112 | void Node::storeToByteArray(byte** data, uint32_t& len)
+      |                                                    ^~~
+      |                                                    mblen
+src/rtree/Node.cc:196:59: error: 'byte' has not been declared
+  196 | void Node::getChildData(uint32_t index, uint32_t& length, byte** data) const
+      |                                                           ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::getChildData(uint32_t, uint32_t&, int**) const':
+src/rtree/Node.cc:199:6: error: 'm_pData' was not declared in this scope
+  199 |  if (m_pData[index] == NULL)
+      |      ^~~~~~~
+src/rtree/Node.cc: In constructor 'SpatialIndex::RTree::Node::Node()':
+src/rtree/Node.cc:236:2: error: class 'SpatialIndex::RTree::Node' does not have any field named 'm_pData'
+  236 |  m_pData(0),
+      |  ^~~~~~~
+src/rtree/Node.cc: In constructor 'SpatialIndex::RTree::Node::Node(SpatialIndex::RTree::RTree*, SpatialIndex::id_type, uint32_t, uint32_t)':
+src/rtree/Node.cc:250:2: error: class 'SpatialIndex::RTree::Node' does not have any field named 'm_pData'
+  250 |  m_pData(0),
+      |  ^~~~~~~
+src/rtree/Node.cc:261:3: error: 'm_pData' was not declared in this scope
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |   ^~~~~~~
+src/rtree/Node.cc:261:17: error: 'byte' does not name a type
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |                 ^~~~
+src/rtree/Node.cc:261:23: error: capture of non-variable 'SpatialIndex::RTree::Node::m_capacity'
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |                       ^~~~~~~~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Node.cc:34:
+src/rtree/Node.h:112:13: note: 'uint32_t SpatialIndex::RTree::Node::m_capacity' declared here
+  112 |    uint32_t m_capacity;
+      |             ^~~~~~~~~~
+src/rtree/Node.cc:261:33: error: expected ',' before '+' token
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |                                 ^~
+      |                                 ,
+src/rtree/Node.cc:261:34: error: expected identifier before '+' token
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |                                  ^
+src/rtree/Node.cc: In lambda function:
+src/rtree/Node.cc:261:38: error: expected '{' before ';' token
+  261 |   m_pData = new byte*[m_capacity + 1];
+      |                                      ^
+src/rtree/Node.cc: In constructor 'SpatialIndex::RTree::Node::Node(SpatialIndex::RTree::RTree*, SpatialIndex::id_type, uint32_t, uint32_t)':
+src/rtree/Node.cc:268:12: error: 'm_pData' was not declared in this scope
+  268 |   delete[] m_pData;
+      |            ^~~~~~~
+src/rtree/Node.cc: In destructor 'virtual SpatialIndex::RTree::Node::~Node()':
+src/rtree/Node.cc:277:6: error: 'm_pData' was not declared in this scope
+  277 |  if (m_pData != 0)
+      |      ^~~~~~~
+src/rtree/Node.cc:284:12: error: type '<type error>' argument given to 'delete', expected pointer
+  284 |   delete[] m_pData;
+      |            ^~~~~~~
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:297:45: error: 'byte' has not been declared
+  297 | void Node::insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id)
+      |                                             ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::insertEntry(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type)':
+src/rtree/Node.cc:302:2: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  302 |  m_pData[m_children] = pData;
+      |  ^~~~~~~
+      |  pData
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::deleteEntry(uint32_t)':
+src/rtree/Node.cc:321:6: error: 'm_pData' was not declared in this scope
+  321 |  if (m_pData[index] != 0) delete[] m_pData[index];
+      |      ^~~~~~~
+src/rtree/Node.cc:326:3: error: 'm_pData' was not declared in this scope
+  326 |   m_pData[index] = m_pData[m_children - 1];
+      |   ^~~~~~~
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:355:44: error: 'byte' has not been declared
+  355 | bool Node::insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable)
+      |                                            ^~~~
+src/rtree/Node.cc:355:115: error: 'byte' has not been declared
+  355 | bool Node::insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable)
+      |                                                                                                                   ^~~~
+src/rtree/Node.cc: In member function 'virtual bool SpatialIndex::RTree::Node::insertData(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::stack<long int>&, int*)':
+src/rtree/Node.cc:388:3: error: 'byte' was not declared in this scope
+  388 |   byte** reinsertdata = 0;
+      |   ^~~~
+src/rtree/Node.cc:388:10: error: 'reinsertdata' was not declared in this scope; did you mean 'reinsertData'?
+  388 |   byte** reinsertdata = 0;
+      |          ^~~~~~~~~~~~
+      |          reinsertData
+src/rtree/Node.cc:392:10: error: 'keepdata' was not declared in this scope
+  392 |   byte** keepdata = 0;
+      |          ^~~~~~~~
+src/rtree/Node.cc:399:23: error: 'byte' does not name a type
+  399 |    reinsertdata = new byte*[lReinsert];
+      |                       ^~~~
+src/rtree/Node.cc: In lambda function:
+src/rtree/Node.cc:399:39: error: expected '{' before ';' token
+  399 |    reinsertdata = new byte*[lReinsert];
+      |                                       ^
+src/rtree/Node.cc: In member function 'virtual bool SpatialIndex::RTree::Node::insertData(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::stack<long int>&, int*)':
+src/rtree/Node.cc:404:19: error: 'byte' does not name a type
+  404 |    keepdata = new byte*[m_capacity + 1];
+      |                   ^~~~
+src/rtree/Node.cc:404:25: error: capture of non-variable 'SpatialIndex::RTree::Node::m_capacity'
+  404 |    keepdata = new byte*[m_capacity + 1];
+      |                         ^~~~~~~~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/Node.cc:34:
+src/rtree/Node.h:112:13: note: 'uint32_t SpatialIndex::RTree::Node::m_capacity' declared here
+  112 |    uint32_t m_capacity;
+      |             ^~~~~~~~~~
+src/rtree/Node.cc:404:35: error: expected ',' before '+' token
+  404 |    keepdata = new byte*[m_capacity + 1];
+      |                                   ^~
+      |                                   ,
+src/rtree/Node.cc:404:36: error: expected identifier before '+' token
+  404 |    keepdata = new byte*[m_capacity + 1];
+      |                                    ^
+src/rtree/Node.cc: In lambda function:
+src/rtree/Node.cc:404:40: error: expected '{' before ';' token
+  404 |    keepdata = new byte*[m_capacity + 1];
+      |                                        ^
+src/rtree/Node.cc: In member function 'virtual bool SpatialIndex::RTree::Node::insertData(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::stack<long int>&, int*)':
+src/rtree/Node.cc:411:13: error: type '<type error>' argument given to 'delete', expected pointer
+  411 |    delete[] reinsertdata;
+      |             ^~~~~~~~~~~~
+src/rtree/Node.cc:415:13: error: type '<type error>' argument given to 'delete', expected pointer
+  415 |    delete[] keepdata;
+      |             ^~~~~~~~
+src/rtree/Node.cc:427:27: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  427 |    reinsertdata[cIndex] = m_pData[vReinsert[cIndex]];
+      |                           ^~~~~~~
+      |                           pData
+src/rtree/Node.cc:435:23: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  435 |    keepdata[cIndex] = m_pData[vKeep[cIndex]];
+      |                       ^~~~~~~
+      |                       pData
+src/rtree/Node.cc:441:12: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  441 |   delete[] m_pData;
+      |            ^~~~~~~
+      |            pData
+src/rtree/Node.cc:484:12: error: type '<type error>' argument given to 'delete', expected pointer
+  484 |   delete[] reinsertdata;
+      |            ^~~~~~~~~~~~
+src/rtree/Node.cc:509:69: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Index'
+  509 |     ptrR = NodePtr(new Index(m_pTree, m_pTree->m_rootID, m_level + 1), &(m_pTree->m_indexPool));
+      |                                                                     ^
+In file included from src/rtree/Node.cc:36:
+src/rtree/Index.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Index':
+   34 |   class Index : public Node
+      |         ^~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/Node.cc:32:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/Node.cc:32:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:548:46: error: 'byte' has not been declared
+  548 | void Node::reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep)
+      |                                              ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::reinsertData(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::vector<unsigned int>&, std::vector<unsigned int>&)':
+src/rtree/Node.cc:553:2: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  553 |  m_pData[m_children] = pData;
+      |  ^~~~~~~
+      |  pData
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:607:44: error: 'byte' has not been declared
+  607 | void Node::rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2)
+      |                                            ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::rtreeSplit(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::vector<unsigned int>&, std::vector<unsigned int>&)':
+src/rtree/Node.cc:613:2: error: 'byte' was not declared in this scope
+  613 |  byte* mask = new byte[m_capacity + 1];
+      |  ^~~~
+src/rtree/Node.cc:613:8: error: 'mask' was not declared in this scope
+  613 |  byte* mask = new byte[m_capacity + 1];
+      |        ^~~~
+src/rtree/Node.cc:613:19: error: 'byte' does not name a type
+  613 |  byte* mask = new byte[m_capacity + 1];
+      |                   ^~~~
+src/rtree/Node.cc:619:2: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  619 |  m_pData[m_capacity] = pData;
+      |  ^~~~~~~
+      |  pData
+src/rtree/Node.cc:758:11: error: type '<type error>' argument given to 'delete', expected pointer
+  758 |  delete[] mask;
+      |           ^~~~
+src/rtree/Node.cc: At global scope:
+src/rtree/Node.cc:761:44: error: 'byte' has not been declared
+  761 | void Node::rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2)
+      |                                            ^~~~
+src/rtree/Node.cc: In member function 'virtual void SpatialIndex::RTree::Node::rstarSplit(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type, std::vector<unsigned int>&, std::vector<unsigned int>&)':
+src/rtree/Node.cc:778:2: error: 'm_pData' was not declared in this scope; did you mean 'pData'?
+  778 |  m_pData[m_capacity] = pData;
+      |  ^~~~~~~
+      |  pData
+make[4]: *** [Makefile.Release:238: release/Node.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/Statistics.o src/rtree/Statistics.cc
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/BulkLoader.o src/rtree/BulkLoader.cc
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/BulkLoader.cc:38:
+src/rtree/Node.h:55:41: error: 'byte' does not name a type
+   55 |    virtual void loadFromByteArray(const byte* data);
+      |                                         ^~~~
+src/rtree/Node.h:56:34: error: 'byte' has not been declared
+   56 |    virtual void storeToByteArray(byte** data, uint32_t& len);
+      |                                  ^~~~
+src/rtree/Node.h:70:85: error: 'byte' has not been declared
+   70 |                         virtual void getChildData(uint32_t index, uint32_t& length, byte** data) const;
+      |                                                                                     ^~~~
+src/rtree/Node.h:81:50: error: 'byte' has not been declared
+   81 |    virtual void insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                                  ^~~~
+src/rtree/Node.h:84:49: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                 ^~~~
+src/rtree/Node.h:84:120: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                                                                                        ^~~~
+In file included from src/rtree/RTree.h:31,
+                 from src/rtree/BulkLoader.cc:38:
+src/rtree/Node.h:85:51: error: 'byte' has not been declared
+   85 |    virtual void reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep);
+      |                                                   ^~~~
+src/rtree/Node.h:87:49: error: 'byte' has not been declared
+   87 |    virtual void rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:88:49: error: 'byte' has not been declared
+   88 |    virtual void rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:97:44: error: 'byte' has not been declared
+   97 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right) = 0;
+      |                                            ^~~~
+src/rtree/Node.h:118:4: error: 'byte' does not name a type
+  118 |    byte** m_pData;
+      |    ^~~~
+In file included from src/rtree/RTree.h:32,
+                 from src/rtree/BulkLoader.cc:38:
+src/rtree/PointerPoolNode.h: In member function 'void Tools::PointerPool<SpatialIndex::RTree::Node>::release(SpatialIndex::RTree::Node*)':
+src/rtree/PointerPoolNode.h:95:13: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+   95 |      if (p->m_pData != 0)
+      |             ^~~~~~~
+src/rtree/PointerPoolNode.h:102:15: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |               ^~~~~~~
+src/rtree/PointerPoolNode.h:102:49: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |                                                 ^~~~~~~
+In file included from src/rtree/BulkLoader.cc:38:
+src/rtree/RTree.h: At global scope:
+src/rtree/RTree.h:70:48: error: 'byte' does not name a type
+   70 |    virtual void insertData(uint32_t len, const byte* pData, const IShape& shape, id_type shapeIdentifier);
+      |                                                ^~~~
+src/rtree/RTree.h:90:46: error: 'byte' has not been declared
+   90 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                              ^~~~
+src/rtree/RTree.h:91:46: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                              ^~~~
+src/rtree/RTree.h:91:100: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                                                                                    ^~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:142:44: error: template argument 1 is invalid
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:142:44: error: template argument 2 is invalid
+src/rtree/RTree.h:142:46: error: expected unqualified-id before '>' token
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:143:44: error: template argument 1 is invalid
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:143:44: error: template argument 2 is invalid
+src/rtree/RTree.h:143:46: error: expected unqualified-id before '>' token
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:144:44: error: template argument 1 is invalid
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:144:44: error: template argument 2 is invalid
+src/rtree/RTree.h:144:46: error: expected unqualified-id before '>' token
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                              ^
+In file included from src/rtree/BulkLoader.cc:39:
+src/rtree/Leaf.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+In file included from src/rtree/BulkLoader.cc:40:
+src/rtree/Index.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Index.h:51:56: error: 'byte' has not been declared
+   51 |    void adjustTree(Node*, Node*, std::stack<id_type>&, byte* overflowTable);
+      |                                                        ^~~~
+In file included from src/rtree/BulkLoader.cc:41:
+src/rtree/BulkLoader.h:41:55: error: 'byte' has not been declared
+   41 |     Record(const Region& r, id_type id, uint32_t len, byte* pData, uint32_t s);
+      |                                                       ^~~~
+src/rtree/BulkLoader.h:62:5: error: 'byte' does not name a type
+   62 |     byte* m_pData;
+      |     ^~~~
+src/rtree/BulkLoader.h:98:11: error: 'SmartPointer' in namespace 'Tools' does not name a template type
+   98 |    Tools::SmartPointer<Tools::TemporaryFile> m_sortedFile;
+      |           ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:99:21: error: 'SmartPointer' is not a member of 'Tools'
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                     ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:99:21: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/BulkLoader.h:99:54: error: template argument 1 is invalid
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                                                      ^
+src/rtree/BulkLoader.h:99:54: error: template argument 2 is invalid
+src/rtree/BulkLoader.h:99:56: error: expected unqualified-id before '>' token
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                                                        ^
+src/rtree/BulkLoader.h:120:12: error: 'Tools::SmartPointer' has not been declared
+  120 |     Tools::SmartPointer<ExternalSorter> es,
+      |            ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:120:24: error: expected ',' or '...' before '<' token
+  120 |     Tools::SmartPointer<ExternalSorter> es,
+      |                        ^
+src/rtree/BulkLoader.cc: In constructor 'SpatialIndex::RTree::ExternalSorter::Record::Record()':
+src/rtree/BulkLoader.cc:50:3: error: class 'SpatialIndex::RTree::ExternalSorter::Record' does not have any field named 'm_pData'
+   50 | : m_pData(0)
+      |   ^~~~~~~
+src/rtree/BulkLoader.cc: At global scope:
+src/rtree/BulkLoader.cc:54:75: error: 'byte' has not been declared
+   54 | ExternalSorter::Record::Record(const Region& r, id_type id, uint32_t len, byte* pData, uint32_t s)
+      |                                                                           ^~~~
+src/rtree/BulkLoader.cc: In constructor 'SpatialIndex::RTree::ExternalSorter::Record::Record(const SpatialIndex::Region&, SpatialIndex::id_type, uint32_t, int*, uint32_t)':
+src/rtree/BulkLoader.cc:55:33: error: class 'SpatialIndex::RTree::ExternalSorter::Record' does not have any field named 'm_pData'
+   55 | : m_r(r), m_id(id), m_len(len), m_pData(pData), m_s(s)
+      |                                 ^~~~~~~
+src/rtree/BulkLoader.cc: In destructor 'SpatialIndex::RTree::ExternalSorter::Record::~Record()':
+src/rtree/BulkLoader.cc:61:11: error: 'm_pData' was not declared in this scope
+   61 |  delete[] m_pData;
+      |           ^~~~~~~
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::ExternalSorter::Record::storeToFile(Tools::TemporaryFile&)':
+src/rtree/BulkLoader.cc:88:32: error: 'm_pData' was not declared in this scope
+   88 |  if (m_len > 0) f.write(m_len, m_pData);
+      |                                ^~~~~~~
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::ExternalSorter::Record::loadFromFile(Tools::TemporaryFile&)':
+src/rtree/BulkLoader.cc:113:11: error: 'm_pData' was not declared in this scope
+  113 |  delete[] m_pData; m_pData = 0;
+      |           ^~~~~~~
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::ExternalSorter::insert(SpatialIndex::RTree::ExternalSorter::Record*)':
+src/rtree/BulkLoader.cc:152:3: error: 'm_runs' was not declared in this scope
+  152 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |   ^~~~~~
+src/rtree/BulkLoader.cc:152:27: error: 'SmartPointer' is not a member of 'Tools'
+  152 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |                           ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:152:60: error: expected primary-expression before '>' token
+  152 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |                                                            ^
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::ExternalSorter::sort()':
+src/rtree/BulkLoader.cc:161:6: error: 'm_runs' was not declared in this scope
+  161 |  if (m_runs.empty())
+      |      ^~~~~~
+src/rtree/BulkLoader.cc:182:3: error: 'm_runs' was not declared in this scope
+  182 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |   ^~~~~~
+src/rtree/BulkLoader.cc:182:27: error: 'SmartPointer' is not a member of 'Tools'
+  182 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |                           ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:182:60: error: expected primary-expression before '>' token
+  182 |   m_runs.push_back(Tools::SmartPointer<Tools::TemporaryFile>(tf));
+      |                                                            ^
+src/rtree/BulkLoader.cc:185:6: error: 'm_runs' was not declared in this scope
+  185 |  if (m_runs.size() == 1)
+      |      ^~~~~~
+src/rtree/BulkLoader.cc:187:3: error: 'm_sortedFile' was not declared in this scope
+  187 |   m_sortedFile = m_runs.front();
+      |   ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:195:11: error: 'SmartPointer' is not a member of 'Tools'
+  195 |    Tools::SmartPointer<Tools::TemporaryFile> tf(new Tools::TemporaryFile());
+      |           ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:195:44: error: expected primary-expression before '>' token
+  195 |    Tools::SmartPointer<Tools::TemporaryFile> tf(new Tools::TemporaryFile());
+      |                                            ^
+src/rtree/BulkLoader.cc:195:46: error: 'tf' was not declared in this scope; did you mean 'tm'?
+  195 |    Tools::SmartPointer<Tools::TemporaryFile> tf(new Tools::TemporaryFile());
+      |                                              ^~
+      |                                              tm
+src/rtree/BulkLoader.cc:196:23: error: 'SmartPointer' is not a member of 'Tools'
+  196 |    std::vector<Tools::SmartPointer<Tools::TemporaryFile> > buckets;
+      |                       ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:196:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/BulkLoader.cc:196:56: error: template argument 1 is invalid
+  196 |    std::vector<Tools::SmartPointer<Tools::TemporaryFile> > buckets;
+      |                                                        ^
+src/rtree/BulkLoader.cc:196:56: error: template argument 2 is invalid
+src/rtree/BulkLoader.cc:196:58: error: expected unqualified-id before '>' token
+  196 |    std::vector<Tools::SmartPointer<Tools::TemporaryFile> > buckets;
+      |                                                          ^
+src/rtree/BulkLoader.cc:201:21: error: 'SmartPointer' is not a member of 'Tools'
+  201 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> >::iterator it = m_runs.begin();
+      |                     ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:201:21: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/BulkLoader.cc:201:54: error: template argument 1 is invalid
+  201 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> >::iterator it = m_runs.begin();
+      |                                                      ^
+src/rtree/BulkLoader.cc:201:54: error: template argument 2 is invalid
+src/rtree/BulkLoader.cc:201:56: error: expected unqualified-id before '>' token
+  201 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> >::iterator it = m_runs.begin();
+      |                                                        ^
+src/rtree/BulkLoader.cc:204:5: error: 'buckets' was not declared in this scope
+  204 |     buckets.push_back(*it);
+      |     ^~~~~~~
+src/rtree/BulkLoader.cc:204:24: error: 'it' was not declared in this scope; did you mean 'i'?
+  204 |     buckets.push_back(*it);
+      |                        ^~
+      |                        i
+src/rtree/BulkLoader.cc:237:11: error: 'buckets' was not declared in this scope
+  237 |     if (! buckets[e.m_u32Index]->eof() && buffers[e.m_u32Index].empty())
+      |           ^~~~~~~
+src/rtree/BulkLoader.cc:274:5: error: 'm_sortedFile' was not declared in this scope
+  274 |     m_sortedFile = tf;
+      |     ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc: In member function 'SpatialIndex::RTree::ExternalSorter::Record* SpatialIndex::RTree::ExternalSorter::getNextRecord()':
+src/rtree/BulkLoader.cc:294:6: error: 'm_sortedFile' was not declared in this scope
+  294 |  if (m_sortedFile.get() == 0)
+      |      ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::BulkLoader::bulkLoadUsingSTR(SpatialIndex::RTree::RTree*, SpatialIndex::IDataStream&, uint32_t, uint32_t, uint32_t, uint32_t)':
+src/rtree/BulkLoader.cc:342:9: error: 'SmartPointer' is not a member of 'Tools'
+  342 |  Tools::SmartPointer<ExternalSorter> es = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |         ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:342:36: error: expected primary-expression before '>' token
+  342 |  Tools::SmartPointer<ExternalSorter> es = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                    ^
+src/rtree/BulkLoader.cc:342:38: error: 'es' was not declared in this scope
+  342 |  Tools::SmartPointer<ExternalSorter> es = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                      ^~
+src/rtree/BulkLoader.cc:342:50: error: 'SmartPointer' is not a member of 'Tools'
+  342 |  Tools::SmartPointer<ExternalSorter> es = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                  ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:342:77: error: expected primary-expression before '>' token
+  342 |  Tools::SmartPointer<ExternalSorter> es = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                                             ^
+src/rtree/BulkLoader.cc:352:93: error: no matching function for call to 'SpatialIndex::RTree::ExternalSorter::Record::Record(SpatialIndex::Region&, SpatialIndex::id_type&, uint32_t&, uint8_t*&, int)'
+  352 |   es->insert(new ExternalSorter::Record(d->m_region, d->m_id, d->m_dataLength, d->m_pData, 0));
+      |                                                                                             ^
+src/rtree/BulkLoader.cc:54:1: note: candidate: 'SpatialIndex::RTree::ExternalSorter::Record::Record(const SpatialIndex::Region&, SpatialIndex::id_type, uint32_t, int*, uint32_t)'
+   54 | ExternalSorter::Record::Record(const Region& r, id_type id, uint32_t len, byte* pData, uint32_t s)
+      | ^~~~~~~~~~~~~~
+src/rtree/BulkLoader.cc:54:81: note:   no known conversion for argument 4 from 'uint8_t*' {aka 'unsigned char*'} to 'int*'
+   54 | ExternalSorter::Record::Record(const Region& r, id_type id, uint32_t len, byte* pData, uint32_t s)
+      |                                                                           ~~~~~~^~~~~
+src/rtree/BulkLoader.cc:49:1: note: candidate: 'SpatialIndex::RTree::ExternalSorter::Record::Record()'
+   49 | ExternalSorter::Record::Record()
+      | ^~~~~~~~~~~~~~
+src/rtree/BulkLoader.cc:49:1: note:   candidate expects 0 arguments, 5 provided
+In file included from src/rtree/BulkLoader.cc:41:
+src/rtree/BulkLoader.h:37:10: note: candidate: 'SpatialIndex::RTree::ExternalSorter::Record::Record(const SpatialIndex::RTree::ExternalSorter::Record&)'
+   37 |    class Record
+      |          ^~~~~~
+src/rtree/BulkLoader.h:37:10: note:   candidate expects 1 argument, 5 provided
+src/rtree/BulkLoader.cc:371:10: error: 'SmartPointer' is not a member of 'Tools'
+  371 |   Tools::SmartPointer<ExternalSorter> es2 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |          ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:371:37: error: expected primary-expression before '>' token
+  371 |   Tools::SmartPointer<ExternalSorter> es2 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                     ^
+src/rtree/BulkLoader.cc:371:39: error: 'es2' was not declared in this scope
+  371 |   Tools::SmartPointer<ExternalSorter> es2 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                       ^~~
+src/rtree/BulkLoader.cc:371:52: error: 'SmartPointer' is not a member of 'Tools'
+  371 |   Tools::SmartPointer<ExternalSorter> es2 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                    ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:371:79: error: expected primary-expression before '>' token
+  371 |   Tools::SmartPointer<ExternalSorter> es2 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                                               ^
+src/rtree/BulkLoader.cc: At global scope:
+src/rtree/BulkLoader.cc:385:9: error: 'Tools::SmartPointer' has not been declared
+  385 |  Tools::SmartPointer<ExternalSorter> es,
+      |         ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:385:21: error: expected ',' or '...' before '<' token
+  385 |  Tools::SmartPointer<ExternalSorter> es,
+      |                     ^
+src/rtree/BulkLoader.cc: In member function 'void SpatialIndex::RTree::BulkLoader::createLevel(SpatialIndex::RTree::RTree*, int)':
+src/rtree/BulkLoader.cc:394:16: error: 'level' was not declared in this scope
+  394 |  uint64_t b = (level == 0) ? bleaf : bindex;
+      |                ^~~~~
+src/rtree/BulkLoader.cc:394:30: error: 'bleaf' was not declared in this scope
+  394 |  uint64_t b = (level == 0) ? bleaf : bindex;
+      |                              ^~~~~
+src/rtree/BulkLoader.cc:394:38: error: 'bindex' was not declared in this scope; did you mean 'rindex'?
+  394 |  uint64_t b = (level == 0) ? bleaf : bindex;
+      |                                      ^~~~~~
+      |                                      rindex
+src/rtree/BulkLoader.cc:395:67: error: 'es' was not declared in this scope
+  395 |  uint64_t P = static_cast<uint64_t>(std::ceil(static_cast<double>(es->getTotalEntries()) / static_cast<double>(b)));
+      |                                                                   ^~
+src/rtree/BulkLoader.cc:398:16: error: 'dimension' was not declared in this scope
+  398 |  if (S == 1 || dimension == pTree->m_dimension - 1 || S * b == es->getTotalEntries())
+      |                ^~~~~~~~~
+src/rtree/BulkLoader.cc:413:5: error: 'es2' was not declared in this scope
+  413 |     es2->insert(new ExternalSorter::Record(n->m_nodeMBR, n->m_identifier, 0, 0, 0));
+      |     ^~~
+src/rtree/BulkLoader.cc:424:4: error: 'es2' was not declared in this scope
+  424 |    es2->insert(new ExternalSorter::Record(n->m_nodeMBR, n->m_identifier, 0, 0, 0));
+      |    ^~~
+src/rtree/BulkLoader.cc:436:11: error: 'SmartPointer' is not a member of 'Tools'
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |           ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:436:38: error: expected primary-expression before '>' token
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                      ^
+src/rtree/BulkLoader.cc:436:40: error: 'es3' was not declared in this scope
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                        ^~~
+src/rtree/BulkLoader.cc:436:53: error: 'SmartPointer' is not a member of 'Tools'
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                     ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:436:80: error: expected primary-expression before '>' token
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                                                ^
+src/rtree/BulkLoader.cc:436:101: error: 'pageSize' was not declared in this scope; did you mean 'getpagesize'?
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                                                                     ^~~~~~~~
+      |                                                                                                     getpagesize
+src/rtree/BulkLoader.cc:436:111: error: 'numberOfPages' was not declared in this scope
+  436 |    Tools::SmartPointer<ExternalSorter> es3 = Tools::SmartPointer<ExternalSorter>(new ExternalSorter(pageSize, numberOfPages));
+      |                                                                                                               ^~~~~~~~~~~~~
+src/rtree/BulkLoader.cc:446:65: error: 'es2' was not declared in this scope
+  446 |    createLevel(pTree, es3, dimension + 1, bleaf, bindex, level, es2, pageSize, numberOfPages);
+      |                                                                 ^~~
+src/rtree/BulkLoader.cc: In member function 'SpatialIndex::RTree::Node* SpatialIndex::RTree::BulkLoader::createNode(SpatialIndex::RTree::RTree*, std::vector<SpatialIndex::RTree::ExternalSorter::Record*>&, uint32_t)':
+src/rtree/BulkLoader.cc:455:40: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Leaf'
+  455 |  if (level == 0) n = new Leaf(pTree, -1);
+      |                                        ^
+In file included from src/rtree/BulkLoader.cc:39:
+src/rtree/Leaf.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Leaf':
+   34 |   class Leaf : public Node
+      |         ^~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/BulkLoader.cc:36:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/BulkLoader.cc:36:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:456:37: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Index'
+  456 |  else n = new Index(pTree, -1, level);
+      |                                     ^
+In file included from src/rtree/BulkLoader.cc:40:
+src/rtree/Index.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Index':
+   34 |   class Index : public Node
+      |         ^~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/BulkLoader.cc:36:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/BulkLoader.cc:36:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/BulkLoader.cc:460:47: error: 'class SpatialIndex::RTree::ExternalSorter::Record' has no member named 'm_pData'
+  460 |   n->insertEntry(e[cChild]->m_len, e[cChild]->m_pData, e[cChild]->m_r, e[cChild]->m_id);
+      |                                               ^~~~~~~
+src/rtree/BulkLoader.cc:461:14: error: 'class SpatialIndex::RTree::ExternalSorter::Record' has no member named 'm_pData'
+  461 |   e[cChild]->m_pData = 0;
+      |              ^~~~~~~
+make[4]: *** [Makefile.Release:215: release/BulkLoader.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[4]: Entering directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+g++ -c -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -O3 -ffast-math -march=sandybridge -mtune=sandybridge -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -w -D_REENTRANT -fPIC -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 -DQCAD_DLL -DNDEBUG -DSPATIALINDEX_CREATE_DLL -DHAVE_BZERO -DPTHREADS -DHAVE_PTHREAD_H -DHAVE_SRAND48 -DQT_NO_DEBUG -DQT_PLUGIN -DQT_PRINTSUPPORT_LIB -DQT_SVG_LIB -DQT_OPENGL_LIB -DQT_HELP_LIB -DQT_UITOOLS_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SCRIPT_LIB -DQT_SCRIPTTOOLS_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -I. -I../../core -I../../core/math -I../../grid -I../../snap -I../../gui -I../../entity -I../../operations -I../../scripting -I../../stemmer -I../../scripting/ecmaapi -I../../scripting/ecmaapi/generated -I../../scripting/ecmaapi/adapters -I../../io/dxf -I../../spatialindex -I../../3rdparty -I/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/zip -Iinclude -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtPrintSupport -isystem /usr/include/qt5/QtSvg -isystem /usr/include/qt5/QtOpenGL -isystem /usr/include/qt5/QtHelp -isystem /usr/include/qt5/QtUiTools -isystem /usr/include/qt5/QtDesigner -isystem /usr/include/qt5/QtUiPlugin -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtScript -isystem /usr/include/qt5/QtScriptTools -isystem /usr/include/qt5/QtSql -isystem /usr/include/qt5/QtXmlPatterns -isystem /usr/include/qt5/QtNetwork -isystem /usr/include/qt5/QtXml -isystem /usr/include/qt5/QtCore -Irelease -isystem /usr/include/libdrm -I/usr/lib64/qt5/mkspecs/linux-g++ -o release/RTree.o src/rtree/RTree.cc
+In file included from src/rtree/RTree.cc:33:
+src/rtree/Node.h:55:41: error: 'byte' does not name a type
+   55 |    virtual void loadFromByteArray(const byte* data);
+      |                                         ^~~~
+src/rtree/Node.h:56:34: error: 'byte' has not been declared
+   56 |    virtual void storeToByteArray(byte** data, uint32_t& len);
+      |                                  ^~~~
+src/rtree/Node.h:70:85: error: 'byte' has not been declared
+   70 |                         virtual void getChildData(uint32_t index, uint32_t& length, byte** data) const;
+      |                                                                                     ^~~~
+src/rtree/Node.h:81:50: error: 'byte' has not been declared
+   81 |    virtual void insertEntry(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                                  ^~~~
+src/rtree/Node.h:84:49: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                 ^~~~
+src/rtree/Node.h:84:120: error: 'byte' has not been declared
+   84 |    virtual bool insertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::stack<id_type>& pathBuffer, byte* overflowTable);
+      |                                                                                                                        ^~~~
+In file included from src/rtree/RTree.cc:33:
+src/rtree/Node.h:85:51: error: 'byte' has not been declared
+   85 |    virtual void reinsertData(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& reinsert, std::vector<uint32_t>& keep);
+      |                                                   ^~~~
+src/rtree/Node.h:87:49: error: 'byte' has not been declared
+   87 |    virtual void rtreeSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:88:49: error: 'byte' has not been declared
+   88 |    virtual void rstarSplit(uint32_t dataLength, byte* pData, Region& mbr, id_type id, std::vector<uint32_t>& group1, std::vector<uint32_t>& group2);
+      |                                                 ^~~~
+src/rtree/Node.h:97:44: error: 'byte' has not been declared
+   97 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right) = 0;
+      |                                            ^~~~
+src/rtree/Node.h:118:4: error: 'byte' does not name a type
+  118 |    byte** m_pData;
+      |    ^~~~
+In file included from src/rtree/RTree.cc:34:
+src/rtree/Leaf.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+In file included from src/rtree/RTree.cc:35:
+src/rtree/Index.h:45:44: error: 'byte' has not been declared
+   45 |    virtual void split(uint32_t dataLength, byte* pData, Region& mbr, id_type id, NodePtr& left, NodePtr& right);
+      |                                            ^~~~
+src/rtree/Index.h:51:56: error: 'byte' has not been declared
+   51 |    void adjustTree(Node*, Node*, std::stack<id_type>&, byte* overflowTable);
+      |                                                        ^~~~
+In file included from src/rtree/RTree.cc:36:
+src/rtree/BulkLoader.h:41:55: error: 'byte' has not been declared
+   41 |     Record(const Region& r, id_type id, uint32_t len, byte* pData, uint32_t s);
+      |                                                       ^~~~
+src/rtree/BulkLoader.h:62:5: error: 'byte' does not name a type
+   62 |     byte* m_pData;
+      |     ^~~~
+src/rtree/BulkLoader.h:98:11: error: 'SmartPointer' in namespace 'Tools' does not name a template type
+   98 |    Tools::SmartPointer<Tools::TemporaryFile> m_sortedFile;
+      |           ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:99:21: error: 'SmartPointer' is not a member of 'Tools'
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                     ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:99:21: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/BulkLoader.h:99:54: error: template argument 1 is invalid
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                                                      ^
+src/rtree/BulkLoader.h:99:54: error: template argument 2 is invalid
+src/rtree/BulkLoader.h:99:56: error: expected unqualified-id before '>' token
+   99 |    std::list<Tools::SmartPointer<Tools::TemporaryFile> > m_runs;
+      |                                                        ^
+src/rtree/BulkLoader.h:120:12: error: 'Tools::SmartPointer' has not been declared
+  120 |     Tools::SmartPointer<ExternalSorter> es,
+      |            ^~~~~~~~~~~~
+src/rtree/BulkLoader.h:120:24: error: expected ',' or '...' before '<' token
+  120 |     Tools::SmartPointer<ExternalSorter> es,
+      |                        ^
+In file included from src/rtree/RTree.h:32,
+                 from src/rtree/RTree.cc:37:
+src/rtree/PointerPoolNode.h: In member function 'void Tools::PointerPool<SpatialIndex::RTree::Node>::release(SpatialIndex::RTree::Node*)':
+src/rtree/PointerPoolNode.h:95:13: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+   95 |      if (p->m_pData != 0)
+      |             ^~~~~~~
+src/rtree/PointerPoolNode.h:102:15: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |               ^~~~~~~
+src/rtree/PointerPoolNode.h:102:49: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  102 |        if (p->m_pData[cChild] != 0) delete[] p->m_pData[cChild];
+      |                                                 ^~~~~~~
+In file included from src/rtree/RTree.cc:37:
+src/rtree/RTree.h: At global scope:
+src/rtree/RTree.h:70:48: error: 'byte' does not name a type
+   70 |    virtual void insertData(uint32_t len, const byte* pData, const IShape& shape, id_type shapeIdentifier);
+      |                                                ^~~~
+src/rtree/RTree.h:90:46: error: 'byte' has not been declared
+   90 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id);
+      |                                              ^~~~
+src/rtree/RTree.h:91:46: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                              ^~~~
+src/rtree/RTree.h:91:100: error: 'byte' has not been declared
+   91 |    void insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable);
+      |                                                                                                    ^~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:142:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:142:44: error: template argument 1 is invalid
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:142:44: error: template argument 2 is invalid
+src/rtree/RTree.h:142:46: error: expected unqualified-id before '>' token
+  142 |    std::vector<Tools::SmartPointer<ICommand> > m_writeNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:143:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:143:44: error: template argument 1 is invalid
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:143:44: error: template argument 2 is invalid
+src/rtree/RTree.h:143:46: error: expected unqualified-id before '>' token
+  143 |    std::vector<Tools::SmartPointer<ICommand> > m_readNodeCommands;
+      |                                              ^
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                       ^~~~~~~~~~~~
+src/rtree/RTree.h:144:23: error: 'SmartPointer' is not a member of 'Tools'
+src/rtree/RTree.h:144:44: error: template argument 1 is invalid
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                            ^
+src/rtree/RTree.h:144:44: error: template argument 2 is invalid
+src/rtree/RTree.h:144:46: error: expected unqualified-id before '>' token
+  144 |    std::vector<Tools::SmartPointer<ICommand> > m_deleteNodeCommands;
+      |                                              ^
+src/rtree/RTree.cc:42:47: error: 'byte' has not been declared
+   42 | SpatialIndex::RTree::Data::Data(uint32_t len, byte* pData, Region& r, id_type id)
+      |                                               ^~~~
+src/rtree/RTree.cc:42:1: error: no declaration matches 'SpatialIndex::RTree::Data::Data(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type)'
+   42 | SpatialIndex::RTree::Data::Data(uint32_t len, byte* pData, Region& r, id_type id)
+      | ^~~~~~~~~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:254,
+                 from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/RTree.h:58:18: note: candidates are: 'SpatialIndex::RTree::Data::Data(const SpatialIndex::RTree::Data&)'
+   58 |   class SIDX_DLL Data : public IData, public Tools::ISerializable
+      |                  ^~~~
+/usr/include/spatialindex/RTree.h:61:4: note:                 'SpatialIndex::RTree::Data::Data(uint32_t, uint8_t*, SpatialIndex::Region&, SpatialIndex::id_type)'
+   61 |    Data(uint32_t len, uint8_t* pData, Region& r, id_type id);
+      |    ^~~~
+/usr/include/spatialindex/RTree.h:58:18: note: 'class SpatialIndex::RTree::Data' defined here
+   58 |   class SIDX_DLL Data : public IData, public Tools::ISerializable
+      |                  ^~~~
+src/rtree/RTree.cc:72:56: error: 'byte' has not been declared
+   72 | void SpatialIndex::RTree::Data::getData(uint32_t& len, byte** data) const
+      |                                                        ^~~~
+src/rtree/RTree.cc:72:6: error: no declaration matches 'void SpatialIndex::RTree::Data::getData(uint32_t&, int**) const'
+   72 | void SpatialIndex::RTree::Data::getData(uint32_t& len, byte** data) const
+      |      ^~~~~~~~~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:254,
+                 from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/RTree.h:67:9: note: candidate is: 'virtual void SpatialIndex::RTree::Data::getData(uint32_t&, uint8_t**) const'
+   67 |    void getData(uint32_t& len, uint8_t** data) const override;
+      |         ^~~~~~~
+/usr/include/spatialindex/RTree.h:58:18: note: 'class SpatialIndex::RTree::Data' defined here
+   58 |   class SIDX_DLL Data : public IData, public Tools::ISerializable
+      |                  ^~~~
+src/rtree/RTree.cc:93:57: error: 'byte' does not name a type
+   93 | void SpatialIndex::RTree::Data::loadFromByteArray(const byte* ptr)
+      |                                                         ^~~~
+src/rtree/RTree.cc:93:6: error: no declaration matches 'void SpatialIndex::RTree::Data::loadFromByteArray(const int*)'
+   93 | void SpatialIndex::RTree::Data::loadFromByteArray(const byte* ptr)
+      |      ^~~~~~~~~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:254,
+                 from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/RTree.h:69:9: note: candidate is: 'virtual void SpatialIndex::RTree::Data::loadFromByteArray(const uint8_t*)'
+   69 |    void loadFromByteArray(const uint8_t* data) override;
+      |         ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/RTree.h:58:18: note: 'class SpatialIndex::RTree::Data' defined here
+   58 |   class SIDX_DLL Data : public IData, public Tools::ISerializable
+      |                  ^~~~
+src/rtree/RTree.cc:114:50: error: variable or field 'storeToByteArray' declared void
+  114 | void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len)
+      |                                                  ^~~~
+src/rtree/RTree.cc:114:50: error: 'byte' was not declared in this scope
+src/rtree/RTree.cc:114:57: error: 'data' was not declared in this scope
+  114 | void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len)
+      |                                                         ^~~~
+src/rtree/RTree.cc:114:71: error: expected primary-expression before '&' token
+  114 | void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len)
+      |                                                                       ^
+src/rtree/RTree.cc:114:73: error: 'len' was not declared in this scope; did you mean 'mblen'?
+  114 | void SpatialIndex::RTree::Data::storeToByteArray(byte** data, uint32_t& len)
+      |                                                                         ^~~
+      |                                                                         mblen
+src/rtree/RTree.cc: In function 'SpatialIndex::ISpatialIndex* SpatialIndex::RTree::returnRTree(SpatialIndex::IStorageManager&, Tools::PropertySet&)':
+src/rtree/RTree.cc:144:73: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::RTree'
+  144 |  SpatialIndex::ISpatialIndex* si = new SpatialIndex::RTree::RTree(sm, ps);
+      |                                                                         ^
+In file included from src/rtree/RTree.cc:37:
+src/rtree/RTree.h:38:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::RTree':
+   38 |   class RTree : public ISpatialIndex
+      |         ^~~~~
+In file included from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/SpatialIndex.h:194:16: note: 	'virtual void SpatialIndex::ISpatialIndex::insertData(uint32_t, const uint8_t*, const SpatialIndex::IShape&, SpatialIndex::id_type)'
+  194 |   virtual void insertData(uint32_t len, const uint8_t* pData, const IShape& shape, id_type shapeIdentifier) = 0;
+      |                ^~~~~~~~~~
+/usr/include/spatialindex/SpatialIndex.h:196:16: note: 	'virtual void SpatialIndex::ISpatialIndex::internalNodesQuery(const SpatialIndex::IShape&, SpatialIndex::IVisitor&)'
+  196 |   virtual void internalNodesQuery(const IShape& query, IVisitor& v) = 0;
+      |                ^~~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/SpatialIndex.h:208:16: note: 	'virtual void SpatialIndex::ISpatialIndex::flush()'
+  208 |   virtual void flush() = 0;
+      |                ^~~~~
+src/rtree/RTree.cc: At global scope:
+src/rtree/RTree.cc:411:65: error: 'byte' does not name a type
+  411 | void SpatialIndex::RTree::RTree::insertData(uint32_t len, const byte* pData, const IShape& shape, id_type id)
+      |                                                                 ^~~~
+src/rtree/RTree.cc: In member function 'virtual void SpatialIndex::RTree::RTree::insertData(uint32_t, const int*, const SpatialIndex::IShape&, SpatialIndex::id_type)':
+src/rtree/RTree.cc:423:2: error: 'byte' was not declared in this scope
+  423 |  byte* buffer = 0;
+      |  ^~~~
+src/rtree/RTree.cc:423:8: error: 'buffer' was not declared in this scope; did you mean 'setbuffer'?
+  423 |  byte* buffer = 0;
+      |        ^~~~~~
+      |        setbuffer
+src/rtree/RTree.cc:427:16: error: 'byte' does not name a type
+  427 |   buffer = new byte[len];
+      |                ^~~~
+src/rtree/RTree.cc: In member function 'virtual void SpatialIndex::RTree::RTree::containsWhatQuery(const SpatialIndex::IShape&, SpatialIndex::IVisitor&)':
+src/rtree/RTree.cc:477:53: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  477 |       Data data = Data(n->m_pDataLength[cChild], n->m_pData[cChild], *(n->m_ptrMBR[cChild]), n->m_pIdentifier[cChild]);
+      |                                                     ^~~~~~~
+src/rtree/RTree.cc: In member function 'virtual void SpatialIndex::RTree::RTree::nearestNeighborQuery(uint32_t, const SpatialIndex::IShape&, SpatialIndex::IVisitor&, SpatialIndex::INearestNeighborComparator&)':
+src/rtree/RTree.cc:555:54: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+  555 |      Data* e = new Data(n->m_pDataLength[cChild], n->m_pData[cChild], *(n->m_ptrMBR[cChild]), n->m_pIdentifier[cChild]);
+      |                                                      ^~~~~~~
+src/rtree/RTree.cc: In member function 'virtual void SpatialIndex::RTree::RTree::addCommand(SpatialIndex::ICommand*, SpatialIndex::CommandType)':
+src/rtree/RTree.cc:699:4: error: 'm_readNodeCommands' was not declared in this scope
+  699 |    m_readNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |    ^~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc:699:40: error: 'SmartPointer' is not a member of 'Tools'
+  699 |    m_readNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                        ^~~~~~~~~~~~
+src/rtree/RTree.cc:699:61: error: expected primary-expression before '>' token
+  699 |    m_readNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                                             ^
+src/rtree/RTree.cc:702:4: error: 'm_writeNodeCommands' was not declared in this scope
+  702 |    m_writeNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |    ^~~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc:702:41: error: 'SmartPointer' is not a member of 'Tools'
+  702 |    m_writeNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                         ^~~~~~~~~~~~
+src/rtree/RTree.cc:702:62: error: expected primary-expression before '>' token
+  702 |    m_writeNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                                              ^
+src/rtree/RTree.cc:705:4: error: 'm_deleteNodeCommands' was not declared in this scope
+  705 |    m_deleteNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |    ^~~~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc:705:42: error: 'SmartPointer' is not a member of 'Tools'
+  705 |    m_deleteNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                          ^~~~~~~~~~~~
+src/rtree/RTree.cc:705:63: error: expected primary-expression before '>' token
+  705 |    m_deleteNodeCommands.push_back(Tools::SmartPointer<ICommand>(pCommand));
+      |                                                               ^
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::initNew(Tools::PropertySet&)':
+src/rtree/RTree.cc:973:7: error: cannot declare variable 'root' to be of abstract type 'SpatialIndex::RTree::Leaf'
+  973 |  Leaf root(this, -1);
+      |       ^~~~
+In file included from src/rtree/RTree.cc:34:
+src/rtree/Leaf.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Leaf':
+   34 |   class Leaf : public Node
+      |         ^~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::storeHeader()':
+src/rtree/RTree.cc:1102:2: error: 'byte' was not declared in this scope
+ 1102 |  byte* header = new byte[headerSize];
+      |  ^~~~
+src/rtree/RTree.cc:1102:8: error: 'header' was not declared in this scope; did you mean 'm_headerID'?
+ 1102 |  byte* header = new byte[headerSize];
+      |        ^~~~~~
+      |        m_headerID
+src/rtree/RTree.cc:1102:21: error: 'byte' does not name a type
+ 1102 |  byte* header = new byte[headerSize];
+      |                     ^~~~
+src/rtree/RTree.cc:1103:8: error: 'ptr' was not declared in this scope
+ 1103 |  byte* ptr = header;
+      |        ^~~
+src/rtree/RTree.cc:1141:11: error: type '<type error>' argument given to 'delete', expected pointer
+ 1141 |  delete[] header;
+      |           ^~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::loadHeader()':
+src/rtree/RTree.cc:1147:2: error: 'byte' was not declared in this scope
+ 1147 |  byte* header = 0;
+      |  ^~~~
+src/rtree/RTree.cc:1147:8: error: 'header' was not declared in this scope; did you mean 'm_headerID'?
+ 1147 |  byte* header = 0;
+      |        ^~~~~~
+      |        m_headerID
+src/rtree/RTree.cc:1150:8: error: 'ptr' was not declared in this scope
+ 1150 |  byte* ptr = header;
+      |        ^~~
+src/rtree/RTree.cc:1189:11: error: type '<type error>' argument given to 'delete', expected pointer
+ 1189 |  delete[] header;
+      |           ^~~~~~
+src/rtree/RTree.cc: At global scope:
+src/rtree/RTree.cc:1192:71: error: 'byte' has not been declared
+ 1192 | void SpatialIndex::RTree::RTree::insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id)
+      |                                                                       ^~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::insertData_impl(uint32_t, int*, SpatialIndex::Region&, SpatialIndex::id_type)':
+src/rtree/RTree.cc:1197:2: error: 'byte' was not declared in this scope
+ 1197 |  byte* overflowTable = 0;
+      |  ^~~~
+src/rtree/RTree.cc:1197:8: error: 'overflowTable' was not declared in this scope
+ 1197 |  byte* overflowTable = 0;
+      |        ^~~~~~~~~~~~~
+src/rtree/RTree.cc:1203:23: error: 'byte' does not name a type
+ 1203 |   overflowTable = new byte[root->m_level];
+      |                       ^~~~
+src/rtree/RTree.cc:1214:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1214 |   delete[] overflowTable;
+      |            ^~~~~~~~~~~~~
+src/rtree/RTree.cc:1219:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1219 |   delete[] overflowTable;
+      |            ^~~~~~~~~~~~~
+src/rtree/RTree.cc: At global scope:
+src/rtree/RTree.cc:1224:71: error: 'byte' has not been declared
+ 1224 | void SpatialIndex::RTree::RTree::insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable)
+      |                                                                       ^~~~
+src/rtree/RTree.cc:1224:125: error: 'byte' has not been declared
+ 1224 | void SpatialIndex::RTree::RTree::insertData_impl(uint32_t dataLength, byte* pData, Region& mbr, id_type id, uint32_t level, byte* overflowTable)
+      |                                                                                                                             ^~~~
+src/rtree/RTree.cc: In member function 'SpatialIndex::id_type SpatialIndex::RTree::RTree::writeNode(SpatialIndex::RTree::Node*)':
+src/rtree/RTree.cc:1268:2: error: 'byte' was not declared in this scope
+ 1268 |  byte* buffer;
+      |  ^~~~
+src/rtree/RTree.cc:1268:8: error: 'buffer' was not declared in this scope; did you mean 'setbuffer'?
+ 1268 |  byte* buffer;
+      |        ^~~~~~
+      |        setbuffer
+src/rtree/RTree.cc:1279:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1279 |   delete[] buffer;
+      |            ^~~~~~
+src/rtree/RTree.cc:1283:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1283 |   delete[] buffer;
+      |            ^~~~~~
+src/rtree/RTree.cc:1309:35: error: 'm_writeNodeCommands' was not declared in this scope
+ 1309 |  for (size_t cIndex = 0; cIndex < m_writeNodeCommands.size(); ++cIndex)
+      |                                   ^~~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc: In member function 'SpatialIndex::RTree::NodePtr SpatialIndex::RTree::RTree::readNode(SpatialIndex::id_type)':
+src/rtree/RTree.cc:1320:2: error: 'byte' was not declared in this scope
+ 1320 |  byte* buffer;
+      |  ^~~~
+src/rtree/RTree.cc:1320:8: error: 'buffer' was not declared in this scope; did you mean 'setbuffer'?
+ 1320 |  byte* buffer;
+      |        ^~~~~~
+      |        setbuffer
+src/rtree/RTree.cc:1345:70: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Index'
+ 1345 |    if (nodeType == PersistentIndex) n = NodePtr(new Index(this, -1, 0), &m_indexPool);
+      |                                                                      ^
+In file included from src/rtree/RTree.cc:35:
+src/rtree/Index.h:34:9: note:   because the following virtual functions are pure within 'SpatialIndex::RTree::Index':
+   34 |   class Index : public Node
+      |         ^~~~~
+In file included from /usr/include/spatialindex/SpatialIndex.h:30,
+                 from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/tools/Tools.h:225:16: note: 	'virtual void Tools::ISerializable::loadFromByteArray(const uint8_t*)'
+  225 |   virtual void loadFromByteArray(const uint8_t* data) = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/usr/include/spatialindex/tools/Tools.h:227:16: note: 	'virtual void Tools::ISerializable::storeToByteArray(uint8_t**, uint32_t&)'
+  227 |   virtual void storeToByteArray(uint8_t** data, uint32_t& length) = 0;
+      |                ^~~~~~~~~~~~~~~~
+In file included from src/rtree/RTree.cc:32:
+/usr/include/spatialindex/SpatialIndex.h:118:16: note: 	'virtual void SpatialIndex::INode::getChildData(uint32_t, uint32_t&, uint8_t**) const'
+  118 |   virtual void getChildData(uint32_t index, uint32_t& len, uint8_t** data) const = 0;
+      |                ^~~~~~~~~~~~
+src/rtree/RTree.cc:1346:70: error: invalid new-expression of abstract class type 'SpatialIndex::RTree::Leaf'
+ 1346 |    else if (nodeType == PersistentLeaf) n = NodePtr(new Leaf(this, -1), &m_leafPool);
+      |                                                                      ^
+src/rtree/RTree.cc:1355:36: error: 'm_readNodeCommands' was not declared in this scope
+ 1355 |   for (size_t cIndex = 0; cIndex < m_readNodeCommands.size(); ++cIndex)
+      |                                    ^~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc:1360:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1360 |   delete[] buffer;
+      |            ^~~~~~
+src/rtree/RTree.cc:1365:12: error: type '<type error>' argument given to 'delete', expected pointer
+ 1365 |   delete[] buffer;
+      |            ^~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::deleteNode(SpatialIndex::RTree::Node*)':
+src/rtree/RTree.cc:1385:35: error: 'm_deleteNodeCommands' was not declared in this scope
+ 1385 |  for (size_t cIndex = 0; cIndex < m_deleteNodeCommands.size(); ++cIndex)
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::rangeQuery(SpatialIndex::RTree::RangeQueryType, const SpatialIndex::IShape&, SpatialIndex::IVisitor&)':
+src/rtree/RTree.cc:1418:52: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+ 1418 |      Data data = Data(n->m_pDataLength[cChild], n->m_pData[cChild], *(n->m_ptrMBR[cChild]), n->m_pIdentifier[cChild]);
+      |                                                    ^~~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::selfJoinQuery(SpatialIndex::id_type, SpatialIndex::id_type, const SpatialIndex::Region&, SpatialIndex::IVisitor&)':
+src/rtree/RTree.cc:1460:48: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+ 1460 |        Data e1(n1->m_pDataLength[cChild1], n1->m_pData[cChild1], *(n1->m_ptrMBR[cChild1]), n1->m_pIdentifier[cChild1]);
+      |                                                ^~~~~~~
+src/rtree/RTree.cc:1461:48: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+ 1461 |        Data e2(n2->m_pDataLength[cChild2], n2->m_pData[cChild2], *(n2->m_ptrMBR[cChild2]), n2->m_pIdentifier[cChild2]);
+      |                                                ^~~~~~~
+src/rtree/RTree.cc: In member function 'void SpatialIndex::RTree::RTree::visitSubTree(SpatialIndex::RTree::NodePtr, SpatialIndex::IVisitor&)':
+src/rtree/RTree.cc:1492:51: error: 'class SpatialIndex::RTree::Node' has no member named 'm_pData'
+ 1492 |     Data data = Data(n->m_pDataLength[cChild], n->m_pData[cChild], *(n->m_ptrMBR[cChild]), n->m_pIdentifier[cChild]);
+      |                                                   ^~~~~~~
+make[4]: *** [Makefile.Release:247: release/RTree.o] Error 1
+make[4]: Leaving directory '/share/home/stig/monster/Downloads/mgarepo/qcad/BUILD/qcad-3.23.0.9/src/3rdparty/spatialindexnavel'
+make[3]: *** [Makefile:42: release] Error 2
+make[2]: *** [Makefile:51: sub-spatialindexnavel-make_first-ordered] Error 2
+make[1]: *** [Makefile:60: sub-3rdparty-make_first-ordered] Error 2
+make: *** [Makefile:47: sub-src-make_first-ordered] Error 2
+error: Bad exit status from /share/home/stig/monster/Downloads/mgarepo/qcad/BUILDROOT/rpm-tmp.FOYPrJ (%build)
+
+
+RPM build errors:
+    Bad exit status from /share/home/stig/monster/Downloads/mgarepo/qcad/BUILDROOT/rpm-tmp.FOYPrJ (%build)
