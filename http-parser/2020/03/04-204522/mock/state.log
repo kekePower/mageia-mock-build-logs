@@ -1,0 +1,4 @@
+2020-03-04 20:45:01,175 - Mock Version: 1.4.15
+2020-03-04 20:45:01,243 - Start: dnf install
+2020-03-04 20:45:22,540 - Start: clean chroot
+2020-03-04 20:45:22,595 - Finish: clean chroot
