@@ -1,0 +1,64 @@
+INFO buildroot.py:350:  Mock Version: 1.4.15
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:212:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG util.py:212:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG buildroot.py:481:  kernel version == 5.5.7-desktop-10.mga8
+DEBUG util.py:222:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/fstab
+DEBUG util.py:222:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/yum/yum.conf
+DEBUG util.py:222:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/dnf/dnf.conf
+DEBUG util.py:222:  touching file: /home/stig/rpmbuild/mock/cauldron/x86_64/var/log/yum.log
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/mageia-cauldron-x86_64/dnf_cache/', '/home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG buildroot.py:143:  rootdir = /home/stig/rpmbuild/mock/cauldron/x86_64
+DEBUG buildroot.py:144:  resultdir = mock
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:212:  creating dir: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/pki/mock
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/etc/dnf
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/etc
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/proc
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/sys
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:209:  ensuring that dir exists: /home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG package_manager.py:122:  ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '--releasever', '8', '-C', '--setopt=deltarpm=False', '--disableplugin=local', '--disableplugin=spacewalk', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build']
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/usr/bin/dnf', '--installroot', '/home/stig/rpmbuild/mock/cauldron/x86_64/', '--releasever', '8', '-C', '--setopt=deltarpm=False', '--disableplugin=local', '--disableplugin=spacewalk', 'install', 'basesystem-minimal', 'rpm-build', 'rpm-mageia-setup', 'rpm-mageia-setup-build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:583:  BUILDSTDERR: No matches found for the following disable plugin patterns: local, spacewalk
+DEBUG util.py:583:  BUILDSTDERR: Error: Cache-only enabled but no cache for 'mageia-cauldron'
+DEBUG util.py:732:  Child return code was: 1
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/umount', '-n', '-l', '/home/stig/rpmbuild/mock/cauldron/x86_64/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:321:  kill orphans
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['/bin/umount', '-n', '/home/stig/rpmbuild/mock/cauldron/x86_64/var/cache/dnf/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:732:  Child return code was: 0
+DEBUG util.py:751:  child environment: None
+DEBUG util.py:677:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'en_US.UTF-8'} and shell False
+DEBUG util.py:583:  BUILDSTDERR: ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:583:  BUILDSTDERR: ERROR: can't access '/var/lib/mock'
+DEBUG util.py:732:  Child return code was: 1
+DEBUG util.py:1505:  Please ignore the error above above about btrfs.
