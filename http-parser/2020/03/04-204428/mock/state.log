@@ -1,0 +1,15 @@
+2020-03-04 20:43:19,681 - Mock Version: 1.4.15
+2020-03-04 20:43:21,584 - Start: dnf update
+2020-03-04 20:43:38,969 - Finish: dnf update
+2020-03-04 20:43:38,985 - Finish: chroot init
+2020-03-04 20:43:38,987 - Start: build phase for http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:43:38,988 - Start: build setup for http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:43:57,754 - Finish: build setup for http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:43:57,754 - Start: rpmbuild http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:43:57,756 - Start: Outputting list of installed packages
+2020-03-04 20:43:57,844 - Finish: Outputting list of installed packages
+2020-03-04 20:44:25,945 - Finish: rpmbuild http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:44:25,948 - Finish: build phase for http-parser-2.9.3-1.intelsb.mga8.src.rpm
+2020-03-04 20:44:25,949 - Start: clean chroot
+2020-03-04 20:44:28,582 - Finish: clean chroot
+2020-03-04 20:44:28,583 - Finish: run
