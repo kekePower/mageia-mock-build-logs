@@ -1,0 +1,22 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 29: %{version}/glimpse-%{version}.tar.xz
+
+warning: Macro expanded in comment on line 101: %{version}
+
+warning: Macro expanded in comment on line 246: %{_libdir}/glimpse/%{api_version}/plug-ins/*/*.py
+
+Installing /home/stig/rpmbuild/SRPMS/glimpse-0.1.2-1.2.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.FTetHi
+/home/stig/rpmbuild/tmp/rpm-tmp.FTetHi: line 5: -g: command not found
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.FTetHi (%prep)
+
+
+RPM build errors:
+    Macro expanded in comment on line 29: %{version}/glimpse-%{version}.tar.xz
+
+    Macro expanded in comment on line 101: %{version}
+
+    Macro expanded in comment on line 246: %{_libdir}/glimpse/%{api_version}/plug-ins/*/*.py
+
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.FTetHi (%prep)
+I: [iurt_root_command] ERROR: chroot
