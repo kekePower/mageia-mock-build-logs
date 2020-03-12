@@ -1,0 +1,16 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200312204424/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200312204424/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libtool-2.4.6-10.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 118k completed, ETA = --:--:--, speed = 2229k                                                                                                 retrieved   libtool-2.4.6-10.mga8.x86_64.rpm
+...retrieving done
+installing libtool-2.4.6-10.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200312204424/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200312204424 (remove=0, install=0, upgrade=1)
+Preparing...                     #############################################
+      1/1: libtool               #############################################
+removing installed rpms (libtool-2.4.6-10.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200312204424/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
