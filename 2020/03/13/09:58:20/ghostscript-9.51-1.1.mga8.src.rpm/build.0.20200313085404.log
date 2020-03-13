@@ -1,0 +1,28 @@
+D: [iurt_root_command] chroot
+warning: %make is deprecated, use %make_build instead
+Installing /home/stig/rpmbuild/SRPMS/ghostscript-9.51-1.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.SSWp4r
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ghostscript-9.51
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/ghostscript-9.51.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ghostscript-9.51
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf expat freetype icclib jasper jpeg jpegxr lcms2 libpng openjpeg zlib cups/libs
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ghostscript-9.22-openjpeg2-non-static.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
+1 out of 1 hunk FAILED -- saving rejects to file base/openjpeg.mak.rej
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.SSWp4r (%prep)
+
+
+RPM build errors:
+    %make is deprecated, use %make_build instead
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.SSWp4r (%prep)
+I: [iurt_root_command] ERROR: chroot
