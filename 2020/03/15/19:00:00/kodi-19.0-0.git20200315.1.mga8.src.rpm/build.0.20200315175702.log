@@ -1,0 +1,352 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/kodi-19.0-0.git20200315.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.FdnTEn
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf xbmc-master
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/kodi-19.0-git20200315-Matrix.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd xbmc-master
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kodi-18.0-add-url_hash_for_libdvdcss.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kodi-18.0-add-url_hash_for_libdvdnav.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kodi-18.0-add-url_hash_for_libdvdread.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kodi-18.0-remove-git-string.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/cheat-sse-build.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ cp /home/stig/rpmbuild/SOURCES/cpuinfo /tmp/
++ cp /home/stig/rpmbuild/SOURCES/VERSION .
++ find -type f '(' -name '*.00??' -o -name '*.00??~' ')' -print -delete
++ find -type f '(' -iname '*.so' -o -iname '*.dll' -o -iname '*.exe' ')' -print -delete
+./lib/libUPnP/Platinum/ThirdParty/log4net/log4net.dll
+./project/BuildDependencies/bin/wget.exe
+./project/Win32BuildSetup/tools/7z/7za.exe
++ pathfix.py -pni '/usr/bin/python3 -s' addons/metadata.demo.albums/demo.py addons/metadata.demo.artists/demo.py addons/metadata.demo.movies/demo.py addons/metadata.demo.tv/demo.py lib/gtest/scripts/fuse_gtest_files.py lib/gtest/scripts/gen_gtest_pred_impl.py lib/gtest/scripts/pump.py lib/gtest/scripts/release_docs.py lib/gtest/scripts/upload.py lib/gtest/scripts/upload_gtest.py lib/gtest/test/gtest_break_on_failure_unittest.py lib/gtest/test/gtest_catch_exceptions_test.py lib/gtest/test/gtest_color_test.py lib/gtest/test/gtest_env_var_test.py lib/gtest/test/gtest_filter_unittest.py lib/gtest/test/gtest_help_test.py lib/gtest/test/gtest_list_tests_unittest.py lib/gtest/test/gtest_output_test.py lib/gtest/test/gtest_shuffle_test.py lib/gtest/test/gtest_test_utils.py lib/gtest/test/gtest_throw_on_failure_test.py lib/gtest/test/gtest_uninitialized_test.py lib/gtest/test/gtest_xml_outfiles_test.py lib/gtest/test/gtest_xml_output_unittest.py lib/gtest/test/gtest_xml_test_utils.py lib/gtest/xcode/Scripts/versiongenerate.py lib/libUPnP/Neptune/Build/Targets/x86-microsoft-win32-vs2010/Build.py lib/libUPnP/Neptune/Extras/Scripts/GenTrustAnchorsTables.py lib/libUPnP/Neptune/Extras/Tools/Logging/NeptuneLogConsole.py lib/libUPnP/Platinum/Build/Tools/Scripts/MakeAllVs.py lib/libUPnP/Platinum/Build/Tools/Scripts/VsMake.py lib/libUPnP/Platinum/Build/Tools/Scripts/XCodeMake.py tools/EventClients/lib/python/zeroconf.py tools/depends/native/gen_entitlements/gen_entitlements.py
+addons/metadata.demo.albums/demo.py: updating
+addons/metadata.demo.artists/demo.py: updating
+addons/metadata.demo.movies/demo.py: updating
+addons/metadata.demo.tv/demo.py: updating
+lib/gtest/scripts/fuse_gtest_files.py: updating
+lib/gtest/scripts/gen_gtest_pred_impl.py: updating
+lib/gtest/scripts/pump.py: updating
+lib/gtest/scripts/release_docs.py: updating
+lib/gtest/scripts/upload.py: updating
+lib/gtest/scripts/upload_gtest.py: updating
+lib/gtest/test/gtest_break_on_failure_unittest.py: updating
+lib/gtest/test/gtest_catch_exceptions_test.py: updating
+lib/gtest/test/gtest_color_test.py: updating
+lib/gtest/test/gtest_env_var_test.py: updating
+lib/gtest/test/gtest_filter_unittest.py: updating
+lib/gtest/test/gtest_help_test.py: updating
+lib/gtest/test/gtest_list_tests_unittest.py: updating
+lib/gtest/test/gtest_output_test.py: updating
+lib/gtest/test/gtest_shuffle_test.py: updating
+lib/gtest/test/gtest_test_utils.py: updating
+lib/gtest/test/gtest_throw_on_failure_test.py: updating
+lib/gtest/test/gtest_uninitialized_test.py: updating
+lib/gtest/test/gtest_xml_outfiles_test.py: updating
+lib/gtest/test/gtest_xml_output_unittest.py: updating
+lib/gtest/test/gtest_xml_test_utils.py: updating
+lib/gtest/xcode/Scripts/versiongenerate.py: updating
+lib/libUPnP/Neptune/Build/Targets/x86-microsoft-win32-vs2010/Build.py: updating
+lib/libUPnP/Neptune/Extras/Scripts/GenTrustAnchorsTables.py: updating
+lib/libUPnP/Neptune/Extras/Tools/Logging/NeptuneLogConsole.py: updating
+lib/libUPnP/Platinum/Build/Tools/Scripts/MakeAllVs.py: updating
+lib/libUPnP/Platinum/Build/Tools/Scripts/VsMake.py: updating
+lib/libUPnP/Platinum/Build/Tools/Scripts/XCodeMake.py: updating
+tools/EventClients/lib/python/zeroconf.py: updating
+tools/depends/native/gen_entitlements/gen_entitlements.py: updating
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.x1Audl
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd xbmc-master
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ export PKGCONFIGPATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:/usr/lib
++ PKGCONFIGPATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:/usr/lib
++ export PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:/usr/lib
++ PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:/usr/lib
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ export 'CCFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ CCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ export 'CPPFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ CPPFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ export 'CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -GNinja -Wno-dev -DX11_RENDER_SYSTEM=gl -DLIBDVD_LIBRARIES=/usr/lib64 -DKODI_DEPENDSBUILD=OFF -DENABLE_EVENTCLIENTS=ON -DENABLE_INTERNAL_FFMPEG=OFF -DENABLE_INTERNAL_FLATBUFFERS=OFF -DENABLE_INTERNAL_FMT=OFF -DENABLE_INTERNAL_CROSSGUID=OFF -DENABLE_INTERNAL_FSTRCMP=OFF -DWITH_FFMPEG=/usr -DFFMPEG_PATH=/usr -DENABLE_APP_AUTONAME=ON -DFREETYPE_INCLUDE_DIR=/usr/include/freetype2 -DENABLE_LIRCCLIENT=ON -DENABLE_CCACHE=OFF '-DGIT_VERSION=by Mageia' -DLIBDVD_INCLUDE_DIRS=/usr/include -DLIBDVDCSS_URL=/home/stig/rpmbuild/SOURCES/libdvdcss-1.4.2-Leia-Beta-5.tar.gz -DENABLE_DVDCSS=ON -DLIBDVDNAV_URL=/home/stig/rpmbuild/SOURCES/libdvdnav-6.0.0-Leia-Alpha-3.tar.gz -DLIBDVDREAD_URL=/home/stig/rpmbuild/SOURCES/libdvdread-6.0.0-Leia-Alpha-3.tar.gz -DPKGCONFIGPATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:/usr/lib:/usr/lib64/pkgconfig -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8
+-- The CXX compiler identification is GNU 9.3.0
+-- The C compiler identification is GNU 9.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Source directory: /home/stig/rpmbuild/BUILD/xbmc-master
+-- Build directory: /home/stig/rpmbuild/BUILD/xbmc-master/build
+-- Generator: Single-configuration: RelWithDebInfo (Ninja)
+-- CMake Version: 3.17.0-rc2
+-- System type: Linux
+-- Linker: GNU gold
+-- Checking to see if CXX compiler accepts flag -gsplit-dwarf
+-- Checking to see if CXX compiler accepts flag -gsplit-dwarf - yes
+-- Debug Fission enabled
+-- Core system type: linux
+-- Platform: X11
+-- CPU: x86_64, ARCH: x86_64-linux
+-- Cross-Compiling: FALSE
+-- Execute build artefacts on host: TRUE
+-- Depends based build: OFF
+-- Checking to see if CXX compiler accepts flag -msse
+-- Checking to see if CXX compiler accepts flag -msse - yes
+-- Checking to see if CXX compiler accepts flag -msse2
+-- Checking to see if CXX compiler accepts flag -msse2 - yes
+-- Checking to see if CXX compiler accepts flag -msse3
+-- Checking to see if CXX compiler accepts flag -msse3 - yes
+-- Checking to see if CXX compiler accepts flag -mssse3
+-- Checking to see if CXX compiler accepts flag -mssse3 - yes
+-- Checking to see if CXX compiler accepts flag -msse4.1
+-- Checking to see if CXX compiler accepts flag -msse4.1 - yes
+-- Checking to see if CXX compiler accepts flag -msse4.2
+-- Checking to see if CXX compiler accepts flag -msse4.2 - yes
+-- Checking to see if CXX compiler accepts flag -mavx
+-- Checking to see if CXX compiler accepts flag -mavx - yes
+-- Checking to see if CXX compiler accepts flag -mavx2
+-- Checking to see if CXX compiler accepts flag -mavx2 - yes
+-- Found SSE: 1  
+-- Found SSE2: 1  
+-- Found SSE3: 1  
+-- Found SSSE3: 1  
+-- Found SSE4_1: 1  
+-- Found SSE4_2: 1  
+-- Found AVX: 1  
+-- Found AVX2: 1  
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.6.3") 
+-- Found Lzo2: /usr/lib64/liblzo2.so  
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.2.11") 
+-- Found PNG: /usr/lib64/libpng.so (found version "1.6.37") 
+-- Found GIF: /usr/lib64/libgif.so  
+-- Found JPEG: /usr/lib64/libjpeg.so (found version "80") 
+-- Found Alsa: /usr/lib64/libasound.so (found version "1.2.2") 
+-- Found Avahi: /usr/lib64/libavahi-client.so (found version "0.7") 
+-- Found Bluetooth: /usr/lib64/libbluetooth.so  
+-- Found Bluray: /usr/lib64/libbluray.so (found suitable version "1.1.2", minimum required is "0.9.3") 
+-- Found CAP: /usr/lib64/libcap.so (found version "2.27") 
+-- Found CEC: /usr/lib64/libcec.so (found suitable version "4.0.4", minimum required is "4.0.0") 
+-- Could NOT find ClangFormat (missing: CLANG_FORMAT_EXECUTABLE) 
+-- Found DBus: /usr/lib64/libdbus-1.so (found version "1.13.8") 
+-- Found Iso9660pp: /usr/lib64/libiso9660++.so (found version "2.1.0") 
+-- Found LCMS2: /usr/lib64/liblcms2.so (found version "2.9") 
+-- Found LircClient: /usr/lib64/liblirc_client.so  
+-- Could NOT find MDNS (missing: MDNS_LIBRARY MDNS_INCLUDE_DIR) 
+-- Found MicroHttpd: /usr/lib64/libmicrohttpd.so (found version "0.9.70") 
+-- Found NFS: /usr/lib64/libnfs.so (found version "4.0.0") 
+-- Found Plist: /usr/lib64/libplist.so (found version "2.1.0") 
+-- Found PulseAudio: /usr/lib64/libpulse.so (found suitable version "13.99.1.0-1.mga8", minimum required is "2.0.0") 
+-- Found PythonLibs: /usr/lib64/libpython3.8.so (found suitable version "3.8.2", minimum required is "3.5") 
+-- Found Python: /usr/include/python3.8  
+-- Found SmbClient: /usr/lib64/libsmbclient.so (found version "0.5.0") 
+-- Found Sndio: /usr/lib64/libsndio.so  
+-- Found UDEV: /usr/lib64/libudev.so (found version "245") 
+-- Found Udf: /usr/lib64/libudf.so (found version "2.1.0") 
+-- Found LibXml2: /usr/lib64/libxml2.so (found version "2.9.10") 
+-- Found XSLT: /usr/lib64/libxslt.so (found version "1.1.34") 
+-- Found VAAPI: /usr/lib64/libva.so (found suitable version "1.6.0", minimum required is "0.39.0") 
+-- Found GLX: /usr/lib64/libGL.so  
+-- Found VDPAU: /usr/lib64/libvdpau.so (found version "1.3") 
+-- Found ASS: /usr/lib64/libass.so (found version "0.14.0") 
+-- Found Cdio: /usr/lib64/libcdio.so (found version "2.1.0") 
+-- Found CrossGUID: /usr/lib64/libcrossguid.so  
+-- Found UUID: /usr/lib64/libuuid.so (found version "2.35.1") 
+-- Found Curl: /usr/lib64/libcurl.so (found version "7.69.1") 
+-- Warning: FFmpeg version checking disabled
+-- Found FFMPEG: /usr/include (found version "undef") 
+-- Found FlatBuffers: /usr/bin/flatc  
+-- Found Fmt: /usr/lib64/libfmt.so (found version "5.3.0") 
+-- Found FreeType: /usr/lib64/libfreetype.so (found version "23.1.17") 
+-- Found FriBidi: /usr/lib64/libfribidi.so (found version "1.0.9") 
+-- Found fstrcmp: /usr/lib64/libfstrcmp.so (found version "0.7.D001") 
+-- Found Iconv: /usr/lib64/libc.so  
+-- Found OpenSSL: /usr/lib64/libcrypto.so (found suitable version "1.1.1d", minimum required is "1.0.2")  
+-- Found PCRE: /usr/lib64/libpcrecpp.so (found version "8.44") 
+-- Found RapidJSON: /usr/include (found version "1.1.0") 
+-- Found Sqlite3: /usr/lib64/libsqlite3.so (found version "3.31.1") 
+-- Found TagLib: /usr/lib64/libtag.so (found version "1.11.1") 
+-- Found TinyXML: /usr/lib64/libtinyxml.so (found version "2.6.2") 
+-- Found EGL: /usr/lib64/libEGL.so (found version "20.0.1") 
+-- Found X: /usr/lib64/libX11.so (found version "1.6.9") 
+-- Found XRandR: /usr/lib64/libXrandr.so (found version "1.5.2") 
+-- Found LibDRM: /usr/lib64/libdrm.so (found version "2.4.100") 
+-- Found OpenGl: /usr/lib64/libGL.so  
+-- Could NOT find MariaDBClient (missing: MARIADBCLIENT_INCLUDE_DIR) (found version "10.4.12")
+-- Found MySqlClient: /usr/lib64/libmysqlclient.so (found version "") 
+-- Found Shairplay: /usr/lib64/libshairplay.so  
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.2") 
+-- Found Threads: TRUE  
+-- Found Java: /usr/bin/java (found version "1.8.0.242") found components: Runtime 
+-- Found SWIG: /usr/bin/swig (found version "4.0.1") 
+-- Found Doxygen: /usr/bin/doxygen (found version "1.8.17") found components: doxygen dot 
+-- Found CWIID: /usr/lib64/libcwiid.so (found version "0.6.00") 
+-- #---- CONFIGURATION ----#
+-- Platform: X11
+-- -- PATH config --
+-- Prefix: /usr
+-- Libdir: /usr/lib64
+-- Bindir: /usr/bin
+-- Includedir: /usr/include
+-- Datarootdir: /usr/share
+-- Datadir: /usr/share
+-- Docdir: /usr/share/doc/kodi
+-- ALSA enabled: Yes
+-- AVAHI enabled: Yes
+-- BLUETOOTH enabled: Yes
+-- BLURAY enabled: Yes
+-- CAP enabled: Yes
+-- CCACHE enabled: No
+-- CEC enabled: Yes
+-- CLANGFORMAT enabled: No
+-- DBUS enabled: Yes
+-- ISO9660PP enabled: Yes
+-- LCMS2 enabled: Yes
+-- LIRCCLIENT enabled: Yes
+-- MDNS enabled: No
+-- MICROHTTPD enabled: Yes
+-- NFS enabled: Yes
+-- PLIST enabled: Yes
+-- PULSEAUDIO enabled: Yes
+-- PYTHON enabled: Yes
+-- SMBCLIENT enabled: Yes
+-- SNDIO enabled: Yes
+-- UDEV enabled: Yes
+-- UDF enabled: Yes
+-- XSLT enabled: Yes
+-- VAAPI enabled: Yes
+-- GLX enabled: Yes
+-- VDPAU enabled: Yes
+-- MARIADBCLIENT enabled: No
+-- MYSQLCLIENT enabled: Yes
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_VERBOSE_MAKEFILE
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    PKGCONFIGPATH
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/xbmc-master/build
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ /usr/bin/ninja -v -j4 -C build
+ninja: Entering directory `build'
+[1/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-build && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/tmp && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/download && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp && /usr/bin/cmake -E touch /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/dvdcss-mkdir
+[2/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src && /usr/bin/cmake -P /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/verify-dvdcss.cmake && /usr/bin/cmake -P /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/extract-dvdcss.cmake && /usr/bin/cmake -E touch /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/dvdcss-download
+-- verifying file...
+     file='/home/stig/rpmbuild/SOURCES/libdvdcss-1.4.2-Leia-Beta-5.tar.gz'
+-- verifying file... done
+-- extracting...
+     src='/home/stig/rpmbuild/SOURCES/libdvdcss-1.4.2-Leia-Beta-5.tar.gz'
+     dst='/home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[3/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -E echo_append && /usr/bin/cmake -E touch /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/dvdcss-update
+[4/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -E echo_append && /usr/bin/cmake -E touch /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/dvdcss-patch
+[5/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/md5.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/md5.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/md5.cpp.o -c ../tools/depends/native/TexturePacker/src/md5.cpp
+[6/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -P /home/stig/rpmbuild/BUILD/xbmc-master/build/build/ExportFiles.cmake
+[7/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -DCORE_SOURCE_DIR=/home/stig/rpmbuild/BUILD/xbmc-master -DCORE_SYSTEM_NAME=linux -DCORE_BUILD_DIR=build -DCMAKE_BINARY_DIR=/home/stig/rpmbuild/BUILD/xbmc-master/build -DARCH_DEFINES="-DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1" -DAPP_SCMID=by\ Mageia -DAPP_COPYRIGHT_YEARS=2005-2018 -DAPP_BUILD_DATE=20200315 -Dprefix=/home/stig/rpmbuild/BUILD/xbmc-master/build/build -P /home/stig/rpmbuild/BUILD/xbmc-master/cmake/scripts/common/GenerateVersionedFiles.cmake
+[8/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/DecoderManager.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/DecoderManager.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/DecoderManager.cpp.o -c ../tools/depends/native/TexturePacker/src/DecoderManager.cpp
+[9/1563] /usr/bin/c++   -I../ -I../lib -I../lib/gtest/include -I../xbmc -I../xbmc/platform/linux -I../xbmc/cores/VideoPlayer -Ibuild -I../xbmc/platform/posix -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/python3.8 -I/usr/include/samba-4.0 -I/usr/include/libxml2 -Ibuild/cores/RetroPlayer/messages -I/usr/include/freetype2 -I/usr/include/fribidi -Ibuild/libdvd/include -I/usr/include/lzo -I/usr/include/libdrm -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -D__STDC_CONSTANT_MACROS -D_FILE_OFFSET_BITS=64 -DHAS_POSIX_NETWORK -DHAS_LINUX_NETWORK -DHAS_BUILTIN_SYNC_ADD_AND_FETCH=1 -DHAS_BUILTIN_SYNC_SUB_AND_FETCH=1 -DHAS_BUILTIN_SYNC_VAL_COMPARE_AND_SWAP=1 -DHAVE_INOTIFY=1 -DHAVE_POSIX_FADVISE=1 -DHAVE_LOCALTIME_R=1 -DHAVE_GMTIME_R=1 -DHAVE_INTTYPES_H=1 -std=c++14 -MD -MT CMakeFiles/compileinfo.dir/build/xbmc/CompileInfo.cpp.o -MF CMakeFiles/compileinfo.dir/build/xbmc/CompileInfo.cpp.o.d -o CMakeFiles/compileinfo.dir/build/xbmc/CompileInfo.cpp.o -c build/xbmc/CompileInfo.cpp
+[10/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/XBTFWriter.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/XBTFWriter.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/XBTFWriter.cpp.o -c ../tools/depends/native/TexturePacker/src/XBTFWriter.cpp
+[11/1563] /usr/bin/cc  -I../ -I../lib -I../lib/gtest/include -I../xbmc -I../xbmc/platform/linux -I../xbmc/cores/VideoPlayer -Ibuild -I../xbmc/platform/posix -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/python3.8 -I/usr/include/samba-4.0 -I/usr/include/libxml2 -Ibuild/cores/RetroPlayer/messages -I/usr/include/freetype2 -I/usr/include/fribidi -Ibuild/libdvd/include -I/usr/include/lzo -I/usr/include/libdrm -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -D__STDC_CONSTANT_MACROS -D_FILE_OFFSET_BITS=64 -DHAS_POSIX_NETWORK -DHAS_LINUX_NETWORK -DHAS_BUILTIN_SYNC_ADD_AND_FETCH=1 -DHAS_BUILTIN_SYNC_SUB_AND_FETCH=1 -DHAS_BUILTIN_SYNC_VAL_COMPARE_AND_SWAP=1 -DHAVE_INOTIFY=1 -DHAVE_POSIX_FADVISE=1 -DHAVE_LOCALTIME_R=1 -DHAVE_GMTIME_R=1 -DHAVE_INTTYPES_H=1 -DHAS_ALSA=1 -DHAS_AVAHI=1 -DHAS_ZEROCONF=1 -DHAVE_LIBBLURAY=1 -DHAVE_LIBBLURAY_BDJ=1 -DHAVE_LIBCEC=1 -DHAS_DBUS=1 -DHAS_ISO9660PP=1 -DHAVE_LCMS2=1 -DHAS_LIRC=1 -DHAS_WEB_SERVER=1 -DHAS_WEB_INTERFACE=1 -DHAS_FILESYSTEM_NFS=1 -DHAS_AIRPLAY=1 -DHAS_PULSEAUDIO=1 -DHAS_PYTHON=1 -DHAS_FILESYSTEM_SMB=1 -DHAS_SNDIO=1 -DHAVE_LIBUDEV=1 -DHAS_UDF=1 -DHAVE_LIBXSLT=1 -DHAVE_LIBVA=1 -DHAS_GLX=1 -DHAVE_LIBVDPAU=1 -DFFMPEG_VER_SHA=\"undef\" -I/usr/include/fribidi -DHAS_EGL=1 -DHAVE_X11=1 -DHAVE_LIBXRANDR=1 -DHAS_GL=1 -DHAS_MYSQL=1 -DHAS_UPNP=1 -DHAS_DVD_DRIVE -DHAS_CDDA_RIPPER -DHAS_AIRTUNES=1 -DBIN_INSTALL_PATH=\"/usr/lib64/kodi\" -DINSTALL_PATH=\"/usr/share/kodi\" -MD -MT CMakeFiles/kodi-xrandr.dir/xbmc-xrandr.c.o -MF CMakeFiles/kodi-xrandr.dir/xbmc-xrandr.c.o.d -o CMakeFiles/kodi-xrandr.dir/xbmc-xrandr.c.o   -c ../xbmc-xrandr.c
+[12/1563] : && /usr/bin/cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -fuse-ld=gold -Wl,--gdb-index CMakeFiles/kodi-xrandr.dir/xbmc-xrandr.c.o  -o kodi-xrandr  /usr/lib64/libX11.so  /usr/lib64/libXext.so  -lm  /usr/lib64/libXrandr.so && :
+[13/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/TexturePacker.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/TexturePacker.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/TexturePacker.cpp.o -c ../tools/depends/native/TexturePacker/src/TexturePacker.cpp
+[14/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GIFDecoder.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GIFDecoder.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GIFDecoder.cpp.o -c ../tools/depends/native/TexturePacker/src/decoder/GIFDecoder.cpp
+[15/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GifHelper.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GifHelper.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GifHelper.cpp.o -c ../tools/depends/native/TexturePacker/src/decoder/GifHelper.cpp
+[16/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/JPGDecoder.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/JPGDecoder.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/JPGDecoder.cpp.o -c ../tools/depends/native/TexturePacker/src/decoder/JPGDecoder.cpp
+[17/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/PNGDecoder.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/PNGDecoder.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/PNGDecoder.cpp.o -c ../tools/depends/native/TexturePacker/src/decoder/PNGDecoder.cpp
+[18/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/xbmc/cores/RetroPlayer/messages && /usr/bin/flatc -c -o /home/stig/rpmbuild/BUILD/xbmc-master/build/build/cores/RetroPlayer/messages/ savestate.fbs
+[19/1563] /usr/bin/cc  -I../ -I../lib -I../lib/gtest/include -I../xbmc -I../xbmc/platform/linux -I../xbmc/cores/VideoPlayer -Ibuild -I../xbmc/platform/posix -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/python3.8 -I/usr/include/samba-4.0 -I/usr/include/libxml2 -Ibuild/cores/RetroPlayer/messages -I/usr/include/freetype2 -I/usr/include/fribidi -Ibuild/libdvd/include -I/usr/include/lzo -I/usr/include/libdrm -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -fPIC -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -D__STDC_CONSTANT_MACROS -D_FILE_OFFSET_BITS=64 -DHAS_POSIX_NETWORK -DHAS_LINUX_NETWORK -DHAS_BUILTIN_SYNC_ADD_AND_FETCH=1 -DHAS_BUILTIN_SYNC_SUB_AND_FETCH=1 -DHAS_BUILTIN_SYNC_VAL_COMPARE_AND_SWAP=1 -DHAVE_INOTIFY=1 -DHAVE_POSIX_FADVISE=1 -DHAVE_LOCALTIME_R=1 -DHAVE_GMTIME_R=1 -DHAVE_INTTYPES_H=1 -DHAS_ALSA=1 -DHAS_AVAHI=1 -DHAS_ZEROCONF=1 -DHAVE_LIBBLURAY=1 -DHAVE_LIBBLURAY_BDJ=1 -DHAVE_LIBCEC=1 -DHAS_DBUS=1 -DHAS_ISO9660PP=1 -DHAVE_LCMS2=1 -DHAS_LIRC=1 -DHAS_WEB_SERVER=1 -DHAS_WEB_INTERFACE=1 -DHAS_FILESYSTEM_NFS=1 -DHAS_AIRPLAY=1 -DHAS_PULSEAUDIO=1 -DHAS_PYTHON=1 -DHAS_FILESYSTEM_SMB=1 -DHAS_SNDIO=1 -DHAVE_LIBUDEV=1 -DHAS_UDF=1 -DHAVE_LIBXSLT=1 -DHAVE_LIBVA=1 -DHAS_GLX=1 -DHAVE_LIBVDPAU=1 -DFFMPEG_VER_SHA=\"undef\" -I/usr/include/fribidi -DHAS_EGL=1 -DHAVE_X11=1 -DHAVE_LIBXRANDR=1 -DHAS_GL=1 -DHAS_MYSQL=1 -DHAS_UPNP=1 -DHAS_DVD_DRIVE -DHAS_CDDA_RIPPER -DHAS_AIRTUNES=1 -DBIN_INSTALL_PATH=\"/usr/lib64/kodi\" -DINSTALL_PATH=\"/usr/share/kodi\" -MD -MT build/cores/dll-loader/exports/CMakeFiles/wrapper.dir/wrapper.c.o -MF build/cores/dll-loader/exports/CMakeFiles/wrapper.dir/wrapper.c.o.d -o build/cores/dll-loader/exports/CMakeFiles/wrapper.dir/wrapper.c.o   -c ../xbmc/cores/DllLoader/exports/wrapper.c
+[20/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build/build/cores/dll-loader/exports && /usr/bin/nm /home/stig/rpmbuild/BUILD/xbmc-master/build/build/cores/dll-loader/exports/CMakeFiles/wrapper.dir/wrapper.c.o | grep __wrap | awk '{ printf ( "%s ", $3 ) }' | sed "s/___wrap_/__wrap_/g" | sed "s/__wrap_/-Wl,-wrap,/g" > wrapper.def && test -s wrapper.def
+[21/1563] /usr/bin/c++  -Dsse4_EXPORTS -I../ -I../lib -I../lib/gtest/include -I../xbmc -I../xbmc/platform/linux -I../xbmc/cores/VideoPlayer -Ibuild -I../xbmc/platform/posix -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/python3.8 -I/usr/include/samba-4.0 -I/usr/include/libxml2 -Ibuild/cores/RetroPlayer/messages -I/usr/include/freetype2 -I/usr/include/fribidi -Ibuild/libdvd/include -I/usr/include/lzo -I/usr/include/libdrm -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -D__STDC_CONSTANT_MACROS -D_FILE_OFFSET_BITS=64 -DHAS_POSIX_NETWORK -DHAS_LINUX_NETWORK -DHAS_BUILTIN_SYNC_ADD_AND_FETCH=1 -DHAS_BUILTIN_SYNC_SUB_AND_FETCH=1 -DHAS_BUILTIN_SYNC_VAL_COMPARE_AND_SWAP=1 -DHAVE_INOTIFY=1 -DHAVE_POSIX_FADVISE=1 -DHAVE_LOCALTIME_R=1 -DHAVE_GMTIME_R=1 -DHAVE_INTTYPES_H=1 -DHAS_ALSA=1 -DHAS_AVAHI=1 -DHAS_ZEROCONF=1 -DHAVE_LIBBLURAY=1 -DHAVE_LIBBLURAY_BDJ=1 -DHAVE_LIBCEC=1 -DHAS_DBUS=1 -DHAS_ISO9660PP=1 -DHAVE_LCMS2=1 -DHAS_LIRC=1 -DHAS_WEB_SERVER=1 -DHAS_WEB_INTERFACE=1 -DHAS_FILESYSTEM_NFS=1 -DHAS_AIRPLAY=1 -DHAS_PULSEAUDIO=1 -DHAS_PYTHON=1 -DHAS_FILESYSTEM_SMB=1 -DHAS_SNDIO=1 -DHAVE_LIBUDEV=1 -DHAS_UDF=1 -DHAVE_LIBXSLT=1 -DHAVE_LIBVA=1 -DHAS_GLX=1 -DHAVE_LIBVDPAU=1 -DFFMPEG_VER_SHA=\"undef\" -I/usr/include/fribidi -DHAS_EGL=1 -DHAVE_X11=1 -DHAVE_LIBXRANDR=1 -DHAS_GL=1 -DHAS_MYSQL=1 -DHAS_UPNP=1 -DHAS_DVD_DRIVE -DHAS_CDDA_RIPPER -DHAS_AIRTUNES=1 -DBIN_INSTALL_PATH=\"/usr/lib64/kodi\" -DINSTALL_PATH=\"/usr/share/kodi\" -msse4.1 -std=c++14 -MD -MT build/platform/linux/sse4/CMakeFiles/sse4.dir/CopyFrame.cpp.o -MF build/platform/linux/sse4/CMakeFiles/sse4.dir/CopyFrame.cpp.o.d -o build/platform/linux/sse4/CMakeFiles/sse4.dir/CopyFrame.cpp.o -c ../xbmc/platform/linux/sse4/CopyFrame.cpp
+[22/1563] : && /usr/bin/c++ -fPIC -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -fuse-ld=gold -Wl,--gdb-index -Wl,--gdb-index -shared -Wl,-soname,libsse4-x86_64-linux.so -o system/libsse4-x86_64-linux.so build/platform/linux/sse4/CMakeFiles/sse4.dir/CopyFrame.cpp.o   && :
+[23/1563] /usr/bin/c++   -I../xbmc -I../tools/depends/native/TexturePacker/src -I../tools/depends/native/TexturePacker/src/decoder -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_MEMFD=1 -DHAVE_MKOSTEMP=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++14 -MD -MT build/texturepacker/CMakeFiles/TexturePacker.dir/__/__/__/xbmc/guilib/XBTF.cpp.o -MF build/texturepacker/CMakeFiles/TexturePacker.dir/__/__/__/xbmc/guilib/XBTF.cpp.o.d -o build/texturepacker/CMakeFiles/TexturePacker.dir/__/__/__/xbmc/guilib/XBTF.cpp.o -c ../xbmc/guilib/XBTF.cpp
+[24/1563] : && /usr/bin/c++  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -fuse-ld=gold -Wl,--gdb-index build/texturepacker/CMakeFiles/TexturePacker.dir/src/md5.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/DecoderManager.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/TexturePacker.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/XBTFWriter.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GIFDecoder.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/GifHelper.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/JPGDecoder.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/src/decoder/PNGDecoder.cpp.o build/texturepacker/CMakeFiles/TexturePacker.dir/__/__/__/xbmc/guilib/XBTF.cpp.o  -o build/texturepacker/TexturePacker  /usr/lib64/libgif.so  /usr/lib64/libpng.so  /usr/lib64/libz.so  /usr/lib64/libjpeg.so  /usr/lib64/liblzo2.so && :
+[25/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/addons/skin.estouchy/media && /home/stig/rpmbuild/BUILD/xbmc-master/build/build/texturepacker/TexturePacker -input /home/stig/rpmbuild/BUILD/xbmc-master/addons/skin.estouchy/media -output /home/stig/rpmbuild/BUILD/xbmc-master/build/addons/skin.estouchy/media/Textures.xbt -dupecheck
+FAILED: addons/skin.estouchy/media/Textures.xbt 
+cd /home/stig/rpmbuild/BUILD/xbmc-master/build && /usr/bin/cmake -E make_directory /home/stig/rpmbuild/BUILD/xbmc-master/build/addons/skin.estouchy/media && /home/stig/rpmbuild/BUILD/xbmc-master/build/build/texturepacker/TexturePacker -input /home/stig/rpmbuild/BUILD/xbmc-master/addons/skin.estouchy/media -output /home/stig/rpmbuild/BUILD/xbmc-master/build/addons/skin.estouchy/media/Textures.xbt -dupecheck
+[26/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build/build/swig && /usr/bin/swig -w401 -c++ -o AddonModuleXbmcaddon.i.xml -xml -I/home/stig/rpmbuild/BUILD/xbmc-master/xbmc -xmllang python /home/stig/rpmbuild/BUILD/xbmc-master/xbmc/interfaces/swig/../swig/AddonModuleXbmcaddon.i && /usr/bin/java -cp /home/stig/rpmbuild/BUILD/xbmc-master/tools/codegenerator/groovy/groovy-all-2.4.4.jar:/home/stig/rpmbuild/BUILD/xbmc-master/tools/codegenerator/groovy/commons-lang-2.6.jar:/home/stig/rpmbuild/BUILD/xbmc-master/tools/codegenerator:/home/stig/rpmbuild/BUILD/xbmc-master/xbmc/interfaces/swig/../python groovy.ui.GroovyMain /home/stig/rpmbuild/BUILD/xbmc-master/tools/codegenerator/Generator.groovy AddonModuleXbmcaddon.i.xml /home/stig/rpmbuild/BUILD/xbmc-master/xbmc/interfaces/swig/../python/PythonSwig.cpp.template AddonModuleXbmcaddon.i.cpp > /dev/null
+[27/1563] cd /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss && PATH=/bin:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/usr/lib64/qt5/bin:/home/stig/.local/bin:/home/stig/bin autoreconf -vif && /usr/bin/cmake -E touch /home/stig/rpmbuild/BUILD/xbmc-master/build/build/libdvd/src/dvdcss-stamp/dvdcss-autoreconf
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:18: installing './compile'
+configure.ac:11: installing './config.guess'
+configure.ac:11: installing './config.sub'
+configure.ac:13: installing './install-sh'
+configure.ac:13: installing './missing'
+Makefile.am: installing './depcomp'
+autoreconf: Leaving directory `.'
+[28/1563] /usr/bin/c++    -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -ffast-math -march=sandybridge -mtune=sandybridge -gsplit-dwarf -DPLATFORM_SETTINGS_FILE=x11.xml -Wall -DNDEBUG   -std=c++11 -MD -MT build/jsonschemabuilder/CMakeFiles/JsonSchemaBuilder.dir/src/JsonSchemaBuilder.cpp.o -MF build/jsonschemabuilder/CMakeFiles/JsonSchemaBuilder.dir/src/JsonSchemaBuilder.cpp.o.d -o build/jsonschemabuilder/CMakeFiles/JsonSchemaBuilder.dir/src/JsonSchemaBuilder.cpp.o -c ../tools/depends/native/JsonSchemaBuilder/src/JsonSchemaBuilder.cpp
+ninja: build stopped: subcommand failed.
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.x1Audl (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.x1Audl (%build)
+I: [iurt_root_command] ERROR: chroot
