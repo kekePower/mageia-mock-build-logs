@@ -1,0 +1,281 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/pycharm-community-2019.3.4-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.eKQa2q
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf pycharm-community-2019.3.4
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/pycharm-community-2019.3.4.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd pycharm-community-2019.3.4
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/BashSupport-1.7.16.192.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/markdown-193.6494.42.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/intellij-ansible-0.9.5.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/gitlab-integration-plugin-1.1.2.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/Docker-plugin-201.6487.18.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/idea-multimarkdown-3.0.197.72.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/ideavim-0.55.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/editorconfig-193.5662.56.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/ini4idea-193.6911.14.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/GitToolBox-193.7.2.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf jre64
++ rm -rf ./lib/pty4j-native/linux/x86
++ rm -rf ./lib/pty4j-native/linux/ppc64le
++ pathfix.py -pni '/usr/bin/python3 -s' bin/printenv.py bin/restart.py plugins/python-ce/helpers/epydoc/gui.py plugins/python-ce/helpers/py2only/docutils/utils/error_reporting.py plugins/python-ce/helpers/py2only/docutils/utils/math/latex2mathml.py plugins/python-ce/helpers/py2only/docutils/utils/math/math2html.py plugins/python-ce/helpers/py2only/docutils/utils/punctuation_chars.py plugins/python-ce/helpers/py2only/docutils/writers/xetex/__init__.py plugins/python-ce/helpers/py3only/docutils/utils/error_reporting.py plugins/python-ce/helpers/py3only/docutils/utils/math/latex2mathml.py plugins/python-ce/helpers/py3only/docutils/utils/math/math2html.py plugins/python-ce/helpers/py3only/docutils/utils/punctuation_chars.py plugins/python-ce/helpers/py3only/docutils/writers/xetex/__init__.py plugins/python-ce/helpers/pycharm/django_manage.py plugins/python-ce/helpers/pycharm/django_manage_shell.py plugins/python-ce/helpers/pycharm/django_test_manage.py plugins/python-ce/helpers/pycodestyle.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-glut.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-glut.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-gtk.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-gtk3.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-pyglet.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-qt.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-tk.py plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-wx.py plugins/python-ce/helpers/pydev/pydev_tests_python/my_django_proj_17/manage.py plugins/python-ce/helpers/pydev/pydev_tests_python/my_django_proj_21/manage.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/plugins/__init__.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/__init__.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/advapi32.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/context_amd64.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/context_i386.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/dbghelp.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/defines.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/gdi32.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/kernel32.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/ntdll.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/peb_teb.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/psapi.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/shell32.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/shlwapi.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/user32.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/version.py plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/wtsapi32.py plugins/python-ce/helpers/pydev/third_party/isort_container/isort/main.py plugins/python-ce/helpers/pydev/third_party/pep8/autopep8.py plugins/python-ce/helpers/pydev/third_party/pep8/lib2to3/lib2to3/pgen2/token.py plugins/python-ce/helpers/pydev/third_party/pep8/pycodestyle.py plugins/python-ce/helpers/typeshed/tests/check_consistent.py plugins/python-ce/helpers/typeshed/tests/mypy_selftest.py plugins/python-ce/helpers/typeshed/tests/mypy_test.py plugins/python-ce/helpers/typeshed/tests/pytype_test.py
+bin/printenv.py: updating
+bin/restart.py: updating
+plugins/python-ce/helpers/epydoc/gui.py: updating
+plugins/python-ce/helpers/py2only/docutils/utils/error_reporting.py: updating
+plugins/python-ce/helpers/py2only/docutils/utils/math/latex2mathml.py: updating
+plugins/python-ce/helpers/py2only/docutils/utils/math/math2html.py: updating
+plugins/python-ce/helpers/py2only/docutils/utils/punctuation_chars.py: updating
+plugins/python-ce/helpers/py2only/docutils/writers/xetex/__init__.py: updating
+plugins/python-ce/helpers/py3only/docutils/utils/error_reporting.py: updating
+plugins/python-ce/helpers/py3only/docutils/utils/math/latex2mathml.py: updating
+plugins/python-ce/helpers/py3only/docutils/utils/math/math2html.py: updating
+plugins/python-ce/helpers/py3only/docutils/utils/punctuation_chars.py: updating
+plugins/python-ce/helpers/py3only/docutils/writers/xetex/__init__.py: updating
+plugins/python-ce/helpers/pycharm/django_manage.py: updating
+plugins/python-ce/helpers/pycharm/django_manage_shell.py: updating
+plugins/python-ce/helpers/pycharm/django_test_manage.py: updating
+plugins/python-ce/helpers/pycodestyle.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-glut.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-glut.py: no change
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-gtk.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-gtk3.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-pyglet.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-qt.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-tk.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_mainloop/gui-wx.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_python/my_django_proj_17/manage.py: updating
+plugins/python-ce/helpers/pydev/pydev_tests_python/my_django_proj_21/manage.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/plugins/__init__.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/__init__.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/advapi32.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/context_amd64.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/context_i386.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/dbghelp.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/defines.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/gdi32.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/kernel32.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/ntdll.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/peb_teb.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/psapi.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/shell32.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/shlwapi.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/user32.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/version.py: updating
+plugins/python-ce/helpers/pydev/pydevd_attach_to_process/winappdbg/win32/wtsapi32.py: updating
+plugins/python-ce/helpers/pydev/third_party/isort_container/isort/main.py: updating
+plugins/python-ce/helpers/pydev/third_party/pep8/autopep8.py: updating
+plugins/python-ce/helpers/pydev/third_party/pep8/lib2to3/lib2to3/pgen2/token.py: updating
+plugins/python-ce/helpers/pydev/third_party/pep8/pycodestyle.py: updating
+plugins/python-ce/helpers/typeshed/tests/check_consistent.py: updating
+plugins/python-ce/helpers/typeshed/tests/mypy_selftest.py: updating
+plugins/python-ce/helpers/typeshed/tests/mypy_test.py: updating
+plugins/python-ce/helpers/typeshed/tests/pytype_test.py: updating
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.I62Y0r
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64
++ cd pycharm-community-2019.3.4
++ '[' 1 -eq 1 ']'
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/pycharm-community
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/pixmaps
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/mime/packages
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/applications
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/appdata
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/bin
++ cp -arf ./lib ./bin ./help ./plugins /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/
++ cp -arf ./BashSupport /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./markdown /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./intellij-ansible /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./gitlab-integration-plugin /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./idea-multimarkdown /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./IdeaVim /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./editorconfig /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -arf ./ini4idea /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/
++ cp -af /home/stig/rpmbuild/SOURCES/ideavim-0.55.zip /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/plugins/Docker-plugin.jar
++ rm -f /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/bin/fsnotifier /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/pycharm-community/bin/fsnotifier-arm
++ rm -f '/home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/java/help/*.pdf'
++ cp -af ./bin/pycharm.png /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/pixmaps/pycharm.png
++ cp -af /home/stig/rpmbuild/SOURCES/pycharm.xml /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/mime/packages/pycharm-community.xml
++ cp -af /home/stig/rpmbuild/SOURCES/pycharm-community.desktop /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/pycharm-community.desktop
++ cp -a /home/stig/rpmbuild/SOURCES/pycharm-community.appdata.xml /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/appdata
++ ln -s /usr/share/java/pycharm-community/bin/pycharm.sh /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/bin/pycharm
++ desktop-file-install --add-category=Development --delete-original --dir=/home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/applications /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/pycharm-community.desktop
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
+Warning: undefined symbols in /usr/share/java/pycharm-community/lib/pty4j-native/linux/x86_64/libpty.so: 
+Warning: undefined symbols in /usr/share/java/pycharm-community/bin/libdbm64.so: 
+Warning: undefined symbols in /usr/share/java/pycharm-community/plugins/python-ce/helpers/pydev/pydevd_attach_to_process/attach_linux_amd64.so: 
+Warning: undefined symbols in /usr/share/java/pycharm-community/plugins/python-ce/helpers/pydev/pydevd_attach_to_process/attach_linux_x86.so: 
++ /usr/lib/rpm/brp-strip /bin/true
++ /usr/lib/rpm/brp-strip-comment-note /bin/true /usr/bin/objdump
++ /usr/lib/rpm/brp-strip-static-archive /bin/true
++ /usr/lib/rpm/brp-strip-shared /bin/true
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/share/java/pycharm-community/bin/format.sh from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/share/java/pycharm-community/bin/inspect.sh from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/share/java/pycharm-community/bin/pycharm.sh from /bin/sh to #!/usr/bin/sh
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.WZyvWq
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ '[' 1 -eq 1 ']'
++ appstream-util validate-relax --nonet /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/appdata/pycharm-community.appdata.xml
+/home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/appdata/pycharm-community.appdata.xml: OK
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: pycharm-community-2019.3.4-1.mga8.x86_64
+Provides: application() application(pycharm-community.desktop) libdbm.so()(64bit) libpty.so()(64bit) metainfo() metainfo(pycharm-community.appdata.xml) pycharm-community = 2019.3.4-1.mga8 pycharm-community(x86-64) = 2019.3.4-1.mga8
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires: libc.so.6 libc.so.6()(64bit) libc.so.6(GLIBC_2.0) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.4)(64bit) libdbusmenu-glib.so.4()(64bit) libgcc_s.so.1 libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.0)(64bit) libgio-2.0.so.0()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libstdc++.so.6 libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4)(64bit) typelib(GLib) typelib(Gtk)
+Processing files: pycharm-community-plugins-2019.3.4-1.mga8.x86_64
+Provides: pycharm-community-plugins = 2019.3.4-1.mga8 pycharm-community-plugins(x86-64) = 2019.3.4-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6 libc.so.6()(64bit) libc.so.6(GLIBC_2.0) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.4)(64bit) libgcc_s.so.1 libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.0)(64bit) libstdc++.so.6 libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4)(64bit) typelib(GLib) typelib(Gtk)
+Processing files: pycharm-community-doc-2019.3.4-1.mga8.noarch
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.mTzvus
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/doc/pycharm-community-doc
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/doc/pycharm-community-doc
++ cp -pr Install-Linux-tar.txt build.txt /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/doc/pycharm-community-doc
++ cp -pr help/ReferenceCard.pdf help/ReferenceCardForMac.pdf /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/doc/pycharm-community-doc
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.fMSbkq
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/licenses/pycharm-community-doc
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/licenses/pycharm-community-doc
++ cp -pr license/ /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64/usr/share/licenses/pycharm-community-doc
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: pycharm-community-doc = 2019.3.4-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/noarch/pycharm-community-doc-2019.3.4-1.mga8.noarch.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/pycharm-community-plugins-2019.3.4-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/pycharm-community-2019.3.4-1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.lmVwtp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pycharm-community-2019.3.4
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/pycharm-community-2019.3.4-1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.4FrBjp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf pycharm-community-2019.3.4
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
