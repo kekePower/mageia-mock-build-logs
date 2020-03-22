@@ -1,0 +1,29 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200322112355/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200322112355/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64pcre-devel-8.44-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 443k completed, ETA = --:--:--, speed = 7521k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64xcrypt-static-devel-4.4.15-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 268k completed, ETA = --:--:--, speed = 12.4M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/golang-1.13.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1392k completed, ETA = --:--:--, speed = 41.2M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/glibc-static-devel-2.31-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   45% of 15.5M completed, ETA = --:--:--, speed = 66.3M                          100% of 15.5M completed, ETA = --:--:--, speed = 74.5M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/golang-bin-1.13.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   82% of 91.5M completed, ETA = 0:00:01, speed = 83.8M                           100% of 91.5M completed, ETA = --:--:--, speed = 87.0M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/golang-src-1.13.2-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6614k completed, ETA = --:--:--, speed = 62.7M                                                                                                retrieved   lib64pcre-devel-8.44-1.mga8.x86_64.rpm lib64xcrypt-static-devel-4.4.15-1.mga8.x86_64.rpm golang-1.13.2-2.mga8.x86_64.rpm glibc-static-devel-2.31-3.mga8.x86_64.rpm golang-bin-1.13.2-2.mga8.x86_64.rpm golang-src-1.13.2-2.mga8.noarch.rpm
+...retrieving done
+installing golang-src-1.13.2-2.mga8.noarch.rpm golang-bin-1.13.2-2.mga8.x86_64.rpm lib64xcrypt-static-devel-4.4.15-1.mga8.x86_64.rpm lib64pcre-devel-8.44-1.mga8.x86_64.rpm golang-1.13.2-2.mga8.x86_64.rpm glibc-static-devel-2.31-3.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200322112355/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200322112355 (remove=0, install=0, upgrade=6)
+Preparing...                     #############################################
+      1/6: glibc-static-devel    #############################################
+      2/6: lib64xcrypt-static-devel
+                                 #############################################
+      3/6: golang-src            #############################################
+      4/6: golang-bin            #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+      5/6: golang                #############################################
+      6/6: lib64pcre-devel       #############################################
+removing installed rpms (golang-src-1.13.2-2.mga8.noarch.rpm golang-bin-1.13.2-2.mga8.x86_64.rpm lib64xcrypt-static-devel-4.4.15-1.mga8.x86_64.rpm lib64pcre-devel-8.44-1.mga8.x86_64.rpm golang-1.13.2-2.mga8.x86_64.rpm glibc-static-devel-2.31-3.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200322112355/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
