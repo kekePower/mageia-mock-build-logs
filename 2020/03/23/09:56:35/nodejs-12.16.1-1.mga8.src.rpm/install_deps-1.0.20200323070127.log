@@ -1,0 +1,40 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200323070127/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200323070127/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/nodejs-12.9.0-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 388k completed, ETA = --:--:--, speed = 4222k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64nghttp2-devel-1.40.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 53464 completed, ETA = --:--:--, speed = 2900k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64openssl-devel-1.1.1d-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 2062k completed, ETA = --:--:--, speed = 38.7M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libatomic1-9.3.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 39913 completed, ETA = --:--:--, speed = 1856k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv-devel-1.34.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 39906 completed, ETA = --:--:--, speed = 2292k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv1-1.34.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 104k completed, ETA = --:--:--, speed = 10.1M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-pyparsing-2.4.2-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 144k completed, ETA = --:--:--, speed = 5764k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/npm-6.10.2-1.12.9.0.4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 3703k completed, ETA = --:--:--, speed = 47.5M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/nodejs-packaging-23-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 18512 completed, ETA = --:--:--, speed = 2582k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64python3-devel-3.8.2-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 213k completed, ETA = --:--:--, speed = 8543k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/nodejs-libs-12.9.0-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 10.5M completed, ETA = --:--:--, speed = 87.9M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/systemtap-sdt-devel-4.2-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 70579 completed, ETA = --:--:--, speed = 2756k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/chrpath-0.16-6.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 22879 completed, ETA = --:--:--, speed = 1489k                                                                                                retrieved   nodejs-12.9.0-4.mga8.x86_64.rpm lib64nghttp2-devel-1.40.0-2.mga8.x86_64.rpm lib64openssl-devel-1.1.1d-3.mga8.x86_64.rpm libatomic1-9.3.0-1.mga8.x86_64.rpm lib64uv-devel-1.34.2-2.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm python3-pyparsing-2.4.2-3.mga8.noarch.rpm npm-6.10.2-1.12.9.0.4.mga8.x86_64.rpm nodejs-packaging-23-3.mga8.noarch.rpm lib64python3-devel-3.8.2-1.mga8.x86_64.rpm nodejs-libs-12.9.0-4.mga8.x86_64.rpm systemtap-sdt-devel-4.2-4.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm
+...retrieving done
+installing lib64python3-devel-3.8.2-1.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm systemtap-sdt-devel-4.2-4.mga8.x86_64.rpm nodejs-libs-12.9.0-4.mga8.x86_64.rpm npm-6.10.2-1.12.9.0.4.mga8.x86_64.rpm python3-pyparsing-2.4.2-3.mga8.noarch.rpm nodejs-packaging-23-3.mga8.noarch.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm nodejs-12.9.0-4.mga8.x86_64.rpm lib64nghttp2-devel-1.40.0-2.mga8.x86_64.rpm libatomic1-9.3.0-1.mga8.x86_64.rpm lib64openssl-devel-1.1.1d-3.mga8.x86_64.rpm lib64uv-devel-1.34.2-2.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200323070127/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200323070127 (remove=0, install=0, upgrade=13)
+Preparing...                     #############################################
+     1/13: lib64uv1              #############################################
+     2/13: python3-pyparsing     #############################################
+     3/13: nodejs-libs           #############################################
+     4/13: npm                   #############################################
+     5/13: nodejs                #############################################
+     6/13: nodejs-packaging      #############################################
+     7/13: systemtap-sdt-devel   #############################################
+     8/13: lib64uv-devel         #############################################
+     9/13: lib64openssl-devel    #############################################
+    10/13: lib64nghttp2-devel    #############################################
+    11/13: chrpath               #############################################
+    12/13: lib64python3-devel    #############################################
+    13/13: libatomic1            #############################################
+removing installed rpms (lib64python3-devel-3.8.2-1.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm systemtap-sdt-devel-4.2-4.mga8.x86_64.rpm nodejs-libs-12.9.0-4.mga8.x86_64.rpm npm-6.10.2-1.12.9.0.4.mga8.x86_64.rpm python3-pyparsing-2.4.2-3.mga8.noarch.rpm nodejs-packaging-23-3.mga8.noarch.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm nodejs-12.9.0-4.mga8.x86_64.rpm lib64nghttp2-devel-1.40.0-2.mga8.x86_64.rpm libatomic1-9.3.0-1.mga8.x86_64.rpm lib64openssl-devel-1.1.1d-3.mga8.x86_64.rpm lib64uv-devel-1.34.2-2.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200323070127/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
