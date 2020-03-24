@@ -1,0 +1,55 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/kitty-0.17.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3hIG5e
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf kitty-0.17.0
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/kitty-0.17.0.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd kitty-0.17.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.6kAEtb
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd kitty-0.17.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/bin/python3 setup.py linux-package --update-check-interval=0 --verbose --debug --libdir-name lib64
+Package wayland-protocols was not found in the pkg-config search path.
+Perhaps you should add the directory containing `wayland-protocols.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'wayland-protocols', required by 'virtual:world', not found
+In file included from /usr/include/bits/libc-header-start.h:33,
+                 from /usr/include/stdint.h:26,
+                 from /usr/lib/gcc/x86_64-mageia-linux-gnu/9/include/stdint.h:9,
+                 from glfw/../kitty/monotonic.h:11,
+                 from glfw/internal.h:30,
+                 from glfw/x11_window.c:31:
+/usr/include/features.h:397:4: error: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Werror=cpp]
+  397 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+cc1: all warnings being treated as errors
+wayland-protocols >= 1.17 is required, found version: not found
+Disabling building of wayland backend
+CC: gcc (0, 0)
+gcc -MMD -DDEBUG -DPRIMARY_VERSION=4000 -DSECONDARY_VERSION=17 -Wextra -Wno-missing-field-initializers -Wall -Wstrict-prototypes -std=c11 -pedantic-errors -Werror -g3 -fwrapv -fstack-protector-strong -Wno-missing-braces -pipe -fvisibility=hidden -D_FORTIFY_SOURCE=2 -fPIC -pthread -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/uuid -I/usr/include/libxml2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/python3.8 -c kitty/unicode-data.c -o build/fast_data_types-unicode-data.c.o
+gcc -MMD -DDEBUG -D_GLFW_X11 -D_GLFW_BUILD_DLL -Wextra -Wno-missing-field-initializers -Wall -Wstrict-prototypes -std=c11 -pedantic-errors -Werror -g3 -fwrapv -fstack-protector-strong -Wno-missing-braces -pipe -fvisibility=hidden -D_FORTIFY_SOURCE=2 -fPIC -fpic -pthread -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -c glfw/x11_window.c -o build/glfw-x11-x11_window.c.o
+gcc -MMD -DDEBUG -DPRIMARY_VERSION=4000 -DSECONDARY_VERSION=17 -Wextra -Wno-missing-field-initializers -Wall -Wstrict-prototypes -std=c11 -pedantic-errors -Werror -g3 -fwrapv -fstack-protector-strong -Wno-missing-braces -pipe -fvisibility=hidden -D_FORTIFY_SOURCE=2 -fPIC -pthread -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/uuid -I/usr/include/libxml2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/python3.8 -c kitty/screen.c -o build/fast_data_types-screen.c.o
+gcc -MMD -DDEBUG -DPRIMARY_VERSION=4000 -DSECONDARY_VERSION=17 -Wextra -Wno-missing-field-initializers -Wall -Wstrict-prototypes -std=c11 -pedantic-errors -Werror -g3 -fwrapv -fstack-protector-strong -Wno-missing-braces -pipe -fvisibility=hidden -D_FORTIFY_SOURCE=2 -fPIC -pthread -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/uuid -I/usr/include/libxml2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/python3.8 -c kitty/fonts.c -o build/fast_data_types-fonts.c.o
+Compiling [x11] glfw/x11_window.c ...
+gcc -MMD -DDEBUG -D_GLFW_X11 -D_GLFW_BUILD_DLL -Wextra -Wno-missing-field-initializers -Wall -Wstrict-prototypes -std=c11 -pedantic-errors -Werror -g3 -fwrapv -fstack-protector-strong -Wno-missing-braces -pipe -fvisibility=hidden -D_FORTIFY_SOURCE=2 -fPIC -fpic -pthread -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -c glfw/x11_window.c -o build/glfw-x11-x11_window.c.o
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.6kAEtb (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.6kAEtb (%build)
+I: [iurt_root_command] ERROR: chroot
