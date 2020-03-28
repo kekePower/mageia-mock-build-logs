@@ -1,0 +1,64 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/bazel2-2.2.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.buUN8V
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf bazel-2.2.0
++ /usr/bin/mkdir -p bazel-2.2.0
++ cd bazel-2.2.0
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/bazel-2.2.0-dist.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ echo 'Patch #1 (bazel-1.0.0-log-warning.patch):'
+Patch #1 (bazel-1.0.0-log-warning.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p0 --fuzz=0
+patching file src/java_tools/buildjar/java/com/google/devtools/build/buildjar/javac/plugins/dependency/StrictJavaDepsPlugin.java
+Hunk #1 succeeded at 178 (offset -1 lines).
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.liuKLY
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bazel-2.2.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export JAVA_HOME=/usr
++ JAVA_HOME=/usr
++ find . -type f -regextype posix-extended -iregex '.*(sh|txt|py|_stub|stub_.*|bazel|get_workspace_status|protobuf_support|_so)' -exec /usr/bin/sed -i -e '1s|^#!/usr/bin/env python$|#!/usr/bin/env python3|' '{}' ';'
++ export 'EXTRA_BAZEL_ARGS= --python_path=/usr/bin/python3'
++ EXTRA_BAZEL_ARGS=' --python_path=/usr/bin/python3'
++ /usr/bin/mkdir -p ./bin-hack
++ ln -s /usr/bin/python3 ./bin-hack/python
+++ pwd
++ export PATH=/home/stig/rpmbuild/BUILD/bazel-2.2.0/bin-hack:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/home/stig/.local/bin:/home/stig/bin
++ PATH=/home/stig/rpmbuild/BUILD/bazel-2.2.0/bin-hack:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/home/stig/.local/bin:/home/stig/bin
++++ head -1 CHANGELOG.md
++++ /usr/bin/grep -Eo '\b[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}\b'
+++ date -d 2020-03-03 +%s
++ export SOURCE_DATE_EPOCH=1583193600
++ SOURCE_DATE_EPOCH=1583193600
++ export EMBED_LABEL=2.2.0
++ EMBED_LABEL=2.2.0
++ export TMPDIR=/home/stig/rpmbuild/tmp/
++ TMPDIR=/home/stig/rpmbuild/tmp/
++ export CC=gcc
++ CC=gcc
++ export CXX=g++
++ CXX=g++
++ export 'EXTRA_BAZEL_ARGS= --python_path=/usr/bin/python3 --sandbox_debug --host_javabase=@local_jdk//:jdk --verbose_failures'
++ EXTRA_BAZEL_ARGS=' --python_path=/usr/bin/python3 --sandbox_debug --host_javabase=@local_jdk//:jdk --verbose_failures'
++ env ./compile.sh
+Building Bazel from scratch
+ERROR: JAVA_HOME (/usr) is not a path to a working JDK.
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.liuKLY (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.liuKLY (%build)
+I: [iurt_root_command] ERROR: chroot

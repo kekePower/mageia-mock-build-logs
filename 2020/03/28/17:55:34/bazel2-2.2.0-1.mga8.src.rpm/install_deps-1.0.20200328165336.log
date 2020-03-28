@@ -1,0 +1,58 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328165336/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328165336/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/timezone-java-2019c-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 154k completed, ETA = --:--:--, speed = 1064k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/javapackages-tools-5.3.0-8.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 31739 completed, ETA = --:--:--, speed = 968k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-5.2.4-5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 201k completed, ETA = --:--:--, speed = 3874k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/zip-3.0-12.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 254k completed, ETA = --:--:--, speed = 4234k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/bash-completion-2.9-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 239k completed, ETA = --:--:--, speed = 4281k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lksctp-tools-1.0.18-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 49116 completed, ETA = --:--:--, speed = 1370k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/rootcerts-java-20191126.00-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 126k completed, ETA = --:--:--, speed = 2952k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-posix-33.4.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 146k completed, ETA = --:--:--, speed = 2877k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/copy-jdk-configs-3.7-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 23688 completed, ETA = --:--:--, speed = 660k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   37% of 30.8M completed, ETA = 0:00:02, speed = 11.8M                           75% of 30.8M completed, ETA = 0:00:01, speed = 11.7M                           100% of 30.8M completed, ETA = --:--:--, speed = 11.1M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64sctp1-1.0.18-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 47639 completed, ETA = --:--:--, speed = 989k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 67711 completed, ETA = --:--:--, speed = 1740k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/javapackages-filesystem-5.3.0-8.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 10309 completed, ETA = --:--:--, speed = 372k                                                                                                 retrieved   timezone-java-2019c-3.mga8.noarch.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm lua-5.2.4-5.mga8.x86_64.rpm zip-3.0-12.mga8.x86_64.rpm bash-completion-2.9-2.mga8.noarch.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm rootcerts-java-20191126.00-2.mga8.noarch.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm javapackages-filesystem-5.3.0-8.mga8.noarch.rpm
+...retrieving done
+installing javapackages-filesystem-5.3.0-8.mga8.noarch.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm rootcerts-java-20191126.00-2.mga8.noarch.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm zip-3.0-12.mga8.x86_64.rpm bash-completion-2.9-2.mga8.noarch.rpm lua-5.2.4-5.mga8.x86_64.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm timezone-java-2019c-3.mga8.noarch.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328165336/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328165336 (remove=0, install=0, upgrade=13)
+Preparing...                     #############################################
+     1/13: lua                   #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+     2/13: lua-posix             #############################################
+     3/13: copy-jdk-configs      #############################################
+     4/13: timezone-java         #############################################
+     5/13: rootcerts-java        #############################################
+     6/13: lib64sctp1            #############################################
+     7/13: lksctp-tools          #############################################
+     8/13: javapackages-filesystem
+                                 #############################################
+     9/13: java-1.8.0-openjdk-headless
+                                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    10/13: javapackages-tools    #############################################
+    11/13: bash-completion       #############################################
+    12/13: zip                   #############################################
+    13/13: lib64zlib-devel       #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+removing installed rpms (javapackages-filesystem-5.3.0-8.mga8.noarch.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm rootcerts-java-20191126.00-2.mga8.noarch.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm zip-3.0-12.mga8.x86_64.rpm bash-completion-2.9-2.mga8.noarch.rpm lua-5.2.4-5.mga8.x86_64.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm timezone-java-2019c-3.mga8.noarch.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328165336/var/cache/urpmi/rpms
+----------------------------------------------------------------------
+More information on package bash-completion-2.9-2.mga8.noarch
+Mageia RPM specific notes
+
+Programmable bash completion is enabled by default. These settings can be
+changed system-wide in /etc/sysconfig/bash-completion. Users may override these
+settings in their ~/.bash_completion files. New users get a skeleton
+configuration file automatically, while existing users can copy
+/etc/skel/.bash_completion into their home directories if they want to edit
+their completion settings.
+
+----------------------------------------------------------------------
+D: [iurt_root_command] Success!
