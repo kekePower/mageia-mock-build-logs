@@ -1,0 +1,88 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328174243/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328174243/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/rootcerts-java-20191126.00-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 126k completed, ETA = --:--:--, speed = 1104k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64sctp1-1.0.18-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 47639 completed, ETA = --:--:--, speed = 1292k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/javapackages-filesystem-5.3.0-8.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 10309 completed, ETA = --:--:--, speed = 359k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/javapackages-tools-5.3.0-8.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 31739 completed, ETA = --:--:--, speed = 968k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/java-1.8.0-openjdk-1.8.0.242-1.b08.5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 222k completed, ETA = --:--:--, speed = 4121k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-5.2.4-5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 201k completed, ETA = --:--:--, speed = 4029k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64fontenc1-1.1.4-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 20380 completed, ETA = --:--:--, speed = 663k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-posix-33.4.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 146k completed, ETA = --:--:--, speed = 3057k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/java-1.8.0-openjdk-devel-1.8.0.242-1.b08.5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   51% of 9484k completed, ETA = --:--:--, speed = 9716k                          100% of 9484k completed, ETA = --:--:--, speed = 11.4M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/copy-jdk-configs-3.7-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 23688 completed, ETA = --:--:--, speed = 642k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libalsa-data-1.2.2-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 85362 completed, ETA = --:--:--, speed = 1323k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lksctp-tools-1.0.18-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 49116 completed, ETA = --:--:--, speed = 1199k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/x11-font-type1-1.0.0-15.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6200 completed, ETA = --:--:--, speed = 224k                                                                                                      ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/bash-completion-2.9-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 239k completed, ETA = --:--:--, speed = 3578k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/zip-3.0-12.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 254k completed, ETA = --:--:--, speed = 3969k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gif7-5.2.1-5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 40842 completed, ETA = --:--:--, speed = 1139k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/x11-font-bitstream-type1-1.0.3-9.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 307k completed, ETA = --:--:--, speed = 4592k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/x11-font-xfree86-type1-1.0.4-9.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 36791 completed, ETA = --:--:--, speed = 971k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 67711 completed, ETA = --:--:--, speed = 1574k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/timezone-java-2019c-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 154k completed, ETA = --:--:--, speed = 2030k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64alsa2-1.2.2-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   80% of 429k completed, ETA = --:--:--, speed = 3368k                           100% of 429k completed, ETA = --:--:--, speed = 3734k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/mkfontscale-1.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 29592 completed, ETA = --:--:--, speed = 258k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   26% of 30.8M completed, ETA = 0:00:03, speed = 9657k                           64% of 30.8M completed, ETA = 0:00:02, speed = 10.0M                           100% of 30.8M completed, ETA = --:--:--, speed = 11.1M                                                                                                retrieved   rootcerts-java-20191126.00-2.mga8.noarch.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm javapackages-filesystem-5.3.0-8.mga8.noarch.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm java-1.8.0-openjdk-1.8.0.242-1.b08.5.mga8.x86_64.rpm lua-5.2.4-5.mga8.x86_64.rpm lib64fontenc1-1.1.4-2.mga8.x86_64.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm java-1.8.0-openjdk-devel-1.8.0.242-1.b08.5.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm libalsa-data-1.2.2-1.mga8.noarch.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm x11-font-type1-1.0.0-15.mga8.noarch.rpm bash-completion-2.9-2.mga8.noarch.rpm zip-3.0-12.mga8.x86_64.rpm lib64gif7-5.2.1-5.mga8.x86_64.rpm x11-font-bitstream-type1-1.0.3-9.mga8.noarch.rpm x11-font-xfree86-type1-1.0.4-9.mga8.noarch.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm timezone-java-2019c-3.mga8.noarch.rpm lib64alsa2-1.2.2-1.mga8.x86_64.rpm mkfontscale-1.2.1-2.mga8.x86_64.rpm java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm
+...retrieving done
+installing java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm mkfontscale-1.2.1-2.mga8.x86_64.rpm timezone-java-2019c-3.mga8.noarch.rpm lib64alsa2-1.2.2-1.mga8.x86_64.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm x11-font-bitstream-type1-1.0.3-9.mga8.noarch.rpm x11-font-xfree86-type1-1.0.4-9.mga8.noarch.rpm lib64gif7-5.2.1-5.mga8.x86_64.rpm zip-3.0-12.mga8.x86_64.rpm x11-font-type1-1.0.0-15.mga8.noarch.rpm bash-completion-2.9-2.mga8.noarch.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm java-1.8.0-openjdk-devel-1.8.0.242-1.b08.5.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm libalsa-data-1.2.2-1.mga8.noarch.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm java-1.8.0-openjdk-1.8.0.242-1.b08.5.mga8.x86_64.rpm lua-5.2.4-5.mga8.x86_64.rpm lib64fontenc1-1.1.4-2.mga8.x86_64.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm javapackages-filesystem-5.3.0-8.mga8.noarch.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm rootcerts-java-20191126.00-2.mga8.noarch.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328174243/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328174243 (remove=0, install=0, upgrade=23)
+Preparing...                     #############################################
+     1/23: lua                   #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+     2/23: lua-posix             #############################################
+     3/23: copy-jdk-configs      #############################################
+     4/23: rootcerts-java        #############################################
+     5/23: javapackages-filesystem
+                                 #############################################
+     6/23: lib64sctp1            #############################################
+     7/23: lksctp-tools          #############################################
+     8/23: lib64fontenc1         #############################################
+     9/23: mkfontscale           #############################################
+    10/23: x11-font-bitstream-type1
+                                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    11/23: x11-font-xfree86-type1
+                                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    12/23: x11-font-type1        #############################################
+    13/23: libalsa-data          #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    14/23: lib64alsa2            #############################################
+    15/23: lib64gif7             #############################################
+    16/23: timezone-java         #############################################
+    17/23: javapackages-tools    #############################################
+    18/23: java-1.8.0-openjdk-headless
+                                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    19/23: java-1.8.0-openjdk    #############################################
+    20/23: java-1.8.0-openjdk-devel
+                                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    21/23: bash-completion       #############################################
+    22/23: zip                   #############################################
+    23/23: lib64zlib-devel       #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+removing installed rpms (java-1.8.0-openjdk-headless-1.8.0.242-1.b08.5.mga8.x86_64.rpm mkfontscale-1.2.1-2.mga8.x86_64.rpm timezone-java-2019c-3.mga8.noarch.rpm lib64alsa2-1.2.2-1.mga8.x86_64.rpm lib64zlib-devel-1.2.11-9.mga8.x86_64.rpm x11-font-bitstream-type1-1.0.3-9.mga8.noarch.rpm x11-font-xfree86-type1-1.0.4-9.mga8.noarch.rpm lib64gif7-5.2.1-5.mga8.x86_64.rpm zip-3.0-12.mga8.x86_64.rpm x11-font-type1-1.0.0-15.mga8.noarch.rpm bash-completion-2.9-2.mga8.noarch.rpm lksctp-tools-1.0.18-3.mga8.x86_64.rpm java-1.8.0-openjdk-devel-1.8.0.242-1.b08.5.mga8.x86_64.rpm copy-jdk-configs-3.7-3.mga8.noarch.rpm libalsa-data-1.2.2-1.mga8.noarch.rpm lua-posix-33.4.0-2.mga8.x86_64.rpm java-1.8.0-openjdk-1.8.0.242-1.b08.5.mga8.x86_64.rpm lua-5.2.4-5.mga8.x86_64.rpm lib64fontenc1-1.1.4-2.mga8.x86_64.rpm lib64sctp1-1.0.18-3.mga8.x86_64.rpm javapackages-filesystem-5.3.0-8.mga8.noarch.rpm javapackages-tools-5.3.0-8.mga8.noarch.rpm rootcerts-java-20191126.00-2.mga8.noarch.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200328174243/var/cache/urpmi/rpms
+----------------------------------------------------------------------
+More information on package bash-completion-2.9-2.mga8.noarch
+Mageia RPM specific notes
+
+Programmable bash completion is enabled by default. These settings can be
+changed system-wide in /etc/sysconfig/bash-completion. Users may override these
+settings in their ~/.bash_completion files. New users get a skeleton
+configuration file automatically, while existing users can copy
+/etc/skel/.bash_completion into their home directories if they want to edit
+their completion settings.
+
+----------------------------------------------------------------------
+D: [iurt_root_command] Success!
