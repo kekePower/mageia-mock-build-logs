@@ -1,0 +1,169 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 14: %{toolchain_version}/bazel-toolchains-%{toolchain_version}.tar.gz
+
+warning: Macro expanded in comment on line 32: %(pkg-config --variable=completionsdir bash-completion 2>/dev/null)
+
+Installing /home/stig/rpmbuild/SRPMS/bazel-2.2.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.CX4Sdl
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf bazel-2.2.0
++ /usr/bin/mkdir -p bazel-2.2.0
++ cd bazel-2.2.0
++ /usr/bin/unzip -qq /home/stig/rpmbuild/SOURCES/bazel-2.2.0-dist.zip
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bazel-1.0.0-log-warning.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bazel-2.2.0-add-local-source-for-bazel-toolchains.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ sed -i 's|env python|python3|' src/main/java/com/google/devtools/build/lib/bazel/rules/python/BazelPythonSemantics.java
++ sed -i 's|env python|python3|' src/main/java/com/google/devtools/build/lib/bazel/rules/python/python_stub_template.txt
++ sed -i 's|/usr/bin/python|/usr/bin/python3|' src/test/java/com/google/devtools/build/lib/analysis/SourceManifestActionTest.java
++ pathfix.py -pni '/usr/bin/python3 -s' src/test/py/bazel/launcher_test.py src/test/py/bazel/launcher_test.py third_party/protobuf/3.6.1/conformance/conformance_python.py third_party/protobuf/3.6.1/python/google/protobuf/internal/_parameterized.py third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_database_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_pool_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/generator_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/json_format_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/message_factory_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/message_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/proto_builder_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/reflection_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/service_reflection_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/symbol_database_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/text_encoding_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/text_format_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/unknown_fields_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/well_known_types_test.py third_party/protobuf/3.6.1/python/google/protobuf/internal/wire_format_test.py third_party/protobuf/3.6.1/python/setup.py third_party/protobuf/3.6.1/examples/add_person.py third_party/protobuf/3.6.1/examples/list_people.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/fuse_gmock_files.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/ast.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/gmock_class.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/keywords.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/tokenize.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/utils.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/gmock_gen.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/gmock_doctor.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_leak_test.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_output_test.py third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_test_utils.py third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/fuse_gtest_files.py third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/gen_gtest_pred_impl.py third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/pump.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_break_on_failure_unittest.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_catch_exceptions_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_color_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_env_var_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_filter_unittest.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_help_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_list_tests_unittest.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_output_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_shuffle_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_test_utils.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_throw_on_failure_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_uninitialized_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_outfiles_test.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_output_unittest.py third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_test_utils.py third_party/protobuf/3.6.1/third_party/googletest/googletest/xcode/Scripts/versiongenerate.py third_party/py/gflags/gflags/__init__.py third_party/py/gflags/gflags/_helpers.py third_party/py/gflags/gflags/_helpers_test.py third_party/py/gflags/gflags/argument_parser.py third_party/py/gflags/gflags/exceptions.py third_party/py/gflags/gflags/flag.py third_party/py/gflags/gflags/flags_formatting_test.py third_party/py/gflags/gflags/flags_modules_for_testing/module_bar.py third_party/py/gflags/gflags/flags_modules_for_testing/module_baz.py third_party/py/gflags/gflags/flags_modules_for_testing/module_foo.py third_party/py/gflags/gflags/flags_unicode_literals_test.py third_party/py/gflags/gflags/flagvalues.py third_party/py/gflags/gflags/third_party/pep257/__init__.py third_party/py/gflags/gflags/validators.py third_party/py/gflags/gflags2man.py third_party/py/gflags/setup.py third_party/py/mock/setup.py third_party/nanopb/generator/nanopb_generator.py
+src/test/py/bazel/launcher_test.py: no change
+src/test/py/bazel/launcher_test.py: no change
+third_party/protobuf/3.6.1/conformance/conformance_python.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/_parameterized.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_database_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_pool_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/descriptor_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/generator_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/json_format_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/message_factory_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/message_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/proto_builder_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/reflection_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/service_reflection_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/symbol_database_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/text_encoding_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/text_format_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/unknown_fields_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/well_known_types_test.py: updating
+third_party/protobuf/3.6.1/python/google/protobuf/internal/wire_format_test.py: updating
+third_party/protobuf/3.6.1/python/setup.py: updating
+third_party/protobuf/3.6.1/examples/add_person.py: updating
+third_party/protobuf/3.6.1/examples/list_people.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/fuse_gmock_files.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/ast.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/gmock_class.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/keywords.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/tokenize.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/cpp/utils.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/generator/gmock_gen.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/scripts/gmock_doctor.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_leak_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_output_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googlemock/test/gmock_test_utils.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/fuse_gtest_files.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/gen_gtest_pred_impl.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/scripts/pump.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_break_on_failure_unittest.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_catch_exceptions_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_color_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_env_var_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_filter_unittest.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_help_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_list_tests_unittest.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_output_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_shuffle_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_test_utils.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_throw_on_failure_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_uninitialized_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_outfiles_test.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_output_unittest.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/test/gtest_xml_test_utils.py: updating
+third_party/protobuf/3.6.1/third_party/googletest/googletest/xcode/Scripts/versiongenerate.py: updating
+third_party/py/gflags/gflags/__init__.py: updating
+third_party/py/gflags/gflags/_helpers.py: updating
+third_party/py/gflags/gflags/_helpers_test.py: updating
+third_party/py/gflags/gflags/argument_parser.py: updating
+third_party/py/gflags/gflags/exceptions.py: updating
+third_party/py/gflags/gflags/flag.py: updating
+third_party/py/gflags/gflags/flags_formatting_test.py: updating
+third_party/py/gflags/gflags/flags_modules_for_testing/module_bar.py: updating
+third_party/py/gflags/gflags/flags_modules_for_testing/module_baz.py: updating
+third_party/py/gflags/gflags/flags_modules_for_testing/module_foo.py: updating
+third_party/py/gflags/gflags/flags_unicode_literals_test.py: updating
+third_party/py/gflags/gflags/flagvalues.py: updating
+third_party/py/gflags/gflags/third_party/pep257/__init__.py: updating
+third_party/py/gflags/gflags/validators.py: updating
+third_party/py/gflags/gflags2man.py: updating
+third_party/py/gflags/setup.py: updating
+third_party/py/mock/setup.py: updating
+third_party/nanopb/generator/nanopb_generator.py: updating
++ /usr/bin/mkdir buildtmp
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.hv6cKi
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bazel-2.2.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ find . -type f -regextype posix-extended -iregex '.*(sh|txt|py|_stub|stub_.*|bazel|get_workspace_status|protobuf_support|_so)' -exec /usr/bin/sed -i -e '1s|^#!/usr/bin/env python$|#!/usr/bin/python3|' '{}' ';'
++ export 'EXTRA_BAZEL_ARGS= --python_path=/usr/bin/python3'
++ EXTRA_BAZEL_ARGS=' --python_path=/usr/bin/python3'
+++ pwd
++ export PATH=/home/stig/rpmbuild/BUILD/bazel-2.2.0/bin-hack:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/home/stig/.local/bin:/home/stig/bin
++ PATH=/home/stig/rpmbuild/BUILD/bazel-2.2.0/bin-hack:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/home/stig/.local/bin:/home/stig/bin
++ export 'EXTRA_BAZEL_ARGS= --python_path=/usr/bin/python3 --nokeep_state_after_build --notrack_incremental_state --nokeep_state_after_build'
++ EXTRA_BAZEL_ARGS=' --python_path=/usr/bin/python3 --nokeep_state_after_build --notrack_incremental_state --nokeep_state_after_build'
++++ head -1 CHANGELOG.md
++++ /usr/bin/grep -Eo '\b[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}\b'
+++ date -d 2020-03-03 +%s
++ export SOURCE_DATE_EPOCH=1583193600
++ SOURCE_DATE_EPOCH=1583193600
++ export EMBED_LABEL=2.2.0
++ EMBED_LABEL=2.2.0
++ export TMPDIR=/home/stig/rpmbuild/tmp/
++ TMPDIR=/home/stig/rpmbuild/tmp/
++ export CC=gcc
++ CC=gcc
++ export CXX=g++
++ CXX=g++
++ export 'EXTRA_BAZEL_ARGS= --python_path=/usr/bin/python3 --nokeep_state_after_build --notrack_incremental_state --nokeep_state_after_build --sandbox_debug --host_javabase=@local_jdk//:jdk --verbose_failures'
++ EXTRA_BAZEL_ARGS=' --python_path=/usr/bin/python3 --nokeep_state_after_build --notrack_incremental_state --nokeep_state_after_build --sandbox_debug --host_javabase=@local_jdk//:jdk --verbose_failures'
++ env ./compile.sh
+Building Bazel from scratch......
+Building Bazel with Bazel.
+.[32mLoading:[0m 
+[1A[K[32mLoading:[0m 0 packages loaded
+[1A[K[32mLoading:[0m 0 packages loaded
+    Fetching @bazel_toolchains; fetching
+[1A[K[1A[K[32mINFO: [0mCall stack for the definition of repository 'bazel_toolchains' which is a http_archive (rule definition at /home/stig/rpmbuild/BUILD/bazel-2.2.0/tools/build_defs/repo/http.bzl:296:16):
+ - <builtin>
+ - /home/stig/rpmbuild/BUILD/bazel-2.2.0/WORKSPACE:372:1
+[32mLoading:[0m 0 packages loaded
+    Fetching @bazel_toolchains; fetching
+[1A[K[1A[K[31m[1mERROR: [0mAn error occurred during the fetch of repository 'bazel_toolchains':
+   java.io.IOException: Bad URL: buildtmp/bazel-toolchains-2.0.2.tar.gz
+[32mLoading:[0m 0 packages loaded
+[1A[K[31m[1mERROR: [0mno such package '@bazel_toolchains//rules': java.io.IOException: Bad URL: buildtmp/bazel-toolchains-2.0.2.tar.gz
+[32mLoading:[0m 0 packages loaded
+[1A[K[31m[1mERROR: [0mno such package '@bazel_toolchains//rules': java.io.IOException: Bad URL: buildtmp/bazel-toolchains-2.0.2.tar.gz
+[32mLoading:[0m 0 packages loaded
+[1A[K[32mINFO: [0mElapsed time: 1.481s
+[32mLoading:[0m 0 packages loaded
+[1A[K[32mINFO: [0m0 processes.
+[32mLoading:[0m 0 packages loaded
+[1A[K[31m[1mFAILED:[0m Build did NOT complete successfully (0 packages loaded)
+[1A[K[31m[1mFAILED:[0m Build did NOT complete successfully (0 packages loaded)
+[0m
+ERROR: Could not build Bazel
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.hv6cKi (%build)
+
+
+RPM build errors:
+    Macro expanded in comment on line 14: %{toolchain_version}/bazel-toolchains-%{toolchain_version}.tar.gz
+
+    Macro expanded in comment on line 32: %(pkg-config --variable=completionsdir bash-completion 2>/dev/null)
+
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.hv6cKi (%build)
+I: [iurt_root_command] ERROR: chroot
