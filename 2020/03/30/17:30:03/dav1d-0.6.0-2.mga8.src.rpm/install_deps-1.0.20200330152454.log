@@ -1,0 +1,40 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200330152454/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200330152454/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-setuptools-45.2.0-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 525k completed, ETA = --:--:--, speed = 2967k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/locales-2.31-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 873k completed, ETA = --:--:--, speed = 7338k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/meson-0.53.2-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 958k completed, ETA = --:--:--, speed = 7924k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/nasm-2.14.02-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 318k completed, ETA = --:--:--, speed = 4366k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/ninja-1.10.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 126k completed, ETA = --:--:--, speed = 2143k                                                                                                 retrieved   python3-setuptools-45.2.0-1.mga8.noarch.rpm locales-2.31-2.mga8.x86_64.rpm meson-0.53.2-1.mga8.noarch.rpm nasm-2.14.02-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm
+...retrieving done
+installing python3-setuptools-45.2.0-1.mga8.noarch.rpm locales-2.31-2.mga8.x86_64.rpm meson-0.53.2-1.mga8.noarch.rpm nasm-2.14.02-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200330152454/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200330152454 (remove=0, install=0, upgrade=5)
+Preparing...                     #############################################
+      1/5: locales               #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+      2/5: ninja                 #############################################
+      3/5: python3-setuptools    #############################################
+      4/5: meson                 #############################################
+      5/5: nasm                  #############################################
+removing installed rpms (python3-setuptools-45.2.0-1.mga8.noarch.rpm locales-2.31-2.mga8.x86_64.rpm meson-0.53.2-1.mga8.noarch.rpm nasm-2.14.02-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200330152454/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
