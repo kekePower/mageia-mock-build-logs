@@ -1,0 +1,1409 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/mutt-1.13.5-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.8zc6Qj
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf mutt-1.13.5
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/mutt-1.13.5.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd mutt-1.13.5
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ echo 'Patch #1 (mutt-1.3.15-tmpdef.patch):'
+Patch #1 (mutt-1.3.15-tmpdef.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 -b --suffix .tmpdef --fuzz=2
+patching file contrib/sample.muttrc
++ echo 'Patch #2 (mutt-1.5.18-urlview.patch):'
+Patch #2 (mutt-1.5.18-urlview.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 -b --suffix .urlview --fuzz=2
+patching file doc/Muttrc.head
++ echo 'Patch #3 (mutt-1.5.24-no-sgid.patch):'
+Patch #3 (mutt-1.5.24-no-sgid.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p0 -b --suffix .no-sgid --fuzz=2
+patching file Makefile.am
+Hunk #1 succeeded at 178 (offset 26 lines).
++ echo 'Patch #6 (mutt-1.13.4-aspell.patch):'
+Patch #6 (mutt-1.13.4-aspell.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 -b --suffix .aspell --fuzz=2
+patching file init.h
+Hunk #1 succeeded at 83 (offset 5 lines).
++ echo 'Patch #7 (mutt-1.13.4-send_charset.patch):'
+Patch #7 (mutt-1.13.4-send_charset.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 -b --suffix .charset --fuzz=2
+patching file init.h
+Hunk #1 succeeded at 3114 (offset 664 lines).
++ perl -pi -e 's|/usr/local/bin|/usr/bin|g; s|/usr/local/doc/mutt|/usr/share/doc/mutt-doc|g;' doc/dotlock.man doc/mbox.man doc/mmdf.man doc/mutt.man doc/pgpewrap.man doc/pgpring.man doc/smime_keys.man init.h
++ perl -pi -e 'bdblibdir|s|d/lib|d/lib64|g' configure.ac
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.pcNXEk
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mutt-1.13.5
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ autoreconf -fi
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-docdir=/usr/share/doc/mutt-doc --enable-smtp --enable-pop --enable-imap --enable-nfs-fix --with-ssl --enable-compressed --enable-hcache --without-gdbm --with-bdb --enable-pgp --enable-smime --enable-gpgme --with-idn2 --without-gss --with-sasl --enable-sidebar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking for prefix... /usr
+checking for x86_64-mageia-linux-gnu-gcc... (cached) x86_64-mageia-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-mageia-linux-gnu-gcc... (cached) none
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C99... none needed
+checking for library containing strerror... none required
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for GNU make... yes
+checking for inline... inline
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking size of off_t... 8
+checking for dbx... no
+checking for gdb... no
+checking for sdb... no
+checking for inttypes.h... (cached) yes
+checking for uint32_t... yes
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for sendmail... /usr/sbin/sendmail
+checking whether to build with GPGME support... yes
+checking for gpgme-config... /usr/bin/gpgme-config
+checking for GPGME - version >= 1.4.0... yes
+checking for gpg-error-config... /usr/bin/gpg-error-config
+checking for gpgrt-config... /usr/bin/gpgrt-config
+configure: Use gpgrt-config with /usr/lib64 as gpg-error-config
+checking for GPG Error - version >= 1.33... yes (1.36-unknown)
+checking for ispell... no
+checking for initscr... no
+checking for waddnwstr in -lncurses... no
+checking for waddnwstr in -lncursesw... yes
+checking for initscr in -lncursesw... yes
+checking for tgetent in -ltinfow... no
+checking for tgetent in -ltinfo... yes
+checking ncursesw/ncurses.h usability... yes
+checking ncursesw/ncurses.h presence... yes
+checking for ncursesw/ncurses.h... yes
+checking for start_color declaration... yes
+checking for typeahead declaration... yes
+checking for bkgdset declaration... yes
+checking for curs_set declaration... yes
+checking for meta declaration... yes
+checking for use_default_colors declaration... yes
+checking for resizeterm declaration... yes
+checking for use_extended_names... yes
+checking for ANSI C header files... (cached) yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking ioctl.h usability... no
+checking ioctl.h presence... no
+checking for ioctl.h... no
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking unix.h usability... no
+checking unix.h presence... no
+checking for unix.h... no
+checking for setrlimit... yes
+checking for getsid... yes
+checking for fgets_unlocked... yes
+checking for fgetc_unlocked... yes
+checking for sig_atomic_t in signal.h... yes, non volatile
+checking whether sys_siglist is declared... yes
+checking for pid_t... yes
+checking for ssize_t... yes
+checking for fgetpos... yes
+checking for memmove... yes
+checking for setegid... yes
+checking for srand48... yes
+checking for strerror... yes
+checking for setenv... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strsep... yes
+checking for strtok_r... yes
+checking for wcscasecmp... yes
+checking for strcasestr... yes
+checking for mkdtemp... yes
+checking for getopt... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking whether your system's snprintf is C99 compliant... yes
+checking whether your system's vsnprintf is C99 compliant... yes
+checking for va_copy... va_copy
+checking for ftruncate... yes
+checking for strftime... yes
+checking for futimens... yes
+checking for struct timespec... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_ctim.tv_nsec... yes
+checking for utimensat... yes
+checking for clock_gettime... yes
+checking for fchdir... yes
+checking for regcomp... yes
+checking whether your system's regexp library is completely broken... no
+checking where new mail is stored... /var/mail
+checking if /var/mail is world writable... no
+checking if /var/mail is group writable... yes
+checking where to put the documentation... /usr/share/doc/mutt-doc
+checking for gethostent... yes
+checking for setsockopt... yes
+checking for getaddrinfo... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for socklen_t... yes
+checking for deflate in -lz... yes
+checking for X509_STORE_CTX_new in -lcrypto... yes
+checking for SSL_new in -lssl... yes
+checking for RAND_status... yes
+checking for RAND_egd... no
+checking whether SSL_set_mode is declared... yes
+checking whether SSL_MODE_AUTO_RETRY is declared... yes
+checking whether X509_V_FLAG_PARTIAL_CHAIN is declared... yes
+checking for library containing sasl_encode64... -lsasl2
+checking for inotify_init... yes
+checking for inotify_add_watch... yes
+checking for inotify_rm_watch... yes
+checking for inotify_init1... yes
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking whether struct dirent defines d_ino... yes
+checking for BerkeleyDB > 4.0... yes
+checking for library containing strerror... (cached) none required
+checking for off_t... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking nl_types.h usability... yes
+checking nl_types.h presence... yes
+checking for nl_types.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for feof_unlocked... yes
+checking for fgets_unlocked... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for setenv... (cached) yes
+checking for setlocale... yes
+checking for stpcpy... yes
+checking for strchr... yes
+checking for strcasecmp... (cached) yes
+checking for strdup... (cached) yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for __argz_count... yes
+checking for __argz_stringify... yes
+checking for __argz_next... yes
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking whether NLS is requested... yes
+checking whether included gettext is requested... no
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for GNU gettext in libc... yes
+checking for dcgettext... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for bison... no
+checking for catalogs to be installed...  de eu ru it es uk fr pl nl cs id sk ko el zh_TW zh_CN pt_BR eo gl sv da lt tr ja hu et ca bg ga fi
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking whether iconv.h defines iconv_t... yes
+checking whether this iconv is good enough... yes
+checking whether iconv is non-transcribing... no
+checking for bind_textdomain_codeset... yes
+checking idn2.h usability... yes
+checking idn2.h presence... yes
+checking for idn2.h... yes
+checking for library containing idn2_check_version... -lidn2
+checking for library containing u8_strconv_from_locale... -lunistring
+checking whether idna_to_unicode_8z8z is declared... yes
+checking whether idna_to_ascii_8z is declared... yes
+checking whether idna_to_ascii_lz is declared... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for iswalnum... yes
+checking for iswalpha... yes
+checking for iswblank... yes
+checking for iswcntrl... yes
+checking for iswdigit... yes
+checking for iswgraph... yes
+checking for iswlower... yes
+checking for iswprint... yes
+checking for iswpunct... yes
+checking for iswspace... yes
+checking for iswupper... yes
+checking for iswxdigit... yes
+checking for towupper... yes
+checking for towlower... yes
+checking for mbstate_t... yes
+checking for wchar_t functions... yes
+checking for nl_langinfo and CODESET... yes
+checking for nl_langinfo and YESEXPR... yes
+checking for ospcat... /usr/bin/ospcat
+checking for openjade docbook stylesheets... not found: PDF documentation will not be built.
+checking for docbook2x-texi... no
+checking for db2x_docbook2texi... no
+checking for docbook2texi... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating imap/Makefile
+config.status: creating intl/Makefile
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating autocrypt/Makefile
+config.status: creating hcachever.sh
+config.status: creating doc/instdoc.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
++ /usr/bin/make -O -j4 V=1 VERBOSE=1
+./patchlist.sh < ./PATCHES > patchlist.c
+echo 'const char *ReleaseDate = "'`(cd . && ./mkreldate.sh)`'";' > reldate.h
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+./gen_defs ./OPS ./OPS.SIDEBAR ./OPS.PGP ./OPS.SMIME ./OPS.CRYPT  > keymap_defs.h
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o txt2c.o txt2c.c
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o txt2c txt2c.o  -L/usr/lib64// -ldb-5
+( \
+	(x86_64-mageia-linux-gnu-gcc -v >/dev/null 2>&1 && x86_64-mageia-linux-gnu-gcc -v) || \
+	(x86_64-mageia-linux-gnu-gcc --version >/dev/null 2>&1 && x86_64-mageia-linux-gnu-gcc --version) || \
+	(x86_64-mageia-linux-gnu-gcc -V >/dev/null 2>&1 && x86_64-mageia-linux-gnu-gcc -V) || \
+	echo "unknown compiler"; \
+) 2>&1 | ./txt2c.sh cc_version >conststrings_c
+echo "-Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables" | ./txt2c.sh cc_cflags >>conststrings_c
+grep ac_cs_config= config.status | \
+cut -d= -f2- | \
+sed -e 's/^"//' -e 's/"$//' | ./txt2c.sh configure_options >>conststrings_c
+mv -f conststrings_c conststrings.c
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl -DMD5UTIL -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_md5-md5.o `test -f 'md5.c' || echo './'`md5.c
+x86_64-mageia-linux-gnu-gcc -DMD5UTIL -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mutt_md5 mutt_md5-md5.o  -L/usr/lib64// -ldb-5
+( echo '#include "config.h"'; echo '#undef ENABLE_NLS'; echo '#include "mutt.h"'; ) \
+| x86_64-mageia-linux-gnu-gcc -E -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl - | sh ./hcachever.sh hcversion.h
+/usr/bin/make  all-recursive
+Making all in m4
+make[2]: Nothing to be done for 'all'.
+Making all in po
+make[2]: Nothing to be done for 'all'.
+Making all in intl
+make[2]: Nothing to be done for 'all'.
+Making all in doc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt-doc,g' ./mutt.man > mutt.1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt-doc,g' ./pgpewrap.man > pgpewrap.1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt-doc,g' ./pgpring.man > mutt_pgpring.1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt-doc,g' ./smime_keys.man > smime_keys.1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+x86_64-mageia-linux-gnu-gcc -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I. -I..  -I. -I.. -I/usr/include -I.. -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o makedoc.o makedoc.c
+In file included from /usr/include/string.h:495,
+                 from makedoc.c:36:
+In function 'strncpy',
+    inlined from 'pretty_default' at makedoc.c:539:7,
+    inlined from 'handle_confline' at makedoc.c:480:3,
+    inlined from 'makedoc' at makedoc.c:224:7:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 2047 bytes from a string of length 2047 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o makedoc makedoc.o  -L/usr/lib64// -ldb-5
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+x86_64-mageia-linux-gnu-gcc -E -I. -I.. -I/usr/include -I.. -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I/usr/include// -I../intl -D_MAKEDOC -C ../init.h | ./makedoc -m | 	    \
+	cat ./muttrc.man.head - ./muttrc.man.tail\
+	> muttrc.man
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+rm -f Muttrc stamp-doc-rc
+sed -e 's,[@]docdir[@],/usr/share/doc/mutt-doc,' ./Muttrc.head > Muttrc
+x86_64-mageia-linux-gnu-gcc -E -I. -I.. -I/usr/include -I.. -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I/usr/include// -I../intl -D_MAKEDOC -C \
+  ../init.h | ./makedoc -c >> Muttrc
+touch stamp-doc-rc
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+( date=`(cd .. && ./mkreldate.sh)` && \
+  version=`(cd .. && env sh ./version.sh)` && \
+  sed -e "s/@VERSION\@/$version ($date)/" ./manual.xml.head && \
+  x86_64-mageia-linux-gnu-gcc -E -I. -I.. -I/usr/include -I.. -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I/usr/include// -I../intl -D_MAKEDOC -C ../init.h | ./makedoc -s && \
+  x86_64-mageia-linux-gnu-gcc -E -I. -I.. -I/usr/include -I.. -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I/usr/include// -I../intl -D_MAKEDOC -C ../functions.h | \
+    perl ./gen-map-doc ./manual.xml.tail ../OPS* \
+) > manual.xml
+touch stamp-doc-xml
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+xsltproc --nonet -o manual.html ./html.xsl manual.xml
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+LC_ALL=C lynx -dump -nolist -with_backspaces -display_charset=us-ascii manual.html > manual.txt || \
+LC_ALL=C w3m -dump manual.html > manual.txt || \
+LC_ALL=C elinks -dump -no-numbering -no-references manual.html | sed -e 's,\\001, ,g' > manual.txt
+/bin/sh: lynx: command not found
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+xsltproc --nonet ./chunk.xsl manual.xml
+Writing intro.html for chapter(intro)
+Writing gettingstarted.html for chapter(gettingstarted)
+Writing configuration.html for chapter(configuration)
+Writing advancedusage.html for chapter(advancedusage)
+Writing mimesupport.html for chapter(mimesupport)
+Writing optionalfeatures.html for chapter(optionalfeatures)
+Writing security.html for chapter(security)
+Writing tuning.html for chapter(tuning)
+Writing reference.html for chapter(reference)
+Writing miscellany.html for chapter(miscellany)
+Writing index.html for book
+touch stamp-doc-chunked
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+Making all in contrib
+make[2]: Nothing to be done for 'all'.
+Making all in imap
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o auth_login.o auth_login.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o auth_oauth.o auth_oauth.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o auth.o auth.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o browse.o browse.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o utf7.o utf7.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o command.o command.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o auth_sasl.o auth_sasl.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o message.o message.c
+In file included from message.c:32:
+message.c: In function 'imap_fetch_message':
+../mutt.h:78:16: warning: ignoring return value of 'fgets_unlocked', declared with attribute warn_unused_result [-Wunused-result]
+   78 | # define fgets fgets_unlocked
+message.c:1111:3: note: in expansion of macro 'fgets'
+ 1111 |   fgets (buf, sizeof (buf), msg->fp);
+      |   ^~~~~
+../mutt.h:78:16: warning: ignoring return value of 'fgets_unlocked', declared with attribute warn_unused_result [-Wunused-result]
+   78 | # define fgets fgets_unlocked
+message.c:1115:5: note: in expansion of macro 'fgets'
+ 1115 |     fgets (buf, sizeof (buf), msg->fp);
+      |     ^~~~~
+message.c: In function 'imap_read_headers':
+message.c:200:9: warning: 'range_end' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  200 |         mutt_buffer_add_printf (b, "%u:%u", range_begin, range_end);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+message.c:149:34: note: 'range_end' was declared here
+  149 |   unsigned int msn, range_begin, range_end, msn_count = 0;
+      |                                  ^~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o util.o util.c
+util.c: In function 'imap_make_date':
+util.c:702:59: warning: '%+03d' directive output may be truncated writing between 3 and 9 bytes into a region of size between 2 and 12 [-Wformat-truncation=]
+  702 |   snprintf (buf, IMAP_DATELEN, "%02d-%s-%d %02d:%02d:%02d %+03d%02d",
+      |                                                           ^~~~~
+util.c:702:32: note: directive argument in the range [-35791394, 35791394]
+  702 |   snprintf (buf, IMAP_DATELEN, "%02d-%s-%d %02d:%02d:%02d %+03d%02d",
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+util.c:702:32: note: directive argument in the range [0, 59]
+In file included from /usr/include/stdio.h:867,
+                 from ../mutt.h:23,
+                 from util.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 21 or more bytes (assuming 37) into a destination of size 27
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../intl -I/usr/include// -I../intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o imap.o imap.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+rm -f libimap.a
+x86_64-mageia-linux-gnu-ar cru libimap.a auth.o auth_login.o auth_oauth.o browse.o command.o imap.o message.o utf7.o util.o auth_sasl.o  
+x86_64-mageia-linux-gnu-ranlib libimap.a
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o base64.o base64.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o addrbook.o addrbook.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o alias.o alias.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o buffer.o buffer.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o attach.o attach.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o buffy.o buffy.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from buffy.c:24:
+In function 'strncpy',
+    inlined from 'fseek_last_message' at buffy.c:85:5,
+    inlined from 'test_last_status_new' at buffy.c:116:7,
+    inlined from 'test_new_folder' at buffy.c:143:10,
+    inlined from 'mutt_parse_mailboxes' at buffy.c:341:10:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 7 bytes from a string of length 8200 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o color.o color.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o cryptglue.o cryptglue.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o browser.o browser.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt.o crypt.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o complete.o complete.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o commands.o commands.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o copy.o copy.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o date.o date.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o curs_lib.o curs_lib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o compose.o compose.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o edit.o edit.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from edit.c:25:
+In function 'strncpy',
+    inlined from 'mutt_builtin_editor' at edit.c:413:6:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 1024 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o flags.o flags.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o filter.o filter.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o from.o from.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o getdomain.o getdomain.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o enter.o enter.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o group.o group.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o hash.o hash.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o hdrline.o hdrline.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from hdrline.c:23:
+In function 'strncpy',
+    inlined from 'make_from_addr' at hdrline.c:151:5,
+    inlined from 'hdr_format_str' at hdrline.c:536:2:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 1024 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o handler.o handler.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o headers.o headers.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from headers.c:23:
+In function 'strncpy',
+    inlined from 'mutt_label_message' at headers.c:288:5:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 1024 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o help.o help.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o curs_main.o curs_main.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o init.o init.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from init.c:24:
+In function 'strncpy',
+    inlined from 'candidate' at init.c:2922:7,
+    inlined from 'candidate.constprop' at init.c:2913:13:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o hook.o hook.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o keymap.o keymap.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o main.o main.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mbox.o mbox.c
+mbox.c: In function 'mmdf_parse_mailbox':
+mbox.c:96:18: warning: unused variable 'newtime' [-Wunused-variable]
+   96 |   struct utimbuf newtime;
+      |                  ^~~~~~~
+mbox.c: In function 'mbox_parse_mailbox':
+mbox.c:256:18: warning: unused variable 'newtime' [-Wunused-variable]
+  256 |   struct utimbuf newtime;
+      |                  ^~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o menu.o menu.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mx.o mx.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o parse.o parse.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mh.o mh.c
+mh.c: In function 'maildir_flags.part.0.constprop':
+mh.c:1466:34: warning: '%s' directive output may be truncated writing up to 1023 bytes into a region of size 13 [-Wformat-truncation=]
+ 1466 |     snprintf (dest, destlen, ":2,%s", tmp);
+      |                                  ^~   ~~~
+In file included from /usr/include/stdio.h:867,
+                 from mutt.h:23,
+                 from mh.c:30:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 4 and 1027 bytes into a destination of size 16
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o postpone.o postpone.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o query.o query.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pattern.o pattern.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o recvcmd.o recvcmd.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o rfc822.o rfc822.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o recvattach.o recvattach.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pager.o pager.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o rfc1524.o rfc1524.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o rfc2231.o rfc2231.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o rfc3676.o rfc3676.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o score.o score.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o rfc2047.o rfc2047.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o signal.o signal.c
+signal.c: In function 'exit_print_int':
+signal.c:53:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   53 |     write (1, "-", 1);
+      |     ^~~~~~~~~~~~~~~~~
+signal.c: In function 'exit_print_int_recursive':
+signal.c:46:3: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   46 |   write (1, &digit, 1);
+      |   ^~~~~~~~~~~~~~~~~~~~
+signal.c: In function 'exit_print_string':
+signal.c:70:5: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   70 |     write (1, str, len);
+      |     ^~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o sort.o sort.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o status.o status.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o system.o system.c
+system.c: In function '_mutt_system':
+system.c:95:4: warning: ignoring return value of 'chdir', declared with attribute warn_unused_result [-Wunused-result]
+   95 |    chdir ("/");
+      |    ^~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o charset.o charset.c
+In file included from /usr/include/string.h:495,
+                 from charset.c:26:
+In function 'strncpy',
+    inlined from 'mutt_get_default_charset' at charset.c:323:5:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o send.o send.c
+In file included from /usr/include/string.h:495,
+                 from lib.h:29,
+                 from rfc822.h:23,
+                 from mutt.h:62,
+                 from send.c:23:
+In function 'strncpy',
+    inlined from 'edit_envelope' at send.c:255:2,
+    inlined from 'ci_send_message' at send.c:1782:11:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 8192 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o history.o history.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o thread.o thread.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o sendlib.o sendlib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o editmsg.o editmsg.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mbyte.o mbyte.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o lib.o lib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o ascii.o ascii.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o url.o url.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o safe_asprintf.o safe_asprintf.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o conststrings.o conststrings.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-mod.o crypt-mod.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o patchlist.o patchlist.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-mod-pgp-gpgme.o crypt-mod-pgp-gpgme.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-mod-smime-gpgme.o crypt-mod-smime-gpgme.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgpinvoke.o pgpinvoke.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o muttlib.o muttlib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgplib.o pgplib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgpkey.o pgpkey.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgp.o pgp.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgpmicalg.o pgpmicalg.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gnupgparse.o gnupgparse.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgppacket.o pgppacket.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-mod-pgp-classic.o crypt-mod-pgp-classic.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-mod-smime-classic.o crypt-mod-smime-classic.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o compress.o compress.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o sidebar.o sidebar.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o resize.o resize.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pop_lib.o pop_lib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o crypt-gpgme.o crypt-gpgme.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o smime.o smime.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pop.o pop.c
+In file included from pop.c:24:
+pop.c: In function 'pop_fetch_message':
+mutt.h:78:16: warning: ignoring return value of 'fgets_unlocked', declared with attribute warn_unused_result [-Wunused-result]
+   78 | # define fgets fgets_unlocked
+pop.c:674:3: note: in expansion of macro 'fgets'
+  674 |   fgets (buf, sizeof (buf), msg->fp);
+      |   ^~~~~
+mutt.h:78:16: warning: ignoring return value of 'fgets_unlocked', declared with attribute warn_unused_result [-Wunused-result]
+   78 | # define fgets fgets_unlocked
+pop.c:678:5: note: in expansion of macro 'fgets'
+  678 |     fgets (buf, sizeof (buf), msg->fp);
+      |     ^~~~~
+pop.c: In function 'pop_read_header':
+mutt.h:78:16: warning: ignoring return value of 'fgets_unlocked', declared with attribute warn_unused_result [-Wunused-result]
+   78 | # define fgets fgets_unlocked
+pop.c:139:2: note: in expansion of macro 'fgets'
+  139 |  fgets (buf, sizeof (buf), f);
+      |  ^~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o bcache.o bcache.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pop_auth.o pop_auth.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o account.o account.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o smtp.o smtp.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_tunnel.o mutt_tunnel.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_socket.o mutt_socket.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_sasl.o mutt_sasl.c
+mutt_sasl.c: In function 'iptostring.constprop':
+mutt_sasl.c:128:28: warning: ';' directive output may be truncated writing 1 byte into a region of size between 0 and 1024 [-Wformat-truncation=]
+  128 |   snprintf(out, outlen, "%s;%s", hbuf, pbuf);
+      |                            ^
+In file included from /usr/include/stdio.h:867,
+                 from mutt.h:23,
+                 from mutt_sasl.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 2 and 1057 bytes into a destination of size 1024
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o monitor.o monitor.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_idna.o mutt_idna.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o md5.o md5.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_ssl.o mutt_ssl.c
+mutt_ssl.c: In function 'ssl_load_certificates':
+mutt_ssl.c:127:8: warning: unused variable 'buf' [-Wunused-variable]
+  127 |   char buf[STRING];
+      |        ^~~
+mutt_ssl.c: In function 'ssl_err':
+mutt_ssl.c:692:15: warning: variable 'errmsg' set but not used [-Wunused-but-set-variable]
+  692 |   const char* errmsg;
+      |               ^~~~~~
+In file included from /usr/include/string.h:495,
+                 from mutt_ssl.c:51:
+In function 'strncpy',
+    inlined from 'check_host' at mutt_ssl.c:1055:2,
+    inlined from 'ssl_verify_callback' at mutt_ssl.c:1175:10:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'check_host' at mutt_ssl.c:1046:2,
+    inlined from 'ssl_verify_callback' at mutt_ssl.c:1175:10:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'check_host' at mutt_ssl.c:1036:2,
+    inlined from 'ssl_verify_callback' at mutt_ssl.c:1175:10:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o hcache.o hcache.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o extlib.o extlib.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mutt_dotlock.o mutt_dotlock.c
+mutt_dotlock.c: In function 'dotlock_lock':
+mutt_dotlock.c:632:5: warning: ignoring return value of 'link', declared with attribute warn_unused_result [-Wunused-result]
+  632 |     link (nfslockfile, lockfile);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+cp ./muttbug flea
+chmod +x flea
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+cp ./smime_keys.pl smime_keys
+chmod +x smime_keys
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgpewrap.o pgpewrap.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mutt_dotlock mutt_dotlock.o  -L/usr/lib64// -ldb-5
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o pgpewrap pgpewrap.o   -L/usr/lib64// -ldb-5
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mutt addrbook.o alias.o attach.o base64.o browser.o buffer.o buffy.o color.o crypt.o cryptglue.o commands.o complete.o compose.o copy.o curs_lib.o curs_main.o date.o edit.o enter.o flags.o init.o filter.o from.o getdomain.o group.o handler.o hash.o hdrline.o headers.o help.o hook.o keymap.o main.o mbox.o menu.o mh.o mx.o pager.o parse.o pattern.o postpone.o query.o recvattach.o recvcmd.o rfc822.o rfc1524.o rfc2047.o rfc2231.o rfc3676.o score.o send.o sendlib.o signal.o sort.o status.o system.o thread.o charset.o history.o lib.o muttlib.o editmsg.o mbyte.o url.o ascii.o crypt-mod.o safe_asprintf.o patchlist.o conststrings.o  crypt-gpgme.o crypt-mod-pgp-gpgme.o crypt-mod-smime-gpgme.o pgp.o pgpinvoke.o pgpkey.o pgplib.o gnupgparse.o pgpmicalg.o pgppacket.o crypt-mod-pgp-classic.o smime.o crypt-mod-smime-classic.o sidebar.o compress.o resize.o pop.o pop_lib.o pop_auth.o smtp.o bcache.o account.o mutt_socket.o mutt_tunnel.o mutt_ssl.o mutt_sasl.o monitor.o hcache.o md5.o mutt_idna.o  -Limap -limap  -lncursesw -ltinfo -lssl -lcrypto -lz -lsasl2  -lidn2  -lunistring    -L/usr/lib64 -lgpgme -lassuan -lgpg-error -lgpg-error -L/usr/lib64// -ldb-5
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o sha1.o sha1.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap  -I/usr/include/libassuan2 -Iintl -I/usr/include// -I./intl  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o pgppubring.o pgppubring.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+x86_64-mageia-linux-gnu-gcc  -Wall -pedantic -Wno-long-long -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mutt_pgpring pgppubring.o pgplib.o lib.o extlib.o sha1.o md5.o pgppacket.o ascii.o   -L/usr/lib64// -ldb-5
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
++ /usr/bin/make update-doc
+(cd doc && /usr/bin/make update-doc)
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[1]: Nothing to be done for 'update-doc'.
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.uUgEGh
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64
++ cd mutt-1.13.5
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64 'INSTALL=/usr/bin/install -p'
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+/usr/bin/make  install-recursive
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+Making install in m4
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/m4'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/m4'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/m4'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/m4'
+Making install in po
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/po'
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share
+installing de.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/de/LC_MESSAGES/mutt.mo
+installing eu.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/eu/LC_MESSAGES/mutt.mo
+installing ru.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/ru/LC_MESSAGES/mutt.mo
+installing it.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/it/LC_MESSAGES/mutt.mo
+installing es.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/es/LC_MESSAGES/mutt.mo
+installing uk.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/uk/LC_MESSAGES/mutt.mo
+installing fr.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/fr/LC_MESSAGES/mutt.mo
+installing pl.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/pl/LC_MESSAGES/mutt.mo
+installing nl.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/nl/LC_MESSAGES/mutt.mo
+installing cs.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/cs/LC_MESSAGES/mutt.mo
+installing id.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/id/LC_MESSAGES/mutt.mo
+installing sk.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/sk/LC_MESSAGES/mutt.mo
+installing ko.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/ko/LC_MESSAGES/mutt.mo
+installing el.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/el/LC_MESSAGES/mutt.mo
+installing zh_TW.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/zh_TW/LC_MESSAGES/mutt.mo
+installing zh_CN.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/zh_CN/LC_MESSAGES/mutt.mo
+installing pt_BR.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/pt_BR/LC_MESSAGES/mutt.mo
+installing eo.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/eo/LC_MESSAGES/mutt.mo
+installing gl.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/gl/LC_MESSAGES/mutt.mo
+installing sv.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/sv/LC_MESSAGES/mutt.mo
+installing da.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/da/LC_MESSAGES/mutt.mo
+installing lt.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/lt/LC_MESSAGES/mutt.mo
+installing tr.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/tr/LC_MESSAGES/mutt.mo
+installing ja.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/ja/LC_MESSAGES/mutt.mo
+installing hu.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/hu/LC_MESSAGES/mutt.mo
+installing et.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/et/LC_MESSAGES/mutt.mo
+installing ca.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/ca/LC_MESSAGES/mutt.mo
+installing bg.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/bg/LC_MESSAGES/mutt.mo
+installing ga.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/ga/LC_MESSAGES/mutt.mo
+installing fi.gmo as /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/fi/LC_MESSAGES/mutt.mo
+if test "mutt" = "gettext"; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/po; \
+  /usr/bin/install -p -m 644 ./Makefile.in.in \
+		  /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/po'
+Making install in intl
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/intl'
+if test "mutt" = "gettext" \
+   && test '' = 'intl-compat.o'; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64 /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/include; \
+  /usr/bin/install -p -m 644 libintl.h /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/include/libintl.h; \
+  @LIBTOOL@ --mode=install \
+    /usr/bin/install -p -m 644 libintl.a /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64/libintl.a; \
+else \
+  : ; \
+fi
+if test 'no' = yes; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64; \
+  temp=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64/t-charset.alias; \
+  dest=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64/charset.alias; \
+  if test -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64/charset.alias; then \
+    orig=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/lib64/charset.alias; \
+    sed -f ref-add.sed $orig > $temp; \
+    /usr/bin/install -p -m 644 $temp $dest; \
+    rm -f $temp; \
+  else \
+    if test yes = no; then \
+      orig=charset.alias; \
+      sed -f ref-add.sed $orig > $temp; \
+      /usr/bin/install -p -m 644 $temp $dest; \
+      rm -f $temp; \
+    fi; \
+  fi; \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale; \
+  test -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/locale.alias \
+    && orig=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/locale.alias \
+    || orig=./locale.alias; \
+  temp=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/t-locale.alias; \
+  dest=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/locale/locale.alias; \
+  sed -f ref-add.sed $orig > $temp; \
+  /usr/bin/install -p -m 644 $temp $dest; \
+  rm -f $temp; \
+else \
+  : ; \
+fi
+if test "mutt" = "gettext"; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl; \
+  /usr/bin/install -p -m 644 VERSION /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/VERSION; \
+  /usr/bin/install -p -m 644 ChangeLog.inst /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/ChangeLog; \
+  dists="COPYING.LIB-2 COPYING.LIB-2.1 Makefile.in config.charset locale.alias ref-add.sin ref-del.sin gettext.h gettextP.h hash-string.h libgnuintl.h libgettext.h loadinfo.h bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c dcigettext.c dcngettext.c dngettext.c ngettext.c plural.y localcharset.c intl-compat.c"; \
+  for file in $dists; do \
+    /usr/bin/install -p -m 644 ./$file \
+		    /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/$file; \
+  done; \
+  chmod a+x /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/config.charset; \
+  dists="plural.c"; \
+  for file in $dists; do \
+    if test -f $file; then dir=.; else dir=.; fi; \
+    /usr/bin/install -p -m 644 $dir/$file \
+		    /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/$file; \
+  done; \
+  dists="xopen-msg.sed linux-msg.sed po2tbl.sed.in cat-compat.c"; \
+  for file in $dists; do \
+    rm -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/gettext/intl/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/intl'
+Making install in doc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+cat instdoc.sh > instdoc
+chmod a+x instdoc
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man5
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc
+./instdoc mutt.1 /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1/mutt.1
+./instdoc smime_keys.1 /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1/smime_keys.1
+./instdoc pgpewrap.1 /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1/pgpewrap.1
+./instdoc mutt_pgpring.1 /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1/mutt_pgpring.1
+test xmutt_dotlock = x || ./instdoc ./dotlock.man \
+	/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man1/mutt_dotlock.1
+./instdoc muttrc.man /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man5/muttrc.5
+./instdoc ./mbox.man /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man5/mbox.5
+./instdoc ./mmdf.man /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/man/man5/mmdf.5
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc
+for f in COPYRIGHT GPL INSTALL ChangeLog README NEWS TODO README.SECURITY README.SSL  ; do \
+	/usr/bin/install -p -m 644 ../$f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc ; \
+done
+for f in PGP-Notes.txt applying-patches.txt devel-notes.txt patch-notes.txt smime-notes.txt ; do \
+	/usr/bin/install -p -m 644 ./$f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc ; \
+done
+if [ -f manual.txt ] ; then \
+  /usr/bin/install -p -m 644 manual.txt /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc ; \
+fi
+for f in manual.html index.html intro.html gettingstarted.html configuration.html mimesupport.html advancedusage.html optionalfeatures.html security.html tuning.html reference.html miscellany.html ; do \
+  if [ -f $f ] ; then \
+    /usr/bin/install -p -m 644 $f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc ; \
+  fi \
+done
+/usr/bin/install -p -m 644 Muttrc /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/Muttrc.dist
+if [ -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/mutt/Muttrc ] ; then \
+	mv /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/mutt/Muttrc* /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc ; \
+elif [ -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/mutt/../Muttrc ] ; then \
+ 	mv /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/mutt/../Muttrc* /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc ; \
+elif [ ! -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/Muttrc ] ; then \
+	/usr/bin/install -p -m 644 Muttrc /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc ; \
+fi
+if [ -f mutt.info ] ; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/info ; \
+  /usr/bin/install -p -m 644 mutt.info /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/info ; \
+  if command -v install-info >/dev/null 2>&1 ; then \
+    install-info /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/info/mutt.info /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/info/dir ; \
+  fi \
+fi
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/doc'
+Making install in contrib
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/contrib'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/contrib'
+make[3]: Nothing to be done for 'install-exec-am'.
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc/samples /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc/samples/iconv
+for f in Mush.rc Pine.rc gpg.rc pgp2.rc pgp5.rc pgp6.rc Tin.rc sample.mailcap sample.muttrc sample.muttrc-sidebar sample.muttrc-tlr sample.muttrc-compress sample.muttrc-starter sample.vimrc-sidebar colors.default colors.linux smime.rc ca-bundle.crt smime_keys_test.pl mutt_xtitle markdown2html ; do \
+	/usr/bin/install -p -m 644 ./$f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc/samples ;	\
+done
+for f in ./iconv/*.rc ; do					\
+	/usr/bin/install -p -m 644 $f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt-doc/samples/iconv	  ;	\
+done
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/contrib'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/contrib'
+Making install in imap
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5/imap'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin'
+  /usr/bin/install -p mutt mutt_dotlock mutt_pgpring pgpewrap '/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin'
+ /usr/bin/install -p muttbug flea smime_keys '/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin'
+/usr/bin/make  install-exec-hook
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+if test -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt.dotlock && test -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_dotlock ; then	\
+	rm -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt.dotlock ;		\
+	ln -sf /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_dotlock /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt.dotlock ; \
+fi
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+/usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc
+/usr/bin/install -p -m 644 ./mime.types /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/mime.types.dist
+if [ ! -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/mime.types ]; then \
+	/usr/bin/install -p -m 644 ./mime.types /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc; \
+fi
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mutt-1.13.5'
++ rm -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/mime.types
++ mv -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/mime.types.dist .
++ mv -f /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/etc/Muttrc.dist .
++ /usr/lib/rpm/find-lang.sh /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64 mutt
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 1.13.5-1.mga8 --unique-debug-suffix -1.13.5-1.mga8.x86_64 --unique-debug-src-base mutt-1.13.5-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/mutt-1.13.5
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_dotlock
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_pgpring
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/pgpewrap
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_pgpring
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt_dotlock
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/mutt
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/bin/pgpewrap
+original debug info size: 4944kB, size after compression: 3556kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 4 CRC32s, 0 CRC32s did match.
+5682 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/muttbug from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/bin/flea from /bin/sh to #!/usr/bin/sh
+Processing files: mutt-1.13.5-1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.1c3MCh
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mutt-1.13.5
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr BEWARE /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr COPYRIGHT /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr NEWS /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr OPS OPS.CRYPT OPS.MIX OPS.PGP OPS.SIDEBAR OPS.SMIME /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr PATCHES /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr README README.SECURITY README.SSL /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr TODO /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr UPDATING /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr VERSION /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr mime.types.dist /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr Muttrc.dist /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ cp -pr contrib/sample.muttrc contrib/sample.muttrc-compress contrib/sample.muttrc-sidebar contrib/sample.muttrc-starter contrib/sample.muttrc-tlr contrib/sample.muttrc.tmpdef /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64/usr/share/doc/mutt
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: config(mutt) = 1:1.13.5-1.mga8 mutt = 1:1.13.5-1.mga8 mutt(x86-64) = 1:1.13.5-1.mga8
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(pre): /bin/sh update-alternatives
+Requires: info-install libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.6)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcrypto.so.1.1()(64bit) libcrypto.so.1.1(OPENSSL_1_1_0)(64bit) libdb-5.3.so()(64bit) libgpg-error.so.0()(64bit) libgpg-error.so.0(GPG_ERROR_1.0)(64bit) libgpgme.so.11()(64bit) libgpgme.so.11(GPGME_1.0)(64bit) libgpgme.so.11(GPGME_1.1)(64bit) libidn2.so.0()(64bit) libidn2.so.0(IDN2_0.0.0)(64bit) libncursesw.so.6()(64bit) libsasl2.so.3()(64bit) libssl.so.1.1()(64bit) libssl.so.1.1(OPENSSL_1_1_0)(64bit) libtinfo.so.6()(64bit) perl(File::Copy) perl(File::Glob) perl(File::Temp) perl(Time::Local) perl(strict) perl-base >= 2:5.30.2
+Obsoletes: mutt-utf8 < 1:1.11.3-2
+Recommends: mailcap mutt-doc
+Processing files: mutt-doc-1.13.5-1.mga8.x86_64
+Provides: mutt-doc = 1:1.13.5-1.mga8 mutt-doc(x86-64) = 1:1.13.5-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: mutt-debugsource-1.13.5-1.mga8.x86_64
+Provides: mutt-debugsource = 1:1.13.5-1.mga8 mutt-debugsource(x86-64) = 1:1.13.5-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: mutt-debuginfo-1.13.5-1.mga8.x86_64
+Provides: debuginfo(build-id) = 94ecd8d49db0021840fadc8200de53847ce49b20 debuginfo(build-id) = 962a6ab91186be09198b84f6222993620a0c5392 debuginfo(build-id) = b245349be71ab186929448ef60475f038f91a72f debuginfo(build-id) = b61dded40ae55284c884897734e8d4553f5fec15 mutt-debuginfo = 1:1.13.5-1.mga8 mutt-debuginfo(x86-64) = 1:1.13.5-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: mutt-debugsource(x86-64) = 1:1.13.5-1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mutt-1.13.5-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mutt-debuginfo-1.13.5-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mutt-debugsource-1.13.5-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mutt-doc-1.13.5-1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3iSH9g
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mutt-1.13.5
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/mutt-1.13.5-1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.B7Ujjk
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf mutt-1.13.5
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
