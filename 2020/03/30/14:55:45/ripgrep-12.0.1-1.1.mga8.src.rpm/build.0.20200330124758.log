@@ -1,0 +1,262 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/ripgrep-12.0.1-1.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.5Uxs0o
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ripgrep-12.0.1
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/ripgrep-12.0.1.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ripgrep-12.0.1
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/mkdir -p .cargo
++ /usr/bin/cp /home/stig/rpmbuild/SOURCES/cargo.config .cargo/config
++ tar xf /home/stig/rpmbuild/SOURCES/ripgrep-cargo-vendor-12.0.1.tar.xz
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.m5Vzcr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ripgrep-12.0.1
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cargo build --release --features pcre2
+   Compiling lazy_static v1.4.0
+   Compiling memchr v2.3.3
+   Compiling cfg-if v0.1.10
+   Compiling libc v0.2.68
+   Compiling byteorder v1.3.4
+   Compiling log v0.4.8
+   Compiling proc-macro2 v1.0.9
+   Compiling regex-syntax v0.6.17
+   Compiling encoding_rs v0.8.22
+   Compiling pkg-config v0.3.17
+   Compiling cc v1.0.50
+   Compiling unicode-xid v0.2.0
+   Compiling autocfg v1.0.0
+   Compiling serde v1.0.105
+   Compiling bitflags v1.2.1
+   Compiling ryu v1.0.3
+   Compiling syn v1.0.17
+   Compiling same-file v1.0.6
+   Compiling fnv v1.0.6
+   Compiling maybe-uninit v2.0.0
+   Compiling unicode-width v0.1.7
+   Compiling bytecount v0.6.0
+   Compiling strsim v0.8.0
+   Compiling itoa v0.4.5
+   Compiling termcolor v1.1.0
+   Compiling base64 v0.11.0
+   Compiling thread_local v1.0.1
+   Compiling crossbeam-utils v0.7.2
+   Compiling walkdir v2.3.1
+   Compiling textwrap v0.11.0
+   Compiling pcre2-sys v0.2.2
+   Compiling aho-corasick v0.7.10
+   Compiling grep-matcher v0.1.4 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/matcher)
+   Compiling memmap v0.7.0
+   Compiling atty v0.2.14
+   Compiling num_cpus v1.12.0
+   Compiling regex-automata v0.1.9
+   Compiling quote v1.0.3
+   Compiling encoding_rs_io v0.1.7
+   Compiling clap v2.33.0
+   Compiling serde_json v1.0.50
+   Compiling regex v1.3.6
+   Compiling bstr v0.2.12
+   Compiling crossbeam-channel v0.4.2
+   Compiling globset v0.4.5 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/globset)
+   Compiling grep-searcher v0.1.7 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/searcher)
+   Compiling grep-regex v0.1.7 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/regex)
+   Compiling pcre2 v0.2.3
+   Compiling grep-cli v0.1.4 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/cli)
+   Compiling ignore v0.4.14 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/ignore)
+   Compiling grep-pcre2 v0.1.4 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/pcre2)
+   Compiling serde_derive v1.0.105
+   Compiling ripgrep v12.0.1 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1)
+   Compiling grep-printer v0.1.4 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/printer)
+   Compiling grep v0.2.5 (/home/stig/rpmbuild/BUILD/ripgrep-12.0.1/crates/grep)
+    Finished release [optimized + debuginfo] target(s) in 5m 32s
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.4lbCYo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64
++ cd ripgrep-12.0.1
++ '[' 1 -eq 1 ']'
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/bin
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/bash-completion/completions
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/fish/vendor_completions.d
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/zsh/site-functions
++ /usr/bin/cp target/release/rg /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/bin/
++ /usr/bin/cp target/release/build/ripgrep-0ec6b19dc01cd452/out/rg.fish /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/fish/vendor_completions.d
++ /usr/bin/cp target/release/build/ripgrep-0ec6b19dc01cd452/out/rg.bash /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/bash-completion/completions/rg
++ /usr/bin/cp complete/_rg /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/zsh/site-functions/
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 12.0.1-1.1.mga8 --unique-debug-suffix -12.0.1-1.1.mga8.x86_64 --unique-debug-src-base ripgrep-12.0.1-1.1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/ripgrep-12.0.1
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/bin/rg
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/bin/rg
+original debug info size: 36272kB, size after compression: 28240kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 1 CRC32s, 0 CRC32s did match.
+cpio: <::alloc::macros::format macros>: Cannot stat: No such file or directory
+cpio: <::alloc::macros::vec macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::assert_eq macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::assert_ne macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::try macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::write macros>: Cannot stat: No such file or directory
+cpio: <::core::macros::writeln macros>: Cannot stat: No such file or directory
+cpio: <::lazy_static::__lazy_static_internal macros>: Cannot stat: No such file or directory
+cpio: <::lazy_static::lazy::__lazy_static_create macros>: Cannot stat: No such file or directory
+cpio: <::log::macros::__log_format_args macros>: Cannot stat: No such file or directory
+cpio: <::log::macros::log macros>: Cannot stat: No such file or directory
+cpio: <::serde_json::macros::json_internal macros>: Cannot stat: No such file or directory
+cpio: <::std::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/aho-corasick/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/bstr/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/bstr/<::lazy_static::__lazy_static_internal macros>: Cannot stat: No such file or directory
+cpio: vendor/bstr/<::lazy_static::lazy::__lazy_static_create macros>: Cannot stat: No such file or directory
+cpio: vendor/bstr/<::lazy_static::lazy_static macros>: Cannot stat: No such file or directory
+cpio: vendor/clap/<::bitflags::__impl_bitflags macros>: Cannot stat: No such file or directory
+cpio: vendor/clap/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/crossbeam-channel/<::std::thread::local::__thread_local_inner macros>: Cannot stat: No such file or directory
+cpio: vendor/crossbeam-utils/<::lazy_static::__lazy_static_internal macros>: Cannot stat: No such file or directory
+cpio: vendor/crossbeam-utils/<::lazy_static::lazy::__lazy_static_create macros>: Cannot stat: No such file or directory
+cpio: vendor/crossbeam-utils/<::std::thread::local::__thread_local_inner macros>: Cannot stat: No such file or directory
+cpio: vendor/encoding_rs/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/encoding_rs_io/<::core::macros::write macros>: Cannot stat: No such file or directory
+cpio: vendor/num_cpus/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/pcre2/<::alloc::macros::vec macros>: Cannot stat: No such file or directory
+cpio: vendor/pcre2/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/pcre2/<::std::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/regex-syntax/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::alloc::macros::format macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::alloc::macros::vec macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::core::macros::assert_ne macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::core::macros::writeln macros>: Cannot stat: No such file or directory
+cpio: vendor/regex/<::std::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/serde_json/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/serde_json/<::core::macros::try macros>: Cannot stat: No such file or directory
+cpio: vendor/serde_json/<::serde::macros::forward_to_deserialize_any_method macros>: Cannot stat: No such file or directory
+cpio: vendor/termcolor/<::core::macros::panic macros>: Cannot stat: No such file or directory
+cpio: vendor/thread_local/<::lazy_static::__lazy_static_internal macros>: Cannot stat: No such file or directory
+cpio: vendor/thread_local/<::lazy_static::lazy::__lazy_static_create macros>: Cannot stat: No such file or directory
+cpio: vendor/thread_local/<::std::thread::local::__thread_local_inner macros>: Cannot stat: No such file or directory
+cpio: vendor/walkdir/<::core::macros::panic macros>: Cannot stat: No such file or directory
+17789 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Processing files: ripgrep-12.0.1-1.1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.orFn6q
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ripgrep-12.0.1
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/doc/ripgrep
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/doc/ripgrep
++ cp -pr README.md /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/doc/ripgrep
++ cp -pr FAQ.md /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/doc/ripgrep
++ cp -pr GUIDE.md /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/doc/ripgrep
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.JH0Ypq
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ripgrep-12.0.1
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/licenses/ripgrep
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/licenses/ripgrep
++ cp -pr COPYING /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/licenses/ripgrep
++ cp -pr UNLICENSE /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/licenses/ripgrep
++ cp -pr LICENSE-MIT /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64/usr/share/licenses/ripgrep
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: ripgrep = 12.0.1-1.1.mga8 ripgrep(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.18)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgcc_s.so.1(GCC_3.3)(64bit) libgcc_s.so.1(GCC_4.2.0)(64bit) libpcre2-8.so.0()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit)
+Processing files: ripgrep-bash-completion-12.0.1-1.1.mga8.x86_64
+Provides: ripgrep-bash-completion = 12.0.1-1.1.mga8 ripgrep-bash-completion(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ripgrep-fish-completion-12.0.1-1.1.mga8.x86_64
+Provides: ripgrep-fish-completion = 12.0.1-1.1.mga8 ripgrep-fish-completion(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ripgrep-zsh-completion-12.0.1-1.1.mga8.x86_64
+Provides: ripgrep-zsh-completion = 12.0.1-1.1.mga8 ripgrep-zsh-completion(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ripgrep-debugsource-12.0.1-1.1.mga8.x86_64
+Provides: ripgrep-debugsource = 12.0.1-1.1.mga8 ripgrep-debugsource(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ripgrep-debuginfo-12.0.1-1.1.mga8.x86_64
+Provides: debuginfo(build-id) = 5cce5a4ecb3ac3d6bd734caafdc5c5de48003133 ripgrep-debuginfo = 12.0.1-1.1.mga8 ripgrep-debuginfo(x86-64) = 12.0.1-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: ripgrep-debugsource(x86-64) = 12.0.1-1.1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-bash-completion-12.0.1-1.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-fish-completion-12.0.1-1.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-zsh-completion-12.0.1-1.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-12.0.1-1.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-debugsource-12.0.1-1.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ripgrep-debuginfo-12.0.1-1.1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.DtuVZo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ripgrep-12.0.1
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/ripgrep-12.0.1-1.1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.n9NgMo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ripgrep-12.0.1
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
