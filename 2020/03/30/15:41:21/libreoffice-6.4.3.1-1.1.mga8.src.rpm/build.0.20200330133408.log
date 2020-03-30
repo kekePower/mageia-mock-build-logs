@@ -1,0 +1,12 @@
+D: [iurt_root_command] chroot
+warning: line 677: It's not recommended to have unversioned Obsoletes: Obsoletes: libreoffice-kde4
+Installing /home/stig/rpmbuild/SRPMS/libreoffice-6.4.3.1-1.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.kuKfTY
+/home/stig/rpmbuild/tmp/rpm-tmp.kuKfTY: line 5: -g: command not found
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.kuKfTY (%prep)
+
+
+RPM build errors:
+    line 677: It's not recommended to have unversioned Obsoletes: Obsoletes: libreoffice-kde4
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.kuKfTY (%prep)
+I: [iurt_root_command] ERROR: chroot
