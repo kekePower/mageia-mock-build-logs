@@ -1,0 +1,33 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 3: %{_libdir}/R/bin
+
+Installing /home/stig/rpmbuild/SRPMS/R-base-3.6.3-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.79jEi5
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf R-3.6.3
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/R-3.6.3.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd R-3.6.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-2.15.3-menu.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-3.3.0-slow-test.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-3.4.2-date-test.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
+1 out of 1 hunk FAILED -- saving rejects to file tests/reg-tests-1d.R.rej
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.79jEi5 (%prep)
+
+
+RPM build errors:
+    Macro expanded in comment on line 3: %{_libdir}/R/bin
+
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.79jEi5 (%prep)
+I: [iurt_root_command] ERROR: chroot
