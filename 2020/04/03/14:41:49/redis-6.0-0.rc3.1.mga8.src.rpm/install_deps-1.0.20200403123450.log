@@ -1,0 +1,22 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200403123450/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200403123450/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libatomic1-9.3.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   0% of 39913 completed, ETA = --:--:--, speed = 0                               100% of 39913 completed, ETA = --:--:--, speed = 306k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 78018 completed, ETA = --:--:--, speed = 1814k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libatomic-devel-9.3.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 86840 completed, ETA = --:--:--, speed = 2174k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 230k completed, ETA = --:--:--, speed = 3974k                                                                                                 retrieved   libatomic1-9.3.0-1.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm libatomic-devel-9.3.0-1.mga8.x86_64.rpm lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm
+...retrieving done
+installing lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm libatomic-devel-9.3.0-1.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm libatomic1-9.3.0-1.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200403123450/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200403123450 (remove=0, install=0, upgrade=4)
+Preparing...                     #############################################
+      1/4: lib64jemalloc2        #############################################
+      2/4: libatomic1            #############################################
+      3/4: libatomic-devel       #############################################
+      4/4: lib64jemalloc-devel   #############################################
+removing installed rpms (lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm libatomic-devel-9.3.0-1.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm libatomic1-9.3.0-1.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200403123450/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!

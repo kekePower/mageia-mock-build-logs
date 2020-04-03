@@ -1,0 +1,1258 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 33: %{version} baseline"
+
+warning: extra tokens at the end of %else directive in line 157:  %else # install SysV service files
+
+Installing /home/stig/rpmbuild/SRPMS/redis-6.0-0.rc3.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.6E8kHr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf redis-6.0-rc3
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/redis-6.0rc3.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd redis-6.0-rc3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0001-redis-3.2.3-redis-conf.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0002-redis-3.2.3-deps-library-fPIC-performance-tuning.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0003-redis-5.0.1-use-system-jemalloc.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0004-redis-2.8.18-disable-test-failed-on-slow-machine.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0005-redis-2.8.18-sentinel-configuration-file-fix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0006-1st-man-pageis-for-redis-cli-redis-benchmark-redis-c.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0007-install-redis-check-rdb-and-redis-check-aof-as-symlinks-to-redis-server.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0008-switch-pidfile-from-var_run-to-run_redis.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ rm -rfv deps/jemalloc
+removed 'deps/jemalloc/.appveyor.yml'
+removed 'deps/jemalloc/.autom4te.cfg'
+removed 'deps/jemalloc/.gitattributes'
+removed 'deps/jemalloc/.gitignore'
+removed 'deps/jemalloc/.travis.yml'
+removed 'deps/jemalloc/COPYING'
+removed 'deps/jemalloc/ChangeLog'
+removed 'deps/jemalloc/INSTALL.md'
+removed 'deps/jemalloc/Makefile.in'
+removed 'deps/jemalloc/README'
+removed 'deps/jemalloc/TUNING.md'
+removed 'deps/jemalloc/VERSION'
+removed 'deps/jemalloc/autogen.sh'
+removed 'deps/jemalloc/bin/jemalloc-config.in'
+removed 'deps/jemalloc/bin/jemalloc.sh.in'
+removed 'deps/jemalloc/bin/jeprof.in'
+removed directory 'deps/jemalloc/bin'
+removed 'deps/jemalloc/build-aux/config.guess'
+removed 'deps/jemalloc/build-aux/config.sub'
+removed 'deps/jemalloc/build-aux/install-sh'
+removed directory 'deps/jemalloc/build-aux'
+removed 'deps/jemalloc/config.stamp.in'
+removed 'deps/jemalloc/configure'
+removed 'deps/jemalloc/configure.ac'
+removed 'deps/jemalloc/doc/html.xsl.in'
+removed 'deps/jemalloc/doc/jemalloc.xml.in'
+removed 'deps/jemalloc/doc/manpages.xsl.in'
+removed 'deps/jemalloc/doc/stylesheet.xsl'
+removed directory 'deps/jemalloc/doc'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_inlines_a.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_inlines_b.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_stats.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_structs_a.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_structs_b.h'
+removed 'deps/jemalloc/include/jemalloc/internal/arena_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/assert.h'
+removed 'deps/jemalloc/include/jemalloc/internal/atomic.h'
+removed 'deps/jemalloc/include/jemalloc/internal/atomic_c11.h'
+removed 'deps/jemalloc/include/jemalloc/internal/atomic_gcc_atomic.h'
+removed 'deps/jemalloc/include/jemalloc/internal/atomic_gcc_sync.h'
+removed 'deps/jemalloc/include/jemalloc/internal/atomic_msvc.h'
+removed 'deps/jemalloc/include/jemalloc/internal/background_thread_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/background_thread_inlines.h'
+removed 'deps/jemalloc/include/jemalloc/internal/background_thread_structs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/base_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/base_inlines.h'
+removed 'deps/jemalloc/include/jemalloc/internal/base_structs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/base_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/bin.h'
+removed 'deps/jemalloc/include/jemalloc/internal/bin_stats.h'
+removed 'deps/jemalloc/include/jemalloc/internal/bit_util.h'
+removed 'deps/jemalloc/include/jemalloc/internal/bitmap.h'
+removed 'deps/jemalloc/include/jemalloc/internal/cache_bin.h'
+removed 'deps/jemalloc/include/jemalloc/internal/ckh.h'
+removed 'deps/jemalloc/include/jemalloc/internal/ctl.h'
+removed 'deps/jemalloc/include/jemalloc/internal/div.h'
+removed 'deps/jemalloc/include/jemalloc/internal/emitter.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_dss.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_inlines.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_mmap.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_structs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/extent_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/hash.h'
+removed 'deps/jemalloc/include/jemalloc/internal/hooks.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_decls.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h.in'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_includes.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_a.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_b.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_inlines_c.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_macros.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_internal_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/jemalloc_preamble.h.in'
+removed 'deps/jemalloc/include/jemalloc/internal/large_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/log.h'
+removed 'deps/jemalloc/include/jemalloc/internal/malloc_io.h'
+removed 'deps/jemalloc/include/jemalloc/internal/mutex.h'
+removed 'deps/jemalloc/include/jemalloc/internal/mutex_pool.h'
+removed 'deps/jemalloc/include/jemalloc/internal/mutex_prof.h'
+removed 'deps/jemalloc/include/jemalloc/internal/nstime.h'
+removed 'deps/jemalloc/include/jemalloc/internal/pages.h'
+removed 'deps/jemalloc/include/jemalloc/internal/ph.h'
+removed 'deps/jemalloc/include/jemalloc/internal/private_namespace.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/private_symbols.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/prng.h'
+removed 'deps/jemalloc/include/jemalloc/internal/prof_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/prof_inlines_a.h'
+removed 'deps/jemalloc/include/jemalloc/internal/prof_inlines_b.h'
+removed 'deps/jemalloc/include/jemalloc/internal/prof_structs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/prof_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/public_namespace.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/public_unnamespace.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/ql.h'
+removed 'deps/jemalloc/include/jemalloc/internal/qr.h'
+removed 'deps/jemalloc/include/jemalloc/internal/rb.h'
+removed 'deps/jemalloc/include/jemalloc/internal/rtree.h'
+removed 'deps/jemalloc/include/jemalloc/internal/rtree_tsd.h'
+removed 'deps/jemalloc/include/jemalloc/internal/size_classes.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/smoothstep.h'
+removed 'deps/jemalloc/include/jemalloc/internal/smoothstep.sh'
+removed 'deps/jemalloc/include/jemalloc/internal/spin.h'
+removed 'deps/jemalloc/include/jemalloc/internal/stats.h'
+removed 'deps/jemalloc/include/jemalloc/internal/sz.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tcache_externs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tcache_inlines.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tcache_structs.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tcache_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/ticker.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd_generic.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd_malloc_thread_cleanup.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd_tls.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd_types.h'
+removed 'deps/jemalloc/include/jemalloc/internal/tsd_win.h'
+removed 'deps/jemalloc/include/jemalloc/internal/util.h'
+removed 'deps/jemalloc/include/jemalloc/internal/witness.h'
+removed directory 'deps/jemalloc/include/jemalloc/internal'
+removed 'deps/jemalloc/include/jemalloc/jemalloc.sh'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_defs.h.in'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_macros.h.in'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_mangle.sh'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_protos.h.in'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_rename.sh'
+removed 'deps/jemalloc/include/jemalloc/jemalloc_typedefs.h.in'
+removed directory 'deps/jemalloc/include/jemalloc'
+removed 'deps/jemalloc/include/msvc_compat/C99/stdbool.h'
+removed 'deps/jemalloc/include/msvc_compat/C99/stdint.h'
+removed directory 'deps/jemalloc/include/msvc_compat/C99'
+removed 'deps/jemalloc/include/msvc_compat/strings.h'
+removed 'deps/jemalloc/include/msvc_compat/windows_extra.h'
+removed directory 'deps/jemalloc/include/msvc_compat'
+removed directory 'deps/jemalloc/include'
+removed 'deps/jemalloc/jemalloc.pc.in'
+removed 'deps/jemalloc/m4/ax_cxx_compile_stdcxx.m4'
+removed directory 'deps/jemalloc/m4'
+removed 'deps/jemalloc/msvc/ReadMe.txt'
+removed 'deps/jemalloc/msvc/jemalloc_vc2015.sln'
+removed 'deps/jemalloc/msvc/jemalloc_vc2017.sln'
+removed 'deps/jemalloc/msvc/projects/vc2015/jemalloc/jemalloc.vcxproj'
+removed 'deps/jemalloc/msvc/projects/vc2015/jemalloc/jemalloc.vcxproj.filters'
+removed directory 'deps/jemalloc/msvc/projects/vc2015/jemalloc'
+removed 'deps/jemalloc/msvc/projects/vc2015/test_threads/test_threads.vcxproj'
+removed 'deps/jemalloc/msvc/projects/vc2015/test_threads/test_threads.vcxproj.filters'
+removed directory 'deps/jemalloc/msvc/projects/vc2015/test_threads'
+removed directory 'deps/jemalloc/msvc/projects/vc2015'
+removed 'deps/jemalloc/msvc/projects/vc2017/jemalloc/jemalloc.vcxproj'
+removed 'deps/jemalloc/msvc/projects/vc2017/jemalloc/jemalloc.vcxproj.filters'
+removed directory 'deps/jemalloc/msvc/projects/vc2017/jemalloc'
+removed 'deps/jemalloc/msvc/projects/vc2017/test_threads/test_threads.vcxproj'
+removed 'deps/jemalloc/msvc/projects/vc2017/test_threads/test_threads.vcxproj.filters'
+removed directory 'deps/jemalloc/msvc/projects/vc2017/test_threads'
+removed directory 'deps/jemalloc/msvc/projects/vc2017'
+removed directory 'deps/jemalloc/msvc/projects'
+removed 'deps/jemalloc/msvc/test_threads/test_threads.cpp'
+removed 'deps/jemalloc/msvc/test_threads/test_threads.h'
+removed 'deps/jemalloc/msvc/test_threads/test_threads_main.cpp'
+removed directory 'deps/jemalloc/msvc/test_threads'
+removed directory 'deps/jemalloc/msvc'
+removed 'deps/jemalloc/run_tests.sh'
+removed 'deps/jemalloc/scripts/gen_run_tests.py'
+removed 'deps/jemalloc/scripts/gen_travis.py'
+removed directory 'deps/jemalloc/scripts'
+removed 'deps/jemalloc/src/arena.c'
+removed 'deps/jemalloc/src/background_thread.c'
+removed 'deps/jemalloc/src/base.c'
+removed 'deps/jemalloc/src/bin.c'
+removed 'deps/jemalloc/src/bitmap.c'
+removed 'deps/jemalloc/src/ckh.c'
+removed 'deps/jemalloc/src/ctl.c'
+removed 'deps/jemalloc/src/div.c'
+removed 'deps/jemalloc/src/extent.c'
+removed 'deps/jemalloc/src/extent_dss.c'
+removed 'deps/jemalloc/src/extent_mmap.c'
+removed 'deps/jemalloc/src/hash.c'
+removed 'deps/jemalloc/src/hooks.c'
+removed 'deps/jemalloc/src/jemalloc.c'
+removed 'deps/jemalloc/src/jemalloc_cpp.cpp'
+removed 'deps/jemalloc/src/large.c'
+removed 'deps/jemalloc/src/log.c'
+removed 'deps/jemalloc/src/malloc_io.c'
+removed 'deps/jemalloc/src/mutex.c'
+removed 'deps/jemalloc/src/mutex_pool.c'
+removed 'deps/jemalloc/src/nstime.c'
+removed 'deps/jemalloc/src/pages.c'
+removed 'deps/jemalloc/src/prng.c'
+removed 'deps/jemalloc/src/prof.c'
+removed 'deps/jemalloc/src/rtree.c'
+removed 'deps/jemalloc/src/stats.c'
+removed 'deps/jemalloc/src/sz.c'
+removed 'deps/jemalloc/src/tcache.c'
+removed 'deps/jemalloc/src/ticker.c'
+removed 'deps/jemalloc/src/tsd.c'
+removed 'deps/jemalloc/src/witness.c'
+removed 'deps/jemalloc/src/zone.c'
+removed directory 'deps/jemalloc/src'
+removed 'deps/jemalloc/test/include/test/SFMT-alti.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params11213.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params1279.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params132049.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params19937.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params216091.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params2281.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params4253.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params44497.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params607.h'
+removed 'deps/jemalloc/test/include/test/SFMT-params86243.h'
+removed 'deps/jemalloc/test/include/test/SFMT-sse2.h'
+removed 'deps/jemalloc/test/include/test/SFMT.h'
+removed 'deps/jemalloc/test/include/test/btalloc.h'
+removed 'deps/jemalloc/test/include/test/extent_hooks.h'
+removed 'deps/jemalloc/test/include/test/jemalloc_test.h.in'
+removed 'deps/jemalloc/test/include/test/jemalloc_test_defs.h.in'
+removed 'deps/jemalloc/test/include/test/math.h'
+removed 'deps/jemalloc/test/include/test/mq.h'
+removed 'deps/jemalloc/test/include/test/mtx.h'
+removed 'deps/jemalloc/test/include/test/test.h'
+removed 'deps/jemalloc/test/include/test/thd.h'
+removed 'deps/jemalloc/test/include/test/timer.h'
+removed directory 'deps/jemalloc/test/include/test'
+removed directory 'deps/jemalloc/test/include'
+removed 'deps/jemalloc/test/integration/MALLOCX_ARENA.c'
+removed 'deps/jemalloc/test/integration/aligned_alloc.c'
+removed 'deps/jemalloc/test/integration/allocated.c'
+removed 'deps/jemalloc/test/integration/cpp/basic.cpp'
+removed directory 'deps/jemalloc/test/integration/cpp'
+removed 'deps/jemalloc/test/integration/extent.c'
+removed 'deps/jemalloc/test/integration/extent.sh'
+removed 'deps/jemalloc/test/integration/mallocx.c'
+removed 'deps/jemalloc/test/integration/mallocx.sh'
+removed 'deps/jemalloc/test/integration/overflow.c'
+removed 'deps/jemalloc/test/integration/posix_memalign.c'
+removed 'deps/jemalloc/test/integration/rallocx.c'
+removed 'deps/jemalloc/test/integration/sdallocx.c'
+removed 'deps/jemalloc/test/integration/thread_arena.c'
+removed 'deps/jemalloc/test/integration/thread_tcache_enabled.c'
+removed 'deps/jemalloc/test/integration/xallocx.c'
+removed 'deps/jemalloc/test/integration/xallocx.sh'
+removed directory 'deps/jemalloc/test/integration'
+removed 'deps/jemalloc/test/src/SFMT.c'
+removed 'deps/jemalloc/test/src/btalloc.c'
+removed 'deps/jemalloc/test/src/btalloc_0.c'
+removed 'deps/jemalloc/test/src/btalloc_1.c'
+removed 'deps/jemalloc/test/src/math.c'
+removed 'deps/jemalloc/test/src/mq.c'
+removed 'deps/jemalloc/test/src/mtx.c'
+removed 'deps/jemalloc/test/src/test.c'
+removed 'deps/jemalloc/test/src/thd.c'
+removed 'deps/jemalloc/test/src/timer.c'
+removed directory 'deps/jemalloc/test/src'
+removed 'deps/jemalloc/test/stress/microbench.c'
+removed directory 'deps/jemalloc/test/stress'
+removed 'deps/jemalloc/test/test.sh.in'
+removed 'deps/jemalloc/test/unit/SFMT.c'
+removed 'deps/jemalloc/test/unit/a0.c'
+removed 'deps/jemalloc/test/unit/arena_reset.c'
+removed 'deps/jemalloc/test/unit/arena_reset_prof.c'
+removed 'deps/jemalloc/test/unit/arena_reset_prof.sh'
+removed 'deps/jemalloc/test/unit/atomic.c'
+removed 'deps/jemalloc/test/unit/background_thread.c'
+removed 'deps/jemalloc/test/unit/background_thread_enable.c'
+removed 'deps/jemalloc/test/unit/base.c'
+removed 'deps/jemalloc/test/unit/bit_util.c'
+removed 'deps/jemalloc/test/unit/bitmap.c'
+removed 'deps/jemalloc/test/unit/ckh.c'
+removed 'deps/jemalloc/test/unit/decay.c'
+removed 'deps/jemalloc/test/unit/decay.sh'
+removed 'deps/jemalloc/test/unit/div.c'
+removed 'deps/jemalloc/test/unit/emitter.c'
+removed 'deps/jemalloc/test/unit/extent_quantize.c'
+removed 'deps/jemalloc/test/unit/fork.c'
+removed 'deps/jemalloc/test/unit/hash.c'
+removed 'deps/jemalloc/test/unit/hooks.c'
+removed 'deps/jemalloc/test/unit/junk.c'
+removed 'deps/jemalloc/test/unit/junk.sh'
+removed 'deps/jemalloc/test/unit/junk_alloc.c'
+removed 'deps/jemalloc/test/unit/junk_alloc.sh'
+removed 'deps/jemalloc/test/unit/junk_free.c'
+removed 'deps/jemalloc/test/unit/junk_free.sh'
+removed 'deps/jemalloc/test/unit/log.c'
+removed 'deps/jemalloc/test/unit/mallctl.c'
+removed 'deps/jemalloc/test/unit/malloc_io.c'
+removed 'deps/jemalloc/test/unit/math.c'
+removed 'deps/jemalloc/test/unit/mq.c'
+removed 'deps/jemalloc/test/unit/mtx.c'
+removed 'deps/jemalloc/test/unit/nstime.c'
+removed 'deps/jemalloc/test/unit/pack.c'
+removed 'deps/jemalloc/test/unit/pack.sh'
+removed 'deps/jemalloc/test/unit/pages.c'
+removed 'deps/jemalloc/test/unit/ph.c'
+removed 'deps/jemalloc/test/unit/prng.c'
+removed 'deps/jemalloc/test/unit/prof_accum.c'
+removed 'deps/jemalloc/test/unit/prof_accum.sh'
+removed 'deps/jemalloc/test/unit/prof_active.c'
+removed 'deps/jemalloc/test/unit/prof_active.sh'
+removed 'deps/jemalloc/test/unit/prof_gdump.c'
+removed 'deps/jemalloc/test/unit/prof_gdump.sh'
+removed 'deps/jemalloc/test/unit/prof_idump.c'
+removed 'deps/jemalloc/test/unit/prof_idump.sh'
+removed 'deps/jemalloc/test/unit/prof_reset.c'
+removed 'deps/jemalloc/test/unit/prof_reset.sh'
+removed 'deps/jemalloc/test/unit/prof_tctx.c'
+removed 'deps/jemalloc/test/unit/prof_tctx.sh'
+removed 'deps/jemalloc/test/unit/prof_thread_name.c'
+removed 'deps/jemalloc/test/unit/prof_thread_name.sh'
+removed 'deps/jemalloc/test/unit/ql.c'
+removed 'deps/jemalloc/test/unit/qr.c'
+removed 'deps/jemalloc/test/unit/rb.c'
+removed 'deps/jemalloc/test/unit/retained.c'
+removed 'deps/jemalloc/test/unit/rtree.c'
+removed 'deps/jemalloc/test/unit/size_classes.c'
+removed 'deps/jemalloc/test/unit/slab.c'
+removed 'deps/jemalloc/test/unit/smoothstep.c'
+removed 'deps/jemalloc/test/unit/spin.c'
+removed 'deps/jemalloc/test/unit/stats.c'
+removed 'deps/jemalloc/test/unit/stats_print.c'
+removed 'deps/jemalloc/test/unit/ticker.c'
+removed 'deps/jemalloc/test/unit/tsd.c'
+removed 'deps/jemalloc/test/unit/witness.c'
+removed 'deps/jemalloc/test/unit/zero.c'
+removed 'deps/jemalloc/test/unit/zero.sh'
+removed directory 'deps/jemalloc/test/unit'
+removed directory 'deps/jemalloc/test'
+removed directory 'deps/jemalloc'
++ sed -i -e 's|\t@|\t|g' deps/lua/src/Makefile
++ sed -i -e 's|$(QUIET_CC)||g' src/Makefile
++ sed -i -e 's|$(QUIET_LINK)||g' src/Makefile
++ sed -i -e 's|$(QUIET_INSTALL)||g' src/Makefile
++ sed -i -e 's|$(CFLAGS)|-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables|g' deps/Makefile
++ sed -i -e 's|OPTIMIZATION?=-O3|OPTIMIZATION=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables|g' deps/hiredis/Makefile
++ sed -i -e 's|$(LDFLAGS)| -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags|g' deps/hiredis/Makefile
++ sed -i -e 's|$(CFLAGS)|-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables|g' deps/linenoise/Makefile
++ sed -i -e 's|$(LDFLAGS)| -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags|g' deps/linenoise/Makefile
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.IgP8dt
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd redis-6.0-rc3
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/bin/make -O -j4 V=1 VERBOSE=1 DEBUG= 'LDFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' 'CFLAGS+=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables' 'LUA_LDFLAGS+= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' USE_JEMALLOC=yes MALLOC=jemalloc all
+cd src && /usr/bin/make all
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MM *.c > Makefile.dep 2> /dev/null || true
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-rdb redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html Makefile.dep dict-benchmark
+rm -f adlist.d quicklist.d ae.d anet.d dict.d server.d sds.d zmalloc.d lzf_c.d lzf_d.d pqsort.d zipmap.d sha1.d ziplist.d release.d networking.d util.d object.d db.d replication.d rdb.d t_string.d t_list.d t_set.d t_zset.d t_hash.d config.d aof.d pubsub.d multi.d debug.d sort.d intset.d syncio.d cluster.d crc16.d endianconv.d slowlog.d scripting.d bio.d rio.d rand.d memtest.d crc64.d bitops.d sentinel.d notify.d setproctitle.d blocked.d hyperloglog.d latency.d sparkline.d redis-check-rdb.d redis-check-aof.d geo.d lazyfree.d module.d evict.d expire.d geohash.d geohash_helper.d childinfo.d defrag.d siphash.d rax.d t_stream.d listpack.d localtime.d lolwut.d lolwut5.d lolwut6.d acl.d gopher.d tracking.d connection.d tls.d sha256.d timeout.d anet.d adlist.d dict.d redis-cli.d zmalloc.d release.d ae.d crc64.d siphash.d crc16.d ae.d anet.d redis-benchmark.d adlist.d dict.d zmalloc.d siphash.d
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+(cd ../deps && /usr/bin/make distclean)
+(cd hiredis && /usr/bin/make clean) > /dev/null || true
+(cd linenoise && /usr/bin/make clean) > /dev/null || true
+(cd lua && /usr/bin/make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && /usr/bin/make distclean) > /dev/null || true
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(rm -f .make-*)
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+(rm -f .make-*)
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+echo STD=-std=c11 -pedantic -DREDIS_STATIC='' >> .make-settings
+echo WARN=-Wall -W -Wno-missing-field-initializers >> .make-settings
+echo OPT=-O2 >> .make-settings
+echo MALLOC=jemalloc >> .make-settings
+echo CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables >> .make-settings
+echo LDFLAGS=-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags >> .make-settings
+echo REDIS_CFLAGS= >> .make-settings
+echo REDIS_LDFLAGS= >> .make-settings
+echo PREV_FINAL_CFLAGS=-std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc >> .make-settings
+echo PREV_FINAL_LDFLAGS=-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags   -rdynamic >> .make-settings
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+(cd ../deps && /usr/bin/make hiredis linenoise lua jemalloc)
+(cd hiredis && /usr/bin/make clean) > /dev/null || true
+(cd linenoise && /usr/bin/make clean) > /dev/null || true
+(cd lua && /usr/bin/make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && /usr/bin/make distclean) > /dev/null || true
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(rm -f .make-*)
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(echo "-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables" > .make-cflags)
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(echo "-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags" > .make-ldflags)
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+[32;1mMAKE[0m [37;1mhiredis[0m
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+cd hiredis && /usr/bin/make static 
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+[32;1mMAKE[0m [37;1mlinenoise[0m
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+cd linenoise && /usr/bin/make
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+[32;1mMAKE[0m [37;1mlua[0m
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+cd lua/src && /usr/bin/make all CFLAGS="-O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC" MYLDFLAGS="-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags" AR="ar rcu"
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+[32;1mMAKE[0m [37;1mjemalloc[0m
+cd jemalloc && ./configure --with-version=5.1.0-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ --enable-cc-silence CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables" LDFLAGS="-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags"
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+make[2]: *** [Makefile:84: jemalloc] Error 1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[2]: *** Waiting for unfinished jobs....
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb net.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lcode.o lcode.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lapi.o lapi.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/linenoise'
+cc  -Wall -Os  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC -c linenoise.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/linenoise'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldump.o ldump.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lfunc.o lfunc.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldo.o ldo.c
+ldo.c: In function 'f_parser':
+ldo.c:496:7: warning: unused variable 'c' [-Wunused-variable]
+  496 |   int c = luaZ_lookahead(p->z);
+      |       ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldebug.o ldebug.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb hiredis.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lmem.o lmem.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lobject.o lobject.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lopcodes.o lopcodes.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o llex.o llex.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lgc.o lgc.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstate.o lstate.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstring.o lstring.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltm.o ltm.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lundump.o lundump.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb sds.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltable.o ltable.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lzio.o lzio.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lparser.o lparser.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o strbuf.o strbuf.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o fpconv.o fpconv.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb async.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lauxlib.o lauxlib.c
+lauxlib.c: In function 'luaL_loadfile':
+lauxlib.c:577:4: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  577 |    while ((c = getc(lf.f)) != EOF && c != LUA_SIGNATURE[0]) ;
+      |    ^~~~~
+lauxlib.c:578:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+  578 |     lf.extraline = 0;
+      |     ^~
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lbaselib.o lbaselib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lvm.o lvm.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldblib.o ldblib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lmathlib.o lmathlib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb read.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o liolib.o liolib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb sockcompat.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+ar rcs libhiredis.a net.o hiredis.o sds.o async.o read.o sockcompat.o
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o loslib.o loslib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o linit.o linit.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltablib.o ltablib.c
+ltablib.c: In function 'addfield':
+ltablib.c:137:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  137 |   if (!lua_isstring(L, -1))
+      |   ^~
+ltablib.c:140:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  140 |     luaL_addvalue(b);
+      |     ^~~~~~~~~~~~~
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o loadlib.o loadlib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_struct.o lua_struct.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_bit.o lua_bit.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstrlib.o lstrlib.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_cmsgpack.o lua_cmsgpack.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_cjson.o lua_cjson.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+ar rcu liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o strbuf.o fpconv.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o lua_bit.o	# DLL needs all object files
+ranlib liblua.a
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o luac.o luac.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua.o lua.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o print.o print.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -o lua -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags lua.o liblua.a -lm 
+/usr/bin/ld: liblua.a(loslib.o): in function `os_tmpname':
+/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src/loslib.c:60: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -o luac -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags luac.o print.o liblua.a -lm 
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+make[1]: [Makefile:242: persist-settings] Error 2 (ignored)
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o adlist.o -c adlist.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o ae.o -c ae.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o anet.o -c anet.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o quicklist.o -c quicklist.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o dict.o -c dict.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lzf_c.o -c lzf_c.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o zmalloc.o -c zmalloc.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lzf_d.o -c lzf_d.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o pqsort.o -c pqsort.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o zipmap.o -c zipmap.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sds.o -c sds.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o release.o -c release.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sha1.o -c sha1.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o ziplist.o -c ziplist.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o util.o -c util.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o server.o -c server.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o object.o -c object.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o db.o -c db.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o networking.o -c networking.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_string.o -c t_string.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_list.o -c t_list.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o replication.o -c replication.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_set.o -c t_set.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rdb.o -c rdb.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_hash.o -c t_hash.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o pubsub.o -c pubsub.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o multi.o -c multi.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o config.o -c config.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o aof.o -c aof.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_zset.o -c t_zset.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o intset.o -c intset.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o syncio.o -c syncio.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sort.o -c sort.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o endianconv.o -c endianconv.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o crc16.o -c crc16.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o debug.o -c debug.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o slowlog.o -c slowlog.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o bio.o -c bio.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rand.o -c rand.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rio.o -c rio.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o crc64.o -c crc64.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o memtest.o -c memtest.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o bitops.o -c bitops.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o scripting.o -c scripting.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o notify.o -c notify.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o setproctitle.o -c setproctitle.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o blocked.o -c blocked.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o latency.o -c latency.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o hyperloglog.o -c hyperloglog.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sparkline.o -c sparkline.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o cluster.o -c cluster.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-check-rdb.o -c redis-check-rdb.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-check-aof.o -c redis-check-aof.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lazyfree.o -c lazyfree.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sentinel.o -c sentinel.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geo.o -c geo.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o evict.o -c evict.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geohash.o -c geohash.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o expire.o -c expire.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geohash_helper.o -c geohash_helper.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o defrag.o -c defrag.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o childinfo.o -c childinfo.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o siphash.o -c siphash.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o listpack.o -c listpack.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o localtime.o -c localtime.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut.o -c lolwut.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut5.o -c lolwut5.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut6.o -c lolwut6.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rax.o -c rax.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_stream.o -c t_stream.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o gopher.o -c gopher.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o connection.o -c connection.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o tracking.o -c tracking.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sha256.o -c sha256.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o tls.o -c tls.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o timeout.o -c timeout.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o acl.o -c acl.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o module.o -c module.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags   -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o lolwut6.o acl.o gopher.o tracking.o connection.o tls.o sha256.o timeout.o ../deps/hiredis/libhiredis.a ../deps/lua/src/liblua.a -lm -ldl -pthread -lrt -ljemalloc -ldl
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+install redis-server redis-sentinel
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+install redis-server redis-check-rdb
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+install redis-server redis-check-aof
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-benchmark.o -c redis-benchmark.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags   -rdynamic -o redis-benchmark ae.o anet.o redis-benchmark.o adlist.o dict.o zmalloc.o siphash.o ../deps/hiredis/libhiredis.a -lm -ldl -pthread -lrt -ljemalloc -ldl
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC='' -Wall -W -Wno-missing-field-initializers -O2  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-cli.o -c redis-cli.c
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags   -rdynamic -o redis-cli anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o ../deps/hiredis/libhiredis.a ../deps/linenoise/linenoise.o -lm -ldl -pthread -lrt -ljemalloc -ldl
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+
+Hint: It's a good idea to run 'make test' ;)
+
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.BNzJvt
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64
++ cd redis-6.0-rc3
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64 'INSTALL=/usr/bin/install -p' PREFIX=/home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr
+cd src && /usr/bin/make install
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MM *.c > Makefile.dep 2> /dev/null || true
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-rdb redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html Makefile.dep dict-benchmark
+rm -f adlist.d quicklist.d ae.d anet.d dict.d server.d sds.d zmalloc.d lzf_c.d lzf_d.d pqsort.d zipmap.d sha1.d ziplist.d release.d networking.d util.d object.d db.d replication.d rdb.d t_string.d t_list.d t_set.d t_zset.d t_hash.d config.d aof.d pubsub.d multi.d debug.d sort.d intset.d syncio.d cluster.d crc16.d endianconv.d slowlog.d scripting.d bio.d rio.d rand.d memtest.d crc64.d bitops.d sentinel.d notify.d setproctitle.d blocked.d hyperloglog.d latency.d sparkline.d redis-check-rdb.d redis-check-aof.d geo.d lazyfree.d module.d evict.d expire.d geohash.d geohash_helper.d childinfo.d defrag.d siphash.d rax.d t_stream.d listpack.d localtime.d lolwut.d lolwut5.d lolwut6.d acl.d gopher.d tracking.d connection.d tls.d sha256.d timeout.d anet.d adlist.d dict.d redis-cli.d zmalloc.d release.d ae.d crc64.d siphash.d crc16.d ae.d anet.d redis-benchmark.d adlist.d dict.d zmalloc.d siphash.d
+(cd ../deps && /usr/bin/make distclean)
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(cd hiredis && /usr/bin/make clean) > /dev/null || true
+(cd linenoise && /usr/bin/make clean) > /dev/null || true
+(cd lua && /usr/bin/make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && /usr/bin/make distclean) > /dev/null || true
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+(rm -f .make-*)
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(rm -f .make-*)
+echo STD=-std=c11 -pedantic -DREDIS_STATIC= >> .make-settings
+echo WARN=-Wall -W -Wno-missing-field-initializers >> .make-settings
+echo OPT=-O2 >> .make-settings
+echo MALLOC=jemalloc >> .make-settings
+echo CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables >> .make-settings
+echo LDFLAGS=-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags >> .make-settings
+echo REDIS_CFLAGS= >> .make-settings
+echo REDIS_LDFLAGS= >> .make-settings
+echo PREV_FINAL_CFLAGS=-std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc >> .make-settings
+echo PREV_FINAL_LDFLAGS=-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  -g -ggdb -rdynamic >> .make-settings
+(cd ../deps && /usr/bin/make hiredis linenoise lua jemalloc)
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+(cd hiredis && /usr/bin/make clean) > /dev/null || true
+(cd linenoise && /usr/bin/make clean) > /dev/null || true
+(cd lua && /usr/bin/make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && /usr/bin/make distclean) > /dev/null || true
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+(rm -f .make-*)
+(echo "-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables" > .make-cflags)
+(echo "" > .make-ldflags)
+[32;1mMAKE[0m [37;1mhiredis[0m
+cd hiredis && /usr/bin/make static 
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb net.c
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb hiredis.c
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb sds.c
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb async.c
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb read.c
+cc -std=c99 -pedantic -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -Wall -W -Wstrict-prototypes -Wwrite-strings -Wno-missing-field-initializers -g -ggdb sockcompat.c
+ar rcs libhiredis.a net.o hiredis.o sds.o async.o read.o sockcompat.o
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/hiredis'
+[32;1mMAKE[0m [37;1mlinenoise[0m
+cd linenoise && /usr/bin/make
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/linenoise'
+cc  -Wall -Os -g -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC -c linenoise.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/linenoise'
+[32;1mMAKE[0m [37;1mlua[0m
+cd lua/src && /usr/bin/make all CFLAGS="-O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC" MYLDFLAGS="" AR="ar rcu"
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lapi.o lapi.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lcode.o lcode.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldebug.o ldebug.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldo.o ldo.c
+ldo.c: In function 'f_parser':
+ldo.c:496:7: warning: unused variable 'c' [-Wunused-variable]
+  496 |   int c = luaZ_lookahead(p->z);
+      |       ^
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldump.o ldump.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lfunc.o lfunc.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lgc.o lgc.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o llex.o llex.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lmem.o lmem.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lobject.o lobject.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lopcodes.o lopcodes.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lparser.o lparser.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstate.o lstate.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstring.o lstring.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltable.o ltable.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltm.o ltm.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lundump.o lundump.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lvm.o lvm.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lzio.o lzio.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o strbuf.o strbuf.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o fpconv.o fpconv.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lauxlib.o lauxlib.c
+lauxlib.c: In function 'luaL_loadfile':
+lauxlib.c:577:4: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  577 |    while ((c = getc(lf.f)) != EOF && c != LUA_SIGNATURE[0]) ;
+      |    ^~~~~
+lauxlib.c:578:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+  578 |     lf.extraline = 0;
+      |     ^~
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lbaselib.o lbaselib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ldblib.o ldblib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o liolib.o liolib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lmathlib.o lmathlib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o loslib.o loslib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o ltablib.o ltablib.c
+ltablib.c: In function 'addfield':
+ltablib.c:137:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  137 |   if (!lua_isstring(L, -1))
+      |   ^~
+ltablib.c:140:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  140 |     luaL_addvalue(b);
+      |     ^~~~~~~~~~~~~
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lstrlib.o lstrlib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o loadlib.o loadlib.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o linit.o linit.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_cjson.o lua_cjson.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_struct.o lua_struct.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_cmsgpack.o lua_cmsgpack.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua_bit.o lua_bit.c
+ar rcu liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o strbuf.o fpconv.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o lua_bit.o	# DLL needs all object files
+ranlib liblua.a
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o lua.o lua.c
+cc -o lua  lua.o liblua.a -lm 
+/usr/bin/ld: liblua.a(loslib.o): in function `os_tmpname':
+/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src/loslib.c:60: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o luac.o luac.c
+cc -O2 -Wall -DLUA_ANSI -DENABLE_CJSON_GLOBAL -DREDIS_STATIC='' -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC   -c -o print.o print.c
+cc -o luac  luac.o print.o liblua.a -lm 
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps/lua/src'
+[32;1mMAKE[0m [37;1mjemalloc[0m
+cd jemalloc && ./configure --with-version=5.1.0-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ --enable-cc-silence CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables" LDFLAGS=""
+/bin/sh: line 0: cd: jemalloc: No such file or directory
+make[2]: *** [Makefile:84: jemalloc] Error 1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/deps'
+make[1]: [Makefile:242: persist-settings] Error 2 (ignored)
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o adlist.o -c adlist.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o quicklist.o -c quicklist.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o ae.o -c ae.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o anet.o -c anet.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o dict.o -c dict.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o server.o -c server.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sds.o -c sds.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o zmalloc.o -c zmalloc.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lzf_c.o -c lzf_c.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lzf_d.o -c lzf_d.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o pqsort.o -c pqsort.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o zipmap.o -c zipmap.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sha1.o -c sha1.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o ziplist.o -c ziplist.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o release.o -c release.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o networking.o -c networking.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o util.o -c util.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o object.o -c object.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o db.o -c db.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o replication.o -c replication.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rdb.o -c rdb.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_string.o -c t_string.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_list.o -c t_list.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_set.o -c t_set.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_zset.o -c t_zset.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_hash.o -c t_hash.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o config.o -c config.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o aof.o -c aof.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o pubsub.o -c pubsub.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o multi.o -c multi.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o debug.o -c debug.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sort.o -c sort.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o intset.o -c intset.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o syncio.o -c syncio.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o cluster.o -c cluster.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o crc16.o -c crc16.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o endianconv.o -c endianconv.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o slowlog.o -c slowlog.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o scripting.o -c scripting.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o bio.o -c bio.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rio.o -c rio.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rand.o -c rand.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o memtest.o -c memtest.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o crc64.o -c crc64.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o bitops.o -c bitops.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sentinel.o -c sentinel.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o notify.o -c notify.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o setproctitle.o -c setproctitle.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o blocked.o -c blocked.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o hyperloglog.o -c hyperloglog.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o latency.o -c latency.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sparkline.o -c sparkline.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-check-rdb.o -c redis-check-rdb.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-check-aof.o -c redis-check-aof.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geo.o -c geo.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lazyfree.o -c lazyfree.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o module.o -c module.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o evict.o -c evict.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o expire.o -c expire.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geohash.o -c geohash.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o geohash_helper.o -c geohash_helper.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o childinfo.o -c childinfo.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o defrag.o -c defrag.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o siphash.o -c siphash.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o rax.o -c rax.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o t_stream.o -c t_stream.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o listpack.o -c listpack.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o localtime.o -c localtime.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut.o -c lolwut.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut5.o -c lolwut5.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o lolwut6.o -c lolwut6.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o acl.o -c acl.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o gopher.o -c gopher.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o tracking.o -c tracking.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o connection.o -c connection.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o tls.o -c tls.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o sha256.o -c sha256.c
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o timeout.o -c timeout.c
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  -g -ggdb -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o lolwut6.o acl.o gopher.o tracking.o connection.o tls.o sha256.o timeout.o ../deps/hiredis/libhiredis.a ../deps/lua/src/liblua.a -lm -ldl -pthread -lrt -ljemalloc -ldl
+/usr/bin/install -p redis-server redis-sentinel
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-cli.o -c redis-cli.c
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  -g -ggdb -rdynamic -o redis-cli anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o ../deps/hiredis/libhiredis.a ../deps/linenoise/linenoise.o -lm -ldl -pthread -lrt -ljemalloc -ldl
+cc -std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -DJEMALLOC_NO_DEMANGLE -I/usr/include/jemalloc -MMD -o redis-benchmark.o -c redis-benchmark.c
+cc -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  -g -ggdb -rdynamic -o redis-benchmark ae.o anet.o redis-benchmark.o adlist.o dict.o zmalloc.o siphash.o ../deps/hiredis/libhiredis.a -lm -ldl -pthread -lrt -ljemalloc -ldl
+/usr/bin/install -p redis-server redis-check-rdb
+/usr/bin/install -p redis-server redis-check-aof
+
+Hint: It's a good idea to run 'make test' ;)
+
+/usr/bin/install -p redis-server /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin
+/usr/bin/install -p redis-benchmark /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin
+/usr/bin/install -p redis-cli /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/redis-6.0-rc3/src'
++ install -d /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/var/lib/redis
++ install -d /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/var/log/redis
++ install -pDm644 /home/stig/rpmbuild/SOURCES/redis.logrotate /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/etc/logrotate.d/redis
++ install -pDm640 redis.conf /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/etc/redis.conf
++ install -pDm640 sentinel.conf /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/etc/redis-sentinel.conf
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/systemd/system
++ install -pm644 /home/stig/rpmbuild/SOURCES/redis.service /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/systemd/system
++ install -pm644 /home/stig/rpmbuild/SOURCES/redis-sentinel.service /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/systemd/system
++ install -p -D -m 644 /home/stig/rpmbuild/SOURCES/redis-limit-systemd /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/systemd/system/redis.service.d/limit.conf
++ install -p -D -m 644 /home/stig/rpmbuild/SOURCES/redis-limit-systemd /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/systemd/system/redis-sentinel.service.d/limit.conf
++ chmod 755 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-benchmark /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-check-aof /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-check-rdb /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-cli /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-sentinel /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-server
++ install -pDm755 /home/stig/rpmbuild/SOURCES/redis-shutdown /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/libexec/redis-shutdown
+++ dirname /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man
++ man=/home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share
++ for page in man/man?/*
++ install -Dpm644 man/man1/redis-benchmark.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-benchmark.1
++ for page in man/man?/*
++ install -Dpm644 man/man1/redis-check-aof.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-check-aof.1
++ for page in man/man?/*
++ install -Dpm644 man/man1/redis-check-rdb.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-check-rdb.1
++ for page in man/man?/*
++ install -Dpm644 man/man1/redis-cli.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-cli.1
++ for page in man/man?/*
++ install -Dpm644 man/man1/redis-server.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-server.1
++ for page in man/man?/*
++ install -Dpm644 man/man5/redis.conf.5 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man5/redis.conf.5
++ ln -s redis-server.1 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man1/redis-sentinel.1
++ ln -s redis.conf.5 /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/man/man5/redis-sentinel.conf.5
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/tmpfiles.d
++ install -m 0644 -D /home/stig/rpmbuild/SOURCES/redis.tmpfiles.d /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/lib/tmpfiles.d/redis.conf
++ mkdir -p /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/run/redis
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 6.0-0.rc3.1.mga8 --unique-debug-suffix -6.0-0.rc3.1.mga8.x86_64 --unique-debug-src-base redis-6.0-0.rc3.1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/redis-6.0-rc3
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-server
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-cli
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-benchmark
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-server
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-cli
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/bin/redis-benchmark
+original debug info size: 6672kB, size after compression: 5564kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 3 CRC32s, 0 CRC32s did match.
+9348 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/libexec/redis-shutdown from /bin/bash to #!/usr/bin/bash
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.uEjpps
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd redis-6.0-rc3
++ '[' 1 -eq 1 ']'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: redis-6.0-0.rc3.1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.X4GE7t
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd redis-6.0-rc3
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ cp -pr 00-RELEASENOTES /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ cp -pr BUGS /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ cp -pr CONTRIBUTING /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ cp -pr MANIFESTO /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ cp -pr README.md /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/doc/redis
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.JHOKAs
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd redis-6.0-rc3
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/licenses/redis
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/licenses/redis
++ cp -pr COPYING /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64/usr/share/licenses/redis
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: config(redis) = 6.0-0.rc3.1.mga8 redis = 6.0-0.rc3.1.mga8 redis(x86-64) = 6.0-0.rc3.1.mga8
+Requires(interp): /bin/sh /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(pre): /bin/sh shadow-utils
+Requires(post): /bin/sh systemd
+Requires(preun): /bin/sh systemd
+Requires(postun): /bin/sh systemd
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.11)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.28)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.6)(64bit) libc.so.6(GLIBC_2.7)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libjemalloc.so.2()(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libm.so.6(GLIBC_2.29)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit)
+Processing files: redis-debugsource-6.0-0.rc3.1.mga8.x86_64
+Provides: redis-debugsource = 6.0-0.rc3.1.mga8 redis-debugsource(x86-64) = 6.0-0.rc3.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: redis-debuginfo-6.0-0.rc3.1.mga8.x86_64
+Provides: debuginfo(build-id) = 0226a9573f2fed9069f1ee550467c1ab4f60430c debuginfo(build-id) = 07dba15708be340363375f1eebb0827ca7bb65e3 debuginfo(build-id) = 16c09d386c7d23a8e39061ceea22b2a7bbcdfe4b redis-debuginfo = 6.0-0.rc3.1.mga8 redis-debuginfo(x86-64) = 6.0-0.rc3.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: redis-debugsource(x86-64) = 6.0-0.rc3.1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/redis-6.0-0.rc3.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/redis-debuginfo-6.0-0.rc3.1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/redis-debugsource-6.0-0.rc3.1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.9jaWdr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd redis-6.0-rc3
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/redis-6.0-0.rc3.1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.r7Q5vu
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf redis-6.0-rc3
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
