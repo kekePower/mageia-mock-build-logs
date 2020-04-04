@@ -1,0 +1,336 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 6: %{nil}
+
+Installing /home/stig/rpmbuild/SRPMS/spdlog-1.5.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.Hsvg2n
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf spdlog-1.5.0
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/v1.5.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd spdlog-1.5.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ mkdir -p x86_64-mageia-linux-gnu
++ find . -name .gitignore -exec rm '{}' ';'
++ sed -i -e 's,\r,,' README.md
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.BxMO9n
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd spdlog-1.5.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ pushd x86_64-mageia-linux-gnu
+~/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu ~/rpmbuild/BUILD/spdlog-1.5.0
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -S .. -B . -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -G Ninja -DSPDLOG_BUILD_EXAMPLES=OFF -DSPDLOG_BUILD_BENCH=OFF -DSPDLOG_BUILD_TESTS=ON -DSPDLOG_FMT_EXTERNAL=ON -DSPDLOG_BUILD_SHARED=ON
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build spdlog: 1.5.0
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Build type: RelWithDebInfo
+-- Generating examples
+-- Generating tests
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.6.3") 
+-- Checking for module 'libsystemd'
+--   Found libsystemd, version 245
+-- Generating install
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_C_FLAGS_RELWITHDEBINFO
+    CMAKE_VERBOSE_MAKEFILE
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SPDLOG_BUILD_EXAMPLES
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu
++ popd
+~/rpmbuild/BUILD/spdlog-1.5.0
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ /usr/bin/ninja -v -j4 -C x86_64-mageia-linux-gnu
+ninja: Entering directory `x86_64-mageia-linux-gnu'
+[1/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dspdlog_EXPORTS -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -MF CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c ../src/stdout_sinks.cpp
+[2/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dspdlog_EXPORTS -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -MF CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c ../src/color_sinks.cpp
+[3/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dspdlog_EXPORTS -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT CMakeFiles/spdlog.dir/src/async.cpp.o -MF CMakeFiles/spdlog.dir/src/async.cpp.o.d -o CMakeFiles/spdlog.dir/src/async.cpp.o -c ../src/async.cpp
+[4/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dspdlog_EXPORTS -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -MF CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c ../src/file_sinks.cpp
+[5/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_file_helper.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_file_helper.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_file_helper.cpp.o -c ../tests/test_file_helper.cpp
+[6/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT example/CMakeFiles/example.dir/example.cpp.o -MF example/CMakeFiles/example.dir/example.cpp.o.d -o example/CMakeFiles/example.dir/example.cpp.o -c ../example/example.cpp
+[7/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_file_logging.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_file_logging.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_file_logging.cpp.o -c ../tests/test_file_logging.cpp
+[8/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -Dspdlog_EXPORTS -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT CMakeFiles/spdlog.dir/src/spdlog.cpp.o -MF CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c ../src/spdlog.cpp
+[9/28] : && /usr/bin/c++ -fPIC -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -shared -Wl,-soname,libspdlog.so.1 -o libspdlog.so.1.5.0 CMakeFiles/spdlog.dir/src/spdlog.cpp.o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o CMakeFiles/spdlog.dir/src/async.cpp.o  /usr/lib64/libfmt.so.5.3.0  -lpthread  -Wl,--as-needed && :
+[10/28] /usr/bin/cmake -E cmake_symlink_library libspdlog.so.1.5.0  libspdlog.so.1 libspdlog.so && :
+[11/28] : && /usr/bin/c++  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -rdynamic example/CMakeFiles/example.dir/example.cpp.o  -o example/example  -Wl,-rpath,/home/stig/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu  libspdlog.so.1.5.0  -lpthread  /usr/lib64/libfmt.so.5.3.0  -Wl,--as-needed && :
+[12/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_misc.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_misc.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_misc.cpp.o -c ../tests/test_misc.cpp
+[13/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_pattern_formatter.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_pattern_formatter.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_pattern_formatter.cpp.o -c ../tests/test_pattern_formatter.cpp
+[14/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_async.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_async.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_async.cpp.o -c ../tests/test_async.cpp
+[15/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/utils.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/utils.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/utils.cpp.o -c ../tests/utils.cpp
+[16/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_daily_logger.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_daily_logger.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_daily_logger.cpp.o -c ../tests/test_daily_logger.cpp
+[17/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_mpmc_q.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_mpmc_q.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_mpmc_q.cpp.o -c ../tests/test_mpmc_q.cpp
+[18/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_macros.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_macros.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_macros.cpp.o -c ../tests/test_macros.cpp
+[19/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_registry.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_registry.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_registry.cpp.o -c ../tests/test_registry.cpp
+[20/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_stdout_api.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_stdout_api.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_stdout_api.cpp.o -c ../tests/test_stdout_api.cpp
+[21/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_dup_filter.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_dup_filter.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_dup_filter.cpp.o -c ../tests/test_dup_filter.cpp
+[22/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_fmt_helper.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_fmt_helper.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_fmt_helper.cpp.o -c ../tests/test_fmt_helper.cpp
+[23/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_create_dir.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_create_dir.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_create_dir.cpp.o -c ../tests/test_create_dir.cpp
+[24/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_systemd.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_systemd.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_systemd.cpp.o -c ../tests/test_systemd.cpp
+[25/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_backtrace.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_backtrace.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_backtrace.cpp.o -c ../tests/test_backtrace.cpp
+[26/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/test_errors.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/test_errors.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/test_errors.cpp.o -c ../tests/test_errors.cpp
+[27/28] /usr/bin/c++  -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I../include -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -Wall -Wextra -Wconversion -pedantic -Wfatal-errors -std=c++11 -MD -MT tests/CMakeFiles/spdlog-utests.dir/main.cpp.o -MF tests/CMakeFiles/spdlog-utests.dir/main.cpp.o.d -o tests/CMakeFiles/spdlog-utests.dir/main.cpp.o -c ../tests/main.cpp
+[28/28] : && /usr/bin/c++  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -rdynamic tests/CMakeFiles/spdlog-utests.dir/test_file_helper.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_file_logging.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_daily_logger.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_misc.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_pattern_formatter.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_async.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_registry.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_macros.cpp.o tests/CMakeFiles/spdlog-utests.dir/utils.cpp.o tests/CMakeFiles/spdlog-utests.dir/main.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_mpmc_q.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_dup_filter.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_fmt_helper.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_stdout_api.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_backtrace.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_create_dir.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_errors.cpp.o tests/CMakeFiles/spdlog-utests.dir/test_systemd.cpp.o  -o tests/spdlog-utests  -Wl,-rpath,/home/stig/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu  libspdlog.so.1.5.0  -lsystemd  -lpthread  /usr/lib64/libfmt.so.5.3.0  -Wl,--as-needed && :
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.NXd3qr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
++ cd spdlog-1.5.0
++ '[' 1 -eq 1 ']'
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ DESTDIR=/home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
++ /usr/bin/ninja install -v -j4 -C x86_64-mageia-linux-gnu
+ninja: Entering directory `x86_64-mageia-linux-gnu'
+[0/1] cd /home/stig/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu && /usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/async.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/async_logger-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/async_logger.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/common-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/common.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/backtracer-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/backtracer.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/circular_q.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/console_globals.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/file_helper-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/file_helper.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/fmt_helper.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/log_msg-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/log_msg.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/log_msg_buffer-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/log_msg_buffer.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/mpmc_blocking_q.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/null_mutex.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/os-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/os.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/pattern_formatter-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/pattern_formatter.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/periodic_worker-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/periodic_worker.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/registry-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/registry.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/synchronous_factory.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/thread_pool-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/details/thread_pool.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/fmt
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/fmt/bin_to_hex.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/fmt/fmt.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/fmt/ostr.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/formatter.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/logger-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/logger.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/android_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/ansicolor_sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/ansicolor_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/base_sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/base_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/basic_file_sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/basic_file_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/daily_file_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/dist_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/dup_filter_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/msvc_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/null_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/ostream_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/ringbuffer_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/rotating_file_sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/rotating_file_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/stdout_color_sinks-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/stdout_color_sinks.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/stdout_sinks-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/stdout_sinks.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/syslog_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/systemd_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/wincolor_sink-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/sinks/wincolor_sink.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/spdlog-inl.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/spdlog.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/tweakme.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/include/spdlog/version.h
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/libspdlog.so.1.5.0
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/libspdlog.so.1
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/libspdlog.so
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/pkgconfig/spdlog.pc
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/cmake/spdlog/spdlogConfigTargets.cmake
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/cmake/spdlog/spdlogConfigTargets-relwithdebinfo.cmake
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/cmake/spdlog/spdlogConfig.cmake
+-- Installing: /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/cmake/spdlog/spdlogConfigVersion.cmake
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 1.5.0-1.mga8 --unique-debug-suffix -1.5.0-1.mga8.x86_64 --unique-debug-src-base spdlog-1.5.0-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/spdlog-1.5.0
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/libspdlog.so.1.5.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/lib64/libspdlog.so.1.5.0
+original debug info size: 10788kB, size after compression: 10200kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 1 CRC32s, 0 CRC32s did match.
+335 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.pJH7vo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd spdlog-1.5.0
++ '[' 1 -eq 1 ']'
++ pushd x86_64-mageia-linux-gnu
+~/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu ~/rpmbuild/BUILD/spdlog-1.5.0
++ ctest --output-on-failure
+Test project /home/stig/rpmbuild/BUILD/spdlog-1.5.0/x86_64-mageia-linux-gnu
+    Start 1: spdlog-utests
+1/1 Test #1: spdlog-utests ....................   Passed    3.61 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   3.61 sec
++ popd
+~/rpmbuild/BUILD/spdlog-1.5.0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: lib64spdlog-devel-1.5.0-1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.a2cIHp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd spdlog-1.5.0
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/doc/lib64spdlog-devel
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/doc/lib64spdlog-devel
++ cp -pr README.md /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/doc/lib64spdlog-devel
++ cp -pr example/ /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/doc/lib64spdlog-devel
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.9FqNpn
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd spdlog-1.5.0
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/licenses/lib64spdlog-devel
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/licenses/lib64spdlog-devel
++ cp -pr LICENSE /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64/usr/share/licenses/lib64spdlog-devel
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: cmake(spdlog) = 1.5.0 devel(libspdlog(64bit)) lib64spdlog-devel = 1.5.0-1.mga8 lib64spdlog-devel(x86-64) = 1.5.0-1.mga8 pkgconfig(spdlog) = 1.5.0 spdlog = 1.5.0-1.mga8 spdlog-devel = 1.5.0-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: devel(libfmt(64bit)) devel(libgcc_s(64bit)) devel(libstdc++(64bit)) pkgconfig pkgconfig(fmt)
+Processing files: lib64spdlog1-1.5.0-1.mga8.x86_64
+Provides: lib64spdlog1 = 1.5.0-1.mga8 lib64spdlog1(x86-64) = 1.5.0-1.mga8 libspdlog.so.1()(64bit) spdlog = 1.5.0-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libfmt.so.5()(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(CXXABI_1.3.5)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) libstdc++.so.6(GLIBCXX_3.4.22)(64bit)
+Processing files: spdlog-debugsource-1.5.0-1.mga8.x86_64
+Provides: spdlog-debugsource = 1.5.0-1.mga8 spdlog-debugsource(x86-64) = 1.5.0-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: lib64spdlog1-debuginfo-1.5.0-1.mga8.x86_64
+Provides: debuginfo(build-id) = 23a711b62ba9edd159346fbb42c3f0b8bd5d7571 lib64spdlog1-debuginfo = 1.5.0-1.mga8 lib64spdlog1-debuginfo(x86-64) = 1.5.0-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: spdlog-debugsource(x86-64) = 1.5.0-1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/spdlog-debugsource-1.5.0-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64spdlog-devel-1.5.0-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64spdlog1-1.5.0-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64spdlog1-debuginfo-1.5.0-1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.cyKdMp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd spdlog-1.5.0
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/spdlog-1.5.0-1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.mX6R8o
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf spdlog-1.5.0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!

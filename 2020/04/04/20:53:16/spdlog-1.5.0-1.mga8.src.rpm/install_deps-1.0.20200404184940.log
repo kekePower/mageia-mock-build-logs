@@ -1,0 +1,57 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200404184940/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200404184940/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84650 completed, ETA = --:--:--, speed = 1687k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64fmt5-5.3.0-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   16% of 68872 completed, ETA = --:--:--, speed = 471k                           100% of 68872 completed, ETA = --:--:--, speed = 2586k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 221k completed, ETA = --:--:--, speed = 18.0M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv1-1.34.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 104k completed, ETA = --:--:--, speed = 5479k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/cmake-3.17.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6449k completed, ETA = --:--:--, speed = 77.7M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64fmt-devel-5.3.0-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 69438 completed, ETA = --:--:--, speed = 1614k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/locales-2.31-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 873k completed, ETA = --:--:--, speed = 27.5M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 29714 completed, ETA = --:--:--, speed = 1813k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64lzma-devel-5.2.5-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 490k completed, ETA = --:--:--, speed = 31.9M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/ninja-1.10.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 126k completed, ETA = --:--:--, speed = 6657k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/systemd-devel-245.4-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 33654 completed, ETA = --:--:--, speed = 2191k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 140k completed, ETA = --:--:--, speed = 13.7M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64rhash0-1.3.9-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 121k completed, ETA = --:--:--, speed = 5786k                                                                                                 retrieved   lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64fmt5-5.3.0-3.mga8.x86_64.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm cmake-3.17.0-2.mga8.x86_64.rpm lib64fmt-devel-5.3.0-3.mga8.x86_64.rpm locales-2.31-2.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm lib64lzma-devel-5.2.5-1.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm systemd-devel-245.4-1.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm
+...retrieving done
+installing lib64lzma-devel-5.2.5-1.mga8.x86_64.rpm locales-2.31-2.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm systemd-devel-245.4-1.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm lib64fmt5-5.3.0-3.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm lib64fmt-devel-5.3.0-3.mga8.x86_64.rpm cmake-3.17.0-2.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200404184940/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200404184940 (remove=0, install=0, upgrade=13)
+Preparing...                     #############################################
+     1/13: lib64uv1              #############################################
+     2/13: lib64jsoncpp19        #############################################
+     3/13: lib64fmt5             #############################################
+     4/13: lib64rhash0           #############################################
+     5/13: lib64gpg-error-devel  #############################################
+     6/13: lib64gcrypt-devel     #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+     7/13: lib64lz4-devel        #############################################
+     8/13: locales               #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+     9/13: lib64lzma-devel       #############################################
+    10/13: systemd-devel         #############################################
+    11/13: ninja                 #############################################
+    12/13: cmake                 #############################################
+    13/13: lib64fmt-devel        #############################################
+removing installed rpms (lib64lzma-devel-5.2.5-1.mga8.x86_64.rpm locales-2.31-2.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm systemd-devel-245.4-1.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm lib64fmt5-5.3.0-3.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm lib64fmt-devel-5.3.0-3.mga8.x86_64.rpm cmake-3.17.0-2.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200404184940/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
