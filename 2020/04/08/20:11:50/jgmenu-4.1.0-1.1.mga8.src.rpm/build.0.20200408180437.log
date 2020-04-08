@@ -1,0 +1,315 @@
+D: [iurt_root_command] chroot
+Installing /home/iurt/rpmbuild/SRPMS/jgmenu-4.1.0-1.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.9MferX
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/iurt/rpmbuild/BUILD
++ rm -rf jgmenu-4.1.0
++ /usr/bin/gzip -dc /home/iurt/rpmbuild/SOURCES/jgmenu-4.1.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd jgmenu-4.1.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/iurt/rpmbuild/SOURCES/jgmenu-0.9-Makefile-libexecdir.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/iurt/rpmbuild/SOURCES/jgmenu-4.1.0-add-libdir-path.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ pathfix.py -pni '/usr/bin/python3 -s' contrib/gtktheme/jgmenu-gtktheme.py contrib/mate-panel/mate-jgmenu.py contrib/pmenu/jgmenu-pmenu.py src/jgmenu-unity-hack.py
+contrib/gtktheme/jgmenu-gtktheme.py: updating
+contrib/mate-panel/mate-jgmenu.py: updating
+contrib/pmenu/jgmenu-pmenu.py: updating
+src/jgmenu-unity-hack.py: updating
++ sed -i 's|libxfce4panel-1.0|libxfce4panel-2.0|' configure
++ sed -i 's|libxfce4panel-1.0|libxfce4panel-2.0|' contrib/xfce4-panel/Makefile
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.1gVOQW
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd jgmenu-4.1.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --all --prefix=/usr --libdir=/usr/lib64 --datadir=/usr/share
+warn: unknown option --host
+warn: unknown option --build
+warn: unknown option --program-prefix
+warn: unknown option --disable-dependency-tracking
+warn: unknown option --exec-prefix
+warn: unknown option --bindir
+warn: unknown option --sbindir
+warn: unknown option --sysconfdir
+warn: unknown option --includedir
+warn: unknown option --localstatedir
+warn: unknown option --sharedstatedir
+warn: unknown option --mandir
+warn: unknown option --infodir
+[ OK ] pkg-config
+[ OK ] xml2-config
+[ OK ] x11
+[ OK ] xrandr
+[ OK ] cairo
+[ OK ] pango
+[ OK ] pangocairo
+[ OK ] librsvg-2.0
+[ OK ] glib-2.0
+[ OK ] libxfce4panel-2.0
+[ OK ] libmenu-cache >= 1.1.0
++ /usr/bin/make -O -j4 V=1 VERBOSE=1 prefix=/usr libexecdir=/usr/lib64/jgmenu libdir=/usr/lib64
+cc -MT util.o -MMD -MP -MF .d/util.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/util.c
+cc -MT config.o -MMD -MP -MF .d/config.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/config.c
+cc -MT isprog.o -MMD -MP -MF .d/isprog.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/isprog.c
+cc -MT x11-ui.o -MMD -MP -MF .d/x11-ui.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/x11-ui.c
+cc -MT sbuf.o -MMD -MP -MF .d/sbuf.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/sbuf.c
+cc -MT geometry.o -MMD -MP -MF .d/geometry.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/geometry.c
+cc -MT icon-find.o -MMD -MP -MF .d/icon-find.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/icon-find.c
+cc -MT xdgdirs.o -MMD -MP -MF .d/xdgdirs.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/xdgdirs.c
+cc -MT xpm-loader.o -MMD -MP -MF .d/xpm-loader.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/xpm-loader.c
+cc -MT icon.o -MMD -MP -MF .d/icon.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/icon.c
+cc -MT xsettings-helper.o -MMD -MP -MF .d/xsettings-helper.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/xsettings-helper.c
+cc -MT xsettings.o -MMD -MP -MF .d/xsettings.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/xsettings.c
+cc -MT compat.o -MMD -MP -MF .d/compat.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/compat.c
+cc -MT filter.o -MMD -MP -MF .d/filter.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/filter.c
+cc -MT lockfile.o -MMD -MP -MF .d/lockfile.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/lockfile.c
+cc -MT argv-buf.o -MMD -MP -MF .d/argv-buf.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/argv-buf.c
+cc -MT jgmenu.o -MMD -MP -MF .d/jgmenu.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/jgmenu.c
+cc -MT bl.o -MMD -MP -MF .d/bl.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/bl.c
+cc -MT t2conf.o -MMD -MP -MF .d/t2conf.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/t2conf.c
+cc -MT unix_sockets.o -MMD -MP -MF .d/unix_sockets.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/unix_sockets.c
+cc -MT back.o -MMD -MP -MF .d/back.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/back.c
+cc -MT terminal.o -MMD -MP -MF .d/terminal.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/terminal.c
+cc -MT cache.o -MMD -MP -MF .d/cache.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/cache.c
+cc -MT restart.o -MMD -MP -MF .d/restart.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/restart.c
+cc -MT theme.o -MMD -MP -MF .d/theme.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/theme.c
+cc -MT ipc.o -MMD -MP -MF .d/ipc.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/ipc.c
+cc -MT gtkconf.o -MMD -MP -MF .d/gtkconf.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/gtkconf.c
+cc -MT font.o -MMD -MP -MF .d/font.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/font.c
+cc -MT args.o -MMD -MP -MF .d/args.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/args.c
+cc -MT socket.o -MMD -MP -MF .d/socket.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/socket.c
+cc -MT pm.o -MMD -MP -MF .d/pm.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/pm.c
+cc -MT charset.o -MMD -MP -MF .d/charset.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/charset.c
+cc -MT watch.o -MMD -MP -MF .d/watch.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/watch.c
+cc -MT spawn.o -MMD -MP -MF .d/spawn.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/spawn.c
+cc -MT widgets.o -MMD -MP -MF .d/widgets.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/widgets.c
+cc -MT workarea.o -MMD -MP -MF .d/workarea.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -c src/workarea.c
+cc -MT jgmenu-socket.o -MMD -MP -MF .d/jgmenu-socket.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/jgmenu-socket.c
+cc -MT jgmenu-ob.o -MMD -MP -MF .d/jgmenu-ob.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -c src/jgmenu-ob.c
+cc -MT i18n.o -MMD -MP -MF .d/i18n.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -c src/i18n.c
+cc -MT hashmap.o -MMD -MP -MF .d/hashmap.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -c src/hashmap.c
+cc -MT jgmenu-i18n.o -MMD -MP -MF .d/jgmenu-i18n.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/jgmenu-i18n.c
+cc -MT jgmenu-greeneye.o -MMD -MP -MF .d/jgmenu-greeneye.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/jgmenu-greeneye.c
+cc -MT jgmenu-obtheme.o -MMD -MP -MF .d/jgmenu-obtheme.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -c src/jgmenu-obtheme.c
+cc -MT set.o -MMD -MP -MF .d/set.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -c src/set.c
+cc -MT jgmenu-apps.o -MMD -MP -MF .d/jgmenu-apps.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/jgmenu-apps.c
+cc -MT desktop.o -MMD -MP -MF .d/desktop.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/desktop.c
+cc -MT fmt.o -MMD -MP -MF .d/fmt.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/fmt.c
+cc -MT lang.o -MMD -MP -MF .d/lang.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/lang.c
+cc -MT dirs.o -MMD -MP -MF .d/dirs.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -c src/dirs.c
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -o jgmenu-socket jgmenu-socket.o util.o sbuf.o unix_sockets.o socket.o compat.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags 
+cc -MT jgmenu-config.o -MMD -MP -MF .d/jgmenu-config.Td -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config --cflags glib-2.0` -c src/jgmenu-config.c
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -o jgmenu-ob jgmenu-ob.o util.o sbuf.o i18n.o hashmap.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags `xml2-config --libs`
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -o jgmenu-greeneye jgmenu-greeneye.o compat.o util.o sbuf.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags 
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -o jgmenu-i18n jgmenu-i18n.o i18n.o hashmap.o util.o sbuf.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags 
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config cairo pango pangocairo librsvg-2.0 --cflags` -o jgmenu jgmenu.o x11-ui.o config.o util.o geometry.o isprog.o sbuf.o icon-find.o icon.o xpm-loader.o xdgdirs.o xsettings.o xsettings-helper.o filter.o compat.o lockfile.o argv-buf.o t2conf.o ipc.o unix_sockets.o bl.o cache.o back.o terminal.o restart.o theme.o gtkconf.o font.o args.o widgets.o pm.o socket.o workarea.o charset.o watch.o spawn.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags `pkg-config x11 xrandr cairo pango pangocairo librsvg-2.0 --libs` -pthread -lpng
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -o jgmenu-apps jgmenu-apps.o compat.o util.o sbuf.o desktop.o charset.o xdgdirs.o argv-buf.o dirs.o lang.o fmt.o i18n.o hashmap.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags 
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `pkg-config --cflags glib-2.0` -o jgmenu-config jgmenu-config.o util.o sbuf.o compat.o set.o spawn.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags `pkg-config --libs glib-2.0`
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' `xml2-config --cflags` -o jgmenu-obtheme jgmenu-obtheme.o util.o sbuf.o compat.o set.o  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags `xml2-config --libs`
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='""' -Wno-strict-prototypes -Wno-declaration-after-statement -s -shared -fPIC `pkg-config --cflags libxfce4panel-2.0` -o libjgmenu.so jgmenu-applet.c  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  `pkg-config --libs   libxfce4panel-2.0`
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+jgmenu-applet.c: In function 'button_clicked':
+jgmenu-applet.c:73:2: warning: 'gdk_screen_get_width' is deprecated [-Wdeprecated-declarations]
+   73 |  screen_width = gdk_screen_get_width(screen);
+      |  ^~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:31,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/xfce4/libxfce4panel-2.0/libxfce4panel/xfce-panel-plugin.h:24,
+                 from jgmenu-applet.c:8:
+/usr/include/gtk-3.0/gdk/gdkscreen.h:58:14: note: declared here
+   58 | gint         gdk_screen_get_width             (GdkScreen   *screen);
+      |              ^~~~~~~~~~~~~~~~~~~~
+jgmenu-applet.c:74:2: warning: 'gdk_screen_get_height' is deprecated [-Wdeprecated-declarations]
+   74 |  screen_height = gdk_screen_get_height(screen);
+      |  ^~~~~~~~~~~~~
+In file included from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:31,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from /usr/include/xfce4/libxfce4panel-2.0/libxfce4panel/xfce-panel-plugin.h:24,
+                 from jgmenu-applet.c:8:
+/usr/include/gtk-3.0/gdk/gdkscreen.h:60:14: note: declared here
+   60 | gint         gdk_screen_get_height            (GdkScreen   *screen);
+      |              ^~~~~~~~~~~~~~~~~~~~~
+cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='"jgmenu v4.1.0"' -g -Wall -Os -std=gnu99 -Wextra -Wdeclaration-after-statement -Wno-format-zero-length -Wold-style-definition -Woverflow -Wpointer-arith -Wstrict-prototypes -Wunused -Wvla -Wunused-result -Wno-unused-parameter -DVERSION='""' `pkg-config --cflags glib-2.0 libmenu-cache` -o jgmenu-lx jgmenu-lx.c ../../src/util.c ../../src/sbuf.c ../../src/xdgdirs.c ../../src/argv-buf.c ../../src/back.c ../../src/fmt.c -I../../src/  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags  `pkg-config --libs glib-2.0 libmenu-cache`
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
+<command-line>: warning: "VERSION" redefined
+<command-line>: note: this is the location of the previous definition
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.acNhtX
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64
+++ dirname /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64
++ mkdir -p /home/iurt/rpmbuild/BUILDROOT
++ mkdir /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64
++ cd jgmenu-4.1.0
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64 'INSTALL=/usr/bin/install -p' prefix=/usr libexecdir=/usr/lib64/jgmenu libdir=/usr/lib64 datadir=/usr/share
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 4.1.0-1.1.mga8 --unique-debug-suffix -4.1.0-1.1.mga8.x86_64 --unique-debug-src-base jgmenu-4.1.0-1.1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/iurt/rpmbuild/BUILD/jgmenu-4.1.0
+
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-apps
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/bin/jgmenu
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-config
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-greeneye
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-config
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/bin/jgmenu
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-apps
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-greeneye
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-i18n
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-lx
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-i18n
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-lx
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-ob
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-ob
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-obtheme
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-obtheme
+explicitly decompress any DWARF compressed ELF sections in /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-socket
+extracting debug info from /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-socket
+original debug info size: 1272kB, size after compression: 1024kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 9 CRC32s, 0 CRC32s did match.
+747 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
+/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/applications/jgmenu.desktop: warning: key "Encoding" in group "Desktop Entry" is deprecated
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
+/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-unity-hack.py
+/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-gtktheme.py
+/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/lib64/jgmenu/jgmenu-pmenu.py
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/jgmenu_run from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/lib64/jgmenu/jgmenu-init.sh from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/lib64/jgmenu/jgmenu-themes.sh from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/lib64/jgmenu/jgmenu-hide-app.sh from /bin/sh to #!/usr/bin/sh
+Processing files: jgmenu-4.1.0-1.1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.VRvruV
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd jgmenu-4.1.0
++ DOCDIR=/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/doc/jgmenu
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/doc/jgmenu
++ cp -pr README.md /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/doc/jgmenu
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.xW7NoW
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd jgmenu-4.1.0
++ LICENSEDIR=/home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/licenses/jgmenu
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/licenses/jgmenu
++ cp -pr LICENSE /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64/usr/share/licenses/jgmenu
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: application() application(jgmenu.desktop) jgmenu = 4.1.0-1.1.mga8 jgmenu(x86-64) = 4.1.0-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PartialHardlinkSets) <= 4.0.4-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libX11.so.6()(64bit) libXrandr.so.2()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libcairo.so.2()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libmenu-cache.so.3()(64bit) libpango-1.0.so.0()(64bit) libpangocairo-1.0.so.0()(64bit) libpng16.so.16()(64bit) libpng16.so.16(PNG16_0)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) librsvg-2.so.2()(64bit) libxml2.so.2()(64bit) libxml2.so.2(LIBXML2_2.4.30)(64bit) libxml2.so.2(LIBXML2_2.6.0)(64bit) typelib(GLib) typelib(Gdk) typelib(Gtk) = 3.0
+Processing files: xfce4-jgmenu-plugin-4.1.0-1.1.mga8.x86_64
+Provides: libjgmenu.so()(64bit) xfce4-jgmenu-plugin = 4.1.0-1.1.mga8 xfce4-jgmenu-plugin(x86-64) = 4.1.0-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libgdk-3.so.0()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libgtk-3.so.0()(64bit) libxfce4panel-2.0.so.4()(64bit) libxfce4util.so.7()(64bit)
+Processing files: jgmenu-debugsource-4.1.0-1.1.mga8.x86_64
+Provides: jgmenu-debugsource = 4.1.0-1.1.mga8 jgmenu-debugsource(x86-64) = 4.1.0-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: jgmenu-debuginfo-4.1.0-1.1.mga8.x86_64
+Provides: debuginfo(build-id) = 1a001bbcb526cd22a63a48161a9a056845203b8e debuginfo(build-id) = 50990701f508e6fc3b66a41e8a5fe61f0cae7af9 debuginfo(build-id) = 75ea7420731654d2a090fc5513d4d4f78246e848 debuginfo(build-id) = 918e15e8d4db5935d5f44826ce0e7658bad42e65 debuginfo(build-id) = a06e52e92f8ce3fcf60ddc7281b7471fa888f296 debuginfo(build-id) = a9a0f4a96447480cca048ff6665f378810ae68b1 debuginfo(build-id) = c175e1a6a9a6860c5d88fa6c24d8c60f58a4066a debuginfo(build-id) = d44488774b4aaf88dcc3d1146395da2d52330302 debuginfo(build-id) = fd9db5a044410ea363be0b8b402dee195445d939 jgmenu-debuginfo = 4.1.0-1.1.mga8 jgmenu-debuginfo(x86-64) = 4.1.0-1.1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: jgmenu-debugsource(x86-64) = 4.1.0-1.1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64
+Wrote: /home/iurt/rpmbuild/RPMS/x86_64/xfce4-jgmenu-plugin-4.1.0-1.1.mga8.x86_64.rpm
+Wrote: /home/iurt/rpmbuild/RPMS/x86_64/jgmenu-4.1.0-1.1.mga8.x86_64.rpm
+Wrote: /home/iurt/rpmbuild/RPMS/x86_64/jgmenu-debugsource-4.1.0-1.1.mga8.x86_64.rpm
+Wrote: /home/iurt/rpmbuild/RPMS/x86_64/jgmenu-debuginfo-4.1.0-1.1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.yBQjWW
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd jgmenu-4.1.0
++ /usr/bin/rm -rf /home/iurt/rpmbuild/BUILDROOT/jgmenu-4.1.0-1.1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.xJyjAY
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ rm -rf jgmenu-4.1.0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
