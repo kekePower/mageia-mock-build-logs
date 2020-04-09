@@ -1,0 +1,226 @@
+D: [iurt_root_command] chroot
+Installing /home/iurt/rpmbuild/SRPMS/python-xmpp-backends-0.8.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.PuwS46
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/iurt/rpmbuild/BUILD
++ rm -rf xmpp-backends-0.8.0
++ /usr/bin/gzip -dc /home/iurt/rpmbuild/SOURCES/xmpp-backends-0.8.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd xmpp-backends-0.8.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf xmpp-backends.egg-info
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.XMsfS9
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd xmpp-backends-0.8.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py build '--executable=/usr/bin/python3 -s'
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/xmpp_backends
+copying xmpp_backends/__init__.py -> build/lib/xmpp_backends
+copying xmpp_backends/base.py -> build/lib/xmpp_backends
+copying xmpp_backends/constants.py -> build/lib/xmpp_backends
+copying xmpp_backends/dummy.py -> build/lib/xmpp_backends
+copying xmpp_backends/ejabberd_rest.py -> build/lib/xmpp_backends
+copying xmpp_backends/ejabberd_xmlrpc.py -> build/lib/xmpp_backends
+copying xmpp_backends/ejabberdctl.py -> build/lib/xmpp_backends
+creating build/lib/xmpp_backends/django
+copying xmpp_backends/django/__init__.py -> build/lib/xmpp_backends/django
+copying xmpp_backends/django/auth_backends.py -> build/lib/xmpp_backends/django
+copying xmpp_backends/django/models.py -> build/lib/xmpp_backends/django
+creating build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/__init__.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/admin.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/apps.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/backend.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/models.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/tests.py -> build/lib/xmpp_backends/django/fake_xmpp
+copying xmpp_backends/django/fake_xmpp/views.py -> build/lib/xmpp_backends/django/fake_xmpp
+creating build/lib/xmpp_backends/django/fake_xmpp/migrations
+copying xmpp_backends/django/fake_xmpp/migrations/0001_initial.py -> build/lib/xmpp_backends/django/fake_xmpp/migrations
+copying xmpp_backends/django/fake_xmpp/migrations/__init__.py -> build/lib/xmpp_backends/django/fake_xmpp/migrations
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.25DJ76
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64
+++ dirname /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64
++ mkdir -p /home/iurt/rpmbuild/BUILDROOT
++ mkdir /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64
++ cd xmpp-backends-0.8.0
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py install -O1 --skip-build --root /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64
+running install
+running install_lib
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/__init__.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/base.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/constants.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/dummy.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/ejabberd_rest.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/ejabberd_xmlrpc.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+copying build/lib/xmpp_backends/ejabberdctl.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django
+copying build/lib/xmpp_backends/django/__init__.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django
+copying build/lib/xmpp_backends/django/auth_backends.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django
+copying build/lib/xmpp_backends/django/models.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/__init__.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/admin.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/apps.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/backend.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/models.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/tests.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+copying build/lib/xmpp_backends/django/fake_xmpp/views.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp
+creating /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/migrations
+copying build/lib/xmpp_backends/django/fake_xmpp/migrations/0001_initial.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/migrations
+copying build/lib/xmpp_backends/django/fake_xmpp/migrations/__init__.py -> /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/migrations
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/base.py to base.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/constants.py to constants.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/dummy.py to dummy.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/ejabberd_rest.py to ejabberd_rest.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/ejabberd_xmlrpc.py to ejabberd_xmlrpc.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/ejabberdctl.py to ejabberdctl.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/auth_backends.py to auth_backends.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/models.py to models.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/admin.py to admin.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/apps.py to apps.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/backend.py to backend.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/models.py to models.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/tests.py to tests.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/views.py to views.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/migrations/0001_initial.py to 0001_initial.cpython-38.pyc
+byte-compiling /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends/django/fake_xmpp/migrations/__init__.py to __init__.cpython-38.pyc
+writing byte-compilation script '/tmp/tmpxmc054x2.py'
+/usr/bin/python3 /tmp/tmpxmc054x2.py
+removing /tmp/tmpxmc054x2.py
+running install_egg_info
+running egg_info
+creating xmpp_backends.egg-info
+writing xmpp_backends.egg-info/PKG-INFO
+writing dependency_links to xmpp_backends.egg-info/dependency_links.txt
+writing top-level names to xmpp_backends.egg-info/top_level.txt
+writing manifest file 'xmpp_backends.egg-info/SOURCES.txt'
+reading manifest file 'xmpp_backends.egg-info/SOURCES.txt'
+writing manifest file 'xmpp_backends.egg-info/SOURCES.txt'
+Copying xmpp_backends.egg-info to /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xmpp_backends-0.8.0-py3.8.egg-info
+running install_scripts
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 0.8.0-1.mga8 --unique-debug-suffix -0.8.0-1.mga8.x86_64 --unique-debug-src-base python-xmpp-backends-0.8.0-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0
+
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
+Bytecompiling .py files below /home/iurt/rpmbuild/BUILDROOT/python-xmpp-backends-0.8.0-1.mga8.x86_64/usr/lib/python3.8 using /usr/bin/python3.8
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /home/iurt/rpmbuild/tmp/rpm-tmp.1BqtAa
++ umask 022
++ cd /home/iurt/rpmbuild/BUILD
++ cd xmpp-backends-0.8.0
++ '[' 1 -eq 1 ']'
++ tox --skip-missing-interpreters
+GLOB sdist-make: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/setup.py
+py38-django2.2 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django2.2
+py38-django2.2 installdeps: -rrequirements-test.txt, Django==2.2.11
+ERROR: invocation failed (exit code 1), logfile: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django2.2/log/py38-django2.2-1.log
+================================== log start ===================================
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd88364e970>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd88364ed60>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd88364eb80>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd8836489a0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd883648970>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+ERROR: Could not find a version that satisfies the requirement Django==2.2.11 (from versions: none)
+ERROR: No matching distribution found for Django==2.2.11
+
+=================================== log end ====================================
+ERROR: could not install deps [-rrequirements-test.txt, Django==2.2.11]; v = InvocationError('/home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django2.2/bin/python -m pip install -rrequirements-test.txt Django==2.2.11', 1)
+py38-django3.0 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django3.0
+py38-django3.0 installdeps: -rrequirements-test.txt, Django==3.0.4
+ERROR: invocation failed (exit code 1), logfile: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django3.0/log/py38-django3.0-1.log
+================================== log start ===================================
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7f6bf4342970>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7f6bf4342d60>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7f6bf4342b80>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7f6bf433c9a0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x7f6bf433c970>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/django/
+ERROR: Could not find a version that satisfies the requirement Django==3.0.4 (from versions: none)
+ERROR: No matching distribution found for Django==3.0.4
+
+=================================== log end ====================================
+ERROR: could not install deps [-rrequirements-test.txt, Django==3.0.4]; v = InvocationError('/home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django3.0/bin/python -m pip install -rrequirements-test.txt Django==3.0.4', 1)
+py37-django2.2 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py37-django2.2
+SKIPPED: InterpreterNotFound: python3.7
+py37-django3.0 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py37-django3.0
+SKIPPED: InterpreterNotFound: python3.7
+py36-django2.2 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py36-django2.2
+SKIPPED: InterpreterNotFound: python3.6
+py36-django3.0 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py36-django3.0
+SKIPPED: InterpreterNotFound: python3.6
+py35-django2.2 create: /home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py35-django2.2
+SKIPPED: InterpreterNotFound: python3.5
+___________________________________ summary ____________________________________
+ERROR:   py38-django2.2: could not install deps [-rrequirements-test.txt, Django==2.2.11]; v = InvocationError('/home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django2.2/bin/python -m pip install -rrequirements-test.txt Django==2.2.11', 1)
+ERROR:   py38-django3.0: could not install deps [-rrequirements-test.txt, Django==3.0.4]; v = InvocationError('/home/iurt/rpmbuild/BUILD/xmpp-backends-0.8.0/.tox/py38-django3.0/bin/python -m pip install -rrequirements-test.txt Django==3.0.4', 1)
+SKIPPED:  py37-django2.2: InterpreterNotFound: python3.7
+SKIPPED:  py37-django3.0: InterpreterNotFound: python3.7
+SKIPPED:  py36-django2.2: InterpreterNotFound: python3.6
+SKIPPED:  py36-django3.0: InterpreterNotFound: python3.6
+SKIPPED:  py35-django2.2: InterpreterNotFound: python3.5
+error: Bad exit status from /home/iurt/rpmbuild/tmp/rpm-tmp.1BqtAa (%check)
+
+
+RPM build errors:
+    Bad exit status from /home/iurt/rpmbuild/tmp/rpm-tmp.1BqtAa (%check)
+I: [iurt_root_command] ERROR: chroot
