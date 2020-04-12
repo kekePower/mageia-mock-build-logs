@@ -1,0 +1,901 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/gnucobol-3.1-0.dev20200412.2.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.D8umjq
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf gnucobol-3.1-dev
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/gnucobol-3.1-dev20200412.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gnucobol-3.1-dev
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.jC7NMo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ autoreconf -vfi -I m4
+autoreconf: Entering directory `.'
+autoreconf: running: autopoint --force
+Copying file ABOUT-NLS
+Copying file m4/extern-inline.m4
+Copying file m4/fcntl-o.m4
+Copying file m4/glibc2.m4
+Copying file m4/glibc21.m4
+Copying file m4/intdiv0.m4
+Copying file m4/intl.m4
+Copying file m4/intldir.m4
+Copying file m4/intmax.m4
+Copying file m4/inttypes-pri.m4
+Copying file m4/inttypes_h.m4
+Copying file m4/lcmessage.m4
+Copying file m4/lock.m4
+Copying file m4/longlong.m4
+Copying file m4/printf-posix.m4
+Copying file m4/size_max.m4
+Copying file m4/stdint_h.m4
+Copying file m4/threadlib.m4
+Copying file m4/uintmax_t.m4
+Copying file m4/visibility.m4
+Copying file m4/wchar_t.m4
+Copying file m4/wint_t.m4
+Copying file m4/xsize.m4
+Copying file po/Makevars.template
+autoreconf: running: aclocal -I m4 --force -I m4 --install
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build_aux'.
+libtoolize: copying file 'build_aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --include=m4 --force
+autoreconf: running: /usr/bin/autoheader --include=m4 --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:267: installing 'build_aux/compile'
+configure.ac:69: installing 'build_aux/missing'
+bin/Makefile.am: installing 'build_aux/depcomp'
+autoreconf: Leaving directory `.'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying build_aux/ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
+Fixing libtool inside configure to pass -Wl,xxx options before libraries
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --enable-static=no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for make... make
+checking whether make supports order-only prerequisites... yes
+checking whether CFLAGS can be modified... no
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C99... none needed
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO Standard C... (cached) none needed
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for egrep... (cached) /usr/bin/grep -E
+checking for flex... no
+checking for lex... no
+checking for bison... no
+checking for byacc... no
+checking how to disable yacc compatibility warnings... not supported
+checking for diff arguments... --strip-trailing-cr
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for ANSI C header files... (cached) yes
+checking for stdint.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for dlfcn.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for sig_atomic_t... yes
+checking for inline keyword... __inline
+checking for vprintf... yes
+checking for _doprnt... no
+checking for memmove... yes
+checking for memset... yes
+checking for setlocale... yes
+checking for fcntl... yes
+checking for strerror... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for gettimeofday... yes
+checking for localeconv... yes
+checking for getexecname... no
+checking for canonicalize_file_name... yes
+checking for popen... yes
+checking for raise... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for setenv... yes
+checking for strcoll... yes
+checking for timezone variable access... yes
+checking for designated initializers... yes
+checking for __GNUC__... yes
+checking for __INTEL_COMPILER... no
+checking for __clang__... no
+checking for __xlc__... no
+checking for __WATCOMC__... no
+checking whether to build with code coverage support... no
+configure: Checks for GMP/MPIR ...
+checking gmp.h usability... yes
+checking gmp.h presence... yes
+checking for gmp.h... yes
+checking for __gmpz_init in -lgmp... yes
+checking matching GMP version... yes (6.2)
+checking for __gmp_get_memory_functions in -lgmp... yes
+checking for x86_64-mageia-linux-gnu-pkg-config... /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libxml-2.0... yes
+checking libxml/xmlversion.h usability... yes
+checking libxml/xmlversion.h presence... yes
+checking for libxml/xmlversion.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... yes
+checking libxml/uri.h usability... yes
+checking libxml/uri.h presence... yes
+checking for libxml/uri.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... (cached) yes
+checking libxml/xmlwriter.h usability... yes
+checking libxml/xmlwriter.h presence... yes
+checking for libxml/xmlwriter.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... (cached) yes
+checking if linking against libxml2 with "-lxml2 " works... yes
+configure: Checks for local cJSON ...
+checking for ./libcob/cJSON.c... no
+checking for ./libcob/cJSON.c... (cached) no
+configure: using local cJSON: no
+checking for libcjson... yes
+checking cJSON.h usability... no
+checking cJSON.h presence... no
+checking for cJSON.h... no
+checking cjson/cJSON.h usability... yes
+checking cjson/cJSON.h presence... yes
+checking for cjson/cJSON.h... yes
+checking if linking against libcjson with "-lcjson " works... yes
+checking for nanosleep... yes
+checking for clock_gettime and CLOCK_REALTIME... yes
+checking for isfinite... yes
+checking for fdatasync... yes
+checking for sigaction... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for nl_langinfo and CODESET... yes
+configure: Checks for curses ...
+checking for initscr in -lncursesw... yes
+checking ncursesw/ncurses.h usability... yes
+checking ncursesw/ncurses.h presence... yes
+checking for ncursesw/ncurses.h... yes
+checking for ncurses _nc_freeall function... yes
+checking for ncurses use_legacy_coding function... yes
+checking for curses color_set function... yes
+checking for curses define_key function... yes
+checking for curses mouseinterval function... yes
+checking for curses has_mouse function... yes
+configure: Checks for Berkeley DB ...
+checking db.h usability... yes
+checking db.h presence... yes
+checking for db.h... yes
+configure: db.h reports version "-Berkeley DB 5.3.28: (September  9, 2013)-"
+checking for Berkeley DB db.h version >= 4.1... yes (5.3)
+checking for Berkeley DB library with version 5.3... yes
+configure: BDB library version 5.3 found as -ldb-5.3
+checking for _WIN32... no
+checking for dlopen in -lc... no
+checking for dlopen in -ldl... (cached) yes
+checking for dladdr in -ldl... yes
+checking for support of computed gotos... yes
+checking if size of long int = size of long long... yes
+checking if long is 32 bits... no
+checking if pointer is longer than 32 bits... yes
+checking for aligned attribute... yes
+checking for gcc pointer sign option... yes
+checking for ld bind now option... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libcob/Makefile
+config.status: creating lib/Makefile
+config.status: creating cobc/Makefile
+config.status: creating bin/Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/Makefile
+config.status: creating config/Makefile
+config.status: creating copy/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/cobol85/Makefile
+config.status: creating extras/Makefile
+config.status: creating bin/cob-config
+config.status: creating pre-inst-env
+config.status: creating tests/atlocal
+config.status: creating tests/run_prog_manual.sh
+config.status: creating config.h
+config.status: executing tests/atconfig commands
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing chmod commands
+configure: GnuCOBOL Configuration:
+configure:  CC                x86_64-mageia-linux-gnu-gcc
+configure:  CFLAGS            -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE
+configure:  LDFLAGS            -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1
+configure:  COB_CC            x86_64-mageia-linux-gnu-gcc
+configure:  COB_CFLAGS        -I/usr/include -Wno-unused -fsigned-char -Wno-pointer-sign -pipe -Wformat -Werror=format-security --param=ssp-buffer-size=4 -pipe
+configure:  COB_LDFLAGS        -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags
+configure:  COB_LIBS          -L/usr/lib64 -lcob -lm
+configure:  COB_CONFIG_DIR    /usr/share/gnucobol/config
+configure:  COB_COPY_DIR      /usr/share/gnucobol/copy
+configure:  COB_LIBRARY_PATH  /usr/lib64/gnucobol
+configure:  COB_OBJECT_EXT    o
+configure:  COB_MODULE_EXT    so
+configure:  COB_EXE_EXT       
+configure:  COB_SHARED_OPT    -shared
+configure:  COB_PIC_FLAGS     -fPIC -DPIC
+configure:  COB_EXPORT_DYN    -Wl,--export-dynamic
+configure:  COB_STRIP_CMD     strip --strip-unneeded
+configure:  Dynamic loading:                             System
+configure:  Use gettext for international messages:      yes
+configure:  Use fcntl for file locking:                  yes
+configure:  Use math multiple precision library:         gmp
+configure:  Use curses library for screen I/O:           ncursesw
+configure:  Use Berkeley DB for ISAM I/O:                yes
+configure:  Use libxml2 for XML I/O:                     yes
+configure:  Use cJSON for JSON I/O:                      yes
++ /usr/bin/make -O -j4 V=1 VERBOSE=1
+Creating defaults.h...
+make  all-recursive
+Making all in .
+Making all in lib
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o dummymac.o dummymac.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+rm -f libsupport.a
+x86_64-mageia-linux-gnu-ar cru libsupport.a dummymac.o 
+x86_64-mageia-linux-gnu-ranlib libsupport.a
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+Making all in libcob
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o strings.lo strings.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c strings.c  -fPIC -DPIC -o .libs/strings.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o numeric.lo numeric.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c numeric.c  -fPIC -DPIC -o .libs/numeric.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o move.lo move.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c move.c  -fPIC -DPIC -o .libs/move.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o call.lo call.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c call.c  -fPIC -DPIC -o .libs/call.o
+call.c: In function 'cob_resolve_internal.part.0':
+call.c:858:21: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 242 [-Wformat-truncation=]
+  858 |       "entry point '%s' not found", (const char *)s);
+      |                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from call.c:29:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 25 and 280 bytes into a destination of size 255
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+call.c:829:20: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 242 [-Wformat-truncation=]
+  829 |      "entry point '%s' not found", (const char *)s);
+      |                    ^~
+In file included from /usr/include/stdio.h:867,
+                 from call.c:29:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 25 and 280 bytes into a destination of size 255
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o termio.lo termio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c termio.c  -fPIC -DPIC -o .libs/termio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o common.lo common.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c common.c  -fPIC -DPIC -o .libs/common.o
+common.c: In function 'cob_load_config_file':
+common.c:6675:53: warning: '%s' directive output may be truncated writing up to 4095 bytes into a region of size 4068 [-Wformat-truncation=]
+ 6675 |      snprintf (filename, (size_t)COB_FILE_MAX, "%s%c%s",
+      |                                                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from common.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 28 and 4123 bytes into a destination of size 4095
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common.c:6672:53: warning: '%s' directive output may be truncated writing up to 4095 bytes into a region of size 4094 [-Wformat-truncation=]
+ 6672 |      snprintf (filename, (size_t)COB_FILE_MAX, "%s%c%s",
+      |                                                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from common.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 2 or more bytes (assuming 4097) into a destination of size 4095
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o fileio.lo fileio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c fileio.c  -fPIC -DPIC -o .libs/fileio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobgetopt.lo cobgetopt.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c cobgetopt.c  -fPIC -DPIC -o .libs/cobgetopt.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o reportio.lo reportio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c reportio.c  -fPIC -DPIC -o .libs/reportio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o mlio.lo mlio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c mlio.c  -fPIC -DPIC -o .libs/mlio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o intrinsic.lo intrinsic.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c intrinsic.c  -fPIC -DPIC -o .libs/intrinsic.o
+In file included from /usr/include/string.h:495,
+                 from intrinsic.c:28:
+In function 'strncpy',
+    inlined from 'split_around_t' at intrinsic.c:2452:4,
+    inlined from 'cob_intr_seconds_from_formatted_time' at intrinsic.c:5416:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin___strncpy_chk' accessing between 0 and 25 bytes at offsets 0 and [1, 37] may overlap up to 24 bytes at offset [24, 1] [-Wrestrict]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6386:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 25 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6384:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 10 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6392:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 10 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o screenio.lo screenio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c screenio.c  -fPIC -DPIC -o .libs/screenio.o
+screenio.c: In function 'cob_speaker_beep':
+screenio.c:152:9: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  152 |   (void)write (fd, "\a", (size_t)1);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE  -version-info 4:0:0 -no-undefined -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o libcob.la -rpath /usr/lib64 common.lo move.lo numeric.lo strings.lo fileio.lo call.lo intrinsic.lo termio.lo screenio.lo reportio.lo cobgetopt.lo mlio.lo  -lm -lgmp -lxml2  -lcjson  -lncursesw -ldb-5.3 -ldl  
+libtool: link: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  .libs/common.o .libs/move.o .libs/numeric.o .libs/strings.o .libs/fileio.o .libs/call.o .libs/intrinsic.o .libs/termio.o .libs/screenio.o .libs/reportio.o .libs/cobgetopt.o .libs/mlio.o   -O2 -g -fstack-protector -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1    -lm -lgmp -lxml2 -lcjson -lncursesw /usr/lib64/libdb-5.3.so -lpthread -ldl -Wl,-soname -Wl,libcob.so.4 -o .libs/libcob.so.4.0.0
+libtool: link: (cd ".libs" && rm -f "libcob.so.4" && ln -s "libcob.so.4.0.0" "libcob.so.4")
+libtool: link: (cd ".libs" && rm -f "libcob.so" && ln -s "libcob.so.4.0.0" "libcob.so")
+libtool: link: ( cd ".libs" && rm -f "libcob.la" && ln -s "../libcob.la" "libcob.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+Making all in bin
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobcrun.o cobcrun.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--export-dynamic -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o cobcrun cobcrun.o ../lib/libsupport.a ../libcob/libcob.la  
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--export-dynamic -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1 -o .libs/cobcrun cobcrun.o  ../lib/libsupport.a ../libcob/.libs/libcob.so -lm -lgmp -lxml2 -lcjson -lncursesw /usr/lib64/libdb-5.3.so -lpthread -ldl
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+Making all in cobc
+make  all-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o ppparse.o ppparse.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o pplex.o pplex.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o config.o config.c
+config.c: In function 'cb_load_conf_file':
+config.c:289:54: warning: '%s' directive output may be truncated writing up to 2047 bytes into a region of size 2046 [-Wformat-truncation=]
+  289 |     snprintf (filename, (size_t)COB_NORMAL_MAX, "%s%c%s", cob_config_dir, SLASH_CHAR, conf_file);
+      |                                                      ^~
+In file included from /usr/include/stdio.h:867,
+                 from config.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 2 or more bytes (assuming 2049) into a destination of size 2047
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o reserved.o reserved.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o scanner.o scanner.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o error.o error.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobc.o cobc.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o field.o field.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o tree.o tree.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o help.o help.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o codeoptim.o codeoptim.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o parser.o parser.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o typeck.o typeck.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o codegen.o codegen.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o cobc cobc.o ppparse.o pplex.o parser.o scanner.o config.o reserved.o error.o tree.o field.o typeck.o codegen.o help.o codeoptim.o  ../libcob/libcob.la ../lib/libsupport.a  
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1 -o .libs/cobc cobc.o ppparse.o pplex.o parser.o scanner.o config.o reserved.o error.o tree.o field.o typeck.o codegen.o help.o codeoptim.o  ../libcob/.libs/libcob.so -lm -lgmp -lxml2 -lcjson -lncursesw /usr/lib64/libdb-5.3.so -lpthread -ldl ../lib/libsupport.a
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+Making all in config
+make[2]: Nothing to be done for 'all'.
+Making all in copy
+make[2]: Nothing to be done for 'all'.
+Making all in po
+make[2]: Nothing to be done for 'all'.
+Making all in doc
+make  all-am
+Making all in extras
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+("../pre-inst-env" cobc -m -Wall -O2 -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob" || \
+ "../pre-inst-env" cobc -m -Wall     -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob" || \
+ "../pre-inst-env" cobc -m -Wall -vv -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob")
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+Making all in tests
+Making all in cobol85
+make[3]: Nothing to be done for 'all'.
+make[3]: Nothing to be done for 'all-am'.
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.qFuLcp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64
++ cd gnucobol-3.1-dev
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64 'INSTALL=/usr/bin/install -p'
+make  install-recursive
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+Making install in .
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include'
+ /usr/bin/install -p -m 644 libcob.h '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+Making install in lib
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+Making install in libcob
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -p   libcob.la '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/libcob.so.4.0.0 /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64 && { ln -s -f libcob.so.4.0.0 libcob.so.4 || { rm -f libcob.so.4 && ln -s libcob.so.4.0.0 libcob.so.4; }; })
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64 && { ln -s -f libcob.so.4.0.0 libcob.so || { rm -f libcob.so && ln -s libcob.so.4.0.0 libcob.so; }; })
+libtool: install: /usr/bin/install -p .libs/libcob.lai /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/libcob.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob'
+ /usr/bin/install -p -m 644 common.h cobgetopt.h exception.def '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob'
+make  install-data-hook
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/byteswap.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/call.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/fileio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/termio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/screenio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/move.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/numeric.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/strings.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/intrinsic.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/codegen.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/include/libcob/system.def
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+Making install in bin
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p cobcrun '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+libtool: warning: '../libcob/libcob.la' has not been installed in '/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/cobcrun /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobcrun
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+ /usr/bin/install -p cob-config '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/man/man1'
+ /usr/bin/install -p -m 644 cobcrun.1 cob-config.1 '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/man/man1'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+Making install in cobc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make  install-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p cobc '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin'
+libtool: warning: '../libcob/libcob.la' has not been installed in '/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/cobc /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobc
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/man/man1'
+ /usr/bin/install -p -m 644 cobc.1 '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/man/man1'
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+Making install in config
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gnucobol/config'
+ /usr/bin/install -p -m 644 default.conf cobol85.conf cobol2002.conf cobol2014.conf acu.conf mf.conf ibm.conf mvs.conf bs2000.conf rm.conf acu-strict.conf mf-strict.conf ibm-strict.conf mvs-strict.conf bs2000-strict.conf rm-strict.conf xopen.conf lax.conf-inc cobol85.words cobol2002.words cobol2014.words acu.words mf.words ibm.words mvs.words bs2000.words rm.words runtime.cfg runtime_empty.cfg '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gnucobol/config'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+Making install in copy
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gnucobol/copy'
+ /usr/bin/install -p -m 644 screenio.cpy sqlca.cpy sqlda.cpy xfhfcd.cpy xfhfcd3.cpy '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gnucobol/copy'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+Making install in po
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/po'
+installing en@boldquot.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/en@boldquot/LC_MESSAGES/gnucobol.mo
+installing en@quot.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/en@quot/LC_MESSAGES/gnucobol.mo
+installing de.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/de/LC_MESSAGES/gnucobol.mo
+installing es.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/es/LC_MESSAGES/gnucobol.mo
+installing fr.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/fr/LC_MESSAGES/gnucobol.mo
+installing it.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/it/LC_MESSAGES/gnucobol.mo
+installing ja.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/ja/LC_MESSAGES/gnucobol.mo
+installing nl.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/nl/LC_MESSAGES/gnucobol.mo
+installing pt.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/pt/LC_MESSAGES/gnucobol.mo
+installing sv.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/locale/sv/LC_MESSAGES/gnucobol.mo
+if test "gnucobol" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -p -m 644 ./$file \
+		    /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/po'
+Making install in doc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make  install-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/info'
+ /usr/bin/install -p -m 644 ./gnucobol.info '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/info'
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+Making install in extras
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/gnucobol'
+ /usr/bin/install -p -m 644 CBL_OC_DUMP.so '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/gnucobol'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+Making install in tests
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+Making install in cobol85
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
++ find /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64 -name '*.la' -delete
++ /usr/lib/rpm/find-lang.sh /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64 gnucobol
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 3.1-0.dev20200412.2.mga8 --unique-debug-suffix -3.1-0.dev20200412.2.mga8.x86_64 --unique-debug-src-base gnucobol-3.1-0.dev20200412.2.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobc
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobcrun
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobcrun
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/bin/cobc
+original debug info size: 4696kB, size after compression: 4372kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 3 CRC32s, 0 CRC32s did match.
+8895 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
+Warning: undefined symbols in /usr/lib64/gnucobol/CBL_OC_DUMP.so: 
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/cob-config from /bin/sh to #!/usr/bin/sh
+Processing files: gnucobol-3.1-0.dev20200412.2.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.55dD4q
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ cp -pr README /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ cp -pr NEWS /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ cp -pr AUTHORS /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ cp -pr ChangeLog /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ cp -pr THANKS /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/doc/gnucobol
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.r1RA4o
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/licenses/gnucobol
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/licenses/gnucobol
++ cp -pr COPYING COPYING.DOC COPYING.LESSER /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64/usr/share/licenses/gnucobol
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: gnucobol = 3.1-0.dev20200412.2.mga8 gnucobol(x86-64) = 3.1-0.dev20200412.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: info-install libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libcob.so.4()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit)
+Processing files: lib64gnucobol4-3.1-0.dev20200412.2.mga8.x86_64
+Provides: lib64gnucobol4 = 3.1-0.dev20200412.2.mga8 lib64gnucobol4(x86-64) = 3.1-0.dev20200412.2.mga8 libcob.so.4()(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.11)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.17)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.28)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libcjson.so.1()(64bit) libdb-5.3.so()(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libgmp.so.10()(64bit) libncursesw.so.6()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libtinfo.so.6()(64bit) libxml2.so.2()(64bit) libxml2.so.2(LIBXML2_2.4.30)(64bit) libxml2.so.2(LIBXML2_2.6.0)(64bit)
+Processing files: lib64gnucobol-devel-3.1-0.dev20200412.2.mga8.x86_64
+Provides: devel(libcob(64bit)) lib64gnucobol-devel = 3.1-0.dev20200412.2.mga8 lib64gnucobol-devel(x86-64) = 3.1-0.dev20200412.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: devel(libcjson(64bit)) devel(libdb-5.3(64bit)) devel(libdl(64bit)) devel(libgmp(64bit)) devel(libncursesw(64bit)) devel(libtinfo(64bit)) devel(libxml2(64bit)) info-install libcob.so.4()(64bit)
+Processing files: gnucobol-debugsource-3.1-0.dev20200412.2.mga8.x86_64
+Provides: gnucobol-debugsource = 3.1-0.dev20200412.2.mga8 gnucobol-debugsource(x86-64) = 3.1-0.dev20200412.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: gnucobol-debuginfo-3.1-0.dev20200412.2.mga8.x86_64
+Provides: debuginfo(build-id) = 5a045f325f6ff1009e2bbd2dd36dfc94a6c16601 debuginfo(build-id) = 8446a3ac1c07b4cb921c0e66e0dc3f5d7f4cc9d6 gnucobol-debuginfo = 3.1-0.dev20200412.2.mga8 gnucobol-debuginfo(x86-64) = 3.1-0.dev20200412.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: gnucobol-debugsource(x86-64) = 3.1-0.dev20200412.2.mga8
+Processing files: lib64gnucobol4-debuginfo-3.1-0.dev20200412.2.mga8.x86_64
+Provides: debuginfo(build-id) = 5f2ac62624c6dcc8982adfa7eafdc8ebd27ce60a lib64gnucobol4-debuginfo = 3.1-0.dev20200412.2.mga8 lib64gnucobol4-debuginfo(x86-64) = 3.1-0.dev20200412.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: gnucobol-debugsource(x86-64) = 3.1-0.dev20200412.2.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64gnucobol4-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64gnucobol-devel-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/gnucobol-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64gnucobol4-debuginfo-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/gnucobol-debuginfo-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/gnucobol-debugsource-3.1-0.dev20200412.2.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.eLI1bq
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200412.2.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.RU5Vqp
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf gnucobol-3.1-dev
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
