@@ -1,0 +1,2626 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/gnucobol-3.1-0.dev20200413.1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.DKXx02
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf gnucobol-3.1-dev
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/gnucobol-3.1-dev20200413.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gnucobol-3.1-dev
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cp /home/stig/rpmbuild/SOURCES/newcob.val-3.1-dev20200413.tar.gz tests/cobol85/newcob.val.tar.gz
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.dmtgg2
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ autoreconf -vfi -I m4
+autoreconf: Entering directory `.'
+autoreconf: running: autopoint --force
+Copying file ABOUT-NLS
+Copying file m4/extern-inline.m4
+Copying file m4/fcntl-o.m4
+Copying file m4/glibc2.m4
+Copying file m4/glibc21.m4
+Copying file m4/intdiv0.m4
+Copying file m4/intl.m4
+Copying file m4/intldir.m4
+Copying file m4/intmax.m4
+Copying file m4/inttypes-pri.m4
+Copying file m4/inttypes_h.m4
+Copying file m4/lcmessage.m4
+Copying file m4/lock.m4
+Copying file m4/longlong.m4
+Copying file m4/printf-posix.m4
+Copying file m4/size_max.m4
+Copying file m4/stdint_h.m4
+Copying file m4/threadlib.m4
+Copying file m4/uintmax_t.m4
+Copying file m4/visibility.m4
+Copying file m4/wchar_t.m4
+Copying file m4/wint_t.m4
+Copying file m4/xsize.m4
+Copying file po/Makevars.template
+autoreconf: running: aclocal -I m4 --force -I m4 --install
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build_aux'.
+libtoolize: copying file 'build_aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --include=m4 --force
+autoreconf: running: /usr/bin/autoheader --include=m4 --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:267: installing 'build_aux/compile'
+configure.ac:69: installing 'build_aux/missing'
+bin/Makefile.am: installing 'build_aux/depcomp'
+autoreconf: Leaving directory `.'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying build_aux/ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
+Fixing libtool inside configure to pass -Wl,xxx options before libraries
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --enable-static=no --disable-rpath --with-curses=curses
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for make... make
+checking whether make supports order-only prerequisites... yes
+checking whether CFLAGS can be modified... no
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C99... none needed
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO Standard C... (cached) none needed
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for egrep... (cached) /usr/bin/grep -E
+checking for flex... no
+checking for lex... no
+checking for bison... no
+checking for byacc... no
+checking how to disable yacc compatibility warnings... not supported
+checking for diff arguments... --strip-trailing-cr
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for ANSI C header files... (cached) yes
+checking for stdint.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for dlfcn.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for sig_atomic_t... yes
+checking for inline keyword... __inline
+checking for vprintf... yes
+checking for _doprnt... no
+checking for memmove... yes
+checking for memset... yes
+checking for setlocale... yes
+checking for fcntl... yes
+checking for strerror... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for gettimeofday... yes
+checking for localeconv... yes
+checking for getexecname... no
+checking for canonicalize_file_name... yes
+checking for popen... yes
+checking for raise... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for setenv... yes
+checking for strcoll... yes
+checking for timezone variable access... yes
+checking for designated initializers... yes
+checking for __GNUC__... yes
+checking for __INTEL_COMPILER... no
+checking for __clang__... no
+checking for __xlc__... no
+checking for __WATCOMC__... no
+checking whether to build with code coverage support... no
+configure: Checks for GMP/MPIR ...
+checking gmp.h usability... yes
+checking gmp.h presence... yes
+checking for gmp.h... yes
+checking for __gmpz_init in -lgmp... yes
+checking matching GMP version... yes (6.2)
+checking for __gmp_get_memory_functions in -lgmp... yes
+checking for x86_64-mageia-linux-gnu-pkg-config... /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libxml-2.0... yes
+checking libxml/xmlversion.h usability... yes
+checking libxml/xmlversion.h presence... yes
+checking for libxml/xmlversion.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... yes
+checking libxml/uri.h usability... yes
+checking libxml/uri.h presence... yes
+checking for libxml/uri.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... (cached) yes
+checking libxml/xmlwriter.h usability... yes
+checking libxml/xmlwriter.h presence... yes
+checking for libxml/xmlwriter.h... yes
+checking for LIBXML_WRITER_ENABLED defined in libxml/xmlwriter.h... (cached) yes
+checking if linking against libxml2 with "-lxml2 " works... yes
+configure: Checks for local cJSON ...
+checking for ./libcob/cJSON.c... no
+checking for ./libcob/cJSON.c... (cached) no
+configure: using local cJSON: no
+checking for libcjson... yes
+checking cJSON.h usability... no
+checking cJSON.h presence... no
+checking for cJSON.h... no
+checking cjson/cJSON.h usability... yes
+checking cjson/cJSON.h presence... yes
+checking for cjson/cJSON.h... yes
+checking if linking against libcjson with "-lcjson " works... yes
+checking for nanosleep... yes
+checking for clock_gettime and CLOCK_REALTIME... yes
+checking for isfinite... yes
+checking for fdatasync... yes
+checking for sigaction... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for nl_langinfo and CODESET... yes
+configure: Checks for curses ...
+checking for initscr in -lcurses... yes
+checking curses.h usability... yes
+checking curses.h presence... yes
+checking for curses.h... yes
+checking for curses color_set function... yes
+checking for curses define_key function... yes
+checking for curses mouseinterval function... yes
+checking for curses has_mouse function... yes
+configure: Checks for Berkeley DB ...
+checking db.h usability... yes
+checking db.h presence... yes
+checking for db.h... yes
+configure: db.h reports version "-Berkeley DB 5.3.28: (September  9, 2013)-"
+checking for Berkeley DB db.h version >= 4.1... yes (5.3)
+checking for Berkeley DB library with version 5.3... yes
+configure: BDB library version 5.3 found as -ldb-5.3
+checking for _WIN32... no
+checking for dlopen in -lc... no
+checking for dlopen in -ldl... (cached) yes
+checking for dladdr in -ldl... yes
+checking for support of computed gotos... yes
+checking if size of long int = size of long long... yes
+checking if long is 32 bits... no
+checking if pointer is longer than 32 bits... yes
+checking for aligned attribute... yes
+checking for gcc pointer sign option... yes
+checking for ld bind now option... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libcob/Makefile
+config.status: creating lib/Makefile
+config.status: creating cobc/Makefile
+config.status: creating bin/Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/Makefile
+config.status: creating config/Makefile
+config.status: creating copy/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/cobol85/Makefile
+config.status: creating extras/Makefile
+config.status: creating bin/cob-config
+config.status: creating pre-inst-env
+config.status: creating tests/atlocal
+config.status: creating tests/run_prog_manual.sh
+config.status: creating config.h
+config.status: executing tests/atconfig commands
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing chmod commands
+configure: GnuCOBOL Configuration:
+configure:  CC                x86_64-mageia-linux-gnu-gcc
+configure:  CFLAGS            -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE
+configure:  LDFLAGS            -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1
+configure:  COB_CC            x86_64-mageia-linux-gnu-gcc
+configure:  COB_CFLAGS        -I/usr/include -Wno-unused -fsigned-char -Wno-pointer-sign -pipe -Wformat -Werror=format-security --param=ssp-buffer-size=4 -pipe
+configure:  COB_LDFLAGS        -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags
+configure:  COB_LIBS          -L/usr/lib64 -lcob -lm
+configure:  COB_CONFIG_DIR    /usr/share/gnucobol/config
+configure:  COB_COPY_DIR      /usr/share/gnucobol/copy
+configure:  COB_LIBRARY_PATH  /usr/lib64/gnucobol
+configure:  COB_OBJECT_EXT    o
+configure:  COB_MODULE_EXT    so
+configure:  COB_EXE_EXT       
+configure:  COB_SHARED_OPT    -shared
+configure:  COB_PIC_FLAGS     -fPIC -DPIC
+configure:  COB_EXPORT_DYN    -Wl,--export-dynamic
+configure:  COB_STRIP_CMD     strip --strip-unneeded
+configure:  Dynamic loading:                             System
+configure:  Use gettext for international messages:      yes
+configure:  Use fcntl for file locking:                  yes
+configure:  Use math multiple precision library:         gmp
+configure:  Use curses library for screen I/O:           curses
+configure:  Use Berkeley DB for ISAM I/O:                yes
+configure:  Use libxml2 for XML I/O:                     yes
+configure:  Use cJSON for JSON I/O:                      yes
++ /usr/bin/make -O -j4 V=1 VERBOSE=1
+Creating defaults.h...
+make  all-recursive
+Making all in .
+Making all in lib
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o dummymac.o dummymac.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+rm -f libsupport.a
+x86_64-mageia-linux-gnu-ar cru libsupport.a dummymac.o 
+x86_64-mageia-linux-gnu-ranlib libsupport.a
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+Making all in libcob
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o strings.lo strings.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c strings.c  -fPIC -DPIC -o .libs/strings.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o numeric.lo numeric.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c numeric.c  -fPIC -DPIC -o .libs/numeric.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o move.lo move.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c move.c  -fPIC -DPIC -o .libs/move.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o call.lo call.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c call.c  -fPIC -DPIC -o .libs/call.o
+call.c: In function 'cob_resolve_internal.part.0':
+call.c:858:21: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 242 [-Wformat-truncation=]
+  858 |       "entry point '%s' not found", (const char *)s);
+      |                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from call.c:29:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 25 and 280 bytes into a destination of size 255
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+call.c:829:20: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 242 [-Wformat-truncation=]
+  829 |      "entry point '%s' not found", (const char *)s);
+      |                    ^~
+In file included from /usr/include/stdio.h:867,
+                 from call.c:29:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 25 and 280 bytes into a destination of size 255
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o termio.lo termio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c termio.c  -fPIC -DPIC -o .libs/termio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o common.lo common.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c common.c  -fPIC -DPIC -o .libs/common.o
+common.c: In function 'cob_load_config_file':
+common.c:6675:53: warning: '%s' directive output may be truncated writing up to 4095 bytes into a region of size 4068 [-Wformat-truncation=]
+ 6675 |      snprintf (filename, (size_t)COB_FILE_MAX, "%s%c%s",
+      |                                                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from common.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 28 and 4123 bytes into a destination of size 4095
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+common.c:6672:53: warning: '%s' directive output may be truncated writing up to 4095 bytes into a region of size 4094 [-Wformat-truncation=]
+ 6672 |      snprintf (filename, (size_t)COB_FILE_MAX, "%s%c%s",
+      |                                                     ^~
+In file included from /usr/include/stdio.h:867,
+                 from common.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 2 or more bytes (assuming 4097) into a destination of size 4095
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o fileio.lo fileio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c fileio.c  -fPIC -DPIC -o .libs/fileio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobgetopt.lo cobgetopt.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c cobgetopt.c  -fPIC -DPIC -o .libs/cobgetopt.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o reportio.lo reportio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c reportio.c  -fPIC -DPIC -o .libs/reportio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o mlio.lo mlio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c mlio.c  -fPIC -DPIC -o .libs/mlio.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o intrinsic.lo intrinsic.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c intrinsic.c  -fPIC -DPIC -o .libs/intrinsic.o
+In file included from /usr/include/string.h:495,
+                 from intrinsic.c:28:
+In function 'strncpy',
+    inlined from 'split_around_t' at intrinsic.c:2452:4,
+    inlined from 'cob_intr_seconds_from_formatted_time' at intrinsic.c:5416:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin___strncpy_chk' accessing between 0 and 25 bytes at offsets 0 and [1, 37] may overlap up to 24 bytes at offset [24, 1] [-Wrestrict]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6386:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 25 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6384:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 10 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function 'strncpy',
+    inlined from 'cob_intr_test_formatted_datetime' at intrinsic.c:6392:3:
+/usr/include/bits/string_fortified.h:106:10: warning: '__builtin_strncpy' output may be truncated copying 10 bytes from a string of length 36 [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include/libxml2     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o screenio.lo screenio.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I/usr/include/libxml2 -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c screenio.c  -fPIC -DPIC -o .libs/screenio.o
+screenio.c: In function 'cob_speaker_beep':
+screenio.c:152:9: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+  152 |   (void)write (fd, "\a", (size_t)1);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE  -version-info 4:0:0 -no-undefined -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o libcob.la -rpath /usr/lib64 common.lo move.lo numeric.lo strings.lo fileio.lo call.lo intrinsic.lo termio.lo screenio.lo reportio.lo cobgetopt.lo mlio.lo  -lm -lgmp -lxml2  -lcjson  -lcurses -ldb-5.3 -ldl  
+libtool: link: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  .libs/common.o .libs/move.o .libs/numeric.o .libs/strings.o .libs/fileio.o .libs/call.o .libs/intrinsic.o .libs/termio.o .libs/screenio.o .libs/reportio.o .libs/cobgetopt.o .libs/mlio.o   -O2 -g -fstack-protector -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1    -lm -lgmp -lxml2 -lcjson -lcurses /usr/lib64/libdb-5.3.so -lpthread -ldl -Wl,-soname -Wl,libcob.so.4 -o .libs/libcob.so.4.0.0
+libtool: link: (cd ".libs" && rm -f "libcob.so.4" && ln -s "libcob.so.4.0.0" "libcob.so.4")
+libtool: link: (cd ".libs" && rm -f "libcob.so" && ln -s "libcob.so.4.0.0" "libcob.so")
+libtool: link: ( cd ".libs" && rm -f "libcob.la" && ln -s "../libcob.la" "libcob.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+Making all in bin
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobcrun.o cobcrun.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--export-dynamic -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o cobcrun cobcrun.o ../lib/libsupport.a ../libcob/libcob.la  
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--export-dynamic -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1 -o .libs/cobcrun cobcrun.o  ../lib/libsupport.a ../libcob/.libs/libcob.so -lm -lgmp -lxml2 -lcjson -lcurses /usr/lib64/libdb-5.3.so -lpthread -ldl
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+Making all in cobc
+make  all-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o ppparse.o ppparse.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o pplex.o pplex.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o config.o config.c
+config.c: In function 'cb_load_conf_file':
+config.c:289:54: warning: '%s' directive output may be truncated writing up to 2047 bytes into a region of size 2046 [-Wformat-truncation=]
+  289 |     snprintf (filename, (size_t)COB_NORMAL_MAX, "%s%c%s", cob_config_dir, SLASH_CHAR, conf_file);
+      |                                                      ^~
+In file included from /usr/include/stdio.h:867,
+                 from config.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 2 or more bytes (assuming 2049) into a destination of size 2047
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o scanner.o scanner.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o reserved.o reserved.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o error.o error.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o cobc.o cobc.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o field.o field.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o tree.o tree.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o help.o help.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o codeoptim.o codeoptim.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o parser.o parser.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o typeck.o typeck.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -c -o codegen.o codegen.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z,relro,-z,now,-O1 -o cobc cobc.o ppparse.o pplex.o parser.o scanner.o config.o reserved.o error.o tree.o field.o typeck.o codegen.o help.o codeoptim.o  ../libcob/libcob.la ../lib/libsupport.a  
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -pipe -finline-functions -fsigned-char -Wall -Wwrite-strings -Wmissing-prototypes -Wno-format-y2k -U_FORTIFY_SOURCE -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-O1 -o .libs/cobc cobc.o ppparse.o pplex.o parser.o scanner.o config.o reserved.o error.o tree.o field.o typeck.o codegen.o help.o codeoptim.o  ../libcob/.libs/libcob.so -lm -lgmp -lxml2 -lcjson -lcurses /usr/lib64/libdb-5.3.so -lpthread -ldl ../lib/libsupport.a
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+Making all in config
+make[2]: Nothing to be done for 'all'.
+Making all in copy
+make[2]: Nothing to be done for 'all'.
+Making all in po
+make[2]: Nothing to be done for 'all'.
+Making all in doc
+make  all-am
+Making all in extras
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+("../pre-inst-env" cobc -m -Wall -O2 -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob" || \
+ "../pre-inst-env" cobc -m -Wall     -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob" || \
+ "../pre-inst-env" cobc -m -Wall -vv -o "CBL_OC_DUMP.so" "CBL_OC_DUMP.cob")
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+Making all in tests
+Making all in cobol85
+make[3]: Nothing to be done for 'all'.
+make[3]: Nothing to be done for 'all-am'.
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.rssRf3
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64
++ cd gnucobol-3.1-dev
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64 'INSTALL=/usr/bin/install -p'
+make  install-recursive
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+Making install in .
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include'
+ /usr/bin/install -p -m 644 libcob.h '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
+Making install in lib
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/lib'
+Making install in libcob
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -p   libcob.la '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/libcob.so.4.0.0 /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64 && { ln -s -f libcob.so.4.0.0 libcob.so.4 || { rm -f libcob.so.4 && ln -s libcob.so.4.0.0 libcob.so.4; }; })
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64 && { ln -s -f libcob.so.4.0.0 libcob.so || { rm -f libcob.so && ln -s libcob.so.4.0.0 libcob.so; }; })
+libtool: install: /usr/bin/install -p .libs/libcob.lai /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/libcob.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob'
+ /usr/bin/install -p -m 644 common.h cobgetopt.h exception.def '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob'
+make  install-data-hook
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/byteswap.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/call.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/fileio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/termio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/screenio.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/move.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/numeric.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/strings.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/intrinsic.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/codegen.h
+rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/include/libcob/system.def
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/libcob'
+Making install in bin
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p cobcrun '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+libtool: warning: '../libcob/libcob.la' has not been installed in '/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/cobcrun /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobcrun
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+ /usr/bin/install -p cob-config '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/man/man1'
+ /usr/bin/install -p -m 644 cobcrun.1 cob-config.1 '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/man/man1'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/bin'
+Making install in cobc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make  install-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p cobc '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin'
+libtool: warning: '../libcob/libcob.la' has not been installed in '/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/cobc /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobc
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/man/man1'
+ /usr/bin/install -p -m 644 cobc.1 '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/man/man1'
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/cobc'
+Making install in config
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gnucobol/config'
+ /usr/bin/install -p -m 644 default.conf cobol85.conf cobol2002.conf cobol2014.conf acu.conf mf.conf ibm.conf mvs.conf bs2000.conf rm.conf acu-strict.conf mf-strict.conf ibm-strict.conf mvs-strict.conf bs2000-strict.conf rm-strict.conf xopen.conf lax.conf-inc cobol85.words cobol2002.words cobol2014.words acu.words mf.words ibm.words mvs.words bs2000.words rm.words runtime.cfg runtime_empty.cfg '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gnucobol/config'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/config'
+Making install in copy
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gnucobol/copy'
+ /usr/bin/install -p -m 644 screenio.cpy sqlca.cpy sqlda.cpy xfhfcd.cpy xfhfcd3.cpy '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gnucobol/copy'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/copy'
+Making install in po
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/po'
+installing en@boldquot.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/en@boldquot/LC_MESSAGES/gnucobol.mo
+installing en@quot.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/en@quot/LC_MESSAGES/gnucobol.mo
+installing de.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/de/LC_MESSAGES/gnucobol.mo
+installing es.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/es/LC_MESSAGES/gnucobol.mo
+installing fr.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/fr/LC_MESSAGES/gnucobol.mo
+installing it.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/it/LC_MESSAGES/gnucobol.mo
+installing ja.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/ja/LC_MESSAGES/gnucobol.mo
+installing nl.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/nl/LC_MESSAGES/gnucobol.mo
+installing pt.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/pt/LC_MESSAGES/gnucobol.mo
+installing sv.gmo as /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/locale/sv/LC_MESSAGES/gnucobol.mo
+if test "gnucobol" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -p -m 644 ./$file \
+		    /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/po'
+Making install in doc
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make  install-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/info'
+ /usr/bin/install -p -m 644 ./gnucobol.info '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/share/info'
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/doc'
+Making install in extras
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/gnucobol'
+ /usr/bin/install -p -m 644 CBL_OC_DUMP.so '/home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/gnucobol'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/extras'
+Making install in tests
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+Making install in cobol85
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev'
++ find /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64 -name '*.la' -delete
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 3.1-0.dev20200413.1.mga8 --unique-debug-suffix -3.1-0.dev20200413.1.mga8.x86_64 --unique-debug-src-base gnucobol-3.1-0.dev20200413.1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobcrun
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobc
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobc
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/lib64/libcob.so.4.0.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/gnucobol-3.1-0.dev20200413.1.mga8.x86_64/usr/bin/cobcrun
+original debug info size: 4696kB, size after compression: 4372kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 3 CRC32s, 0 CRC32s did match.
+8895 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
+Warning: undefined symbols in /usr/lib64/gnucobol/CBL_OC_DUMP.so: 
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/cob-config from /bin/sh to #!/usr/bin/sh
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.UL3465
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gnucobol-3.1-dev
++ '[' 1 -eq 1 ']'
++ xvfb-run /usr/bin/make -O -j4 V=1 VERBOSE=1 checkall
+make  check-recursive
+make  all-recursive
+Making check in .
+Making all in .
+Making check in lib
+Making all in lib
+make[2]: Nothing to be done for 'check'.
+Making check in libcob
+make[2]: Nothing to be done for 'all'.
+Making all in libcob
+make[2]: Nothing to be done for 'check'.
+Making check in bin
+make[2]: Nothing to be done for 'all'.
+Making all in bin
+make[2]: Nothing to be done for 'check'.
+Making check in cobc
+make[2]: Nothing to be done for 'all'.
+Making all in cobc
+make  check-am
+make  all-am
+make[3]: Nothing to be done for 'check-am'.
+Making check in config
+make[3]: Nothing to be done for 'all-am'.
+Making all in config
+make[2]: Nothing to be done for 'check'.
+Making check in copy
+make[2]: Nothing to be done for 'all'.
+Making all in copy
+make[2]: Nothing to be done for 'check'.
+Making check in po
+make[2]: Nothing to be done for 'all'.
+make[2]: Nothing to be done for 'check'.
+Making all in po
+Making check in doc
+make[2]: Nothing to be done for 'all'.
+Making all in doc
+make  check-am
+make  all-am
+make[3]: Nothing to be done for 'check-am'.
+Making check in extras
+make[3]: Nothing to be done for 'all-am'.
+Making all in extras
+make[2]: Nothing to be done for 'check'.
+Making check in tests
+make[2]: Nothing to be done for 'all'.
+Making all in tests
+Making check in cobol85
+Making all in cobol85
+make[3]: Nothing to be done for 'check'.
+make[3]: Nothing to be done for 'all'.
+make  listings-sed.sh
+make[3]: Nothing to be done for 'all-am'.
+make[4]: Nothing to be done for 'listings-sed.sh'.
+make  check-local
+cd tests && make  test
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+testing for perl
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+cd cobol85 && make  test
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+testing for working diff
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Unpacking newcob.val.tar.gz...
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Extracting EXEC85 program from newcob.val
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Compiling EXEC85 program
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory IC ...
+Finished module directory IC.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory SM ...
+Finished module directory SM.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory NC ...
+Finished module directory NC.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory SQ ...
+Finished module directory SQ.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory RL ...
+Finished module directory RL.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory OB ...
+Finished module directory OB.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory SG ...
+Finished module directory SG.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory ST ...
+Finished module directory ST.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory IF ...
+Finished module directory IF.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory DB ...
+Finished module directory DB.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory RW ...
+Finished module directory RW.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Building module directory IX ...
+Finished module directory IX.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+
+Performing tests for module directory SM
+cobc -std=cobol85 -x -I ../copy -debug SM101A.CBL &&  ./SM101A
+cobc -std=cobol85 -x -I ../copy -debug SM102A.SUB &&  ./SM102A
+cobc -std=cobol85 -x -I ../copy -debug SM103A.CBL &&  ./SM103A
+cobc -std=cobol85 -x -I ../copy -debug SM104A.SUB &&  ./SM104A
+cobc -std=cobol85 -x -I ../copy -debug SM105A.CBL &&  ./SM105A
+cobc -std=cobol85 -x -I ../copy -debug SM106A.CBL &&  ./SM106A
+cobc -std=cobol85 -x -I ../copy -debug SM107A.CBL &&  ./SM107A
+cobc -std=cobol85 -x -I ../copy -debug SM201A.CBL &&  ./SM201A
+cobc -std=cobol85 -x -I ../copy -debug SM202A.SUB &&  ./SM202A
+cobc -std=cobol85 -x -I ../copy -debug SM203A.CBL &&  ./SM203A
+cobc -std=cobol85 -x -I ../copy -debug SM204A.SUB &&  ./SM204A
+cobc -std=cobol85 -x -I ../copy -debug SM205A.CBL &&  ./SM205A
+cobc -std=cobol85 -x -fdebugging-line -I ../copy -debug SM206A.CBL &&  ./SM206A
+cobc -std=cobol85 -x -I ../copy -debug SM207A.CBL &&  ./SM207A
+cobc -std=cobol85 -x -I ../copy -debug SM208A.CBL &&  ./SM208A
+cobc -std=cobol85 -x -I ../copy -debug SM301M.CBL &&  ./SM301M
+cobc -std=cobol85 -x -I ../copy -debug SM401M.CBL &&  ./SM401M
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+
+Comparing test results for module directory SM
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SM'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+
+Performing tests for module directory IC
+cobc -std=cobol85 -m lib/IC102A.CBL
+cobc -std=cobol85 -m lib/IC104A.CBL
+cobc -std=cobol85 -m lib/IC105A.CBL
+cobc -std=cobol85 -m lib/IC107A.CBL
+cobc -std=cobol85 -m lib/IC109A.CBL
+cobc -std=cobol85 -m lib/IC110A.CBL
+cobc -std=cobol85 -m lib/IC111A.CBL
+cobc -std=cobol85 -m lib/IC113A.CBL
+cobc -std=cobol85 -m lib/IC115A.CBL
+cobc -std=cobol85 -m lib/IC117M.CBL
+cobc -std=cobol85 -m lib/IC118M.CBL
+cobc -std=cobol85 -m lib/IC202A.CBL
+cobc -std=cobol85 -m lib/IC204A.CBL
+cobc -std=cobol85 -m lib/IC205A.CBL
+cobc -std=cobol85 -m lib/IC206A.CBL
+cobc -std=cobol85 -m lib/IC208A.CBL
+cobc -std=cobol85 -m lib/IC210A.CBL
+cobc -std=cobol85 -m lib/IC211A.CBL
+cobc -std=cobol85 -m lib/IC212A.CBL
+cobc -std=cobol85 -m lib/IC214A.CBL
+cobc -std=cobol85 -m lib/IC215A.CBL
+cobc -std=cobol85 -m lib/IC217A.CBL
+cobc -std=cobol85 -x -debug IC101A.CBL &&  ./IC101A
+cobc -std=cobol85 -x -debug IC103A.CBL &&  ./IC103A
+cobc -std=cobol85 -x -debug IC106A.CBL &&  ./IC106A
+cobc -std=cobol85 -x -debug IC108A.CBL &&  ./IC108A
+cobc -std=cobol85 -x -debug IC112A.CBL &&  ./IC112A
+cobc -std=cobol85 -x -debug IC114A.CBL &&  ./IC114A
+cobc -std=cobol85 -x -debug IC116M.CBL &&  ./IC116M
+cobc -std=cobol85 -x -debug IC201A.CBL &&  ./IC201A
+cobc -std=cobol85 -x -debug IC203A.CBL &&  ./IC203A
+cobc -std=cobol85 -x -debug IC207A.CBL &&  ./IC207A
+cobc -std=cobol85 -x -debug IC209A.CBL &&  ./IC209A
+cobc -std=cobol85 -x -debug IC213A.CBL &&  ./IC213A
+cobc -std=cobol85 -x -debug IC216A.CBL &&  ./IC216A
+cobc -std=cobol85 -x -debug IC222A.CBL &&  ./IC222A
+cobc -std=cobol85 -x -debug IC223A.CBL &&  ./IC223A
+cobc -std=cobol85 -x -debug IC224A.CBL &&  ./IC224A
+cobc -std=cobol85 -x -debug IC225A.CBL &&  ./IC225A
+cobc -std=cobol85 -x -debug IC226A.CBL &&  ./IC226A
+cobc -std=cobol85 -x -debug IC227A.CBL &&  ./IC227A
+cobc -std=cobol85 -x -debug IC228A.CBL &&  ./IC228A
+cobc -std=cobol85 -x -debug IC233A.CBL &&  ./IC233A
+cobc -std=cobol85 -x -debug IC234A.CBL &&  ./IC234A
+cobc -std=cobol85 -x -debug IC235A.CBL &&  ./IC235A
+cobc -std=cobol85 -x -debug IC237A.CBL &&  ./IC237A
+cobc -std=cobol85 -x -debug IC401M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+
+Comparing test results for module directory IC
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IC'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+
+Performing tests for module directory RL
+cobc -std=cobol85 -x -debug RL101A.CBL &&  ./RL101A
+cobc -std=cobol85 -x -debug RL102A.SUB &&  ./RL102A
+cobc -std=cobol85 -x -debug RL103A.SUB &&  ./RL103A
+cobc -std=cobol85 -x -debug RL104A.CBL &&  ./RL104A
+cobc -std=cobol85 -x -debug RL105A.CBL &&  ./RL105A
+cobc -std=cobol85 -x -debug RL106A.CBL &&  ./RL106A
+cobc -std=cobol85 -x -debug RL107A.CBL &&  ./RL107A
+cobc -std=cobol85 -x -debug RL108A.CBL &&  ./RL108A
+cobc -std=cobol85 -x -debug RL109A.SUB &&  ./RL109A
+cobc -std=cobol85 -x -debug RL110A.SUB &&  ./RL110A
+cobc -std=cobol85 -x -debug RL111A.CBL &&  ./RL111A
+cobc -std=cobol85 -x -debug RL112A.CBL &&  ./RL112A
+cobc -std=cobol85 -x -debug RL113A.CBL &&  ./RL113A
+cobc -std=cobol85 -x -debug RL114A.CBL &&  ./RL114A
+cobc -std=cobol85 -x -debug RL115A.CBL &&  ./RL115A
+cobc -std=cobol85 -x -debug RL116A.CBL &&  ./RL116A
+cobc -std=cobol85 -x -debug RL117A.CBL &&  ./RL117A
+cobc -std=cobol85 -x -debug RL118A.CBL &&  ./RL118A
+cobc -std=cobol85 -x -debug RL119A.CBL &&  ./RL119A
+cobc -std=cobol85 -x -debug RL201A.CBL &&  ./RL201A
+cobc -std=cobol85 -x -debug RL202A.SUB &&  ./RL202A
+cobc -std=cobol85 -x -debug RL203A.SUB &&  ./RL203A
+cobc -std=cobol85 -x -debug RL204A.CBL &&  ./RL204A
+cobc -std=cobol85 -x -debug RL205A.CBL &&  ./RL205A
+cobc -std=cobol85 -x -debug RL206A.CBL &&  ./RL206A
+cobc -std=cobol85 -x -debug RL207A.SUB &&  ./RL207A
+cobc -std=cobol85 -x -debug RL208A.SUB &&  ./RL208A
+cobc -std=cobol85 -x -debug RL209A.CBL &&  ./RL209A
+cobc -std=cobol85 -x -debug RL210A.CBL &&  ./RL210A
+cobc -std=cobol85 -x -debug RL211A.CBL &&  ./RL211A
+cobc -std=cobol85 -x -debug RL212A.CBL &&  ./RL212A
+cobc -std=cobol85 -x -debug RL213A.SUB &&  ./RL213A
+cobc -std=cobol85 -x -debug RL301M.CBL
+cobc -std=cobol85 -x -debug RL302M.CBL &&  ./RL302M
+cobc -std=cobol85 -x -debug RL401M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+
+Comparing test results for module directory RL
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RL'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+
+Performing tests for module directory SQ
+cobc -std=cobol85 -x -debug SQ101M.CBL &&  ./SQ101M
+cobc -std=cobol85 -x -debug SQ102A.CBL &&  ./SQ102A
+cobc -std=cobol85 -x -debug SQ103A.CBL &&  ./SQ103A
+cobc -std=cobol85 -x -debug SQ104A.CBL &&  ./SQ104A
+cobc -std=cobol85 -x -debug SQ105A.CBL &&  ./SQ105A
+cobc -std=cobol85 -x -debug SQ106A.CBL &&  ./SQ106A
+cobc -std=cobol85 -x -debug SQ107A.CBL &&  ./SQ107A
+cobc -std=cobol85 -x -debug SQ108A.CBL &&  ./SQ108A
+cobc -std=cobol85 -x -debug SQ109M.CBL &&  ./SQ109M
+cobc -std=cobol85 -x -debug SQ110M.CBL &&  ./SQ110M
+cobc -std=cobol85 -x -debug SQ111A.CBL &&  ./SQ111A
+cobc -std=cobol85 -x -debug SQ112A.CBL &&  ./SQ112A
+cobc -std=cobol85 -x -debug SQ113A.CBL &&  ./SQ113A
+cobc -std=cobol85 -x -debug SQ114A.CBL &&  ./SQ114A
+cobc -std=cobol85 -x -debug SQ115A.CBL &&  ./SQ115A
+cobc -std=cobol85 -x -debug SQ116A.CBL &&  ./SQ116A
+cobc -std=cobol85 -x -debug SQ117A.CBL &&  ./SQ117A
+cobc -std=cobol85 -x -debug SQ121A.CBL &&  ./SQ121A
+cobc -std=cobol85 -x -debug SQ122A.CBL &&  ./SQ122A
+cobc -std=cobol85 -x -debug SQ123A.CBL &&  ./SQ123A
+cobc -std=cobol85 -x -debug SQ124A.CBL &&  ./SQ124A
+cobc -std=cobol85 -x -debug SQ125A.CBL &&  ./SQ125A
+cobc -std=cobol85 -x -debug SQ126A.CBL &&  ./SQ126A
+cobc -std=cobol85 -x -debug SQ127A.CBL &&  ./SQ127A
+cobc -std=cobol85 -x -debug SQ128A.CBL &&  ./SQ128A
+cobc -std=cobol85 -x -debug SQ129A.CBL &&  ./SQ129A
+cobc -std=cobol85 -x -debug SQ130A.CBL &&  ./SQ130A
+cobc -std=cobol85 -x -debug SQ131A.CBL &&  ./SQ131A
+cobc -std=cobol85 -x -debug SQ132A.CBL &&  ./SQ132A
+cobc -std=cobol85 -x -debug SQ133A.CBL &&  ./SQ133A
+cobc -std=cobol85 -x -debug SQ134A.CBL &&  ./SQ134A
+cobc -std=cobol85 -x -debug SQ135A.CBL &&  ./SQ135A
+cobc -std=cobol85 -x -debug SQ136A.CBL &&  ./SQ136A
+cobc -std=cobol85 -x -debug SQ137A.CBL &&  ./SQ137A
+cobc -std=cobol85 -x -debug SQ138A.CBL &&  ./SQ138A
+cobc -std=cobol85 -x -debug SQ139A.CBL &&  ./SQ139A
+cobc -std=cobol85 -x -debug SQ140A.CBL &&  ./SQ140A
+cobc -std=cobol85 -x -debug SQ141A.CBL &&  ./SQ141A
+cobc -std=cobol85 -x -debug SQ142A.CBL &&  ./SQ142A
+cobc -std=cobol85 -x -debug SQ143A.CBL &&  ./SQ143A
+cobc -std=cobol85 -x -debug SQ144A.CBL &&  ./SQ144A
+cobc -std=cobol85 -x -debug SQ146A.CBL &&  ./SQ146A
+cobc -std=cobol85 -x -debug SQ147A.CBL &&  ./SQ147A
+cobc -std=cobol85 -x -debug SQ148A.CBL &&  ./SQ148A
+cobc -std=cobol85 -x -debug SQ149A.CBL &&  ./SQ149A
+cobc -std=cobol85 -x -debug SQ150A.CBL &&  ./SQ150A
+cobc -std=cobol85 -x -debug SQ151A.CBL &&  ./SQ151A
+cobc -std=cobol85 -x -debug SQ152A.CBL &&  ./SQ152A
+cobc -std=cobol85 -x -debug SQ153A.CBL &&  ./SQ153A
+cobc -std=cobol85 -x -debug SQ154A.CBL &&  ./SQ154A
+cobc -std=cobol85 -x -debug SQ155A.CBL &&  ./SQ155A
+cobc -std=cobol85 -x -debug SQ156A.CBL &&  ./SQ156A
+cobc -std=cobol85 -x -debug SQ201M.CBL &&  ./SQ201M
+cobc -std=cobol85 -x -debug SQ202A.CBL &&  ./SQ202A
+cobc -std=cobol85 -x -debug SQ203A.SUB &&  ./SQ203A
+cobc -std=cobol85 -x -debug SQ204A.CBL &&  ./SQ204A
+cobc -std=cobol85 -x -debug SQ205A.CBL &&  ./SQ205A
+cobc -std=cobol85 -x -debug SQ206A.CBL &&  ./SQ206A
+cobc -std=cobol85 -x -debug SQ207M.CBL &&  ./SQ207M
+cobc -std=cobol85 -x -debug SQ208M.CBL &&  ./SQ208M
+cobc -std=cobol85 -x -debug SQ209M.CBL &&  ./SQ209M
+cobc -std=cobol85 -x -debug SQ210M.CBL &&  ./SQ210M
+cobc -std=cobol85 -x -debug SQ211A.CBL &&  ./SQ211A
+cobc -std=cobol85 -x -debug SQ212A.CBL &&  ./SQ212A
+cobc -std=cobol85 -x -debug SQ213A.CBL &&  ./SQ213A
+cobc -std=cobol85 -x -debug SQ214A.CBL &&  ./SQ214A
+cobc -std=cobol85 -x -debug SQ215A.CBL &&  ./SQ215A
+cobc -std=cobol85 -x -debug SQ216A.CBL &&  ./SQ216A
+cobc -std=cobol85 -x -debug SQ217A.CBL &&  ./SQ217A
+cobc -std=cobol85 -x -debug SQ218A.CBL &&  ./SQ218A
+cobc -std=cobol85 -x -debug SQ219A.CBL &&  ./SQ219A
+cobc -std=cobol85 -x -debug SQ220A.CBL &&  ./SQ220A
+cobc -std=cobol85 -x -debug SQ221A.CBL &&  ./SQ221A
+cobc -std=cobol85 -x -debug SQ222A.CBL &&  ./SQ222A
+cobc -std=cobol85 -x -debug SQ223A.CBL &&  ./SQ223A
+cobc -std=cobol85 -x -debug SQ224A.CBL &&  ./SQ224A
+cobc -std=cobol85 -x -debug SQ225A.CBL &&  ./SQ225A
+cobc -std=cobol85 -x -debug SQ226A.CBL &&  ./SQ226A
+cobc -std=cobol85 -x -debug SQ227A.CBL &&  ./SQ227A
+cobc -std=cobol85 -x -debug SQ228A.CBL &&  ./SQ228A
+cobc -std=cobol85 -x -debug SQ229A.CBL &&  ./SQ229A
+cobc -std=cobol85 -x -debug SQ230A.CBL &&  ./SQ230A
+cobc -std=cobol85 -x -debug SQ302M.CBL &&  ./SQ302M
+cobc -std=cobol85 -x -debug SQ303M.CBL
+cobc -std=cobol85 -x -debug SQ401M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+
+Comparing test results for module directory SQ
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SQ'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+
+Performing tests for module directory ST
+cobc -std=cobol85 -x -debug ST101A.CBL &&  ./ST101A
+cobc -std=cobol85 -x -debug ST102A.SUB &&  ./ST102A
+cobc -std=cobol85 -x -debug ST103A.SUB &&  ./ST103A
+cobc -std=cobol85 -x -debug ST104A.CBL &&  ./ST104A
+cobc -std=cobol85 -x -debug ST105A.SUB &&  ./ST105A
+cobc -std=cobol85 -x -debug ST106A.CBL &&  ./ST106A
+cobc -std=cobol85 -x -debug ST107A.SUB &&  ./ST107A
+cobc -std=cobol85 -x -debug ST108A.CBL &&  ./ST108A
+cobc -std=cobol85 -x -debug ST109A.CBL &&  ./ST109A
+cobc -std=cobol85 -x -debug ST110A.SUB &&  ./ST110A
+cobc -std=cobol85 -x -debug ST111A.SUB &&  ./ST111A
+cobc -std=cobol85 -x -debug ST112M.CBL &&  ./ST112M
+cobc -std=cobol85 -x -debug ST113M.SUB &&  ./ST113M
+cobc -std=cobol85 -x -debug ST114M.SUB &&  ./ST114M
+cobc -std=cobol85 -x -debug ST115A.CBL &&  ./ST115A
+cobc -std=cobol85 -x -debug ST116A.SUB &&  ./ST116A
+cobc -std=cobol85 -x -debug ST117A.SUB &&  ./ST117A
+cobc -std=cobol85 -x -debug ST118A.CBL &&  ./ST118A
+cobc -std=cobol85 -x -debug ST119A.CBL &&  ./ST119A
+cobc -std=cobol85 -x -debug ST120A.SUB &&  ./ST120A
+cobc -std=cobol85 -x -debug ST121A.SUB &&  ./ST121A
+cobc -std=cobol85 -x -debug ST122A.CBL &&  ./ST122A
+cobc -std=cobol85 -x -debug ST123A.SUB &&  ./ST123A
+cobc -std=cobol85 -x -debug ST124A.SUB &&  ./ST124A
+cobc -std=cobol85 -x -debug ST125A.CBL &&  ./ST125A
+cobc -std=cobol85 -x -debug ST126A.SUB &&  ./ST126A
+cobc -std=cobol85 -x -debug ST127A.CBL &&  ./ST127A
+cobc -std=cobol85 -x -debug ST131A.CBL &&  ./ST131A
+cobc -std=cobol85 -x -debug ST132A.CBL &&  ./ST132A
+cobc -std=cobol85 -x -debug ST133A.CBL &&  ./ST133A
+cobc -std=cobol85 -x -debug ST134A.CBL &&  ./ST134A
+cobc -std=cobol85 -x -debug ST135A.CBL &&  ./ST135A
+cobc -std=cobol85 -x -debug ST136A.CBL &&  ./ST136A
+cobc -std=cobol85 -x -debug ST137A.CBL &&  ./ST137A
+cobc -std=cobol85 -x -debug ST139A.CBL &&  ./ST139A
+cobc -std=cobol85 -x -debug ST140A.CBL &&  ./ST140A
+cobc -std=cobol85 -x -debug ST144A.CBL &&  ./ST144A
+cobc -std=cobol85 -x -debug ST146A.CBL &&  ./ST146A
+cobc -std=cobol85 -x -debug ST147A.CBL &&  ./ST147A
+cobc -std=cobol85 -x -debug ST301M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+
+Comparing test results for module directory ST
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/ST'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+
+Performing tests for module directory OB
+cobc -std=cobol85 -m lib/OBIC2A.CBL
+cobc -std=cobol85 -m lib/OBIC3A.CBL
+cobc -std=cobol85 -x -debug OBIC1A.CBL &&  ./OBIC1A
+cobc -std=cobol85 -x -debug OBNC1M.CBL &&  ./OBNC1M
+cobc -std=cobol85 -x -debug OBNC2M.CBL &&  ./OBNC2M
+cobc -std=cobol85 -x -debug OBSQ1A.CBL &&  ./OBSQ1A
+cobc -std=cobol85 -x -debug OBSQ3A.CBL &&  ./OBSQ3A
+cobc -std=cobol85 -x -debug OBSQ4A.SUB &&  ./OBSQ4A
+cobc -std=cobol85 -x -debug OBSQ5A.SUB &&  ./OBSQ5A
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+
+Comparing test results for module directory OB
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/OB'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+
+Performing tests for module directory SG
+cobc -std=cobol85 -x -debug SG101A.CBL &&  ./SG101A
+cobc -std=cobol85 -x -debug SG102A.CBL &&  ./SG102A
+cobc -std=cobol85 -x -debug SG103A.CBL &&  ./SG103A
+cobc -std=cobol85 -x -debug SG104A.CBL &&  ./SG104A
+cobc -std=cobol85 -x -debug SG105A.CBL &&  ./SG105A
+cobc -std=cobol85 -x -debug SG106A.CBL &&  ./SG106A
+cobc -std=cobol85 -x -debug SG201A.CBL &&  ./SG201A
+cobc -std=cobol85 -x -debug SG202A.CBL &&  ./SG202A
+cobc -std=cobol85 -x -debug SG203A.CBL &&  ./SG203A
+cobc -std=cobol85 -x -debug SG204A.CBL &&  ./SG204A
+cobc -std=cobol85 -x -debug SG302M.CBL &&  ./SG302M
+cobc -std=cobol85 -x -debug SG303M.CBL &&  ./SG303M
+cobc -std=cobol85 -x -debug SG401M.CBL &&  ./SG401M
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+
+Comparing test results for module directory SG
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/SG'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+
+Performing tests for module directory RW
+cobc -std=cobol85 -x -debug RW101A.CBL &&  ./RW101A
+cobc -std=cobol85 -x -debug RW102A.CBL &&  ./RW102A
+cobc -std=cobol85 -x -debug RW103A.CBL &&  ./RW103A
+cobc -std=cobol85 -x -debug RW104A.CBL &&  ./RW104A
+cobc -std=cobol85 -x -debug RW301M.CBL
+cobc -std=cobol85 -x -debug RW302M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+
+Comparing test results for module directory RW
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/RW'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+
+Performing tests for module directory DB
+cobc -std=cobol85 -x DB101A.CBL &&  ./DB101A
+cobc -std=cobol85 -x -debug DB102A.CBL &&  ./DB102A
+cobc -std=cobol85 -x -debug DB103M.CBL &&  ./DB103M
+Reexecution with runtime DEBUG off ./DB103M
+cobc -std=cobol85 -x DB104A.CBL &&  ./DB104A
+cobc -std=cobol85 -x -debug DB105A.CBL &&  ./DB105A
+cobc -std=cobol85 -x DB201A.CBL &&  ./DB201A
+cobc -std=cobol85 -x DB202A.CBL &&  ./DB202A
+cobc -std=cobol85 -x DB203A.CBL &&  ./DB203A
+cobc -std=cobol85 -x DB204A.CBL &&  ./DB204A
+cobc -std=cobol85 -x -debug DB205A.CBL
+cobc -std=cobol85 -x -debug DB301M.CBL &&  ./DB301M
+cobc -std=cobol85 -x -debug DB302M.CBL &&  ./DB302M
+cobc -std=cobol85 -x -debug DB303M.CBL &&  ./DB303M
+cobc -std=cobol85 -x -Wobsolete -debug DB304M.CBL &&  ./DB304M
+cobc -std=cobol85 -x -debug DB305M.CBL &&  ./DB305M
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+
+Comparing test results for module directory DB
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/DB'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+
+Performing tests for module directory NC
+cobc -std=cobol85 -x -debug NC101A.CBL &&  ./NC101A
+cobc -std=cobol85 -x -debug NC102A.CBL &&  ./NC102A
+cobc -std=cobol85 -x -debug NC103A.CBL &&  ./NC103A
+cobc -std=cobol85 -x -debug NC104A.CBL &&  ./NC104A
+cobc -std=cobol85 -x -debug NC105A.CBL &&  ./NC105A
+cobc -std=cobol85 -x -debug NC106A.CBL &&  ./NC106A
+cobc -std=cobol85 -x -debug NC107A.CBL &&  ./NC107A
+cobc -std=cobol85 -x -debug NC108M.CBL &&  ./NC108M
+cobc -std=cobol85 -x -debug NC109M.CBL &&  ./NC109M < NC109M.DAT
+cobc -std=cobol85 -x -debug NC110M.CBL &&  ./NC110M
+cobc -std=cobol85 -x -debug NC111A.CBL &&  ./NC111A
+cobc -std=cobol85 -x -debug NC112A.CBL &&  ./NC112A
+cobc -std=cobol85 -x -debug NC113M.CBL &&  ./NC113M
+cobc -std=cobol85 -x -t NC114M.lst -debug NC114M.CBL &&  ./NC114M
+cobc -std=cobol85 -x -debug NC115A.CBL &&  ./NC115A
+cobc -std=cobol85 -x -debug NC116A.CBL &&  ./NC116A
+cobc -std=cobol85 -x -debug NC117A.CBL &&  ./NC117A
+cobc -std=cobol85 -x -debug NC118A.CBL &&  ./NC118A
+cobc -std=cobol85 -x -debug NC119A.CBL &&  ./NC119A
+cobc -std=cobol85 -x -debug NC120A.CBL &&  ./NC120A
+cobc -std=cobol85 -x -debug NC121M.CBL &&  ./NC121M
+cobc -std=cobol85 -x -debug NC122A.CBL &&  ./NC122A
+cobc -std=cobol85 -x -debug NC123A.CBL &&  ./NC123A
+cobc -std=cobol85 -x -debug NC124A.CBL &&  ./NC124A
+cobc -std=cobol85 -x -debug NC125A.CBL &&  ./NC125A
+cobc -std=cobol85 -x -debug NC126A.CBL &&  ./NC126A
+cobc -std=cobol85 -x -debug NC127A.CBL &&  ./NC127A
+cobc -std=cobol85 -x -debug NC131A.CBL &&  ./NC131A
+cobc -std=cobol85 -x -debug NC132A.CBL &&  ./NC132A
+cobc -std=cobol85 -x -debug NC133A.CBL &&  ./NC133A
+cobc -std=cobol85 -x -debug NC134A.CBL &&  ./NC134A
+cobc -std=cobol85 -x -debug NC135A.CBL &&  ./NC135A
+cobc -std=cobol85 -x -debug NC136A.CBL &&  ./NC136A
+cobc -std=cobol85 -x -debug NC137A.CBL &&  ./NC137A
+cobc -std=cobol85 -x -debug NC138A.CBL &&  ./NC138A
+cobc -std=cobol85 -x -debug NC139A.CBL &&  ./NC139A
+cobc -std=cobol85 -x -debug NC140A.CBL &&  ./NC140A
+cobc -std=cobol85 -x -debug NC141A.CBL &&  ./NC141A
+cobc -std=cobol85 -x -debug NC170A.CBL &&  ./NC170A
+cobc -std=cobol85 -x -debug NC171A.CBL &&  ./NC171A
+cobc -std=cobol85 -x -debug NC172A.CBL &&  ./NC172A
+cobc -std=cobol85 -x -debug NC173A.CBL &&  ./NC173A
+cobc -std=cobol85 -x -debug NC174A.CBL &&  ./NC174A
+cobc -std=cobol85 -x -debug NC175A.CBL &&  ./NC175A
+cobc -std=cobol85 -x -debug NC176A.CBL &&  ./NC176A
+cobc -std=cobol85 -x -debug NC177A.CBL &&  ./NC177A
+cobc -std=cobol85 -x -debug NC201A.CBL &&  ./NC201A
+cobc -std=cobol85 -x -debug NC202A.CBL &&  ./NC202A
+cobc -std=cobol85 -x -debug NC203A.CBL &&  ./NC203A
+cobc -std=cobol85 -x -debug NC204M.CBL &&  ./NC204M < NC204M.DAT
+cobc -std=cobol85 -x -debug NC205A.CBL &&  ./NC205A
+cobc -std=cobol85 -x -debug NC206A.CBL &&  ./NC206A
+cobc -std=cobol85 -x -debug NC207A.CBL &&  ./NC207A
+cobc -std=cobol85 -x -debug NC208A.CBL &&  ./NC208A
+cobc -std=cobol85 -x -debug NC209A.CBL &&  ./NC209A
+cobc -std=cobol85 -x -debug NC210A.CBL &&  ./NC210A
+cobc -std=cobol85 -x -debug NC211A.CBL &&  ./NC211A
+cobc -std=cobol85 -x -debug NC214M.CBL &&  ./NC214M
+cobc -std=cobol85 -x -debug NC215A.CBL &&  ./NC215A
+cobc -std=cobol85 -x -debug NC216A.CBL &&  ./NC216A
+cobc -std=cobol85 -x -debug NC217A.CBL &&  ./NC217A
+cobc -std=cobol85 -x -debug NC218A.CBL &&  ./NC218A
+cobc -std=cobol85 -x -debug NC219A.CBL &&  ./NC219A
+cobc -std=cobol85 -x -debug NC220M.CBL &&  ./NC220M
+cobc -std=cobol85 -x -debug NC221A.CBL &&  ./NC221A
+cobc -std=cobol85 -x -debug NC222A.CBL &&  ./NC222A
+cobc -std=cobol85 -x -debug NC223A.CBL &&  ./NC223A
+cobc -std=cobol85 -x -debug NC224A.CBL &&  ./NC224A
+cobc -std=cobol85 -x -debug NC225A.CBL &&  ./NC225A
+cobc -std=cobol85 -x -debug NC231A.CBL &&  ./NC231A
+cobc -std=cobol85 -x -debug NC232A.CBL &&  ./NC232A
+cobc -std=cobol85 -x -debug NC233A.CBL &&  ./NC233A
+cobc -std=cobol85 -x -debug NC234A.CBL &&  ./NC234A
+cobc -std=cobol85 -x -debug NC235A.CBL &&  ./NC235A
+cobc -std=cobol85 -x -debug NC236A.CBL &&  ./NC236A
+cobc -std=cobol85 -x -debug NC237A.CBL &&  ./NC237A
+cobc -std=cobol85 -x -debug NC238A.CBL &&  ./NC238A
+cobc -std=cobol85 -x -debug NC239A.CBL &&  ./NC239A
+cobc -std=cobol85 -x -debug NC240A.CBL &&  ./NC240A
+cobc -std=cobol85 -x -debug NC241A.CBL &&  ./NC241A
+cobc -std=cobol85 -x -debug NC242A.CBL &&  ./NC242A
+cobc -std=cobol85 -x -debug NC243A.CBL &&  ./NC243A
+cobc -std=cobol85 -x -debug NC244A.CBL &&  ./NC244A
+cobc -std=cobol85 -x -debug NC245A.CBL &&  ./NC245A
+cobc -std=cobol85 -x -debug NC246A.CBL &&  ./NC246A
+cobc -std=cobol85 -x -debug NC247A.CBL &&  ./NC247A
+cobc -std=cobol85 -x -debug NC248A.CBL &&  ./NC248A
+cobc -std=cobol85 -x -debug NC250A.CBL &&  ./NC250A
+cobc -std=cobol85 -x -debug NC251A.CBL &&  ./NC251A
+cobc -std=cobol85 -x -debug NC252A.CBL &&  ./NC252A
+cobc -std=cobol85 -x -debug NC253A.CBL &&  ./NC253A
+cobc -std=cobol85 -x -debug NC254A.CBL &&  ./NC254A
+cobc -std=cobol85 -x -Wobsolete -debug NC302M.CBL &&  ./NC302M
+cobc -std=cobol85 -x -debug NC303M.CBL &&  ./NC303M
+cobc -std=cobol85 -x -debug NC401M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+
+Comparing test results for module directory NC
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/NC'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+
+Performing tests for module directory IF
+cobc -std=cobol85 -x -debug IF101A.CBL &&  ./IF101A
+cobc -std=cobol85 -x -debug IF102A.CBL &&  ./IF102A
+cobc -std=cobol85 -x -debug IF103A.CBL &&  ./IF103A
+cobc -std=cobol85 -x -debug IF104A.CBL &&  ./IF104A
+cobc -std=cobol85 -x -debug IF105A.CBL &&  ./IF105A
+cobc -std=cobol85 -x -debug IF106A.CBL &&  ./IF106A
+cobc -std=cobol85 -x -debug IF107A.CBL &&  ./IF107A
+cobc -std=cobol85 -x -debug IF108A.CBL &&  ./IF108A
+cobc -std=cobol85 -x -debug IF109A.CBL &&  ./IF109A
+cobc -std=cobol85 -x -debug IF110A.CBL &&  ./IF110A
+cobc -std=cobol85 -x -debug IF111A.CBL &&  ./IF111A
+cobc -std=cobol85 -x -debug IF112A.CBL &&  ./IF112A
+cobc -std=cobol85 -x -debug IF113A.CBL &&  ./IF113A
+cobc -std=cobol85 -x -debug IF114A.CBL &&  ./IF114A
+cobc -std=cobol85 -x -debug IF115A.CBL &&  ./IF115A
+cobc -std=cobol85 -x -debug IF116A.CBL &&  ./IF116A
+cobc -std=cobol85 -x -debug IF117A.CBL &&  ./IF117A
+cobc -std=cobol85 -x -debug IF118A.CBL &&  ./IF118A
+cobc -std=cobol85 -x -debug IF119A.CBL &&  ./IF119A
+cobc -std=cobol85 -x -debug IF120A.CBL &&  ./IF120A
+cobc -std=cobol85 -x -debug IF121A.CBL &&  ./IF121A
+cobc -std=cobol85 -x -debug IF122A.CBL &&  ./IF122A
+cobc -std=cobol85 -x -debug IF123A.CBL &&  ./IF123A
+cobc -std=cobol85 -x -debug IF124A.CBL &&  ./IF124A
+cobc -std=cobol85 -x -debug IF125A.CBL &&  ./IF125A
+cobc -std=cobol85 -x -debug IF126A.CBL &&  ./IF126A
+cobc -std=cobol85 -x -debug IF127A.CBL &&  ./IF127A
+cobc -std=cobol85 -x -debug IF128A.CBL &&  ./IF128A
+cobc -std=cobol85 -x -debug IF129A.CBL &&  ./IF129A
+cobc -std=cobol85 -x -debug IF130A.CBL &&  ./IF130A
+cobc -std=cobol85 -x -debug IF131A.CBL &&  ./IF131A
+cobc -std=cobol85 -x -debug IF132A.CBL &&  ./IF132A
+cobc -std=cobol85 -x -debug IF133A.CBL &&  ./IF133A
+cobc -std=cobol85 -x -debug IF134A.CBL &&  ./IF134A
+cobc -std=cobol85 -x -debug IF135A.CBL &&  ./IF135A
+cobc -std=cobol85 -x -debug IF136A.CBL &&  ./IF136A
+cobc -std=cobol85 -x -debug IF137A.CBL &&  ./IF137A
+cobc -std=cobol85 -x -debug IF138A.CBL &&  ./IF138A
+cobc -std=cobol85 -x -debug IF139A.CBL &&  ./IF139A
+cobc -std=cobol85 -x -debug IF140A.CBL &&  ./IF140A
+cobc -std=cobol85 -x -debug IF141A.CBL &&  ./IF141A
+cobc -std=cobol85 -x -debug IF142A.CBL &&  ./IF142A
+cobc -std=cobol85 -x -debug IF401M.CBL &&  ./IF401M
+cobc -std=cobol85 -x -debug IF402M.CBL &&  ./IF402M
+cobc -std=cobol85 -x -debug IF403M.CBL &&  ./IF403M
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+
+Comparing test results for module directory IF
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IF'
+make[5]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+
+Performing tests for module directory IX
+cobc -std=cobol85 -x -debug IX101A.CBL &&  ./IX101A
+cobc -std=cobol85 -x -debug IX102A.SUB &&  ./IX102A
+cobc -std=cobol85 -x -debug IX103A.SUB &&  ./IX103A
+cobc -std=cobol85 -x -debug IX104A.CBL &&  ./IX104A
+cobc -std=cobol85 -x -debug IX105A.CBL &&  ./IX105A
+cobc -std=cobol85 -x -debug IX106A.CBL &&  ./IX106A
+cobc -std=cobol85 -x -debug IX107A.CBL &&  ./IX107A
+cobc -std=cobol85 -x -debug IX108A.CBL &&  ./IX108A
+cobc -std=cobol85 -x -debug IX109A.CBL &&  ./IX109A
+cobc -std=cobol85 -x -debug IX110A.SUB &&  ./IX110A
+cobc -std=cobol85 -x -debug IX111A.SUB &&  ./IX111A
+cobc -std=cobol85 -x -debug IX112A.CBL &&  ./IX112A
+cobc -std=cobol85 -x -debug IX113A.CBL &&  ./IX113A
+cobc -std=cobol85 -x -debug IX114A.SUB &&  ./IX114A
+cobc -std=cobol85 -x -debug IX115A.SUB &&  ./IX115A
+cobc -std=cobol85 -x -debug IX116A.SUB &&  ./IX116A
+cobc -std=cobol85 -x -debug IX117A.SUB &&  ./IX117A
+cobc -std=cobol85 -x -debug IX118A.SUB &&  ./IX118A
+cobc -std=cobol85 -x -debug IX119A.SUB &&  ./IX119A
+cobc -std=cobol85 -x -debug IX120A.SUB &&  ./IX120A
+cobc -std=cobol85 -x -debug IX121A.CBL &&  ./IX121A
+cobc -std=cobol85 -x -debug IX201A.CBL &&  ./IX201A
+cobc -std=cobol85 -x -debug IX202A.SUB &&  ./IX202A
+cobc -std=cobol85 -x -debug IX203A.SUB &&  ./IX203A
+cobc -std=cobol85 -x -debug IX204A.CBL &&  ./IX204A
+cobc -std=cobol85 -x -debug IX205A.CBL &&  ./IX205A
+cobc -std=cobol85 -x -debug IX206A.CBL &&  ./IX206A
+cobc -std=cobol85 -x -debug IX207A.CBL &&  ./IX207A
+cobc -std=cobol85 -x -debug IX208A.CBL &&  ./IX208A
+cobc -std=cobol85 -x -debug IX209A.CBL &&  ./IX209A
+cobc -std=cobol85 -x -debug IX210A.CBL &&  ./IX210A
+cobc -std=cobol85 -x -debug IX211A.CBL &&  ./IX211A
+cobc -std=cobol85 -x -debug IX212A.CBL &&  ./IX212A
+cobc -std=cobol85 -x -debug IX213A.CBL &&  ./IX213A
+cobc -std=cobol85 -x -debug IX214A.CBL &&  ./IX214A
+cobc -std=cobol85 -x -debug IX215A.CBL &&  ./IX215A
+cobc -std=cobol85 -x -debug IX216A.CBL &&  ./IX216A
+cobc -std=cobol85 -x -debug IX217A.CBL &&  ./IX217A
+cobc -std=cobol85 -x -debug IX218A.CBL &&  ./IX218A
+cobc -std=cobol85 -x -debug IX301M.CBL
+cobc -std=cobol85 -x -debug IX302M.CBL &&  ./IX302M
+cobc -std=cobol85 -x -debug IX401M.CBL
+make[5]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+
+Comparing test results for module directory IX
+diff /home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX.txt report.txt || true
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85/IX'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make diff-summary
+make summary.log
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Computing total test results...
+Total executed programs : 426 - Total performed tests : 9748
+
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+Comparing total test results...
+diff summary.txt...
+Done
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests/cobol85'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+## -------------------------------------------- ##
+## GnuCOBOL 3.1-dev test suite: GnuCOBOL Tests. ##
+## -------------------------------------------- ##
+
+General tests of used binaries
+
+  1: Compiler help and information                   ok
+  2: Compiler outputs (general)                      ok
+  3: Compiler outputs (file specified)               ok
+  4: Compiler outputs (path specified)               ok
+  5: Compiler outputs (assembler)                    ok
+  6: Source file not found                           ok
+  7: Temporary path invalid                          ok
+  8: Using full path for cobc                        ok
+  9: C Compiler optimizations                        ok
+ 10: Invalid cobc option                             ok
+ 11: cobcrun help and information                    FAILED (used_binaries.at:308)
+ 12: cobcrun validation                              ok
+ 13: cobcrun -M DSO entry argument                   ok
+ 14: cobcrun -M directory/ default                   ok
+ 15: cobcrun -M directory/dso alternate              ok
+ 16: cobcrun -M DSO entry multiple arguments         ok
+ 17: cobcrun error messages                          ok
+ 18: Compile from stdin                              ok
+ 19: Run job after compilation                       ok
+ 20: Run job after compilation (path specified)      ok
+ 21: Run job with optional arguments                 ok
+ 22: cobc with standard configuration file           ok
+ 23: cobc dialect features for all -std              ok
+ 24: cobc with configuration file via -std           ok
+ 25: cobc with standard configuration file via -conf ok
+ 26: cobc with own configuration file via -conf      ok
+ 27: cobc configuration: recursive include           ok
+ 28: cobc with -std and -conf                        ok
+ 29: cobc compiler flag on command line              ok
+ 30: cobc compiler flag on command line (priority)   ok
+ 31: cobc configuration: entries                     ok
+ 32: cobc configuration: conf missing                ok
+ 33: cobc configuration: conf optional               ok
+ 34: cobc configuration: incomplete                  ok
+ 35: runtime configuration                           ok
+ 36: runtime configuration file                      ok
+ 37: runtime configuration: recursive include        ok
+ 38: runtime configuration: environment priority     ok
+ 39: runtime configuration: entries                  ok
+ 40: runtime configuration: conf missing             ok
+ 41: runtime configuration: conf optional            ok
+ 42: runtime configuration: strings and environment  ok
+ 43: validation of COB_CONFIG_DIR                    ok
+
+Syntax tests
+
+ 44: COPY: within comment                            ok
+ 45: COPY: file not found                            ok
+ 46: COPY: recursive                                 ok
+ 47: COPY: replacement order                         ok
+ 48: COPY: separators                                ok
+ 49: COPY: partial replacement                       ok
+ 50: COPY: LEADING replacement                       ok
+ 51: COPY: TRAILING replacement                      ok
+ 52: COPY: recursive replacement                     ok
+ 53: COPY: fixed/free format                         ok
+ 54: Invalid source name                             ok
+ 55: Invalid PROGRAM-ID                              ok
+ 56: Invalid PROGRAM-ID type clause (1)              ok
+ 57: invalid PROGRAM-ID type clause (2)              ok
+ 58: INITIAL / RECURSIVE before COMMON               ok
+ 59: Undefined data name                             ok
+ 60: Undefined group name                            ok
+ 61: Undefined data name in group                    ok
+ 62: Reference not a group name                      ok
+ 63: Incomplete 01 definition                        ok
+ 64: error handling in conditions                    ok
+ 65: Same labels in different sections               ok
+ 66: Redefinition of 01 items                        ok
+ 67: Redefinition of 01 and 02 items                 ok
+ 68: Redefinition of 02 items                        ok
+ 69: Redefinition of 77 items                        ok
+ 70: Redefinition of 01 and 77 items                 ok
+ 71: Redefinition of 88 items                        ok
+ 72: Redefinition of program-name by other programs  ok
+ 73: Redefinition of program-name within program     ok
+ 74: Redefinition of function-prototype name         ok
+ 75: PROCEDURE DIVISION RETURNING OMITTED: main      ok
+ 76: PROCEDURE DIVISION RETURNING OMITTED: FUNCTION  ok
+ 77: PROCEDURE DIVISION RETURNING item               ok
+ 78: Data item with same name as program-name        ok
+ 79: Ambiguous reference to 02 items                 ok
+ 80: Ambiguous reference to 02 and 03 items          ok
+ 81: Ambiguous reference with qualification          ok
+ 82: Unique reference with ambiguous qualifiers      ok
+ 83: Undefined procedure name                        ok
+ 84: Redefinition of section names                   ok
+ 85: Redefinition of section and paragraph names     ok
+ 86: Redefinition of label and variable names        expected failure (syn_definition.at:945)
+ 87: Redefinition of paragraph names                 ok
+ 88: Ambiguous reference to paragraph name           ok
+ 89: Non-matching level numbers (extension)          ok
+ 90: CALL BY VALUE alphanumeric item (extension)     ok
+ 91: CALL BY VALUE national item (extension)         ok
+ 92: CALL BY VALUE figurative constants              ok
+ 93: Duplicate identification division header        ok
+ 94: RETURNING in STOP RUN / GOBACK / EXIT PROGRAM   ok
+ 95: Invalid ENVIRONMENT DIVISION order              ok
+ 96: Function without END FUNCTION                   ok
+ 97: Nested programs without END PROGRAM             ok
+ 98: Nested programs not in procedure division       ok
+ 99: Screen section starts with 78-level             ok
+100: Invalid PICTURE strings                         ok
+101: PICTURE strings invalid with BLANK WHEN ZERO    ok
+102: PICTURE strings invalid with USAGE              ok
+103: ALPHABET definition                             ok
+104: PROGRAM COLLATING SEQUENCE                      ok
+105: RENAMES item                                    ok
+106: RENAMES of 01-, 66- and 77-level items          ok
+107: APPLY COMMIT clause                             ok
+108: Non-numeric subscript                           ok
+109: Subscript range check                           ok
+110: Subscript bounds with OCCURS DEPENDING ON       ok
+111: Subscripted item requires OCCURS clause         ok
+112: Number of subscripts                            ok
+113: OCCURS with level 01 and 77                     ok
+114: OCCURS with level 66                            ok
+115: OCCURS with level 78                            ok
+116: OCCURS with level 88                            ok
+117: OCCURS with variable-occurrence data item       ok
+118: OCCURS data-items for INDEXED and KEY           ok
+119: Nested OCCURS clause                            ok
+120: OCCURS DEPENDING with wrong size                ok
+121: OCCURS DEPENDING followed by another field      ok
+122: OCCURS with unmatched DEPENDING / TO phrases    ok
+123: OCCURS INDEXED before KEY                       ok
+124: OCCURS size check                               ok
+125: REDEFINES: not following entry-name             ok
+126: REDEFINES: level 02 by 01                       ok
+127: REDEFINES: level 03 by 02                       ok
+128: REDEFINES: level 66                             ok
+129: REDEFINES: level 88                             ok
+130: REDEFINES: lower level number                   ok
+131: REDEFINES: with OCCURS                          ok
+132: REDEFINES: with subscript                       ok
+133: REDEFINES: with variable occurrence             ok
+134: REDEFINES: with qualification                   ok
+135: REDEFINES: multiple redefinition                ok
+136: REDEFINES: size exceeds                         ok
+137: REDEFINES: with VALUE                           ok
+138: REDEFINES: with intervention                    ok
+139: REDEFINES: within REDEFINES                     ok
+140: REDEFINES: non-referenced ambiguous item        ok
+141: Numeric item (integer)                          ok
+142: Numeric item (non-integer)                      ok
+143: Numeric item with picture P                     ok
+144: Signed numeric literal                          ok
+145: Alphabetic item                                 ok
+146: Alphanumeric item                               ok
+147: Alphanumeric group item                         ok
+148: Numeric-edited item                             ok
+149: Alphanumeric-edited item                        ok
+150: Implicit picture from value                     ok
+151: Missing SELECT                                  ok
+152: Duplicated SELECT                               ok
+153: Missing FD                                      ok
+154: Duplicated FD                                   ok
+155: ASSIGN to device-name                           ok
+156: ASSIGN to printer-name                          ok
+157: ASSIGN to lsq-device-name                       ok
+158: SELECT without ASSIGN                           ok
+159: START on SEQUENTIAL file                        ok
+160: OPEN SEQUENTIAL file REVERSED                   ok
+161: OPEN SEQUENTIAL file NO REWIND                  ok
+162: valid key items                                 ok
+163: INDEXED file invalid key items                  ok
+164: variable record length                          ok
+165: variable record length DEPENDING item           ok
+166: DECLARATIVES invalid procedure reference (1)    ok
+167: DECLARATIVES invalid procedure reference (2)    ok
+168: EXTERNAL file                                   ok
+169: RECORDING MODE                                  ok
+170: CODE-SET clause                                 ok
+171: CODE-SET FOR clause                             ok
+172: WRITE / REWRITE FROM clause and FILE            ok
+173: Clauses following invalid ACCESS clause         ok
+174: RELATIVE KEY type checks                        ok
+175: Mismatched KEY clause                           ok
+176: RECORD DELIMITER                                ok
+177: FILE STATUS                                     ok
+178: INDEXED file PASSWORD clause                    ok
+179: RECORD clause equal limits                      ok
+180: FILE ... FROM literal                           ok
+181: WRITE / REWRITE on LINE SEQUENTIAL files        ok
+182: WRITE / REWRITE on REPORT files                 ok
+183: SELECT without fd-name                          ok
+184: Undeclared FILE-ID variable                     ok
+185: Implicit declaration of FILE-ID variable        ok
+186: Undeclared FILE STATUS variable                 ok
+187: FILE STATUS field subordinate to FD             expected failure (syn_file.at:1706)
+188: FILE STATUS not PIC XX                          expected failure (syn_file.at:1745)
+189: OPEN I-O with LINE SEQUENTIAL                   ok
+190: ACCESS RANDOM with ORG SEQUENTIAL               ok
+191: ALTERNATE RECORD KEY SUPPRESS WHEN              ok
+192: RECORD definition with SOURCE IS / =            ok
+193: ALTERNATE RECORD definition WITH NO DUPLICATES  expected failure (syn_file.at:1922)
+194: ALTERNATE RECORD definition omitting RECORD     expected failure (syn_file.at:1951)
+195: SELECT/OPEN syntax extensions                   ok
+196: GLOBAL FD nested progam                         ok
+197: REPORT error/warning                            ok
+198: REPORT not positive integers in COL / LINE PLUS ok
+199: Missing DETAIL line                             ok
+200: REPORT LINE PLUS ZERO                           ok
+201: Incorrect REPORT NAME                           ok
+202: REPORT with PLUS RIGHT/CENTER                   ok
+203: PAGE LIMITS clause                              ok
+204: Report FD without period                        ok
+205: REPORT with unreferenced control field          ok
+206: Incorrect USAGE clause                          ok
+207: valid reference modification                    ok
+208: Static out of bounds                            ok
+209: constant-folding out of bounds                  ok
+210: ambiguous AND/OR                                ok
+211: warn constant expressions                       ok
+212: warn literal size                               ok
+213: warn literal size in constant expr. (level 88)  ok
+214: Invalid conditional expression (1)              ok
+215: Invalid conditional expression (2)              ok
+216: Invalid conditional expression (3)              ok
+217: Valid conditional expression                    ok
+218: missing headers                                 ok
+219: one line program                                ok
+220: empty program                                   ok
+221: INITIALIZE constant                             ok
+222: CLASS duplicate values                          ok
+223: INSPECT invalid size                            ok
+224: INSPECT invalid target                          ok
+225: INSPECT missing keyword                         ok
+226: INSPECT repeated keywords                       ok
+227: INSPECT incomplete clause                       ok
+228: INSPECT multiple BEFORE/AFTER clauses           ok
+229: maximum data size                               ok
+230: unreachable statement                           ok
+231: CRT STATUS                                      ok
+232: SPECIAL-NAMES clause                            ok
+233: CURRENCY SIGN                                   ok
+234: SWITCHES                                        ok
+235: unexpected mnemonic-name location               ok
+236: wrong device for mnemonic-name                  ok
+237: missing mnemonic-name declaration               ok
+238: unknown device in dialect                       ok
+239: ACCEPT WITH ( NO ) UPDATE / DEFAULT             ok
+240: ACCEPT WITH AUTO / TAB                          ok
+241: ACCEPT WITH LOWER / UPPER                       ok
+242: ACCEPT WITH SIZE                                ok
+243: DISPLAY WITH SIZE                               ok
+244: source text after program-text area             ok
+245: line overflow in Fixed-form / Free-form         ok
+246: continuation Indicator - too many lines         ok
+247: continuation of COBOL words                     ok
+248: literal too long                                ok
+249: line and floating comments                      ok
+250: word length                                     ok
+251: Segmentation Module                             ok
+252: ACCEPT FROM ESCAPE KEY                          ok
+253: Numeric literals                                ok
+254: floating-point literals                         ok
+255: X literals                                      ok
+256: national literals                               ok
+257: NX literals                                     ok
+258: binary literals                                 ok
+259: binary-hexadecimal literals                     ok
+260: HP COBOL octal literals                         ok
+261: ACUCOBOL literals                               ok
+262: ACUCOBOL 32bit literal size                     skipped (syn_misc.at:3564)
+263: ACUCOBOL USAGE FLOAT / DOUBLE                   ok
+264: ACUCOBOL USAGE HANDLE                           ok
+265: ACUCOBOL WINDOW statements                      ok
+266: ACUCOBOL GRAPHICAL controls                     ok
+267: DISPLAY MESSAGE BOX                             ok
+268: DISPLAY OMITTED                                 ok
+269: CGI: EXTERNAL-FORM                              ok
+270: adding/removing reserved words                  ok
+271: adding aliases                                  ok
+272: overriding default words                        ok
+273: complete specified word list                    ok
+274: ANY LENGTH item as BY VALUE formal parameter    ok
+275: swapped SOURCE- and OBJECT-COMPUTER             ok
+276: CONF. SECTION paragraphs in wrong order         ok
+277: NOT ON EXCEPTION with STATIC CALL convention    ok
+278: NOT ON EXCEPTION phrases before ON EXCEPTION    ok
+279: wrong dialect hints                             ok
+280: redundant periods                               ok
+281: IF-ELSE statement list with invalid syntax      ok
+282: EVALUATE statement with invalid syntax          ok
+283: MF reserved word directives                     ok
+284: STRING / UNSTRING with invalid syntax           ok
+285: use of program-prototypes                       ok
+286: invalid INSPECT/TRANSFORM operands              ok
+287: SIGN clause checks                              ok
+288: conflicting entry conventions                   ok
+289: conflicting call conventions                    ok
+290: dangling LINKAGE items                          ok
+291: ADD / SUBTRACT TABLE                            ok
+292: USE FOR DEBUGGING invalid ref-mod / subscripts  ok
+293: USE FOR DEBUGGING duplicate targets             ok
+294: USE FOR DEBUGGING syntax-checks                 expected failure (syn_misc.at:5053)
+295: Empty PERFORM with DEBUGGING MODE               ok
+296: whitespace handling                             ok
+297: STOP identifier                                 ok
+298: 01 CONSTANT                                     ok
+299: 78 VALUE                                        ok
+300: level 78 NEXT / START OF                        ok
+301: SYMBOLIC CONSTANT                               ok
+302: Constant Expressions (1)                        ok
+303: Constant Expressions (2)                        ok
+304: Constant Expressions (3)                        ok
+305: Constant Expressions (4)                        ok
+306: Constant Expressions (5)                        ok
+307: Missing imperative statements                   ok
+308: Fall-Through to WHEN OTHER                      expected failure (syn_misc.at:5905)
+309: CONSTANT LENGTH / BYTE-LENGTH                   ok
+310: ANY LENGTH/NUMERIC with incorrect PIC           ok
+311: VOLATILE clause                                 ok
+312: SET SOURCEFORMAT syntax checks                  ok
+313: WHEN-COMPILED register in dialect               ok
+314: LIN / COL register                              ok
+315: tokens consisting of multiple words             ok
+316: zero-length literals                            ok
+317: @OPTIONS parsing                                ok
+318: system routines with wrong number of parameters ok
+319: invalid use of condition-name                   ok
+320: XML GENERATE syntax checks                      ok
+321: BASED clause, ALLOCATE / FREE statements        ok
+322: CONTINUE statement                              ok
+323: conflict markers                                ok
+324: SORT syntax                                     ok
+325: MOVE SPACE TO numeric or numeric-edited item    ok
+326: MOVE ZERO TO alphabetic item                    ok
+327: MOVE alphabetic TO x                            ok
+328: MOVE alphanumeric TO x                          ok
+329: MOVE alphanumeric-edited TO x                   ok
+330: MOVE numeric (integer) TO x                     ok
+331: MOVE numeric (non-integer) TO x                 ok
+332: MOVE numeric-edited TO x                        ok
+333: CORRESPONDING - Operands must be groups         ok
+334: CORRESPONDING - Target has no matching items    ok
+335: MOVE to erroneous field                         ok
+336: Overlapping MOVE                                ok
+337: invalid source for MOVE                         ok
+338: invalid target for MOVE                         ok
+339: SET error                                       ok
+340: MOVE FIGURATIVE to NUMERIC                      ok
+341: Category check of Format 1                      ok
+342: Category check of Format 2                      ok
+343: Category check of literals                      ok
+344: Flexible ACCEPT/DISPLAY syntax                  ok
+345: Duplicate ACCEPT/DISPLAY clauses                ok
+346: AT clause                                       ok
+347: ACCEPT/DISPLAY extensions detection             ok
+348: FROM clause                                     ok
+349: Incorrect USAGE clause                          ok
+350: SCREEN SECTION clause numbers                   ok
+351: Screen clauses                                  ok
+352: ACCEPT ON EXCEPTION/ESCAPE                      ok
+353: Referencing 88-level                            ok
+354: Conflicting screen clauses                      ok
+355: Redundant screen clauses                        ok
+356: Screen item OCCURS w-/wo relative LINE/COL      ok
+357: VALUE clause missing                            ok
+358: FULL on numeric item                            ok
+359: Compiler-specific SCREEN SECTION clause rules   ok
+360: MS-COBOL position-spec                          ok
+361: Screen with invalid FROM clause                 ok
+362: SET ADDRESS OF item                             ok
+363: SET item TO 88-level                            ok
+364: ANY LENGTH / NUMERIC as function RETURNING item ok
+365: REPOSITORY INTRINSIC phrase                     ok
+366: REPOSITORY FUNCTION phrase                      ok
+367: Redundant REPOSITORY entries                    ok
+368: Missing prototype/definition                    ok
+369: Empty function                                  ok
+370: Function definition inside program              ok
+371: Intrinsic functions: dialect                    ok
+372: Intrinsic functions: replaced                   ok
+373: Intrinsic functions: number of arguments        ok
+374: Intrinsic functions: reference modification     ok
+375: Intrinsic functions: argument type              ok
+376: invalid formatted date/time args                ok
+377: invalid formats w/ DECIMAL-POINT IS COMMA       ok
+378: Specified offset and SYSTEM-OFFSET              ok
+379: FUNCTION LENGTH / BYTE-LENGTH                   ok
+
+Listing tests
+
+380: Minimal lines per listing pages                 ok
+381: COPY within comment                             ok
+382: Replacement w/o strings                         ok
+383: COPY replacement order                          ok
+384: COPY separators                                 ok
+385: COPY partial replacement                        ok
+386: COPY LEADING replacement                        ok
+387: COPY TRAILING replacement                       ok
+388: COPY recursive replacement                      ok
+389: COPY multiple files                             ok
+390: Error/Warning messages                          ok
+391: Two source files                                ok
+392: Multiple programs in one file                   ok
+393: Multiple programs in one compilation group      ok
+394: Wide listing                                    ok
+395: Symbols: simple                                 ok
+396: Symbols: pointer                                ok
+397: Symbols: multiple programs/functions            ok
+398: Symbols: OCCURS/REDEFINES                       ok
+399: Conditional compilation                         ok
+400: File descriptions                               ok
+401: Invalid PICTURE strings                         ok
+402: Variable format                                 ok
+403: LISTING directive                               ok
+404: Listing-directive statements                    ok
+405: Eject page                                      ok
+406: Cross reference                                 ok
+407: Report Writer                                   ok
+408: huge REPLACE                                    ok
+
+Run tests
+
+409: DISPLAY literals                                ok
+410: DISPLAY literals, DECIMAL-POINT is COMMA        ok
+411: Hexadecimal literal                             ok
+412: DISPLAY data items with VALUE clause            ok
+413: DISPLAY data items with MOVE statement          ok
+414: MOVE to edited item (1)                         ok
+415: MOVE to edited item (2)                         ok
+416: MOVE to item with simple and floating insertion ok
+417: MOVE to JUSTIFIED item                          ok
+418: MOVE integer literal to alphanumeric            ok
+419: Compare FLOAT-LONG with floating-point literal  ok
+420: Check for equality of FLOAT-SHORT / FLOAT-LONG  ok
+421: Overlapping MOVE                                ok
+422: Overlapping MOVE                                ok
+423: IBM MOVE                                        ok
+424: ALPHABETIC test                                 ok
+425: ALPHABETIC-UPPER test                           ok
+426: ALPHABETIC-LOWER test                           ok
+427: GLOBAL at same level                            ok
+428: GLOBAL at lower level                           ok
+429: GLOBAL CONSTANT                                 ok
+430: GLOBAL identifiers from ENVIRONMENT DIVISION    ok
+431: Entry point visibility (1)                      ok
+432: Entry point visibility (2)                      ok
+433: Contained program visibility (1)                ok
+434: Contained program visibility (2)                ok
+435: Contained program visibility (3)                ok
+436: Contained program visibility (4)                ok
+437: CALL/CANCEL with program-prototype-name         ok
+438: GLOBAL FD (1)                                   ok
+439: GLOBAL FD (2)                                   ok
+440: GLOBAL FD (3)                                   ok
+441: GLOBAL FD (4)                                   ok
+442: CANCEL test (1)                                 ok
+443: CANCEL test (2)                                 ok
+444: CANCEL test (3)                                 ok
+445: Separate sign positions (1)                     ok
+446: Separate sign positions (2)                     ok
+447: Context sensitive words (1)                     ok
+448: Context sensitive words (2)                     ok
+449: Context sensitive words (3)                     ok
+450: Context sensitive words (4)                     ok
+451: Context sensitive words (5)                     ok
+452: Context sensitive words (6)                     ok
+453: Context sensitive words (7)                     ok
+454: Context sensitive words (8)                     ok
+455: ROUNDED AWAY-FROM-ZERO                          ok
+456: ROUNDED NEAREST-AWAY-FROM-ZERO                  ok
+457: ROUNDED NEAREST-EVEN                            ok
+458: ROUNDED NEAREST-TOWARD-ZERO                     ok
+459: ROUNDED TOWARD-GREATER                          ok
+460: ROUNDED TOWARD-LESSER                           ok
+461: ROUNDED TRUNCATION                              ok
+462: Numeric operations (1)                          ok
+463: Numeric operations (2)                          ok
+464: Numeric operations (3)                          ok
+465: Numeric operations (4)                          ok
+466: Numeric operations (5)                          ok
+467: Numeric operations (6)                          ok
+468: Numeric operations (7)                          ok
+469: Numeric operations (8)                          ok
+470: ADD CORRESPONDING                               ok
+471: ADD CORRESPONDING no match                      ok
+472: SYNC in OCCURS                                  ok
+473: 88 level with THRU                              ok
+474: 88 level with FILLER                            ok
+475: 88 level with FALSE IS clause                   ok
+476: BLANK WHEN ZERO                                 ok
+477: MULTIPLY BY literal in INITIAL program          ok
+478: debugging lines (not active)                    ok
+479: debugging lines (-fdebugging-line)              ok
+480: debugging lines (WITH DEBUGGING MODE)           ok
+481: debugging lines, free format (not active)       ok
+482: debugging lines, free format (-fdebugging-line) ok
+483: USE FOR DEBUGGING (no DEBUGGING MODE)           ok
+484: USE FOR DEBUGGING (COB_SET_DEBUG deactivated)   ok
+485: USE FOR DEBUGGING ON ALL PROCEDURES             ok
+486: USE FOR DEBUGGING ON procedure                  ok
+487: USE FOR DEBUGGING (COB_SET_DEBUG switched)      ok
+488: USE FOR DEBUGGING ON [ALL] REFERENCES OF field  ok
+489: USE FOR DEBUGGING, reference within DEBUGGING   ok
+490: USE FOR DEBUGGING, time of execution            expected failure (run_fundamental.at:5070)
+491: USE FOR DEBUGGING, reference with OCCURS        ok
+492: USE FOR DEBUGGING, referencing BASED item       expected failure (run_fundamental.at:5144)
+493: USE FOR DEBUGGING file                          ok
+494: Abbreviated Expressions                         ok
+495: Subscript out of bounds                         ok
+496: Value of DEPENDING ON N out of bounds           ok
+497: Subscript bounds with OCCURS DEPENDING ON       ok
+498: Subscript by arithmetic expression              ok
+499: length of ODO w/- reference modification        ok
+500: SEARCH ALL with OCCURS DEPENDING ON             ok
+501: Static reference modification                   ok
+502: Dynamic reference modification                  ok
+503: Offset underflow                                ok
+504: Offset overflow                                 ok
+505: Length underflow                                ok
+506: Length overflow                                 ok
+507: Length overflow with offset                     ok
+508: ACCEPT OMITTED (simple)                         ok
+509: ACCEPT FROM TIME / DATE / DAY / DAY-OF-WEEK (1) ok
+510: ACCEPT FROM TIME / DATE / DAY / DAY-OF-WEEK (2) ok
+511: ACCEPT DATE / DAY and intrinsic functions (1)   ok
+512: ACCEPT DATE / DAY and intrinsic functions (2)   ok
+513: ACCEPT OMITTED (SCREEN)                         FAILED (run_accept.at:309)
+514: INITIALIZE group entry with OCCURS              ok
+515: INITIALIZE OCCURS with numeric edited           ok
+516: INITIALIZE OCCURS with SIGN LEADING / TRAILING  ok
+517: INITIALIZE complex group (1)                    ok
+518: INITIALIZE complex group (2)                    ok
+519: INITIALIZE with REDEFINES                       ok
+520: INITIALIZE with FILLER                          ok
+521: INITIALIZE of EXTERNAL data items               ok
+522: INITIALIZE with reference modification          ok
+523: Comma separator without space                   ok
+524: DECIMAL-POINT is COMMA (1)                      ok
+525: DECIMAL-POINT is COMMA (2)                      ok
+526: DECIMAL-POINT is COMMA (3)                      ok
+527: DECIMAL-POINT is COMMA (4)                      ok
+528: DECIMAL-POINT is COMMA (5)                      ok
+529: CURRENCY SIGN                                   ok
+530: CURRENCY SIGN WITH PICTURE SYMBOL               expected failure (run_misc.at:258)
+531: LOCAL-STORAGE (1)                               ok
+532: LOCAL-STORAGE (2)                               ok
+533: EXTERNAL data item                              ok
+534: EXTERNAL AS data item                           ok
+535: EXTERNAL data item size mismatch                expected failure (run_misc.at:512)
+536: MOVE to itself                                  ok
+537: MOVE with refmod                                ok
+538: MOVE with refmod (variable)                     ok
+539: MOVE with group refmod                          ok
+540: MOVE indexes                                    ok
+541: MOVE X'00'                                      ok
+542: MOVE Z'literal'                                 ok
+543: Floating continuation indicator                 ok
+544: Fixed continuation indicator                    ok
+545: Concatenation operator                          ok
+546: SOURCE FIXED/FREE directives                    ok
+547: Level 01 subscripts                             ok
+548: Class check with reference modification         ok
+549: Index and parenthesized expression              ok
+550: Alphanumeric and binary numeric                 ok
+551: Non-numeric data in numeric items               ok
+552: Dynamic call with static linking                ok
+553: Static call with static linking                 ok
+554: Dynamic CALL with ON EXCEPTION                  ok
+555: Static CALL with ON EXCEPTION                   ok
+556: CALL m1. CALL m2. CALL m1.                      ok
+557: Recursive CALL of RECURSIVE program             ok
+558: Recursive CALL of INITIAL program               ok
+559: Recursive CALL with RECURSIVE assumed           ok
+560: Recursive CALL with ON EXCEPTION                ok
+561: Multiple calls of INITIAL program               ok
+562: CALL binary literal parameter/LENGTH OF         ok
+563: INSPECT REPLACING LEADING ZEROS BY SPACES       ok
+564: INSPECT No repeat conversion check              ok
+565: INSPECT CONVERTING alphabet                     ok
+566: INSPECT CONVERTING TO figurative constant       ok
+567: INSPECT CONVERTING NULL                         ok
+568: INSPECT CONVERTING TO NULL                      ok
+569: INSPECT REPLACING figurative constant           ok
+570: INSPECT TALLYING BEFORE                         ok
+571: INSPECT TALLYING AFTER                          ok
+572: INSPECT REPLACING TRAILING ZEROS BY SPACES      ok
+573: INSPECT REPLACING complex                       ok
+574: SWITCHES (environment COB_SWITCH_n and SET)     ok
+575: Nested PERFORM                                  ok
+576: PERFORM VARYING BY -0.2                         ok
+577: PERFORM VARYING BY phrase omitted               ok
+578: EXIT PERFORM                                    ok
+579: EXIT PERFORM CYCLE                              ok
+580: EXIT PARAGRAPH                                  ok
+581: EXIT SECTION                                    ok
+582: PERFORM FOREVER / PERFORM UNTIL EXIT            ok
+583: PERFORM inline (1)                              ok
+584: PERFORM inline (2)                              ok
+585: Non-overflow after overflow                     ok
+586: PERFORM ... CONTINUE                            ok
+587: STRING with subscript reference                 ok
+588: STRING / UNSTRING NOT ON OVERFLOW               ok
+589: UNSTRING DELIMITED ALL LOW-VALUE                ok
+590: UNSTRING DELIMITED ALL SPACE-2                  ok
+591: UNSTRING DELIMITED POINTER                      ok
+592: UNSTRING DELIMITER IN                           ok
+593: UNSTRING with FUNCTION / literal                ok
+594: SORT: table sort                                ok
+595: SORT: table sort (2)                            ok
+596: SORT: table sort (3)                            ok
+597: SORT: EBCDIC table sort                         ok
+598: PIC ZZZ-, ZZZ+                                  ok
+599: PERFORM type OSVS                               ok
+600: Sticky LINKAGE                                  ok
+601: COB_PRE_LOAD                                    ok
+602: COB_PRE_LOAD with entry points                  ok
+603: Lookup ENTRY from main executable               ok
+604: COB_LOAD_CASE=UPPER test                        ok
+605: ALLOCATE / FREE with BASED item (1)             ok
+606: ALLOCATE / FREE with BASED item (2)             ok
+607: ALLOCATE CHARACTERS INITIALIZED TO              ok
+608: Initialized value with defaultbyte              ok
+609: CALL with OMITTED parameter                     ok
+610: CALL in from C, cob_call_params explicitly set  ok
+611: CALL in from C, cob_call_params unknown         ok
+612: CALL C with callback, PROCEDURE DIVISION EXTERN ok
+613: CALL C with callback, ENTRY-CONVENTION EXTERN   ok
+614: CALL in from C with init missing / implicit     ok
+615: CALL STATIC C from COBOL                        ok
+616: ANY LENGTH (1)                                  ok
+617: ANY LENGTH (2)                                  ok
+618: ANY LENGTH (3)                                  ok
+619: ANY LENGTH (4)                                  ok
+620: ANY LENGTH (5)                                  ok
+621: access to BASED item without allocation         ok
+622: access to OPTIONAL LINKAGE item not passed      ok
+623: STOP RUN WITH NORMAL STATUS                     ok
+624: STOP RUN WITH ERROR STATUS                      ok
+625: SYMBOLIC clause                                 ok
+626: OCCURS clause with 1 entry                      ok
+627: Computing of different USAGEs w/o decimal point ok
+628: Computing of different USAGEs w/- decimal point ok
+629: C/C++ reserved words/predefined identifiers     ok
+630: ON EXCEPTION clause of DISPLAY                  FAILED (run_misc.at:6058)
+631: EC-SCREEN-LINE-NUMBER and -STARTING-COLUMN      FAILED (run_misc.at:6099)
+632: LINE/COLUMN 0 exceptions                        FAILED (run_misc.at:6137)
+633: SET LAST EXCEPTION TO OFF                       ok
+634: void PROCEDURE                                  ok
+635: Figurative constants to numeric field           ok
+636: MF FIGURATIVE to NUMERIC                        ok
+637: void PROCEDURE, NOTHING return                  ok
+638: READY TRACE / RESET TRACE                       ok
+639: Trace feature with subroutine                   ok
+640: Test dump feature                               ok
+641: CALL with program prototypes                    ok
+642: REDEFINES values on FILLER and INITIALIZE       ok
+643: PICTURE with constant-name                      ok
+644: Quote marks in comment paragraphs               ok
+645: Numeric MOVE with/without -fbinary-truncate     ok
+646: Alphanumeric MOVE with truncation               ok
+647: PROGRAM-ID / CALL literal/variable with spaces  ok
+648: C API Test                                      expected failure (run_misc.at:9798)
+649: DEFAULT ROUNDED MODE                            ok
+650: OCCURS INDEXED ASCENDING                        ok
+651: ZERO unsigned and negative binary subscript     ok
+652: Default Arithmetic (1)                          ok
+653: Default Arithmetic Test (2)                     ok
+654: OSVS Arithmetic (1)                             ok
+655: OSVS Arithmetic Test (2)                        ok
+656: SET CONSTANT directive                          ok
+657: DEFINE OVERRIDE                                 ok
+658: DEFINE Defaults                                 ok
+659: 78 VALUE                                        ok
+660: 01 CONSTANT                                     ok
+661: DISPLAY UPON                                    ok
+662: FLOAT-DECIMAL w/o SIZE ERROR                    ok
+663: FLOAT-SHORT / FLOAT-LONG w/o SIZE ERROR         ok
+664: FLOAT-SHORT with SIZE ERROR                     ok
+665: FLOAT-LONG with SIZE ERROR                      ok
+666: EC-SIZE-ZERO-DIVIDE                             ok
+667: EC-SIZE-OVERFLOW                                ok
+668: Constant Expressions                            ok
+669: ENTRY FOR GO TO / GO TO ENTRY                   ok
+670: READ INTO data item AT-END sequence             ok
+671: LINAGE and LINAGE-COUNTER sample                ok
+672: OUTPUT on INDEXED file to missing directory     ok
+673: First READ on empty SEQUENTIAL INDEXED file     ok
+674: READ NEXT without previous START                ok
+675: REWRITE a RELATIVE file with RANDOM access      ok
+676: File SORT, SEQUENTIAL                           ok
+677: File SORT, SEQUENTIAL variable records          ok
+678: File SORT, LINE SEQUENTIAL                      ok
+679: File SORT, LINE SEQUENTIAL same file            ok
+680: File SORT, LINE SEQUENTIAL variable records     ok
+681: File MERGE, LINE SEQUENTIAL variable records    ok
+682: SORT nonexistent file                           ok
+683: SORT with INPUT/OUTPUT PROCEDUREs               ok
+684: SORT with key1 ASCENDING, key2 DESCENDING       ok
+685: ASSIGN with LOCAL-STORAGE item                  ok
+686: ASSIGN with LOCAL-STORAGE item and INITIAL prog ok
+687: ASSIGN with BASED data item                     ok
+688: ASSIGN with data item in LINKAGE                ok
+689: INDEXED file sparse/split keys                  ok
+690: INDEXED file split keys WITH DUPLICATES         ok
+691: INDEXED file variable length record             ok
+692: INDEXED sample                                  ok
+693: WRITE + REWRITE FILE name                       ok
+694: START RELATIVE (1)                              ok
+695: START RELATIVE (2)                              ok
+696: START RELATIVE (3)                              ok
+697: READ on OPTIONAL missing RELATIVE / SEQUENTIAL  ok
+698: READ on OPTIONAL missing INDEXED file           ok
+699: EXTERNAL RELATIVE file                          ok
+700: DECLARATIVES procedure referencing              ok
+701: DECLARATIVES procedure referencing (multiple)   ok
+702: System routines for directories (1)             ok
+703: System routines for directories (2)             ok
+704: System routines for files                       ok
+705: System routine CBL_COPY_FILE                    ok
+706: Default file external name                      ok
+707: SEQUENTIAL basic I/O                            ok
+708: LINE SEQUENTIAL basic I/O                       ok
+709: LINE SEQUENTIAL record truncation               ok
+710: SEQUENTIAL file I/O with variable records       ok
+711: LINE SEQUENTIAL file I/O with variable records  ok
+712: SEQUENTIAL file REWRITE                         ok
+713: SEQUENTIAL file with LOCK MODE EXCLUSIVE        expected failure (run_file.at:4365)
+714: SEQUENTIAL file with OPEN WITH LOCK             expected failure (run_file.at:4431)
+715: SEQUENTIAL file with SHARING NO                 expected failure (run_file.at:4499)
+716: SEQUENTIAL file with SHARING READ ONLY          expected failure (run_file.at:4573)
+717: SEQUENTIAL file with blocked lock               expected failure (run_file.at:4645)
+718: RELATIVE SEQUENTIAL basic I/O                   ok
+719: RELATIVE RANDOM basic I/O                       ok
+720: RELATIVE SEQUENTIAL with variable records       ok
+721: INDEXED SEQUENTIAL basic I/O                    ok
+722: INDEXED SEQUENTIAL with variable records        ok
+723: INDEXED file with LOCK MODE EXCLUSIVE           expected failure (run_file.at:5000)
+724: INDEXED file with OPEN WITH LOCK                expected failure (run_file.at:5076)
+725: INDEXED file with SHARING NO                    expected failure (run_file.at:5153)
+726: INDEXED file with SHARING READ ONLY             expected failure (run_file.at:5236)
+727: INDEXED file with blocked lock                  expected failure (run_file.at:5317)
+728: INDEXED file with LOCK AUTOMATIC (1)            expected failure (run_file.at:5405)
+729: INDEXED file with LOCK AUTOMATIC (2)            ok
+730: INDEXED file with LOCK MANUAL                   expected failure (run_file.at:5584)
+731: START INDEXED                                   ok
+732: INDEXED partial keys                            ok
+733: INDEXED undeclared keys                         ok
+734: READ INPUT pipe & WRITE OUTPUT pipe             expected failure (run_file.at:6057)
+735: EXTFH: using ISAM callback                      ok
+736: EXTFH: SEQUENTIAL files                         ok
+737: EXTFH: LINE SEQUENTIAL files, direct EXTFH      ok
+738: Report Line Order                               ok
+739: REPORT COL PLUS                                 ok
+740: Report Overlapping Fields                       ok
+741: EMPTY REPORT                                    ok
+742: PAGE LIMIT REPORT                               ok
+743: PAGE LIMIT REPORT 2                             ok
+744: Sample Customer Report                          ok
+745: Sample Charge Report                            ok
+746: Sample Charge Report 2                          ok
+747: Sample Charge Report 3                          ok
+748: Sample Charge Report 4                          ok
+749: Sample Payroll Report                           ok
+750: Sample REPORT with RIGHT/CENTER                 ok
+751: STUDENT REPORT with INITIAL                     ok
+752: ORDER REPORT; Test substring                    ok
+753: Sample Control Break                            ok
+754: Sample Inventory Report                         ok
+755: Duplicate Detail Line                           ok
+756: Report with OCCURS                              ok
+757: Report CODE and LIMIT COLUMNS                   ok
+758: Duplicate INITIATE                              ok
+759: Missing INITIATE and GENERATE                   ok
+760: Missing INITIATE and TERMINATE                  ok
+761: Next Group Next Page                            ok
+762: Report PRESENT AFTER                            ok
+763: RETURN-CODE moving                              ok
+764: RETURN-CODE passing                             ok
+765: RETURN-CODE nested                              ok
+766: FUNCTION ABS                                    ok
+767: FUNCTION ACOS                                   ok
+768: FUNCTION ANNUITY                                ok
+769: FUNCTION ASIN                                   ok
+770: FUNCTION ATAN                                   ok
+771: FUNCTION BYTE-LENGTH                            ok
+772: FUNCTION CHAR                                   ok
+773: FUNCTION COMBINED-DATETIME                      ok
+774: FUNCTION CONCAT / CONCATENATE                   ok
+775: FUNCTION CONCATENATE with reference modding     ok
+776: FUNCTION CONTENT-LENGTH                         ok
+777: FUNCTION CONTENT-OF                             ok
+778: FUNCTION as CALL parameter BY CONTENT           ok
+779: FUNCTION COS                                    ok
+780: FUNCTION CURRENCY-SYMBOL                        ok
+781: FUNCTION CURRENT-DATE                           ok
+782: FUNCTION DATE-OF-INTEGER                        ok
+783: FUNCTION DATE-TO-YYYYMMDD                       ok
+784: FUNCTION DAY-OF-INTEGER                         ok
+785: FUNCTION DAY-TO-YYYYDDD                         ok
+786: FUNCTION E                                      ok
+787: FUNCTION EXCEPTION-FILE                         ok
+788: FUNCTION EXCEPTION-LOCATION                     ok
+789: FUNCTION EXCEPTION-STATEMENT                    ok
+790: FUNCTION EXCEPTION-STATUS                       ok
+791: FUNCTION EXP                                    ok
+792: FUNCTION EXP10                                  ok
+793: FUNCTION FACTORIAL                              ok
+794: FUNCTION FORMATTED-CURRENT-DATE                 ok
+795: FUNCTION FORMATTED-DATE                         ok
+796: FUNCTION FORMATTED-DATE with ref modding        ok
+797: FUNCTION FORMATTED-DATETIME                     ok
+798: FUNCTION FORMATTED-DATETIME with ref modding    ok
+799: FUNCTION FORMATTED-TIME                         ok
+800: FUNCTION FORMATTED-TIME DP.COMMA                ok
+801: FUNCTION FORMATTED-TIME with ref modding        ok
+802: FUNCTION FRACTION-PART                          ok
+803: FUNCTION HIGHEST-ALGEBRAIC                      ok
+804: FUNCTION INTEGER                                ok
+805: FUNCTION INTEGER-OF-DATE                        ok
+806: FUNCTION INTEGER-OF-DAY                         ok
+807: FUNCTION INTEGER-OF-FORMATTED-DATE              ok
+808: FUNCTION INTEGER-PART                           ok
+809: FUNCTION LENGTH                                 ok
+810: FUNCTION LOCALE-COMPARE                         ok
+811: FUNCTION LOCALE-DATE                            ok
+812: FUNCTION LOCALE-TIME                            ok
+813: FUNCTION LOCALE-TIME-FROM-SECONDS               ok
+814: FUNCTION LOG                                    ok
+815: FUNCTION LOG10                                  ok
+816: FUNCTION LOWER-CASE                             ok
+817: FUNCTION LOWER-CASE with reference modding      ok
+818: FUNCTION LOWEST-ALGEBRAIC                       ok
+819: FUNCTION MAX                                    ok
+820: FUNCTION MEAN                                   ok
+821: FUNCTION MEDIAN                                 ok
+822: FUNCTION MIDRANGE                               ok
+823: FUNCTION MIN                                    ok
+824: FUNCTION MOD (valid)                            ok
+825: FUNCTION MOD (invalid)                          ok
+826: FUNCTION MODULE-CALLER-ID                       ok
+827: FUNCTION MODULE-DATE                            ok
+828: FUNCTION MODULE-FORMATTED-DATE                  ok
+829: FUNCTION MODULE-ID                              ok
+830: FUNCTION MODULE-PATH                            ok
+831: FUNCTION MODULE-SOURCE                          ok
+832: FUNCTION MODULE-TIME                            ok
+833: FUNCTION MONETARY-DECIMAL-POINT                 ok
+834: FUNCTION MONETARY-THOUSANDS-SEPARATOR           ok
+835: FUNCTION NUMERIC-DECIMAL-POINT                  ok
+836: FUNCTION NUMERIC-THOUSANDS-SEPARATOR            ok
+837: FUNCTION NUMVAL                                 ok
+838: FUNCTION NUMVAL-C                               ok
+839: FUNCTION NUMVAL-C DP.COMMA                      ok
+840: FUNCTION NUMVAL-F                               ok
+841: FUNCTION ORD                                    ok
+842: FUNCTION ORD-MAX                                ok
+843: FUNCTION ORD-MIN                                ok
+844: FUNCTION PI                                     ok
+845: FUNCTION PRESENT-VALUE                          ok
+846: FUNCTION RANDOM                                 ok
+847: FUNCTION RANGE                                  ok
+848: FUNCTION REM (valid)                            ok
+849: FUNCTION REM (invalid)                          ok
+850: FUNCTION REVERSE                                ok
+851: FUNCTION REVERSE with reference modding         ok
+852: FUNCTION SECONDS-FROM-FORMATTED-TIME            ok
+853: FUNCTION SECONDS-PAST-MIDNIGHT                  ok
+854: FUNCTION SIGN                                   ok
+855: FUNCTION SIN                                    ok
+856: FUNCTION SQRT                                   ok
+857: FUNCTION STANDARD-DEVIATION                     ok
+858: FUNCTION STORED-CHAR-LENGTH                     ok
+859: FUNCTION SUBSTITUTE                             ok
+860: FUNCTION SUBSTITUTE with reference modding      ok
+861: FUNCTION SUBSTITUTE-CASE                        ok
+862: FUNCTION SUBSTITUTE-CASE with reference mod     ok
+863: FUNCTION SUM                                    ok
+864: FUNCTION TAN                                    ok
+865: FUNCTION TEST-DATE-YYYYMMDD                     ok
+866: FUNCTION TEST-DAY-YYYYDDD                       ok
+867: FUNCTION TEST-FORMATTED-DATETIME with dates     ok
+868: FUNCTION TEST-FORMATTED-DATETIME with times     ok
+869: FUNCTION TEST-FORMATTED-DATETIME with datetimes ok
+870: FUNCTION TEST-FORMATTED-DATETIME DP.COMMA       ok
+871: FUNCTION TEST-NUMVAL                            ok
+872: FUNCTION TEST-NUMVAL-C                          ok
+873: FUNCTION TEST-NUMVAL-F                          ok
+874: FUNCTION TRIM                                   ok
+875: FUNCTION TRIM with reference modding            ok
+876: FUNCTION TRIM zero length                       ok
+877: FUNCTION UPPER-CASE                             ok
+878: FUNCTION UPPER-CASE with reference modding      ok
+879: FUNCTION VARIANCE                               ok
+880: FUNCTION WHEN-COMPILED                          ok
+881: FUNCTION YEAR-TO-YYYY                           ok
+882: Formatted funcs w/ invalid variable format      ok
+883: FORMATTED-(DATE)TIME with SYSTEM-OFFSET         ok
+884: Intrinsics without FUNCTION keyword (1)         ok
+885: Intrinsics without FUNCTION keyword (2)         ok
+886: User-Defined FUNCTION with/without parameter    ok
+887: UDF in COMPUTE                                  ok
+888: UDF replacing intrinsic function                ok
+889: UDF with recursion                              skipped (run_functions.at:4266)
+890: CALL BY CONTENT binary and literal              ok
+891: Numeric Boolean literals                        ok
+892: ACUCOBOL literals                               ok
+893: HP COBOL octal literals                         expected failure (run_extensions.at:180)
+894: Hexadecimal numeric literals                    ok
+895: Semi-parenthesized condition                    ok
+896: ADDRESS OF                                      ok
+897: LENGTH OF                                       ok
+898: SET TO SIZE OF                                  ok
+899: WHEN-COMPILED                                   ok
+900: Complex OCCURS DEPENDING ON (1)                 ok
+901: Complex OCCURS DEPENDING ON (2)                 ok
+902: Complex OCCURS DEPENDING ON (3)                 ok
+903: Complex OCCURS DEPENDING ON (4)                 ok
+904: Complex OCCURS DEPENDING ON (5)                 ok
+905: Complex OCCURS DEPENDING ON (6)                 ok
+906: OCCURS UNBOUNDED (1)                            ok
+907: OCCURS UNBOUNDED (2)                            expected failure (run_extensions.at:1029)
+908: DEPENDING ON with ODOSLIDE                      ok
+909: DEPENDING ON with ODOSLIDE for IBM              ok
+910: INITIALIZE level 01                             ok
+911: MOVE of non-integer to alphanumeric             ok
+912: CALL USING file-name                            ok
+913: CALL unusual PROGRAM-ID.                        ok
+914: CALL / GOBACK with LOCAL-STORAGE                ok
+915: CALL BY VALUE alphanumeric item                 ok
+916: CALL BY VALUE numeric literal WITH SIZE         ok
+917: Case-sensitive PROGRAM-ID                       ok
+918: Quoted PROGRAM-ID                               ok
+919: PROGRAM-ID AS clause                            ok
+920: ASSIGN clause                                   ok
+921: ASSIGN clause IBM                               ok
+922: ASSIGN expansion                                ok
+923: ASSIGN mapping                                  ok
+924: ASSIGN with COB_FILE_PATH                       ok
+925: NUMBER-OF-CALL-PARAMETERS                       ok
+926: TALLY register                                  ok
+927: Redefining TALLY                                ok
+928: PROCEDURE DIVISION USING BY ...                 ok
+929: PROCEDURE DIVISION CHAINING                     ok
+930: STOP RUN RETURNING/GIVING                       ok
+931: GOBACK/EXIT PROGRAM RETURNING/GIVING            ok
+932: ENTRY                                           ok
+933: LINE SEQUENTIAL write                           ok
+934: LINE SEQUENTIAL read                            ok
+935: ASSIGN to KEYBOARD/DISPLAY                      ok
+936: SORT ASSIGN KEYBOARD to ASSIGN DISPLAY          expected failure (run_extensions.at:2837)
+937: Environment/Argument variable                   ok
+938: 78 Level (1)                                    ok
+939: 78 Level (2)                                    ok
+940: 78 Level (3)                                    ok
+941: SWITCHES with non-standard names                ok
+942: Larger REDEFINES lengths                        ok
+943: Obsolete 2002 keywords with COBOL2014           ok
+944: System routine with wrong number of parameters  ok
+945: System routine C$NARG                           ok
+946: System routine C$PARAMSIZE                      ok
+947: System routine C$CALLEDBY                       ok
+948: System routine C$JUSTIFY                        ok
+949: System routine C$PRINTABLE                      ok
+950: System routine C$MAKEDIR                        ok
+951: System routine C$GETPID                         ok
+952: System routine C$TOUPPER                        ok
+953: System routine C$TOLOWER                        ok
+954: System routine CBL_OR                           ok
+955: System routine CBL_NOR                          ok
+956: System routine CBL_AND                          ok
+957: System routine CBL_XOR                          ok
+958: System routine CBL_IMP                          ok
+959: System routine CBL_NIMP                         ok
+960: System routine CBL_NOT                          ok
+961: System routine CBL_EQ                           ok
+962: System routine CBL_GC_GETOPT                    ok
+963: System routine CBL_GC_FORK                      ok
+964: System routine CBL_GC_WAITPID                   ok
+965: System routine CBL_GC_HOSTED                    ok
+966: System routine SYSTEM, parameter handling       ok
+967: System routine CBL_ERROR_PROC                   ok
+968: DISPLAY DIRECTIVE and $DISPLAY                  ok
+969: Conditional/define directives (1)               ok
+970: Conditional/define directives (2)               ok
+971: Conditional/define directives (3)               ok
+972: Conditional/define directives (4)               ok
+973: Conditional/define directives (5)               ok
+974: Conditional/define directives (6)               ok
+975: Conditional/define directives (7)               ok
+976: Conditional/define directives (8)               ok
+977: Variable format                                 ok
+978: Binary COMP-1 (1)                               ok
+979: Binary COMP-1 (2)                               ok
+980: XML GENERATE general                            ok
+981: XML GENERATE SUPPRESS                           ok
+982: XML GENERATE exceptions                         ok
+983: XML GENERATE record selection                   ok
+984: XML GENERATE trimming                           ok
+985: JSON GENERATE general                           ok
+986: JSON GENERATE SUPPRESS                          ok
+987: JSON GENERATE exceptions                        ok
+988: JSON GENERATE record selection                  ok
+989: JSON GENERATE trimming                          ok
+
+Data Representation
+
+990: BINARY: 2-4-8 big-endian                        ok
+991: BINARY: 2-4-8 native                            ok
+992: BINARY: 1-2-4-8 big-endian                      ok
+993: BINARY: 1-2-4-8 native                          ok
+994: BINARY: 1--8 big-endian                         ok
+995: BINARY: 1--8 native                             ok
+996: BINARY: full-print                              ok
+997: BINARY: 64bit unsigned compare                  ok
+998: BINARY: 64bit unsigned arithmetic notrunc       ok
+999: BINARY: 64bit signed negative constant range    ok
+1000: COMP-4 Truncate                                 ok
+1001: COMP-4 No Truncate                              ok
+1002: DISPLAY: Sign ASCII                             ok
+1003: DISPLAY: Sign ASCII (2)                         ok
+1004: DISPLAY: Sign EBCDIC                            ok
+1005: DISPLAY: unsigned                               ok
+1006: PACKED-DECIMAL dump                             ok
+1007: PACKED-DECIMAL used with DISPLAY                ok
+1008: PACKED-DECIMAL used with MOVE                   ok
+1009: PACKED-DECIMAL used with INITIALIZE             ok
+1010: PACKED-DECIMAL arithmetic                       ok
+1011: PACKED-DECIMAL numeric test (1)                 ok
+1012: PACKED-DECIMAL numeric test (2)                 ok
+1013: COMP-6 used with DISPLAY                        ok
+1014: COMP-6 used with MOVE                           ok
+1015: COMP-6 arithmetic                               ok
+1016: COMP-6 numeric test                             ok
+1017: POINTER: display                                ok
+
+## ------------- ##
+## Test results. ##
+## ------------- ##
+
+ERROR: 1015 tests were run,
+33 failed (28 expected failures).
+2 tests were skipped.
+## -------------------------- ##
+## testsuite.log was created. ##
+## -------------------------- ##
+
+Please send `tests/testsuite.log' and all information you think might help:
+
+   To: <bug-gnucobol@gnu.org>
+   Subject: [GnuCOBOL 3.1-dev] testsuite: 11 513 630 631 632 failed
+
+You may investigate any problem if you feel able to do so, in which
+case the test suite provides a good starting point.  Its output may
+be found below `tests/testsuite.dir'.
+
+make[4]: *** [Makefile:778: check-local] Error 1
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/gnucobol-3.1-dev/tests'
+make[3]: *** [Makefile:656: check-am] Error 2
+make[2]: *** [Makefile:504: check-recursive] Error 1
+make[1]: *** [Makefile:598: check-recursive] Error 1
+make: *** [Makefile:896: check] Error 2
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.UL3465 (%check)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.UL3465 (%check)
+I: [iurt_root_command] ERROR: chroot
