@@ -1,0 +1,119 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/rstudio-1.2.5042-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.kvgsH8
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf rstudio-1.2.5042
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/rstudio-1.2.5042.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd rstudio-1.2.5042
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rstudio-1.1.412-cmakelists-remove-pandoc.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rstudio-1.2.5033-var_run-to-run.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rstudio-1.2.5033-boost-1.70-support.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rstudio-1.2.5042-mathjax-version-2.7.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rstudio-1.2.5042-gwt-version-2.8.2.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/unzip -qd dependencies/common/dictionaries /home/stig/rpmbuild/SOURCES/core-dictionaries.zip
++ /usr/bin/mkdir -p src/gwt/lib/gwt
++ /usr/bin/unzip -qd src/gwt/lib/gwt /home/stig/rpmbuild/SOURCES/gwt-2.8.2.zip
++ /usr/bin/mv src/gwt/lib/gwt/gwt-2.8.2 src/gwt/lib/gwt/2.8.2
++ /usr/bin/mkdir -p src/gwt/lib/gin/2.1.2
++ /usr/bin/unzip -qd src/gwt/lib/gin/2.1.2 /home/stig/rpmbuild/SOURCES/gin-2.1.2.zip
++ pushd dependencies/common
+~/rpmbuild/BUILD/rstudio-1.2.5042/dependencies/common ~/rpmbuild/BUILD/rstudio-1.2.5042
++ /usr/bin/mkdir rmarkdown
++ /usr/bin/tar xzf /home/stig/rpmbuild/SOURCES/rmarkdown-1.12.tar.gz --strip-components=1 -C rmarkdown
++ /usr/bin/mkdir packrat
++ /usr/bin/tar xzf /home/stig/rpmbuild/SOURCES/packrat-0.5.0.tar.gz --strip-components=1 -C packrat
++ /usr/bin/mkdir -p libclang/3.5
++ /usr/bin/mkdir -p libclang/builtin-headers
++ popd
+~/rpmbuild/BUILD/rstudio-1.2.5042
++ sed -i 's/Boost_VERSION LESS 106900/Boost_VERSION VERSION_LESS 1.69.0/g' src/cpp/CMakeLists.txt
++ /usr/bin/cp -a . /home/stig/rpmbuild/BUILD/rstudio-server-1.2.5042-1.mga8
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.eSx699
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd rstudio-1.2.5042
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ GIT_DISCOVERY_ACROSS_FILESYSTEM=1
++ QTDIR=/usr/lib64/qt5
++ export QTDIR
++ PATH=/usr/lib64/qt5/bin:/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/usr/lib64/qt5/bin:/home/stig/.local/bin:/home/stig/bin
++ export PATH
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -DDBUS_SERVICES_DIR=/usr/share/dbus-1/services -DDBUS_INTERFACES_DIR=/usr/share/dbus-1/interfaces -Wno-dev -DRSTUDIO_TARGET=Desktop -DCMAKE_INSTALL_PREFIX=/usr/lib64/rstudio -DCMAKE_BUILD_TYPE=Release -DQT_QMAKE_EXECUTABLE=/usr/lib64/qt5/bin/qmake
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- LSB release: mageia
+-- Performing Test COMPILER_SUPPORTS_CXX11
+-- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+-- Found Boost: /usr/lib64/cmake/Boost-1.72.0/BoostConfig.cmake (found suitable version "1.72.0", minimum required is "1.63.0")  
+-- Found Boost: /usr/lib64/cmake/Boost-1.72.0/BoostConfig.cmake (found suitable version "1.72.0", minimum required is "1.63.0") found components: atomic chrono date_time filesystem iostreams program_options random regex system thread 
+-- Using Boost.Signals version 2
+-- Performing Test HAVE_SCANDIR_POSIX
+-- Performing Test HAVE_SCANDIR_POSIX - Success
+-- Looking for SA_NOCLDWAIT
+-- Looking for SA_NOCLDWAIT - found
+-- Looking for SO_PEERCRED
+-- Looking for SO_PEERCRED - found
+-- Looking for inotify_init1
+-- Looking for inotify_init1 - found
+-- Looking for getpeereid
+-- Looking for getpeereid - not found
+-- Looking for setresuid
+-- Looking for setresuid - found
+-- Configured to build DESKTOP
+-- Found LibR: /usr/lib64/R  
+-- Found R: /usr/lib64/R
+-- Found Qt: /usr/lib64/qt5/bin/qmake
+CMake Error at src/cpp/session/CMakeLists.txt:26 (message):
+  Mathjax 2.7 not found (re-run install-dependencies script to install)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/stig/rpmbuild/BUILD/rstudio-1.2.5042/build/CMakeFiles/CMakeOutput.log".
+See also "/home/stig/rpmbuild/BUILD/rstudio-1.2.5042/build/CMakeFiles/CMakeError.log".
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.eSx699 (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.eSx699 (%build)
+I: [iurt_root_command] ERROR: chroot
