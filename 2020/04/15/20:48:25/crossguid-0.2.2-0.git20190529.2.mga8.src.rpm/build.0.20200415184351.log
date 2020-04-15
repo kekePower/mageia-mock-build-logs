@@ -1,0 +1,309 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/crossguid-0.2.2-0.git20190529.2.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.t3zs2o
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/crossguid-0.2.2+git20190529.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/56.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.dW9eBn
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.6.3") 
+CMake Warning (dev) at /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (LibUUID)
+  does not match the name of the calling package (Libuuid).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/FindLibuuid.cmake:18 (find_package_handle_standard_args)
+  CMakeLists.txt:33 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found LibUUID: /usr/lib64/libuuid.so (found version "2.35.1") 
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_C_FLAGS_RELWITHDEBINFO
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build
++ /usr/bin/make -O -j4 V=1 VERBOSE=1 -C build
+make: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/cmake -S/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 -B/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build --check-build-system CMakeFiles/Makefile.cmake 0
+make: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/progress.marks
+make: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+/usr/bin/make  -f CMakeFiles/crossguid.dir/build.make CMakeFiles/crossguid.dir/depend
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+cd /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid.dir/depend.internal".
+Scanning dependencies of target crossguid
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid.dir/build.make CMakeFiles/crossguid.dir/build
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 20%] Building CXX object CMakeFiles/crossguid.dir/src/guid.cpp.o
+/usr/bin/c++  -DGUID_LIBUUID -Dcrossguid_EXPORTS -I/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/include  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -Werror -Wall -std=c++17 -o CMakeFiles/crossguid.dir/src/guid.cpp.o -c /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/src/guid.cpp
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 40%] Linking CXX shared library libcrossguid.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/crossguid.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIC -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -shared -Wl,-soname,libcrossguid.so.0 -o libcrossguid.so.0.2.3 CMakeFiles/crossguid.dir/src/guid.cpp.o  /usr/lib64/libuuid.so 
+/usr/bin/cmake -E cmake_symlink_library libcrossguid.so.0.2.3 libcrossguid.so.0 libcrossguid.so
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 40%] Built target crossguid
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid-test.dir/build.make CMakeFiles/crossguid-test.dir/depend
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+cd /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid-test.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid-test.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid-test.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid-test.dir/depend.internal".
+Scanning dependencies of target crossguid-test
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid-test.dir/build.make CMakeFiles/crossguid-test.dir/build
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 80%] Building CXX object CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o
+/usr/bin/c++   -I/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/include  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c++17 -o CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o -c /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/test/TestMain.cpp
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 80%] Building CXX object CMakeFiles/crossguid-test.dir/test/Test.cpp.o
+/usr/bin/c++   -I/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/include  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c++17 -o CMakeFiles/crossguid-test.dir/test/Test.cpp.o -c /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/test/Test.cpp
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[100%] Linking CXX executable crossguid-test
+/usr/bin/cmake -E cmake_link_script CMakeFiles/crossguid-test.dir/link.txt --verbose=1
+/usr/bin/c++  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags CMakeFiles/crossguid-test.dir/test/TestMain.cpp.o CMakeFiles/crossguid-test.dir/test/Test.cpp.o  -o crossguid-test  -Wl,-rpath,/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build libcrossguid.so.0.2.3 /usr/lib64/libuuid.so 
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[100%] Built target crossguid-test
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles 0
+make: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.jzJQeo
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64 'INSTALL=/usr/bin/install -p' -C build
+make: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/cmake -S/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 -B/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid.dir/build.make CMakeFiles/crossguid.dir/depend
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+cd /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid.dir/build.make CMakeFiles/crossguid.dir/build
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[2]: Nothing to be done for 'CMakeFiles/crossguid.dir/build'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[ 40%] Built target crossguid
+/usr/bin/make  -f CMakeFiles/crossguid-test.dir/build.make CMakeFiles/crossguid-test.dir/depend
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+cd /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681 /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles/crossguid-test.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/make  -f CMakeFiles/crossguid-test.dir/build.make CMakeFiles/crossguid-test.dir/build
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[2]: Nothing to be done for 'CMakeFiles/crossguid-test.dir/build'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+[100%] Built target crossguid-test
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build/CMakeFiles 0
+/usr/bin/make  -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+make[1]: Nothing to be done for 'preinstall'.
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/libcrossguid.so.0.2.3
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/libcrossguid.so.0
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/libcrossguid.so
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/include
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/include/crossguid
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/include/crossguid/guid.hpp
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/crossguid/cmake/crossguid-config.cmake
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/crossguid/cmake/crossguid-config-relwithdebinfo.cmake
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/crossguid/LICENSE
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/crossguid/README.md
+-- Installing: /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/pkgconfig/crossguid.pc
+make: Leaving directory '/home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build'
++ /usr/lib/rpm/find-debuginfo.sh -j4 --strict-build-id -m -i --build-id-seed 0.2.2-0.git20190529.2.mga8 --unique-debug-suffix -0.2.2-0.git20190529.2.mga8.x86_64 --unique-debug-src-base crossguid-0.2.2-0.git20190529.2.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/libcrossguid.so.0.2.3
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/lib64/libcrossguid.so.0.2.3
+original debug info size: 280kB, size after compression: 268kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 1 CRC32s, 0 CRC32s did match.
+27 blocks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/translate_menu
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.kW6MIr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ '[' 1 -eq 1 ']'
++ pushd build
+~/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681/build ~/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ ./crossguid-test
+0c93cf8c-b565-4602-803d-a55eacbb6f0b
+4b9b50f0-90a6-471c-8a3d-1eb470c31d31
+3cb7b956-ae72-4b1c-a327-b0c85ddd9fb3
+All tests passed!
++ popd
+~/rpmbuild/BUILD/crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: lib64crossguid0-0.2.2-0.git20190529.2.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.XUnWZr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/doc/lib64crossguid0
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/doc/lib64crossguid0
++ cp -pr README.md /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/doc/lib64crossguid0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.hDAakr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/licenses/lib64crossguid0
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/licenses/lib64crossguid0
++ cp -pr LICENSE /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64/usr/share/licenses/lib64crossguid0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: lib64crossguid0 = 0.2.2-0.git20190529.2.mga8 lib64crossguid0(x86-64) = 0.2.2-0.git20190529.2.mga8 libcrossguid.so.0()(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) libuuid.so.1()(64bit) libuuid.so.1(UUID_1.0)(64bit)
+Processing files: lib64crossguid-devel-0.2.2-0.git20190529.2.mga8.x86_64
+Provides: crossguid-devel = 0.2.2-0.git20190529.2.mga8 devel(libcrossguid(64bit)) lib64crossguid-devel = 0.2.2-0.git20190529.2.mga8 lib64crossguid-devel(x86-64) = 0.2.2-0.git20190529.2.mga8 pkgconfig(crossguid) = 0.2.3
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: devel(libgcc_s(64bit)) devel(libstdc++(64bit)) devel(libuuid(64bit)) pkgconfig
+Processing files: crossguid-debugsource-0.2.2-0.git20190529.2.mga8.x86_64
+Provides: crossguid-debugsource = 0.2.2-0.git20190529.2.mga8 crossguid-debugsource(x86-64) = 0.2.2-0.git20190529.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: lib64crossguid0-debuginfo-0.2.2-0.git20190529.2.mga8.x86_64
+Provides: debuginfo(build-id) = 31420b57a49bca3fd9703e017c66f672d00748c2 lib64crossguid0-debuginfo = 0.2.2-0.git20190529.2.mga8 lib64crossguid0-debuginfo(x86-64) = 0.2.2-0.git20190529.2.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: crossguid-debugsource(x86-64) = 0.2.2-0.git20190529.2.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64crossguid-devel-0.2.2-0.git20190529.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64crossguid0-0.2.2-0.git20190529.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/crossguid-debugsource-0.2.2-0.git20190529.2.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64crossguid0-debuginfo-0.2.2-0.git20190529.2.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3lO6Er
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/crossguid-0.2.2-0.git20190529.2.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.59h7Pn
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf crossguid-ca1bf4b810e2d188d04cb6286f957008ee1b7681
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!

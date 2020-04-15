@@ -1,0 +1,24 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200415184351/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200415184351/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84650 completed, ETA = --:--:--, speed = 1687k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv1-1.34.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 104k completed, ETA = --:--:--, speed = 10.1M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/cmake-3.17.1-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6448k completed, ETA = --:--:--, speed = 64.2M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uuid-devel-2.35.1-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 56759 completed, ETA = --:--:--, speed = 1498k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64rhash0-1.3.9-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 121k completed, ETA = --:--:--, speed = 5523k                                                                                                 retrieved   lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm cmake-3.17.1-1.mga8.x86_64.rpm lib64uuid-devel-2.35.1-3.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm
+...retrieving done
+installing lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm lib64uuid-devel-2.35.1-3.mga8.x86_64.rpm cmake-3.17.1-1.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200415184351/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200415184351 (remove=0, install=0, upgrade=5)
+Preparing...                     #############################################
+      1/5: lib64rhash0           #############################################
+      2/5: lib64uv1              #############################################
+      3/5: lib64jsoncpp19        #############################################
+      4/5: cmake                 #############################################
+      5/5: lib64uuid-devel       #############################################
+removing installed rpms (lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64uv1-1.34.2-2.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm lib64uuid-devel-2.35.1-3.mga8.x86_64.rpm cmake-3.17.1-1.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200415184351/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
