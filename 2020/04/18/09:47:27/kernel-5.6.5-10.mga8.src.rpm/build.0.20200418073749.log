@@ -1,0 +1,24 @@
+D: [iurt_root_command] chroot
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda-devel
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	fuse-exfat
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	vboxadditions-kernel-desktop-latest
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-latest
+warning: line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-devel-latest
+warning: line 976: It's not recommended to have unversioned Obsoletes: Obsoletes:	cpufreq cpufrequtils
+Installing /home/stig/rpmbuild/SRPMS/kernel-5.6.5-10.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.rmBvOT
+/home/stig/rpmbuild/tmp/rpm-tmp.rmBvOT: line 5: -g: command not found
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.rmBvOT (%prep)
+
+
+RPM build errors:
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda-devel
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	fuse-exfat
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	vboxadditions-kernel-desktop-latest
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-latest
+    line 857: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-devel-latest
+    line 976: It's not recommended to have unversioned Obsoletes: Obsoletes:	cpufreq cpufrequtils
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.rmBvOT (%prep)
+I: [iurt_root_command] ERROR: chroot
