@@ -1,0 +1,422 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/ecflow4-4.17.2-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.4hjkZ2
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ecFlow-4.17.2-Source
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/ecflow4-4.17.2.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ecFlow-4.17.2-Source
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ecflow-4.8.0-set-ecf-home.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0001-perl-interpeter.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0002-hurd.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0003-setsid.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0004-logsvr-sigaction.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0005-format-security.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0006-auto_ptr.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0007-python3.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0008-reproducible.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0009-soname.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ cp /home/stig/rpmbuild/SOURCES/2017-01-19-ecFlowUI-for-ecFlow-training-course.pdf .
++ cp /home/stig/rpmbuild/SOURCES/ecflowcourse-20180122.pdf .
++ cp /home/stig/rpmbuild/SOURCES/ecflowcourse-20180122_python.pdf .
++ cp -a . /home/stig/rpmbuild/BUILD/python3-ecflow4-4.17.2-1.mga8
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.ZpWUZ5
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ecFlow-4.17.2-Source
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ export 'CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ pushd /home/stig/rpmbuild/BUILD/python3-ecflow4-4.17.2-1.mga8
+~/rpmbuild/BUILD/python3-ecflow4-4.17.2-1.mga8 ~/rpmbuild/BUILD/ecFlow-4.17.2-Source
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -Wno-dev -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -GNinja -DENABLE_STATIC_BOOST_LIBS=OFF -DENABLE_SSL=OFF -DENABLE_UI_USAGE_LOG=OFF -DENABLE_SECURE_USER=OFF -DENABLE_PYTHON_PTR_REGISTER=ON -DBOOST_ROOT=/usr -DECFLOW_QT5=ON -DENABLE_GUI=OFF -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_MIN_VERSION=3.8 -DBoost_PYTHON_LIBRARY_RELEASE=/usr/lib64/libboost_python3.so '-DCMAKE_CXX_FLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC -ftemplate-depth=512' -DDISABLE_OS_CHECK=ON
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- ecbuild   3.2.0	/home/stig/rpmbuild/BUILD/python3-ecflow4-4.17.2-1.mga8/cmake
+-- cmake     3.17.1	/usr/bin/cmake
+-- ---------------------------------------------------------
+-- Found Git: /usr/bin/git (found version "2.26.2") 
+-- The C compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test C_FLAG_TEST_1
+-- Performing Test C_FLAG_TEST_1 - Success
+-- Performing Test CXX_FLAG_TEST_1
+-- Performing Test CXX_FLAG_TEST_1 - Success
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of void*
+-- Check size of void* - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Searching 16 bit integer - Using unsigned short
+-- Check if the system is big endian - little endian
+-- Check size of off_t
+-- Check size of off_t - done
+-- Feature TESTS enabled
+-- ---------------------------------------------------------
+-- ---------------------------------------------------------
+-- [ecflow] (4.17.2)
+-- CMAKE_INSTALL_PREFIX     : /usr
+-- ECFLOW_RELEASE           : 4
+-- ECFLOW_MAJOR             : 17
+-- ECFLOW_MINOR             : 2
+-- ECFLOW_VERSION           : 4.17.2
+-- 
+-- ------------------------------ Qt start ---------------------------
+-- ecFlowUI is enabled - searching for Qt5  if not found, will try Qt4
+-- To use a self-built Qt installation, try setting CMAKE_PREFIX_PATH
+-- Qt5 version 5.14.1 was found
+-- Qt5Charts was found - the server log viewer will be built
+-- ------------------------------ Qt end----------------------------
+-- 
+-- ENABLE_SERVER              : ON
+-- ENABLE_PYTHON              : ON
+-- ENABLE_PYTHON_PTR_REGISTER : ON
+-- ENABLE_GUI                 : OFF
+-- ENABLE_UI                  : ON
+-- ENABLE_ALL_TESTS           : OFF
+-- ENABLE_STATIC_BOOST_LIBS   : OFF
+-- ENABLE_SSL                 : OFF
+-- ENABLE_SECURE_USER         : OFF
+-- ENABLE_UI_BACKTRACE      : OFF
+-- ENABLE_UI_USAGE_LOG      : OFF
+-- 
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1466 ] _boost_TEST_VERSIONS = "1.72.0;1.72;1.71.0;1.71;1.70.0;1.70;1.69.0;1.69;1.68.0;1.68;1.67.0;1.67;1.66.0;1.66;1.65.1;1.65.0;1.65;1.64.0;1.64;1.63.0;1.63;1.62.0;1.62;1.61.0;1.61;1.60.0;1.60;1.59.0;1.59;1.58.0;1.58;1.57.0;1.57;1.56.0;1.56;1.55.0;1.55;1.54.0;1.54;1.53.0;1.53"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1467 ] Boost_USE_MULTITHREADED = "ON"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1468 ] Boost_USE_STATIC_LIBS = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1469 ] Boost_USE_STATIC_RUNTIME = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1470 ] Boost_ADDITIONAL_VERSIONS = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1471 ] Boost_NO_SYSTEM_PATHS = "ON"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1503 ] BOOST_ROOT = "/usr"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1504 ] ENV{BOOST_ROOT} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1505 ] BOOST_INCLUDEDIR = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1506 ] ENV{BOOST_INCLUDEDIR} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1507 ] BOOST_LIBRARYDIR = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1508 ] ENV{BOOST_LIBRARYDIR} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1580 ] _boost_INCLUDE_SEARCH_DIRS = "/usr/include;/usr;NO_CMAKE_SYSTEM_PATH;NO_SYSTEM_ENVIRONMENT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1581 ] _boost_PATH_SUFFIXES = "boost-1_72_0;boost_1_72_0;boost/boost-1_72_0;boost/boost_1_72_0;boost-1_72;boost_1_72;boost/boost-1_72;boost/boost_1_72;boost-1_71_0;boost_1_71_0;boost/boost-1_71_0;boost/boost_1_71_0;boost-1_71;boost_1_71;boost/boost-1_71;boost/boost_1_71;boost-1_70_0;boost_1_70_0;boost/boost-1_70_0;boost/boost_1_70_0;boost-1_70;boost_1_70;boost/boost-1_70;boost/boost_1_70;boost-1_69_0;boost_1_69_0;boost/boost-1_69_0;boost/boost_1_69_0;boost-1_69;boost_1_69;boost/boost-1_69;boost/boost_1_69;boost-1_68_0;boost_1_68_0;boost/boost-1_68_0;boost/boost_1_68_0;boost-1_68;boost_1_68;boost/boost-1_68;boost/boost_1_68;boost-1_67_0;boost_1_67_0;boost/boost-1_67_0;boost/boost_1_67_0;boost-1_67;boost_1_67;boost/boost-1_67;boost/boost_1_67;boost-1_66_0;boost_1_66_0;boost/boost-1_66_0;boost/boost_1_66_0;boost-1_66;boost_1_66;boost/boost-1_66;boost/boost_1_66;boost-1_65_1;boost_1_65_1;boost/boost-1_65_1;boost/boost_1_65_1;boost-1_65_0;boost_1_65_0;boost/boost-1_65_0;boost/boost_1_65_0;boost-1_65;boost_1_65;boost/boost-1_65;boost/boost_1_65;boost-1_64_0;boost_1_64_0;boost/boost-1_64_0;boost/boost_1_64_0;boost-1_64;boost_1_64;boost/boost-1_64;boost/boost_1_64;boost-1_63_0;boost_1_63_0;boost/boost-1_63_0;boost/boost_1_63_0;boost-1_63;boost_1_63;boost/boost-1_63;boost/boost_1_63;boost-1_62_0;boost_1_62_0;boost/boost-1_62_0;boost/boost_1_62_0;boost-1_62;boost_1_62;boost/boost-1_62;boost/boost_1_62;boost-1_61_0;boost_1_61_0;boost/boost-1_61_0;boost/boost_1_61_0;boost-1_61;boost_1_61;boost/boost-1_61;boost/boost_1_61;boost-1_60_0;boost_1_60_0;boost/boost-1_60_0;boost/boost_1_60_0;boost-1_60;boost_1_60;boost/boost-1_60;boost/boost_1_60;boost-1_59_0;boost_1_59_0;boost/boost-1_59_0;boost/boost_1_59_0;boost-1_59;boost_1_59;boost/boost-1_59;boost/boost_1_59;boost-1_58_0;boost_1_58_0;boost/boost-1_58_0;boost/boost_1_58_0;boost-1_58;boost_1_58;boost/boost-1_58;boost/boost_1_58;boost-1_57_0;boost_1_57_0;boost/boost-1_57_0;boost/boost_1_57_0;boost-1_57;boost_1_57;boost/boost-1_57;boost/boost_1_57;boost-1_56_0;boost_1_56_0;boost/boost-1_56_0;boost/boost_1_56_0;boost-1_56;boost_1_56;boost/boost-1_56;boost/boost_1_56;boost-1_55_0;boost_1_55_0;boost/boost-1_55_0;boost/boost_1_55_0;boost-1_55;boost_1_55;boost/boost-1_55;boost/boost_1_55;boost-1_54_0;boost_1_54_0;boost/boost-1_54_0;boost/boost_1_54_0;boost-1_54;boost_1_54;boost/boost-1_54;boost/boost_1_54;boost-1_53_0;boost_1_53_0;boost/boost-1_53_0;boost/boost_1_53_0;boost-1_53;boost_1_53;boost/boost-1_53;boost/boost_1_53"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1596 ] location of version.hpp: /usr/include/boost/version.hpp
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1636 ] Boost_VERSION = "107200"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1637 ] Boost_VERSION_STRING = "1.72.0"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1638 ] Boost_VERSION_MACRO = "107200"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1639 ] Boost_VERSION_MAJOR = "1"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1640 ] Boost_VERSION_MINOR = "72"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1641 ] Boost_VERSION_PATCH = "0"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1642 ] Boost_VERSION_COUNT = "3"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1659 ] Boost_LIB_PREFIX = ""
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1660 ] Boost_NAMESPACE = "boost"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:793 ] _boost_COMPILER = "-gcc9" (guessed)
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1696 ] _boost_MULTITHREADED = "-mt"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1773 ] _boost_ARCHITECTURE_TAG = "" (detected)
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1777 ] _boost_RELEASE_ABI_TAG = "-"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1778 ] _boost_DEBUG_ABI_TAG = "-d"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1838 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib;/usr/stage/lib;/usr/include/lib;/usr/include/../lib;/usr/include/stage/lib;NO_CMAKE_SYSTEM_PATH;NO_SYSTEM_ENVIRONMENT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1839 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib;/usr/stage/lib;/usr/include/lib;/usr/include/../lib;/usr/include/stage/lib;NO_CMAKE_SYSTEM_PATH;NO_SYSTEM_ENVIRONMENT_PATH"
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for SERIALIZATION_LIBRARY_RELEASE: boost_serialization-gcc9-mt-1_72;boost_serialization-gcc9-mt;boost_serialization-gcc9-mt;boost_serialization-mt-1_72;boost_serialization-mt;boost_serialization-mt;boost_serialization-mt;boost_serialization
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for SERIALIZATION_LIBRARY_DEBUG: boost_serialization-gcc9-mt-d-1_72;boost_serialization-gcc9-mt-d;boost_serialization-gcc9-mt-d;boost_serialization-mt-d-1_72;boost_serialization-mt-d;boost_serialization-mt-d;boost_serialization-mt;boost_serialization
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for SYSTEM_LIBRARY_RELEASE: boost_system-gcc9-mt-1_72;boost_system-gcc9-mt;boost_system-gcc9-mt;boost_system-mt-1_72;boost_system-mt;boost_system-mt;boost_system-mt;boost_system
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for SYSTEM_LIBRARY_DEBUG: boost_system-gcc9-mt-d-1_72;boost_system-gcc9-mt-d;boost_system-gcc9-mt-d;boost_system-mt-d-1_72;boost_system-mt-d;boost_system-mt-d;boost_system-mt;boost_system
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for THREAD_LIBRARY_RELEASE: boost_thread-gcc9-mt-1_72;boost_thread-gcc9-mt;boost_thread-gcc9-mt;boost_thread-mt-1_72;boost_thread-mt;boost_thread-mt;boost_thread-mt;boost_thread
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for THREAD_LIBRARY_DEBUG: boost_thread-gcc9-mt-d-1_72;boost_thread-gcc9-mt-d;boost_thread-gcc9-mt-d;boost_thread-mt-d-1_72;boost_thread-mt-d;boost_thread-mt-d;boost_thread-mt;boost_thread
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE: boost_unit_test_framework-gcc9-mt-1_72;boost_unit_test_framework-gcc9-mt;boost_unit_test_framework-gcc9-mt;boost_unit_test_framework-mt-1_72;boost_unit_test_framework-mt;boost_unit_test_framework-mt;boost_unit_test_framework-mt;boost_unit_test_framework
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG: boost_unit_test_framework-gcc9-mt-d-1_72;boost_unit_test_framework-gcc9-mt-d;boost_unit_test_framework-gcc9-mt-d;boost_unit_test_framework-mt-d-1_72;boost_unit_test_framework-mt-d;boost_unit_test_framework-mt-d;boost_unit_test_framework-mt;boost_unit_test_framework
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for TEST_EXEC_MONITOR_LIBRARY_RELEASE: boost_test_exec_monitor-gcc9-mt-1_72;boost_test_exec_monitor-gcc9-mt;boost_test_exec_monitor-gcc9-mt;boost_test_exec_monitor-mt-1_72;boost_test_exec_monitor-mt;boost_test_exec_monitor-mt;boost_test_exec_monitor-mt;boost_test_exec_monitor
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for TEST_EXEC_MONITOR_LIBRARY_DEBUG: boost_test_exec_monitor-gcc9-mt-d-1_72;boost_test_exec_monitor-gcc9-mt-d;boost_test_exec_monitor-gcc9-mt-d;boost_test_exec_monitor-mt-d-1_72;boost_test_exec_monitor-mt-d;boost_test_exec_monitor-mt-d;boost_test_exec_monitor-mt;boost_test_exec_monitor
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for FILESYSTEM_LIBRARY_RELEASE: boost_filesystem-gcc9-mt-1_72;boost_filesystem-gcc9-mt;boost_filesystem-gcc9-mt;boost_filesystem-mt-1_72;boost_filesystem-mt;boost_filesystem-mt;boost_filesystem-mt;boost_filesystem
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for FILESYSTEM_LIBRARY_DEBUG: boost_filesystem-gcc9-mt-d-1_72;boost_filesystem-gcc9-mt-d;boost_filesystem-gcc9-mt-d;boost_filesystem-mt-d-1_72;boost_filesystem-mt-d;boost_filesystem-mt-d;boost_filesystem-mt;boost_filesystem
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for PROGRAM_OPTIONS_LIBRARY_RELEASE: boost_program_options-gcc9-mt-1_72;boost_program_options-gcc9-mt;boost_program_options-gcc9-mt;boost_program_options-mt-1_72;boost_program_options-mt;boost_program_options-mt;boost_program_options-mt;boost_program_options
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for PROGRAM_OPTIONS_LIBRARY_DEBUG: boost_program_options-gcc9-mt-d-1_72;boost_program_options-gcc9-mt-d;boost_program_options-gcc9-mt-d;boost_program_options-mt-d-1_72;boost_program_options-mt-d;boost_program_options-mt-d;boost_program_options-mt;boost_program_options
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for DATE_TIME_LIBRARY_RELEASE: boost_date_time-gcc9-mt-1_72;boost_date_time-gcc9-mt;boost_date_time-gcc9-mt;boost_date_time-mt-1_72;boost_date_time-mt;boost_date_time-mt;boost_date_time-mt;boost_date_time
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for DATE_TIME_LIBRARY_DEBUG: boost_date_time-gcc9-mt-d-1_72;boost_date_time-gcc9-mt-d;boost_date_time-gcc9-mt-d;boost_date_time-mt-d-1_72;boost_date_time-mt-d;boost_date_time-mt-d;boost_date_time-mt;boost_date_time
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for REGEX_LIBRARY_RELEASE: boost_regex-gcc9-mt-1_72;boost_regex-gcc9-mt;boost_regex-gcc9-mt;boost_regex-mt-1_72;boost_regex-mt;boost_regex-mt;boost_regex-mt;boost_regex
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for REGEX_LIBRARY_DEBUG: boost_regex-gcc9-mt-d-1_72;boost_regex-gcc9-mt-d;boost_regex-gcc9-mt-d;boost_regex-mt-d-1_72;boost_regex-mt-d;boost_regex-mt-d;boost_regex-mt;boost_regex
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for CHRONO_LIBRARY_RELEASE: boost_chrono-gcc9-mt-1_72;boost_chrono-gcc9-mt;boost_chrono-gcc9-mt;boost_chrono-mt-1_72;boost_chrono-mt;boost_chrono-mt;boost_chrono-mt;boost_chrono
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for CHRONO_LIBRARY_DEBUG: boost_chrono-gcc9-mt-d-1_72;boost_chrono-gcc9-mt-d;boost_chrono-gcc9-mt-d;boost_chrono-mt-d-1_72;boost_chrono-mt-d;boost_chrono-mt-d;boost_chrono-mt;boost_chrono
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for ATOMIC_LIBRARY_RELEASE: boost_atomic-gcc9-mt-1_72;boost_atomic-gcc9-mt;boost_atomic-gcc9-mt;boost_atomic-mt-1_72;boost_atomic-mt;boost_atomic-mt;boost_atomic-mt;boost_atomic
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for ATOMIC_LIBRARY_DEBUG: boost_atomic-gcc9-mt-d-1_72;boost_atomic-gcc9-mt-d;boost_atomic-gcc9-mt-d;boost_atomic-mt-d-1_72;boost_atomic-mt-d;boost_atomic-mt-d;boost_atomic-mt;boost_atomic
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- Found Boost: /usr/include (found suitable version "1.72.0", minimum required is "1.53.0") found components: serialization system thread unit_test_framework test_exec_monitor filesystem program_options date_time regex chrono atomic 
+-- Found Perl: /usr/bin/perl (found version "5.30.2") 
+-- ====================================================================================================================
+-- PYTHON2
+-- ====================================================================================================================
+-- Could NOT find Python2 (missing: Python2_EXECUTABLE Python2_LIBRARIES Python2_INCLUDE_DIRS Interpreter Development) 
+-- ====================================================================================================================
+-- PYTHON3
+-- ====================================================================================================================
+-- Found Python3: /usr/bin/python3.8 (found version "3.8.2") found components: Interpreter Development 
+--   Python3_Interpreter_FOUND         : TRUE
+--   Python3_EXECUTABLE                : /usr/bin/python3.8
+--   Python3_STDLIB                    : /usr/lib64/python3.8    Standard platform independent installation directory
+--   Python3_STDARCH                   : /usr/lib64/python3.8   Standard platform dependent installation directory.
+--   Python3_Development_FOUND         : TRUE
+--   Python3_INCLUDE_DIRS              : /usr/include/python3.8
+--   Python3_LIBRARIES                 : /usr/lib64/libpython3.8.so
+--   Python3_LIBRARY_DIRS              : /usr/lib64
+--   Python3_VERSION                   : 3.8.2
+--   Python3_VERSION_MAJOR             : 3
+--   Python3_VERSION_MINOR             : 8
+--   Python3_VERSION_PATCH             : 2
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1466 ] _boost_TEST_VERSIONS = "1.72.0;1.72;1.71.0;1.71;1.70.0;1.70;1.69.0;1.69;1.68.0;1.68;1.67.0;1.67;1.66.0;1.66;1.65.1;1.65.0;1.65;1.64.0;1.64;1.63.0;1.63;1.62.0;1.62;1.61.0;1.61;1.60.0;1.60;1.59.0;1.59;1.58.0;1.58;1.57.0;1.57;1.56.0;1.56;1.55.0;1.55;1.54.0;1.54;1.53.0;1.53"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1467 ] Boost_USE_MULTITHREADED = "ON"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1468 ] Boost_USE_STATIC_LIBS = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1469 ] Boost_USE_STATIC_RUNTIME = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1470 ] Boost_ADDITIONAL_VERSIONS = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1471 ] Boost_NO_SYSTEM_PATHS = "ON"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1503 ] BOOST_ROOT = "/usr"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1504 ] ENV{BOOST_ROOT} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1505 ] BOOST_INCLUDEDIR = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1506 ] ENV{BOOST_INCLUDEDIR} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1507 ] BOOST_LIBRARYDIR = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1508 ] ENV{BOOST_LIBRARYDIR} = <unset>
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1596 ] location of version.hpp: /usr/include/boost/version.hpp
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1636 ] Boost_VERSION = "107200"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1637 ] Boost_VERSION_STRING = "1.72.0"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1638 ] Boost_VERSION_MACRO = "107200"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1639 ] Boost_VERSION_MAJOR = "1"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1640 ] Boost_VERSION_MINOR = "72"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1641 ] Boost_VERSION_PATCH = "0"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1642 ] Boost_VERSION_COUNT = "3"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1659 ] Boost_LIB_PREFIX = ""
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1660 ] Boost_NAMESPACE = "boost"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:793 ] _boost_COMPILER = "-gcc9" (guessed)
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1696 ] _boost_MULTITHREADED = "-mt"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1773 ] _boost_ARCHITECTURE_TAG = "" (detected)
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1777 ] _boost_RELEASE_ABI_TAG = "-"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1778 ] _boost_DEBUG_ABI_TAG = "-d"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1838 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1839 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:1964 ] Component-specific library search names for : python38;python3-py38;python-py38;python-3.8;python-38
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2024 ] Searching for PYTHON38_LIBRARY_RELEASE: boost_python38-gcc9-mt-1_72;boost_python38-gcc9-mt;boost_python38-gcc9-mt;boost_python38-mt-1_72;boost_python38-mt;boost_python38-mt;boost_python38-mt;boost_python38;boost_python3-py38-gcc9-mt-1_72;boost_python3-py38-gcc9-mt;boost_python3-py38-gcc9-mt;boost_python3-py38-mt-1_72;boost_python3-py38-mt;boost_python3-py38-mt;boost_python3-py38-mt;boost_python3-py38;boost_python-py38-gcc9-mt-1_72;boost_python-py38-gcc9-mt;boost_python-py38-gcc9-mt;boost_python-py38-mt-1_72;boost_python-py38-mt;boost_python-py38-mt;boost_python-py38-mt;boost_python-py38;boost_python-3.8-gcc9-mt-1_72;boost_python-3.8-gcc9-mt;boost_python-3.8-gcc9-mt;boost_python-3.8-mt-1_72;boost_python-3.8-mt;boost_python-3.8-mt;boost_python-3.8-mt;boost_python-3.8;boost_python-38-gcc9-mt-1_72;boost_python-38-gcc9-mt;boost_python-38-gcc9-mt;boost_python-38-mt-1_72;boost_python-38-mt;boost_python-38-mt;boost_python-38-mt;boost_python-38;boost_python38-gcc9-mt-1_72;boost_python38-gcc9-mt;boost_python38-gcc9-mt;boost_python38-mt-1_72;boost_python38-mt;boost_python38-mt;boost_python38-mt;boost_python38
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_RELEASE = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:2079 ] Searching for PYTHON38_LIBRARY_DEBUG: boost_python38-gcc9-mt-d-1_72;boost_python38-gcc9-mt-d;boost_python38-gcc9-mt-d;boost_python38-mt-d-1_72;boost_python38-mt-d;boost_python38-mt-d;boost_python38-mt;boost_python38;boost_python3-py38-gcc9-mt-d-1_72;boost_python3-py38-gcc9-mt-d;boost_python3-py38-gcc9-mt-d;boost_python3-py38-mt-d-1_72;boost_python3-py38-mt-d;boost_python3-py38-mt-d;boost_python3-py38-mt;boost_python3-py38;boost_python-py38-gcc9-mt-d-1_72;boost_python-py38-gcc9-mt-d;boost_python-py38-gcc9-mt-d;boost_python-py38-mt-d-1_72;boost_python-py38-mt-d;boost_python-py38-mt-d;boost_python-py38-mt;boost_python-py38;boost_python-3.8-gcc9-mt-d-1_72;boost_python-3.8-gcc9-mt-d;boost_python-3.8-gcc9-mt-d;boost_python-3.8-mt-d-1_72;boost_python-3.8-mt-d;boost_python-3.8-mt-d;boost_python-3.8-mt;boost_python-3.8;boost_python-38-gcc9-mt-d-1_72;boost_python-38-gcc9-mt-d;boost_python-38-gcc9-mt-d;boost_python-38-mt-d-1_72;boost_python-38-mt-d;boost_python-38-mt-d;boost_python-38-mt;boost_python-38;boost_python38-gcc9-mt-d-1_72;boost_python38-gcc9-mt-d;boost_python38-gcc9-mt-d;boost_python38-mt-d-1_72;boost_python38-mt-d;boost_python38-mt-d;boost_python38-mt;boost_python38
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:652 ] Boost_LIBRARY_DIR_DEBUG = "/usr/lib64"
+-- [ /usr/share/cmake/Modules/FindBoost.cmake:654 ] _boost_LIBRARY_SEARCH_DIRS_DEBUG = "/usr/lib64;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH"
+-- Found Boost: /usr/include (found suitable version "1.72.0", minimum required is "1.53.0") found components: python38 
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.2") 
+-- Found PythonLibs: /usr/include/python3.8;/usr/include/python3.8  
+-- Found Python: TRUE  
+-- python install *LOCAL* +++ lib/python3.8/site-packages/ecflow +++++++
+-- ====================================================================================================================
+-- END PYTHON
+-- ====================================================================================================================
+-- ---------------------------------------------------------
+-- Project ecflow summary
+-- ---------------------------------------------------------
+-- ------------------------------------------------------
+--  Boost_MAJOR_VERSION               : [1]
+--  Boost_MINOR_VERSION               : [72]
+--  Boost_SUBMINOR_VERSION            : [0]
+--  Boost_INCLUDE_DIRS                : [/usr/include]
+--  Boost_LIBRARY_DIR_RELEASE         : [/usr/lib64]
+--  Boost_SYSTEM_LIBRARY              : [/usr/lib64/libboost_system.so]
+--  Boost_THREAD_LIBRARY              : [/usr/lib64/libboost_thread.so]
+--  Boost_FILESYSTEM_LIBRARY          : [/usr/lib64/libboost_filesystem.so]
+--  Boost_PROGRAM_OPTIONS_LIBRARY     : [/usr/lib64/libboost_program_options.so]
+--  Boost_DATE_TIME_LIBRARY           : [/usr/lib64/libboost_date_time.so]
+--  Boost_UNIT_TEST_FRAMEWORK_LIBRARY : [/usr/lib64/libboost_unit_test_framework.so]
+--  Boost_TEST_EXEC_MONITOR_LIBRARY   : [/usr/lib64/libboost_test_exec_monitor.a]
+--  Boost_REGEX_LIBRARY               : [/usr/lib64/libboost_regex.so]
+--  Boost_PYTHON_LIBRARY              : []
+--  Boost_PYTHON_LIBRARY_RELEASE      : [/usr/lib64/libboost_python3.so]
+--  Boost_PYTHON3_LIBRARY             : []
+--  Boost_PYTHON3_LIBRARY_RELEASE     : []
+--  Boost_PYTHON27_LIBRARY            : []
+--  Boost_PYTHON27_LIBRARY_RELEASE    : []
+--  Boost_PYTHON36_LIBRARY            : []
+--  Boost_PYTHON36_LIBRARY_RELEASE    : []
+-- ---------------------------------------------------------
+-- Build summary
+-- ---------------------------------------------------------
+-- system : [generalen] [Linux-5.5.15-desktop-3.mga7] [linux.64]
+-- processor        : [x86_64]
+-- endiness         : Little Endian -- IEEE []
+-- build type       : [RelWithDebInfo]
+-- timestamp        : [20200426191955]
+-- install prefix   : [/usr]
+--   bin dir        : [/usr/bin]
+--   lib dir        : [/usr/lib]
+--   include dir    : [/usr/include]
+--   data dir       : [/usr/share/ecflow]
+--   cmake dir      : [/usr/lib/cmake/ecflow]
+-- ---------------------------------------------------------
+-- C -- GNU 9.3.0
+--     compiler   : /usr/bin/cc
+--     flags      : -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC -pipe -O2 -g -DNDEBUG  
+--     link flags : 
+-- CXX -- GNU 9.3.0
+--     compiler   : /usr/bin/c++
+--     flags      : -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fPIC -ftemplate-depth=512 -pipe -O2 -g -DNDEBUG  
+--     link flags : 
+-- linker : /usr/bin/ld
+-- ar     : /usr/bin/ar
+-- ranlib : /usr/bin/ranlib
+-- link flags
+--     executable [-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -Wl,--disable-new-dtags ]
+--     shared lib [-Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,--disable-new-dtags ]
+--     static lib [-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -Wl,--disable-new-dtags ]
+-- install rpath  : $ORIGIN/../lib
+-- common definitions: ECFLOW_QT5 ECFLOW_LOGVIEW QT_NO_KEYWORDS ECF_ENABLE_PYTHON_PTR_REGISTER
+-- ---------------------------------------------------------
+-- Feature summary
+-- ---------------------------------------------------------
+-- The following features have been enabled:
+
+ * TESTS, ecflow: Enable the unit tests
+
+-- The following OPTIONAL packages have been found:
+
+ * Git
+ * Qt5Core (required version >= 5.14.1)
+ * Qt5Widgets (required version >= 5.0.0)
+ * Qt5Gui (required version >= 5.0.0)
+ * Qt5Network (required version >= 5.0.0)
+ * Qt5Svg (required version >= 5.0.0)
+ * Qt5Charts (required version >= 5.0.0)
+ * Threads
+ * Python3
+ * Perl
+
+-- The following REQUIRED packages have been found:
+
+ * Boost (required version >= 1.53.0)
+ * PythonInterp, Python interpreter, <http://python.org>
+
+-- The following OPTIONAL packages have not been found:
+
+ * Python2
+
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    CMAKE_VERBOSE_MAKEFILE
+    DISABLE_OS_CHECK
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    PYTHON_MIN_VERSION
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/python3-ecflow4-4.17.2-1.mga8/build
++ export LC_ALL=C.UTF-8
++ LC_ALL=C.UTF-8
++ /usr/bin/ninja -v -j4
+ninja: error: loading 'build.ninja': No such file or directory
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.ZpWUZ5 (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.ZpWUZ5 (%build)
+I: [iurt_root_command] ERROR: chroot
