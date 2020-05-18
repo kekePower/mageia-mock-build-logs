@@ -1,0 +1,533 @@
+D: [iurt_root_command] chroot
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda-devel
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	fuse-exfat
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	vboxadditions-kernel-desktop-latest
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-latest
+warning: line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-devel-latest
+warning: line 1127: It's not recommended to have unversioned Obsoletes: Obsoletes:	cpufreq cpufrequtils
+Installing /home/stig/rpmbuild/SRPMS/kernel-5.6.13-50.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.erzn6a
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf kernel-x86_64
++ /usr/bin/mkdir -p kernel-x86_64
++ cd kernel-x86_64
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/linux-5.6.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ cd /home/stig/rpmbuild/BUILD/kernel-x86_64/linux-5.6
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/patch-5.6.13.xz
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kvm-nvmx-consolidate-nested-mtf-checks-to-helper-fun.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kvm-nvmx-reflect-mtf-vm-exits-if-injected-by-l1.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/xprtrdma-clean-up-the-post_send-path.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/xprtrdma-fix-trace-point-use-after-free-race.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-tgl-add-wa_14010477008-tgl.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-tgl-tbt-aux-should-use-tc-power-well-ops.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-display-load-dp_tp_ctl-status-offset-before.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/shmem-fix-possible-deadlocks-on-shmlock_user_lock.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-phy-microchip_t1-add-lan87xx_phy_init-to-initial.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kvm-arm-vgic-synchronize-the-whole-guest-on-gic-d-r-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kvm-arm-vgic-v2-only-use-the-virtual-state-when-user.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gpio-pca953x-fix-pca953x_gpio_set_config.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/sunrpc-add-len-parameter-to-gss_unwrap.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/sunrpc-fix-gss-privacy-computation-of-auth-au_ralign.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-sonic-fix-a-resource-leak-in-an-error-handling-p.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-moxa-fix-a-potential-double-free_irq.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ftrace-selftests-workaround-cgroup-rt-scheduling-iss.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hv_netvsc-fix-netvsc_start_xmit-s-return-type.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-make-ptp-specific-drivers-depend-on-ptp_1588_clo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drop_monitor-work-around-gcc-10-stringop-overflow-wa.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/virtio-blk-handle-block_device_operations-callbacks-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/sun6i-dsi-fix-gcc-4.8.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net_sched-fix-tcm_parent-in-tc-filter-dump.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-stmmac-gmac5-fix-potential-integer-overflow-on-3.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/iommu-amd-fix-race-in-increase_address_space-fetch_p.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/iommu-amd-update-device-table-in-increase_address_sp.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-dsa-ocelot-the-mac-table-on-felix-is-twice-as-la.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-mscc-ocelot-ana_autoage_age_period-holds-a-value.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-sdhci-acpi-add-sdhci_quirk2_broken_64_bit_dma-fo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dpaa2-eth-properly-handle-buffer-size-restrictions.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mptcp-set-correct-vfs-info-for-subflows.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-fix-a-potential-recursive-netdev_feat_change.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netlabel-cope-with-null-catmap.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-phy-fix-aneg-restart-in-phy_ethtool_set_eee.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-stmmac-fix-num_por-initialization.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pppoe-only-process-padt-targeted-at-local-interfaces.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/revert-ipv6-add-mtu-lock-check-in-__ip6_rt_update_pmtu.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/tcp-fix-error-recovery-in-tcp_zerocopy_receive.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/tcp-fix-so_rcvlowat-hangs-with-fat-skbs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/virtio_net-fix-lockdep-warning-on-32-bit.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dpaa2-eth-prevent-array-underflow-in-update_cls_rule.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hinic-fix-a-bug-of-ndo_stop.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-dsa-loop-add-module-soft-dependency.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-ipv4-really-enforce-backoff-for-redirects.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netprio_cgroup-fix-unlimited-memory-leak-of-v2-cgroups.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-tcp-fix-rx-timestamp-behavior-for-tcp_recvmsg.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfp-abm-fix-error-return-code-in-nfp_abm_vnic_alloc.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/r8169-re-establish-support-for-rtl8401-chip-version.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/umh-fix-memory-leak-on-execve-failure.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-broadcom-select-broadcom_phy-for-bcmgenet.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dmaengine-xilinx_dma-add-missing-check-for-empty-lis.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/riscv-fix-vdso-build-with-lld.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dmaengine-pch_dma.c-avoid-data-race-between-probe-an.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dmaengine-mmp_tdma-do-not-ignore-slave-config-valida.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dmaengine-mmp_tdma-reset-channel-error-on-release.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amd-display-blank-dp-stream-before-re-train-the-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/selftests-ftrace-check-the-first-record-for-kprobe_a.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/cpufreq-intel_pstate-only-mention-the-bios-disabling.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/alsa-hda-hdmi-fix-race-in-monitor-detection-during-p.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amd-powerplay-avoid-using-pm_en-before-it-is-ini.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amdgpu-bump-version-for-invalidate-l2-before-sdm.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amd-display-check-if-refclk_cntl-register-is-pre.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amd-display-defer-cursor-update-around-vupdate-f.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amd-display-update-downspread-percent-to-match-s.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-qxl-lost-qxl_bo_kunmap_atomic_page-in-qxl_image_.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fibmap-warn-and-return-an-error-in-case-of-block-int.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/io_uring-use-cond_resched-in-io_ring_ctx_wait_and_ki.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/io_uring-check-non-sync-defer_list-carefully.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ipc-util.c-sysvipc_find_ipc-incorrectly-updates-posi.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/alsa-hda-realtek-fix-s3-pop-noise-on-dell-wyse.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gfs2-another-gfs2_walk_metadata-fix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-sdhci-pci-gli-fix-no-irq-handler-from-suspend.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ib-hfi1-fix-another-case-where-pq-is-left-on-waitlis.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/acpi-ec-pm-avoid-premature-returns-from-acpi_s2idle_.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pinctrl-sunrisepoint-fix-pad-lock-register-offset-fo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pinctrl-baytrail-enable-pin-configuration-setting-fo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pinctrl-qcom-fix-wrong-write-in-update_dual_edge.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pinctrl-cherryview-add-missing-spinlock-usage-in-chv.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-tegra-fix-smmu-support-on-tegra124-and-tegra210.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bpf-fix-error-return-code-in-map_lookup_and_delete_e.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/alsa-firewire-lib-fix-function-sizeof-not-defined-er.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/cachefiles-fix-corruption-of-the-return-value-in-cac.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/i40iw-fix-error-handling-in-i40iw_manage_arp_cache.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-gt-make-timeslicing-an-explicit-engine-prop.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-don-t-enable-waincreaselatencyipcenabled-wh.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bpf-sockmap-msg_pop_data-can-incorrecty-set-an-sge-l.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bpf-sockmap-bpf_tcp_ingress-needs-to-subtract-bytes-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-gem-remove-object_is_locked-assertion-from-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-alcor-fix-a-resource-leak-in-the-error-path-for-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-sdhci-pci-gli-fix-can-not-access-gl9750-after-re.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-core-check-request-type-before-completing-the-re.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-core-fix-recursive-locking-issue-in-cqe-recovery.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mmc-block-fix-request-completion-in-the-cqe-timeout-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gfs2-more-gfs2_find_jhead-fixes.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fork-prevent-accidental-access-to-clone3-features.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-amdgpu-force-fbdev-into-vram.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfs-fix-fscache-super_cookie-index_key-from-changing.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfs-fix-fscache-super_cookie-allocation.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfsv4-fix-fscache-cookie-aux_data-to-ensure-change_a.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-drivetemp-fix-sct-support-if-sct-data-tables-a.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netfilter-conntrack-avoid-gcc-10-zero-length-bounds-.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-gvt-fix-kernel-oops-for-3-level-ppgtt-guest.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/arm64-fix-the-flush_icache_range-arguments-in-machin.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netfilter-conntrack-fix-infinite-loop-on-rmmod.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-mark-concurrent-submissions-with-a-weak-dep.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfs-fix-null-deference-in-nfs4_get_valid_delegation.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/sunrpc-signalled-async-tasks-need-to-exit.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/tracing-wait-for-preempt-irq-delay-thread-to-execute.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netfilter-flowtable-set-nf_flow_teardown-flag-on-ent.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/netfilter-nft_set_rbtree-add-missing-expired-checks.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rdma-rxe-always-return-err_ptr-from-rxe_create_mmap_.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ib-mlx4-test-return-value-of-calls-to-ib_get_cached_.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ib-core-fix-potential-null-pointer-dereference-in-pk.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rdma-core-fix-double-put-of-resource.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/rdma-iw_cxgb4-fix-incorrect-function-parameters.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-ftrace-have-ftrace-trampolines-turn-read-only-at.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-da9052-synchronize-access-with-mfd.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/s390-ism-fix-error-return-code-in-ism_probe.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/drm-i915-handle-idling-during-i915_gem_evict_somethi.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/mm-memcg-fix-inconsistent-oom-event-behavior.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/epoll-call-final-ep_events_available-check-under-the.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/bpf-fix-bug-in-mmap-implementation-for-bpf-array-map.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/nfsv3-fix-rpc-receive-buffer-size-for-mount-call.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/pnp-use-list_for_each_entry-instead-of-open-coding.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-rds-use-err_ptr-for-rds_message_alloc_sgs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/stop-the-ad-hoc-games-with-wno-maybe-initialized.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-disable-zero-length-bounds-warning-for-now.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-disable-array-bounds-warning-for-now.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-disable-stringop-overflow-warning-for-now.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-disable-restrict-warning-for-now.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-warnings-fix-low-hanging-fruit.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-mark-more-functions-__init-to-avoid-section-mismatch-warnings.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/gcc-10-avoid-shadowing-standard-library-free-in-crypto.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-pci-toshiba-equium-a60-assign-busses.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-boot-video-80x25-if-break.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-default_poweroff_up_machines.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-increase-default-minimum-vmalloc-area-by-64MB-to-192MB.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/Revert-cpufreq-pcc-Enable-autoload-of-pcc-cpufreq-fo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-cpu-amd-Make-erratum-1054-a-legacy-erratum.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-disable-HPET-on-Intel-Coffee-Lake-Refresh-platforms.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-Fix-early-boot-crash-on-gcc-10.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/scripts-gcc-plugins-gcc-common.h-Update-for-GCC-10.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/kernel-Makefile-disallow-data-races-on-gcc-10-as-well.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/acpi-CLEVO-M360S-disable_acpi_irq.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/acpi-processor-M720SR-limit-to-C2.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ACPI-video-Add-a-quirk-to-force-acpi-video-backlight.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/scsi-megaraid-new-sysfs-name.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ide-pci-sis5513-965.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/dm-raid-aliases.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/block-floppy-disable-pnp-modalias.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/ata-prefer-ata-drivers-over-ide-drivers-when-both-are-built.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-aufs-5.6.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-aufs-5.6-modular.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-aufs-5.6-fix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-fat-Improve-the-readahead-for-FAT-entries.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-remove-from-staging.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-in-memory-and-on-disk-structures-and-heade.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-super-block-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-inode-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-directory-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-file-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-fat-entry-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-bitmap-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-exfat-cache.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-misc-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-nls-operations.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-Kconfig-and-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-MAINTAINERS-add-exfat-filesystem.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-update-file-system-parameter-handling.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-add-module_alias_fs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/fs-exfat-fix-discard-support.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/firewire-ieee1394-module-aliases.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/char-agp-intel-new-Q57-id.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/Revert-drm-radeon-simplify-and-cleanup-setting-the-d.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/Revert-drm-radeon-handle-PCIe-root-ports-with-addres.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-k10temp-Swap-Tdie-and-Tctl-on-Family-17h-CPUs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-k10temp-Reorganize-and-simplify-temperature-support-detection.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-k10temp-Update-driver-documentation.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/x86-amd_nb-add-AMD-family-17h-model-60h-PCI-IDs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hwmon-k10temp-Add-AMD-family-17h-model-60h-PCI-match.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/EDAC-amd64-Add-AMD-family-17h-model-60h-PCI-IDs.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/input-i8042-quirks-for-Fujitsu-Lifebook-A544-and-Lif.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hid-SFH-Add-maintainer-list-and-documentation-for-AMD-SF.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hid-SFH-PCI-driver-to-add-support-of-AMD-sensor-fusion-H.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hid-SFH-Transport-Driver-to-add-support-of-AMD-sensor-fu.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hid-SFH-Create-HID-report-to-Enable-support-of-AMD-senso.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-sis190-fix-list-usage.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-mdv.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-2.6.35-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-2.6.37-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-ipv4-netfilter-ipt_IFWLOG-3.6-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-3.7-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-remove-unused-label.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-ipt_IFWLOG-4.12-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-IFWLOG-5.0-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-psd.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-psd-mdv.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-psd-2.6.35-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-netfilter-psd-fix-redefines.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-wireless-rtw88-add-r8822be-alias.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-wireless-rtw88-disable-TX-AMSDU-on-2.4G-band.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/net-wireless-iwlwifi-pcie-handle-QuZ-configs-with-killer-NICs-as-well.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/platform-x86-add-shuttle-wmi-driver.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/platform-x86-shuttle-wmi-drop-devinit-exit.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/platform-x86-shuttle-wmi-4.2-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/platform-x86-shuttle-wmi-4.13-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/platform-x86-shuttle-wmi-kernel-5.5.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/hid-usbhid-IBM-BladeCenterHS20-quirk.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/usb-storage-unusual_devs-add-id.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/usb-storage-unusual_devs-add-id-2.6.37-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/media-usb-pwc-lie-in-proc-usb-devices.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/video-mageia-logo.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/video-console-vgacon-treat-nokmsboot-as-nomodeset.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/KVM-squelch-uninitialized-variable-warning.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/tools-testing-selftest-Makefile-remove-powerpc-reference.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/revert-objtool-silence-build-output.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/tools-perf-util-srcline.c-binutils-hack.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/perf-cs-etm-Move-definition-of-traceid_list-global-variable-from-header-file.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/uapi-avoid-namespace-conflict-in-linux-posix_types.h.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-3rdparty-tree.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-3rdparty-merge.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-ndiswrapper-1.63.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-ndiswrapper-Kconfig.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-ndiswrapper-Makefile-build-fix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-niswrapper-Kconfig-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8812au.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8812au-Kconfig-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8812au-rename.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8723de.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8723de-Kconfig-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8723de-fix-redefine.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8723de-nodebug.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8223de-kernel-5.6.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-0.92.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-config.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-module-license.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-2.6.35-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-3.0-buildfix.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-viahss-Kconfig-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8821ce.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/3rd-rtl8821ce-Kconfig-Makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/linux-5.5-python3.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/CVE-2019-12379.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0001-cpu-5.6-merge-graysky-s-patchset.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0002-init-Kconfig-enable-O3-for-all-arches.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
+1 out of 1 hunk FAILED -- saving rejects to file init/Kconfig.rej
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.erzn6a (%prep)
+
+
+RPM build errors:
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	crda-devel
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	fuse-exfat
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	vboxadditions-kernel-desktop-latest
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-latest
+    line 1008: It's not recommended to have unversioned Obsoletes: Obsoletes:	kernel-tmb-desktop-devel-latest
+    line 1127: It's not recommended to have unversioned Obsoletes: Obsoletes:	cpufreq cpufrequtils
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.erzn6a (%prep)
+I: [iurt_root_command] ERROR: chroot
