@@ -1,0 +1,652 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 3: %{_libdir}/R/bin
+
+Installing /home/stig/rpmbuild/SRPMS/R-base-4.0.0-1.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.WEfNVu
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf R-4.0.0
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/R-4.0.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd R-4.0.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-2.15.3-menu.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-3.3.0-slow-test.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/R-3.6.3-date-test.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.Tryhhw
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd R-4.0.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ aclocal -I ./m4
++ autoconf --force
+++ type -p xdg-open
++ export R_BROWSER=/usr/bin/xdg-open
++ R_BROWSER=/usr/bin/xdg-open
+++ type -p xdg-open
++ export R_PDFVIEWER=/usr/bin/xdg-open
++ R_PDFVIEWER=/usr/bin/xdg-open
++ export R_PRINTCMD=lpr
++ R_PRINTCMD=lpr
+++ echo '-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
+++ sed -e s/-ffast-math/-fno-fast-math/g
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'FFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'FCFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'OBJCFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ OBJCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export F77=gfortran
++ F77=gfortran
++ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
++ JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
++ export FPICFLAGS=-fPIC
++ FPICFLAGS=-fPIC
++ unset DISPLAY
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
+Fixing libtool inside configure to pass -Wl,xxx options before libraries
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
+Forcing run-time library search path definition in configure to prevent libtool from adding rpath for standard directories (configure was generated with libtool without support for autodetection)
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-tcltk --with-tcl-config=/usr/lib64/tclConfig.sh --with-tk-config=/usr/lib64/tkConfig.sh --with-cairo --with-libpng --with-jpeglib --with-system-zlib --with-system-bzlib --with-system-pcre --with-system-tre --with-system-xz --with-ICU --with-readline --disable-BLAS-shlib --with-lapack=/usr/lib64 --with-blas=/usr/lib64 --enable-threads=pth --enable-R-profiling --enable-R-shlib --disable-lto
+configure: WARNING: unrecognized options: --disable-dependency-tracking, --with-system-zlib, --with-system-bzlib, --with-system-pcre, --with-system-xz
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+loading site script './config.site'
+loading build-specific script './config.site'
+checking for pwd... /usr/bin/pwd
+checking whether builddir is srcdir... yes
+checking whether ln -s works... yes
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for sed... /usr/bin/sed
+checking for which... /usr/bin/which
+checking for less... /usr/bin/less
+checking for gtar... /usr/bin/gtar
+checking for tex... /usr/bin/tex
+checking for pdftex... /usr/bin/pdftex
+checking for pdflatex... /usr/bin/pdflatex
+checking for makeindex... /usr/bin/makeindex
+checking for texi2any... /usr/bin/texi2any
+checking whether texi2any version is at least 5.1... yes
+checking for ginstall-info... no
+checking for install-info... no
+checking for texi2dvi... /usr/bin/texi2dvi
+checking for kpsewhich... /usr/bin/kpsewhich
+checking for latex inconsolata package... missing
+configure: WARNING: neither inconsolata.sty nor zi4.sty found: PDF vignettes and package manuals will not be rendered optimally
+checking for unzip... /usr/bin/unzip
+checking for zip... /usr/bin/zip
+checking for gzip... /usr/bin/gzip
+checking for bzip2... /usr/bin/bzip2
+using default browser ... /usr/bin/xdg-open
+checking for /usr/bin/xdg-open... /usr/bin/xdg-open
+checking for working aclocal... found
+checking for working autoconf... found
+checking for working autoheader... found
+checking for bison... bison -y
+checking for notangle... false
+checking for realpath... /usr/bin/realpath
+checking for x86_64-mageia-linux-gnu-pkg-config... /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether x86_64-mageia-linux-gnu-gcc needs -traditional... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+looking for a modern Fortran compiler
+checking for x86_64-mageia-linux-gnu-gfortran... x86_64-mageia-linux-gnu-gfortran
+checking whether we are using the GNU Fortran compiler... yes
+checking whether x86_64-mageia-linux-gnu-gfortran accepts -g... yes
+checking for x86_64-mageia-linux-gnu-g++... x86_64-mageia-linux-gnu-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-mageia-linux-gnu-g++ accepts -g... yes
+checking whether x86_64-mageia-linux-gnu-g++ -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables can compile C++ code... yes
+checking how to run the C++ preprocessor... x86_64-mageia-linux-gnu-g++ -E
+checking whether __attribute__((visibility())) is supported... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -fvisibility... yes
+checking whether x86_64-mageia-linux-gnu-g++ accepts -fvisibility... yes
+checking whether x86_64-mageia-linux-gnu-gfortran accepts -fvisibility... yes
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether we are using the GNU Objective C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking whether x86_64-mageia-linux-gnu-g++ can compile ObjC++... yes
+checking for Objective C++ compiler... x86_64-mageia-linux-gnu-g++
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... (cached) ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... ./configure: line 10792: cmp: command not found
+
+checking how to truncate binary pipes... /usr/bin/sed -e 4q
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... ./configure: line 12435: diff: command not found
+no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... x86_64-mageia-linux-gnu-g++ -E
+checking for ld used by x86_64-mageia-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-mageia-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-g++ static flag -static works... no
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for x86_64-mageia-linux-gnu-gfortran option to produce PIC... -fPIC
+checking if x86_64-mageia-linux-gnu-gfortran PIC flag -fPIC works... ./configure: line 15786: diff: command not found
+no
+checking if x86_64-mageia-linux-gnu-gfortran static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gfortran supports -c -o file.o... ./configure: line 15888: diff: command not found
+no
+checking if x86_64-mageia-linux-gnu-gfortran supports -c -o file.o... (cached) no
+checking whether the x86_64-mageia-linux-gnu-gfortran linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for cos in -lm... yes
+checking for sin in -lm... yes
+checking for dlopen in -ldl... yes
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking for rl_callback_read_char in -lreadline... yes
+checking for history_truncate_file... yes
+checking for tilde_expand_word... yes
+checking whether rl_callback_sigcleanup exists and is declared... yes
+checking whether rl_completion_matches exists and is declared... yes
+checking whether rl_resize_terminal exists and is declared... yes
+checking whether rl_sort_completion_matches exists and is declared... yes
+checking for ANSI C header files... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for dlfcn.h... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking for strings.h... (cached) yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking features.h usability... yes
+checking features.h presence... yes
+checking for features.h... yes
+checking floatingpoint.h usability... no
+checking floatingpoint.h presence... no
+checking for floatingpoint.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking stdalign.h usability... yes
+checking stdalign.h presence... yes
+checking for stdalign.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdbool.h usability... yes
+checking stdbool.h presence... yes
+checking for stdbool.h... yes
+checking for stdint.h... (cached) yes
+checking for string.h... (cached) yes
+checking whether setjmp.h is POSIX.1 compatible... yes
+checking whether sigsetjmp is declared... yes
+checking whether siglongjmp is declared... yes
+checking for GNU C library with version >= 2... yes
+checking return type of signal handlers... void
+checking for uint64_t... yes
+checking for int64_t... yes
+checking for int_fast64_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking whether SIZE_MAX is declared... yes
+checking for blkcnt_t... yes
+checking for type of socket length... socklen_t *
+checking for stack_t... yes
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C99... none needed
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO Standard C... (cached) none needed
+checking for inline... inline
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of double... 8
+checking size of size_t... 8
+checking for C stack direction... down
+checking size of long double... 16
+checking whether we can compute C Make dependencies... yes, using $(CC) -MM
+checking whether x86_64-mageia-linux-gnu-gcc supports -c -o FILE.lo... yes
+checking for x86_64-mageia-linux-gnu-gcc option to support OpenMP... unsupported
+checking how to get verbose linking output from x86_64-mageia-linux-gnu-gfortran... -v
+checking for Fortran libraries of x86_64-mageia-linux-gnu-gfortran...  -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10 -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10/../../.. -lgfortran -lm -lquadmath
+checking how to get verbose linking output from x86_64-mageia-linux-gnu-gcc... -v
+checking for C libraries of x86_64-mageia-linux-gnu-gcc...  -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10 -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-mageia-linux-gnu/10/../../.. -lgcc_s
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+checking whether x86_64-mageia-linux-gnu-gfortran appends underscores to external names... yes
+checking whether x86_64-mageia-linux-gnu-gfortran appends extra underscores to external names... no
+checking whether mixed C/Fortran code can be run... yes
+checking whether x86_64-mageia-linux-gnu-gfortran and x86_64-mageia-linux-gnu-gcc agree on int and double... yes
+checking whether x86_64-mageia-linux-gnu-gfortran and x86_64-mageia-linux-gnu-gcc agree on double complex... yes
+checking for x86_64-mageia-linux-gnu-gfortran option to support OpenMP... unsupported
+checking whether x86_64-mageia-linux-gnu-g++ accepts -M for generating dependencies... yes
+checking whether we can compute ObjC Make dependencies... yes, using $(OBJC) -MM
+checking for ObjC runtime library... -lobjc
+checking for ObjC runtime style... unknown
+checking whether x86_64-mageia-linux-gnu-gcc accepts -fobjc-exceptions... yes
+checking if need -fno-optimize-sibling-calls for gfortran... yes
+checking for type of 'hidden' Fortran character lengths... size_t
+checking for xmkmf... /usr/bin/xmkmf
+checking whether x86_64-mageia-linux-gnu-g++  supports C++11 features with -std=gnu++11... yes
+checking whether x86_64-mageia-linux-gnu-g++  supports C++14 features with -std=gnu++14... yes
+checking whether x86_64-mageia-linux-gnu-g++  supports C++17 features with -std=gnu++17... yes
+checking whether x86_64-mageia-linux-gnu-g++  supports C++20 features with -std=gnu++20... yes
+checking for x86_64-mageia-linux-gnu-g++ -std=gnu++11 option to support OpenMP... unsupported
+checking for option providing pthread_kill... -pthread
+checking whether POSIX threads are supported... yes
+checking for off_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether alloca is declared... yes
+checking whether expm1 exists and is declared... yes
+checking whether hypot exists and is declared... yes
+checking whether log1p exists and is declared... yes
+checking whether log1pl exists and is declared... yes
+checking whether log2 exists and is declared... yes
+checking whether log10 exists and is declared... yes
+checking whether nearbyint exists and is declared... yes
+checking whether nearbyintl exists and is declared... yes
+checking whether powl exists and is declared... yes
+checking whether rintl exists and is declared... yes
+checking whether va_copy exists and is declared... yes
+checking for isblank... yes
+checking sunmath.h usability... no
+checking sunmath.h presence... no
+checking for sunmath.h... no
+checking for cospi in -lsunmath... no
+checking for atanpi... no
+checking for atan2pi... no
+checking for cospi... no
+checking for exp10... yes
+checking for pown... no
+checking for sinpi... no
+checking for tanpi... no
+checking for __cospi... no
+checking for __sinpi... no
+checking for __tanpi... no
+checking for fseeko... yes
+checking for ftello... yes
+checking for matherr... no
+checking whether fcntl exists and is declared... yes
+checking whether getgrgid exists and is declared... yes
+checking whether getpwuid exists and is declared... yes
+checking whether kill exists and is declared... yes
+checking whether sigaction exists and is declared... yes
+checking whether sigaltstack exists and is declared... yes
+checking whether sigemptyset exists and is declared... yes
+checking whether fdopen exists and is declared... yes
+checking whether popen exists and is declared... yes
+checking whether getline exists and is declared... yes
+checking whether select exists and is declared... yes
+checking whether setenv exists and is declared... yes
+checking whether unsetenv exists and is declared... yes
+checking whether getrlimit exists and is declared... yes
+checking whether setrlimit exists and is declared... yes
+checking whether getrusage exists and is declared... yes
+checking whether getpriority exists and is declared... yes
+checking whether chmod exists and is declared... yes
+checking whether mkfifo exists and is declared... yes
+checking whether stat exists and is declared... yes
+checking whether umask exists and is declared... yes
+checking whether gettimeofday exists and is declared... yes
+checking whether utimes exists and is declared... yes
+checking whether times exists and is declared... yes
+checking whether gmtime_r exists and is declared... yes
+checking whether localtime_r exists and is declared... yes
+checking whether nl_langinfo exists and is declared... yes
+checking whether access exists and is declared... yes
+checking whether chdir exists and is declared... yes
+checking whether execv exists and is declared... yes
+checking whether ftruncate exists and is declared... yes
+checking whether getcwd exists and is declared... yes
+checking whether geteuid exists and is declared... yes
+checking whether getuid exists and is declared... yes
+checking whether link exists and is declared... yes
+checking whether readlink exists and is declared... yes
+checking whether symlink exists and is declared... yes
+checking whether sysconf exists and is declared... yes
+checking whether sched_setaffinity exists and is declared... yes
+checking whether sched_getaffinity exists and is declared... yes
+checking whether utime exists and is declared... yes
+checking whether utimensat exists and is declared... yes
+checking for clock_gettime in -lrt... yes
+checking whether clock_gettime exists and is declared... yes
+checking whether timespec_get exists and is declared... yes
+checking for putenv... yes
+checking whether putenv is declared... yes
+checking for vasprintf... yes
+checking whether vasprintf is declared... yes
+checking for mempcpy... yes
+checking for realpath... yes
+checking whether realpath is declared... yes
+checking whether glob exists and is declared... yes
+checking for dladdr... yes
+checking for dlsym... yes
+checking whether dladdr is declared... yes
+checking whether dlsym is declared... yes
+checking whether RTLD_DEFAULT is declared... yes
+checking whether RTLD_NEXT is declared... yes
+checking thread.h usability... no
+checking thread.h presence... no
+checking for thread.h... no
+checking whether thr_stksegment exists and is declared... no
+checking for isnan... yes
+checking whether isfinite is declared... yes
+checking whether isnan is declared... yes
+checking whether you have IEEE 754 floating-point arithmetic... yes
+checking whether putenv("FOO") can unset an environment variable... yes
+checking whether putenv("FOO=") can unset an environment variable... no
+checking for nl_langinfo and CODESET... yes
+checking for mkdtemp... yes
+checking for strdup... yes
+checking for strncasecmp... yes
+checking whether mkdtemp is declared... yes
+checking whether strdup is declared... yes
+checking whether strncasecmp is declared... yes
+checking for library containing connect... none required
+checking for library containing gethostbyname... none required
+checking for library containing xdr_string... none required
+checking for working calloc... yes
+checking for working isfinite... yes
+checking for working log1p... yes
+checking whether ftell works correctly on files opened for append... yes
+checking for working sigaction... yes
+checking whether mktime sets errno... yes
+checking whether mktime works correctly outside 1902-2037... yes
+checking complex.h usability... yes
+checking complex.h presence... yes
+checking for complex.h... yes
+checking for double complex... yes
+checking whether C99 double complex is supported... yes
+checking whether cabs exists and is declared... yes
+checking whether carg exists and is declared... yes
+checking whether cexp exists and is declared... yes
+checking whether clog exists and is declared... yes
+checking whether csqrt exists and is declared... yes
+checking whether cpow exists and is declared... yes
+checking whether ccos exists and is declared... yes
+checking whether csin exists and is declared... yes
+checking whether ctan exists and is declared... yes
+checking whether cacos exists and is declared... yes
+checking whether casin exists and is declared... yes
+checking whether catan exists and is declared... yes
+checking whether ccosh exists and is declared... yes
+checking whether csinh exists and is declared... yes
+checking whether ctanh exists and is declared... yes
+checking for working ctanh... yes
+checking whether 'struct tm' includes tm_zone... yes
+checking whether 'struct tm' includes tm_gmtoff... yes
+checking for dgemm_ in /usr/lib64... no
+checking for dgemm_... no
+checking for sgemm_ in -lopenblas... no
+checking for ATL_xerbla in -latlas... no
+checking for dgemm_ in -lblas... yes
+checking for dgemm_ in -ldgemm... no
+checking for dgemm_ in -lblas... (cached) yes
+checking for dgemm_ in -lessl... no
+checking for dgemm_ in -lblas... (cached) yes
+checking whether double complex BLAS can be used... yes
+checking whether the BLAS is complete... yes
+checking for dpstrf_... no
+checking for dpstrf_ in /usr/lib64... no
+checking for dpstrf_ in -llapack... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking whether iconv accepts "UTF-8", "latin1", "ASCII" and "UCS-*"... yes
+checking whether iconv accepts "CP1252"... yes
+checking for iconvlist... no
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking whether mbrtowc exists and is declared... yes
+checking whether wcrtomb exists and is declared... yes
+checking whether wcscoll exists and is declared... yes
+checking whether wcsftime exists and is declared... yes
+checking whether wcstod exists and is declared... yes
+checking whether mbstowcs exists and is declared... yes
+checking whether wcstombs exists and is declared... yes
+checking whether wctrans exists and is declared... yes
+checking whether iswblank exists and is declared... yes
+checking whether wctype exists and is declared... yes
+checking whether iswctype exists and is declared... yes
+checking for wctrans_t... yes
+checking for mbstate_t... yes
+checking for ICU... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking X11/Intrinsic.h usability... yes
+checking X11/Intrinsic.h presence... yes
+checking for X11/Intrinsic.h... yes
+checking for XtToolkitInitialize in -lXt... yes
+using X11 ... yes
+checking for KeySym... yes
+checking X11/Xmu/Atoms.h usability... yes
+checking X11/Xmu/Atoms.h presence... yes
+checking for X11/Xmu/Atoms.h... yes
+checking for XmuInternAtom in -lXmu... yes
+checking whether pkg-config knows about cairo and pango... yes
+checking whether cairo including pango is >= 1.2 and works... yes
+checking for /usr/lib64/tclConfig.sh... /usr/lib64/tclConfig.sh
+checking for /usr/lib64/tkConfig.sh... /usr/lib64/tkConfig.sh
+checking tcl.h usability... yes
+checking tcl.h presence... yes
+checking for tcl.h... yes
+checking tk.h usability... yes
+checking tk.h presence... yes
+checking for tk.h... yes
+checking whether compiling/linking Tcl/Tk code works... yes
+checking for BSD networking... yes
+checking rpc/types.h usability... yes
+checking rpc/types.h presence... yes
+checking for rpc/types.h... yes
+checking for rpc/xdr.h... yes
+checking for XDR support... yes
+checking for inflateInit2_ in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking if zlib version >= 1.2.5... yes
+checking whether zlib support suffices... yes
+checking mmap support for zlib... yes
+checking for BZ2_bzlibVersion in -lbz2... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking if bzip2 version >= 1.0.6... yes
+checking whether bzip2 support suffices... yes
+checking for lzma_version_number in -llzma... yes
+checking lzma.h usability... yes
+checking lzma.h presence... yes
+checking for lzma.h... yes
+checking if lzma version >= 5.0.3... yes
+checking for pcre2-config... no
+checking whether PCRE support suffices... no
+configure: error: PCRE2 library and headers are required, or use --with-pcre1 and PCRE >= 8.32 with UTF-8 support
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.Tryhhw (%build)
+
+
+RPM build errors:
+    Macro expanded in comment on line 3: %{_libdir}/R/bin
+
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.Tryhhw (%build)
+I: [iurt_root_command] ERROR: chroot
