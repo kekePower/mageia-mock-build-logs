@@ -1,0 +1,90 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200523215922/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200523215922/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64luv-devel-1.36.0.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 11135 completed, ETA = --:--:--, speed = 226k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-lpeg-1.0.2-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 67597 completed, ETA = --:--:--, speed = 7334k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84650 completed, ETA = --:--:--, speed = 3306k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64lua5.1-5.1.5-15.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 97221 completed, ETA = --:--:--, speed = 4127k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64msgpack-devel-3.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 331k completed, ETA = --:--:--, speed = 18.0M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64ncursesw-devel-6.2-20200212.2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 13639 completed, ETA = --:--:--, speed = 832k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64lua5.1-devel-5.1.5-15.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 20716 completed, ETA = --:--:--, speed = 1445k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64luv1-1.36.0.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84896 completed, ETA = --:--:--, speed = 6377k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv-devel-1.37.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 39557 completed, ETA = --:--:--, speed = 3219k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64termkey1-0.22-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 26071 completed, ETA = --:--:--, speed = 1958k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/cmake-3.17.2-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6450k completed, ETA = --:--:--, speed = 48.4M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua-mpack-1.0.8-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 24335 completed, ETA = --:--:--, speed = 990k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64unibilium4-2.1.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 50103 completed, ETA = --:--:--, speed = 2329k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/gperf-3.1-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 107k completed, ETA = --:--:--, speed = 3156k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64vterm-devel-0.1.3-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 12765 completed, ETA = --:--:--, speed = 692k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64vterm0-0.1.3-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 38475 completed, ETA = --:--:--, speed = 3131k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua5.1-5.1.5-15.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 189k completed, ETA = --:--:--, speed = 5559k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64readline-devel-8.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1901k completed, ETA = --:--:--, speed = 51.5M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64rhash0-1.3.9-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 121k completed, ETA = --:--:--, speed = 7147k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64msgpackc2-3.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 20103 completed, ETA = --:--:--, speed = 356k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/locales-2.31-9.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1961k completed, ETA = --:--:--, speed = 42.5M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/ninja-1.10.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 126k completed, ETA = --:--:--, speed = 6023k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64bsd-devel-0.10.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 205k completed, ETA = --:--:--, speed = 11.1M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv1-1.37.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 104k completed, ETA = --:--:--, speed = 5503k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lua5.3-5.3.5-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 225k completed, ETA = --:--:--, speed = 20.0M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 78018 completed, ETA = --:--:--, speed = 4481k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 230k completed, ETA = --:--:--, speed = 10.2M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64termkey-devel-0.22-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 38720 completed, ETA = --:--:--, speed = 2520k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64unibilium-devel-2.1.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 57686 completed, ETA = --:--:--, speed = 6259k                                                                                                retrieved   lib64luv-devel-1.36.0.0-1.mga8.x86_64.rpm lua-lpeg-1.0.2-1.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64lua5.1-5.1.5-15.mga8.x86_64.rpm lib64msgpack-devel-3.2.1-2.mga8.x86_64.rpm lib64ncursesw-devel-6.2-20200212.2.mga8.x86_64.rpm lib64lua5.1-devel-5.1.5-15.mga8.x86_64.rpm lib64luv1-1.36.0.0-1.mga8.x86_64.rpm lib64uv-devel-1.37.0-1.mga8.x86_64.rpm lib64termkey1-0.22-4.mga8.x86_64.rpm cmake-3.17.2-1.mga8.x86_64.rpm lua-mpack-1.0.8-2.mga8.x86_64.rpm lib64unibilium4-2.1.0-1.mga8.x86_64.rpm gperf-3.1-3.mga8.x86_64.rpm lib64vterm-devel-0.1.3-1.mga8.x86_64.rpm lib64vterm0-0.1.3-1.mga8.x86_64.rpm lua5.1-5.1.5-15.mga8.x86_64.rpm lib64readline-devel-8.0-2.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm lib64msgpackc2-3.2.1-2.mga8.x86_64.rpm locales-2.31-9.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm lib64bsd-devel-0.10.0-2.mga8.x86_64.rpm lib64uv1-1.37.0-1.mga8.x86_64.rpm lua5.3-5.3.5-4.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm lib64termkey-devel-0.22-4.mga8.x86_64.rpm lib64unibilium-devel-2.1.0-1.mga8.x86_64.rpm
+...retrieving done
+installing lib64termkey1-0.22-4.mga8.x86_64.rpm cmake-3.17.2-1.mga8.x86_64.rpm lib64unibilium4-2.1.0-1.mga8.x86_64.rpm lua-mpack-1.0.8-2.mga8.x86_64.rpm gperf-3.1-3.mga8.x86_64.rpm lib64ncursesw-devel-6.2-20200212.2.mga8.x86_64.rpm lib64msgpack-devel-3.2.1-2.mga8.x86_64.rpm lib64luv1-1.36.0.0-1.mga8.x86_64.rpm lib64uv-devel-1.37.0-1.mga8.x86_64.rpm lib64lua5.1-devel-5.1.5-15.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64lua5.1-5.1.5-15.mga8.x86_64.rpm lib64luv-devel-1.36.0.0-1.mga8.x86_64.rpm lua-lpeg-1.0.2-1.mga8.x86_64.rpm lib64termkey-devel-0.22-4.mga8.x86_64.rpm lib64unibilium-devel-2.1.0-1.mga8.x86_64.rpm lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm lib64bsd-devel-0.10.0-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm locales-2.31-9.mga8.x86_64.rpm lib64msgpackc2-3.2.1-2.mga8.x86_64.rpm lib64uv1-1.37.0-1.mga8.x86_64.rpm lua5.3-5.3.5-4.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm lib64vterm0-0.1.3-1.mga8.x86_64.rpm lib64vterm-devel-0.1.3-1.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm lua5.1-5.1.5-15.mga8.x86_64.rpm lib64readline-devel-8.0-2.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200523215922/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200523215922 (remove=0, install=0, upgrade=29)
+Preparing...                     #############################################
+     1/29: lib64uv1              #############################################
+     2/29: lib64lua5.1           #############################################
+     3/29: lib64ncursesw-devel   #############################################
+     4/29: lib64unibilium4       #############################################
+     5/29: lib64termkey1         #############################################
+     6/29: lib64unibilium-devel  #############################################
+     7/29: lib64readline-devel   #############################################
+     8/29: lib64lua5.1-devel     #############################################
+     9/29: lua5.1                #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    10/29: lib64luv1             #############################################
+    11/29: lib64uv-devel         #############################################
+    12/29: lib64rhash0           #############################################
+    13/29: lib64vterm0           #############################################
+    14/29: lua5.3                #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    15/29: lib64msgpackc2        #############################################
+    16/29: locales               #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+    17/29: lib64jemalloc2        #############################################
+    18/29: lib64jsoncpp19        #############################################
+    19/29: cmake                 #############################################
+    20/29: lib64jemalloc-devel   #############################################
+    21/29: ninja                 #############################################
+    22/29: lib64msgpack-devel    #############################################
+    23/29: lua-mpack             #############################################
+    24/29: lib64vterm-devel      #############################################
+    25/29: lib64luv-devel        #############################################
+    26/29: lua-lpeg              #############################################
+    27/29: lib64termkey-devel    #############################################
+    28/29: lib64bsd-devel        #############################################
+    29/29: gperf                 #############################################
+removing installed rpms (lib64termkey1-0.22-4.mga8.x86_64.rpm cmake-3.17.2-1.mga8.x86_64.rpm lib64unibilium4-2.1.0-1.mga8.x86_64.rpm lua-mpack-1.0.8-2.mga8.x86_64.rpm gperf-3.1-3.mga8.x86_64.rpm lib64ncursesw-devel-6.2-20200212.2.mga8.x86_64.rpm lib64msgpack-devel-3.2.1-2.mga8.x86_64.rpm lib64luv1-1.36.0.0-1.mga8.x86_64.rpm lib64uv-devel-1.37.0-1.mga8.x86_64.rpm lib64lua5.1-devel-5.1.5-15.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64lua5.1-5.1.5-15.mga8.x86_64.rpm lib64luv-devel-1.36.0.0-1.mga8.x86_64.rpm lua-lpeg-1.0.2-1.mga8.x86_64.rpm lib64termkey-devel-0.22-4.mga8.x86_64.rpm lib64unibilium-devel-2.1.0-1.mga8.x86_64.rpm lib64jemalloc2-5.2.1-2.mga8.x86_64.rpm lib64bsd-devel-0.10.0-2.mga8.x86_64.rpm ninja-1.10.0-2.mga8.x86_64.rpm locales-2.31-9.mga8.x86_64.rpm lib64msgpackc2-3.2.1-2.mga8.x86_64.rpm lib64uv1-1.37.0-1.mga8.x86_64.rpm lua5.3-5.3.5-4.mga8.x86_64.rpm lib64jemalloc-devel-5.2.1-2.mga8.x86_64.rpm lib64vterm0-0.1.3-1.mga8.x86_64.rpm lib64vterm-devel-0.1.3-1.mga8.x86_64.rpm lib64rhash0-1.3.9-2.mga8.x86_64.rpm lua5.1-5.1.5-15.mga8.x86_64.rpm lib64readline-devel-8.0-2.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200523215922/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
