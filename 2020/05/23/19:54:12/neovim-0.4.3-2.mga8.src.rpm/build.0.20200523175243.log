@@ -1,0 +1,127 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/neovim-0.4.3-2.mga8.src.rpm
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.yVBgND
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf neovim-0.4.3
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/neovim-0.4.3.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd neovim-0.4.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/01-Wno-misleading-indentation.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/neovim-0.2.1-bitop.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ sed -i 's|sys/end|bsd/sys/end|g' config/CMakeLists.txt
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.c4NAvG
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd neovim-0.4.3
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security  -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security  -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security  -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security  -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -Wno-dev -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF -Wno-dev -GNinja -DPREFER_LUA=ON -DUSE_BUNDLED_LUAJIT=OFF -DUSE_BUNDLED=OFF -DLUA_PRG=/usr/bin/lua5.1 -DUSE_SYSTEM_MSGPACK=ON -DWITH_PLUGINS=ON -DUSE_BUNDLED_LUV=OFF -DUSE_SYSTEM_LUV=ON -DUSE_BUNDLED_LUAROCKS=OFF
+-- The C compiler identification is GNU 10.1.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_INSTALL_PREFIX=/usr
+-- CMAKE_BUILD_TYPE=RelWithDebInfo
+-- MIN_LOG_LEVEL not specified, default is 1 (INFO)
+-- Replacing -O3 in CMAKE_C_FLAGS_RELEASE with -O2
+-- Performing Test HAS_OG_FLAG
+-- Performing Test HAS_OG_FLAG - Success
+-- Performing Test HAS_ACCEPTABLE_FORTIFY
+-- Performing Test HAS_ACCEPTABLE_FORTIFY - Success
+-- Performing Test HAVE_EXECINFO_BACKTRACE
+-- Performing Test HAVE_EXECINFO_BACKTRACE - Success
+-- Performing Test HAVE_BUILTIN_ADD_OVERFLOW
+-- Performing Test HAVE_BUILTIN_ADD_OVERFLOW - Success
+-- Performing Test HAS_WIMPLICIT_FALLTHROUGH_FLAG
+-- Performing Test HAS_WIMPLICIT_FALLTHROUGH_FLAG - Success
+-- Performing Test HAS_WVLA_FLAG
+-- Performing Test HAS_WVLA_FLAG - Success
+-- Performing Test HAS_FSTACK_PROTECTOR_STRONG_FLAG
+-- Performing Test HAS_FSTACK_PROTECTOR_STRONG_FLAG - Success
+-- Performing Test HAS_FSTACK_PROTECTOR_FLAG
+-- Performing Test HAS_FSTACK_PROTECTOR_FLAG - Success
+-- Performing Test HAS_DIAG_COLOR_FLAG
+-- Performing Test HAS_DIAG_COLOR_FLAG - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.6.3") 
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - found
+-- Looking for kstat_lookup in kstat
+-- Looking for kstat_lookup in kstat - not found
+-- Looking for kvm_open in kvm
+-- Looking for kvm_open in kvm - not found
+-- Looking for gethostbyname in nsl
+-- Looking for gethostbyname in nsl - found
+-- Looking for perfstat_cpu in perfstat
+-- Looking for perfstat_cpu in perfstat - not found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for sendfile in sendfile
+-- Looking for sendfile in sendfile - not found
+-- Found LibUV: /usr/lib64/libuv.so (Required is at least version "1.28.0") 
+-- Found Msgpack: /usr/lib64/libmsgpackc.so (found suitable version "3.2.1", minimum required is "1.0.0") 
+-- Found LibLUV: /usr/lib64/libluv.so (Required is at least version "1.30.0") 
+-- Found Lua: /usr/lib64/liblua.so;/usr/lib64/libm.so (found suitable version "5.1.5", minimum required is "5.1") 
+-- Could NOT find LuaJit (missing: LUAJIT_LIBRARY LUAJIT_INCLUDE_DIR) 
+-- Performing Test MSGPACK_HAS_FLOAT32
+-- Performing Test MSGPACK_HAS_FLOAT32 - Success
+-- Found UNIBILIUM 2.1.0
+-- Performing Test UNIBI_HAS_VAR_FROM
+-- Performing Test UNIBI_HAS_VAR_FROM - Success
+-- Found LibTermkey: /usr/lib64/libtermkey.so (Required is at least version "0.18") 
+-- Found LIBVTERM 0.1.3
+-- Performing Test HAVE_WORKING_LIBINTL
+-- Performing Test HAVE_WORKING_LIBINTL - Success
+-- Looking for _nl_msg_cat_cntr
+-- Looking for _nl_msg_cat_cntr - found
+-- Found Iconv 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Checking Lua interpreter: /usr/bin/lua5.1
+-- [/usr/bin/lua5.1] file not found
+-- [/usr/bin/lua5.1] The 'lpeg' lua package is required for building Neovim
+CMake Error at CMakeLists.txt:506 (message):
+  Failed to find a Lua 5.1-compatible interpreter
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/stig/rpmbuild/BUILD/neovim-0.4.3/build/CMakeFiles/CMakeOutput.log".
+See also "/home/stig/rpmbuild/BUILD/neovim-0.4.3/build/CMakeFiles/CMakeError.log".
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.c4NAvG (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.c4NAvG (%build)
+I: [iurt_root_command] ERROR: chroot
