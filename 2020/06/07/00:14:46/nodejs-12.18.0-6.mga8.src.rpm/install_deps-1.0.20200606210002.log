@@ -1,0 +1,30 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200606210002/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200606210002/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libatomic-devel-10.1.1-0.20200523.1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 91345 completed, ETA = --:--:--, speed = 1292k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64brotlienc1-1.0.7-6.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 238k completed, ETA = --:--:--, speed = 9184k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libatomic1-10.1.1-0.20200523.1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 42982 completed, ETA = --:--:--, speed = 1678k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64brotli-devel-1.0.7-6.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 31831 completed, ETA = --:--:--, speed = 1942k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 2083k completed, ETA = --:--:--, speed = 43.2M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/chrpath-0.16-6.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 22879 completed, ETA = --:--:--, speed = 558k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64icu-devel-66.1-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 668k completed, ETA = --:--:--, speed = 19.2M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64python3-devel-3.8.3-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 196k completed, ETA = --:--:--, speed = 9371k                                                                                                 retrieved   libatomic-devel-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotlienc1-1.0.7-6.mga8.x86_64.rpm libatomic1-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotli-devel-1.0.7-6.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm lib64icu-devel-66.1-1.mga8.x86_64.rpm lib64python3-devel-3.8.3-1.mga8.x86_64.rpm
+...retrieving done
+installing libatomic-devel-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotli-devel-1.0.7-6.mga8.x86_64.rpm libatomic1-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotlienc1-1.0.7-6.mga8.x86_64.rpm lib64icu-devel-66.1-1.mga8.x86_64.rpm lib64python3-devel-3.8.3-1.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200606210002/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200606210002 (remove=0, install=0, upgrade=8)
+Preparing...                     #############################################
+      1/8: lib64brotlienc1       #############################################
+      2/8: libatomic1            #############################################
+      3/8: libatomic-devel       #############################################
+      4/8: lib64brotli-devel     #############################################
+      5/8: chrpath               #############################################
+      6/8: lib64openssl-devel    #############################################
+      7/8: lib64python3-devel    #############################################
+      8/8: lib64icu-devel        #############################################
+removing installed rpms (libatomic-devel-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotli-devel-1.0.7-6.mga8.x86_64.rpm libatomic1-10.1.1-0.20200523.1.mga8.x86_64.rpm lib64brotlienc1-1.0.7-6.mga8.x86_64.rpm lib64icu-devel-66.1-1.mga8.x86_64.rpm lib64python3-devel-3.8.3-1.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm chrpath-0.16-6.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200606210002/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
