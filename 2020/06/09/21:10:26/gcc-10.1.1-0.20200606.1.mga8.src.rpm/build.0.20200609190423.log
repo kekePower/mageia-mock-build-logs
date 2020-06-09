@@ -1,0 +1,28 @@
+D: [iurt_root_command] chroot
+warning: line 374: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap0
+warning: line 375: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap-devel
+warning: line 377: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts5
+warning: line 378: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts-devel
+warning: line 429: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10
+warning: line 474: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc10
+warning: line 476: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc3.0
+warning: line 494: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-c++
+warning: line 560: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-devel
+warning: line 590: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-static-devel
+warning: line 607: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc
+warning: line 632: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc++
+warning: line 651: It's not recommended to have unversioned Obsoletes: Obsoletes:	libobjc3.0, libobjc3.1
+warning: line 673: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gfortran
+warning: line 702: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran10
+warning: line 704: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran0
+warning: line 771: It's not recommended to have unversioned Obsoletes: Obsoletes:	libasan5
+warning: line 917: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gnat
+warning: line 920: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat
+warning: line 937: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat-runtime
+warning: line 1078: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-cpp
+warning: line 1118: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc
+warning: line 1133: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc-pdf
+error: Failed build dependencies:
+	gcc-gnat is needed by gcc-10.1.1-0.20200606.1.mga8.x86_64
+Installing /home/stig/rpmbuild/SRPMS/gcc-10.1.1-0.20200606.1.mga8.src.rpm
+I: [iurt_root_command] ERROR: chroot
