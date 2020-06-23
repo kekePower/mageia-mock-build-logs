@@ -1,0 +1,82 @@
+D: [iurt_root_command] chroot
+warning: line 401: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap0
+warning: line 402: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap-devel
+warning: line 404: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts5
+warning: line 405: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts-devel
+warning: line 456: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10
+warning: line 501: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc10
+warning: line 503: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc3.0
+warning: line 521: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-c++
+warning: line 587: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-devel
+warning: line 617: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-static-devel
+warning: line 634: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc
+warning: line 659: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc++
+warning: line 678: It's not recommended to have unversioned Obsoletes: Obsoletes:	libobjc3.0, libobjc3.1
+warning: line 700: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gfortran
+warning: line 729: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran10
+warning: line 731: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran0
+warning: line 798: It's not recommended to have unversioned Obsoletes: Obsoletes:	libasan5
+warning: line 944: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gnat
+warning: line 948: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat
+warning: line 966: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat-runtime
+warning: line 1107: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-cpp
+warning: line 1147: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc
+warning: line 1162: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc-pdf
+Installing /home/stig/rpmbuild/SRPMS/gcc-10.1.1-0.20200620.2.1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.yDSIGk
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf gcc-10-20200620
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/gcc-10-20200620.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gcc-10-20200620
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/0001-Add-missing-unit-dependence-vector-in-data-dependenc.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
+The next patch would create the file gcc/testsuite/gcc.dg/tree-ssa/pr94969.c,
+which already exists!  Assume -R? [n] 
+Apply anyway? [n] 
+1 out of 1 hunk ignored
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+2 out of 2 hunks ignored -- saving rejects to file gcc/tree-data-ref.c.rej
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+1 out of 1 hunk ignored -- saving rejects to file gcc/tree-loop-distribution.c.rej
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.yDSIGk (%prep)
+
+
+RPM build errors:
+    line 401: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap0
+    line 402: It's not recommended to have unversioned Obsoletes: Obsoletes:	libmudflap-devel
+    line 404: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts5
+    line 405: It's not recommended to have unversioned Obsoletes: Obsoletes:	libcilkrts-devel
+    line 456: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10
+    line 501: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc10
+    line 503: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgcc3.0
+    line 521: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-c++
+    line 587: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-devel
+    line 617: It's not recommended to have unversioned Obsoletes: Obsoletes:	libstdc++6-static-devel
+    line 634: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc
+    line 659: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-objc++
+    line 678: It's not recommended to have unversioned Obsoletes: Obsoletes:	libobjc3.0, libobjc3.1
+    line 700: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gfortran
+    line 729: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran10
+    line 731: It's not recommended to have unversioned Obsoletes: Obsoletes:	libgfortran0
+    line 798: It's not recommended to have unversioned Obsoletes: Obsoletes:	libasan5
+    line 944: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-gnat
+    line 948: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat
+    line 966: It's not recommended to have unversioned Obsoletes: Obsoletes:	gnat-runtime
+    line 1107: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-cpp
+    line 1147: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc
+    line 1162: It's not recommended to have unversioned Obsoletes: Obsoletes:	gcc10-doc-pdf
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.yDSIGk (%prep)
+I: [iurt_root_command] ERROR: chroot
