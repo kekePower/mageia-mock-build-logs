@@ -1,0 +1,19 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200628155905/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200628155905/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64xcrypt-static-devel-4.4.16-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 265k completed, ETA = --:--:--, speed = 5113k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/glibc-static-devel-2.31-12.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 10.5M completed, ETA = --:--:--, speed = 85.4M                                                                                                retrieved   lib64xcrypt-static-devel-4.4.16-4.mga8.x86_64.rpm glibc-static-devel-2.31-12.mga8.x86_64.rpm
+...retrieving done
+installing lib64xcrypt-static-devel-4.4.16-4.mga8.x86_64.rpm glibc-static-devel-2.31-12.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200628155905/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200628155905 (remove=0, install=0, upgrade=2)
+Preparing...                     #############################################
+      1/2: glibc-static-devel    #############################################
+      2/2: lib64xcrypt-static-devel
+                                 #############################################
+removing installed rpms (lib64xcrypt-static-devel-4.4.16-4.mga8.x86_64.rpm glibc-static-devel-2.31-12.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200628155905/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
