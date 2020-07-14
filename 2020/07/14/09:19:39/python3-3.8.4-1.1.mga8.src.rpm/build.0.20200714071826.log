@@ -1,0 +1,55 @@
+D: [iurt_root_command] chroot
+warning: Macro expanded in comment on line 10: %bcond_with rpmwheels)
+
+warning: extra tokens at the end of %endif directive in line 498:  %endif # with gdb_hooks
+
+warning: extra tokens at the end of %endif directive in line 513:  %endif # with gdb_hooks
+
+Installing /home/stig/rpmbuild/SRPMS/python3-3.8.4-1.1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.DODhdW
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf Python-3.8.4
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/Python-3.8.4.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd Python-3.8.4
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ find -name '*.exe' -print -delete
+./Lib/distutils/command/wininst-9.0-amd64.exe
+./Lib/distutils/command/wininst-14.0-amd64.exe
+./Lib/distutils/command/wininst-6.0.exe
+./Lib/distutils/command/wininst-7.1.exe
+./Lib/distutils/command/wininst-8.0.exe
+./Lib/distutils/command/wininst-10.0-amd64.exe
+./Lib/distutils/command/wininst-9.0.exe
+./Lib/distutils/command/wininst-10.0.exe
+./Lib/distutils/command/wininst-14.0.exe
++ rm -r Modules/expat
++ echo 'Patch #1 (0001-bpo-40784-Fix-sqlite3-deterministic-test-GH-20448.patch):'
+Patch #1 (0001-bpo-40784-Fix-sqlite3-deterministic-test-GH-20448.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file Lib/sqlite3/test/userfunctions.py
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+3 out of 3 hunks ignored -- saving rejects to file Lib/sqlite3/test/userfunctions.py.rej
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.DODhdW (%prep)
+
+
+RPM build errors:
+    Macro expanded in comment on line 10: %bcond_with rpmwheels)
+
+    extra tokens at the end of %endif directive in line 498:  %endif # with gdb_hooks
+
+    extra tokens at the end of %endif directive in line 513:  %endif # with gdb_hooks
+
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.DODhdW (%prep)
+I: [iurt_root_command] ERROR: chroot
