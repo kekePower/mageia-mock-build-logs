@@ -1,0 +1,318 @@
+D: [iurt_root_command] chroot
+warning: line 85: It's not recommended to have unversioned Obsoletes: Obsoletes:	kompozer
+Installing /home/stig/rpmbuild/SRPMS/bluegriffon-3.1-7.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.FdyF2f
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ echo TARGET bluegriffon-3.1-7.mga8
+TARGET bluegriffon-3.1-7.mga8
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf gecko-dev-042b84a
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/gecko-dev-042b84a.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gecko-dev-042b84a
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ mkdir bluegriffon
++ tar xf /home/stig/rpmbuild/SOURCES/bluegriffon-3.1.tar.gz --strip-components=1 --directory bluegriffon
++ patch -p1
+patching file browser/base/content/baseMenuOverlay.xul
+patching file browser/locales/en-US/chrome/browser/baseMenuOverlay.dtd
+patching file caps/nsScriptSecurityManager.cpp
+patching file dom/base/nsCopySupport.cpp
+patching file dom/base/nsDocument.cpp
+patching file dom/base/nsDocumentEncoder.cpp
+patching file dom/base/nsFocusManager.cpp
+patching file dom/base/nsGkAtomList.h
+patching file dom/base/nsHTMLContentSerializer.cpp
+patching file dom/base/nsIDocumentEncoder.idl
+patching file dom/base/nsXHTMLContentSerializer.cpp
+patching file dom/base/nsXMLContentSerializer.cpp
+patching file dom/html/HTMLInputElement.cpp
+patching file dom/html/HTMLInputElement.h
+patching file dom/interfaces/core/nsIDOMDocument.idl
+patching file dom/ipc/ColorPickerParent.cpp
+patching file dom/ipc/ColorPickerParent.h
+patching file dom/ipc/PBrowser.ipdl
+patching file dom/ipc/TabChild.cpp
+patching file dom/ipc/TabChild.h
+patching file dom/ipc/TabParent.cpp
+patching file dom/ipc/TabParent.h
+patching file dom/xbl/nsXBLContentSink.cpp
+patching file dom/xbl/nsXBLContentSink.h
+patching file dom/xml/nsXMLContentSink.cpp
+patching file dom/xml/nsXMLFragmentContentSink.cpp
+patching file dom/xslt/xslt/txMozillaStylesheetCompiler.cpp
+patching file dom/xul/nsXULContentSink.cpp
+patching file editor/composer/nsComposerCommands.cpp
+patching file editor/composer/nsEditorSpellCheck.cpp
+patching file editor/libeditor/CSSEditUtils.cpp
+patching file editor/libeditor/EditorBase.cpp
+patching file editor/libeditor/EditorBase.h
+patching file editor/libeditor/EditorEventListener.cpp
+patching file editor/libeditor/EditorEventListener.h
+patching file editor/libeditor/HTMLEditRules.cpp
+patching file editor/libeditor/HTMLEditUtils.cpp
+patching file editor/libeditor/HTMLEditor.cpp
+patching file editor/libeditor/HTMLEditor.h
+patching file editor/libeditor/HTMLEditorDataTransfer.cpp
+patching file editor/libeditor/HTMLEditorEventListener.cpp
+patching file editor/libeditor/HTMLEditorEventListener.h
+patching file editor/libeditor/HTMLStyleEditor.cpp
+patching file editor/libeditor/TextEditorDataTransfer.cpp
+patching file editor/libeditor/WSRunObject.cpp
+patching file editor/moz.build
+patching file editor/nsIEditor.idl
+patching file editor/nsIHTMLEditor.idl
+patching file extensions/moz.build
+patching file gfx/src/nsColor.cpp
+patching file gfx/src/nsColor.h
+patching file gfx/webrender_bindings/src/bindings.rs
+patching file image/imgICache.idl
+patching file layout/base/nsPresContext.cpp
+patching file layout/base/nsPresContext.h
+patching file layout/forms/nsColorControlFrame.cpp
+patching file layout/style/Declaration.cpp
+patching file layout/style/nsCSSParser.cpp
+patching file layout/style/nsCSSProps.cpp
+patching file layout/style/nsCSSValue.cpp
+patching file netwerk/protocol/res/nsResProtocolHandler.cpp
+patching file parser/htmlparser/nsExpatDriver.cpp
+patching file parser/htmlparser/nsIExpatSink.idl
+patching file parser/xml/nsSAXXMLReader.cpp
+patching file python/mozboot/mozboot/osx.py
+patching file rdf/base/nsRDFContentSink.cpp
+patching file storage/StorageBaseStatementInternal.h
+patching file third_party/rust/core-text/.cargo-checksum.json
+patching file third_party/rust/core-text/src/font_descriptor.rs
+patching file toolkit/components/passwordmgr/nsLoginManagerPrompter.js
+patching file toolkit/components/satchel/FormHistory.jsm
+patching file toolkit/components/telemetry/TelemetryStartup.js
+patching file toolkit/content/widgets/menu.xml
+patching file toolkit/content/widgets/menulist.xml
+patching file toolkit/content/widgets/tree.xml
+patching file toolkit/content/xul.css
+patching file toolkit/mozapps/extensions/content/extensions.js
+patching file toolkit/mozapps/extensions/content/extensions.xul
+patching file toolkit/mozapps/extensions/internal/XPIProvider.jsm
+patching file toolkit/mozapps/handling/nsContentDispatchChooser.js
+patching file toolkit/mozapps/installer/packager.mk
+patching file toolkit/toolkit.mozbuild
+patching file widget/PuppetWidget.cpp
+patching file widget/ScreenManager.cpp
+patching file widget/cocoa/nsClipboard.mm
+patching file widget/cocoa/nsCocoaUtils.mm
+patching file widget/cocoa/nsCocoaWindow.mm
+patching file widget/cocoa/nsColorPicker.h
+patching file widget/cocoa/nsColorPicker.mm
+patching file widget/cocoa/nsMenuItemX.mm
+patching file widget/cocoa/nsNativeThemeCocoa.mm
+patching file widget/gtk/mozgtk/mozgtk.c
+patching file widget/gtk/nsColorPicker.cpp
+patching file widget/gtk/nsColorPicker.h
+patching file widget/nsColorPickerProxy.cpp
+patching file widget/nsIColorPicker.idl
+patching file widget/nsIScreenManager.idl
+patching file widget/uikit/nsScreenManager.mm
+patching file widget/windows/nsColorPicker.cpp
+patching file widget/windows/nsColorPicker.h
++ patch -p1
+patching file editor/nsIEditorMouseObserver.idl
++ echo 'Patch #0 (fix-wformat-flag.patch):'
+Patch #0 (fix-wformat-flag.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file media/mtransport/third_party/nrappkit/nrappkit.gyp
+patching file media/mtransport/third_party/nICEr/nicer.gyp
++ echo 'Patch #1 (fix-link-flag-passing.patch):'
+Patch #1 (fix-link-flag-passing.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file security/sandbox/linux/moz.build
++ echo 'Patch #2 (fix-for-bsdtar.patch):'
+Patch #2 (fix-for-bsdtar.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file toolkit/mozapps/installer/upload-files.mk
+patching file gfx/harfbuzz/Makefile.am
++ echo 'Patch #5 (force-i586-host.patch):'
+Patch #5 (force-i586-host.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p0 --fuzz=0
+patching file build/moz.configure/rust.configure
++ echo 'Patch #10 (improve-resiliance-of-SystemResourceMonitor.stop.patch):'
+Patch #10 (improve-resiliance-of-SystemResourceMonitor.stop.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file testing/mozbase/mozsystemmonitor/mozsystemmonitor/resourcemonitor.py
++ echo 'Patch #11 (remove-unused-variables-from-baseconfig.mk.patch):'
+Patch #11 (remove-unused-variables-from-baseconfig.mk.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file config/baseconfig.mk
++ echo 'Patch #12 (remove-version-number-from-install-dir.patch):'
+Patch #12 (remove-version-number-from-install-dir.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file config/baseconfig.mk
++ echo 'Patch #13 (fix-chrome-unicode-includes.patch):'
+Patch #13 (fix-chrome-unicode-includes.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file gfx/sfntly/cpp/src/sample/chromium/subsetter_impl.cc
++ echo 'Patch #30 (bluegriffon-3.1-updates.patch):'
+Patch #30 (bluegriffon-3.1-updates.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file bluegriffon/app/profile/bluegriffon-prefs.js
++ pushd bluegriffon
+~/rpmbuild/BUILD/gecko-dev-042b84a/bluegriffon ~/rpmbuild/BUILD/gecko-dev-042b84a
++ echo 'Patch #31 (bluegriffon-3.1-ru.patch):'
+Patch #31 (bluegriffon-3.1-ru.patch):
++ /usr/bin/patch --no-backup-if-mismatch -p1 --fuzz=0
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/aboutDialog.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/aria.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/bluegriffon.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/bluegriffon.properties
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/colourPicker.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/convertToTable.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/credits.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/findbar.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertAudio.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertButton.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertForm.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertFormInput.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertImage.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertOutput.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/insertTextarea.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/languages.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/markupCleaner.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/masterPasswordQuery.properties
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/newDocument.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/newPageWizard.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/pageProperties.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/pagePropertiesPreview.html
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/deactivateLicense.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/general.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/license.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/license.properties
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/osx.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/prefs.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/source.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs/styles.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/prefs.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/structurebar.dtd
+patching file locales/ru/bluegriffon/base/locale/bluegriffon/svg-edit.properties
+patching file locales/ru/bluegriffon/extensions/fs/fs.properties
+patching file locales/ru/bluegriffon/extensions/gfd/addFont.dtd
+patching file locales/ru/bluegriffon/extensions/markdown/markdown.dtd
+patching file locales/ru/bluegriffon/extensions/tipoftheday/tipoftheday.rdf
+patching file locales/ru/bluegriffon/sidebars/aria/aria.dtd
+patching file locales/ru/bluegriffon/sidebars/aria/aria.properties
+patching file locales/ru/bluegriffon/sidebars/cssproperties/cssproperties.dtd
+patching file locales/ru/bluegriffon/sidebars/cssproperties/editGridTemplate.dtd
+patching file locales/ru/bluegriffon/sidebars/cssproperties/fontFeatures.properties
+patching file locales/ru/bluegriffon/sidebars/cssproperties/griditemposition.dtd
+patching file locales/ru/bluegriffon/sidebars/cssproperties/textshadowitem.dtd
+patching file locales/ru/bluegriffon/sidebars/cssproperties/transitionitem.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/its20.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/its20Overlay.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/its20.properties
+patching file locales/ru/bluegriffon/sidebars/its20/locNoteRule.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/selector.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/termRule.dtd
+patching file locales/ru/bluegriffon/sidebars/its20/translateRule.dtd
+patching file locales/ru/bluegriffon/sidebars/scripteditor/scripteditor.dtd
+patching file locales/ru/bluegriffon/sidebars/stylesheets/stylesheets.dtd
++ popd
+~/rpmbuild/BUILD/gecko-dev-042b84a
++ mkdir -p js/src/.deps
++ cat
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.aCzHEj
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd gecko-dev-042b84a
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
+++ echo -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables
+++ sed -e s/-Wall// -e s/-fexceptions/-fno-exceptions/g -e s/-gdwarf-4//
++ MOZ_OPT_FLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export PREFIX=/usr
++ PREFIX=/usr
++ export LIBDIR=/usr/lib64
++ LIBDIR=/usr/lib64
++ MOZ_APP_DIR=/usr/lib64/bluegriffon
++ export LDFLAGS=-Wl,-rpath,/usr/lib64/bluegriffon
++ LDFLAGS=-Wl,-rpath,/usr/lib64/bluegriffon
++ make -f client.mk build
+which: no python2.7 in (/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/home/stig/.local/bin:/home/stig/bin)
+/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach:25: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Traceback (most recent call last):
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 86, in <module>
+    main(sys.argv[1:])
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 78, in main
+    mach = get_mach()
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 68, in get_mach
+    mach = check_and_get_mach(dir_path)
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 42, in check_and_get_mach
+    return load_mach(dir_path, mach_path)
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 27, in load_mach
+    imp.load_module('mach_bootstrap', fh, mach_path,
+  File "/usr/lib64/python3.8/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/usr/lib64/python3.8/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 702, in _load
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/build/mach_bootstrap.py", line 15, in <module>
+    import __builtin__
+ModuleNotFoundError: No module named '__builtin__'
+which: no python2.7 in (/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/usr/local/sbin:/usr/sbin:/home/stig/.local/bin:/home/stig/bin)
+/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach:25: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Traceback (most recent call last):
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 86, in <module>
+    main(sys.argv[1:])
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 78, in main
+    mach = get_mach()
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 68, in get_mach
+    mach = check_and_get_mach(dir_path)
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 42, in check_and_get_mach
+    return load_mach(dir_path, mach_path)
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/mach", line 27, in load_mach
+    imp.load_module('mach_bootstrap', fh, mach_path,
+  File "/usr/lib64/python3.8/imp.py", line 234, in load_module
+    return load_source(name, filename, file)
+  File "/usr/lib64/python3.8/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 702, in _load
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/build/mach_bootstrap.py", line 15, in <module>
+    import __builtin__
+ModuleNotFoundError: No module named '__builtin__'
+python /home/stig/rpmbuild/BUILD/gecko-dev-042b84a/config/pythonpath.py -I /home/stig/rpmbuild/BUILD/gecko-dev-042b84a/testing/mozbase/mozfile \
+    /home/stig/rpmbuild/BUILD/gecko-dev-042b84a/python/mozbuild/mozbuild/controller/clobber.py /home/stig/rpmbuild/BUILD/gecko-dev-042b84a 
+Traceback (most recent call last):
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/config/pythonpath.py", line 56, in <module>
+    main(sys.argv[1:])
+  File "/home/stig/rpmbuild/BUILD/gecko-dev-042b84a/config/pythonpath.py", line 48, in main
+    execfile(script, frozenglobals)
+NameError: name 'execfile' is not defined
+client.mk:204: /.mozconfig.mk: No such file or directory
+make: *** [client.mk:350: /CLOBBER] Error 1
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.aCzHEj (%build)
+
+
+RPM build errors:
+    line 85: It's not recommended to have unversioned Obsoletes: Obsoletes:	kompozer
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.aCzHEj (%build)
+I: [iurt_root_command] ERROR: chroot
