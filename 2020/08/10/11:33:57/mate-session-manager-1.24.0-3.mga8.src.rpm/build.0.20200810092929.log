@@ -1,0 +1,930 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/mate-session-manager-1.24.0-3.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.zKuqhF
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf mate-session-manager-1.24.0
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/mate-session-manager-1.24.0.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd mate-session-manager-1.24.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.mVQQxG
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mate-session-manager-1.24.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ '[' 1 = 1 ']'
+++ find . -name config.guess -o -name config.sub
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.guess
++ '[' -f /usr/lib/rpm/mageia/config.guess ']'
+++ basename ./config.guess
++ cp -af /usr/lib/rpm/mageia/config.guess ./config.guess
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.sub
++ '[' -f /usr/lib/rpm/mageia/config.sub ']'
+++ basename ./config.sub
++ cp -af /usr/lib/rpm/mageia/config.sub ./config.sub
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
+Fixing libtool's ltmain.sh to prevent overlinking (cf http://wiki.mandriva.com/en/Overlinking)
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
+Fixing libtool inside configure to pass -Wl,xxx options before libraries
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --disable-static --enable-upower --with-systemd --disable-schemas-compile --with-default-wm=marco --enable-ipv6
+configure: WARNING: unrecognized options: --enable-upower
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for glib-genmarshal... /usr/bin/glib-genmarshal
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking whether gcc understands -Wno-sign-compare... yes
+checking what warning flags to pass to the C compiler... -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare
+checking what language compliance flags to pass to the C compiler... 
+checking for x86_64-mageia-linux-gnu-pkg-config... /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for MATE_SESSION... yes
+checking for SESSION_PROPERTIES... yes
+checking for X11... yes
+checking for SM... yes
+checking for ICE... yes
+checking for XEXT... yes
+checking for GTK3... yes
+checking for GL_TEST... yes
+checking for GLES_TEST... yes
+checking for DBUS_GLIB... yes
+checking for EGG_SMCLIENT... yes
+checking for x86_64-mageia-linux-gnu-pkg-config... (cached) /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking pkg-config is at least version 0.16... yes
+checking for SYSTEMD... yes
+checking for X11/extensions/sync.h... yes
+checking for XTEST... yes
+checking for XRENDER... yes
+checking for xmlto... no
+checking whether to build DocBook documentation... no
+checking for xsltproc... /usr/bin/xsltproc
+checking for ANSI C header files... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking tcpd.h usability... no
+checking tcpd.h presence... no
+checking for tcpd.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for backtrace in -lexecinfo... no
+checking for XTRANS... yes
+checking whether to enable ipv6... yes
+checking for getaddrinfo... yes
+checking for mawk... no
+checking for gawk... /usr/bin/gawk
+checking for perl5... /usr/bin/perl5
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating capplet/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/dbus/Makefile
+config.status: creating doc/dbus/mate-session.xml
+config.status: creating doc/man/Makefile
+config.status: creating data/Makefile
+config.status: creating data/org.mate.session.gschema.xml
+config.status: creating data/icons/Makefile
+config.status: creating egg/Makefile
+config.status: creating mate-session/Makefile
+config.status: creating tools/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: WARNING: unrecognized options: --enable-upower
+
+              mate-session 1.24.0
+              ===================
+
+        prefix:                   /usr
+        exec_prefix:              /usr
+        libdir:                   /usr/lib64
+        bindir:                   /usr/bin
+        sbindir:                  /usr/sbin
+        sysconfdir:               /etc
+        localstatedir:            /var
+        datadir:                  /usr/share
+        source code location:     .
+        compiler:                 x86_64-mageia-linux-gnu-gcc
+        cflags:                   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables
+        Warning flags:            -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare 
+        Maintainer mode:          no
+        Warn about deprecations:  no
+
+        Default WM:               marco
+        Systemd support:          yes
+        Elogind support:          no
+        IPv6 support:             yes
+        Backtrace support:        no
+        XRender support:          yes
+        XSync support:            yes
+        XTest support:            yes
+        Build documentation:      no
+
+
++ /usr/bin/make -O -j8 V=1 VERBOSE=1
+/usr/bin/make  all-recursive
+Making all in po
+make[2]: Nothing to be done for 'all'.
+Making all in egg
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DG_LOG_DOMAIN=\""EggSMClient"\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread    -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o eggsmclient.lo eggsmclient.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -DG_LOG_DOMAIN=\"EggSMClient\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c eggsmclient.c  -fPIC -DPIC -o .libs/eggsmclient.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DG_LOG_DOMAIN=\""EggSMClient"\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread    -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o eggsmclient-xsmp.lo eggsmclient-xsmp.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -DG_LOG_DOMAIN=\"EggSMClient\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c eggsmclient-xsmp.c  -fPIC -DPIC -o .libs/eggsmclient-xsmp.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DG_LOG_DOMAIN=\""EggSMClient"\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread    -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o eggdesktopfile.lo eggdesktopfile.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -DG_LOG_DOMAIN=\"EggSMClient\" -DEGG_SM_CLIENT_BACKEND_XSMP -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c eggdesktopfile.c  -fPIC -DPIC -o .libs/eggdesktopfile.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libeggdesktopfile.la  eggdesktopfile.lo -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libeggdesktopfile.a .libs/eggdesktopfile.o 
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libeggdesktopfile.a
+libtool: link: ( cd ".libs" && rm -f "libeggdesktopfile.la" && ln -s "../libeggdesktopfile.la" "libeggdesktopfile.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libeggsmclient-mate.la  eggsmclient.lo eggsmclient-xsmp.lo -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  -lSM  -lICE  libeggdesktopfile.la -lSM  -lICE  
+libtool: link: (cd .libs/libeggsmclient-mate.lax/libeggdesktopfile.a && x86_64-mageia-linux-gnu-ar x "/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg/./.libs/libeggdesktopfile.a")
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libeggsmclient-mate.a .libs/eggsmclient.o .libs/eggsmclient-xsmp.o   .libs/libeggsmclient-mate.lax/libeggdesktopfile.a/eggdesktopfile.o 
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libeggsmclient-mate.a
+libtool: link: rm -fr .libs/libeggsmclient-mate.lax
+libtool: link: ( cd ".libs" && rm -f "libeggsmclient-mate.la" && ln -s "../libeggsmclient-mate.la" "libeggsmclient-mate.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libeggsmclient.la  eggsmclient.lo eggsmclient-xsmp.lo -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  -lSM  -lICE  libeggdesktopfile.la -lSM  -lICE  
+libtool: link: (cd .libs/libeggsmclient.lax/libeggdesktopfile.a && x86_64-mageia-linux-gnu-ar x "/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg/./.libs/libeggdesktopfile.a")
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libeggsmclient.a .libs/eggsmclient.o .libs/eggsmclient-xsmp.o   .libs/libeggsmclient.lax/libeggdesktopfile.a/eggdesktopfile.o 
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libeggsmclient.a
+libtool: link: rm -fr .libs/libeggsmclient.lax
+libtool: link: ( cd ".libs" && rm -f "libeggsmclient.la" && ln -s "../libeggsmclient.la" "libeggsmclient.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+Making all in mate-session
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+dbus-binding-tool --prefix=gsm_presence --mode=glib-server --output=gsm-presence-glue.h ./org.gnome.SessionManager.Presence.xml
+WARNING: Using --header and --body at the same time is deprecated; use --body --prototypes instead
+INFO: Reading /tmp/dbus-binding-tool-c-marshallers.YWKGP0...
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+dbus-binding-tool --prefix=gsm_client --mode=glib-server --output=gsm-client-glue.h ./org.gnome.SessionManager.Client.xml
+WARNING: Using --header and --body at the same time is deprecated; use --body --prototypes instead
+INFO: Reading /tmp/dbus-binding-tool-c-marshallers.72MGP0...
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+dbus-binding-tool --prefix=gsm_manager --mode=glib-server --output=gsm-manager-glue.h ./org.gnome.SessionManager.xml
+WARNING: Using --header and --body at the same time is deprecated; use --body --prototypes instead
+INFO: Reading /tmp/dbus-binding-tool-c-marshallers.63MGP0...
+WARNING: The token "NONE" is deprecated; use "VOID" instead
+WARNING: The token "NONE" is deprecated; use "VOID" instead
+WARNING: The token "NONE" is deprecated; use "VOID" instead
+WARNING: The token "NONE" is deprecated; use "VOID" instead
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+dbus-binding-tool --prefix=gsm_inhibitor --mode=glib-server --output=gsm-inhibitor-glue.h ./org.gnome.SessionManager.Inhibitor.xml
+WARNING: Using --header and --body at the same time is deprecated; use --body --prototypes instead
+INFO: Reading /tmp/dbus-binding-tool-c-marshallers.A4KGP0...
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+dbus-binding-tool --prefix=gsm_app --mode=glib-server --output=gsm-app-glue.h ./org.gnome.SessionManager.App.xml
+WARNING: Using --header and --body at the same time is deprecated; use --body --prototypes instead
+INFO: Reading /tmp/dbus-binding-tool-c-marshallers.EHMGP0...
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/usr/bin/make  all-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-marshal.o `test -f 'gsm-marshal.c' || echo './'`gsm-marshal.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-app.o `test -f 'gsm-app.c' || echo './'`gsm-app.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-client.o `test -f 'gsm-client.c' || echo './'`gsm-client.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-consolekit.o `test -f 'gsm-consolekit.c' || echo './'`gsm-consolekit.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-systemd.o `test -f 'gsm-systemd.c' || echo './'`gsm-systemd.c
+gsm-systemd.c: In function 'gsm_systemd_can_switch_user':
+gsm-systemd.c:721:5: warning: 'sd_seat_can_multi_session' is deprecated [-Wdeprecated-declarations]
+  721 |     ret = sd_seat_can_multi_session (seat_id);
+      |     ^~~
+In file included from gsm-systemd.c:35:
+/usr/include/systemd/sd-login.h:186:5: note: declared here
+  186 | int sd_seat_can_multi_session(const char *seat) _sd_deprecated_;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-presence.o `test -f 'gsm-presence.c' || echo './'`gsm-presence.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-dbus-client.o `test -f 'gsm-dbus-client.c' || echo './'`gsm-dbus-client.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-logout-dialog.o `test -f 'gsm-logout-dialog.c' || echo './'`gsm-logout-dialog.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-autostart-app.o `test -f 'gsm-autostart-app.c' || echo './'`gsm-autostart-app.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-mdm.o `test -f 'mdm.c' || echo './'`mdm.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-mdm-log.o `test -f 'mdm-log.c' || echo './'`mdm-log.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gs-idle-monitor.o `test -f 'gs-idle-monitor.c' || echo './'`gs-idle-monitor.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-xsmp-client.o `test -f 'gsm-xsmp-client.c' || echo './'`gsm-xsmp-client.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-mdm-signal-handler.o `test -f 'mdm-signal-handler.c' || echo './'`mdm-signal-handler.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-store.o `test -f 'gsm-store.c' || echo './'`gsm-store.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-inhibit-dialog.o `test -f 'gsm-inhibit-dialog.c' || echo './'`gsm-inhibit-dialog.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-msm-gnome.o `test -f 'msm-gnome.c' || echo './'`msm-gnome.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread      -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test-client-dbus.o test-client-dbus.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-session-save.o `test -f 'gsm-session-save.c' || echo './'`gsm-session-save.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-main.o `test -f 'main.c' || echo './'`main.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-inhibitor.o `test -f 'gsm-inhibitor.c' || echo './'`gsm-inhibitor.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test-client-dbus test-client-dbus.o -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test-client-dbus test-client-dbus.o  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-xsmp-server.o `test -f 'gsm-xsmp-server.c' || echo './'`gsm-xsmp-server.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread      -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test-inhibit.o test-inhibit.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread      -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsm-util.lo gsm-util.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c gsm-util.c  -fPIC -DPIC -o .libs/gsm-util.o
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libgsmutil.la  gsm-util.lo -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libgsmutil.a .libs/gsm-util.o 
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libgsmutil.a
+libtool: link: ( cd ".libs" && rm -f "libgsmutil.la" && ln -s "../libgsmutil.la" "libgsmutil.la" )
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test-inhibit test-inhibit.o -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test-inhibit test-inhibit.o  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread         -I../egg -DLOCALE_DIR=\""/usr/share/locale"\" -DDATA_DIR=\""/usr/share/mate-session"\" -DLIBEXECDIR=\"/usr/libexec\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\" -DI_KNOW_THE_DEVICEKIT_POWER_API_IS_SUBJECT_TO_CHANGE  -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session-gsm-manager.o `test -f 'gsm-manager.c' || echo './'`gsm-manager.c
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session mate_session-gsm-app.o mate_session-gsm-autostart-app.o mate_session-gsm-client.o mate_session-gsm-xsmp-client.o mate_session-gsm-dbus-client.o mate_session-gsm-marshal.o mate_session-gsm-consolekit.o mate_session-gsm-systemd.o mate_session-gsm-logout-dialog.o mate_session-gsm-inhibit-dialog.o mate_session-gs-idle-monitor.o mate_session-gsm-presence.o mate_session-mdm.o mate_session-mdm-signal-handler.o mate_session-mdm-log.o mate_session-msm-gnome.o mate_session-main.o mate_session-gsm-store.o mate_session-gsm-inhibitor.o mate_session-gsm-manager.o mate_session-gsm-session-save.o mate_session-gsm-xsmp-server.o libgsmutil.la -lX11  ../egg/libeggdesktopfile.la -lSM  -lICE  -lXrender -lX11  -lXtst  -lXext -lXau  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  -lsystemd    
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session mate_session-gsm-app.o mate_session-gsm-autostart-app.o mate_session-gsm-client.o mate_session-gsm-xsmp-client.o mate_session-gsm-dbus-client.o mate_session-gsm-marshal.o mate_session-gsm-consolekit.o mate_session-gsm-systemd.o mate_session-gsm-logout-dialog.o mate_session-gsm-inhibit-dialog.o mate_session-gs-idle-monitor.o mate_session-gsm-presence.o mate_session-mdm.o mate_session-mdm-signal-handler.o mate_session-mdm-log.o mate_session-msm-gnome.o mate_session-main.o mate_session-gsm-store.o mate_session-gsm-inhibitor.o mate_session-gsm-manager.o mate_session-gsm-session-save.o mate_session-gsm-xsmp-server.o  ./.libs/libgsmutil.a ../egg/.libs/libeggdesktopfile.a -lSM -lICE -lXrender -lX11 -lXtst -lXext -lXau -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0 -lsystemd
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+Making all in capplet
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsp-keyfile.o gsp-keyfile.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o main.o main.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsm-app-dialog.o gsm-app-dialog.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsp-app.o gsp-app.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsp-app-manager.o gsp-app-manager.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I../mate-session -DLOCALE_DIR=\""/usr/share/locale"\" -DGTKBUILDER_DIR=\""/usr/share/mate-session-manager"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o gsm-properties-dialog.o gsm-properties-dialog.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-properties main.o gsm-properties-dialog.o gsm-app-dialog.o gsp-app.o gsp-app-manager.o gsp-keyfile.o -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  ../mate-session/libgsmutil.la 
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-properties main.o gsm-properties-dialog.o gsm-app-dialog.o gsp-app.o gsp-app-manager.o gsp-keyfile.o  ../mate-session/.libs/libgsmutil.a -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+Making all in tools
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session_inhibit-mate-session-inhibit.o `test -f 'mate-session-inhibit.c' || echo './'`mate-session-inhibit.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\""/usr/share/mate-session-manager"\" -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include    -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session_check_accelerated_gl_helper-mate-session-check-accelerated-gl-helper.o `test -f 'mate-session-check-accelerated-gl-helper.c' || echo './'`mate-session-check-accelerated-gl-helper.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"   -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate-session-save.o mate-session-save.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-inhibit mate_session_inhibit-mate-session-inhibit.o -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-inhibit mate_session_inhibit-mate-session-inhibit.o  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\""/usr/share/mate-session-manager"\" -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread     -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session_check_accelerated_gles_helper-mate-session-check-accelerated-gles-helper.o `test -f 'mate-session-check-accelerated-gles-helper.c' || echo './'`mate-session-check-accelerated-gles-helper.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated-gl-helper mate_session_check_accelerated_gl_helper-mate-session-check-accelerated-gl-helper.o -lXcomposite -lGL -lglib-2.0 -lepoxy  -lX11  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated-gl-helper mate_session_check_accelerated_gl_helper-mate-session-check-accelerated-gl-helper.o  -lXcomposite -lGL -lglib-2.0 -lepoxy -lX11
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DLIBEXECDIR=\""/usr/libexec"\" -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -DLOCALE_DIR=\""/usr/share/locale"\"  -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/libxml2 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread  -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include    -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o mate_session_check_accelerated-mate-session-check-accelerated.o `test -f 'mate-session-check-accelerated.c' || echo './'`mate-session-check-accelerated.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-save mate-session-save.o -lSM  -lICE  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-save mate-session-save.o  -lSM -lICE -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -ldbus-glib-1 -ldbus-1 -lgobject-2.0 -lglib-2.0
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated-gles-helper mate_session_check_accelerated_gles_helper-mate-session-check-accelerated-gles-helper.o -lEGL -lGLESv2  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  -lX11  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated-gles-helper mate_session_check_accelerated_gles_helper-mate-session-check-accelerated-gles-helper.o  -lEGL -lGLESv2 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lX11
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated mate_session_check_accelerated-mate-session-check-accelerated.o -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  -lXcomposite -lGL -lglib-2.0 -lepoxy  -lX11  
+libtool: link: x86_64-mageia-linux-gnu-gcc -Wall -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wno-sign-compare -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o mate-session-check-accelerated mate_session_check_accelerated-mate-session-check-accelerated.o  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lXcomposite -lGL -lglib-2.0 -lepoxy -lX11
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+Making all in data
+Making all in icons
+make[3]: Nothing to be done for 'all'.
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+/usr/bin/glib-compile-schemas --strict --dry-run  --schema-file=org.mate.session.gschema.xml && mkdir -p . && touch org.mate.session.gschema.valid
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+/usr/bin/msgfmt --desktop --template mate.desktop.in -d ../po -o mate.desktop
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+/usr/bin/msgfmt --desktop --template mate-session-properties.desktop.in -d ../po -o mate-session-properties.desktop
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+Making all in doc
+Making all in dbus
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/xsltproc ../../doc/dbus/spec-to-docbook.xsl ../../mate-session/org.gnome.SessionManager.Client.xml | tail -n +2 > org.gnome.SessionManager.Client.ref.xml
+error : Invalid argument
+../../mate-session/org.gnome.SessionManager.Client.xml:2: warning: failed to load external entity "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+spection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+                                                                               ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/xsltproc ../../doc/dbus/spec-to-docbook.xsl ../../mate-session/org.gnome.SessionManager.ClientPrivate.xml | tail -n +2 > org.gnome.SessionManager.ClientPrivate.ref.xml
+error : Invalid argument
+../../mate-session/org.gnome.SessionManager.ClientPrivate.xml:2: warning: failed to load external entity "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+spection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+                                                                               ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/xsltproc ../../doc/dbus/spec-to-docbook.xsl ../../mate-session/org.gnome.SessionManager.Inhibitor.xml | tail -n +2 > org.gnome.SessionManager.Inhibitor.ref.xml
+error : Invalid argument
+../../mate-session/org.gnome.SessionManager.Inhibitor.xml:2: warning: failed to load external entity "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+spection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+                                                                               ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/xsltproc ../../doc/dbus/spec-to-docbook.xsl ../../mate-session/org.gnome.SessionManager.Presence.xml | tail -n +2 > org.gnome.SessionManager.Presence.ref.xml
+error : Invalid argument
+../../mate-session/org.gnome.SessionManager.Presence.xml:2: warning: failed to load external entity "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+spection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+                                                                               ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/xsltproc ../../doc/dbus/spec-to-docbook.xsl ../../mate-session/org.gnome.SessionManager.xml | tail -n +2 > org.gnome.SessionManager.ref.xml
+error : Invalid argument
+../../mate-session/org.gnome.SessionManager.xml:2: warning: failed to load external entity "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+spection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd"
+                                                                               ^
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/make  all-am
+make[4]: Nothing to be done for 'all-am'.
+Making all in man
+make[3]: Nothing to be done for 'all'.
+make[3]: Nothing to be done for 'all-am'.
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.hGalWF
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64
++ cd mate-session-manager-1.24.0
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64 'INSTALL=/usr/bin/install -p'
+Making install in po
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/po'
+installing af.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/af/LC_MESSAGES/mate-session-manager.mo
+installing am.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/am/LC_MESSAGES/mate-session-manager.mo
+installing an.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/an/LC_MESSAGES/mate-session-manager.mo
+installing ar.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ar/LC_MESSAGES/mate-session-manager.mo
+installing as.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/as/LC_MESSAGES/mate-session-manager.mo
+installing ast.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ast/LC_MESSAGES/mate-session-manager.mo
+installing az.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/az/LC_MESSAGES/mate-session-manager.mo
+installing be.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/be/LC_MESSAGES/mate-session-manager.mo
+installing bg.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/bg/LC_MESSAGES/mate-session-manager.mo
+installing bn.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/bn/LC_MESSAGES/mate-session-manager.mo
+installing bn_IN.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/bn_IN/LC_MESSAGES/mate-session-manager.mo
+installing br.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/br/LC_MESSAGES/mate-session-manager.mo
+installing bs.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/bs/LC_MESSAGES/mate-session-manager.mo
+installing ca.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ca/LC_MESSAGES/mate-session-manager.mo
+installing ca@valencia.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ca@valencia/LC_MESSAGES/mate-session-manager.mo
+installing cmn.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/cmn/LC_MESSAGES/mate-session-manager.mo
+installing crh.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/crh/LC_MESSAGES/mate-session-manager.mo
+installing cs.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/cs/LC_MESSAGES/mate-session-manager.mo
+installing cy.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/cy/LC_MESSAGES/mate-session-manager.mo
+installing da.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/da/LC_MESSAGES/mate-session-manager.mo
+installing de.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/de/LC_MESSAGES/mate-session-manager.mo
+installing dz.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/dz/LC_MESSAGES/mate-session-manager.mo
+installing el.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/el/LC_MESSAGES/mate-session-manager.mo
+installing en_AU.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/en_AU/LC_MESSAGES/mate-session-manager.mo
+installing en_CA.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/en_CA/LC_MESSAGES/mate-session-manager.mo
+installing en_GB.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/en_GB/LC_MESSAGES/mate-session-manager.mo
+installing eo.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/eo/LC_MESSAGES/mate-session-manager.mo
+installing es.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es/LC_MESSAGES/mate-session-manager.mo
+installing es_AR.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_AR/LC_MESSAGES/mate-session-manager.mo
+installing es_CL.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_CL/LC_MESSAGES/mate-session-manager.mo
+installing es_CO.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_CO/LC_MESSAGES/mate-session-manager.mo
+installing es_CR.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_CR/LC_MESSAGES/mate-session-manager.mo
+installing es_DO.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_DO/LC_MESSAGES/mate-session-manager.mo
+installing es_EC.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_EC/LC_MESSAGES/mate-session-manager.mo
+installing es_ES.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_ES/LC_MESSAGES/mate-session-manager.mo
+installing es_MX.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_MX/LC_MESSAGES/mate-session-manager.mo
+installing es_NI.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_NI/LC_MESSAGES/mate-session-manager.mo
+installing es_PA.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_PA/LC_MESSAGES/mate-session-manager.mo
+installing es_PE.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_PE/LC_MESSAGES/mate-session-manager.mo
+installing es_PR.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_PR/LC_MESSAGES/mate-session-manager.mo
+installing es_SV.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_SV/LC_MESSAGES/mate-session-manager.mo
+installing es_UY.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_UY/LC_MESSAGES/mate-session-manager.mo
+installing es_VE.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/es_VE/LC_MESSAGES/mate-session-manager.mo
+installing et.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/et/LC_MESSAGES/mate-session-manager.mo
+installing eu.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/eu/LC_MESSAGES/mate-session-manager.mo
+installing fa.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fa/LC_MESSAGES/mate-session-manager.mo
+installing fi.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fi/LC_MESSAGES/mate-session-manager.mo
+installing fr.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fr/LC_MESSAGES/mate-session-manager.mo
+installing fr_CA.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fr_CA/LC_MESSAGES/mate-session-manager.mo
+installing frp.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/frp/LC_MESSAGES/mate-session-manager.mo
+installing fur.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fur/LC_MESSAGES/mate-session-manager.mo
+installing fy.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/fy/LC_MESSAGES/mate-session-manager.mo
+installing ga.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ga/LC_MESSAGES/mate-session-manager.mo
+installing gd.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/gd/LC_MESSAGES/mate-session-manager.mo
+installing gl.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/gl/LC_MESSAGES/mate-session-manager.mo
+installing gu.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/gu/LC_MESSAGES/mate-session-manager.mo
+installing ha.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ha/LC_MESSAGES/mate-session-manager.mo
+installing he.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/he/LC_MESSAGES/mate-session-manager.mo
+installing hi.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/hi/LC_MESSAGES/mate-session-manager.mo
+installing hr.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/hr/LC_MESSAGES/mate-session-manager.mo
+installing hu.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/hu/LC_MESSAGES/mate-session-manager.mo
+installing hy.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/hy/LC_MESSAGES/mate-session-manager.mo
+installing ia.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ia/LC_MESSAGES/mate-session-manager.mo
+installing id.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/id/LC_MESSAGES/mate-session-manager.mo
+installing ie.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ie/LC_MESSAGES/mate-session-manager.mo
+installing ig.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ig/LC_MESSAGES/mate-session-manager.mo
+installing is.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/is/LC_MESSAGES/mate-session-manager.mo
+installing it.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/it/LC_MESSAGES/mate-session-manager.mo
+installing ja.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ja/LC_MESSAGES/mate-session-manager.mo
+installing jv.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/jv/LC_MESSAGES/mate-session-manager.mo
+installing ka.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ka/LC_MESSAGES/mate-session-manager.mo
+installing kab.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/kab/LC_MESSAGES/mate-session-manager.mo
+installing kk.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/kk/LC_MESSAGES/mate-session-manager.mo
+installing kn.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/kn/LC_MESSAGES/mate-session-manager.mo
+installing ko.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ko/LC_MESSAGES/mate-session-manager.mo
+installing ks.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ks/LC_MESSAGES/mate-session-manager.mo
+installing ku.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ku/LC_MESSAGES/mate-session-manager.mo
+installing ku_IQ.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ku_IQ/LC_MESSAGES/mate-session-manager.mo
+installing ky.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ky/LC_MESSAGES/mate-session-manager.mo
+installing li.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/li/LC_MESSAGES/mate-session-manager.mo
+installing lo.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/lo/LC_MESSAGES/mate-session-manager.mo
+installing lt.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/lt/LC_MESSAGES/mate-session-manager.mo
+installing lv.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/lv/LC_MESSAGES/mate-session-manager.mo
+installing mai.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mai/LC_MESSAGES/mate-session-manager.mo
+installing mg.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mg/LC_MESSAGES/mate-session-manager.mo
+installing mi.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mi/LC_MESSAGES/mate-session-manager.mo
+installing mk.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mk/LC_MESSAGES/mate-session-manager.mo
+installing ml.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ml/LC_MESSAGES/mate-session-manager.mo
+installing mn.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mn/LC_MESSAGES/mate-session-manager.mo
+installing mr.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/mr/LC_MESSAGES/mate-session-manager.mo
+installing ms.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ms/LC_MESSAGES/mate-session-manager.mo
+installing nb.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/nb/LC_MESSAGES/mate-session-manager.mo
+installing nds.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/nds/LC_MESSAGES/mate-session-manager.mo
+installing ne.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ne/LC_MESSAGES/mate-session-manager.mo
+installing nl.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/nl/LC_MESSAGES/mate-session-manager.mo
+installing nn.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/nn/LC_MESSAGES/mate-session-manager.mo
+installing nso.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/nso/LC_MESSAGES/mate-session-manager.mo
+installing oc.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/oc/LC_MESSAGES/mate-session-manager.mo
+installing or.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/or/LC_MESSAGES/mate-session-manager.mo
+installing pa.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/pa/LC_MESSAGES/mate-session-manager.mo
+installing pl.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/pl/LC_MESSAGES/mate-session-manager.mo
+installing pms.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/pms/LC_MESSAGES/mate-session-manager.mo
+installing ps.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ps/LC_MESSAGES/mate-session-manager.mo
+installing pt.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/pt/LC_MESSAGES/mate-session-manager.mo
+installing pt_BR.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/pt_BR/LC_MESSAGES/mate-session-manager.mo
+installing ro.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ro/LC_MESSAGES/mate-session-manager.mo
+installing ru.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ru/LC_MESSAGES/mate-session-manager.mo
+installing rw.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/rw/LC_MESSAGES/mate-session-manager.mo
+installing sc.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sc/LC_MESSAGES/mate-session-manager.mo
+installing si.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/si/LC_MESSAGES/mate-session-manager.mo
+installing sk.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sk/LC_MESSAGES/mate-session-manager.mo
+installing sl.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sl/LC_MESSAGES/mate-session-manager.mo
+installing sq.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sq/LC_MESSAGES/mate-session-manager.mo
+installing sr.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sr/LC_MESSAGES/mate-session-manager.mo
+installing sr@latin.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sr@latin/LC_MESSAGES/mate-session-manager.mo
+installing sv.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/sv/LC_MESSAGES/mate-session-manager.mo
+installing ta.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ta/LC_MESSAGES/mate-session-manager.mo
+installing te.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/te/LC_MESSAGES/mate-session-manager.mo
+installing th.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/th/LC_MESSAGES/mate-session-manager.mo
+installing tk.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/tk/LC_MESSAGES/mate-session-manager.mo
+installing tr.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/tr/LC_MESSAGES/mate-session-manager.mo
+installing tt.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/tt/LC_MESSAGES/mate-session-manager.mo
+installing ug.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ug/LC_MESSAGES/mate-session-manager.mo
+installing uk.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/uk/LC_MESSAGES/mate-session-manager.mo
+installing ur.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ur/LC_MESSAGES/mate-session-manager.mo
+installing ur_PK.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/ur_PK/LC_MESSAGES/mate-session-manager.mo
+installing uz.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/uz/LC_MESSAGES/mate-session-manager.mo
+installing vi.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/vi/LC_MESSAGES/mate-session-manager.mo
+installing wa.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/wa/LC_MESSAGES/mate-session-manager.mo
+installing xh.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/xh/LC_MESSAGES/mate-session-manager.mo
+installing yi.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/yi/LC_MESSAGES/mate-session-manager.mo
+installing yo.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/yo/LC_MESSAGES/mate-session-manager.mo
+installing zh_CN.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/zh_CN/LC_MESSAGES/mate-session-manager.mo
+installing zh_HK.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/zh_HK/LC_MESSAGES/mate-session-manager.mo
+installing zh_TW.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/zh_TW/LC_MESSAGES/mate-session-manager.mo
+installing zu.gmo as /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/locale/zu/LC_MESSAGES/mate-session-manager.mo
+if test "mate-session-manager" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -p -m 644 ./$file \
+		    /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/po'
+Making install in egg
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/egg'
+Making install in mate-session
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+/usr/bin/make  install-am
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p mate-session '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+libtool: install: /usr/bin/install -p mate-session /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/mate-session'
+Making install in capplet
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p mate-session-properties '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+libtool: install: /usr/bin/install -p mate-session-properties /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-properties
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/capplet'
+Making install in tools
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p mate-session-save mate-session-inhibit '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+libtool: install: /usr/bin/install -p mate-session-save /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-save
+libtool: install: /usr/bin/install -p mate-session-inhibit /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-inhibit
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -p mate-session-check-accelerated mate-session-check-accelerated-gl-helper mate-session-check-accelerated-gles-helper '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec'
+libtool: install: /usr/bin/install -p mate-session-check-accelerated /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated
+libtool: install: /usr/bin/install -p mate-session-check-accelerated-gl-helper /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gl-helper
+libtool: install: /usr/bin/install -p mate-session-check-accelerated-gles-helper /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gles-helper
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/tools'
+Making install in data
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+Making install in icons
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/install -p -m 644  48x48/apps/mate-session-properties.png '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/24x24/apps'
+ /usr/bin/install -p -m 644  24x24/apps/mate-session-properties.png '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/24x24/apps'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/install -p -m 644  scalable/apps/mate-session-properties.svg '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/22x22/apps'
+ /usr/bin/install -p -m 644  22x22/apps/mate-session-properties.png '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/22x22/apps'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/16x16/apps'
+ /usr/bin/install -p -m 644  16x16/apps/mate-session-properties.png '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/16x16/apps'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/32x32/apps'
+ /usr/bin/install -p -m 644  32x32/apps/mate-session-properties.png '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/icons/hicolor/32x32/apps'
+/usr/bin/make  install-data-hook
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+*** Icon cache not updated.  After (un)install, run this:
+***   gtk-update-icon-cache -f -t /usr/share/icons/hicolor
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data/icons'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+ /usr/bin/install -p mate-wm '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/applications'
+ /usr/bin/install -p -m 644 mate-session-properties.desktop '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/applications'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/mate-session-manager'
+ /usr/bin/install -p -m 644 hardware-compatibility '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/mate-session-manager'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/mate-session-manager'
+ /usr/bin/install -p -m 644 session-properties.ui gsm-inhibit-dialog.ui '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/mate-session-manager'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/xsessions'
+ /usr/bin/install -p -m 644 mate.desktop '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/xsessions'
+if test -n "org.mate.session.gschema.xml"; then \
+	test -z "/usr/share/glib-2.0/schemas" || /usr/bin/mkdir -p "/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/glib-2.0/schemas"; \
+	/usr/bin/install -p -m 644 org.mate.session.gschema.xml "/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/glib-2.0/schemas"; \
+	test -n "1/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64" || /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas; \
+fi
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/data'
+Making install in doc
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+Making install in dbus
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+/usr/bin/make  install-am
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[4]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/dbus'
+Making install in man
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/man'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/man/man1'
+ /usr/bin/install -p -m 644 mate-session.1 mate-session-properties.1 mate-session-save.1 mate-wm.1 mate-session-inhibit.1 '/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/man/man1'
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/man'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc/man'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+make[3]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0/doc'
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0'
++ install -D -m 755 /home/stig/rpmbuild/SOURCES/startmate /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/startmate
++ install -D -m 755 /home/stig/rpmbuild/SOURCES/materc /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/etc/materc
++ sed -i -e '0,/Exec=mate-session/ s/Exec=mate-session/Exec=startmate/' /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/xsessions/mate.desktop
++ install -m644 /home/stig/rpmbuild/SOURCES/mate-lightdm.conf -D /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/etc/lightdm/lightdm.conf.d/54-mageia-mate.conf
++ /usr/lib/rpm/find-lang.sh /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64 mate-session-manager
++ /usr/lib/rpm/find-debuginfo.sh -j8 --strict-build-id -m -i --build-id-seed 1.24.0-3.mga8 --unique-debug-suffix -1.24.0-3.mga8.x86_64 --unique-debug-src-base mate-session-manager-1.24.0-3.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/mate-session-manager-1.24.0
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-properties
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-inhibit
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-save
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gles-helper
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gl-helper
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-inhibit
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-properties
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/bin/mate-session-save
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gl-helper
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/libexec/mate-session-check-accelerated-gles-helper
+original debug info size: 1644kB, size after compression: 1456kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 7 CRC32s, 0 CRC32s did match.
+1827 blocks
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/mate-wm from /bin/sh to #!/usr/bin/sh
+mangling shebang in /usr/bin/startmate from /bin/sh to #!/usr/bin/sh
+mangling shebang in /etc/materc from /bin/sh to #!/usr/bin/sh
+Processing files: mate-session-manager-1.24.0-3.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.lzeMtH
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mate-session-manager-1.24.0
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/doc/mate-session-manager
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/doc/mate-session-manager
++ cp -pr AUTHORS /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/doc/mate-session-manager
++ cp -pr ChangeLog /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/doc/mate-session-manager
++ cp -pr README /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64/usr/share/doc/mate-session-manager
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: application() application(mate-session-properties.desktop) mate-session-manager = 1.24.0-3.mga8 mate-session-manager(x86-64) = 1.24.0-3.mga8
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(posttrans): /bin/sh
+Requires: libEGL.so.1()(64bit) libGL.so.1()(64bit) libGLESv2.so.2()(64bit) libICE.so.6()(64bit) libSM.so.6()(64bit) libX11.so.6()(64bit) libXau.so.6()(64bit) libXcomposite.so.1()(64bit) libXext.so.6()(64bit) libXrender.so.1()(64bit) libXtst.so.6()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libcairo.so.2()(64bit) libdbus-1.so.3()(64bit) libdbus-1.so.3(LIBDBUS_1_3)(64bit) libdbus-glib-1.so.2()(64bit) libepoxy.so.0()(64bit) libgdk-3.so.0()(64bit) libgdk_pixbuf-2.0.so.0()(64bit) libgio-2.0.so.0()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libgtk-3.so.0()(64bit) libsystemd.so.0()(64bit) libsystemd.so.0(LIBSYSTEMD_209)(64bit)
+Conflicts: desktop-common-data < 1:3.10-2
+Processing files: mate-session-manager-debugsource-1.24.0-3.mga8.x86_64
+Provides: mate-session-manager-debugsource = 1.24.0-3.mga8 mate-session-manager-debugsource(x86-64) = 1.24.0-3.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: mate-session-manager-debuginfo-1.24.0-3.mga8.x86_64
+Provides: debuginfo(build-id) = 2dc1de2b9570a23ad99b319843521faee8902c30 debuginfo(build-id) = 4175f585fd95aa5e6564413363904bc4fbfd7fa2 debuginfo(build-id) = 692c6fe4519a6022f648d8fbcf6d9da249c3e802 debuginfo(build-id) = aa23fc00b754c32dce349d107b5ad6298cc17f93 debuginfo(build-id) = c51f95247ab745a6703f92364704493a55e1ebc4 debuginfo(build-id) = cceea01969928b5660120899fff61d76d98cdf1f debuginfo(build-id) = df8c4bcae2bcb35316bb36d17f9cc4e926de1f11 mate-session-manager-debuginfo = 1.24.0-3.mga8 mate-session-manager-debuginfo(x86-64) = 1.24.0-3.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: mate-session-manager-debugsource(x86-64) = 1.24.0-3.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mate-session-manager-debugsource-1.24.0-3.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mate-session-manager-1.24.0-3.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/mate-session-manager-debuginfo-1.24.0-3.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.u8Pf6E
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd mate-session-manager-1.24.0
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/mate-session-manager-1.24.0-3.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.1oDKoH
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf mate-session-manager-1.24.0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
