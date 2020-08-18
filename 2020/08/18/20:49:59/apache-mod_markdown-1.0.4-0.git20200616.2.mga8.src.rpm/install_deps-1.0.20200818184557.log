@@ -1,0 +1,149 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200818184557/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200818184557/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64db5.3-devel-5.3.28-22.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 5262k completed, ETA = --:--:--, speed = 53.5M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64dbcxx5.3-5.3.28-22.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 650k completed, ETA = --:--:--, speed = 21.9M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64apr1_0-1.7.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 123k completed, ETA = --:--:--, speed = 6487k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 29714 completed, ETA = --:--:--, speed = 1934k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/tcl-8.6.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1582k completed, ETA = --:--:--, speed = 40.6M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/apache-2.4.46-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1290k completed, ETA = --:--:--, speed = 39.3M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/webserver-base-2.0-15.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 7792 completed, ETA = --:--:--, speed = 951k                                                                                                      ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 221k completed, ETA = --:--:--, speed = 10.3M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64dbtcl5.3-5.3.28-22.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 684k completed, ETA = --:--:--, speed = 27.8M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64dbsql5.3-5.3.28-22.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 823k completed, ETA = --:--:--, speed = 34.9M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 2083k completed, ETA = --:--:--, speed = 27.8M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/mailcap-2.1.48-3.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 27809 completed, ETA = --:--:--, speed = 1086k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64sasl2-devel-2.1.27-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 91875 completed, ETA = --:--:--, speed = 3450k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/apache-devel-2.4.46-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 180k completed, ETA = --:--:--, speed = 5806k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64markdown-devel-2.2.6-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 17394 completed, ETA = --:--:--, speed = 1306k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jansson4-2.12-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 42900 completed, ETA = --:--:--, speed = 2792k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/libtool-2.4.6-13.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 117k completed, ETA = --:--:--, speed = 5885k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64ldap2.4_2-devel-2.4.51-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 265k completed, ETA = --:--:--, speed = 12.3M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64expat-devel-2.2.9-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   8% of 53871 completed, ETA = --:--:--, speed = 265k                            100% of 53871 completed, ETA = --:--:--, speed = 2768k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64wrap0-7.6-49.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 42525 completed, ETA = --:--:--, speed = 3460k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64apr-devel-1.7.0-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 572k completed, ETA = --:--:--, speed = 20.6M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64tcl8.6-8.6.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 684k completed, ETA = --:--:--, speed = 27.8M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64pam-devel-1.3.1-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 78586 completed, ETA = --:--:--, speed = 5903k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64audit-devel-2.8.5-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 63993 completed, ETA = --:--:--, speed = 3905k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64apr-util-devel-1.6.1-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 374k completed, ETA = --:--:--, speed = 22.8M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 140k completed, ETA = --:--:--, speed = 7383k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64markdown2-2.2.6-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 46511 completed, ETA = --:--:--, speed = 5046k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64apr-util1_0-1.6.1-4.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 99k completed, ETA = --:--:--, speed = 6633k                                                                                                      ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64wrap-devel-7.6-49.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 87762 completed, ETA = --:--:--, speed = 4285k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64gdbm-devel-1.18.1-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 61648 completed, ETA = --:--:--, speed = 6689k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64tcl-devel-8.6.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 217k completed, ETA = --:--:--, speed = 10.6M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64cap-ng-devel-0.7.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 24548 completed, ETA = --:--:--, speed = 1712k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/systemd-devel-246.1-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 37797 completed, ETA = --:--:--, speed = 3075k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64dbjava5.3-5.3.28-22.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1300k completed, ETA = --:--:--, speed = 38.4M                                                                                                retrieved   lib64db5.3-devel-5.3.28-22.mga8.x86_64.rpm lib64dbcxx5.3-5.3.28-22.mga8.x86_64.rpm lib64apr1_0-1.7.0-2.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm tcl-8.6.10-2.mga8.x86_64.rpm apache-2.4.46-1.mga8.x86_64.rpm webserver-base-2.0-15.mga8.noarch.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64dbtcl5.3-5.3.28-22.mga8.x86_64.rpm lib64dbsql5.3-5.3.28-22.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm mailcap-2.1.48-3.mga8.noarch.rpm lib64sasl2-devel-2.1.27-3.mga8.x86_64.rpm apache-devel-2.4.46-1.mga8.x86_64.rpm lib64markdown-devel-2.2.6-2.mga8.x86_64.rpm lib64jansson4-2.12-3.mga8.x86_64.rpm libtool-2.4.6-13.mga8.x86_64.rpm lib64ldap2.4_2-devel-2.4.51-1.mga8.x86_64.rpm lib64expat-devel-2.2.9-2.mga8.x86_64.rpm lib64wrap0-7.6-49.mga8.x86_64.rpm lib64apr-devel-1.7.0-2.mga8.x86_64.rpm lib64tcl8.6-8.6.10-2.mga8.x86_64.rpm lib64pam-devel-1.3.1-4.mga8.x86_64.rpm lib64audit-devel-2.8.5-3.mga8.x86_64.rpm lib64apr-util-devel-1.6.1-4.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64markdown2-2.2.6-2.mga8.x86_64.rpm lib64apr-util1_0-1.6.1-4.mga8.x86_64.rpm lib64wrap-devel-7.6-49.mga8.x86_64.rpm lib64gdbm-devel-1.18.1-3.mga8.x86_64.rpm lib64tcl-devel-8.6.10-2.mga8.x86_64.rpm lib64cap-ng-devel-0.7.10-2.mga8.x86_64.rpm systemd-devel-246.1-2.mga8.x86_64.rpm lib64dbjava5.3-5.3.28-22.mga8.x86_64.rpm
+...retrieving done
+installing tcl-8.6.10-2.mga8.x86_64.rpm apache-2.4.46-1.mga8.x86_64.rpm lib64db5.3-devel-5.3.28-22.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm lib64dbcxx5.3-5.3.28-22.mga8.x86_64.rpm lib64apr1_0-1.7.0-2.mga8.x86_64.rpm lib64dbsql5.3-5.3.28-22.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm mailcap-2.1.48-3.mga8.noarch.rpm apache-devel-2.4.46-1.mga8.x86_64.rpm lib64markdown-devel-2.2.6-2.mga8.x86_64.rpm lib64sasl2-devel-2.1.27-3.mga8.x86_64.rpm lib64jansson4-2.12-3.mga8.x86_64.rpm webserver-base-2.0-15.mga8.noarch.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64dbtcl5.3-5.3.28-22.mga8.x86_64.rpm lib64pam-devel-1.3.1-4.mga8.x86_64.rpm lib64tcl8.6-8.6.10-2.mga8.x86_64.rpm lib64wrap0-7.6-49.mga8.x86_64.rpm lib64apr-devel-1.7.0-2.mga8.x86_64.rpm lib64audit-devel-2.8.5-3.mga8.x86_64.rpm lib64apr-util-devel-1.6.1-4.mga8.x86_64.rpm libtool-2.4.6-13.mga8.x86_64.rpm lib64ldap2.4_2-devel-2.4.51-1.mga8.x86_64.rpm lib64expat-devel-2.2.9-2.mga8.x86_64.rpm lib64tcl-devel-8.6.10-2.mga8.x86_64.rpm lib64gdbm-devel-1.18.1-3.mga8.x86_64.rpm systemd-devel-246.1-2.mga8.x86_64.rpm lib64cap-ng-devel-0.7.10-2.mga8.x86_64.rpm lib64dbjava5.3-5.3.28-22.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64markdown2-2.2.6-2.mga8.x86_64.rpm lib64apr-util1_0-1.6.1-4.mga8.x86_64.rpm lib64wrap-devel-7.6-49.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200818184557/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200818184557 (remove=0, install=0, upgrade=34)
+Preparing...                     #############################################
+     1/34: lib64tcl8.6           #############################################
+     2/34: lib64apr1_0           #############################################
+     3/34: lib64apr-util1_0      #############################################
+     4/34: lib64expat-devel      #############################################
+     5/34: lib64openssl-devel    #############################################
+     6/34: tcl                   #############################################
+     7/34: lib64tcl-devel        #############################################
+     8/34: lib64dbtcl5.3         #############################################
+     9/34: lib64markdown2        #############################################
+    10/34: lib64gpg-error-devel  #############################################
+    11/34: lib64gcrypt-devel     #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    12/34: lib64dbjava5.3        #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    13/34: lib64cap-ng-devel     #############################################
+    14/34: lib64audit-devel      #############################################
+    15/34: lib64pam-devel        #############################################
+    16/34: lib64sasl2-devel      #############################################
+    17/34: lib64gdbm-devel       #############################################
+    18/34: libtool               #############################################
+    19/34: lib64apr-devel        #############################################
+    20/34: lib64wrap0            #############################################
+    21/34: lib64wrap-devel       #############################################
+    22/34: lib64ldap2.4_2-devel  #############################################
+    23/34: lib64apr-util-devel   #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+    24/34: webserver-base        #############################################
+    25/34: lib64jansson4         #############################################
+    26/34: mailcap               #############################################
+    27/34: apache                #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+Detected unsafe path transition / → /run during canonicalization of /run.
+    28/34: lib64dbsql5.3         #############################################
+    29/34: lib64dbcxx5.3         #############################################
+    30/34: lib64db5.3-devel      #############################################
+    31/34: lib64lz4-devel        #############################################
+    32/34: systemd-devel         #############################################
+    33/34: apache-devel          #############################################
+    34/34: lib64markdown-devel   #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+/usr/lib/tmpfiles.d/static-nodes-permissions.conf:17: Failed to resolve group 'kvm'.
+Detected unsafe path transition / → /var during canonicalization of /var.
+Detected unsafe path transition / → /var during canonicalization of /var/lib.
+Detected unsafe path transition / → /run during canonicalization of /run/dbus.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run/lock.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /var during canonicalization of /var.
+Detected unsafe path transition / → /var during canonicalization of /var/log.
+Detected unsafe path transition / → /var during canonicalization of /var/lib.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run/resolvconf.
+Detected unsafe path transition / → /run during canonicalization of /run/resolvconf.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run/sudo.
+Detected unsafe path transition / → /var during canonicalization of /var/lib.
+Detected unsafe path transition / → /var during canonicalization of /var/lib.
+Detected unsafe path transition / → /var during canonicalization of /var/lib/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd/netif.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd/netif.
+Detected unsafe path transition / → /run during canonicalization of /run/systemd/netif.
+Detected unsafe path transition / → /run during canonicalization of /run.
+Detected unsafe path transition / → /var during canonicalization of /var/lib/systemd.
+Detected unsafe path transition / → /var during canonicalization of /var/lib.
+Detected unsafe path transition / → /var during canonicalization of /var/log.
+Detected unsafe path transition / → /var during canonicalization of /var.
+Detected unsafe path transition / → /var during canonicalization of /var/cache.
+Detected unsafe path transition / → /var during canonicalization of /var.
+Detected unsafe path transition / → /var during canonicalization of /var/log.
+Detected unsafe path transition / → /var during canonicalization of /var/log.
+Detected unsafe path transition / → /var during canonicalization of /var/log.
+Detected unsafe path transition / → /var during canonicalization of /var.
+Detected unsafe path transition / → /var during canonicalization of /var/log/journal.
+Detected unsafe path transition / → /var during canonicalization of /var/log/journal.
+Detected unsafe path transition / → /var during canonicalization of /var/log/journal.
+Detected unsafe path transition / → /dev during canonicalization of /dev/snd/seq.
+Detected unsafe path transition / → /dev during canonicalization of /dev/snd/timer.
+Detected unsafe path transition / → /dev during canonicalization of /dev/net/tun.
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8:en_US:en",
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Running in chroot, ignoring command 'try-restart'
+removing installed rpms (tcl-8.6.10-2.mga8.x86_64.rpm apache-2.4.46-1.mga8.x86_64.rpm lib64db5.3-devel-5.3.28-22.mga8.x86_64.rpm lib64lz4-devel-1.9.2-2.mga8.x86_64.rpm lib64dbcxx5.3-5.3.28-22.mga8.x86_64.rpm lib64apr1_0-1.7.0-2.mga8.x86_64.rpm lib64dbsql5.3-5.3.28-22.mga8.x86_64.rpm lib64openssl-devel-1.1.1g-1.mga8.x86_64.rpm mailcap-2.1.48-3.mga8.noarch.rpm apache-devel-2.4.46-1.mga8.x86_64.rpm lib64markdown-devel-2.2.6-2.mga8.x86_64.rpm lib64sasl2-devel-2.1.27-3.mga8.x86_64.rpm lib64jansson4-2.12-3.mga8.x86_64.rpm webserver-base-2.0-15.mga8.noarch.rpm lib64gcrypt-devel-1.8.5-4.mga8.x86_64.rpm lib64dbtcl5.3-5.3.28-22.mga8.x86_64.rpm lib64pam-devel-1.3.1-4.mga8.x86_64.rpm lib64tcl8.6-8.6.10-2.mga8.x86_64.rpm lib64wrap0-7.6-49.mga8.x86_64.rpm lib64apr-devel-1.7.0-2.mga8.x86_64.rpm lib64audit-devel-2.8.5-3.mga8.x86_64.rpm lib64apr-util-devel-1.6.1-4.mga8.x86_64.rpm libtool-2.4.6-13.mga8.x86_64.rpm lib64ldap2.4_2-devel-2.4.51-1.mga8.x86_64.rpm lib64expat-devel-2.2.9-2.mga8.x86_64.rpm lib64tcl-devel-8.6.10-2.mga8.x86_64.rpm lib64gdbm-devel-1.18.1-3.mga8.x86_64.rpm systemd-devel-246.1-2.mga8.x86_64.rpm lib64cap-ng-devel-0.7.10-2.mga8.x86_64.rpm lib64dbjava5.3-5.3.28-22.mga8.x86_64.rpm lib64gpg-error-devel-1.36-3.mga8.x86_64.rpm lib64markdown2-2.2.6-2.mga8.x86_64.rpm lib64apr-util1_0-1.6.1-4.mga8.x86_64.rpm lib64wrap-devel-7.6-49.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20200818184557/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
