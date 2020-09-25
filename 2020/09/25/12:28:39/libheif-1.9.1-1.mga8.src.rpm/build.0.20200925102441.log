@@ -1,0 +1,330 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/libheif-1.9.1-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.2oiLZF
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf libheif-1.9.1
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/libheif-1.9.1.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd libheif-1.9.1
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.CIg0PE
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd libheif-1.9.1
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ ./autogen.sh
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:30: installing './compile'
+configure.ac:29: installing './config.guess'
+configure.ac:29: installing './config.sub'
+configure.ac:38: installing './install-sh'
+configure.ac:57: installing './missing'
+examples/Makefile.am: installing './depcomp'
+autoreconf: Leaving directory '.'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ '[' 1 = 1 ']'
+++ find . -name config.guess -o -name config.sub
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.guess
++ '[' -f /usr/lib/rpm/mageia/config.guess ']'
+++ basename ./config.guess
++ cp -af /usr/lib/rpm/mageia/config.guess ./config.guess
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.sub
++ '[' -f /usr/lib/rpm/mageia/config.sub ']'
+++ basename ./config.sub
++ cp -af /usr/lib/rpm/mageia/config.sub ./config.sub
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
+Fixing libtool's ltmain.sh to prevent overlinking (cf http://wiki.mandriva.com/en/Overlinking)
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --disable-static --enable-local-dav1d
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking target system type... x86_64-mageia-linux-gnu
+checking how to print strings... printf
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking for x86_64-mageia-linux-gnu-g++... x86_64-mageia-linux-gnu-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-mageia-linux-gnu-g++ accepts -g... yes
+checking for x86_64-mageia-linux-gnu-g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... x86_64-mageia-linux-gnu-g++ -E
+checking for ld used by x86_64-mageia-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-mageia-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-g++ static flag -static works... no
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for go... no
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking dependency style of x86_64-mageia-linux-gnu-g++... none
+checking whether x86_64-mageia-linux-gnu-g++ supports C++11 features by default... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inttypes.h... (cached) yes
+checking for stddef.h... yes
+checking for unistd.h... (cached) yes
+checking for inline... inline
+checking for error_at_line... yes
+checking for size_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for pthread_create in -lpthread... yes
+checking for simple visibility declarations... yes
+checking for x86_64-mageia-linux-gnu-pkg-config... /usr/bin/x86_64-mageia-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for aom... yes
+checking for libde265... no
+checking for x265... no
+checking for jpeglib.h... yes
+checking for jpeg_CreateCompress in -ljpeg... yes
+checking for jpeg_write_icc_profile... yes
+checking for libpng... yes
+checking for gdkpixbuf... yes
+configure: Enable compiling with local dav1d
+configure: Enable multithreading
+checking whether compiler supports -Wno-error=potentially-evaluated-expression... no
+configure: ---------------------------------------
+configure: Multithreading: yes
+configure: Symbol visibility: yes
+configure: libaom decoder: yes
+configure: libaom encoder: yes
+configure: rav1e encoder: no
+configure: dav1d decoder: yes
+configure: libde265 decoder: no
+configure: libx265 encoder: no
+configure: JPEG output: yes
+configure: PNG output: yes
+configure: GdkPixbuf2 loader: yes
+configure: Examples: yes
+configure: Tests:  (tests will cause 'visibility' to be turned off)
+configure: ---------------------------------------
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating examples/Makefile
+config.status: creating extra/Makefile
+config.status: creating fuzzing/Makefile
+config.status: creating gdk-pixbuf/Makefile
+config.status: creating go/Makefile
+config.status: creating gnome/Makefile
+config.status: creating scripts/Makefile
+config.status: creating tests/Makefile
+config.status: creating libheif/Makefile
+config.status: creating libheif/heif_version.h
+config.status: creating libheif.pc
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
++ /usr/bin/make -O -j8 V=1 VERBOSE=1
+/usr/bin/make  all-recursive
+Making all in libheif
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o file_fuzzer.o file_fuzzer.cc
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o encoder_fuzzer.o encoder_fuzzer.cc
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-error.lo `test -f 'error.cc' || echo './'`error.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c error.cc  -fPIC -DPIC -o .libs/libheif_la-error.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o box_fuzzer.o box_fuzzer.cc
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..     -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o color_conversion_fuzzer.o color_conversion_fuzzer.cc
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-bitstream.lo `test -f 'bitstream.cc' || echo './'`bitstream.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c bitstream.cc  -fPIC -DPIC -o .libs/libheif_la-bitstream.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_hevc.lo `test -f 'heif_hevc.cc' || echo './'`heif_hevc.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_hevc.cc  -fPIC -DPIC -o .libs/libheif_la-heif_hevc.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_avif.lo `test -f 'heif_avif.cc' || echo './'`heif_avif.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_avif.cc  -fPIC -DPIC -o .libs/libheif_la-heif_avif.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_image.lo `test -f 'heif_image.cc' || echo './'`heif_image.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_image.cc  -fPIC -DPIC -o .libs/libheif_la-heif_image.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_plugin_registry.lo `test -f 'heif_plugin_registry.cc' || echo './'`heif_plugin_registry.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_plugin_registry.cc  -fPIC -DPIC -o .libs/libheif_la-heif_plugin_registry.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_plugin.lo `test -f 'heif_plugin.cc' || echo './'`heif_plugin.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_plugin.cc  -fPIC -DPIC -o .libs/libheif_la-heif_plugin.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-nclx.lo `test -f 'nclx.cc' || echo './'`nclx.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c nclx.cc  -fPIC -DPIC -o .libs/libheif_la-nclx.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: *** No rule to make target '../third-party/dav1d/build/src/libdav1d.a', needed by 'libheif.la'.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_decoder_aom.lo `test -f 'heif_decoder_aom.cc' || echo './'`heif_decoder_aom.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_decoder_aom.cc  -fPIC -DPIC -o .libs/libheif_la-heif_decoder_aom.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_decoder_dav1d.lo `test -f 'heif_decoder_dav1d.cc' || echo './'`heif_decoder_dav1d.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_decoder_dav1d.cc  -fPIC -DPIC -o .libs/libheif_la-heif_decoder_dav1d.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_encoder_aom.lo `test -f 'heif_encoder_aom.cc' || echo './'`heif_encoder_aom.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_encoder_aom.cc  -fPIC -DPIC -o .libs/libheif_la-heif_encoder_aom.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif.lo `test -f 'heif.cc' || echo './'`heif.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif.cc  -fPIC -DPIC -o .libs/libheif_la-heif.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_file.lo `test -f 'heif_file.cc' || echo './'`heif_file.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_file.cc  -fPIC -DPIC -o .libs/libheif_la-heif_file.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_colorconversion.lo `test -f 'heif_colorconversion.cc' || echo './'`heif_colorconversion.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_colorconversion.cc  -fPIC -DPIC -o .libs/libheif_la-heif_colorconversion.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-heif_context.lo `test -f 'heif_context.cc' || echo './'`heif_context.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c heif_context.cc  -fPIC -DPIC -o .libs/libheif_la-heif_context.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden    -DLIBHEIF_EXPORTS -I..  -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c -o libheif_la-box.lo `test -f 'box.cc' || echo './'`box.cc
+libtool: compile:  x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -DLIBHEIF_EXPORTS -I.. -I../third-party/dav1d/build -I../third-party/dav1d/build/include -I../third-party/dav1d/build/include/dav1d -I../third-party/dav1d/include -DHAVE_VISIBILITY -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wall -Werror -Wsign-compare -Wconversion -Wno-sign-conversion -Wno-error=conversion -Wno-error=unused-parameter -Wno-error=deprecated-declarations -c box.cc  -fPIC -DPIC -o .libs/libheif_la-box.o
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/libheif-1.9.1/libheif'
+make[1]: *** [Makefile:529: all-recursive] Error 1
+make: *** [Makefile:438: all] Error 2
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.CIg0PE (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.CIg0PE (%build)
+I: [iurt_root_command] ERROR: chroot
