@@ -1,0 +1,178 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/kodi-pvr-iptvsimple-6.3.2-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.KV7LFW
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf pvr.iptvsimple-6.3.2-Matrix
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/kodi-pvr-iptvsimple-6.3.2-Matrix.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd pvr.iptvsimple-6.3.2-Matrix
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf depends/common/rapidxml
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.zd5pOW
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pvr.iptvsimple-6.3.2-Matrix
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -Wno-dev -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking to see if CXX compiler accepts flag -flto
+-- Checking to see if CXX compiler accepts flag -flto - yes
+-- Found pugixml: /usr/include  
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.2.11") 
+-- PUGIXML_LIBRARIES: /usr/lib64/libpugixml.so
+-- ZLIB_LIBRARIES: /usr/lib64/libz.so
+-- IPTV_VERSION=6.3.2
+-- IPTV_VERSION=6.3.2
+-- Addon dependency check ...
+--  - Added API usage definition: ADDON_GLOBAL_VERSION_MAIN_USED (Version: "1.2.4", Min. Version: "1.2.0")
+--  - Added API usage definition: ADDON_GLOBAL_VERSION_GENERAL_USED (Version: "1.0.5", Min. Version: "1.0.4")
+--  - Added API usage definition: ADDON_GLOBAL_VERSION_FILESYSTEM_USED (Version: "1.1.6", Min. Version: "1.1.0")
+--  - Added API usage definition: ADDON_INSTANCE_VERSION_PVR_USED (Version: "7.0.1", Min. Version: "7.0.0")
+CMake Warning at /usr/share/kodi/cmake/AddonHelpers.cmake:332 (message):
+  CMAKE_INSTALL_LIBDIR /usr/lib64 differs from Kodi libdir, changing to
+  /usr/lib64/kodi.  Please pass -DOVERRIDE_PATHS=1 to skip this check
+Call Stack (most recent call first):
+  CMakeLists.txt:63 (build_addon)
+
+
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_C_FLAGS_RELWITHDEBINFO
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build
++ /usr/bin/cmake --build build -j8 --verbose
+/usr/bin/cmake -S/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix -B/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+/usr/bin/gmake  -f CMakeFiles/pvr.iptvsimple.dir/build.make CMakeFiles/pvr.iptvsimple.dir/depend
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+cd /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles/pvr.iptvsimple.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles/pvr.iptvsimple.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles/pvr.iptvsimple.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build/CMakeFiles/pvr.iptvsimple.dir/depend.internal".
+Scanning dependencies of target pvr.iptvsimple
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+/usr/bin/gmake  -f CMakeFiles/pvr.iptvsimple.dir/build.make CMakeFiles/pvr.iptvsimple.dir/build
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+[ 10%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/CatchupController.cpp.o
+[ 10%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/PVRIptvData.cpp.o
+[ 15%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Channels.cpp.o
+[ 21%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/ChannelGroups.cpp.o
+[ 26%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Epg.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/PVRIptvData.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/PVRIptvData.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/CatchupController.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/CatchupController.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Channels.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Channels.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/ChannelGroups.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/ChannelGroups.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Epg.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Epg.cpp
+[ 42%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/PlaylistLoader.cpp.o
+[ 42%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Settings.cpp.o
+[ 42%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/StreamManager.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Settings.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Settings.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/PlaylistLoader.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/PlaylistLoader.cpp
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/StreamManager.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/StreamManager.cpp
+In file included from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/PlaylistLoader.cpp:9:
+/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/PlaylistLoader.h:43:9: warning: 'iptvsimple::PlaylistLoader' declared with greater visibility than the type of its field 'iptvsimple::PlaylistLoader::m_client' [-Wattributes]
+   43 |   class PlaylistLoader
+      |         ^~~~~~~~~~~~~~
+In file included from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Epg.cpp:9:
+/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Epg.h:35:9: warning: 'iptvsimple::Epg' declared with greater visibility than the type of its field 'iptvsimple::Epg::m_client' [-Wattributes]
+   35 |   class Epg
+      |         ^~~
+In file included from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/PVRIptvData.h:14,
+                 from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/PVRIptvData.cpp:9:
+/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Epg.h:35:9: warning: 'iptvsimple::Epg' declared with greater visibility than the type of its field 'iptvsimple::Epg::m_client' [-Wattributes]
+   35 |   class Epg
+      |         ^~~
+In file included from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/PVRIptvData.h:15,
+                 from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/PVRIptvData.cpp:9:
+/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/PlaylistLoader.h:43:9: warning: 'iptvsimple::PlaylistLoader' declared with greater visibility than the type of its field 'iptvsimple::PlaylistLoader::m_client' [-Wattributes]
+   43 |   class PlaylistLoader
+      |         ^~~~~~~~~~~~~~
+In file included from /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/CatchupController.cpp:12:
+/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/Epg.h:35:9: warning: 'iptvsimple::Epg' declared with greater visibility than the type of its field 'iptvsimple::Epg::m_client' [-Wattributes]
+   35 |   class Epg
+      |         ^~~
+[ 47%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/Channel.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/Channel.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/data/Channel.cpp
+[ 52%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelEpg.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelEpg.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/data/ChannelEpg.cpp
+[ 57%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelGroup.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelGroup.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/data/ChannelGroup.cpp
+[ 63%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgEntry.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgEntry.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/data/EpgEntry.cpp
+[ 68%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgGenre.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgGenre.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/data/EpgGenre.cpp
+[ 73%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/FileUtils.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/FileUtils.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/utilities/FileUtils.cpp
+[ 78%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/Logger.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/Logger.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/utilities/Logger.cpp
+[ 84%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StreamUtils.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StreamUtils.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/utilities/StreamUtils.cpp
+[ 89%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StringUtils.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StringUtils.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/utilities/StringUtils.cpp
+[ 94%] Building CXX object CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/WebUtils.cpp.o
+/usr/bin/c++ -DADDON_GLOBAL_VERSION_FILESYSTEM_USED -DADDON_GLOBAL_VERSION_GENERAL_USED -DADDON_GLOBAL_VERSION_MAIN_USED -DADDON_INSTANCE_VERSION_PVR_USED -DBUILD_KODI_ADDON -DIPTV_VERSION=6.3.2 -Dpvr_iptvsimple_EXPORTS  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -fPIC   -DTARGET_POSIX -DTARGET_LINUX -D_GNU_SOURCE -DHAVE_LINUX_UDMABUF=1 -DHAVE_LINUX_DMA_HEAP=1 -DHAVE_LINUX_DMA_BUF=1 -DHAVE_MKOSTEMP=1 -DHAVE_LINUX_MEMFD=1 -DHAVE_STATX=1 -DHAVE_SSE=1 -DHAVE_SSE2=1 -DHAVE_SSE3=1 -DHAVE_SSSE3=1 -DHAVE_SSE4_1=1 -std=c++17 -o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/WebUtils.cpp.o -c /home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/src/iptvsimple/utilities/WebUtils.cpp
+[100%] Linking CXX shared library pvr.iptvsimple.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/pvr.iptvsimple.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIC -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -shared -Wl,-soname,pvr.iptvsimple.so.19.0 -o pvr.iptvsimple.so.6.3.2 CMakeFiles/pvr.iptvsimple.dir/src/PVRIptvData.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/CatchupController.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Channels.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/ChannelGroups.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Epg.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/PlaylistLoader.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/Settings.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/StreamManager.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/Channel.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelEpg.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/ChannelGroup.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgEntry.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/data/EpgGenre.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/FileUtils.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/Logger.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StreamUtils.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/StringUtils.cpp.o CMakeFiles/pvr.iptvsimple.dir/src/iptvsimple/utilities/WebUtils.cpp.o  /usr/lib64/libpugixml.so /usr/lib64/libz.so 
+/usr/bin/ld: CMakeFiles/pvr.iptvsimple.dir/src/PVRIptvData.cpp.o: in function `PVRIptvData::Create()':
+/usr/include/c++/10/thread:149: undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/pvr.iptvsimple.dir/build.make:363: pvr.iptvsimple.so.6.3.2] Error 1
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+gmake[1]: *** [CMakeFiles/Makefile2:99: CMakeFiles/pvr.iptvsimple.dir/all] Error 2
+gmake[1]: Leaving directory '/home/stig/rpmbuild/BUILD/pvr.iptvsimple-6.3.2-Matrix/build'
+gmake: *** [Makefile:174: all] Error 2
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.zd5pOW (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.zd5pOW (%build)
+I: [iurt_root_command] ERROR: chroot
