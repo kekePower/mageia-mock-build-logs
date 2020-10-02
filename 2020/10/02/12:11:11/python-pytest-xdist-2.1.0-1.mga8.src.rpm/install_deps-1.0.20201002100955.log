@@ -1,0 +1,44 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201002100955/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201002100955/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-more-itertools-8.5.0-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 66104 completed, ETA = --:--:--, speed = 1403k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-attrs-20.2.0-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 75931 completed, ETA = --:--:--, speed = 2556k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-pytest-5.4.1-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 484k completed, ETA = --:--:--, speed = 19.7M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64python3-devel-3.8.5-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 197k completed, ETA = --:--:--, speed = 6593k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-py-1.9.0-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 173k completed, ETA = --:--:--, speed = 7878k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-pytest-forked-1.1.1-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 15148 completed, ETA = --:--:--, speed = 1849k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-execnet-1.7.1-4.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84939 completed, ETA = --:--:--, speed = 8294k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-toml-0.10.1-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 39009 completed, ETA = --:--:--, speed = 2116k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-pluggy-0.13.1-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 38699 completed, ETA = --:--:--, speed = 2099k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-setuptools-scm-3.5.0-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 51845 completed, ETA = --:--:--, speed = 5625k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-apipkg-1.5-4.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 17552 completed, ETA = --:--:--, speed = 2448k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-packaging-20.4-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 61156 completed, ETA = --:--:--, speed = 3317k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-pyparsing-2.4.7-1.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 148k completed, ETA = --:--:--, speed = 7442k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/python3-wcwidth-0.1.7-7.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 31444 completed, ETA = --:--:--, speed = 2193k                                                                                                retrieved   python3-more-itertools-8.5.0-1.mga8.noarch.rpm python3-attrs-20.2.0-1.mga8.noarch.rpm python3-pytest-5.4.1-1.mga8.noarch.rpm lib64python3-devel-3.8.5-1.mga8.x86_64.rpm python3-py-1.9.0-1.mga8.noarch.rpm python3-pytest-forked-1.1.1-1.mga8.noarch.rpm python3-execnet-1.7.1-4.mga8.noarch.rpm python3-toml-0.10.1-1.mga8.noarch.rpm python3-pluggy-0.13.1-1.mga8.x86_64.rpm python3-setuptools-scm-3.5.0-1.mga8.noarch.rpm python3-apipkg-1.5-4.mga8.noarch.rpm python3-packaging-20.4-1.mga8.noarch.rpm python3-pyparsing-2.4.7-1.mga8.noarch.rpm python3-wcwidth-0.1.7-7.mga8.noarch.rpm
+...retrieving done
+installing python3-wcwidth-0.1.7-7.mga8.noarch.rpm python3-pyparsing-2.4.7-1.mga8.noarch.rpm python3-apipkg-1.5-4.mga8.noarch.rpm python3-packaging-20.4-1.mga8.noarch.rpm python3-setuptools-scm-3.5.0-1.mga8.noarch.rpm python3-toml-0.10.1-1.mga8.noarch.rpm python3-pluggy-0.13.1-1.mga8.x86_64.rpm python3-pytest-forked-1.1.1-1.mga8.noarch.rpm python3-execnet-1.7.1-4.mga8.noarch.rpm python3-py-1.9.0-1.mga8.noarch.rpm lib64python3-devel-3.8.5-1.mga8.x86_64.rpm python3-more-itertools-8.5.0-1.mga8.noarch.rpm python3-pytest-5.4.1-1.mga8.noarch.rpm python3-attrs-20.2.0-1.mga8.noarch.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201002100955/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201002100955 (remove=0, install=0, upgrade=14)
+Preparing...                     #############################################
+     1/14: python3-attrs         #############################################
+     2/14: python3-more-itertools
+                                 #############################################
+     3/14: python3-py            #############################################
+     4/14: python3-pluggy        #############################################
+     5/14: python3-toml          #############################################
+     6/14: python3-apipkg        #############################################
+     7/14: python3-pyparsing     #############################################
+     8/14: python3-packaging     #############################################
+     9/14: python3-wcwidth       #############################################
+    10/14: python3-pytest        #############################################
+    11/14: python3-pytest-forked #############################################
+    12/14: python3-execnet       #############################################
+    13/14: python3-setuptools-scm
+                                 #############################################
+    14/14: lib64python3-devel    #############################################
+removing installed rpms (python3-wcwidth-0.1.7-7.mga8.noarch.rpm python3-pyparsing-2.4.7-1.mga8.noarch.rpm python3-apipkg-1.5-4.mga8.noarch.rpm python3-packaging-20.4-1.mga8.noarch.rpm python3-setuptools-scm-3.5.0-1.mga8.noarch.rpm python3-toml-0.10.1-1.mga8.noarch.rpm python3-pluggy-0.13.1-1.mga8.x86_64.rpm python3-pytest-forked-1.1.1-1.mga8.noarch.rpm python3-execnet-1.7.1-4.mga8.noarch.rpm python3-py-1.9.0-1.mga8.noarch.rpm lib64python3-devel-3.8.5-1.mga8.x86_64.rpm python3-more-itertools-8.5.0-1.mga8.noarch.rpm python3-pytest-5.4.1-1.mga8.noarch.rpm python3-attrs-20.2.0-1.mga8.noarch.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201002100955/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!

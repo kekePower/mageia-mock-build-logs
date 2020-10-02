@@ -1,0 +1,180 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/python-pytest-xdist-2.1.0-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.USJHnK
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf pytest-xdist-2.1.0
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/pytest-xdist-2.1.0.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd pytest-xdist-2.1.0
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf pytest-xdist.egg-info
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.0RohqL
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pytest-xdist-2.1.0
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py build '--executable=/usr/bin/python3 -s'
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/xdist
+copying src/xdist/__init__.py -> build/lib/xdist
+copying src/xdist/_version.py -> build/lib/xdist
+copying src/xdist/dsession.py -> build/lib/xdist
+copying src/xdist/looponfail.py -> build/lib/xdist
+copying src/xdist/newhooks.py -> build/lib/xdist
+copying src/xdist/plugin.py -> build/lib/xdist
+copying src/xdist/remote.py -> build/lib/xdist
+copying src/xdist/report.py -> build/lib/xdist
+copying src/xdist/workermanage.py -> build/lib/xdist
+creating build/lib/xdist/scheduler
+copying src/xdist/scheduler/__init__.py -> build/lib/xdist/scheduler
+copying src/xdist/scheduler/each.py -> build/lib/xdist/scheduler
+copying src/xdist/scheduler/load.py -> build/lib/xdist/scheduler
+copying src/xdist/scheduler/loadfile.py -> build/lib/xdist/scheduler
+copying src/xdist/scheduler/loadscope.py -> build/lib/xdist/scheduler
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.XvovUJ
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64
++ cd pytest-xdist-2.1.0
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py install -O1 --skip-build --root /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64
+running install
+running install_lib
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/__init__.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/_version.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/dsession.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/looponfail.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/newhooks.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/plugin.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/remote.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/report.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+copying build/lib/xdist/workermanage.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist
+creating /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+copying build/lib/xdist/scheduler/__init__.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+copying build/lib/xdist/scheduler/each.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+copying build/lib/xdist/scheduler/load.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+copying build/lib/xdist/scheduler/loadfile.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+copying build/lib/xdist/scheduler/loadscope.py -> /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/_version.py to _version.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/dsession.py to dsession.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/looponfail.py to looponfail.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/newhooks.py to newhooks.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/plugin.py to plugin.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/remote.py to remote.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/report.py to report.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/workermanage.py to workermanage.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler/each.py to each.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler/load.py to load.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler/loadfile.py to loadfile.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/xdist/scheduler/loadscope.py to loadscope.cpython-38.pyc
+writing byte-compilation script '/tmp/tmpftemqa69.py'
+/usr/bin/python3 /tmp/tmpftemqa69.py
+removing /tmp/tmpftemqa69.py
+running install_egg_info
+running egg_info
+writing src/pytest_xdist.egg-info/PKG-INFO
+writing dependency_links to src/pytest_xdist.egg-info/dependency_links.txt
+writing entry points to src/pytest_xdist.egg-info/entry_points.txt
+writing requirements to src/pytest_xdist.egg-info/requires.txt
+writing top-level names to src/pytest_xdist.egg-info/top_level.txt
+reading manifest file 'src/pytest_xdist.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching '.appveyor.yml'
+warning: no previously-included files found matching '.gitignore'
+warning: no previously-included files found matching '.pre-commit-config.yaml'
+warning: no previously-included files found matching '.travis.yml'
+no previously-included directories found matching '.github'
+writing manifest file 'src/pytest_xdist.egg-info/SOURCES.txt'
+Copying src/pytest_xdist.egg-info to /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8/site-packages/pytest_xdist-2.1.0-py3.8.egg-info
+running install_scripts
++ rm -rfv /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/bin/__pycache__
++ /usr/lib/rpm/find-debuginfo.sh -j8 --strict-build-id -m -i --build-id-seed 2.1.0-1.mga8 --unique-debug-suffix -2.1.0-1.mga8.x86_64 --unique-debug-src-base python-pytest-xdist-2.1.0-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/pytest-xdist-2.1.0
+
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
+Bytecompiling .py files below /home/stig/rpmbuild/BUILDROOT/python-pytest-xdist-2.1.0-1.mga8.x86_64/usr/lib/python3.8 using /usr/bin/python3.8
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.c8QQHN
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd pytest-xdist-2.1.0
++ '[' 1 -eq 1 ']'
++ /usr/bin/python3 setup.py test
+running test
+WARNING: Testing via this command is deprecated and will be removed in a future version. Users looking for a generic test entry point independent of test runner are encouraged to use tox.
+WARNING: The pip package is not available, falling back to EasyInstall for handling setup_requires/test_requires; this is deprecated and will be removed in a future version.
+Searching for pytest>=6.0.0
+Reading https://pypi.org/simple/pytest/
+Download error on https://pypi.org/simple/pytest/: [Errno -2] Name or service not known -- Some packages may not be found!
+Couldn't retrieve index page for 'pytest'
+Scanning index of all packages (this may take a while)
+Reading https://pypi.org/simple/
+Download error on https://pypi.org/simple/: [Errno -2] Name or service not known -- Some packages may not be found!
+No local packages or working download links found for pytest>=6.0.0
+error: Could not find suitable distribution for Requirement.parse('pytest>=6.0.0')
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.c8QQHN (%check)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.c8QQHN (%check)
+I: [iurt_root_command] ERROR: chroot
