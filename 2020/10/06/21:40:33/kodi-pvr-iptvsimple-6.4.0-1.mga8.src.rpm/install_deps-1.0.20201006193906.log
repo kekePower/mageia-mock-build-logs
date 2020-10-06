@@ -1,0 +1,33 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201006193906/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201006193906/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64p8-platform2-2.1.0.1-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 26824 completed, ETA = --:--:--, speed = 595k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64rhash0-1.4.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 122k completed, ETA = --:--:--, speed = 4543k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64pugixml-devel-1.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 273k completed, ETA = --:--:--, speed = 9.8M                                                                                                      ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/cmake-3.18.3-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 6568k completed, ETA = --:--:--, speed = 71.2M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64pugixml1-1.10-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 99675 completed, ETA = --:--:--, speed = 3244k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/kodi-addon-devel-19.0-0.git20200930.1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 269k completed, ETA = --:--:--, speed = 13.1M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64uv1-1.40.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 106k completed, ETA = --:--:--, speed = 6265k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 84650 completed, ETA = --:--:--, speed = 4350k                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/lib64p8-platform-devel-2.1.0.1-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 53924 completed, ETA = --:--:--, speed = 3510k                                                                                                retrieved   lib64p8-platform2-2.1.0.1-3.mga8.x86_64.rpm lib64rhash0-1.4.0-1.mga8.x86_64.rpm lib64pugixml-devel-1.10-2.mga8.x86_64.rpm cmake-3.18.3-1.mga8.x86_64.rpm lib64pugixml1-1.10-2.mga8.x86_64.rpm kodi-addon-devel-19.0-0.git20200930.1.mga8.x86_64.rpm lib64uv1-1.40.0-1.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64p8-platform-devel-2.1.0.1-3.mga8.x86_64.rpm
+...retrieving done
+installing lib64p8-platform2-2.1.0.1-3.mga8.x86_64.rpm cmake-3.18.3-1.mga8.x86_64.rpm lib64pugixml1-1.10-2.mga8.x86_64.rpm lib64rhash0-1.4.0-1.mga8.x86_64.rpm lib64pugixml-devel-1.10-2.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64p8-platform-devel-2.1.0.1-3.mga8.x86_64.rpm kodi-addon-devel-19.0-0.git20200930.1.mga8.x86_64.rpm lib64uv1-1.40.0-1.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201006193906/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201006193906 (remove=0, install=0, upgrade=9)
+Preparing...                     #############################################
+      1/9: lib64uv1              #############################################
+      2/9: lib64jsoncpp19        #############################################
+      3/9: lib64rhash0           #############################################
+      4/9: lib64pugixml1         #############################################
+      5/9: lib64p8-platform2     #############################################
+      6/9: lib64p8-platform-devel
+                                 #############################################
+      7/9: lib64pugixml-devel    #############################################
+      8/9: cmake                 #############################################
+      9/9: kodi-addon-devel      #############################################
+removing installed rpms (lib64p8-platform2-2.1.0.1-3.mga8.x86_64.rpm cmake-3.18.3-1.mga8.x86_64.rpm lib64pugixml1-1.10-2.mga8.x86_64.rpm lib64rhash0-1.4.0-1.mga8.x86_64.rpm lib64pugixml-devel-1.10-2.mga8.x86_64.rpm lib64jsoncpp19-1.8.4-3.mga8.x86_64.rpm lib64p8-platform-devel-2.1.0.1-3.mga8.x86_64.rpm kodi-addon-devel-19.0-0.git20200930.1.mga8.x86_64.rpm lib64uv1-1.40.0-1.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201006193906/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
