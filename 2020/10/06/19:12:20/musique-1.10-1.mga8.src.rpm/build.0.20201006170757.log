@@ -1,0 +1,46 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/musique-1.10-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.4mswC6
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf musique-1.10
++ /usr/bin/bzip2 -dc /home/stig/rpmbuild/SOURCES/musique-1.10.tar.bz2
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd musique-1.10
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/musique-1.10-use-system-qtsingleapplication.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.F2Er93
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd musique-1.10
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/lib64/qt5/bin/qmake libsuff=64 'QMAKE_CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables' 'QMAKE_CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP= PREFIX=/usr USE_SYSTEM_QTSINGLEAPPLICATION=1
+Info: creating stash file /home/stig/rpmbuild/BUILD/musique-1.10/.qmake.stash
+Project MESSAGE: Building Musique 1.10
+Project MESSAGE: Qt 5.15.1 in /usr
+Project MESSAGE: Building for release
+Project MESSAGE: QT: core gui network sql widgets dbus qml dbus
+Project MESSAGE: CONFIG: lex yacc debug exceptions depend_includepath testcase_targets import_plugins import_qpa_plugin file_copies qmake_use qt warn_on release link_prl incremental shared shared release linux unix posix gcc c++17 exceptions_off optimize_full object_parallel_to_source qtsingleapplication
+Project MESSAGE: DEFINES: APP_VERSION=1.10 APP_NAME=Musique APP_UNIX_NAME=musique QT_NO_DEBUG_OUTPUT QT_USE_QSTRINGBUILDER QT_STRICT_ITERATORS QT_DEPRECATED_WARNINGS HTTP MEDIA_MPV MEDIA_AUDIOONLY APP_LINUX DATADIR=\"/usr/share\" PKGDATADIR=\"/usr/share/musique\" UPDATER UPDATER_DEFAULT
+Project MESSAGE: QMAKE_CXXFLAGS: -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables
+Project MESSAGE: QMAKE_LFLAGS: -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags
+Project ERROR: Unknown module(s) in QT: qml
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.F2Er93 (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.F2Er93 (%build)
+I: [iurt_root_command] ERROR: chroot
