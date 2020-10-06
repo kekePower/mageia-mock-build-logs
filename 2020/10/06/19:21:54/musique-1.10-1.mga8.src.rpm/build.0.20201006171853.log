@@ -1,0 +1,544 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/musique-1.10-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.5NfEVH
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf musique-1.10
++ /usr/bin/bzip2 -dc /home/stig/rpmbuild/SOURCES/musique-1.10.tar.bz2
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd musique-1.10
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/musique-1.10-use-system-qtsingleapplication.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.nr6uoJ
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd musique-1.10
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ /usr/lib64/qt5/bin/qmake libsuff=64 'QMAKE_CFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables' 'QMAKE_CXXFLAGS=-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables' 'QMAKE_LFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' QMAKE_STRIP= PREFIX=/usr USE_SYSTEM_QTSINGLEAPPLICATION=1
+Info: creating stash file /home/stig/rpmbuild/BUILD/musique-1.10/.qmake.stash
+Project MESSAGE: Building Musique 1.10
+Project MESSAGE: Qt 5.15.1 in /usr
+Project MESSAGE: Building for release
+Project MESSAGE: QT: core gui network sql widgets dbus qml dbus
+Project MESSAGE: CONFIG: lex yacc debug exceptions depend_includepath testcase_targets import_plugins import_qpa_plugin file_copies qmake_use qt warn_on release link_prl incremental shared shared release linux unix posix gcc c++17 exceptions_off optimize_full object_parallel_to_source qtsingleapplication
+Project MESSAGE: DEFINES: APP_VERSION=1.10 APP_NAME=Musique APP_UNIX_NAME=musique QT_NO_DEBUG_OUTPUT QT_USE_QSTRINGBUILDER QT_STRICT_ITERATORS QT_DEPRECATED_WARNINGS HTTP MEDIA_MPV MEDIA_AUDIOONLY APP_LINUX DATADIR=\"/usr/share\" PKGDATADIR=\"/usr/share/musique\" UPDATER UPDATER_DEFAULT
+Project MESSAGE: QMAKE_CXXFLAGS: -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables
+Project MESSAGE: QMAKE_LFLAGS: -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags
++ /usr/bin/make -O -j8 V=1 VERBOSE=1
+/usr/lib64/qt5/bin/lrelease locale/ast.ts -qm build/target/locale/ast.qm
+Updating 'build/target/locale/ast.qm'...
+    Generated 153 translation(s) (153 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/be.ts -qm build/target/locale/be.qm
+Updating 'build/target/locale/be.qm'...
+    Generated 142 translation(s) (142 finished and 0 unfinished)
+    Ignored 48 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/bg.ts -qm build/target/locale/bg.qm
+Updating 'build/target/locale/bg.qm'...
+    Generated 169 translation(s) (169 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/br.ts -qm build/target/locale/br.qm
+Updating 'build/target/locale/br.qm'...
+    Generated 170 translation(s) (170 finished and 0 unfinished)
+    Ignored 20 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ca.ts -qm build/target/locale/ca.qm
+Updating 'build/target/locale/ca.qm'...
+    Generated 164 translation(s) (164 finished and 0 unfinished)
+    Ignored 26 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ca_ES.ts -qm build/target/locale/ca_ES.qm
+Updating 'build/target/locale/ca_ES.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/cs_CZ.ts -qm build/target/locale/cs_CZ.qm
+Updating 'build/target/locale/cs_CZ.qm'...
+    Generated 169 translation(s) (169 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/da.ts -qm build/target/locale/da.qm
+Updating 'build/target/locale/da.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/en.ts -qm build/target/locale/en.qm
+Updating 'build/target/locale/en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+/usr/lib64/qt5/bin/lrelease locale/de.ts -qm build/target/locale/de.qm
+Updating 'build/target/locale/de.qm'...
+    Generated 190 translation(s) (190 finished and 0 unfinished)
+/usr/lib64/qt5/bin/lrelease locale/el.ts -qm build/target/locale/el.qm
+Updating 'build/target/locale/el.qm'...
+    Generated 164 translation(s) (164 finished and 0 unfinished)
+    Ignored 26 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/en_GB.ts -qm build/target/locale/en_GB.qm
+Updating 'build/target/locale/en_GB.qm'...
+    Generated 171 translation(s) (171 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/es.ts -qm build/target/locale/es.qm
+Updating 'build/target/locale/es.qm'...
+    Generated 169 translation(s) (169 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/es_ES.ts -qm build/target/locale/es_ES.qm
+Updating 'build/target/locale/es_ES.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/fa_IR.ts -qm build/target/locale/fa_IR.qm
+Updating 'build/target/locale/fa_IR.qm'...
+    Generated 152 translation(s) (152 finished and 0 unfinished)
+    Ignored 38 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/fi_FI.ts -qm build/target/locale/fi_FI.qm
+Updating 'build/target/locale/fi_FI.qm'...
+    Generated 190 translation(s) (190 finished and 0 unfinished)
+/usr/lib64/qt5/bin/lrelease locale/es_MX.ts -qm build/target/locale/es_MX.qm
+Updating 'build/target/locale/es_MX.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/fr.ts -qm build/target/locale/fr.qm
+Updating 'build/target/locale/fr.qm'...
+    Generated 171 translation(s) (171 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/gl.ts -qm build/target/locale/gl.qm
+Updating 'build/target/locale/gl.qm'...
+    Generated 164 translation(s) (164 finished and 0 unfinished)
+    Ignored 26 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/hu_HU.ts -qm build/target/locale/hu_HU.qm
+Updating 'build/target/locale/hu_HU.qm'...
+    Generated 138 translation(s) (138 finished and 0 unfinished)
+    Ignored 52 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/it.ts -qm build/target/locale/it.qm
+Updating 'build/target/locale/it.qm'...
+    Generated 186 translation(s) (186 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ia.ts -qm build/target/locale/ia.qm
+Updating 'build/target/locale/ia.qm'...
+    Generated 125 translation(s) (125 finished and 0 unfinished)
+    Ignored 65 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ko.ts -qm build/target/locale/ko.qm
+Updating 'build/target/locale/ko.qm'...
+    Generated 153 translation(s) (153 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ky.ts -qm build/target/locale/ky.qm
+Updating 'build/target/locale/ky.qm'...
+    Generated 141 translation(s) (141 finished and 0 unfinished)
+    Ignored 49 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/lt_LT.ts -qm build/target/locale/lt_LT.qm
+Updating 'build/target/locale/lt_LT.qm'...
+    Generated 190 translation(s) (190 finished and 0 unfinished)
+/usr/lib64/qt5/bin/lrelease locale/nb.ts -qm build/target/locale/nb.qm
+Updating 'build/target/locale/nb.qm'...
+    Generated 146 translation(s) (146 finished and 0 unfinished)
+    Ignored 44 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/nl.ts -qm build/target/locale/nl.qm
+Updating 'build/target/locale/nl.qm'...
+    Generated 169 translation(s) (169 finished and 0 unfinished)
+    Ignored 21 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ms_MY.ts -qm build/target/locale/ms_MY.qm
+Updating 'build/target/locale/ms_MY.qm'...
+    Generated 171 translation(s) (171 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/pl.ts -qm build/target/locale/pl.qm
+Updating 'build/target/locale/pl.qm'...
+    Generated 161 translation(s) (161 finished and 0 unfinished)
+    Ignored 29 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/pt.ts -qm build/target/locale/pt.qm
+Updating 'build/target/locale/pt.qm'...
+    Generated 157 translation(s) (157 finished and 0 unfinished)
+    Ignored 33 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ro.ts -qm build/target/locale/ro.qm
+Updating 'build/target/locale/ro.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/ru.ts -qm build/target/locale/ru.qm
+Updating 'build/target/locale/ru.qm'...
+    Generated 164 translation(s) (164 finished and 0 unfinished)
+    Ignored 26 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/pt_BR.ts -qm build/target/locale/pt_BR.qm
+Updating 'build/target/locale/pt_BR.qm'...
+    Generated 171 translation(s) (171 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/sk.ts -qm build/target/locale/sk.qm
+Updating 'build/target/locale/sk.qm'...
+    Generated 157 translation(s) (157 finished and 0 unfinished)
+    Ignored 33 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/sr.ts -qm build/target/locale/sr.qm
+Updating 'build/target/locale/sr.qm'...
+    Generated 157 translation(s) (157 finished and 0 unfinished)
+    Ignored 33 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/tr.ts -qm build/target/locale/tr.qm
+Updating 'build/target/locale/tr.qm'...
+    Generated 186 translation(s) (186 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/vi.ts -qm build/target/locale/vi.qm
+Updating 'build/target/locale/vi.qm'...
+    Generated 153 translation(s) (153 finished and 0 unfinished)
+    Ignored 37 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/zh_CN.ts -qm build/target/locale/zh_CN.qm
+Updating 'build/target/locale/zh_CN.qm'...
+    Generated 164 translation(s) (164 finished and 0 unfinished)
+    Ignored 26 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/zh_TW.ts -qm build/target/locale/zh_TW.qm
+Updating 'build/target/locale/zh_TW.qm'...
+    Generated 179 translation(s) (179 finished and 0 unfinished)
+    Ignored 11 untranslated source text(s)
+/usr/lib64/qt5/bin/lrelease locale/uk.ts -qm build/target/locale/uk.qm
+Updating 'build/target/locale/uk.qm'...
+    Generated 159 translation(s) (159 finished and 0 unfinished)
+    Ignored 31 untranslated source text(s)
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/idle/src/idle_linux.o lib/idle/src/idle_linux.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/httpreply.o lib/http/src/httpreply.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/throttledhttp.o lib/http/src/throttledhttp.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/cachedhttp.o lib/http/src/cachedhttp.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/networkhttpreply.o lib/http/src/networkhttpreply.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/localcache.o lib/http/src/localcache.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/js/js.o lib/js/js.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/http/src/http.o lib/http/src/http.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/js/jsnamfactory.o lib/js/jsnamfactory.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/js/jsresult.o lib/js/jsresult.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/media/src/mpv/mediampv.o lib/media/src/mpv/mediampv.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/sharedcache/sharedcache.o lib/sharedcache/sharedcache.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/lib/sharedcache/sharedcachehttp.o lib/sharedcache/sharedcachehttp.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/lyrics.o src/lyrics.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/tags/tagutils.o src/tags/tagutils.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/main.o src/main.cpp
+src/main.cpp: In function 'int main(int, char**)':
+src/main.cpp:137:54: warning: 'void qsrand(uint)' is deprecated: use QRandomGenerator instead [-Wdeprecated-declarations]
+  137 |     qsrand(QDateTime::currentDateTimeUtc().toTime_t());
+      |                                                      ^
+In file included from /usr/include/qt5/QtCore/QtCore:4,
+                 from /usr/include/qt5/QtNetwork/QtNetworkDepends:3,
+                 from /usr/include/qt5/QtNetwork/QtNetwork:3,
+                 from src/main.cpp:21:
+/usr/include/qt5/QtCore/qglobal.h:1278:81: note: declared here
+ 1278 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X_5_15("use QRandomGenerator instead") void qsrand(uint seed);
+      |                                                                                 ^~~~~~
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/messagebar.o src/messagebar.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/aboutview.o src/aboutview.cpp
+src/aboutview.cpp: In constructor 'AboutView::AboutView(QWidget*)':
+src/aboutview.cpp:130:44: warning: 'const QBrush& QPalette::foreground() const' is deprecated: Use QPalette::windowText() instead [-Wdeprecated-declarations]
+  130 |     spinner->setColor(palette().foreground().color());
+      |                                            ^
+In file included from /usr/include/qt5/QtGui/qabstracttextdocumentlayout.h:48,
+                 from /usr/include/qt5/QtGui/QtGui:5,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:4,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/view.h:24,
+                 from src/aboutview.h:25,
+                 from src/aboutview.cpp:21:
+/usr/include/qt5/QtGui/qpalette.h:147:26: note: declared here
+  147 |     inline const QBrush &foreground() const { return windowText(); }
+      |                          ^~~~~~~~~~
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/exlineedit.o src/exlineedit.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/searchlineedit.o src/searchlineedit.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/mainwindow.o src/mainwindow.cpp
+In file included from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/mainwindow.cpp:37:
+src/model/item.h: In member function 'virtual QPixmap Item::getThumb(int, int, qreal)':
+src/model/item.h:38:34: warning: unused parameter 'width' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                              ~~~~^~~~~
+src/model/item.h:38:45: warning: unused parameter 'height' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                         ~~~~^~~~~~
+src/model/item.h:38:59: warning: unused parameter 'pixelRatio' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                                     ~~~~~~^~~~~~~~~~
+src/mainwindow.cpp: In member function 'void MainWindow::showView(View*, bool)':
+src/mainwindow.cpp:744:44: warning: unused parameter 'transition' [-Wunused-parameter]
+  744 | void MainWindow::showView(View *view, bool transition) {
+      |                                       ~~~~~^~~~~~~~~~
+src/mainwindow.cpp: In static member function 'static QString MainWindow::formatTime(qint64)':
+src/mainwindow.cpp:1166:69: warning: 'QString& QString::sprintf(const char*, ...)' is deprecated: Use asprintf(), arg() or QTextStream instead [-Wdeprecated-declarations]
+ 1166 |     if (hours == 0) return res.sprintf("%02d:%02d", minutes, seconds);
+      |                                                                     ^
+In file included from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/mainwindow.h:24,
+                 from src/mainwindow.cpp:21:
+/usr/include/qt5/QtCore/qstring.h:393:14: note: declared here
+  393 |     QString &sprintf(const char *format, ...) Q_ATTRIBUTE_FORMAT_PRINTF(2, 3);
+      |              ^~~~~~~
+src/mainwindow.cpp:1167:65: warning: 'QString& QString::sprintf(const char*, ...)' is deprecated: Use asprintf(), arg() or QTextStream instead [-Wdeprecated-declarations]
+ 1167 |     return res.sprintf("%02d:%02d:%02d", hours, minutes, seconds);
+      |                                                                 ^
+In file included from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/mainwindow.h:24,
+                 from src/mainwindow.cpp:21:
+/usr/include/qt5/QtCore/qstring.h:393:14: note: declared here
+  393 |     QString &sprintf(const char *format, ...) Q_ATTRIBUTE_FORMAT_PRINTF(2, 3);
+      |              ^~~~~~~
+src/mainwindow.cpp: In member function 'void MainWindow::runFinetune(const QVariantMap&)':
+src/mainwindow.cpp:1291:24: warning: 'QTextStream& QTextStreamFunctions::endl(QTextStream&)' is deprecated: Use Qt::endl [-Wdeprecated-declarations]
+ 1291 |         stream << s << endl;
+      |                        ^~~~
+In file included from /usr/include/qt5/QtCore/qdebug.h:49,
+                 from /usr/include/qt5/QtCore/qcborcommon.h:45,
+                 from /usr/include/qt5/QtCore/qcborvalue.h:45,
+                 from /usr/include/qt5/QtCore/qcborarray.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:38,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/mainwindow.h:24,
+                 from src/mainwindow.cpp:21:
+/usr/include/qt5/QtCore/qtextstream.h:293:75: note: declared here
+  293 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X(5, 15, "Use Qt::endl") QTextStream &endl(QTextStream &s);
+      |                                                                           ^~~~
+src/mainwindow.cpp:1291:24: warning: 'QTextStream& QTextStreamFunctions::endl(QTextStream&)' is deprecated: Use Qt::endl [-Wdeprecated-declarations]
+ 1291 |         stream << s << endl;
+      |                        ^~~~
+In file included from /usr/include/qt5/QtCore/qdebug.h:49,
+                 from /usr/include/qt5/QtCore/qcborcommon.h:45,
+                 from /usr/include/qt5/QtCore/qcborvalue.h:45,
+                 from /usr/include/qt5/QtCore/qcborarray.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:38,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/mainwindow.h:24,
+                 from src/mainwindow.cpp:21:
+/usr/include/qt5/QtCore/qtextstream.h:293:75: note: declared here
+  293 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X(5, 15, "Use Qt::endl") QTextStream &endl(QTextStream &s);
+      |                                                                           ^~~~
+src/mainwindow.cpp: In member function 'void MainWindow::runFinetune(const QString&)':
+src/mainwindow.cpp:1336:19: error: redeclaration of 'const QString baseUrl'
+ 1336 |     const QString baseUrl = QLatin1String("https://") + Constants::ORG_DOMAIN;
+      |                   ^~~~~~~
+src/mainwindow.cpp:1315:19: note: 'const QString baseUrl' previously declared here
+ 1315 |     const QString baseUrl = QLatin1String("https://") + Constants::ORG_DOMAIN;
+      |                   ^~~~~~~
+src/mainwindow.cpp: In member function 'void MainWindow::maybeShowMessageBar()':
+src/mainwindow.cpp:1554:10: warning: unused variable 'showMessages' [-Wunused-variable]
+ 1554 |     bool showMessages = settings.contains("geometry");
+      |          ^~~~~~~~~~~~
+make: *** [Makefile:2213: build/obj/src/mainwindow.o] Error 1
+make: *** Waiting for unfinished jobs....
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/spacer.o src/spacer.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/collectionscannerview.o src/collectionscannerview.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/finderwidget.o src/finderwidget.cpp
+In file included from src/model/track.h:24,
+                 from src/playlistmodel.h:24,
+                 from src/finderwidget.cpp:28:
+src/model/item.h: In member function 'virtual QPixmap Item::getThumb(int, int, qreal)':
+src/model/item.h:38:34: warning: unused parameter 'width' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                              ~~~~^~~~~
+src/model/item.h:38:45: warning: unused parameter 'height' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                         ~~~~^~~~~~
+src/model/item.h:38:59: warning: unused parameter 'pixelRatio' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                                     ~~~~~~^~~~~~~~~~
+In file included from src/finderwidget.cpp:50:
+src/searchmodel.h: In member function 'virtual int SearchModel::columnCount(const QModelIndex&) const':
+src/searchmodel.h:46:40: warning: unused parameter 'parent' [-Wunused-parameter]
+   46 |     int columnCount(const QModelIndex &parent = QModelIndex()) const { return 1; }
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src/finderwidget.cpp: In member function 'void FinderWidget::addTracksAndPlay(const QVector<Track*>&)':
+src/finderwidget.cpp:513:42: warning: 'int qrand()' is deprecated: use QRandomGenerator instead [-Wdeprecated-declarations]
+  513 |         int nextRow = (int)((float)qrand() / (float)RAND_MAX * tracks.size());
+      |                                          ^
+In file included from /usr/include/qt5/QtCore/QtCore:4,
+                 from /usr/include/qt5/QtWidgets/QtWidgetsDepends:3,
+                 from /usr/include/qt5/QtWidgets/QtWidgets:3,
+                 from src/finderwidget.h:24,
+                 from src/finderwidget.cpp:21:
+/usr/include/qt5/QtCore/qglobal.h:1279:80: note: declared here
+ 1279 | Q_CORE_EXPORT QT_DEPRECATED_VERSION_X_5_15("use QRandomGenerator instead") int qrand();
+      |                                                                                ^~~~~
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/database.o src/database.cpp
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/model/track.o src/model/track.cpp
+In file included from src/model/track.h:24,
+                 from src/model/track.cpp:21:
+src/model/item.h: In member function 'virtual QPixmap Item::getThumb(int, int, qreal)':
+src/model/item.h:38:34: warning: unused parameter 'width' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                              ~~~~^~~~~
+src/model/item.h:38:45: warning: unused parameter 'height' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                         ~~~~^~~~~~
+src/model/item.h:38:59: warning: unused parameter 'pixelRatio' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                                     ~~~~~~^~~~~~~~~~
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/collectionscanner.o src/collectionscanner.cpp
+In file included from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+src/model/item.h: In member function 'virtual QPixmap Item::getThumb(int, int, qreal)':
+src/model/item.h:38:34: warning: unused parameter 'width' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                              ~~~~^~~~~
+src/model/item.h:38:45: warning: unused parameter 'height' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                         ~~~~^~~~~~
+src/model/item.h:38:59: warning: unused parameter 'pixelRatio' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                                     ~~~~~~^~~~~~~~~~
+src/collectionscanner.cpp: In member function 'void CollectionScanner::setDirectory(const QString&)':
+src/collectionscanner.cpp:300:61: warning: 'QDir& QDir::operator=(const QString&)' is deprecated: Use QDir::setPath() instead [-Wdeprecated-declarations]
+  300 |         rootDirectory = Database::instance().collectionRoot();
+      |                                                             ^
+In file included from /usr/include/qt5/QtCore/QtCore:70,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qdir.h:110:11: note: declared here
+  110 |     QDir &operator=(const QString &path);
+      |           ^~~~~~~~
+src/collectionscanner.cpp:303:25: warning: 'QDir& QDir::operator=(const QString&)' is deprecated: Use QDir::setPath() instead [-Wdeprecated-declarations]
+  303 |         rootDirectory = directory;
+      |                         ^~~~~~~~~
+In file included from /usr/include/qt5/QtCore/QtCore:70,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qdir.h:110:11: note: declared here
+  110 |     QDir &operator=(const QString &path);
+      |           ^~~~~~~~
+src/collectionscanner.cpp: In member function 'void CollectionScanner::processTrack(FileInfo*)':
+src/collectionscanner.cpp:786:80: warning: 'QString::SkipEmptyParts' is deprecated [-Wdeprecated-declarations]
+  786 |                 genreTag.splitRef(QRegularExpression("([,/-;]| & )"), QString::SkipEmptyParts);
+      |                                                                                ^~~~~~~~~~~~~~
+In file included from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qstring.h:600:9: note: declared here
+  600 |         SkipEmptyParts Q_DECL_ENUMERATOR_DEPRECATED
+      |         ^~~~~~~~~~~~~~
+src/collectionscanner.cpp:786:80: warning: 'QString::SkipEmptyParts' is deprecated [-Wdeprecated-declarations]
+  786 |                 genreTag.splitRef(QRegularExpression("([,/-;]| & )"), QString::SkipEmptyParts);
+      |                                                                                ^~~~~~~~~~~~~~
+In file included from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qstring.h:600:9: note: declared here
+  600 |         SkipEmptyParts Q_DECL_ENUMERATOR_DEPRECATED
+      |         ^~~~~~~~~~~~~~
+src/collectionscanner.cpp:786:94: warning: 'QVector<QStringRef> QString::splitRef(const QRegularExpression&, QString::SplitBehavior) const' is deprecated: Use Qt::SplitBehavior variant instead [-Wdeprecated-declarations]
+  786 |                 genreTag.splitRef(QRegularExpression("([,/-;]| & )"), QString::SkipEmptyParts);
+      |                                                                                              ^
+In file included from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qstring.h:625:25: note: declared here
+  625 |     QVector<QStringRef> splitRef(const QRegularExpression &sep, SplitBehavior behavior) const;
+      |                         ^~~~~~~~
+In file included from /usr/include/qt5/QtCore/qlist.h:48,
+                 from /usr/include/qt5/QtCore/qobject.h:49,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qvector.h: In instantiation of 'QVector<T>::iterator QVector<T>::erase(QVector<T>::iterator, QVector<T>::iterator) [with T = QFileInfo; QVector<T>::iterator = QTypedArrayData<QFileInfo>::iterator]':
+/usr/include/qt5/QtCore/qvector.h:177:14:   required from 'int QVector<T>::removeAll(const T&) [with T = QFileInfo]'
+src/collectionscanner.cpp:198:37:   required from here
+/usr/include/qt5/QtCore/qvector.h:924:16: warning: implicitly-declared 'constexpr QTypedArrayData<QFileInfo>::iterator& QTypedArrayData<QFileInfo>::iterator::operator=(const QTypedArrayData<QFileInfo>::iterator&)' is deprecated [-Wdeprecated-copy]
+  924 |         abegin = d->begin() + itemsUntouched;
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt5/QtCore/qbytearray.h:46,
+                 from /usr/include/qt5/QtCore/qstring.h:50,
+                 from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qarraydata.h:144:16: note: because 'QTypedArrayData<QFileInfo>::iterator' has user-provided 'QTypedArrayData<T>::iterator::iterator(const QTypedArrayData<T>::iterator&) [with T = QFileInfo]'
+  144 |         inline iterator(const iterator &o): i(o.i){} // #### Qt 6: remove, the implicit version is fine
+      |                ^~~~~~~~
+In file included from /usr/include/qt5/QtCore/qlist.h:48,
+                 from /usr/include/qt5/QtCore/qobject.h:49,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qvector.h:925:14: warning: implicitly-declared 'constexpr QTypedArrayData<QFileInfo>::iterator& QTypedArrayData<QFileInfo>::iterator::operator=(const QTypedArrayData<QFileInfo>::iterator&)' is deprecated [-Wdeprecated-copy]
+  925 |         aend = abegin + itemsToErase;
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt5/QtCore/qbytearray.h:46,
+                 from /usr/include/qt5/QtCore/qstring.h:50,
+                 from /usr/include/qt5/QtCore/qobject.h:47,
+                 from /usr/include/qt5/QtCore/qabstractanimation.h:43,
+                 from /usr/include/qt5/QtCore/QtCore:6,
+                 from src/model/item.h:24,
+                 from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/collectionscanner.h:24,
+                 from src/collectionscanner.cpp:21:
+/usr/include/qt5/QtCore/qarraydata.h:144:16: note: because 'QTypedArrayData<QFileInfo>::iterator' has user-provided 'QTypedArrayData<T>::iterator::iterator(const QTypedArrayData<T>::iterator&) [with T = QFileInfo]'
+  144 |         inline iterator(const iterator &o): i(o.i){} // #### Qt 6: remove, the implicit version is fine
+      |                ^~~~~~~~
+g++ -c -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -fno-strict-aliasing -DPIC -fPIC -O3 -std=gnu++1z -fno-exceptions -Wall -Wextra -D_REENTRANT -fPIC -DAPP_VERSION=1.10 -DAPP_NAME=Musique -DAPP_UNIX_NAME=musique -DQT_NO_DEBUG_OUTPUT -DQT_USE_QSTRINGBUILDER -DQT_STRICT_ITERATORS -DQT_DEPRECATED_WARNINGS -DHTTP -DMEDIA_MPV -DMEDIA_AUDIOONLY -DAPP_LINUX -DDATADIR=\"/usr/share\" -DPKGDATADIR=\"/usr/share/musique\" -DUPDATER -DUPDATER_DEFAULT -DQT_NO_EXCEPTIONS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_DBUS_LIB -DQT_CORE_LIB -I. -Ilib/http/src -Ilib/idle/src -Ilib/js -Ilib/sharedcache -Ilib/media/src -Ilib/media/src/mpv -Isrc/tags -Isrc -Ilocale -I/usr/include/taglib -Ilib/updater/src -Ilib/updater/src/impl -I/usr/include/qt5/QtSolutions -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtSql -I/usr/include/qt5/QtDBus -I/usr/include/qt5/QtCore -Ibuild/moc -I/usr/lib64/qt5/mkspecs/linux-g++ -o build/obj/src/model/album.o src/model/album.cpp
+In file included from src/model/artist.h:24,
+                 from src/model/album.h:24,
+                 from src/model/album.cpp:21:
+src/model/item.h: In member function 'virtual QPixmap Item::getThumb(int, int, qreal)':
+src/model/item.h:38:34: warning: unused parameter 'width' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                              ~~~~^~~~~
+src/model/item.h:38:45: warning: unused parameter 'height' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                         ~~~~^~~~~~
+src/model/item.h:38:59: warning: unused parameter 'pixelRatio' [-Wunused-parameter]
+   38 |     virtual QPixmap getThumb(int width, int height, qreal pixelRatio) { return QPixmap(); }
+      |                                                     ~~~~~~^~~~~~~~~~
+src/model/album.cpp: In member function 'virtual QVector<Track*> Album::getTracks()':
+src/model/album.cpp:446:95: warning: 'int QSqlError::number() const' is deprecated [-Wdeprecated-declarations]
+  446 |         qDebug() << query.lastQuery() << query.lastError().text() << query.lastError().number();
+      |                                                                                               ^
+In file included from /usr/include/qt5/QtSql/QtSql:8,
+                 from src/model/../database.h:25,
+                 from src/model/album.cpp:24:
+/usr/include/qt5/QtSql/qsqlerror.h:83:23: note: declared here
+   83 |     QT_DEPRECATED int number() const;
+      |                       ^~~~~~
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.nr6uoJ (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.nr6uoJ (%build)
+I: [iurt_root_command] ERROR: chroot
