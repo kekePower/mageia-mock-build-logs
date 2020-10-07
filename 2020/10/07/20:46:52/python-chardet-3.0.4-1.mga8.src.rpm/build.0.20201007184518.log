@@ -1,0 +1,356 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/python-chardet-3.0.4-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.pqMIby
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf chardet-3.0.4
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/chardet-3.0.4.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd chardet-3.0.4
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ rm -rf chardet.egg-info
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.4jxfrx
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd chardet-3.0.4
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py build '--executable=/usr/bin/python3 -s'
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/chardet
+copying chardet/__init__.py -> build/lib/chardet
+copying chardet/big5freq.py -> build/lib/chardet
+copying chardet/big5prober.py -> build/lib/chardet
+copying chardet/chardistribution.py -> build/lib/chardet
+copying chardet/charsetgroupprober.py -> build/lib/chardet
+copying chardet/charsetprober.py -> build/lib/chardet
+copying chardet/codingstatemachine.py -> build/lib/chardet
+copying chardet/compat.py -> build/lib/chardet
+copying chardet/cp949prober.py -> build/lib/chardet
+copying chardet/enums.py -> build/lib/chardet
+copying chardet/escprober.py -> build/lib/chardet
+copying chardet/escsm.py -> build/lib/chardet
+copying chardet/eucjpprober.py -> build/lib/chardet
+copying chardet/euckrfreq.py -> build/lib/chardet
+copying chardet/euckrprober.py -> build/lib/chardet
+copying chardet/euctwfreq.py -> build/lib/chardet
+copying chardet/euctwprober.py -> build/lib/chardet
+copying chardet/gb2312freq.py -> build/lib/chardet
+copying chardet/gb2312prober.py -> build/lib/chardet
+copying chardet/hebrewprober.py -> build/lib/chardet
+copying chardet/jisfreq.py -> build/lib/chardet
+copying chardet/jpcntx.py -> build/lib/chardet
+copying chardet/langbulgarianmodel.py -> build/lib/chardet
+copying chardet/langcyrillicmodel.py -> build/lib/chardet
+copying chardet/langgreekmodel.py -> build/lib/chardet
+copying chardet/langhebrewmodel.py -> build/lib/chardet
+copying chardet/langhungarianmodel.py -> build/lib/chardet
+copying chardet/langthaimodel.py -> build/lib/chardet
+copying chardet/langturkishmodel.py -> build/lib/chardet
+copying chardet/latin1prober.py -> build/lib/chardet
+copying chardet/mbcharsetprober.py -> build/lib/chardet
+copying chardet/mbcsgroupprober.py -> build/lib/chardet
+copying chardet/mbcssm.py -> build/lib/chardet
+copying chardet/sbcharsetprober.py -> build/lib/chardet
+copying chardet/sbcsgroupprober.py -> build/lib/chardet
+copying chardet/sjisprober.py -> build/lib/chardet
+copying chardet/universaldetector.py -> build/lib/chardet
+copying chardet/utf8prober.py -> build/lib/chardet
+copying chardet/version.py -> build/lib/chardet
+creating build/lib/chardet/cli
+copying chardet/cli/__init__.py -> build/lib/chardet/cli
+copying chardet/cli/chardetect.py -> build/lib/chardet/cli
++ PYTHONPATH=/home/stig/rpmbuild/BUILD/chardet-3.0.4
++ sphinx-build-3 docs html
+Running Sphinx v3.2.1
+making output directory... done
+WARNING: html_static_path entry '_static' does not exist
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 7 source files that are out of date
+updating environment: [new config] 7 added, 0 changed, 0 removed
+reading sources... [ 14%] api/chardet
+reading sources... [ 28%] api/modules
+reading sources... [ 42%] faq
+reading sources... [ 57%] how-it-works
+reading sources... [ 71%] index
+reading sources... [ 85%] supported-encodings
+reading sources... [100%] usage
+
+WARNING: autodoc: failed to import module 'chardetect' from module 'chardet'; the following exception was raised:
+No module named 'chardet.chardetect'
+WARNING: autodoc: failed to import module 'constants' from module 'chardet'; the following exception was raised:
+No module named 'chardet.constants'
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 14%] api/chardet
+writing output... [ 28%] api/modules
+writing output... [ 42%] faq
+writing output... [ 57%] how-it-works
+writing output... [ 71%] index
+writing output... [ 85%] supported-encodings
+writing output... [100%] usage
+
+generating indices...  genindex py-modindexdone
+highlighting module code... [  4%] chardet
+highlighting module code... [  9%] chardet.big5prober
+highlighting module code... [ 13%] chardet.chardistribution
+highlighting module code... [ 18%] chardet.charsetgroupprober
+highlighting module code... [ 22%] chardet.charsetprober
+highlighting module code... [ 27%] chardet.codingstatemachine
+highlighting module code... [ 31%] chardet.cp949prober
+highlighting module code... [ 36%] chardet.escprober
+highlighting module code... [ 40%] chardet.eucjpprober
+highlighting module code... [ 45%] chardet.euckrprober
+highlighting module code... [ 50%] chardet.euctwprober
+highlighting module code... [ 54%] chardet.gb2312prober
+highlighting module code... [ 59%] chardet.hebrewprober
+highlighting module code... [ 63%] chardet.jpcntx
+highlighting module code... [ 68%] chardet.latin1prober
+highlighting module code... [ 72%] chardet.mbcharsetprober
+highlighting module code... [ 77%] chardet.mbcsgroupprober
+highlighting module code... [ 81%] chardet.sbcharsetprober
+highlighting module code... [ 86%] chardet.sbcsgroupprober
+highlighting module code... [ 90%] chardet.sjisprober
+highlighting module code... [ 95%] chardet.universaldetector
+highlighting module code... [100%] chardet.utf8prober
+
+writing additional pages...  searchdone
+copying static files... ... done
+copying extra files... done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded, 3 warnings.
+
+The HTML pages are in html.
++ rm -rf html/.doctrees html/.buildinfo
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.612Ysy
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64
++ cd chardet-3.0.4
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/python3 setup.py install -O1 --skip-build --root /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64
+running install
+running install_lib
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/__init__.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/big5freq.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/big5prober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/chardistribution.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/charsetgroupprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/charsetprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/codingstatemachine.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/compat.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/cp949prober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/enums.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/escprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/escsm.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/eucjpprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/euckrfreq.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/euckrprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/euctwfreq.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/euctwprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/gb2312freq.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/gb2312prober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/hebrewprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/jisfreq.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/jpcntx.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langbulgarianmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langcyrillicmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langgreekmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langhebrewmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langhungarianmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langthaimodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/langturkishmodel.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/latin1prober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/mbcharsetprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/mbcsgroupprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/mbcssm.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/sbcharsetprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/sbcsgroupprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/sjisprober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/universaldetector.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/utf8prober.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+copying build/lib/chardet/version.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet
+creating /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cli
+copying build/lib/chardet/cli/__init__.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cli
+copying build/lib/chardet/cli/chardetect.py -> /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cli
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/big5freq.py to big5freq.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/big5prober.py to big5prober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/chardistribution.py to chardistribution.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/charsetgroupprober.py to charsetgroupprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/charsetprober.py to charsetprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/codingstatemachine.py to codingstatemachine.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/compat.py to compat.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cp949prober.py to cp949prober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/enums.py to enums.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/escprober.py to escprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/escsm.py to escsm.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/eucjpprober.py to eucjpprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/euckrfreq.py to euckrfreq.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/euckrprober.py to euckrprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/euctwfreq.py to euctwfreq.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/euctwprober.py to euctwprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/gb2312freq.py to gb2312freq.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/gb2312prober.py to gb2312prober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/hebrewprober.py to hebrewprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/jisfreq.py to jisfreq.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/jpcntx.py to jpcntx.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langbulgarianmodel.py to langbulgarianmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langcyrillicmodel.py to langcyrillicmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langgreekmodel.py to langgreekmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langhebrewmodel.py to langhebrewmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langhungarianmodel.py to langhungarianmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langthaimodel.py to langthaimodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/langturkishmodel.py to langturkishmodel.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/latin1prober.py to latin1prober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/mbcharsetprober.py to mbcharsetprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/mbcsgroupprober.py to mbcsgroupprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/mbcssm.py to mbcssm.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/sbcharsetprober.py to sbcharsetprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/sbcsgroupprober.py to sbcsgroupprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/sjisprober.py to sjisprober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/universaldetector.py to universaldetector.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/utf8prober.py to utf8prober.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/version.py to version.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cli/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet/cli/chardetect.py to chardetect.cpython-38.pyc
+writing byte-compilation script '/tmp/tmpwp1yz40p.py'
+/usr/bin/python3 /tmp/tmpwp1yz40p.py
+removing /tmp/tmpwp1yz40p.py
+running install_egg_info
+running egg_info
+creating chardet.egg-info
+writing chardet.egg-info/PKG-INFO
+writing dependency_links to chardet.egg-info/dependency_links.txt
+writing entry points to chardet.egg-info/entry_points.txt
+writing top-level names to chardet.egg-info/top_level.txt
+writing manifest file 'chardet.egg-info/SOURCES.txt'
+reading manifest file 'chardet.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching 'requirements.txt'
+writing manifest file 'chardet.egg-info/SOURCES.txt'
+Copying chardet.egg-info to /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8/site-packages/chardet-3.0.4-py3.8.egg-info
+running install_scripts
+Installing chardetect script to /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/bin
++ rm -rfv /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/bin/__pycache__
++ /usr/lib/rpm/find-debuginfo.sh -j8 --strict-build-id -m -i --build-id-seed 3.0.4-1.mga8 --unique-debug-suffix -3.0.4-1.mga8.x86_64 --unique-debug-src-base python-chardet-3.0.4-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/chardet-3.0.4
+
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
+Bytecompiling .py files below /home/stig/rpmbuild/BUILDROOT/python-chardet-3.0.4-1.mga8.x86_64/usr/lib/python3.8 using /usr/bin/python3.8
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.YgCLGA
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd chardet-3.0.4
++ '[' 1 -eq 1 ']'
++ /usr/bin/python3 setup.py test
+WARNING: The pip package is not available, falling back to EasyInstall for handling setup_requires/test_requires; this is deprecated and will be removed in a future version.
+Download error on https://pypi.org/simple/pytest-runner/: [Errno -2] Name or service not known -- Some packages may not be found!
+Couldn't find index page for 'pytest-runner' (maybe misspelled?)
+Download error on https://pypi.org/simple/: [Errno -2] Name or service not known -- Some packages may not be found!
+No local packages or working download links found for pytest-runner
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/setuptools/installer.py", line 60, in fetch_build_egg
+    pkg_resources.get_distribution('pip')
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 465, in get_distribution
+    dist = get_provider(dist)
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 341, in get_provider
+    return working_set.find(moduleOrReq) or require(str(moduleOrReq))[0]
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 884, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 770, in resolve
+    raise DistributionNotFound(req, requirers)
+pkg_resources.DistributionNotFound: The 'pip' distribution was not found and is required by the application
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "setup.py", line 24, in <module>
+    setup(name='chardet',
+  File "/usr/lib/python3.8/site-packages/setuptools/__init__.py", line 152, in setup
+    _install_setup_requires(attrs)
+  File "/usr/lib/python3.8/site-packages/setuptools/__init__.py", line 147, in _install_setup_requires
+    dist.fetch_build_eggs(dist.setup_requires)
+  File "/usr/lib/python3.8/site-packages/setuptools/dist.py", line 673, in fetch_build_eggs
+    resolved_dists = pkg_resources.working_set.resolve(
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 764, in resolve
+    dist = best[req.key] = env.best_match(
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 1049, in best_match
+    return self.obtain(req, installer)
+  File "/usr/lib/python3.8/site-packages/pkg_resources/__init__.py", line 1061, in obtain
+    return installer(requirement)
+  File "/usr/lib/python3.8/site-packages/setuptools/dist.py", line 732, in fetch_build_egg
+    return fetch_build_egg(self, req)
+  File "/usr/lib/python3.8/site-packages/setuptools/installer.py", line 68, in fetch_build_egg
+    return _legacy_fetch_build_egg(dist, req)
+  File "/usr/lib/python3.8/site-packages/setuptools/installer.py", line 51, in _legacy_fetch_build_egg
+    return cmd.easy_install(req)
+  File "/usr/lib/python3.8/site-packages/setuptools/command/easy_install.py", line 663, in easy_install
+    raise DistutilsError(msg)
+distutils.errors.DistutilsError: Could not find suitable distribution for Requirement.parse('pytest-runner')
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.YgCLGA (%check)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.YgCLGA (%check)
+I: [iurt_root_command] ERROR: chroot
