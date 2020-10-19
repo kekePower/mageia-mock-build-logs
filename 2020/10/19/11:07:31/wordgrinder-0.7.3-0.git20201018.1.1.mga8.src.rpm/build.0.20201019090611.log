@@ -1,0 +1,97 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/wordgrinder-0.7.3-0.git20201018.1.1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3c301Y
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf wordgrinder-master
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/wordgrinder-0.7.3.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd wordgrinder-master
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ /usr/bin/cat /home/stig/rpmbuild/SOURCES/makefile.patch
++ /usr/bin/patch -p1 -s --fuzz=0 --no-backup-if-mismatch
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.h2FOV1
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd wordgrinder-master
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ export WANT_STRIPPED_BINARIES=no
++ WANT_STRIPPED_BINARIES=no
++ export 'CFLAG=S-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ CFLAG='S-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export 'LDFLAGS= -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ /usr/bin/make -O -j8 V=1 VERBOSE=1 all PREFIX=/usr DESTDIR=/home/stig/rpmbuild/BUILDROOT/wordgrinder-0.7.3-0.git20201018.1.1.mga8.x86_64/usr OBJDIR=/home/stig/rpmbuild/BUILD/tmp LUA_PACKAGE=lua MINIZIP_PACKAGE=minizip 'UTHASH_PACKAGE=--cflags={} --libs={}'
+Bootstrapping build
+Windows toolchain: not found (WINCC=false, WINDRES=false, MAKENSIS=false)
+Detecting Curses in package 'ncursesw': found
+Detecting FreeType2 in package 'freetype2': found
+Detecting Xft in package '--cflags={-I/usr/include/X11} --libs={-lX11 -lXft}': found
+Detecting Minizip in package 'minizip': found
+Detecting lpeg in package 'builtin': found
+Detecting uthash in package '--cflags={} --libs={}': found
+Detecting LuaBitOp in package 'builtin': found
+Detecting Lua in package 'lua': found
+Detecting Lua in package 'builtin': found
+Detecting Lua in package 'lua-5.1': not found
+Detecting Lua in package 'lua-5.2': not found
+Detecting Lua in package 'lua-5.3': not found
+Detecting Lua in package 'luajit': not found
+The preferred Lua package is: 'lua'
+[1/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/luabitop/lua-bitop.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/emu/luabitop/lua-bitop.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/luabitop/lua-bitop.o
+[2/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/main.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/main.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/main.o
+[3/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/zip.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/zip.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/zip.o
+[4/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/x11.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/arch/unix/x11/x11.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/x11.o
+FAILED: /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/x11.o 
+cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/x11.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/arch/unix/x11/x11.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/x11.o
+In file included from src/c/arch/unix/x11/x11.c:13:
+src/c/arch/unix/x11/x11.h:11:10: fatal error: uthash.h: No such file or directory
+   11 | #include "uthash.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+[5/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/screen.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/screen.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/screen.o
+[6/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/filesystem.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/filesystem.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/filesystem.o
+[7/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/utils.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/utils.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/utils.o
+[8/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/glyphcache.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/arch/unix/x11/glyphcache.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/glyphcache.o
+FAILED: /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/glyphcache.o 
+cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/glyphcache.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/arch/unix/x11/glyphcache.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/arch/unix/x11/glyphcache.o
+In file included from src/c/arch/unix/x11/glyphcache.c:7:
+src/c/arch/unix/x11/x11.h:11:10: fatal error: uthash.h: No such file or directory
+   11 | #include "uthash.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+[9/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/lua.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/lua.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/lua.o
+[10/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/word.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/word.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/word.o
+[11/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/lpeg/lpvm.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/emu/lpeg/lpvm.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/lpeg/lpvm.o
+[12/117] cc -MMD -MF /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/lpeg/lpcap.o.d -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -g -DVERSION='"0.8"' -DFILEFORMAT=8 -DNOUNCRYPT -DNOCRYPT -Isrc/c -Wall -Wno-unused-function -ffunction-sections -fdata-sections -Werror=implicit-function-declaration --std=gnu99 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/X11 -Os  -Isrc/c/emu/luabitop  -DARCH='"unix"' -I/usr/include/minizip -Isrc/c/emu/lpeg -c src/c/emu/lpeg/lpcap.c -o /home/stig/rpmbuild/BUILD/tmp/lua-x11-release/src/c/emu/lpeg/lpcap.o
+[13/117] /home/stig/rpmbuild/BUILD/tmp/lua tools/multibin2c.lua script_table src/lua/_prologue.lua src/lua/events.lua src/lua/main.lua src/lua/xml.lua src/lua/utils.lua src/lua/redraw.lua src/lua/settings.lua src/lua/document.lua src/lua/forms.lua src/lua/ui.lua src/lua/browser.lua src/lua/html.lua src/lua/margin.lua src/lua/xpattern.lua src/lua/fileio.lua src/lua/export.lua src/lua/export/text.lua src/lua/export/html.lua src/lua/export/latex.lua src/lua/export/troff.lua src/lua/export/opendocument.lua src/lua/export/markdown.lua src/lua/import.lua src/lua/import/html.lua src/lua/import/text.lua src/lua/import/opendocument.lua src/lua/import/markdown.lua src/lua/navigate.lua src/lua/addons/goto.lua src/lua/addons/autosave.lua src/lua/addons/docsetman.lua src/lua/addons/scrapbook.lua src/lua/addons/statusbar_charstyle.lua src/lua/addons/statusbar_pagecount.lua src/lua/addons/statusbar_position.lua src/lua/addons/statusbar_wordcount.lua src/lua/addons/debug.lua src/lua/addons/look-and-feel.lua src/lua/addons/keymapoverride.lua src/lua/addons/smartquotes.lua src/lua/addons/undo.lua src/lua/addons/spillchocker.lua src/lua/addons/templates.lua src/lua/addons/directories.lua src/lua/addons/recents.lua src/lua/menu.lua src/lua/cli.lua src/lua/lunamark/util.lua src/lua/lunamark/entities.lua src/lua/lunamark/markdown.lua > /home/stig/rpmbuild/BUILD/tmp/luascripts.c
+ninja: build stopped: subcommand failed.
+make: *** [Makefile:124: all] Error 1
+error: Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.h2FOV1 (%build)
+
+
+RPM build errors:
+    Bad exit status from /home/stig/rpmbuild/tmp/rpm-tmp.h2FOV1 (%build)
+I: [iurt_root_command] ERROR: chroot
