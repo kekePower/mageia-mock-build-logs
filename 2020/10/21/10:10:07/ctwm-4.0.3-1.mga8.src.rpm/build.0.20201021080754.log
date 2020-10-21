@@ -1,0 +1,617 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/ctwm-4.0.3-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.Erw7Wb
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ctwm-4.0.3
++ /usr/bin/xz -dc /home/stig/rpmbuild/SOURCES/ctwm-4.0.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd ctwm-4.0.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.KxvWib
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ctwm-4.0.3
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ /usr/bin/cmake -Wno-dev -S . -B build -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_LIBDIR:PATH=/usr/lib64 -DCMAKE_INSTALL_LIBEXECDIR:PATH=/usr/libexec -DCMAKE_INSTALL_RUNSTATEDIR:PATH=/run -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc -DINCLUDE_INSTALL_DIR:PATH=/usr/include -DLIB_INSTALL_DIR:PATH=/usr/lib64 -DSYSCONF_INSTALL_DIR:PATH=/etc -DSHARE_INSTALL_PREFIX:PATH=/usr/share -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DCMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-DNDEBUG -DLIB_SUFFIX=64 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON '-DCMAKE_MODULE_LINKER_FLAGS=-Wl,--as-needed  -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags' -DBUILD_SHARED_LIBS:BOOL=ON -DBUILD_STATIC_LIBS:BOOL=OFF
+-- The C compiler identification is GNU 10.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test COMPILER_C99_FLAG
+-- Performing Test COMPILER_C99_FLAG - Success
+-- Enabling C99 flag: -std=c99
+-- Looking for include file features.h
+-- Looking for include file features.h - found
+-- Looking for __USE_ISOC99
+-- Looking for __USE_ISOC99 - found
+-- Looking for __GNU_LIBRARY__
+-- Looking for __GNU_LIBRARY__ - found
+-- Enabling glibc feature macros: -D_POSIX_C_SOURCE=200809L;-D_XOPEN_SOURCE=700;-D_GNU_SOURCE
+-- Performing Test COMPILER_TAKES_WALL
+-- Performing Test COMPILER_TAKES_WALL - Success
+-- Enabling standard warnings.
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Enabling XPM support: /usr/lib64/libXpm.so
+-- Found JPEG: /usr/lib64/libjpeg.so (found version "80") 
+-- Enabling libjpeg support.
+-- Enabling m4 support (/usr/bin/m4).
+-- Enabling Extended Window Manager Hints support.
+-- Looking for include file regex.h
+-- Looking for include file regex.h - found
+-- Looking for regexec
+-- Looking for regexec - found
+-- Enabling libc regex usage.
+-- Looking for include file getopt.h
+-- Looking for include file getopt.h - found
+-- Looking for getopt_long
+-- Looking for getopt_long - found
+-- Looking for asprintf
+-- Looking for asprintf - found
+-- You aren't building from a bzr checkout.
+-- Found FLEX: /usr/bin/flex (found version "2.6.4") 
+-- Found BISON: /usr/bin/bison (found version "3.7.3") 
+-- Found asciidoctor (/usr/bin/asciidoctor) version 2.0.10
+-- Building manpage with asciidoctor.
+-- Building HTML manual with asciidoctor.
+-- Found Doxygen: /usr/bin/doxygen (found version "1.8.20") found components: doxygen dot 
+-- Found ctags: /usr/bin/ctags
+-- System-wide config in      /usr/etc
+-- Installing ctwm in         /usr/bin
+-- Installing runtime data in /usr/share/ctwm
+-- Installing docs in         /usr/share/doc/ctwm
+-- Installing examples in     /usr/share/examples/ctwm
+-- Installing manpage to      /usr/share/man/man1
+-- Building for ctwm version 4.0.3
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_CXX_FLAGS_RELWITHDEBINFO
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    INCLUDE_INSTALL_DIR
+    LIB_INSTALL_DIR
+    LIB_SUFFIX
+    SHARE_INSTALL_PREFIX
+    SYSCONF_INSTALL_DIR
+
+
+-- Build files have been written to: /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build
++ /usr/bin/cmake --build build -j8 --verbose
+/usr/bin/cmake -S/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -B/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/mk_adoc_tmpsrc.dir/build.make CMakeFiles/mk_adoc_tmpsrc.dir/depend
+/usr/bin/gmake  -f CMakeFiles/ctwmlib.dir/build.make CMakeFiles/ctwmlib.dir/depend
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/mk_adoc_tmpsrc.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/mk_adoc_tmpsrc.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/mk_adoc_tmpsrc.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/mk_adoc_tmpsrc.dir/depend.internal".
+Scanning dependencies of target mk_adoc_tmpsrc
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/mk_adoc_tmpsrc.dir/build.make CMakeFiles/mk_adoc_tmpsrc.dir/build
+[  1%] Writing version info into version.c.in
+[  2%] Generating ctwm_atoms.h, ctwm_atoms.c
+[  3%] Generating deftwmrc.c
+../tools/mk_version_in.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/gen/version.c.in > /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/version.c.in
+[  4%] [BISON][ctwm_parser] Building parser with bison 3.7.3
+[  6%] [FLEX][ctwm_lexer] Building scanner with flex 2.6.4
+../tools/mk_atoms.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ctwm_atoms.in ctwm_atoms CTWM
+../tools/mk_deftwmrc.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/system.ctwmrc > /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/deftwmrc.c
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[  7%] Generating ewmh_atoms.h, ewmh_atoms.c
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3 && /usr/bin/bison -d -b gram -d -o /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/gram.tab.c gram.y
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3 && /usr/bin/flex -o/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/lex.c lex.l
+[  8%] Generating event_names_table.h
+../tools/mk_atoms.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ewmh_atoms.in ewmh_atoms EWMH
+../tools/mk_event_names.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/event_names.list > /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/event_names_table.h
+[  9%] Processing ctwm.1.adoc -> mantmp/ctwm.1.adoc
+sed -e "s,@ETCDIR@,/usr/etc," -e "s,@ctwm_version_str@,`head -1 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/VERSION`," < /home/stig/rpmbuild/BUILD/ctwm-4.0.3/doc/manual/ctwm.1.adoc > /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/mantmp/ctwm.1.adoc
+[ 10%] Generating functions_defs.h, functions_deferral.h, functions_parse_table.h, functions_dispatch_execution.h
+../tools/mk_function_bits.sh /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_defs.list /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build
+gram.y: warning: 10 shift/reduce conflicts [-Wconflicts-sr]
+gram.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 12%] Using pregenerated version.c.
+cp /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/version.c.in /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/version.c
+[ 12%] Built target mk_adoc_tmpsrc
+/usr/bin/gmake  -f CMakeFiles/man-html.dir/build.make CMakeFiles/man-html.dir/depend
+/usr/bin/gmake  -f CMakeFiles/man.dir/build.make CMakeFiles/man.dir/depend
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man-html.dir/DependInfo.cmake --color=
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man-html.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man-html.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/man-html.dir/depend.internal".
+Scanning dependencies of target man
+Scanning dependencies of target man-html
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/man.dir/build.make CMakeFiles/man.dir/build
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/man-html.dir/build.make CMakeFiles/man-html.dir/build
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 14%] Generating ctwm.1 with asciidoctor
+[ 14%] Generating ctwm.1.html with asciidoctor
+/usr/bin/asciidoctor -atoc -anumbered -o /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ctwm.1.html /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/mantmp/ctwm.1.adoc
+/usr/bin/asciidoctor -b manpage -o /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ctwm.1 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/mantmp/ctwm.1.adoc
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwmlib.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwmlib.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwmlib.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwmlib.dir/depend.internal".
+Scanning dependencies of target ctwmlib
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/ctwmlib.dir/build.make CMakeFiles/ctwmlib.dir/build
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 16%] Building C object CMakeFiles/ctwmlib.dir/add_window.c.o
+[ 18%] Building C object CMakeFiles/ctwmlib.dir/animate.c.o
+[ 18%] Building C object CMakeFiles/ctwmlib.dir/captive.c.o
+[ 19%] Building C object CMakeFiles/ctwmlib.dir/clargs.c.o
+[ 20%] Building C object CMakeFiles/ctwmlib.dir/clicktofocus.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/add_window.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/add_window.c
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/animate.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/animate.c
+[ 21%] Building C object CMakeFiles/ctwmlib.dir/colormaps.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/captive.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/clargs.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/clargs.c
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/clicktofocus.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/clicktofocus.c
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/colormaps.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/colormaps.c
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c: In function 'RedirectToCaptive':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c:114:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  114 |   asprintf(&atomname, "WM_CTWM_ROOT_%s", value.addr);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c: In function 'AddToCaptiveList':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c:382:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  382 |   asprintf(&rcname, "ctwm-%d", i);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/captive.c:406:2: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  406 |  asprintf(&atomname, "WM_CTWM_ROOT_%s", rcname);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 22%] Building C object CMakeFiles/ctwmlib.dir/ctopts.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ctopts.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ctopts.c
+[ 24%] Compressing ctwm.1.gz
+/usr/bin/gzip -nc /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ctwm.1 > /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ctwm.1.gz
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 25%] Built target man-html
+[ 26%] Building C object CMakeFiles/ctwmlib.dir/ctwm_main.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ctwm_main.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ctwm_main.c
+[ 27%] Building C object CMakeFiles/ctwmlib.dir/cursor.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/cursor.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/cursor.c
+[ 28%] Building C object CMakeFiles/ctwmlib.dir/drawing.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/drawing.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/drawing.c
+[ 30%] Building C object CMakeFiles/ctwmlib.dir/event_core.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/event_core.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/event_core.c
+[ 31%] Built target man
+[ 32%] Building C object CMakeFiles/ctwmlib.dir/event_handlers.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/event_handlers.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/event_handlers.c
+[ 33%] Building C object CMakeFiles/ctwmlib.dir/event_names.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/event_names.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/event_names.c
+[ 34%] Building C object CMakeFiles/ctwmlib.dir/event_utils.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/event_utils.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/event_utils.c
+[ 36%] Building C object CMakeFiles/ctwmlib.dir/functions.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions.c
+[ 37%] Building C object CMakeFiles/ctwmlib.dir/functions_captive.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_captive.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_captive.c
+[ 38%] Building C object CMakeFiles/ctwmlib.dir/functions_icmgr_wsmgr.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_icmgr_wsmgr.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_icmgr_wsmgr.c
+[ 39%] Building C object CMakeFiles/ctwmlib.dir/functions_identify.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_identify.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_identify.c
+[ 40%] Building C object CMakeFiles/ctwmlib.dir/functions_misc.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_misc.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_misc.c
+[ 42%] Building C object CMakeFiles/ctwmlib.dir/functions_warp.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_warp.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_warp.c
+[ 43%] Building C object CMakeFiles/ctwmlib.dir/functions_win.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_win.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_win.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_misc.c: In function 'Execute':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_misc.c:410:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  410 |    asprintf(&new_display, "%s.%d", ds, Scr->screen);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_misc.c:453:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  453 |    asprintf(&redir, "-xrm 'ctwm.redirect:%s'", Scr->captivename);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_misc.c:477:2: warning: ignoring return value of 'system' declared with attribute 'warn_unused_result' [-Wunused-result]
+  477 |  system(s);
+      |  ^~~~~~~~~
+[ 44%] Building C object CMakeFiles/ctwmlib.dir/functions_win_moveresize.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_win_moveresize.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_win_moveresize.c
+[ 45%] Building C object CMakeFiles/ctwmlib.dir/functions_workspaces.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/functions_workspaces.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/functions_workspaces.c
+[ 46%] Building C object CMakeFiles/ctwmlib.dir/gc.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/gc.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/gc.c
+[ 48%] Building C object CMakeFiles/ctwmlib.dir/iconmgr.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/iconmgr.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/iconmgr.c
+[ 49%] Building C object CMakeFiles/ctwmlib.dir/icons.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/icons.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/icons.c
+[ 50%] Building C object CMakeFiles/ctwmlib.dir/icons_builtin.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/icons_builtin.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/icons_builtin.c
+[ 51%] Building C object CMakeFiles/ctwmlib.dir/image.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image.c
+[ 53%] Building C object CMakeFiles/ctwmlib.dir/image_bitmap.c.o
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/iconmgr.c: In function 'CreateIconManagers':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/iconmgr.c:151:6: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  151 |      asprintf(&icon_name, "%s Icons", p->name);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image_bitmap.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_bitmap.c
+[ 54%] Building C object CMakeFiles/ctwmlib.dir/image_bitmap_builtin.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image_bitmap_builtin.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_bitmap_builtin.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_bitmap.c: In function 'FindBitmap':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_bitmap.c:121:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  121 |   asprintf(&bigname, "%s/%s", Scr->IconDirectory, name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image.c: In function 'ExpandPixmapPath':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image.c:212:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  212 |   asprintf(&ret, "%s/%s", Home, name + 2);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image.c:235:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  235 |    asprintf(&ret, "%s/%s", p, name);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/image.c:244:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  244 |   asprintf(&ret, "%s/%s", p, name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 55%] Building C object CMakeFiles/ctwmlib.dir/image_xwd.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image_xwd.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_xwd.c
+[ 56%] Building C object CMakeFiles/ctwmlib.dir/list.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/list.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/list.c
+[ 57%] Building C object CMakeFiles/ctwmlib.dir/mask_screen.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/mask_screen.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/mask_screen.c
+[ 59%] Building C object CMakeFiles/ctwmlib.dir/menus.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/menus.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/menus.c
+[ 60%] Building C object CMakeFiles/ctwmlib.dir/mwmhints.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/mwmhints.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/mwmhints.c
+[ 61%] Building C object CMakeFiles/ctwmlib.dir/occupation.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/occupation.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/occupation.c
+[ 62%] Building C object CMakeFiles/ctwmlib.dir/otp.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/otp.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/otp.c
+[ 63%] Building C object CMakeFiles/ctwmlib.dir/parse.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/parse.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/menus.c: In function 'MakeWorkspacesMenu':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/menus.c:457:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  457 |    asprintf(act, "WGOTO : %s", wlist->name);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/menus.c: In function 'PopUpMenu':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/menus.c:1327:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+ 1327 |    asprintf(&tmpStr, "[%s + %s] %s", tmpKey->name, modStr, tmpKey->action);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse.c: In function 'LoadTwmrc':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse.c:153:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  153 |   asprintf(&tryname, "%s.%d", filename, Scr->screen);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse.c:170:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  170 |   asprintf(&tryname, "%s/.ctwmrc.%d", Home, Scr->screen);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 65%] Building C object CMakeFiles/ctwmlib.dir/parse_be.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/parse_be.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_be.c
+[ 66%] Building C object CMakeFiles/ctwmlib.dir/parse_yacc.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/parse_yacc.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_yacc.c
+[ 67%] Building C object CMakeFiles/ctwmlib.dir/session.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/session.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/session.c
+[ 68%] Building C object CMakeFiles/ctwmlib.dir/util.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/util.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/util.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/session.c: In function 'unique_filename':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/session.c:846:2: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  846 |  asprintf(&tempFile, "%s/%sXXXXXX", path, prefix);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/util.c: In function 'ExpandFilename':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/util.c:140:2: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  140 |  asprintf(&newname, "%s/%s", Home, &name[1]);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/util.c: In function 'GetFont':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/util.c:293:2: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  293 |  asprintf(&basename2, "%s,*", font->basename);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 69%] Building C object CMakeFiles/ctwmlib.dir/vscreen.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/vscreen.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/vscreen.c
+[ 71%] Building C object CMakeFiles/ctwmlib.dir/win_decorations.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_decorations.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_decorations.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/vscreen.c: In function 'InitVirtualScreens':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/vscreen.c:55:4: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+   55 |    asprintf(&scr->VirtualScreens->name, "%dx%d+0+0",
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |             scr->rootw, scr->rooth);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~
+[ 72%] Building C object CMakeFiles/ctwmlib.dir/win_decorations_init.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_decorations_init.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_decorations_init.c
+[ 73%] Building C object CMakeFiles/ctwmlib.dir/win_iconify.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_iconify.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_iconify.c
+[ 74%] Building C object CMakeFiles/ctwmlib.dir/win_ops.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_ops.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_ops.c
+[ 75%] Building C object CMakeFiles/ctwmlib.dir/win_regions.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_regions.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_regions.c
+[ 77%] Building C object CMakeFiles/ctwmlib.dir/win_resize.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_resize.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_resize.c
+[ 78%] Building C object CMakeFiles/ctwmlib.dir/win_utils.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/win_utils.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/win_utils.c
+[ 79%] Building C object CMakeFiles/ctwmlib.dir/windowbox.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/windowbox.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/windowbox.c
+[ 80%] Building C object CMakeFiles/ctwmlib.dir/workspace_config.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/workspace_config.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/workspace_config.c
+[ 81%] Building C object CMakeFiles/ctwmlib.dir/workspace_manager.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/workspace_manager.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/workspace_manager.c
+[ 83%] Building C object CMakeFiles/ctwmlib.dir/workspace_utils.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/workspace_utils.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/workspace_utils.c
+[ 84%] Building C object CMakeFiles/ctwmlib.dir/ext/repl_str.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ext/repl_str.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ext/repl_str.c
+[ 85%] Building C object CMakeFiles/ctwmlib.dir/ctwm_atoms.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ctwm_atoms.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ctwm_atoms.c
+[ 86%] Building C object CMakeFiles/ctwmlib.dir/deftwmrc.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/deftwmrc.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/deftwmrc.c
+[ 87%] Building C object CMakeFiles/ctwmlib.dir/gram.tab.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/gram.tab.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/gram.tab.c
+[ 89%] Building C object CMakeFiles/ctwmlib.dir/lex.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/lex.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/lex.c
+[ 90%] Building C object CMakeFiles/ctwmlib.dir/version.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/version.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/version.c
+[ 91%] Building C object CMakeFiles/ctwmlib.dir/image_xpm.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image_xpm.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_xpm.c
+[ 92%] Building C object CMakeFiles/ctwmlib.dir/image_jpeg.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/image_jpeg.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/image_jpeg.c
+[ 93%] Building C object CMakeFiles/ctwmlib.dir/parse_m4.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/parse_m4.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_m4.c
+[ 95%] Building C object CMakeFiles/ctwmlib.dir/ewmh.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ewmh.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ewmh.c
+[ 96%] Building C object CMakeFiles/ctwmlib.dir/ewmh_atoms.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwmlib.dir/ewmh_atoms.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/ewmh_atoms.c
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_m4.c: In function 'start_m4':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_m4.c:38:2: warning: ignoring return value of 'pipe' declared with attribute 'warn_unused_result' [-Wunused-result]
+   38 |  pipe(fids);
+      |  ^~~~~~~~~~
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_m4.c: In function 'm4_defs':
+/home/stig/rpmbuild/BUILD/ctwm-4.0.3/parse_m4.c:107:3: warning: ignoring return value of 'asprintf' declared with attribute 'warn_unused_result' [-Wunused-result]
+  107 |   asprintf(&tmp_name, "%s/ctwmrc.XXXXXXXX", td);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 97%] Linking C static library libctwmlib.a
+/usr/bin/cmake -P CMakeFiles/ctwmlib.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/ctwmlib.dir/link.txt --verbose=1
+/usr/bin/ar qc libctwmlib.a CMakeFiles/ctwmlib.dir/add_window.c.o CMakeFiles/ctwmlib.dir/animate.c.o CMakeFiles/ctwmlib.dir/captive.c.o CMakeFiles/ctwmlib.dir/clargs.c.o CMakeFiles/ctwmlib.dir/clicktofocus.c.o CMakeFiles/ctwmlib.dir/colormaps.c.o CMakeFiles/ctwmlib.dir/ctopts.c.o CMakeFiles/ctwmlib.dir/ctwm_main.c.o CMakeFiles/ctwmlib.dir/cursor.c.o CMakeFiles/ctwmlib.dir/drawing.c.o CMakeFiles/ctwmlib.dir/event_core.c.o CMakeFiles/ctwmlib.dir/event_handlers.c.o CMakeFiles/ctwmlib.dir/event_names.c.o CMakeFiles/ctwmlib.dir/event_utils.c.o CMakeFiles/ctwmlib.dir/functions.c.o CMakeFiles/ctwmlib.dir/functions_captive.c.o CMakeFiles/ctwmlib.dir/functions_icmgr_wsmgr.c.o CMakeFiles/ctwmlib.dir/functions_identify.c.o CMakeFiles/ctwmlib.dir/functions_misc.c.o CMakeFiles/ctwmlib.dir/functions_warp.c.o CMakeFiles/ctwmlib.dir/functions_win.c.o CMakeFiles/ctwmlib.dir/functions_win_moveresize.c.o CMakeFiles/ctwmlib.dir/functions_workspaces.c.o CMakeFiles/ctwmlib.dir/gc.c.o CMakeFiles/ctwmlib.dir/iconmgr.c.o CMakeFiles/ctwmlib.dir/icons.c.o CMakeFiles/ctwmlib.dir/icons_builtin.c.o CMakeFiles/ctwmlib.dir/image.c.o CMakeFiles/ctwmlib.dir/image_bitmap.c.o CMakeFiles/ctwmlib.dir/image_bitmap_builtin.c.o CMakeFiles/ctwmlib.dir/image_xwd.c.o CMakeFiles/ctwmlib.dir/list.c.o CMakeFiles/ctwmlib.dir/mask_screen.c.o CMakeFiles/ctwmlib.dir/menus.c.o CMakeFiles/ctwmlib.dir/mwmhints.c.o CMakeFiles/ctwmlib.dir/occupation.c.o CMakeFiles/ctwmlib.dir/otp.c.o CMakeFiles/ctwmlib.dir/parse.c.o CMakeFiles/ctwmlib.dir/parse_be.c.o CMakeFiles/ctwmlib.dir/parse_yacc.c.o CMakeFiles/ctwmlib.dir/session.c.o CMakeFiles/ctwmlib.dir/util.c.o CMakeFiles/ctwmlib.dir/vscreen.c.o CMakeFiles/ctwmlib.dir/win_decorations.c.o CMakeFiles/ctwmlib.dir/win_decorations_init.c.o CMakeFiles/ctwmlib.dir/win_iconify.c.o CMakeFiles/ctwmlib.dir/win_ops.c.o CMakeFiles/ctwmlib.dir/win_regions.c.o CMakeFiles/ctwmlib.dir/win_resize.c.o CMakeFiles/ctwmlib.dir/win_utils.c.o CMakeFiles/ctwmlib.dir/windowbox.c.o CMakeFiles/ctwmlib.dir/workspace_config.c.o CMakeFiles/ctwmlib.dir/workspace_manager.c.o CMakeFiles/ctwmlib.dir/workspace_utils.c.o CMakeFiles/ctwmlib.dir/ext/repl_str.c.o CMakeFiles/ctwmlib.dir/ctwm_atoms.c.o CMakeFiles/ctwmlib.dir/deftwmrc.c.o CMakeFiles/ctwmlib.dir/gram.tab.c.o CMakeFiles/ctwmlib.dir/lex.c.o CMakeFiles/ctwmlib.dir/version.c.o CMakeFiles/ctwmlib.dir/image_xpm.c.o CMakeFiles/ctwmlib.dir/image_jpeg.c.o CMakeFiles/ctwmlib.dir/parse_m4.c.o CMakeFiles/ctwmlib.dir/ewmh.c.o CMakeFiles/ctwmlib.dir/ewmh_atoms.c.o
+/usr/bin/ranlib libctwmlib.a
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 97%] Built target ctwmlib
+/usr/bin/gmake  -f CMakeFiles/ctwm.dir/build.make CMakeFiles/ctwm.dir/depend
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+cd /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3 /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwm.dir/DependInfo.cmake --color=
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwm.dir/DependInfo.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwm.dir/depend.internal".
+Dependee "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles/ctwm.dir/depend.internal".
+Scanning dependencies of target ctwm
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/gmake  -f CMakeFiles/ctwm.dir/build.make CMakeFiles/ctwm.dir/build
+gmake[2]: Entering directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[ 98%] Building C object CMakeFiles/ctwm.dir/ctwm_wrap.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D_XOPEN_SOURCE=700 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3 -I/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG   -std=c99 -Wall -Wshadow -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wredundant-decls -Wcast-align -Wcast-qual -Wchar-subscripts -Winline -Wnested-externs -Wmissing-declarations -o CMakeFiles/ctwm.dir/ctwm_wrap.c.o -c /home/stig/rpmbuild/BUILD/ctwm-4.0.3/ctwm_wrap.c
+[100%] Linking C executable ctwm
+/usr/bin/cmake -E cmake_link_script CMakeFiles/ctwm.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -DNDEBUG -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -rdynamic CMakeFiles/ctwm.dir/ctwm_wrap.c.o -o ctwm  libctwmlib.a -lSM -lICE -lX11 -lXext -lXmu -lXt -lXpm -ljpeg 
+gmake[2]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+[100%] Built target ctwm
+gmake[1]: Leaving directory '/home/stig/rpmbuild/BUILD/ctwm-4.0.3/build'
+/usr/bin/cmake -E cmake_progress_start /home/stig/rpmbuild/BUILD/ctwm-4.0.3/build/CMakeFiles 0
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.s0W7td
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
++ cd ctwm-4.0.3
++ '[' 1 -eq 1 ']'
++ DESTDIR=/home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
++ /usr/bin/cmake --install build
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/bin/ctwm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/examples/ctwm/system.ctwmrc
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm/README.md
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm/CHANGES.md
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball8.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xmail.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/hpterm.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/IslandW.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/mail1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball6.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/LRom.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background9.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xftp.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball11.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/spider.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/nothing.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background7.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Menu15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/term.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xrn.goodnews.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/nt1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background6.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xrn.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/IslandD.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/LRom1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/unknown1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball10.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xrn-compose.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background8.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball7.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xnomail.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/mail0.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xhpcalc.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball9.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3ddot.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xgrab.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xarchie.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dpie.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Zoom15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dpyramid.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xman.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/emacs.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3ddimple.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xrn.nonews.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/unknown.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dfeet.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background2.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xcalc2.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/claude.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/unread.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background5.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/skull.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xmosaic.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/postit.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/cdrom1.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xgopher.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball3.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball4.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ghostview.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/clipboard.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Iconify15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Resize15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xedit.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dslant.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xcalc.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dcircle.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/arthur.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Expand15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3D_Lightning15.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/nt2.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xirc.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/audio_editor.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/xterm.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/3dleopard.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball5.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball2.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/datebook.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/ball12.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/pixmap.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/welcome.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background4.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/ctwm/images/background3.xpm
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/man/man1/ctwm.1.gz
+-- Installing: /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm/ctwm.1.html
++ /usr/lib/rpm/find-debuginfo.sh -j8 --strict-build-id -m -i --build-id-seed 4.0.3-1.mga8 --unique-debug-suffix -4.0.3-1.mga8.x86_64 --unique-debug-src-base ctwm-4.0.3-1.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/ctwm-4.0.3
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/bin/ctwm
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/bin/ctwm
+original debug info size: 2172kB, size after compression: 1436kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 1 CRC32s, 0 CRC32s did match.
+cpio: build/gram.y: Cannot stat: No such file or directory
+cpio: build/lex.l: Cannot stat: No such file or directory
+2884 blocks
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Processing files: ctwm-4.0.3-1.mga8.x86_64
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.7TfSQc
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ctwm-4.0.3
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm
++ cp -pr README.html README.md /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64/usr/share/doc/ctwm
++ RPM_EC=0
+++ jobs -p
++ exit 0
+warning: File listed twice: /usr/share/doc/ctwm
+warning: File listed twice: /usr/share/doc/ctwm/README.md
+Provides: ctwm = 4.0.3-1.mga8 ctwm(x86-64) = 4.0.3-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libICE.so.6()(64bit) libSM.so.6()(64bit) libX11.so.6()(64bit) libXext.so.6()(64bit) libXmu.so.6()(64bit) libXpm.so.4()(64bit) libXt.so.6()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.11)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.8)(64bit) libjpeg.so.8()(64bit) libjpeg.so.8(LIBJPEG_8.0)(64bit)
+Processing files: ctwm-debugsource-4.0.3-1.mga8.x86_64
+Provides: ctwm-debugsource = 4.0.3-1.mga8 ctwm-debugsource(x86-64) = 4.0.3-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: ctwm-debuginfo-4.0.3-1.mga8.x86_64
+Provides: ctwm-debuginfo = 4.0.3-1.mga8 ctwm-debuginfo(x86-64) = 4.0.3-1.mga8 debuginfo(build-id) = cc2f7f23b7d25ada69f48b87bcf4bbd5721406ba
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: ctwm-debugsource(x86-64) = 4.0.3-1.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ctwm-debuginfo-4.0.3-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ctwm-debugsource-4.0.3-1.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/ctwm-4.0.3-1.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.0i1vOe
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd ctwm-4.0.3
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/ctwm-4.0.3-1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3iaqrd
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf ctwm-4.0.3
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
