@@ -1,0 +1,874 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/sblim-sfcc-2.2.8-6.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.bA0mI1
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf sblim-sfcc-2.2.8
++ /usr/bin/bzip2 -dc /home/stig/rpmbuild/SOURCES/sblim-sfcc-2.2.8.tar.bz2
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd sblim-sfcc-2.2.8
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ sed -i -e 's,AM_INIT_AUTOMAKE.*,AM_INIT_AUTOMAKE(\[subdir-objects\]),' configure.ac
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.Sa50j4
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd sblim-sfcc-2.2.8
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ autoreconf -vfi
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:19: installing './compile'
+configure.ac:9: installing './missing'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+autoreconf: Leaving directory '.'
++ CFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables '
++ export FCFLAGS
++ LDFLAGS=' -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags'
++ export LDFLAGS
++ CONFIGURE_TOP=.
++ '[' 1 = 1 ']'
+++ find . -name config.guess -o -name config.sub
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.guess
++ '[' -f /usr/lib/rpm/mageia/config.guess ']'
+++ basename ./config.guess
++ cp -af /usr/lib/rpm/mageia/config.guess ./config.guess
++ for i in $(find ${CONFIGURE_TOP} -name config.guess -o -name config.sub)
+++ basename ./config.sub
++ '[' -f /usr/lib/rpm/mageia/config.sub ']'
+++ basename ./config.sub
++ cp -af /usr/lib/rpm/mageia/config.sub ./config.sub
++ /usr/lib/rpm/mageia/force-as-needed-for-shared-lib-in-libtool
+Forcing -Wl,--as-needed in configure/libtool to workaround libtool bug (cf http://lists.gnu.org/archive/html/libtool-patches/2004-06/msg00002.html)
++ /usr/lib/rpm/mageia/drop-ld-no-undefined-for-shared-lib-modules-in-libtool
+Modifying ltmain.sh underlinking for plugins (cf http://wiki.mandriva.com/en/Underlinking)
++ /usr/lib/rpm/mageia/fix-libtool-ltmain-from-overlinking
+Fixing libtool's ltmain.sh to prevent overlinking (cf http://wiki.mandriva.com/en/Overlinking)
++ /usr/lib/rpm/mageia/fix-libtool-from-moving-options-after-libs .
++ /usr/lib/rpm/mageia/fix-dlsearch-path-in-libtool-for-multilib . lib64
++ ./configure --host=x86_64-mageia-linux-gnu --build=x86_64-mageia-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for x86_64-mageia-linux-gnu-gcc... x86_64-mageia-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-mageia-linux-gnu-gcc accepts -g... yes
+checking for x86_64-mageia-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-mageia-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-mageia-linux-gnu-gcc... none
+checking for x86_64-mageia-linux-gnu-g++... x86_64-mageia-linux-gnu-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-mageia-linux-gnu-g++ accepts -g... yes
+checking for x86_64-mageia-linux-gnu-g++ option to enable C++11 features... none needed
+checking dependency style of x86_64-mageia-linux-gnu-g++... none
+checking build system type... x86_64-mageia-linux-gnu
+checking host system type... x86_64-mageia-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-mageia-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-mageia-linux-gnu-nm -p
+checking the name lister (/usr/bin/x86_64-mageia-linux-gnu-nm -p) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-mageia-linux-gnu file names to x86_64-mageia-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-mageia-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-mageia-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-mageia-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-mageia-linux-gnu-ar... x86_64-mageia-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-mageia-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-mageia-linux-gnu-ranlib... x86_64-mageia-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-mageia-linux-gnu-nm -p output from x86_64-mageia-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-mageia-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-mageia-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-mageia-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-gcc static flag -static works... no
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... x86_64-mageia-linux-gnu-g++ -E
+checking for ld used by x86_64-mageia-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-mageia-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-mageia-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-mageia-linux-gnu-g++ static flag -static works... no
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-mageia-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-mageia-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for malloc.h... yes
+checking for stddef.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for sys/time.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for curl_easy_init in -lcurl... yes
+checking for main in -lpthread... yes
+checking how to run the C preprocessor... x86_64-mageia-linux-gnu-gcc -E
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for error_at_line... yes
+checking for GNU libc compatible malloc... yes
+checking for alarm... yes
+checking for working mktime... yes
+checking for GNU libc compatible realloc... yes
+checking for strftime... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memset... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strncasecmp... yes
+checking for strstr... yes
+checking for tzset... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating sfcc.spec
+config.status: creating TEST/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ /usr/bin/make -O -j8 V=1 VERBOSE=1
+/usr/bin/make  all-recursive
+Making all in .
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-args.lo `test -f 'backend/cimxml/args.c' || echo './'`backend/cimxml/args.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/args.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-args.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/args.c -o backend/cimxml/libcimcClientXML_la-args.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -DSFCB_LIBDIR=\"/usr/lib64/sfcb\"   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o cimc/libcimcclient_la-cimcclient.lo `test -f 'cimc/cimcclient.c' || echo './'`cimc/cimcclient.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -DSFCB_LIBDIR=\"/usr/lib64/sfcb\" -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c cimc/cimcclient.c  -fPIC -DPIC -o cimc/.libs/libcimcclient_la-cimcclient.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -DSFCB_LIBDIR=\"/usr/lib64/sfcb\" -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c cimc/cimcclient.c -o cimc/libcimcclient_la-cimcclient.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-enumeration.lo `test -f 'backend/cimxml/enumeration.c' || echo './'`backend/cimxml/enumeration.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/enumeration.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-enumeration.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/enumeration.c -o backend/cimxml/libcimcClientXML_la-enumeration.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-datetime.lo `test -f 'backend/cimxml/datetime.c' || echo './'`backend/cimxml/datetime.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/datetime.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-datetime.o
+backend/cimxml/datetime.c: In function 'bin2chars':
+backend/cimxml/datetime.c:184:38: warning: '%+4.3ld' directive output may be truncated writing between 4 and 19 bytes into a region of size 5 [-Wformat-truncation=]
+  184 |   snprintf ( us_utc_time, 11, "%6.6ld%+4.3ld",
+      |                                      ^~~~~~~
+backend/cimxml/datetime.c:184:31: note: directive argument in the range [-153722867280912930, 153722867280912990]
+  184 |   snprintf ( us_utc_time, 11, "%6.6ld%+4.3ld",
+      |                               ^~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from backend/cimxml/datetime.c:25:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output between 11 and 26 bytes into a destination of size 11
+   67 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   68 |        __bos (__s), __fmt, __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/datetime.c -o backend/cimxml/libcimcClientXML_la-datetime.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-array.lo `test -f 'backend/cimxml/array.c' || echo './'`backend/cimxml/array.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/array.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-array.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/array.c -o backend/cimxml/libcimcClientXML_la-array.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./cimc -I./backend/cimxml -I./frontend/sfcc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o frontend/sfcc/libcmpisfcc_la-sfcclient.lo `test -f 'frontend/sfcc/sfcclient.c' || echo './'`frontend/sfcc/sfcclient.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./cimc -I./backend/cimxml -I./frontend/sfcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c frontend/sfcc/sfcclient.c  -fPIC -DPIC -o frontend/sfcc/.libs/libcmpisfcc_la-sfcclient.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./cimc -I./backend/cimxml -I./frontend/sfcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c frontend/sfcc/sfcclient.c -o frontend/sfcc/libcmpisfcc_la-sfcclient.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-instance.lo `test -f 'backend/cimxml/instance.c' || echo './'`backend/cimxml/instance.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/instance.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-instance.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/instance.c -o backend/cimxml/libcimcClientXML_la-instance.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-method.lo `test -f 'backend/cimxml/method.c' || echo './'`backend/cimxml/method.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/method.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-method.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/method.c -o backend/cimxml/libcimcClientXML_la-method.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-parameter.lo `test -f 'backend/cimxml/parameter.c' || echo './'`backend/cimxml/parameter.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/parameter.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-parameter.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/parameter.c -o backend/cimxml/libcimcClientXML_la-parameter.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-indicationlistener.lo `test -f 'backend/cimxml/indicationlistener.c' || echo './'`backend/cimxml/indicationlistener.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/indicationlistener.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-indicationlistener.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/indicationlistener.c -o backend/cimxml/libcimcClientXML_la-indicationlistener.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-constClass.lo `test -f 'backend/cimxml/constClass.c' || echo './'`backend/cimxml/constClass.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/constClass.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-constClass.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/constClass.c -o backend/cimxml/libcimcClientXML_la-constClass.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-qualifier.lo `test -f 'backend/cimxml/qualifier.c' || echo './'`backend/cimxml/qualifier.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/qualifier.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-qualifier.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/qualifier.c -o backend/cimxml/libcimcClientXML_la-qualifier.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-string.lo `test -f 'backend/cimxml/string.c' || echo './'`backend/cimxml/string.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/string.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-string.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/string.c -o backend/cimxml/libcimcClientXML_la-string.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-property.lo `test -f 'backend/cimxml/property.c' || echo './'`backend/cimxml/property.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/property.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-property.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/property.c -o backend/cimxml/libcimcClientXML_la-property.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-objectpath.lo `test -f 'backend/cimxml/objectpath.c' || echo './'`backend/cimxml/objectpath.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/objectpath.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-objectpath.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/objectpath.c -o backend/cimxml/libcimcClientXML_la-objectpath.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilFactory.lo `test -f 'backend/cimxml/sfcUtil/utilFactory.c' || echo './'`backend/cimxml/sfcUtil/utilFactory.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilFactory.c  -fPIC -DPIC -o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilFactory.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilFactory.c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilFactory.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-genericlist.lo `test -f 'backend/cimxml/genericlist.c' || echo './'`backend/cimxml/genericlist.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/genericlist.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-genericlist.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/genericlist.c -o backend/cimxml/libcimcClientXML_la-genericlist.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-value.lo `test -f 'backend/cimxml/value.c' || echo './'`backend/cimxml/value.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/value.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-value.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/value.c -o backend/cimxml/libcimcClientXML_la-value.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/sfcUtil/libcimcClientXML_la-hashtable.lo `test -f 'backend/cimxml/sfcUtil/hashtable.c' || echo './'`backend/cimxml/sfcUtil/hashtable.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/hashtable.c  -fPIC -DPIC -o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-hashtable.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/hashtable.c -o backend/cimxml/sfcUtil/libcimcClientXML_la-hashtable.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilHashtable.lo `test -f 'backend/cimxml/sfcUtil/utilHashtable.c' || echo './'`backend/cimxml/sfcUtil/utilHashtable.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilHashtable.c  -fPIC -DPIC -o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilHashtable.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilHashtable.c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilHashtable.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -version-info 0:0:0 -Wl,--version-script,./cimc/libcimcclient.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libcimcclient.la -rpath /usr/lib64 cimc/libcimcclient_la-cimcclient.lo -ldl -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  cimc/.libs/libcimcclient_la-cimcclient.o   -O2 -g -fstack-protector -Wl,--version-script -Wl,./cimc/libcimcclient.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -ldl -lpthread -Wl,-soname -Wl,libcimcclient.so.0 -o .libs/libcimcclient.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libcimcclient.so.0" && ln -s "libcimcclient.so.0.0.0" "libcimcclient.so.0")
+libtool: link: (cd ".libs" && rm -f "libcimcclient.so" && ln -s "libcimcclient.so.0.0.0" "libcimcclient.so")
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libcimcclient.a  cimc/libcimcclient_la-cimcclient.o
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libcimcclient.a
+libtool: link: ( cd ".libs" && rm -f "libcimcclient.la" && ln -s "../libcimcclient.la" "libcimcclient.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-parserUtil.lo `test -f 'backend/cimxml/parserUtil.c' || echo './'`backend/cimxml/parserUtil.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/parserUtil.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-parserUtil.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/parserUtil.c -o backend/cimxml/libcimcClientXML_la-parserUtil.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilStringBuffer.lo `test -f 'backend/cimxml/sfcUtil/utilStringBuffer.c' || echo './'`backend/cimxml/sfcUtil/utilStringBuffer.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilStringBuffer.c  -fPIC -DPIC -o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilStringBuffer.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/sfcUtil/utilStringBuffer.c -o backend/cimxml/sfcUtil/libcimcClientXML_la-utilStringBuffer.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -version-info 1:0:0 -Wl,--version-script,./frontend/sfcc/libcmpisfcc.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libcmpisfcc.la -rpath /usr/lib64 frontend/sfcc/libcmpisfcc_la-sfcclient.lo -lcimcclient -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  frontend/sfcc/.libs/libcmpisfcc_la-sfcclient.o   -O2 -g -fstack-protector -Wl,--version-script -Wl,./frontend/sfcc/libcmpisfcc.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -Wl,-rpath -Wl,/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread -Wl,-soname -Wl,libcmpisfcc.so.1 -o .libs/libcmpisfcc.so.1.0.0
+libtool: link: (cd ".libs" && rm -f "libcmpisfcc.so.1" && ln -s "libcmpisfcc.so.1.0.0" "libcmpisfcc.so.1")
+libtool: link: (cd ".libs" && rm -f "libcmpisfcc.so" && ln -s "libcmpisfcc.so.1.0.0" "libcmpisfcc.so")
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libcmpisfcc.a  frontend/sfcc/libcmpisfcc_la-sfcclient.o
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libcmpisfcc.a
+libtool: link: ( cd ".libs" && rm -f "libcmpisfcc.la" && ln -s "../libcmpisfcc.la" "libcmpisfcc.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-grammar.lo `test -f 'backend/cimxml/grammar.c' || echo './'`backend/cimxml/grammar.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/grammar.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-grammar.o
+backend/cimxml/grammar.c: In function 'returnValue':
+backend/cimxml/grammar.c:305:9: warning: implicit declaration of function 'guessType' [-Wimplicit-function-declaration]
+  305 |     t = guessType(stateUnion->xtokReturnValue.data.value.data.value);
+      |         ^~~~~~~~~
+backend/cimxml/grammar.c: In function 'iReturnValueContent':
+backend/cimxml/grammar.c:434:4: warning: implicit declaration of function 'setClassMethods' [-Wimplicit-function-declaration]
+  434 |    setClassMethods(cls, &lvalp.xtokClass.methods);
+      |    ^~~~~~~~~~~~~~~
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/grammar.c -o backend/cimxml/libcimcClientXML_la-grammar.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-cimXmlParser.lo `test -f 'backend/cimxml/cimXmlParser.c' || echo './'`backend/cimxml/cimXmlParser.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/cimXmlParser.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-cimXmlParser.o
+backend/cimxml/cimXmlParser.c: In function 'scanCimXmlResponse':
+backend/cimxml/cimXmlParser.c:1353:25: warning: implicit declaration of function 'startParsing' [-Wimplicit-function-declaration]
+ 1353 |    control.respHdr.rc = startParsing(&control);
+      |                         ^~~~~~~~~~~~
+backend/cimxml/cimXmlParser.c: At top level:
+backend/cimxml/cimXmlParser.c:79:15: warning: 'c' is static but declared in inline function 'skipWS' which is not static
+   79 |    static int c = 0;
+      |               ^
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/cimXmlParser.c -o backend/cimxml/libcimcClientXML_la-cimXmlParser.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./backend/cimxml/sfcUtil -I./backend/cimxml  -I./frontend/sfcc -I./cimc   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o backend/cimxml/libcimcClientXML_la-client.lo `test -f 'backend/cimxml/client.c' || echo './'`backend/cimxml/client.c
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/client.c  -fPIC -DPIC -o backend/cimxml/.libs/libcimcClientXML_la-client.o
+libtool: compile:  x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./backend/cimxml/sfcUtil -I./backend/cimxml -I./frontend/sfcc -I./cimc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c backend/cimxml/client.c -o backend/cimxml/libcimcClientXML_la-client.o >/dev/null 2>&1
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -version-info 0:0:0 -Wl,--version-script,./backend/cimxml/libcimcClientXML.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libcimcClientXML.la -rpath /usr/lib64 backend/cimxml/libcimcClientXML_la-args.lo backend/cimxml/libcimcClientXML_la-array.lo backend/cimxml/libcimcClientXML_la-datetime.lo backend/cimxml/libcimcClientXML_la-enumeration.lo backend/cimxml/libcimcClientXML_la-instance.lo backend/cimxml/libcimcClientXML_la-indicationlistener.lo backend/cimxml/libcimcClientXML_la-constClass.lo backend/cimxml/libcimcClientXML_la-method.lo backend/cimxml/libcimcClientXML_la-objectpath.lo backend/cimxml/libcimcClientXML_la-parameter.lo backend/cimxml/libcimcClientXML_la-property.lo backend/cimxml/libcimcClientXML_la-qualifier.lo backend/cimxml/libcimcClientXML_la-string.lo backend/cimxml/libcimcClientXML_la-value.lo backend/cimxml/libcimcClientXML_la-client.lo backend/cimxml/libcimcClientXML_la-genericlist.lo backend/cimxml/libcimcClientXML_la-grammar.lo backend/cimxml/libcimcClientXML_la-parserUtil.lo backend/cimxml/libcimcClientXML_la-cimXmlParser.lo backend/cimxml/sfcUtil/libcimcClientXML_la-hashtable.lo backend/cimxml/sfcUtil/libcimcClientXML_la-utilFactory.lo backend/cimxml/sfcUtil/libcimcClientXML_la-utilHashtable.lo backend/cimxml/sfcUtil/libcimcClientXML_la-utilStringBuffer.lo -lcurl -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  backend/cimxml/.libs/libcimcClientXML_la-args.o backend/cimxml/.libs/libcimcClientXML_la-array.o backend/cimxml/.libs/libcimcClientXML_la-datetime.o backend/cimxml/.libs/libcimcClientXML_la-enumeration.o backend/cimxml/.libs/libcimcClientXML_la-instance.o backend/cimxml/.libs/libcimcClientXML_la-indicationlistener.o backend/cimxml/.libs/libcimcClientXML_la-constClass.o backend/cimxml/.libs/libcimcClientXML_la-method.o backend/cimxml/.libs/libcimcClientXML_la-objectpath.o backend/cimxml/.libs/libcimcClientXML_la-parameter.o backend/cimxml/.libs/libcimcClientXML_la-property.o backend/cimxml/.libs/libcimcClientXML_la-qualifier.o backend/cimxml/.libs/libcimcClientXML_la-string.o backend/cimxml/.libs/libcimcClientXML_la-value.o backend/cimxml/.libs/libcimcClientXML_la-client.o backend/cimxml/.libs/libcimcClientXML_la-genericlist.o backend/cimxml/.libs/libcimcClientXML_la-grammar.o backend/cimxml/.libs/libcimcClientXML_la-parserUtil.o backend/cimxml/.libs/libcimcClientXML_la-cimXmlParser.o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-hashtable.o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilFactory.o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilHashtable.o backend/cimxml/sfcUtil/.libs/libcimcClientXML_la-utilStringBuffer.o   -O2 -g -fstack-protector -Wl,--version-script -Wl,./backend/cimxml/libcimcClientXML.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -lcurl -lpthread -Wl,-soname -Wl,libcimcClientXML.so.0 -o .libs/libcimcClientXML.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libcimcClientXML.so.0" && ln -s "libcimcClientXML.so.0.0.0" "libcimcClientXML.so.0")
+libtool: link: (cd ".libs" && rm -f "libcimcClientXML.so" && ln -s "libcimcClientXML.so.0.0.0" "libcimcClientXML.so")
+libtool: link: x86_64-mageia-linux-gnu-ar cru .libs/libcimcClientXML.a  backend/cimxml/libcimcClientXML_la-args.o backend/cimxml/libcimcClientXML_la-array.o backend/cimxml/libcimcClientXML_la-datetime.o backend/cimxml/libcimcClientXML_la-enumeration.o backend/cimxml/libcimcClientXML_la-instance.o backend/cimxml/libcimcClientXML_la-indicationlistener.o backend/cimxml/libcimcClientXML_la-constClass.o backend/cimxml/libcimcClientXML_la-method.o backend/cimxml/libcimcClientXML_la-objectpath.o backend/cimxml/libcimcClientXML_la-parameter.o backend/cimxml/libcimcClientXML_la-property.o backend/cimxml/libcimcClientXML_la-qualifier.o backend/cimxml/libcimcClientXML_la-string.o backend/cimxml/libcimcClientXML_la-value.o backend/cimxml/libcimcClientXML_la-client.o backend/cimxml/libcimcClientXML_la-genericlist.o backend/cimxml/libcimcClientXML_la-grammar.o backend/cimxml/libcimcClientXML_la-parserUtil.o backend/cimxml/libcimcClientXML_la-cimXmlParser.o backend/cimxml/sfcUtil/libcimcClientXML_la-hashtable.o backend/cimxml/sfcUtil/libcimcClientXML_la-utilFactory.o backend/cimxml/sfcUtil/libcimcClientXML_la-utilHashtable.o backend/cimxml/sfcUtil/libcimcClientXML_la-utilStringBuffer.o
+libtool: link: x86_64-mageia-linux-gnu-ranlib .libs/libcimcClientXML.a
+libtool: link: ( cd ".libs" && rm -f "libcimcClientXML.la" && ln -s "../libcimcClientXML.la" "libcimcClientXML.la" )
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+Making all in TEST
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_an_2.o test_an_2.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_as.o test_as.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ci.o test_ci.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_di.o test_di.c
+In file included from /usr/include/stdio.h:867,
+                 from ./../frontend/sfcc/cmcidt.h:25,
+                 from ./../frontend/sfcc/cmci.h:25,
+                 from test_di.c:20:
+In function 'printf',
+    inlined from 'main' at test_di.c:56:5:
+/usr/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_as_2.o test_as_2.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_an.o test_an.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ec.o test_ec.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ecn.o test_ecn.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ecn_ssl.o test_ecn_ssl.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_gc.o test_gc.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ei.o test_ei.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_ein.o test_ein.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o show.o show.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_gi.o test_gi.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_gp.o test_gp.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_im1.o test_im1.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_im2.o test_im2.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_im3.o test_im3.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_im4.o test_im4.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_rf.o test_rf.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_imos.o test_imos.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_rfn.o test_rfn.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_leak.o test_leak.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_sp.o test_sp.c
+In file included from /usr/include/stdio.h:867,
+                 from ./../frontend/sfcc/cmcidt.h:25,
+                 from ./../frontend/sfcc/cmci.h:25,
+                 from test_sp.c:20:
+In function 'printf',
+    inlined from 'main' at test_sp.c:59:5:
+/usr/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_si.o test_si.c
+In file included from /usr/include/stdio.h:867,
+                 from ./../frontend/sfcc/cmcidt.h:25,
+                 from ./../frontend/sfcc/cmci.h:25,
+                 from test_si.c:20:
+In function 'printf',
+    inlined from 'main' at test_si.c:63:5:
+/usr/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_xq.o test_xq.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test.o test.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_qualifiers.o test_qualifiers.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_cpp.o test_cpp.cpp
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o test_qualifiers2.o test_qualifiers2.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_ec.o v2test_ec.c
+v2test_ec.c: In function 'main':
+v2test_ec.c:85:11: warning: implicit declaration of function 'showClass' [-Wimplicit-function-declaration]
+   85 |           showClass(data.value.cls);
+      |           ^~~~~~~~~
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_ecn.o v2test_ecn.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_ei.o v2test_ei.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_ein.o v2test_ein.c
+v2test_ein.c: In function 'main':
+v2test_ein.c:95:11: warning: implicit declaration of function 'showObjectPath'; did you mean 'CMGetObjectPath'? [-Wimplicit-function-declaration]
+   95 |           showObjectPath(data.value.ref);
+      |           ^~~~~~~~~~~~~~
+      |           CMGetObjectPath
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_gc.o v2test_gc.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_im.o v2test_im.c
+In file included from /usr/include/stdio.h:867,
+                 from ../cimc/cimcdt.h:25,
+                 from ../cimc/cimc.h:26,
+                 from v2test_im.c:22:
+In function 'printf',
+    inlined from 'main' at v2test_im.c:82:5:
+/usr/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+  107 |   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/bits/stdio2.h:107:10: warning: '%s' directive argument is null [-Wformat-overflow=]
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o v2test_xq_synerr.o v2test_xq_synerr.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+x86_64-mageia-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I./../frontend/sfcc -I../cimc -I../../  -I../src -I../src   -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -c -o print-types.o print-types.c
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_an test_an.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_an test_an.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_an_2 test_an_2.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_an_2 test_an_2.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test test.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test test.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_as test_as.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_as test_as.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_as_2 test_as_2.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_as_2 test_as_2.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ci test_ci.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ci test_ci.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_di test_di.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_di test_di.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ec test_ec.o show.o ../libcmpisfcc.la  -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ec test_ec.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ecn_ssl test_ecn_ssl.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ecn_ssl test_ecn_ssl.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ecn test_ecn.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ecn test_ecn.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ei test_ei.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ei test_ei.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_ein test_ein.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_ein test_ein.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_gc test_gc.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_gc test_gc.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_gp test_gp.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_gp test_gp.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_im1 test_im1.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_im1 test_im1.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_gi test_gi.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_gi test_gi.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_im2 test_im2.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_im2 test_im2.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_im3 test_im3.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_im3 test_im3.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_im4 test_im4.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_im4 test_im4.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_imos test_imos.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_imos test_imos.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_rf test_rf.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_rf test_rf.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_si test_si.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_si test_si.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_rfn test_rfn.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_rfn test_rfn.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_leak test_leak.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_leak test_leak.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-mageia-linux-gnu-g++  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_cpp test_cpp.o  -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-g++ -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_cpp test_cpp.o  -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_sp test_sp.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_sp test_sp.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_qualifiers test_qualifiers.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_qualifiers test_qualifiers.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_xq test_xq.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_xq test_xq.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_ei v2test_ei.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_ei v2test_ei.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o test_qualifiers2 test_qualifiers2.o show.o ../libcmpisfcc.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/test_qualifiers2 test_qualifiers2.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_ec v2test_ec.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_ec v2test_ec.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_ecn v2test_ecn.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_ecn v2test_ecn.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o print-types print-types.o  -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o print-types print-types.o  -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_xq_synerr v2test_xq_synerr.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_xq_synerr v2test_xq_synerr.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_gc v2test_gc.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_gc v2test_gc.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_ein v2test_ein.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_ein v2test_ein.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-mageia-linux-gnu-gcc  -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables  -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o v2test_im v2test_im.o show.o ../libcmpisfcc.la ../libcimcclient.la -lpthread 
+libtool: link: x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o .libs/v2test_im v2test_im.o show.o  ../.libs/libcmpisfcc.so /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/.libs/libcimcclient.so ../.libs/libcimcclient.so -ldl -lpthread
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.b0RGG2
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64
++ cd sblim-sfcc-2.2.8
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64 'INSTALL=/usr/bin/install -p'
+Making install in .
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -p   libcimcclient.la libcmpisfcc.la libcimcClientXML.la '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64'
+libtool: install: /usr/bin/install -p .libs/libcimcclient.so.0.0.0 /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.so.0.0.0
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcimcclient.so.0.0.0 libcimcclient.so.0 || { rm -f libcimcclient.so.0 && ln -s libcimcclient.so.0.0.0 libcimcclient.so.0; }; })
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcimcclient.so.0.0.0 libcimcclient.so || { rm -f libcimcclient.so && ln -s libcimcclient.so.0.0.0 libcimcclient.so; }; })
+libtool: install: /usr/bin/install -p .libs/libcimcclient.lai /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.la
+libtool: warning: relinking 'libcmpisfcc.la'
+libtool: install: (cd /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8; /bin/sh "/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/libtool"  --tag CC --mode=relink x86_64-mageia-linux-gnu-gcc -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fasynchronous-unwind-tables -version-info 1:0:0 -Wl,--version-script,./frontend/sfcc/libcmpisfcc.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -o libcmpisfcc.la -rpath /usr/lib64 frontend/sfcc/libcmpisfcc_la-sfcclient.lo -lcimcclient -lpthread -inst-prefix-dir /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64)
+libtool: relink: x86_64-mageia-linux-gnu-gcc -shared -Wl,--as-needed  -fPIC -DPIC  frontend/sfcc/.libs/libcmpisfcc_la-sfcclient.o   -O2 -g -fstack-protector -Wl,--version-script -Wl,./frontend/sfcc/libcmpisfcc.Versions -Wl,--as-needed -Wl,--no-undefined -Wl,-z -Wl,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags    -L/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 -L/usr/lib64 -lcimcclient -ldl -lpthread -Wl,-soname -Wl,libcmpisfcc.so.1 -o .libs/libcmpisfcc.so.1.0.0
+libtool: install: /usr/bin/install -p .libs/libcmpisfcc.so.1.0.0T /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.so.1.0.0
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcmpisfcc.so.1.0.0 libcmpisfcc.so.1 || { rm -f libcmpisfcc.so.1 && ln -s libcmpisfcc.so.1.0.0 libcmpisfcc.so.1; }; })
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcmpisfcc.so.1.0.0 libcmpisfcc.so || { rm -f libcmpisfcc.so && ln -s libcmpisfcc.so.1.0.0 libcmpisfcc.so; }; })
+libtool: install: /usr/bin/install -p .libs/libcmpisfcc.lai /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.la
+libtool: install: /usr/bin/install -p .libs/libcimcClientXML.so.0.0.0 /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.so.0.0.0
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcimcClientXML.so.0.0.0 libcimcClientXML.so.0 || { rm -f libcimcClientXML.so.0 && ln -s libcimcClientXML.so.0.0.0 libcimcClientXML.so.0; }; })
+libtool: install: (cd /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64 && { ln -s -f libcimcClientXML.so.0.0.0 libcimcClientXML.so || { rm -f libcimcClientXML.so && ln -s libcimcClientXML.so.0.0.0 libcimcClientXML.so; }; })
+libtool: install: /usr/bin/install -p .libs/libcimcClientXML.lai /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.la
+libtool: install: /usr/bin/install -p .libs/libcimcclient.a /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.a
+libtool: install: chmod 644 /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.a
+libtool: install: x86_64-mageia-linux-gnu-ranlib /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.a
+libtool: install: /usr/bin/install -p .libs/libcmpisfcc.a /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.a
+libtool: install: chmod 644 /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.a
+libtool: install: x86_64-mageia-linux-gnu-ranlib /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.a
+libtool: install: /usr/bin/install -p .libs/libcimcClientXML.a /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.a
+libtool: install: chmod 644 /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.a
+libtool: install: x86_64-mageia-linux-gnu-ranlib /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.a
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/include/cimc'
+ /usr/bin/install -p -m 644 cimc/cimc.h cimc/cimcdt.h cimc/cimcft.h '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/include/cimc'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/share/doc/sfcc-2.2.8'
+ /usr/bin/install -p -m 644 README AUTHORS COPYING '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/share/doc/sfcc-2.2.8'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/include/CimClientLib'
+ /usr/bin/install -p -m 644 frontend/sfcc/native.h frontend/sfcc/cmcidt.h frontend/sfcc/cmcift.h frontend/sfcc/cmci.h frontend/sfcc/cmcimacs.h '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/include/CimClientLib'
+ /usr/bin/mkdir -p '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/share/man/man3'
+ /usr/bin/install -p -m 644 man/man3/CMCIClient.3 man/man3/CMCIClientFT.associatorNames.3 man/man3/CMCIClientFT.associators.3 man/man3/CMCIClientFT.createInstance.3 man/man3/CMCIClientFT.deleteInstance.3 man/man3/CMCIClientFT.enumClasses.3 man/man3/CMCIClientFT.enumClassNames.3 man/man3/CMCIClientFT.enumInstanceNames.3 man/man3/CMCIClientFT.enumInstances.3 man/man3/CMCIClientFT.execQuery.3 man/man3/CMCIClientFT.getClass.3 man/man3/CMCIClientFT.getInstance.3 man/man3/CMCIClientFT.getProperty.3 man/man3/CMCIClientFT.invokeMethod.3 man/man3/CMCIClientFT.referenceNames.3 man/man3/CMCIClientFT.references.3 man/man3/CMCIClientFT.setInstance.3 man/man3/CMCIClientFT.setProperty.3 man/man3/cmciConnect.3 man/man3/CMPIArgs.3 man/man3/CMPIDateTime.3 man/man3/CMPIEnumeration.3 man/man3/CMPIInstance.3 man/man3/CMPIObjectPath.3 man/man3/CMPIStatus.3 man/man3/CMPIString.3 man/man3/CMPIValue.3 '/home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/share/man/man3'
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8'
+Making install in TEST
+make[1]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Entering directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
+make[1]: Leaving directory '/home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8/TEST'
++ find /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64 -name '*.*a' -delete
++ /usr/lib/rpm/find-debuginfo.sh -j8 --strict-build-id -m -i --build-id-seed 2.2.8-6.mga8 --unique-debug-suffix -2.2.8-6.mga8.x86_64 --unique-debug-src-base sblim-sfcc-2.2.8-6.mga8.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/stig/rpmbuild/BUILD/sblim-sfcc-2.2.8
+
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.so.0.0.0
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.so.0.0.0
+explicitly decompress any DWARF compressed ELF sections in /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.so.1.0.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcclient.so.0.0.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcimcClientXML.so.0.0.0
+extracting debug info from /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64/usr/lib64/libcmpisfcc.so.1.0.0
+original debug info size: 788kB, size after compression: 660kB
+/usr/lib/rpm/sepdebugcrcfix: Updated 3 CRC32s, 0 CRC32s did match.
+1022 blocks
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+*** WARNING: ./usr/src/debug/sblim-sfcc-2.2.8-6.mga8.x86_64/backend/cimxml/indicationlistener.c is executable but has no shebang, removing executable bit
+*** WARNING: ./usr/src/debug/sblim-sfcc-2.2.8-6.mga8.x86_64/backend/cimxml/nativeCimXml.h is executable but has no shebang, removing executable bit
+Processing files: lib64sblim-sfcc-devel-2.2.8-6.mga8.x86_64
+Provides: devel(libcimcClientXML(64bit)) devel(libcimcclient(64bit)) devel(libcmpisfcc(64bit)) lib64sblim-sfcc-devel = 2.2.8-6.mga8 lib64sblim-sfcc-devel(x86-64) = 2.2.8-6.mga8 sblim-sfcc-devel = 2.2.8-6.mga8 sfcc-devel = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: devel(libcimcclient(64bit)) devel(libcurl(64bit)) devel(libdl(64bit))
+Recommends: sblim-sfcc-docs = 2.2.8-6.mga8
+Processing files: lib64cimcClientXML0-2.2.8-6.mga8.x86_64
+Provides: lib64cimcClientXML0 = 2.2.8-6.mga8 lib64cimcClientXML0(x86-64) = 2.2.8-6.mga8 libcimcClientXML.so.0()(64bit) libcimcClientXML.so.0(CIMCCLIENTXML_1.0)(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libcurl.so.4()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit)
+Obsoletes: lib64cimcClientXML0 < 2.2.8-3
+Processing files: lib64cimcclient0-2.2.8-6.mga8.x86_64
+Provides: lib64cimcclient0 = 2.2.8-6.mga8 lib64cimcclient0(x86-64) = 2.2.8-6.mga8 libcimcclient.so.0()(64bit) libcimcclient.so.0(CIMCCLIENT_1.0)(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit)
+Processing files: lib64cmpisfcc1-2.2.8-6.mga8.x86_64
+Provides: lib64cmpisfcc1 = 2.2.8-6.mga8 lib64cmpisfcc1(x86-64) = 2.2.8-6.mga8 libcmpisfcc.so.1()(64bit) libcmpisfcc.so.1(CMPISFCC_2.0)(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libc.so.6()(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libcimcclient.so.0()(64bit) libcimcclient.so.0(CIMCCLIENT_1.0)(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit)
+Processing files: sblim-sfcc-docs-2.2.8-6.mga8.x86_64
+Provides: sblim-sfcc-docs = 2.2.8-6.mga8 sblim-sfcc-docs(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: sblim-sfcc-debugsource-2.2.8-6.mga8.x86_64
+Provides: sblim-sfcc-debugsource = 2.2.8-6.mga8 sblim-sfcc-debugsource(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: sblim-sfcc-debuginfo-2.2.8-6.mga8.x86_64
+Provides: sblim-sfcc-debuginfo = 2.2.8-6.mga8 sblim-sfcc-debuginfo(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: sblim-sfcc-debugsource(x86-64) = 2.2.8-6.mga8
+Processing files: lib64cimcClientXML0-debuginfo-2.2.8-6.mga8.x86_64
+Provides: debuginfo(build-id) = f9e896cc2e92b8b72bec08fc8c3fcdfae1e60397 lib64cimcClientXML0-debuginfo = 2.2.8-6.mga8 lib64cimcClientXML0-debuginfo(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: sblim-sfcc-debugsource(x86-64) = 2.2.8-6.mga8
+Processing files: lib64cimcclient0-debuginfo-2.2.8-6.mga8.x86_64
+Provides: debuginfo(build-id) = 214d3228dfaabe268cd00f50a5af485cd6db2386 lib64cimcclient0-debuginfo = 2.2.8-6.mga8 lib64cimcclient0-debuginfo(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: sblim-sfcc-debugsource(x86-64) = 2.2.8-6.mga8
+Processing files: lib64cmpisfcc1-debuginfo-2.2.8-6.mga8.x86_64
+Provides: debuginfo(build-id) = 663997045a1db8dd317960144df5b2b86016a7eb lib64cmpisfcc1-debuginfo = 2.2.8-6.mga8 lib64cmpisfcc1-debuginfo(x86-64) = 2.2.8-6.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: sblim-sfcc-debugsource(x86-64) = 2.2.8-6.mga8
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cmpisfcc1-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cimcclient0-debuginfo-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cmpisfcc1-debuginfo-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/sblim-sfcc-docs-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cimcclient0-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/sblim-sfcc-debuginfo-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cimcClientXML0-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64sblim-sfcc-devel-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/lib64cimcClientXML0-debuginfo-2.2.8-6.mga8.x86_64.rpm
+Wrote: /home/stig/rpmbuild/RPMS/x86_64/sblim-sfcc-debugsource-2.2.8-6.mga8.x86_64.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.rOosU2
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd sblim-sfcc-2.2.8
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/sblim-sfcc-2.2.8-6.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.F1j2I1
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf sblim-sfcc-2.2.8
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!
