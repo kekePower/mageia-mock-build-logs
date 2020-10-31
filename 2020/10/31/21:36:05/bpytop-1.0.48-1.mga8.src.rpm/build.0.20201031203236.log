@@ -1,0 +1,125 @@
+D: [iurt_root_command] chroot
+Installing /home/stig/rpmbuild/SRPMS/bpytop-1.0.48-1.mga8.src.rpm
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.Mquobt
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf bpytop-1.0.48
++ /usr/bin/gzip -dc /home/stig/rpmbuild/SOURCES/bpytop-1.0.48.tar.gz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd bpytop-1.0.48
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ sed -i 's|update_check: bool = True|update_check: bool = False|' bpytop.py
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.9WDMar
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bpytop-1.0.48
++ '[' 1 -eq 1 ']'
++ '[' 1 -eq 1 ']'
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3VbI2r
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ '[' 1 -eq 1 ']'
++ '[' /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64 '!=' / ']'
++ rm -rf /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64
+++ dirname /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64
++ mkdir -p /home/stig/rpmbuild/BUILDROOT
++ mkdir /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64
++ cd bpytop-1.0.48
++ '[' 1 -eq 1 ']'
++ /usr/bin/make install DESTDIR=/home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64 'INSTALL=/usr/bin/install -p' PREFIX=/usr
++ /usr/lib/rpm/check-buildroot
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/compress_files .xz
++ '[' -n '' ']'
++ /usr/share/spec-helper/relink_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/clean_perl
++ '[' -n '' ']'
++ /usr/share/spec-helper/lib_symlinks
++ '[' -n '' ']'
++ /usr/share/spec-helper/gprintify
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_mo
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_pamd
++ '[' -n '' ']'
++ /usr/share/spec-helper/remove_info_dir
++ '[' -n '' ']'
++ /usr/share/spec-helper/fix_eol
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_desktop_files
++ '[' -n '' ']'
++ /usr/share/spec-helper/check_elf_files
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-strip-shared /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python3 1 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+mangling shebang in /usr/bin/bpytop from /usr/bin/env python3 to #!/usr/bin/python3
+Processing files: bpytop-1.0.48-1.mga8.noarch
+Executing(%doc): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.kLjeLr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bpytop-1.0.48
++ DOCDIR=/home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/doc/bpytop
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/doc/bpytop
++ cp -pr README.md /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/doc/bpytop
++ cp -pr CHANGELOG.md /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/doc/bpytop
++ cp -pr CONTRIBUTING.md /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/doc/bpytop
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%license): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.3bmIZr
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bpytop-1.0.48
++ LICENSEDIR=/home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/licenses/bpytop
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/licenses/bpytop
++ cp -pr LICENSE /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64/usr/share/licenses/bpytop
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Provides: bpytop = 1.0.48-1.mga8
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64
+Wrote: /home/stig/rpmbuild/RPMS/noarch/bpytop-1.0.48-1.mga8.noarch.rpm
+Executing(%clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.jZIglu
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ cd bpytop-1.0.48
++ /usr/bin/rm -rf /home/stig/rpmbuild/BUILDROOT/bpytop-1.0.48-1.mga8.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(--clean): /bin/sh -e /home/stig/rpmbuild/tmp/rpm-tmp.iLzk8t
++ umask 022
++ cd /home/stig/rpmbuild/BUILD
++ rm -rf bpytop-1.0.48
++ RPM_EC=0
+++ jobs -p
++ exit 0
+D: [iurt_root_command] Success!

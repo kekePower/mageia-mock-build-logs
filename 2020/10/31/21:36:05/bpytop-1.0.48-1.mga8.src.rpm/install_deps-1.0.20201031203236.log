@@ -1,0 +1,8 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201031203236/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201031203236/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+
+
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201031203236 (remove=0, install=0, upgrade=0)
+D: [iurt_root_command] Success!
