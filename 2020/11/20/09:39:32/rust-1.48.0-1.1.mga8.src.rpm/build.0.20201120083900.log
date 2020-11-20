@@ -1,0 +1,6 @@
+D: [iurt_root_command] chroot
+error: Failed build dependencies:
+	cargo >= 1.47.0 is needed by rust-1.48.0-1.1.mga8.x86_64
+	rust >= 1.47.0 is needed by rust-1.48.0-1.1.mga8.x86_64
+Installing /home/stig/rpmbuild/SRPMS/rust-1.48.0-1.1.mga8.src.rpm
+I: [iurt_root_command] ERROR: chroot
