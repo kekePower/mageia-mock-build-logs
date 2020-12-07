@@ -1,0 +1,33 @@
+D: [iurt_root_command] urpmi
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848/var/lib/urpmi/synthesis.hdlist.Core Release.cz]
+examining synthesis file [/home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848/var/lib/urpmi/synthesis.hdlist.Core Updates.cz]
+Marking bash as manually installed, it won't be auto-orphaned
+writing /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848/var/lib/rpm/installed-through-deps.list
+
+
+retrieving rpm files from medium "Core Release"...
+    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/perl-Text-Unidecode-1.300.0-4.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 140k completed, ETA = --:--:--, speed = 2930k                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/texinfo-6.7-3.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 909k completed, ETA = --:--:--, speed = 17.4M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/groff-1.22.4-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 1403k completed, ETA = --:--:--, speed = 25.8M                                                                                                    ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/bison-3.7.4-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 736k completed, ETA = --:--:--, speed = 28.7M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/perl-libintl-perl-1.320.0-1.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 651k completed, ETA = --:--:--, speed = 21.2M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/groff-for-man-1.22.4-2.mga8.x86_64.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 870k completed, ETA = --:--:--, speed = 29.3M                                                                                                     ftp://10.0.0.109/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/perl-Unicode-EastAsianWidth-12.0.0-2.mga8.noarch.rpm
+        0% of 0 completed, ETA = --:--:--, speed = 0                                   100% of 23900 completed, ETA = --:--:--, speed = 1372k                                                                                                retrieved   perl-Text-Unidecode-1.300.0-4.mga8.noarch.rpm texinfo-6.7-3.mga8.x86_64.rpm groff-1.22.4-2.mga8.x86_64.rpm bison-3.7.4-1.mga8.x86_64.rpm perl-libintl-perl-1.320.0-1.mga8.x86_64.rpm groff-for-man-1.22.4-2.mga8.x86_64.rpm perl-Unicode-EastAsianWidth-12.0.0-2.mga8.noarch.rpm
+...retrieving done
+installing bison-3.7.4-1.mga8.x86_64.rpm groff-1.22.4-2.mga8.x86_64.rpm perl-Unicode-EastAsianWidth-12.0.0-2.mga8.noarch.rpm perl-libintl-perl-1.320.0-1.mga8.x86_64.rpm groff-for-man-1.22.4-2.mga8.x86_64.rpm perl-Text-Unidecode-1.300.0-4.mga8.noarch.rpm texinfo-6.7-3.mga8.x86_64.rpm from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848/var/cache/urpmi/rpms
+starting installing packages
+created transaction for installing on /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848 (remove=0, install=0, upgrade=7)
+Preparing...                     #############################################
+      1/7: perl-Text-Unidecode   #############################################
+      2/7: groff-for-man         #############################################
+      3/7: perl-libintl-perl     #############################################
+      4/7: perl-Unicode-EastAsianWidth
+                                 #############################################
+      5/7: texinfo               #############################################
+      6/7: groff                 #############################################
+      7/7: bison                 #############################################
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+removing installed rpms (bison-3.7.4-1.mga8.x86_64.rpm groff-1.22.4-2.mga8.x86_64.rpm perl-Unicode-EastAsianWidth-12.0.0-2.mga8.noarch.rpm perl-libintl-perl-1.320.0-1.mga8.x86_64.rpm groff-for-man-1.22.4-2.mga8.x86_64.rpm perl-Text-Unidecode-1.300.0-4.mga8.noarch.rpm texinfo-6.7-3.mga8.x86_64.rpm) from /home/stig/chroot_tmp/stig/chroot_cauldron.x86_64.0.20201207092848/var/cache/urpmi/rpms
+D: [iurt_root_command] Success!
